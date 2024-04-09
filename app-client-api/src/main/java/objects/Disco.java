@@ -1,6 +1,10 @@
 package objects;
 
+import objects.Historicos.HistoricoDisco;
+import objects.Historicos.HistoricoRam;
+
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -9,21 +13,32 @@ public class Disco {
     private long total;
     private long usado;
     private long livre;
-    private Map<LocalDateTime, List<Long>> registro;
     private LocalDateTime dataHoraCaptura;
+
+    private List<HistoricoDisco> historicosDisco;
 
     public Disco(long total, long usado, long livre, LocalDateTime dataHoraCaptura) {
         this.total = total;
         this.usado = usado;
         this.livre = livre;
         this.dataHoraCaptura = dataHoraCaptura;
+        this.historicosDisco = new ArrayList<>();
     }
 
     public Disco() {
+        this.historicosDisco = new ArrayList<>();
     }
 
-    public Map<LocalDateTime, List<Long>> getRegistro() {
-        return registro;
+    public List<HistoricoDisco> getHistoricosDisco() {
+        return historicosDisco;
+    }
+
+    public void gravarHistorico(HistoricoDisco historicoDisco){
+        historicosDisco.add(historicoDisco);
+    }
+
+    public void setHistoricosDisco(List<HistoricoDisco> historicosDisco) {
+        this.historicosDisco = historicosDisco;
     }
 
     public long getTotal() {

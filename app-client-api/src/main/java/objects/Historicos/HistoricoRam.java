@@ -1,38 +1,22 @@
-package objects;
-
-import objects.Historicos.HistoricoRam;
+package objects.Historicos;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 
-public class Ram {
+public class HistoricoRam {
     private long total;
     private long usado;
     private long livre;
-
-    private List<HistoricoRam> historicosRam;
-
     private LocalDateTime dataHoraCaptura;
 
-    public Ram(long total, long usado, long livre, LocalDateTime dataHoraCaptura) {
+    public HistoricoRam(long total, long usado, long livre, LocalDateTime dataHoraCaptura) {
         this.total = total;
         this.usado = usado;
         this.livre = livre;
         this.dataHoraCaptura = dataHoraCaptura;
-        this.historicosRam = new ArrayList<>();
     }
 
-    public Ram() {
-        this.historicosRam = new ArrayList<>();
-    }
+    public HistoricoRam() {
 
-    public List<HistoricoRam> getHistoricosRam() {
-        return historicosRam;
-    }
-
-    public void setHistoricosRam(List<HistoricoRam> historicosRam) {
-        this.historicosRam = historicosRam;
     }
 
     public long getTotal() {
@@ -67,16 +51,17 @@ public class Ram {
         this.dataHoraCaptura = dataHoraCaptura;
     }
 
-    public void gravarHistorico(HistoricoRam historicoRam){
-        historicosRam.add(historicoRam);
-    }
-
+    @Override
     public String toString() {
-        return "RAM: " +
-                "\nTotal: " + formatarBytes(total) +
-                "\nUsado: " + formatarBytes(usado) +
-                "\nLivre: " + formatarBytes(livre) +
-                "\nData da captura " + dataHoraCaptura;
+        return  """
+                
+                Histórico da RAM:
+                RAM Total : %s
+                RAM Livre : %s
+                RAM Usada: %s
+                Data hora captura : %s
+                
+                """.formatted(formatarBytes(total), formatarBytes(livre), formatarBytes(usado), dataHoraCaptura);
     }
 
     private String formatarBytes(long bytes) {
@@ -90,5 +75,4 @@ public class Ram {
             return String.format("%.2f", bytes / 1073741824.0) + " GB";
         }
     }
-
 }

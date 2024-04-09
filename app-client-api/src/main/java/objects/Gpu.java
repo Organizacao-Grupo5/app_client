@@ -1,6 +1,11 @@
 package objects;
 
+import objects.Historicos.HistoricoGpu;
+import objects.Historicos.HistoricoRam;
+
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Gpu {
 
@@ -9,13 +14,29 @@ public class Gpu {
 
     private LocalDateTime dataHoraCaptura;
 
+    private List<HistoricoGpu> historicosGpu;
+
     public Gpu(String modelo, long memoria, LocalDateTime dataHoraCaptura) {
         this.modelo = modelo;
         this.memoria = memoria;
         this.dataHoraCaptura = dataHoraCaptura;
+        this.historicosGpu = new ArrayList<>();
     }
 
     public Gpu() {
+        this.historicosGpu = new ArrayList<>();
+    }
+
+    public void gravarHistorico(HistoricoGpu historicoGpu){
+        historicosGpu.add(historicoGpu);
+    }
+
+    public List<HistoricoGpu> getHistoricosGpu() {
+        return historicosGpu;
+    }
+
+    public void setHistoricosGpu(List<HistoricoGpu> historicosGpu) {
+        this.historicosGpu = historicosGpu;
     }
 
     public String getModelo() {

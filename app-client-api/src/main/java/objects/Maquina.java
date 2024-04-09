@@ -80,4 +80,16 @@ public class Maquina {
                 ", gpu=" + gpu +
                 '}';
     }
+
+    private String formatarBytes(long bytes) {
+        if (bytes < 1024) {
+            return bytes + " B";
+        } else if (bytes < 1048576) {
+            return String.format("%.2f", bytes / 1024.0) + " KB";
+        } else if (bytes < 1073741824) {
+            return String.format("%.2f", bytes / 1048576.0) + " MB";
+        } else {
+            return String.format("%.2f", bytes / 1073741824.0) + " GB";
+        }
+    }
 }
