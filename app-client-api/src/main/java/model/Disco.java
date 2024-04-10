@@ -1,21 +1,21 @@
-package objects.Historicos;
+package model;
 
 import java.time.LocalDateTime;
 
-public class HistoricoRam {
+public class Disco {
     private long total;
     private long usado;
     private long livre;
     private LocalDateTime dataHoraCaptura;
 
-    public HistoricoRam(long total, long usado, long livre, LocalDateTime dataHoraCaptura) {
+    public Disco(long total, long usado, long livre, LocalDateTime dataHoraCaptura) {
         this.total = total;
         this.usado = usado;
         this.livre = livre;
         this.dataHoraCaptura = dataHoraCaptura;
     }
 
-    public HistoricoRam() {
+    public Disco() {
 
     }
 
@@ -51,17 +51,12 @@ public class HistoricoRam {
         this.dataHoraCaptura = dataHoraCaptura;
     }
 
-    @Override
     public String toString() {
-        return  """
-                
-                Histórico da RAM:
-                RAM Total : %s
-                RAM Livre : %s
-                RAM Usada: %s
-                Data hora captura : %s
-                
-                """.formatted(formatarBytes(total), formatarBytes(livre), formatarBytes(usado), dataHoraCaptura);
+        return "Disco: " +
+                "\nTotal: " + formatarBytes(total) +
+                "\nUsado: " + formatarBytes(usado) +
+                "\nLivre: " + formatarBytes(livre) +
+                "\nData da captura: " + dataHoraCaptura;
     }
 
     private String formatarBytes(long bytes) {

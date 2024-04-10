@@ -1,38 +1,34 @@
-package objects;
-
-import objects.Historicos.HistoricoRam;
+package model;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 
-public class Ram {
+public class Gpu {
+
+    private String nome;
+    private long memoria;
     private long total;
-    private long usado;
     private long livre;
-
-    private List<HistoricoRam> historicosRam;
-
     private LocalDateTime dataHoraCaptura;
 
-    public Ram(long total, long usado, long livre, LocalDateTime dataHoraCaptura) {
+
+    public Gpu(String nome, long memoria, long total, long livre, LocalDateTime dataHoraCaptura) {
+        this.nome = nome;
+        this.memoria = memoria;
         this.total = total;
-        this.usado = usado;
         this.livre = livre;
         this.dataHoraCaptura = dataHoraCaptura;
-        this.historicosRam = new ArrayList<>();
     }
 
-    public Ram() {
-        this.historicosRam = new ArrayList<>();
+    public Gpu() {
+
     }
 
-    public List<HistoricoRam> getHistoricosRam() {
-        return historicosRam;
+    public String getNome() {
+        return nome;
     }
 
-    public void setHistoricosRam(List<HistoricoRam> historicosRam) {
-        this.historicosRam = historicosRam;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public long getTotal() {
@@ -43,20 +39,28 @@ public class Ram {
         this.total = total;
     }
 
-    public long getUsado() {
-        return usado;
-    }
-
-    public void setUsado(long usado) {
-        this.usado = usado;
-    }
-
     public long getLivre() {
         return livre;
     }
 
     public void setLivre(long livre) {
         this.livre = livre;
+    }
+
+    public String getModelo() {
+        return nome;
+    }
+
+    public void setModelo(String modelo) {
+        this.nome = modelo;
+    }
+
+    public long getMemoria() {
+        return memoria;
+    }
+
+    public void setMemoria(long memoria) {
+        this.memoria = memoria;
     }
 
     public LocalDateTime getDataHoraCaptura() {
@@ -67,16 +71,11 @@ public class Ram {
         this.dataHoraCaptura = dataHoraCaptura;
     }
 
-    public void gravarHistorico(HistoricoRam historicoRam){
-        historicosRam.add(historicoRam);
-    }
-
     public String toString() {
-        return "RAM: " +
-                "\nTotal: " + formatarBytes(total) +
-                "\nUsado: " + formatarBytes(usado) +
-                "\nLivre: " + formatarBytes(livre) +
-                "\nData da captura " + dataHoraCaptura;
+        return "GPU: " +
+                "\nNome: " + nome +
+                "\nMemória: " + formatarBytes(memoria) +
+                "\nData da captura: " + dataHoraCaptura;
     }
 
     private String formatarBytes(long bytes) {
@@ -90,5 +89,4 @@ public class Ram {
             return String.format("%.2f", bytes / 1073741824.0) + " GB";
         }
     }
-
 }

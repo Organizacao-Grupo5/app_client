@@ -1,28 +1,37 @@
-import com.github.britooo.looca.api.core.Looca;
-import objects.*;
-import objects.Historicos.*;
-import java.time.LocalDateTime;
+import model.*;
+import monitoramento.Monitoramento;
+
 import java.util.Scanner;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
+import java.util.logging.ConsoleHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Main {
-    static Looca looca = new Looca();
+    private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
+    private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
 
-    static {
-        // Carrega a biblioteca JNI
-        System.loadLibrary("NvidiaGPUInfo");
-    }
-
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         User usuario1 = new User("Cláudio", "clau@gmail", "1234");
+
         String email = "";
         String senha = "";
 
         Scanner scanner = new Scanner(System.in);
-        while (!usuario1.getEmail().equals(email) && !usuario1.getSenha().equals(senha)){
+
+        while (!usuario1.getEmail().equals(email) || !usuario1.getSenha().equals(senha)){
             System.out.println("Digite seu email:");
-            email = scanner.next();
+            email = scanner.nextLine();
+
             System.out.println("Digite sua senha:");
-            senha = scanner.next();
+            senha = scanner.nextLine();
+
+            if (!usuario1.getEmail().equals(email) || !usuario1.getSenha().equals(senha)) {
+                System.out.println("Email ou senha incorretos. Tente novamente.\n");
+            }
         }
 
         System.out.println("""
@@ -30,80 +39,31 @@ public class Main {
                 Estamos capturando os dados para monitoramento.
                 """);
 
-        Maquina maquina = criarMaquina();
-        usuario1.inserirMaquina(maquina);
 
-        System.out.println("Conexão feita com sucesso!");
-        System.out.println(maquina.toString());
-        System.out.println("Iniciando o monitoramento contínuo");
+        ScheduledFuture<?> monitoramentoHandle = scheduler.scheduleAtFixedRate(() -> {
+            try {
+                usuario1.inserirMaquina(Monitoramento.monitorarMaquina());
+                Maquina maquina = usuario1.getMaquinas().get(0);
+                maquina.adicionarRegistro("CPU", Monitoramento.monitorarCpu());
+                maquina.adicionarRegistro("RAM", Monitoramento.monitorarRam());
+                maquina.adicionarRegistro("DISCO", Monitoramento.monitorarDisco());
+             // maquina.adicionarRegistro("GPU", Monitoramento.monitorarGPU());
+                maquina.listarComponentes();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }, 0, 5, TimeUnit.SECONDS);
 
-        for (int i = 0; i < 10; i++) {
-            iniciarMonitoramento(maquina);
-            System.out.println(maquina.getRam().getHistoricosRam().toString());
-            System.out.println(maquina.getDisco().getHistoricosDisco().toString());
-            System.out.println(maquina.getCpu().getHistoricosCpu().toString());
-            int gpuUsage = getGPUUsage();
-            System.out.println("Uso da GPU: " + gpuUsage + "%");
+        Scanner scanner1 = new Scanner(System.in);
+        while (true) {
+            System.out.println("Pressione 0 para parar o monitoramento...");
+            if (scanner.nextInt() == 0) {
+                monitoramentoHandle.cancel(true); // Interrompe o monitoramento
+                scheduler.shutdown();
+                System.exit(0); // Sai do loop
+            }
         }
     }
 
-    public static void iniciarMonitoramento(Maquina maquina){
-        HistoricoCpu cpu = new HistoricoCpu();
-        HistoricoDisco disco = new HistoricoDisco();
-        HistoricoRam ram = new HistoricoRam();
-
-        cpu.setFrequencia(looca.getProcessador().getFrequencia());
-        cpu.setUso(looca.getProcessador().getUso());
-        cpu.setDataHoraCaptura(LocalDateTime.now());
-
-        ram.setLivre(looca.getMemoria().getDisponivel());
-        ram.setTotal(looca.getMemoria().getTotal());
-        ram.setUsado(looca.getMemoria().getEmUso());
-        ram.setDataHoraCaptura(LocalDateTime.now());
-
-        disco.setLivre(looca.getGrupoDeDiscos().getVolumes().get(0).getDisponivel());
-        disco.setTotal(looca.getGrupoDeDiscos().getVolumes().get(0).getTotal());
-        disco.setUsado(looca.getGrupoDeDiscos().getVolumes().get(0).getTotal() - looca.getGrupoDeDiscos().getVolumes().get(0).getDisponivel());
-        disco.setDataHoraCaptura(LocalDateTime.now());
-
-        maquina.getCpu().gravarHistorico(cpu);
-        maquina.getDisco().gravarHistorico(disco);
-        maquina.getRam().gravarHistorico(ram);
-    }
-
-    public static Maquina criarMaquina(){
-        Maquina minhaMaquina = new Maquina();
-        minhaMaquina.setNomeMaquina("Máquina 1");
-        minhaMaquina.setSistOperacional(looca.getSistema().getSistemaOperacional());
-        capturarComponentes(minhaMaquina);
-        return minhaMaquina;
-    }
-
-    public static void capturarComponentes(Maquina maquina){
-        Cpu cpu = new Cpu();
-        Disco disco = new Disco();
-        Ram ram = new Ram();
-
-        cpu.setFrequencia(looca.getProcessador().getFrequencia());
-        cpu.setModelo(looca.getProcessador().getFabricante());
-        cpu.setUso(looca.getProcessador().getUso());
-        cpu.setNumeroNucleos(looca.getProcessador().getNumeroCpusFisicas() + looca.getProcessador().getNumeroCpusLogicas());
-        cpu.setDataHoraCaptura(LocalDateTime.now());
-
-        ram.setLivre(looca.getMemoria().getDisponivel());
-        ram.setTotal(looca.getMemoria().getTotal());
-        ram.setUsado(looca.getMemoria().getEmUso());
-        ram.setDataHoraCaptura(LocalDateTime.now());
-
-        disco.setLivre(looca.getGrupoDeDiscos().getVolumes().get(0).getDisponivel());
-        disco.setTotal(looca.getGrupoDeDiscos().getVolumes().get(0).getTotal());
-        disco.setUsado(looca.getGrupoDeDiscos().getVolumes().get(0).getTotal() - looca.getGrupoDeDiscos().getVolumes().get(0).getDisponivel());
-        disco.setDataHoraCaptura(LocalDateTime.now());
-
-        maquina.setCpu(cpu);
-        maquina.setDisco(disco);
-        maquina.setRam(ram);
-    }
-    public static native int getGPUUsage();
 
 }

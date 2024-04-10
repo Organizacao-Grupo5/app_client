@@ -1,44 +1,23 @@
-package objects;
-
-import objects.Historicos.HistoricoDisco;
-import objects.Historicos.HistoricoRam;
+package model;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
 
-public class Disco {
+public class Ram {
     private long total;
     private long usado;
     private long livre;
+
     private LocalDateTime dataHoraCaptura;
 
-    private List<HistoricoDisco> historicosDisco;
-
-    public Disco(long total, long usado, long livre, LocalDateTime dataHoraCaptura) {
+    public Ram(long total, long usado, long livre, LocalDateTime dataHoraCaptura) {
         this.total = total;
         this.usado = usado;
         this.livre = livre;
         this.dataHoraCaptura = dataHoraCaptura;
-        this.historicosDisco = new ArrayList<>();
     }
 
-    public Disco() {
-        this.historicosDisco = new ArrayList<>();
-    }
+    public Ram() {
 
-    public List<HistoricoDisco> getHistoricosDisco() {
-        return historicosDisco;
-    }
-
-    public void gravarHistorico(HistoricoDisco historicoDisco){
-        historicosDisco.add(historicoDisco);
-    }
-
-    public void setHistoricosDisco(List<HistoricoDisco> historicosDisco) {
-        this.historicosDisco = historicosDisco;
     }
 
     public long getTotal() {
@@ -74,11 +53,11 @@ public class Disco {
     }
 
     public String toString() {
-        return "Disco: " +
+        return "RAM: " +
                 "\nTotal: " + formatarBytes(total) +
                 "\nUsado: " + formatarBytes(usado) +
                 "\nLivre: " + formatarBytes(livre) +
-                "\nData da captura: " + dataHoraCaptura;
+                "\nData da captura " + dataHoraCaptura;
     }
 
     private String formatarBytes(long bytes) {
@@ -92,4 +71,5 @@ public class Disco {
             return String.format("%.2f", bytes / 1073741824.0) + " GB";
         }
     }
+
 }
