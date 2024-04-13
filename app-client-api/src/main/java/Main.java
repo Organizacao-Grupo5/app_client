@@ -1,69 +1,78 @@
-import model.*;
-import monitoramento.Monitoramento;
+import core.auth.Login;
+import exception.AutenticationException;
+import model.Maquina;
+import model.Usuario;
+import service.ServiceMonitoring;
+import service.ServiceUser;
 
 import java.util.Scanner;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.ScheduledFuture;
-import java.util.concurrent.TimeUnit;
-import java.util.logging.ConsoleHandler;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Main {
     private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
     private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
+    private static final Login login = new Login();
+
+    private static final ServiceMonitoring serviceMonitoring = new ServiceMonitoring();
 
     public static void main(String[] args) throws Exception {
-        User usuario1 = new User("Cláudio", "clau@gmail", "1234");
-
-        String email = "";
-        String senha = "";
-
+        Usuario usuarioLogado;
         Scanner scanner = new Scanner(System.in);
-
-        while (!usuario1.getEmail().equals(email) || !usuario1.getSenha().equals(senha)){
-            System.out.println("Digite seu email:");
-            email = scanner.nextLine();
-
-            System.out.println("Digite sua senha:");
-            senha = scanner.nextLine();
-
-            if (!usuario1.getEmail().equals(email) || !usuario1.getSenha().equals(senha)) {
-                System.out.println("Email ou senha incorretos. Tente novamente.\n");
-            }
-        }
-
         System.out.println("""
-                Bem-vindo!
-                Estamos capturando os dados para monitoramento.
+                Seja bem-vindo ao nosso app client ...
+                                
+                Vamos verificar suas permissões para iniciar o monitoramento.
+                                
+                Insira seu email:
                 """);
+        String email = scanner.next();
+        System.out.println("""
+                Insira sua senha:
+                """);
+        String senha = scanner.next();
 
+        try {
+            usuarioLogado = login.login(email, senha);
+            System.out.println("Terminamos a verificação de seu acesso.");
+            if (usuarioLogado != null) {
+                System.out.println("""
+                                                
+                        --- ACESSO CONCEDIDO ---
+                                                
+                        Bem-vindo %s
+                        email: %s
+                                                
+                        Vamos verificar as permissões da sua máquina...
+                        """.formatted(usuarioLogado.getNome(), usuarioLogado.getEmail()));
 
-        ScheduledFuture<?> monitoramentoHandle = scheduler.scheduleAtFixedRate(() -> {
-            try {
-                usuario1.inserirMaquina(Monitoramento.monitorarMaquina());
-                Maquina maquina = usuario1.getMaquinas().get(0);
-                maquina.adicionarRegistro("CPU", Monitoramento.monitorarCpu());
-                maquina.adicionarRegistro("RAM", Monitoramento.monitorarRam());
-                maquina.adicionarRegistro("DISCO", Monitoramento.monitorarDisco());
-             // maquina.adicionarRegistro("GPU", Monitoramento.monitorarGPU());
-                maquina.listarComponentes();
-            } catch (Exception e) {
-                e.printStackTrace();
+                Maquina maquina = serviceMonitoring.verificaMaquinaUsuario(usuarioLogado.getIdUsuario());
+                if (maquina != null) {
+                    System.out.println("Sua máquina foi verificada com sucesso:");
+                    System.out.println("ID: " + maquina.getIdMaquina());
+                    System.out.println("IPv4: " + maquina.getIpv4());
+                } else {
+                    System.out.println("Sua máquina não foi verificada. Ela não está autorizado a usar o aplicativo.");
+                }
+            } else {
+                System.out.println("""
+                                                
+                        --- ACESSO NEGADO ---
+                                                
+                        """);
             }
-        }, 0, 5, TimeUnit.SECONDS);
-
-        Scanner scanner1 = new Scanner(System.in);
-        while (true) {
-            System.out.println("Pressione 0 para parar o monitoramento...");
-            if (scanner.nextInt() == 0) {
-                monitoramentoHandle.cancel(true); // Interrompe o monitoramento
-                scheduler.shutdown();
-                System.exit(0); // Sai do loop
-            }
+        } catch (AutenticationException e) {
+            System.out.println("Erro ao fazer login: " + e.getMessage());
+        } catch (Exception e) {
+            System.out.println("Ocorreu um erro inesperado: " + e.getMessage());
+            e.printStackTrace();
+        } finally {
+            scanner.close();
         }
     }
 
+    public void iniciarMonitoramento(Maquina maquina){
 
+    }
 }

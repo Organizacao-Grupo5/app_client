@@ -7,12 +7,17 @@ import java.util.logging.*;
 
 public class Connector {
     private static final Logger logger = Logger.getLogger(Connector.class.getName());
-    public static void ConBD(){
+
+    public static Connection ConBD() throws SQLException {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conexao = DriverManager.getConnection("jdbc:mysql://localhost/crudEmJava", "root", "vsops");
-        } catch (SQLException | ClassNotFoundException e){
-            logger.log(Level.SEVERE, ("Erro no mysql"));
+            return DriverManager.getConnection("jdbc:mysql://localhost/visualOps", "root", "54157592808");
+        } catch (ClassNotFoundException e) {
+            logger.log(Level.SEVERE, "Driver do MySQL não encontrado", e);
+            throw new SQLException("Driver do MySQL não encontrado", e);
+        } catch (SQLException e) {
+            logger.log(Level.SEVERE, "Erro ao conectar ao banco de dados", e);
+            throw e;
         }
     }
 }
