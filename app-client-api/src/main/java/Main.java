@@ -5,6 +5,8 @@ import model.Usuario;
 import service.ServiceMonitoring;
 import service.ServiceUser;
 
+import java.util.Map;
+import java.util.Objects;
 import java.util.Scanner;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -52,6 +54,10 @@ public class Main {
                     System.out.println("Sua máquina foi verificada com sucesso:");
                     System.out.println("ID: " + maquina.getIdMaquina());
                     System.out.println("IPv4: " + maquina.getIpv4());
+                    System.out.println("""
+                            Iniciando o monitoramento dos hardwares:
+                            """);
+                    iniciarMonitoramento(maquina, usuarioLogado);
                 } else {
                     System.out.println("Sua máquina não foi verificada. Ela não está autorizado a usar o aplicativo.");
                 }
@@ -72,7 +78,12 @@ public class Main {
         }
     }
 
-    public void iniciarMonitoramento(Maquina maquina){
+    public static void iniciarMonitoramento(Maquina maquina, Usuario usuario){
+        try {
+            Map<String, Object> hardwares = serviceMonitoring.monitorar(maquina, usuario);
 
+        }catch (Exception e){
+            System.out.println("Erro ao monitorar: " + e);
+        }
     }
 }

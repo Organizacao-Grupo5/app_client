@@ -3,10 +3,7 @@ package dao;
 import model.*;
 import util.Connector;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.Optional;
 
 public class MonitoramentoDAO {
@@ -37,7 +34,7 @@ public class MonitoramentoDAO {
     }
 
     public void salvarComponenteHDD(Integer idMaquina, HDD hdd) {
-        String sqlSelect = "SELECT idHDD FROM HDD WHERE idHDD = ?";
+        String sqlSelect = "SELECT HDD.idHDD FROM HDD INNER JOIN Maquina ON HDD.fkMaquina = Maquina.idMaquina WHERE HDD.idHDD = ? AND Maquina.idMaquina = ?";
         String sqlUpdate = "UPDATE HDD SET CapacidadeTotal = ?, NumeroParticoes = ?, StatusSaude = ? WHERE idHDD = ?";
         String sqlInsert = "INSERT INTO HDD (idHDD, CapacidadeTotal, NumeroParticoes, StatusSaude, fkMaquina) VALUES (?, ?, ?, ?, ?)";
 
@@ -47,6 +44,7 @@ public class MonitoramentoDAO {
              PreparedStatement insertStatement = conexao.prepareStatement(sqlInsert)) {
 
             selectStatement.setInt(1, hdd.getIdHDD());
+            selectStatement.setInt(2, idMaquina);
             ResultSet resultSet = selectStatement.executeQuery();
 
             if (resultSet.next()) {
@@ -72,7 +70,7 @@ public class MonitoramentoDAO {
     }
 
     public void salvarComponenteGPU(Integer idMaquina, GPU gpu) {
-        String sqlSelect = "SELECT idGPU FROM GPU WHERE idGPU = ?";
+        String sqlSelect = "SELECT GPU.idGPU FROM GPU INNER JOIN Maquina ON GPU.fkMaquina = Maquina.idMaquina WHERE GPU.idGPU = ? AND Maquina.idMaquina = ?";
         String sqlUpdate = "UPDATE GPU SET Modelo = ?, Memoria = ?, Utilizacao = ?, VersaoDriver = ? WHERE idGPU = ?";
         String sqlInsert = "INSERT INTO GPU (idGPU, Modelo, Memoria, Utilizacao, VersaoDriver, fkMaquina) VALUES (?, ?, ?, ?, ?, ?)";
 
@@ -82,6 +80,7 @@ public class MonitoramentoDAO {
              PreparedStatement insertStatement = conexao.prepareStatement(sqlInsert)) {
 
             selectStatement.setInt(1, gpu.getIdGPU());
+            selectStatement.setInt(2, idMaquina);
             ResultSet resultSet = selectStatement.executeQuery();
 
             if (resultSet.next()) {
@@ -109,7 +108,7 @@ public class MonitoramentoDAO {
     }
 
     public void salvarComponenteMemoriaRAM(Integer idMaquina, MemoriaRam memoriaRAM) {
-        String sqlSelect = "SELECT idMemória_RAM FROM Memoria_RAM WHERE idMemória_RAM = ?";
+        String sqlSelect = "SELECT Memoria_RAM.idMemoria_RAM FROM Memoria_RAM INNER JOIN Maquina ON Memoria_RAM.fkMaquina = Maquina.idMaquina WHERE Memoria_RAM.idMemoria_RAM = ? AND Maquina.idMaquina = ?";
         String sqlUpdate = "UPDATE Memoria_RAM SET CapacidadeTotal = ?, NumeroModulo = ?, PorcentagemUtilizada = ? WHERE idMemoria_RAM = ?";
         String sqlInsert = "INSERT INTO Memoria_RAM (idMemoria_RAM, CapacidadeTotal, NumeroModulo, PorcentagemUtilizada, fkMaquina) VALUES (?, ?, ?, ?, ?)";
 
@@ -119,6 +118,7 @@ public class MonitoramentoDAO {
              PreparedStatement insertStatement = conexao.prepareStatement(sqlInsert)) {
 
             selectStatement.setInt(1, memoriaRAM.getIdMemoriaRAM());
+            selectStatement.setInt(2, idMaquina);
             ResultSet resultSet = selectStatement.executeQuery();
 
             if (resultSet.next()) {
@@ -144,7 +144,7 @@ public class MonitoramentoDAO {
     }
 
     public void salvarComponenteApp(Integer idMaquina, APP app) {
-        String sqlSelect = "SELECT idApp FROM App WHERE idApp = ?";
+        String sqlSelect = "SELECT App.idApp FROM App INNER JOIN Maquina ON App.fkMaquina = Maquina.idMaquina WHERE App.idApp = ? AND Maquina.idMaquina = ?";
         String sqlUpdate = "UPDATE App SET nomeApp = ?, DtInstalacao = ?, UltimaDtInstalacao = ?, TamanhoAplicativo = ? WHERE idApp = ?";
         String sqlInsert = "INSERT INTO App (idApp, nomeApp, DtInstalacao, UltimaDtInstalacao, TamanhoAplicativo, fkMaquina) VALUES (?, ?, ?, ?, ?, ?)";
 
@@ -154,12 +154,13 @@ public class MonitoramentoDAO {
              PreparedStatement insertStatement = conexao.prepareStatement(sqlInsert)) {
 
             selectStatement.setInt(1, app.getIdApp());
+            selectStatement.setInt(2, idMaquina);
             ResultSet resultSet = selectStatement.executeQuery();
 
             if (resultSet.next()) {
                 updateStatement.setString(1, app.getNomeApp());
-                updateStatement.setDate(2, app.getDtInstalacao());
-                updateStatement.setDate(3, app.getUltimaDtInstalacao());
+                updateStatement.setDate(2, (Date) app.getDtInstalacao());
+                updateStatement.setDate(3, (Date) app.getUltimaDtInstalacao());
                 updateStatement.setString(4, app.getTamanhoAplicativo());
                 updateStatement.setInt(5, app.getIdApp());
 
@@ -167,8 +168,8 @@ public class MonitoramentoDAO {
             } else {
                 insertStatement.setInt(1, app.getIdApp());
                 insertStatement.setString(2, app.getNomeApp());
-                insertStatement.setDate(3, app.getDtInstalacao());
-                insertStatement.setDate(4, app.getUltimaDtInstalacao());
+                insertStatement.setDate(3, (Date) app.getDtInstalacao());
+                insertStatement.setDate(4, (Date) app.getUltimaDtInstalacao());
                 insertStatement.setString(5, app.getTamanhoAplicativo());
                 insertStatement.setInt(6, idMaquina);
 
@@ -181,8 +182,8 @@ public class MonitoramentoDAO {
     }
 
     public void salvarComponenteConexaoUSB(Integer idMaquina, ConexaoUSB conexaoUSB) {
-        String sqlSelect = "SELECT idConexao_USB FROM Conexao_USB WHERE idConexao_USB = ?";
-        String sqlUpdate = "UPDATE Conexao_USB SET TotalPortas = ?, TipoConector = ?, DeteccaoDispositivo = ?, EnergiaPorta = ?, HubsConectados = ?, DispositivoConectado = ? WHERE idConexao_USB = ?";
+        String sqlSelect = "SELECT Conexao_USB.idConexao_USB FROM Conexao_USB INNER JOIN Maquina ON Conexao_USB.fkMaquina = Maquina.idMaquina WHERE Conexao_USB.idConexao_USB = ? AND Maquina.idMaquina = ?";
+        String sqlUpdate = "UPDATE Conexao_USB SET TotalPortas = ?, TipoConector = ?, DetecçãoDispositivo = ?, EnergiaPorta = ?, HubsConectados = ?, DispositivoConectado = ? WHERE idConexao_USB = ?";
         String sqlInsert = "INSERT INTO Conexao_USB (idConexao_USB, TotalPortas, TipoConector, DetecçãoDispositivo, EnergiaPorta, HubsConectados, DispositivoConectado, fkMaquina) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
         try (Connection conexao = Connector.ConBD();
@@ -191,6 +192,7 @@ public class MonitoramentoDAO {
              PreparedStatement insertStatement = conexao.prepareStatement(sqlInsert)) {
 
             selectStatement.setInt(1, conexaoUSB.getIdConexaoUSB());
+            selectStatement.setInt(2, idMaquina);
             ResultSet resultSet = selectStatement.executeQuery();
 
             if (resultSet.next()) {
@@ -220,4 +222,5 @@ public class MonitoramentoDAO {
             throw new RuntimeException(ex);
         }
     }
+
 }
