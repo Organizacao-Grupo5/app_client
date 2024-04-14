@@ -1,18 +1,17 @@
 package core.sistema;
-
+import oshi.SystemInfo;
+import oshi.hardware.HardwareAbstractionLayer;
+import oshi.hardware.Sensors;
 import com.github.britooo.looca.api.core.Looca;
 import exception.ExceptionMonitoring;
 import model.*;
-import oshi.SystemInfo;
 import oshi.hardware.*;
 import service.ServiceMonitoring;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
-import java.time.LocalDate;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
@@ -21,6 +20,8 @@ public class Monitoramento {
 
     private static final SystemInfo SYSTEM_INFO = new SystemInfo();
     private static final HardwareAbstractionLayer HARDWARE = SYSTEM_INFO.getHardware();
+    private static final Sensors SENSORS = HARDWARE.getSensors();
+
     SystemInfo systemInfo = new SystemInfo();
 
     private static final Logger LOGGER = Logger.getLogger(Monitoramento.class.getName());
@@ -73,6 +74,9 @@ public class Monitoramento {
             cpu.setArquitetura(processor.getProcessorIdentifier().getIdentifier());
             cpu.setCache(String.valueOf(processor.getProcessorCaches().get(0).getCacheSize()));
 
+            cpu.setTemperaturaComponente(SENSORS.getCpuTemperature());
+            cpu.setVelocidadeComponente(SENSORS.getCpuVoltage());
+
             return cpu;
         } catch (Exception e){
             throw new ExceptionMonitoring("Ocorreu um erro no monitoramento da CPU: " + e);
@@ -82,7 +86,7 @@ public class Monitoramento {
         try {
             HWDiskStore[] diskStores = HARDWARE.getDiskStores().toArray(new HWDiskStore[0]);
             HDD hdd = new HDD();
-            hdd.setCapacidadeTotal(Double.parseDouble(String.valueOf(diskStores[0].getSize())));
+            hdd.setCapacidadeTotal(diskStores[0].getSize());
             hdd.setNumeroParticoes(diskStores[0].getPartitions().size());
             hdd.setStatusSaude(diskStores[0].getModel());
 
@@ -96,9 +100,10 @@ public class Monitoramento {
             GraphicsCard[] graphicsCards = HARDWARE.getGraphicsCards().toArray(new GraphicsCard[0]);
             GPU gpu = new GPU();
             gpu.setModelo(graphicsCards[0].getName());
-            gpu.setMemoria(Double.parseDouble(String.valueOf(graphicsCards[0].getVRam())));
+            gpu.setMemoria(graphicsCards[0].getVRam());
             gpu.setUtilizacao(graphicsCards[0].getVRam());
             gpu.setVersaoDriver(graphicsCards[0].getVendor());
+
             return gpu;
         } catch (Exception e){
             throw new ExceptionMonitoring("Ocorreu um erro no monitoramento da GPU: " + e);
@@ -108,7 +113,7 @@ public class Monitoramento {
         try {
             GlobalMemory memory = HARDWARE.getMemory();
             MemoriaRam memoriaRAM = new MemoriaRam();
-            memoriaRAM.setCapacidadeTotal(Double.parseDouble(String.valueOf(memory.getTotal())));
+            memoriaRAM.setCapacidadeTotal(memory.getTotal());
             memoriaRAM.setNumeroModulo(memory.getPhysicalMemory().size());
             memoriaRAM.setPorcentagemUtilizada(memory.getAvailable() / (double) memory.getTotal());
             return memoriaRAM;

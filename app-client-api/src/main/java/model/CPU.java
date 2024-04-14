@@ -10,21 +10,19 @@ public class CPU {
     private String arquitetura;
     private String cache;
     private Maquina maquina;
-    private VelocidadeComponente velocidadeComponente;
-    private TemperaturaComponente temperaturaComponente;
+    private Double velocidadeComponente;
+    private Double temperaturaComponente;
 
     public CPU() {
     }
 
-    public CPU(String modelo, String numeroSerie, String fabricante, String arquitetura, String cache, Maquina maquina, VelocidadeComponente velocidadeComponente, TemperaturaComponente temperaturaComponente) {
+    public CPU(String modelo, String numeroSerie, String fabricante, String arquitetura, String cache, Maquina maquina) {
         this.modelo = modelo;
         this.numeroSerie = numeroSerie;
         this.fabricante = fabricante;
         this.arquitetura = arquitetura;
         this.cache = cache;
         this.maquina = maquina;
-        this.velocidadeComponente = velocidadeComponente;
-        this.temperaturaComponente = temperaturaComponente;
     }
 
     public int getIdCPU() {
@@ -83,19 +81,19 @@ public class CPU {
         this.maquina = maquina;
     }
 
-    public VelocidadeComponente getVelocidadeComponente() {
+    public Double getVelocidadeComponente() {
         return velocidadeComponente;
     }
 
-    public void setVelocidadeComponente(VelocidadeComponente velocidadeComponente) {
+    public void setVelocidadeComponente(Double velocidadeComponente) {
         this.velocidadeComponente = velocidadeComponente;
     }
 
-    public TemperaturaComponente getTemperaturaComponente() {
+    public Double getTemperaturaComponente() {
         return temperaturaComponente;
     }
 
-    public void setTemperaturaComponente(TemperaturaComponente temperaturaComponente) {
+    public void setTemperaturaComponente(Double temperaturaComponente) {
         this.temperaturaComponente = temperaturaComponente;
     }
 }

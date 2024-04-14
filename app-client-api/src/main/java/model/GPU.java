@@ -1,5 +1,7 @@
 package model;
 
+import core.sistema.Conversor;
+
 import java.time.LocalDateTime;
 
 public class GPU {
@@ -9,17 +11,15 @@ public class GPU {
     private double utilizacao;
     private String versaoDriver;
     private Maquina maquina;
-    private VelocidadeComponente velocidadeComponente;
-    private TemperaturaComponente temperaturaComponente;
+    private Double velocidadeComponente;
+    private Double temperaturaComponente;
 
-    public GPU(String modelo, double memoria, double utilizacao, String versaoDriver, Maquina maquina, VelocidadeComponente velocidadeComponente, TemperaturaComponente temperaturaComponente) {
+    public GPU(String modelo, double memoria, double utilizacao, String versaoDriver, Maquina maquina) {
         this.modelo = modelo;
         this.memoria = memoria;
         this.utilizacao = utilizacao;
         this.versaoDriver = versaoDriver;
         this.maquina = maquina;
-        this.velocidadeComponente = velocidadeComponente;
-        this.temperaturaComponente = temperaturaComponente;
     }
 
     public GPU() {
@@ -45,16 +45,16 @@ public class GPU {
         return memoria;
     }
 
-    public void setMemoria(double memoria) {
-        this.memoria = memoria;
+    public void setMemoria(long memoria) {
+        this.memoria = Conversor.converterParaKB(memoria);
     }
 
     public double getUtilizacao() {
         return utilizacao;
     }
 
-    public void setUtilizacao(double utilizacao) {
-        this.utilizacao = utilizacao;
+    public void setUtilizacao(long utilizacao) {
+        this.utilizacao = Conversor.converterParaGB(utilizacao);
     }
 
     public String getVersaoDriver() {
@@ -73,19 +73,19 @@ public class GPU {
         this.maquina = maquina;
     }
 
-    public VelocidadeComponente getVelocidadeComponente() {
+    public Double getVelocidadeComponente() {
         return velocidadeComponente;
     }
 
-    public void setVelocidadeComponente(VelocidadeComponente velocidadeComponente) {
+    public void setVelocidadeComponente(Double velocidadeComponente) {
         this.velocidadeComponente = velocidadeComponente;
     }
 
-    public TemperaturaComponente getTemperaturaComponente() {
+    public Double getTemperaturaComponente() {
         return temperaturaComponente;
     }
 
-    public void setTemperaturaComponente(TemperaturaComponente temperaturaComponente) {
+    public void setTemperaturaComponente(Double temperaturaComponente) {
         this.temperaturaComponente = temperaturaComponente;
     }
 }

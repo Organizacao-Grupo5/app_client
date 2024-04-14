@@ -44,52 +44,75 @@ public class ServiceMonitoring {
 
     public Map<String, Object> monitorar(Maquina maquina, Usuario usuario) throws ExceptionMonitoring {
         Map<String, Object> mapaDeHardwaresDisponiveis = monitoramento.iniarMonitoramento(maquina, usuario);
-
+        exibirMonitoramento(mapaDeHardwaresDisponiveis);
         for (Map.Entry<String, Object> entry : mapaDeHardwaresDisponiveis.entrySet()) {
             System.out.println("Componente: " + entry.getKey());
+
             Object hardware = entry.getValue();
-            if (hardware instanceof CPU cpu) {
-                System.out.println("Modelo da CPU: " + cpu.getModelo());
-                System.out.println("Número de Série da CPU: " + cpu.getNumeroSerie());
-                // Adicione mais informações da CPU aqui, se necessário
-            } else if (hardware instanceof GPU gpu) {
-                System.out.println("Modelo da GPU: " + gpu.getModelo());
-                System.out.println("Memória da GPU: " + gpu.getMemoria());
-                System.out.println("Utilização da GPU: " + gpu.getUtilizacao());
-                System.out.println("Versão do Driver da GPU: " + gpu.getVersaoDriver());
-                // Adicione mais informações da GPU aqui, se necessário
-            } else if (hardware instanceof HDD hdd) {
-                System.out.println("Capacidade Total do HDD: " + hdd.getCapacidadeTotal());
-                System.out.println("Número de Partições do HDD: " + hdd.getNumeroParticoes());
-                System.out.println("Status de Saúde do HDD: " + hdd.getStatusSaude());
-                // Adicione mais informações do HDD aqui, se necessário
-            } else if (hardware instanceof MemoriaRam memoriaRam) {
-                System.out.println("Capacidade Total da RAM: " + memoriaRam.getCapacidadeTotal());
-                System.out.println("Capacidade Utilizada da RAM: " + memoriaRam.getPorcentagemUtilizada());
-                System.out.println("Porcentagem Utilizada da RAM: " + memoriaRam.getPorcentagemUtilizada());
-                System.out.println("Número de Módulos de RAM: " + memoriaRam.getNumeroModulo());
-                // Adicione mais informações da RAM aqui, se necessário
-            } else if (hardware instanceof APP app) {
-                System.out.println("Nome do Aplicativo: " + app.getNomeApp());
-                System.out.println("Data de Instalação: " + app.getDtInstalacao());
-                System.out.println("Última Data de Instalação: " + app.getUltimaDtInstalacao());
-                System.out.println("Tamanho do Aplicativo: " + app.getTamanhoAplicativo());
-                // Adicione mais informações do APP aqui, se necessário
-            } else if (hardware instanceof ConexaoUSB conexaoUSB) {
-                System.out.println("Total de Portas USB: " + conexaoUSB.getTotalPortas());
-                System.out.println("Tipo de Conector USB: " + conexaoUSB.getTipoConector());
-                System.out.println("Detecção de Dispositivo USB: " + conexaoUSB.getDeteccaoDispositivo());
-                System.out.println("Energia das Portas USB: " + conexaoUSB.getEnergiaPorta());
-                System.out.println("Hubs Conectados: " + conexaoUSB.getHubsConectados());
-                System.out.println("Dispositivo Conectado: " + conexaoUSB.getDispositivoConectado());
-                // Adicione mais informações da Conexão USB aqui, se necessário
-            } else {
-                System.out.println("Tipo de componente não reconhecido: " + hardware.getClass().getSimpleName());
+
+            switch (hardware) {
+                case CPU cpu -> monitoramentoDao.salvarComponenteCPU(maquina.getIdMaquina(), cpu);
+                case GPU gpu -> monitoramentoDao.salvarComponenteGPU(maquina.getIdMaquina(), gpu);
+                case HDD hdd -> monitoramentoDao.salvarComponenteHDD(maquina.getIdMaquina(), hdd);
+                case MemoriaRam memoriaRam -> monitoramentoDao.salvarComponenteMemoriaRAM(maquina.getIdMaquina(), memoriaRam);
+                case APP app -> monitoramentoDao.salvarComponenteApp(maquina.getIdMaquina(), app);
+                case ConexaoUSB conexaoUSB ->  monitoramentoDao.salvarComponenteConexaoUSB(maquina.getIdMaquina(), conexaoUSB);
+                case null, default -> System.out.println("Tipo de componente não reconhecido: " + hardware.getClass().getSimpleName());
             }
-            System.out.println("-----------------------------------");
         }
-        
         return mapaDeHardwaresDisponiveis = monitoramento.iniarMonitoramento(maquina, usuario);
+    }
+
+    public void exibirMonitoramento(Map<String, Object> mapaDeHardwaresDisponiveis){
+        for (Map.Entry<String, Object> entry : mapaDeHardwaresDisponiveis.entrySet()) {
+            System.out.println("Componente: " + entry.getKey());
+
+            Object hardware = entry.getValue();
+
+            switch (hardware) {
+                case CPU cpu:
+                    System.out.println("Modelo: " + cpu.getModelo());
+                    System.out.println("Número de Série: " + cpu.getNumeroSerie());
+                    System.out.println("Fabricante: " + cpu.getFabricante());
+                    System.out.println("Arquitetura: " + cpu.getArquitetura());
+                    System.out.println("Cache: " + cpu.getCache());
+                    System.out.println("Velocidade do CPU: " + cpu.getVelocidadeComponente());
+                    System.out.println("Temperatura do CPU: " + cpu.getTemperaturaComponente());
+                    break;
+                case GPU gpu:
+                    System.out.println("Modelo: " + gpu.getModelo());
+                    System.out.println("Memória: " + gpu.getMemoria());
+                    System.out.println("Utilização: " + gpu.getUtilizacao());
+                    System.out.println("Versão do Driver: " + gpu.getVersaoDriver());
+                    break;
+                case HDD hdd:
+                    System.out.println("Capacidade Total: " + hdd.getCapacidadeTotal());
+                    System.out.println("Número de Partições: " + hdd.getNumeroParticoes());
+                    System.out.println("Status de Saúde: " + hdd.getStatusSaude());
+                    break;
+                case MemoriaRam memoriaRam:
+                    System.out.println("Capacidade Total: " + memoriaRam.getCapacidadeTotal());
+                    System.out.println("Número de Módulos: " + memoriaRam.getNumeroModulo());
+                    System.out.println("Porcentagem Utilizada: " + memoriaRam.getPorcentagemUtilizada());
+                    break;
+                case APP app:
+                    System.out.println("Nome do App: " + app.getNomeApp());
+                    System.out.println("Data de Instalação: " + app.getDtInstalacao());
+                    System.out.println("Última Data de Instalação: " + app.getUltimaDtInstalacao());
+                    System.out.println("Tamanho do Aplicativo: " + app.getTamanhoAplicativo());
+                    break;
+                case ConexaoUSB conexaoUSB:
+                    System.out.println("Total de Portas: " + conexaoUSB.getTotalPortas());
+                    System.out.println("Tipo de Conector: " + conexaoUSB.getTipoConector());
+                    System.out.println("Detecção de Dispositivo: " + conexaoUSB.getDeteccaoDispositivo());
+                    System.out.println("Energia da Porta: " + conexaoUSB.getEnergiaPorta());
+                    System.out.println("Hubs Conectados: " + conexaoUSB.getHubsConectados());
+                    System.out.println("Dispositivo Conectado: " + conexaoUSB.getDispositivoConectado());
+                    break;
+                case null, default:
+                    System.out.println("Tipo de componente não reconhecido: " + hardware.getClass().getSimpleName());
+            }
+        }
     }
 
 }

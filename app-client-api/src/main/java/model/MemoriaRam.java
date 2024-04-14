@@ -1,5 +1,7 @@
 package model;
 
+import core.sistema.Conversor;
+
 import java.time.LocalDateTime;
 
 public class MemoriaRam {
@@ -8,19 +10,17 @@ public class MemoriaRam {
     private int numeroModulo;
     private double porcentagemUtilizada;
     private Maquina maquina;
-    private VelocidadeComponente velocidadeComponente;
-    private TemperaturaComponente temperaturaComponente;
+    private Double velocidadeComponente;
+    private Double temperaturaComponente;
 
     public MemoriaRam() {
     }
 
-    public MemoriaRam(double capacidadeTotal, int numeroModulo, double porcentagemUtilizada, Maquina maquina, VelocidadeComponente velocidadeComponente, TemperaturaComponente temperaturaComponente) {
+    public MemoriaRam(double capacidadeTotal, int numeroModulo, double porcentagemUtilizada, Maquina maquina) {
         this.capacidadeTotal = capacidadeTotal;
         this.numeroModulo = numeroModulo;
         this.porcentagemUtilizada = porcentagemUtilizada;
         this.maquina = maquina;
-        this.velocidadeComponente = velocidadeComponente;
-        this.temperaturaComponente = temperaturaComponente;
     }
 
     public int getIdMemoriaRAM() {
@@ -35,8 +35,8 @@ public class MemoriaRam {
         return capacidadeTotal;
     }
 
-    public void setCapacidadeTotal(double capacidadeTotal) {
-        this.capacidadeTotal = capacidadeTotal;
+    public void setCapacidadeTotal(long capacidadeTotal) {
+        this.capacidadeTotal = Conversor.converterParaGB(capacidadeTotal);
     }
 
     public int getNumeroModulo() {
@@ -63,19 +63,19 @@ public class MemoriaRam {
         this.maquina = maquina;
     }
 
-    public VelocidadeComponente getVelocidadeComponente() {
+    public Double getVelocidadeComponente() {
         return velocidadeComponente;
     }
 
-    public void setVelocidadeComponente(VelocidadeComponente velocidadeComponente) {
+    public void setVelocidadeComponente(Double velocidadeComponente) {
         this.velocidadeComponente = velocidadeComponente;
     }
 
-    public TemperaturaComponente getTemperaturaComponente() {
+    public Double getTemperaturaComponente() {
         return temperaturaComponente;
     }
 
-    public void setTemperaturaComponente(TemperaturaComponente temperaturaComponente) {
+    public void setTemperaturaComponente(Double temperaturaComponente) {
         this.temperaturaComponente = temperaturaComponente;
     }
 }

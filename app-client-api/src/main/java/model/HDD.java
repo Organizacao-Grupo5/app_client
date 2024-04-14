@@ -31,8 +31,8 @@ public class HDD {
         return capacidadeTotal;
     }
 
-    public void setCapacidadeTotal(double capacidadeTotal) {
-        this.capacidadeTotal = capacidadeTotal;
+    public void setCapacidadeTotal(long capacidadeTotal) {
+        this.capacidadeTotal = formatarBytes(capacidadeTotal);
     }
 
     public int getNumeroParticoes() {
@@ -57,5 +57,17 @@ public class HDD {
 
     public void setMaquina(Maquina maquina) {
         this.maquina = maquina;
+    }
+
+    private Double formatarBytes(long bytes) {
+        if (bytes < 1024) {
+            return Double.parseDouble(String.valueOf(bytes));
+        } else if (bytes < 1048576) {
+            return bytes / 1024.0;
+        } else if (bytes < 1073741824) {
+            return bytes / 1048576.0;
+        } else {
+            return bytes / 1073741824.0;
+        }
     }
 }
