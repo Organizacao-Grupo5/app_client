@@ -14,8 +14,9 @@ public class Seguranca {
     public Seguranca() {
         this.serviceUser = new ServiceUser();
     }
+
     public boolean autenticarUsuario(String email, String senha) throws AutenticationException {
-        if (StringUtils.isNullOrEmpty(email) || StringUtils.isNullOrEmpty(senha)){
+        if (StringUtils.isNullOrEmpty(email) || StringUtils.isNullOrEmpty(senha)) {
             throw new AutenticationException("Email e/ou senha não podem estar vazios!");
         } else {
             Optional<Usuario> usuario = serviceUser.autenticarUsuario(email, senha);

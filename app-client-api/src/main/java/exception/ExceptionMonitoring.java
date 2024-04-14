@@ -1,6 +1,6 @@
 package exception;
 
-public class ExceptionMonitoring extends Exception{
+public class ExceptionMonitoring extends Exception {
     public ExceptionMonitoring(String message) {
         super(message);
     }

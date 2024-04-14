@@ -3,7 +3,8 @@ package util;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.logging.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Connector {
     private static final Logger logger = Logger.getLogger(Connector.class.getName());

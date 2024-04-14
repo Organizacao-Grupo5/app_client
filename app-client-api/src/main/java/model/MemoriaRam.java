@@ -2,8 +2,6 @@ package model;
 
 import core.sistema.Conversor;
 
-import java.time.LocalDateTime;
-
 public class MemoriaRam {
     private int idMemoriaRAM;
     private double capacidadeTotal;
@@ -36,7 +34,7 @@ public class MemoriaRam {
     }
 
     public void setCapacidadeTotal(long capacidadeTotal) {
-        this.capacidadeTotal = Conversor.converterParaGB(capacidadeTotal);
+        this.capacidadeTotal = Conversor.converterCasasDecimais(Conversor.converterParaGB(capacidadeTotal), 2);
     }
 
     public int getNumeroModulo() {
@@ -52,7 +50,7 @@ public class MemoriaRam {
     }
 
     public void setPorcentagemUtilizada(double porcentagemUtilizada) {
-        this.porcentagemUtilizada = porcentagemUtilizada;
+        this.porcentagemUtilizada = Conversor.converterCasasDecimais(porcentagemUtilizada, 2);
     }
 
     public Maquina getMaquina() {

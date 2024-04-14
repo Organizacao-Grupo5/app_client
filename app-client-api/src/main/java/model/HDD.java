@@ -1,6 +1,8 @@
 package model;
 
-import java.time.LocalDateTime;
+import core.sistema.Conversor;
+
+import java.util.Set;
 
 public class HDD {
     private int idHDD;
@@ -23,7 +25,7 @@ public class HDD {
         return idHDD;
     }
 
-    public void setIdHDD(int idHDD) {
+    public void setIdHDD(Integer idHDD) {
         this.idHDD = idHDD;
     }
 
@@ -32,7 +34,7 @@ public class HDD {
     }
 
     public void setCapacidadeTotal(long capacidadeTotal) {
-        this.capacidadeTotal = formatarBytes(capacidadeTotal);
+        this.capacidadeTotal = Conversor.converterCasasDecimais(formatarBytes(capacidadeTotal), 2);
     }
 
     public int getNumeroParticoes() {

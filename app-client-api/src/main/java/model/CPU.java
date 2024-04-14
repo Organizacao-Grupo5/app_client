@@ -1,7 +1,5 @@
 package model;
 
-import java.time.LocalDateTime;
-
 public class CPU {
     private int idCPU;
     private String modelo;

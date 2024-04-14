@@ -1,21 +1,21 @@
 package service;
 
-import core.sistema.Monitoramento;
+import core.sistema.SaveMonitoramento;
 import dao.MonitoramentoDAO;
 import exception.ExceptionMonitoring;
 import model.*;
 
 import java.net.UnknownHostException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class ServiceMonitoring {
     private final MonitoramentoDAO monitoramentoDao;
-    private final Monitoramento monitoramento;
+    private final SaveMonitoramento monitoramento;
+
     public ServiceMonitoring() {
         this.monitoramentoDao = new MonitoramentoDAO();
-        this.monitoramento = new Monitoramento();
+        this.monitoramento = new SaveMonitoramento();
     }
 
     public Maquina verificaMaquinaUsuario(int idUser) throws ExceptionMonitoring {
@@ -44,74 +44,83 @@ public class ServiceMonitoring {
 
     public Map<String, Object> monitorar(Maquina maquina, Usuario usuario) throws ExceptionMonitoring {
         Map<String, Object> mapaDeHardwaresDisponiveis = monitoramento.iniarMonitoramento(maquina, usuario);
-        exibirMonitoramento(mapaDeHardwaresDisponiveis);
-        for (Map.Entry<String, Object> entry : mapaDeHardwaresDisponiveis.entrySet()) {
-            System.out.println("Componente: " + entry.getKey());
+        Map<String, Set<Integer>> mapaDeIds = monitoramentoDao.coletaIDComponente(mapaDeHardwaresDisponiveis, maquina.getIdMaquina());
+        adicionarIdsAosComponentesDoMap(mapaDeHardwaresDisponiveis, mapaDeIds);
 
+        List<HDD> listaDeHDD = monitoramento.inicializarHDD();
+        List<ConexaoUSB> listaDeUSB = monitoramento.inicializarConexaoUSB();
+        List<APP> listaDeAPP = monitoramento.inicializarAPP();
+        for (Map.Entry<String, Object> entry : mapaDeHardwaresDisponiveis.entrySet()) {
+            String chave = entry.getKey();
             Object hardware = entry.getValue();
 
-            switch (hardware) {
-                case CPU cpu -> monitoramentoDao.salvarComponenteCPU(maquina.getIdMaquina(), cpu);
-                case GPU gpu -> monitoramentoDao.salvarComponenteGPU(maquina.getIdMaquina(), gpu);
-                case HDD hdd -> monitoramentoDao.salvarComponenteHDD(maquina.getIdMaquina(), hdd);
-                case MemoriaRam memoriaRam -> monitoramentoDao.salvarComponenteMemoriaRAM(maquina.getIdMaquina(), memoriaRam);
-                case APP app -> monitoramentoDao.salvarComponenteApp(maquina.getIdMaquina(), app);
-                case ConexaoUSB conexaoUSB ->  monitoramentoDao.salvarComponenteConexaoUSB(maquina.getIdMaquina(), conexaoUSB);
-                case null, default -> System.out.println("Tipo de componente não reconhecido: " + hardware.getClass().getSimpleName());
+            if (chave.contains("CPU")) {
+                monitoramentoDao.salvarComponenteCPU(maquina.getIdMaquina(), (CPU) hardware);
+            } else if (chave.contains("GPU")) {
+                monitoramentoDao.salvarComponenteGPU(maquina.getIdMaquina(), (GPU) hardware);
+            } else if (chave.contains("RAM")) {
+                monitoramentoDao.salvarComponenteMemoriaRAM(maquina.getIdMaquina(), (MemoriaRam) hardware);
             }
         }
+
+        adicionaIdsAosComponentesDaLista(listaDeHDD, listaDeAPP, listaDeUSB, mapaDeIds);
+        for (HDD hdd : listaDeHDD) {
+            monitoramentoDao.salvarComponenteHDD(maquina.getIdMaquina(), hdd);
+        }
+/*
+        for (APP app : listaDeAPP) {
+            System.out.println(app.getIdApp());
+            monitoramentoDao.salvarComponenteApp(maquina.getIdMaquina(), app);
+        }
+ */
+        for (ConexaoUSB conexaoUSB : listaDeUSB) {
+            monitoramentoDao.salvarComponenteConexaoUSB(maquina.getIdMaquina(), conexaoUSB);
+        }
+        monitoramento.exibirMonitoramento();
         return mapaDeHardwaresDisponiveis = monitoramento.iniarMonitoramento(maquina, usuario);
     }
 
-    public void exibirMonitoramento(Map<String, Object> mapaDeHardwaresDisponiveis){
-        for (Map.Entry<String, Object> entry : mapaDeHardwaresDisponiveis.entrySet()) {
-            System.out.println("Componente: " + entry.getKey());
 
+    public void adicionarIdsAosComponentesDoMap(Map<String, Object> mapaDeHardwaresDisponiveis, Map<String, Set<Integer>> mapaDeIds) {
+        for (Map.Entry<String, Object> entry : mapaDeHardwaresDisponiveis.entrySet()) {
+            String tipoComponente = entry.getKey();
             Object hardware = entry.getValue();
 
-            switch (hardware) {
-                case CPU cpu:
-                    System.out.println("Modelo: " + cpu.getModelo());
-                    System.out.println("Número de Série: " + cpu.getNumeroSerie());
-                    System.out.println("Fabricante: " + cpu.getFabricante());
-                    System.out.println("Arquitetura: " + cpu.getArquitetura());
-                    System.out.println("Cache: " + cpu.getCache());
-                    System.out.println("Velocidade do CPU: " + cpu.getVelocidadeComponente());
-                    System.out.println("Temperatura do CPU: " + cpu.getTemperaturaComponente());
-                    break;
-                case GPU gpu:
-                    System.out.println("Modelo: " + gpu.getModelo());
-                    System.out.println("Memória: " + gpu.getMemoria());
-                    System.out.println("Utilização: " + gpu.getUtilizacao());
-                    System.out.println("Versão do Driver: " + gpu.getVersaoDriver());
-                    break;
-                case HDD hdd:
-                    System.out.println("Capacidade Total: " + hdd.getCapacidadeTotal());
-                    System.out.println("Número de Partições: " + hdd.getNumeroParticoes());
-                    System.out.println("Status de Saúde: " + hdd.getStatusSaude());
-                    break;
-                case MemoriaRam memoriaRam:
-                    System.out.println("Capacidade Total: " + memoriaRam.getCapacidadeTotal());
-                    System.out.println("Número de Módulos: " + memoriaRam.getNumeroModulo());
-                    System.out.println("Porcentagem Utilizada: " + memoriaRam.getPorcentagemUtilizada());
-                    break;
-                case APP app:
-                    System.out.println("Nome do App: " + app.getNomeApp());
-                    System.out.println("Data de Instalação: " + app.getDtInstalacao());
-                    System.out.println("Última Data de Instalação: " + app.getUltimaDtInstalacao());
-                    System.out.println("Tamanho do Aplicativo: " + app.getTamanhoAplicativo());
-                    break;
-                case ConexaoUSB conexaoUSB:
-                    System.out.println("Total de Portas: " + conexaoUSB.getTotalPortas());
-                    System.out.println("Tipo de Conector: " + conexaoUSB.getTipoConector());
-                    System.out.println("Detecção de Dispositivo: " + conexaoUSB.getDeteccaoDispositivo());
-                    System.out.println("Energia da Porta: " + conexaoUSB.getEnergiaPorta());
-                    System.out.println("Hubs Conectados: " + conexaoUSB.getHubsConectados());
-                    System.out.println("Dispositivo Conectado: " + conexaoUSB.getDispositivoConectado());
-                    break;
-                case null, default:
-                    System.out.println("Tipo de componente não reconhecido: " + hardware.getClass().getSimpleName());
+            Set<Integer> ids = mapaDeIds.get(tipoComponente);
+
+            if (ids != null && !ids.isEmpty()) {
+                int id = ids.iterator().next();
+
+                if (tipoComponente.contains("CPU")) {
+                    CPU cpu = (CPU) hardware;
+                    cpu.setIdCPU(id);
+                } else if (tipoComponente.contains("GPU")) {
+                    GPU gpu = (GPU) hardware;
+                    gpu.setIdGPU(id);
+                } else if (tipoComponente.contains("RAM")) {
+                    MemoriaRam memoriaRam = (MemoriaRam) hardware;
+                    memoriaRam.setIdMemoriaRAM(id);
+                }
+
+                ids.remove(id);
             }
+        }
+    }
+
+    public void adicionaIdsAosComponentesDaLista(List<HDD> listaHDD, List<APP> listaAPP, List<ConexaoUSB> listaUSB, Map<String, Set<Integer>> mapaDeIds) {
+        List<Integer> idsHDD = mapaDeIds.getOrDefault("HDD", Collections.emptySet()).stream().collect(Collectors.toList());
+        for (int i = 0; i < listaHDD.size() && i < idsHDD.size(); i++) {
+            listaHDD.get(i).setIdHDD(idsHDD.get(i));
+        }
+
+        List<Integer> idsAPP = mapaDeIds.getOrDefault("APP", Collections.emptySet()).stream().collect(Collectors.toList());
+        for (int i = 0; i < listaAPP.size() && i < idsAPP.size(); i++) {
+            listaAPP.get(i).setIdApp(idsAPP.get(i));
+        }
+
+        List<Integer> idsUSB = mapaDeIds.getOrDefault("CONEXAO USB", Collections.emptySet()).stream().collect(Collectors.toList());
+        for (int i = 0; i < listaUSB.size() && i < idsUSB.size(); i++) {
+            listaUSB.get(i).setIdConexaoUSB(idsUSB.get(i));
         }
     }
 

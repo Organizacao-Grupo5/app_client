@@ -1,7 +1,6 @@
 package model;
 
 import java.util.Date;
-import java.time.LocalDate;
 
 public class APP {
     private int idApp;

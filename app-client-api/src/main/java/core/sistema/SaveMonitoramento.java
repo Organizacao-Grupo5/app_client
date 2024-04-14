@@ -1,21 +1,20 @@
 package core.sistema;
-import oshi.SystemInfo;
-import oshi.hardware.HardwareAbstractionLayer;
-import oshi.hardware.Sensors;
+
 import com.github.britooo.looca.api.core.Looca;
 import exception.ExceptionMonitoring;
 import model.*;
+import oshi.SystemInfo;
 import oshi.hardware.*;
+import oshi.software.os.OSProcess;
+import oshi.software.os.OperatingSystem;
 import service.ServiceMonitoring;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.logging.Logger;
 
-public class Monitoramento {
+public class SaveMonitoramento {
     private static final Looca looca = new Looca();
 
     private static final SystemInfo SYSTEM_INFO = new SystemInfo();
@@ -24,7 +23,7 @@ public class Monitoramento {
 
     SystemInfo systemInfo = new SystemInfo();
 
-    private static final Logger LOGGER = Logger.getLogger(Monitoramento.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(SaveMonitoramento.class.getName());
 
     private static final ServiceMonitoring serviceMonitoring = new ServiceMonitoring();
 
@@ -42,23 +41,17 @@ public class Monitoramento {
         try {
             CPU cpu = this.inicializarCPU();
             GPU gpu = this.inicializarGPU();
-
-            // FALTA A LÓGICA PARA O CASO DE MAIS COMPONENTES DE HDD E SSD
-            HDD hdd = this.inicializarHDD();
             MemoriaRam memoriaRam = this.inicializarRAM();
-            APP app = this.inicializarAPP();
-            ConexaoUSB conexaoUSB = this.inicializarConexaoUSB();
 
             Map<String, Object> hardwares = new HashMap<>();
 
             hardwares.put("CPU", cpu);
             hardwares.put("GPU", gpu);
-            hardwares.put("HDD", hdd);
             hardwares.put("RAM", memoriaRam);
 
             return hardwares;
 
-        }catch (Exception e){
+        } catch (Exception e) {
             throw new ExceptionMonitoring("Houve um problema ao monitorar um dos componentes: " + e);
         }
     }
@@ -78,23 +71,37 @@ public class Monitoramento {
             cpu.setVelocidadeComponente(SENSORS.getCpuVoltage());
 
             return cpu;
-        } catch (Exception e){
+        } catch (Exception e) {
             throw new ExceptionMonitoring("Ocorreu um erro no monitoramento da CPU: " + e);
         }
     }
-    public HDD inicializarHDD() throws ExceptionMonitoring {
-        try {
-            HWDiskStore[] diskStores = HARDWARE.getDiskStores().toArray(new HWDiskStore[0]);
-            HDD hdd = new HDD();
-            hdd.setCapacidadeTotal(diskStores[0].getSize());
-            hdd.setNumeroParticoes(diskStores[0].getPartitions().size());
-            hdd.setStatusSaude(diskStores[0].getModel());
 
-            return hdd;
-        } catch (Exception e){
+    public List<HDD> inicializarHDD() throws ExceptionMonitoring {
+        HWDiskStore[] diskStores = HARDWARE.getDiskStores().toArray(new HWDiskStore[0]);
+        List<HDD> listaHDD = new ArrayList<>();
+
+        try {
+            for (int i = 0; i < diskStores.length; i++) {
+                HDD hdd = criarHDD(i);
+                listaHDD.add(hdd);
+            }
+
+            return listaHDD;
+        } catch (Exception e) {
             throw new ExceptionMonitoring("Ocorreu um erro no monitoramento da HDD: " + e);
         }
     }
+
+    public HDD criarHDD(Integer i) {
+        HWDiskStore[] diskStores = HARDWARE.getDiskStores().toArray(new HWDiskStore[0]);
+        HDD hdd = new HDD();
+        hdd.setCapacidadeTotal(diskStores[i].getSize());
+        hdd.setNumeroParticoes(diskStores[i].getPartitions().size());
+        hdd.setStatusSaude("A verificar");
+
+        return hdd;
+    }
+
     public GPU inicializarGPU() throws ExceptionMonitoring {
         try {
             GraphicsCard[] graphicsCards = HARDWARE.getGraphicsCards().toArray(new GraphicsCard[0]);
@@ -105,52 +112,82 @@ public class Monitoramento {
             gpu.setVersaoDriver(graphicsCards[0].getVendor());
 
             return gpu;
-        } catch (Exception e){
+        } catch (Exception e) {
             throw new ExceptionMonitoring("Ocorreu um erro no monitoramento da GPU: " + e);
         }
     }
+
     public MemoriaRam inicializarRAM() throws ExceptionMonitoring {
         try {
             GlobalMemory memory = HARDWARE.getMemory();
             MemoriaRam memoriaRAM = new MemoriaRam();
             memoriaRAM.setCapacidadeTotal(memory.getTotal());
             memoriaRAM.setNumeroModulo(memory.getPhysicalMemory().size());
-            memoriaRAM.setPorcentagemUtilizada(memory.getAvailable() / (double) memory.getTotal());
+            memoriaRAM.setPorcentagemUtilizada(((memory.getTotal() - memory.getAvailable()) / (double) memory.getTotal()) * 100);
             return memoriaRAM;
-        } catch (Exception e){
+        } catch (Exception e) {
             throw new ExceptionMonitoring("Ocorreu um erro no monitoramento da Memória RAM: " + e);
         }
     }
 
-    // Verificar como coletar ainda
-    public ConexaoUSB inicializarConexaoUSB() throws ExceptionMonitoring {
+    public List<ConexaoUSB> inicializarConexaoUSB() throws ExceptionMonitoring {
+        List<ConexaoUSB> listaUSB = new ArrayList<>();
         try {
-            ConexaoUSB conexaoUSB = new ConexaoUSB();
-            conexaoUSB.setTotalPortas(4);
-            conexaoUSB.setTipoConector("Tipo padrão");
-            conexaoUSB.setDeteccaoDispositivo("Detecção padrão");
-            conexaoUSB.setEnergiaPorta("Energia padrão");
-            conexaoUSB.setHubsConectados("Hubs padrão");
-            conexaoUSB.setDispositivoConectado("Dispositivo padrão");
-
-            return conexaoUSB;
-        } catch (Exception e){
+            for (int i = 0; i < HARDWARE.getUsbDevices(true).size(); i++) {
+                listaUSB.add(criarConexao(i, true));
+            }
+            for (int i = 0; i < HARDWARE.getUsbDevices(false).size(); i++) {
+                listaUSB.add(criarConexao(i, false));
+            }
+        } catch (Exception e) {
             throw new ExceptionMonitoring("Ocorreu um erro no monitoramento da Conexão USB: " + e);
         }
+        return listaUSB;
     }
 
-    // Verificar como coletar ainda
-    public APP inicializarAPP() throws ExceptionMonitoring {
-        try {
-            APP app = new APP();
-            app.setNomeApp("App padrão");
-            app.setDtInstalacao(new Date());
-            app.setUltimaDtInstalacao(new Date());
-            app.setTamanhoAplicativo("Tamanho padrão");
+    public ConexaoUSB criarConexao(Integer i, boolean status) {
+        ConexaoUSB conexaoUSB = new ConexaoUSB();
+        conexaoUSB.setTotalPortas(HARDWARE.getUsbDevices(true).size() + HARDWARE.getUsbDevices(false).size());
+        conexaoUSB.setTipoConector("Tipo padrão");
+        conexaoUSB.setDeteccaoDispositivo("Detecção padrão");
+        conexaoUSB.setEnergiaPorta("Energia");
+        conexaoUSB.setHubsConectados("Hubs padrão");
+        conexaoUSB.setDispositivoConectado(HARDWARE.getUsbDevices(status).get(i).getName());
 
-            return app;
-        } catch (Exception e){
+        return conexaoUSB;
+    }
+
+    public List<APP> inicializarAPP() throws ExceptionMonitoring {
+        List<APP> listaAPPs = new ArrayList<>();
+        try {
+            OperatingSystem operatingSystem = systemInfo.getOperatingSystem();
+            List<OSProcess> processes = operatingSystem.getProcesses();
+            for (OSProcess process : processes) {
+                listaAPPs.add(criarAPP(process));
+            }
+        } catch (Exception e) {
             throw new ExceptionMonitoring("Ocorreu um erro no monitoramento do APP: " + e);
         }
+        return listaAPPs;
+    }
+
+    //Analise ainda
+    public APP criarAPP(OSProcess process){
+
+        APP app = new APP();
+        app.setNomeApp(process.getName());
+        app.setDtInstalacao(null);
+        app.setUltimaDtInstalacao(new Date());
+        app.setTamanhoAplicativo("Tamanho padrão");
+
+        return app;
+    }
+
+    public void exibirMonitoramento() {
+        System.out.println("""
+                CPU
+                
+                
+                """);
     }
 }

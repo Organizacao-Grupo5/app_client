@@ -2,8 +2,6 @@ package model;
 
 import core.sistema.Conversor;
 
-import java.time.LocalDateTime;
-
 public class GPU {
     private int idGPU;
     private String modelo;
