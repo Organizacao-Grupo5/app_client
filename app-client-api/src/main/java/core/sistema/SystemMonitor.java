@@ -1,231 +1,147 @@
 package core.sistema;
 
 import com.github.britooo.looca.api.core.Looca;
+import com.github.britooo.looca.api.group.discos.Disco;
+import com.github.britooo.looca.api.group.dispositivos.DispositivoUsb;
+import com.github.britooo.looca.api.group.memoria.Memoria;
+import com.github.britooo.looca.api.group.processador.Processador;
+import com.github.britooo.looca.api.group.sistema.Sistema;
+import com.github.britooo.looca.api.group.temperatura.Temperatura;
+import model.*;
 import oshi.SystemInfo;
 import oshi.hardware.*;
-import oshi.software.os.OSProcess;
-import oshi.software.os.OperatingSystem;
-import oshi.util.FormatUtil;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
 public class SystemMonitor {
 
+    private Looca looca;
+    private Conversor conversor;
     private SystemInfo systemInfo;
     private HardwareAbstractionLayer hardware;
-    private Looca looca;
-    private OperatingSystem os;
 
     public SystemMonitor() {
+        looca = new Looca();
         systemInfo = new SystemInfo();
         hardware = systemInfo.getHardware();
-        os = systemInfo.getOperatingSystem();
-        looca = new Looca();
     }
 
-    public void monitorarCPU() {
-        CentralProcessor processor = hardware.getProcessor();
-        System.out.println("Monitoramento da CPU:");
-        System.out.println("    - Identificador do Processador: " + processor.getProcessorIdentifier().getName());
-        System.out.println("    - Cache do Processador: " + processor.getProcessorIdentifier().getProcessorID());
-        System.out.println("    - Trocas de Contexto: " + processor.getContextSwitches());
-        System.out.println("    - Interrupções: " + processor.getInterrupts());
-        System.out.println("    - Frequência Máxima: " + String.format("%.2f GHz", (double) processor.getMaxFreq() / 1e9));
-        System.out.println("    - Quantidade de Threads: " + processor.getLogicalProcessorCount());
-        System.out.println("    - Quantidade de Núcleos Físicos: " + processor.getPhysicalProcessorCount());
-        System.out.println("    - Quantidade de Pacotes Físicos: " + processor.getPhysicalPackageCount());
-        System.out.println("______________________________________________________________________________________");
+    public CPU monitorarCPU() {
+        Processador processador = looca.getProcessador();
+        Temperatura temperatura = looca.getTemperatura();
+        CPU cpu = new CPU();
+
+        processador.getNumeroCpusFisicas();
+        processador.getNumeroCpusLogicas();
+        processador.getMicroarquitetura();
+        processador.getIdentificador();
+        processador.getId();
+        processador.getFabricante();
+        processador.getFrequencia();
+        processador.getNumeroPacotesFisicos();
+        processador.getUso();
+        processador.getNome();
+        temperatura.getTemperatura();
+
+        return cpu;
     }
 
-    public void monitorarGPU() {
+    public List<GPU> monitorarGPU() {
+        List<GPU> listaGpu = new ArrayList<>();
         List<GraphicsCard> graphicsCards = hardware.getGraphicsCards();
         for (int i = 0; i < graphicsCards.size(); i++) {
-            System.out.println("Monitoramento da GPU:");
-            GraphicsCard gpu = graphicsCards.get(i);
-            System.out.println("Informações da GPU " + (i + 1) + ":");
-            System.out.println("  - Versão da GPU: " + gpu.getVersionInfo());
-            System.out.println("  - ID do Dispositivo GPU: " + gpu.getDeviceId());
-            System.out.println("  - Nome da GPU: " + gpu.getName());
-            System.out.println("  - Fabricante da GPU: " + gpu.getVendor());
-            System.out.println("  - VRAM da GPU: " + formatBytes(gpu.getVRam()));
-            System.out.println("______________________________________________________________________________________");
+
+            GraphicsCard graphicCard = graphicsCards.get(i);
+            GPU gpu = new GPU();
+
+            gpu.setNome(graphicCard.getName());
+            gpu.setvRam(conversor.formatarBytes(graphicCard.getVRam()));
+            gpu.setIdDevice(graphicCard.getDeviceId());
+            gpu.setVersao(graphicCard.getVersionInfo());
+            gpu.setFabricante(graphicCard.getVendor());
+            listaGpu.add(gpu);
         }
+        return listaGpu;
     }
 
-    private String formatBytes(long bytes) {
-        String[] units = {"B", "KB", "MB", "GB", "TB"};
-        int unitIndex = 0;
-        double size = bytes;
-        while (size >= 1024 && unitIndex < units.length - 1) {
-            size /= 1024;
-            unitIndex++;
+    public MemoriaRam monitorarRAM() {
+        Memoria memoria = looca.getMemoria();
+        MemoriaRam memoriaRam = new MemoriaRam();
+
+        memoriaRam.setMemoriaDisponivel(conversor.formatarBytes(memoria.getDisponivel()));
+        memoriaRam.setMemoriaTotal(conversor.formatarBytes(memoria.getTotal()));
+        memoriaRam.setMemoriaEmUso(conversor.formatarBytes(memoria.getEmUso()));
+
+        return memoriaRam;
+    }
+
+    public List<HDD> monitorarHDD() {
+        List<Disco> diskStores = looca.getGrupoDeDiscos().getDiscos();
+        List<HDD> listaHDD = new ArrayList<>();
+
+        for (Disco disco : diskStores) {
+            HDD hdd = new HDD();
+
+            hdd.setNome(disco.getNome());
+            hdd.setSerial(disco.getSerial());
+            hdd.setModelo(disco.getModelo());
+            hdd.setEscritas(disco.getEscritas());
+            hdd.setLeituras(disco.getLeituras());
+            hdd.setBytesDeEscrita(conversor.formatarBytes(disco.getBytesDeEscritas()));
+            hdd.setBytesDeLeitura(conversor.formatarBytes(disco.getBytesDeLeitura()));
+            hdd.setTamanho(conversor.converterCasasDecimais(conversor.formatarBytes(disco.getTamanho()), 2));
+            hdd.setTamanhoAtualDaFita(conversor.converterCasasDecimais(conversor.formatarBytes(disco.getTamanhoAtualDaFila()), 2));
+            hdd.setTempoDeTransferencia(conversor.converterSegundosParaHoras(disco.getTempoDeTransferencia()));
+
+            listaHDD.add(hdd);
         }
-        return String.format("%.2f %s", size, units[unitIndex]);
+        return listaHDD;
     }
 
-    public void monitorarRAM() {
-        GlobalMemory memory = hardware.getMemory();
-        System.out.println("Monitoramento da RAM:");
-        System.out.println("    - RAM disponível: " + FormatUtil.formatBytes(memory.getAvailable()));
-        memory.getPhysicalMemory().forEach(e -> {
-            System.out.println("Memória física: " + FormatUtil.formatBytes(e.getCapacity()));
-        });
-        System.out.println("    - RAM Total: " + FormatUtil.formatBytes(memory.getTotal()));
-        System.out.println("    - Tamanho total dos processos em execução: " + FormatUtil.formatBytes(memory.getTotal() - memory.getAvailable()));
-        System.out.println("    - Tamanho da página: " + FormatUtil.formatBytes(memory.getPageSize()));
-        System.out.println("    - Memória virtual: " + FormatUtil.formatBytes(memory.getVirtualMemory().getVirtualMax()));
-        System.out.println("______________________________________________________________________________________");
-    }
+    public List<ConexaoUSB> monitorarUSB() {
+        List<DispositivoUsb> listaUSB = looca.getDispositivosUsbGrupo().getDispositivosUsbConectados();
+        List<ConexaoUSB> listaUSBs = new ArrayList<>();
 
-    public void monitorarHDD() {
-        List<HWDiskStore> diskStores = hardware.getDiskStores();
-        System.out.println("Monitoramento do HDD:");
-        for (HWDiskStore disk : diskStores) {
-            System.out.println("    - Nome HDD: " + disk.getName());
-            System.out.println("    - Modelo HDD: " + disk.getModel());
-            System.out.println("    - Serial HDD: " + disk.getSerial());
-            disk.getPartitions().forEach(e -> {
-                System.out.println("    - Nome da Partição: " + e.getName());
-                System.out.println("        - Identificador da Partição: " + e.getIdentification());
-                System.out.println("        - Tipo da Partição: " + e.getType());
-                System.out.println("        - UUID da Partição: " + e.getUuid());
-                System.out.println("        - Tamanho da Partição: " + FormatUtil.formatBytes(e.getSize()));
-            });
-            System.out.println("    - Tamanho HDD: " + FormatUtil.formatBytes(disk.getSize()));
-            System.out.println("    - Tamanho da fila atual do HDD: " + disk.getCurrentQueueLength());
-            System.out.println("    - Bytes lidos do HDD: " + FormatUtil.formatBytes(disk.getReadBytes()));
-            System.out.println("    - Leituras do HDD: " + disk.getReads());
-            System.out.println("    - Timestamp do HDD: " + disk.getTimeStamp());
-            System.out.println("    - Tempo de transferência do HDD: " + disk.getTransferTime());
-            System.out.println("    - Escritas do HDD: " + disk.getWrites());
-            System.out.println("______________________________________________________________________________________");
+        for (DispositivoUsb dispositivoUsb : listaUSB){
+            ConexaoUSB usb = new ConexaoUSB();
+
+            usb.setNomeUsb(dispositivoUsb.getNome());
+            usb.setFornecedor(dispositivoUsb.getForncecedor());
+            usb.setIdDispositivoUSBExclusivo(dispositivoUsb.getIdDispositivoUsbExclusivo());
+            usb.setIdFornecedor(dispositivoUsb.getIdFornecedor());
+            usb.setNumeroSerie(dispositivoUsb.getNumeroDeSerie());
+            usb.setIdProduto(dispositivoUsb.getIdProduto());
+
+            listaUSBs.add(usb);
         }
-    }
-
-    public void monitorarUSB() {
-        List<UsbDevice> listaUsbTrue = hardware.getUsbDevices(true);
-        listaUsbTrue.forEach(e -> {
-            System.out.println("Monitoramento das entradas USB:");
-            System.out.println("    - Entrada USB Nome: " + e.getName());
-            System.out.println("    - Entrada USB Vendor ID: " + e.getVendorId());
-            System.out.println("    - Entrada USB Vendor: " + e.getVendor());
-            System.out.println("    - Entrada USB Product ID: " + e.getProductId());
-            System.out.println("    - Entrada USB Serial Number: " + e.getSerialNumber());
-            System.out.println("    - Entrada USB Unique Id Device: " + e.getUniqueDeviceId());
-            e.getConnectedDevices().forEach(f -> {
-                System.out.println("    - Dispositivos conectados:");
-                System.out.println("        - Dispositivos USB Nome: " + f.getName());
-                System.out.println("        - Dispositivos USB Vendor ID: " + f.getVendorId());
-                System.out.println("        - Dispositivos USB Vendor: " + f.getVendor());
-                System.out.println("        - Dispositivos USB Product ID: " + f.getProductId());
-                System.out.println("        - Dispositivos USB Serial Number: " + f.getSerialNumber());
-                System.out.println("        - Dispositivos USB Unique Id Device: " + f.getUniqueDeviceId());
-            });
-            System.out.println("______________________________________________________________________________________");
-        });
+        return listaUSBs;
     }
 
     public void monitorarBateria() {
-        List<PowerSource> listaBateria = hardware.getPowerSources();
-        listaBateria.forEach(e -> {
-            System.out.println("Monitoramento de bateria:");
-            System.out.println("    - Nome bateria: " + e.getName());
-            System.out.println("    - Química da bateria: " + e.getChemistry());
-            System.out.println("    - Número serial da bateria: " + e.getSerialNumber());
-            System.out.println("    - Nome do dispositivo: " + e.getDeviceName());
-            System.out.println("    - Amperagem: " + e.getAmperage() + " mA");
-            System.out.println("    - Unidade de capacidade: " + e.getCapacityUnits());
-        });
-        System.out.println("______________________________________________________________________________________");
+
     }
 
     public void monitorarDisplay() {
-        List<Display> listaDisplay = hardware.getDisplays();
-        listaDisplay.forEach(e -> {
-            System.out.println("Monitoramento do Display:");
-            System.out.println("    - Display Edid: " + e.getEdid());
-        });
-        System.out.println("______________________________________________________________________________________");
+
     }
 
     public void monitorarVolumeLogico() {
-        List<LogicalVolumeGroup> listaVolumesLogicos = hardware.getLogicalVolumeGroups();
-        listaVolumesLogicos.forEach(e -> {
-            System.out.println("Monitoramento do Volume Lógico:");
-            System.out.println("    - Nome grupo volume Lógico: " + e.getName());
-            e.getPhysicalVolumes().forEach(f -> {
-                System.out.println("        - Volume físico: " + f);
-            });
-        });
-        System.out.println("______________________________________________________________________________________");
+
     }
 
-    public void monitorarSensores() {
-        Sensors sensor = hardware.getSensors();
-        System.out.println("Monitoramento do Sensor:");
-        System.out.println("    - Temperatura CPU: " + sensor.getCpuTemperature() + " °C");
-        System.out.println("    - Voltagem CPU: " + sensor.getCpuVoltage() + " V");
-        System.out.println("    - Fan Speed CPU: " + sensor.getFanSpeeds() + " RPM");
-        System.out.println("______________________________________________________________________________________");
-    }
+    public SistemaOp monitorarSistemaOperacional(){
+        Sistema sistema = looca.getSistema();
+        SistemaOp sistemaOp = new SistemaOp();
 
-    public void monitorarSoundCard() {
-        List<SoundCard> soundCards = hardware.getSoundCards();
-        soundCards.forEach(e -> {
-            System.out.println("Monitoramento Sound Card:");
-            System.out.println("    - Nome Sound Card: " + e.getName());
-            System.out.println("    - Codec Sound Card: " + e.getCodec());
-            System.out.println("    - Driver Version Sound Card: " + e.getDriverVersion());
-        });
-        System.out.println("______________________________________________________________________________________");
-    }
+        sistema.getSistemaOperacional();
+        sistema.getFabricante();
+        sistema.getArquitetura();
+        sistema.getInicializado();
+        sistema.getPermissao();
+        conversor.converterSegundosParaHoras(sistema.getTempoDeAtividade());
 
-    public void monitorarSistemaOperacional() {
-        OperatingSystem sistemaOperacional = systemInfo.getOperatingSystem();
-        System.out.println("Monitoramento do Sistema Operacional:");
-        System.out.println("    - Família do Sistema Operacional: " + sistemaOperacional.getFamily());
-        System.out.println("    - Fabricante do Sistema Operacional: " + sistemaOperacional.getManufacturer());
-        System.out.println("    - Arquitetura do Sistema Operacional: " + sistemaOperacional.getBitness());
-        System.out.println("    - Sistema de Arquivos do Sistema Operacional: " + sistemaOperacional.getFileSystem());
-        System.out.println("    - Tempo de atividade do Sistema Operacional: " + FormatUtil.formatElapsedSecs(sistemaOperacional.getSystemUptime()));
-        System.out.println("    - Processo atual do Sistema Operacional: " + sistemaOperacional.getCurrentProcess());
-        System.out.println("    - Thread atual do Sistema Operacional: " + sistemaOperacional.getCurrentThread());
-        System.out.println("    - Status de protocolo de Internet do Sistema Operacional: " + sistemaOperacional.getInternetProtocolStats());
-        sistemaOperacional.getDesktopWindows(true).forEach(e -> {
-            System.out.println("    - Janelas do Desktop: ");
-            System.out.println("        - Título da janela: " + e.getTitle());
-            System.out.println("        - Comando da janela: " + e.getCommand());
-            System.out.println("        - Ordem da janela: " + e.getOrder());
-            System.out.println("        - ID da janela: " + e.getWindowId());
-            System.out.println("        - Localização e tamanho da janela: " + e.getLocAndSize());
-            System.out.println("        - ID do processo proprietário da janela: " + e.getOwningProcessId());
-        });
-        System.out.println("______________________________________________________________________________________");
+        return sistemaOp;
     }
-
-    public void monitorarRede() {
-        List<NetworkIF> networkIFs = hardware.getNetworkIFs();
-        System.out.println("Monitoramento da Rede:");
-        for (NetworkIF net : networkIFs) {
-            System.out.println("    - Interface de Rede: " + net.getDisplayName());
-            System.out.println("        - Endereço IP: " + net.getIPv4addr());
-            System.out.println("        - Endereço MAC: " + net.getMacaddr());
-            System.out.println("        - Bytes Recebidos: " + FormatUtil.formatBytes(net.getBytesRecv()));
-            System.out.println("        - Bytes Enviados: " + FormatUtil.formatBytes(net.getBytesSent()));
-            System.out.println("        - Velocidade de Transmissão: " + FormatUtil.formatValue(net.getSpeed(), "bps"));
-            System.out.println("______________________________________________________________________________________");
-        }
-    }
-
-    public void monitorarProcessos() {
-        List<OSProcess> processes = os.getProcesses();
-        System.out.println("Monitoramento de Processos em Execução:");
-        for (OSProcess process : processes) {
-            System.out.println("    - PID: " + process.getProcessID() + ", Nome: " + process.getName() +
-                    ", CPU: " + String.format("%.2f", 100d * (process.getKernelTime() + process.getUserTime()) / process.getUpTime()) + "%");
-        }
-        System.out.println("______________________________________________________________________________________");
-    }
-
 }

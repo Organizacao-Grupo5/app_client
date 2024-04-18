@@ -12,10 +12,9 @@ import java.util.Scanner;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Logger;
+import util.logs.*;
 
 public class Main {
-    private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
     private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
     private static final Login login = new Login();
     private static final ServiceMonitoring serviceMonitoring = new ServiceMonitoring();
@@ -50,18 +49,6 @@ public class Main {
                         Vamos verificar as permissões da sua máquina...
                         """.formatted(usuarioLogado.getNome(), usuarioLogado.getEmail()));
 
-                Maquina maquina = serviceMonitoring.verificaMaquinaUsuario(usuarioLogado.getIdUsuario());
-                if (maquina != null) {
-                    System.out.println("Sua máquina foi verificada com sucesso:");
-                    System.out.println("ID: "+ maquina.getIdMaquina());
-                    System.out.println("IPv4: " + maquina.getIpv4());
-                    System.out.println("""
-                            Iniciando o monitoramento dos hardwares:
-                            """);
-                    iniciarMonitoramento(maquina, usuarioLogado);
-                } else {
-                    System.out.println("Sua máquina não foi verificada. Ela não está autorizado a usar o aplicativo.");
-                }
             } else {
                 System.out.println("""
                                                 
@@ -70,7 +57,7 @@ public class Main {
                         """);
             }
         } catch (AutenticationException e) {
-            System.out.println("Erro ao fazer login: " + e.getMessage());
+            Logger.logError("Erro ao fazer login: ", e.getMessage(), e);
         } catch (Exception e) {
             System.out.println("Ocorreu um erro inesperado: " + e.getMessage());
             e.printStackTrace();
@@ -81,30 +68,14 @@ public class Main {
 
     public static void iniciarMonitoramento(Maquina maquina, Usuario usuario) {
         try {
-            ServiceMonitoring serviceMonitoring = new ServiceMonitoring();
-            scheduler.scheduleAtFixedRate(() -> {
-                try {
-                    Map<String, Object> hardwares = serviceMonitoring.monitorar(maquina, usuario);
-                } catch (ExceptionMonitoring e) {
-                    throw new RuntimeException(e);
-                }
-                    limparConsole();
-                }, 0, 5, TimeUnit.SECONDS);
 
         } catch (Exception e) {
-            System.out.println("Erro ao monitorar: " + e);
+            Logger.logError("Erro : ", e.getMessage(), e);
         }
     }
 
     public static void limparConsole() {
-        try {
-            if (System.getProperty("os.name").contains("Windows"))
-                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-            else
-                new ProcessBuilder("bash", "-c", "clear").inheritIO().start().waitFor();
-        } catch (IOException | InterruptedException e) {
-            System.out.println(" Erro ao limpar o console: " + e);
-        }
+
     }
 
 }

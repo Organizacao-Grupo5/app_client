@@ -1,26 +1,28 @@
 package model;
 
+import java.util.List;
+
 public class ConexaoUSB {
     private int idConexaoUSB;
-    private int totalPortas;
-    private String tipoConector;
-    private String deteccaoDispositivo;
-    private String energiaPorta;
-    private String hubsConectados;
-    private String dispositivoConectado;
-    private Maquina maquina;
+
+    private String nomeUsb;
+    private String fornecedor;
+    private String idDispositivoUSBExclusivo;
+    private String idFornecedor;
+    private String numeroSerie;
+    private String idProduto;
 
     public ConexaoUSB() {
     }
 
-    public ConexaoUSB(int totalPortas, String tipoConector, String deteccaoDispositivo, String energiaPorta, String hubsConectados, String dispositivoConectado, Maquina maquina) {
-        this.totalPortas = totalPortas;
-        this.tipoConector = tipoConector;
-        this.deteccaoDispositivo = deteccaoDispositivo;
-        this.energiaPorta = energiaPorta;
-        this.hubsConectados = hubsConectados;
-        this.dispositivoConectado = dispositivoConectado;
-        this.maquina = maquina;
+    public ConexaoUSB(int idConexaoUSB, String nomeUsb, String fornecedor, String idDispositivoUSBExclusivo, String idFornecedor, String numeroSerie, String idProduto) {
+        this.idConexaoUSB = idConexaoUSB;
+        this.nomeUsb = nomeUsb;
+        this.fornecedor = fornecedor;
+        this.idDispositivoUSBExclusivo = idDispositivoUSBExclusivo;
+        this.idFornecedor = idFornecedor;
+        this.numeroSerie = numeroSerie;
+        this.idProduto = idProduto;
     }
 
     public int getIdConexaoUSB() {
@@ -31,59 +33,51 @@ public class ConexaoUSB {
         this.idConexaoUSB = idConexaoUSB;
     }
 
-    public int getTotalPortas() {
-        return totalPortas;
+    public String getNomeUsb() {
+        return nomeUsb;
     }
 
-    public void setTotalPortas(int totalPortas) {
-        this.totalPortas = totalPortas;
+    public void setNomeUsb(String nomeUsb) {
+        this.nomeUsb = nomeUsb;
     }
 
-    public String getTipoConector() {
-        return tipoConector;
+    public String getFornecedor() {
+        return fornecedor;
     }
 
-    public void setTipoConector(String tipoConector) {
-        this.tipoConector = tipoConector;
+    public void setFornecedor(String fornecedor) {
+        this.fornecedor = fornecedor;
     }
 
-    public String getDeteccaoDispositivo() {
-        return deteccaoDispositivo;
+    public String getIdDispositivoUSBExclusivo() {
+        return idDispositivoUSBExclusivo;
     }
 
-    public void setDeteccaoDispositivo(String deteccaoDispositivo) {
-        this.deteccaoDispositivo = deteccaoDispositivo;
+    public void setIdDispositivoUSBExclusivo(String idDispositivoUSBExclusivo) {
+        this.idDispositivoUSBExclusivo = idDispositivoUSBExclusivo;
     }
 
-    public String getEnergiaPorta() {
-        return energiaPorta;
+    public String getIdFornecedor() {
+        return idFornecedor;
     }
 
-    public void setEnergiaPorta(String energiaPorta) {
-        this.energiaPorta = energiaPorta;
+    public void setIdFornecedor(String idFornecedor) {
+        this.idFornecedor = idFornecedor;
     }
 
-    public String getHubsConectados() {
-        return hubsConectados;
+    public String getNumeroSerie() {
+        return numeroSerie;
     }
 
-    public void setHubsConectados(String hubsConectados) {
-        this.hubsConectados = hubsConectados;
+    public void setNumeroSerie(String numeroSerie) {
+        this.numeroSerie = numeroSerie;
     }
 
-    public String getDispositivoConectado() {
-        return dispositivoConectado;
+    public String getIdProduto() {
+        return idProduto;
     }
 
-    public void setDispositivoConectado(String dispositivoConectado) {
-        this.dispositivoConectado = dispositivoConectado;
-    }
-
-    public Maquina getMaquina() {
-        return maquina;
-    }
-
-    public void setMaquina(Maquina maquina) {
-        this.maquina = maquina;
+    public void setIdProduto(String idProduto) {
+        this.idProduto = idProduto;
     }
 }

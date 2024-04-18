@@ -3,6 +3,7 @@ package core.auth;
 import exception.AutenticationException;
 import model.Usuario;
 import service.ServiceUser;
+import util.logs.Logger;
 
 public class Login {
     private Seguranca seguranca;
@@ -20,7 +21,7 @@ public class Login {
                 return usuario;
             }
         } catch (AutenticationException e) {
-            System.out.println("Erro ao fazer login: " + e.getMessage());
+            Logger.logError("Erro ao autenticar o usuário: ", e.getMessage(), e);
         }
         return null;
     }

@@ -4,21 +4,18 @@ import core.sistema.Conversor;
 
 public class MemoriaRam {
     private int idMemoriaRAM;
-    private double capacidadeTotal;
-    private int numeroModulo;
-    private double porcentagemUtilizada;
-    private Maquina maquina;
-    private Double velocidadeComponente;
-    private Double temperaturaComponente;
+    private Double memoriaDisponivel;
+    private Double memoriaEmUso;
+    private Double memoriaTotal;
 
     public MemoriaRam() {
     }
 
-    public MemoriaRam(double capacidadeTotal, int numeroModulo, double porcentagemUtilizada, Maquina maquina) {
-        this.capacidadeTotal = capacidadeTotal;
-        this.numeroModulo = numeroModulo;
-        this.porcentagemUtilizada = porcentagemUtilizada;
-        this.maquina = maquina;
+    public MemoriaRam(int idMemoriaRAM, Double memoriaDisponivel, Double memoriaEmUso, Double memoriaTotal) {
+        this.idMemoriaRAM = idMemoriaRAM;
+        this.memoriaDisponivel = memoriaDisponivel;
+        this.memoriaEmUso = memoriaEmUso;
+        this.memoriaTotal = memoriaTotal;
     }
 
     public int getIdMemoriaRAM() {
@@ -29,51 +26,27 @@ public class MemoriaRam {
         this.idMemoriaRAM = idMemoriaRAM;
     }
 
-    public double getCapacidadeTotal() {
-        return capacidadeTotal;
+    public Double getMemoriaDisponivel() {
+        return memoriaDisponivel;
     }
 
-    public void setCapacidadeTotal(long capacidadeTotal) {
-        this.capacidadeTotal = Conversor.converterCasasDecimais(Conversor.converterParaGB(capacidadeTotal), 2);
+    public void setMemoriaDisponivel(Double memoriaDisponivel) {
+        this.memoriaDisponivel = memoriaDisponivel;
     }
 
-    public int getNumeroModulo() {
-        return numeroModulo;
+    public Double getMemoriaEmUso() {
+        return memoriaEmUso;
     }
 
-    public void setNumeroModulo(int numeroModulo) {
-        this.numeroModulo = numeroModulo;
+    public void setMemoriaEmUso(Double memoriaEmUso) {
+        this.memoriaEmUso = memoriaEmUso;
     }
 
-    public double getPorcentagemUtilizada() {
-        return porcentagemUtilizada;
+    public Double getMemoriaTotal() {
+        return memoriaTotal;
     }
 
-    public void setPorcentagemUtilizada(double porcentagemUtilizada) {
-        this.porcentagemUtilizada = Conversor.converterCasasDecimais(porcentagemUtilizada, 2);
-    }
-
-    public Maquina getMaquina() {
-        return maquina;
-    }
-
-    public void setMaquina(Maquina maquina) {
-        this.maquina = maquina;
-    }
-
-    public Double getVelocidadeComponente() {
-        return velocidadeComponente;
-    }
-
-    public void setVelocidadeComponente(Double velocidadeComponente) {
-        this.velocidadeComponente = velocidadeComponente;
-    }
-
-    public Double getTemperaturaComponente() {
-        return temperaturaComponente;
-    }
-
-    public void setTemperaturaComponente(Double temperaturaComponente) {
-        this.temperaturaComponente = temperaturaComponente;
+    public void setMemoriaTotal(Double memoriaTotal) {
+        this.memoriaTotal = memoriaTotal;
     }
 }

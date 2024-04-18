@@ -5,71 +5,120 @@ import core.sistema.Conversor;
 import java.util.Set;
 
 public class HDD {
-    private int idHDD;
-    private double capacidadeTotal;
-    private int numeroParticoes;
-    private String statusSaude;
-    private Maquina maquina;
+    private Integer idHDD;
+    private String nome;
+    private String serial;
+    private String modelo;
+    private long escritas;
+    private long leituras;
+    private Double bytesDeEscrita;
+    private Double bytesDeLeitura;
+    private Double tamanho;
+    private Double tamanhoAtualDaFita;
+    private Double tempoDeTransferencia;
 
     public HDD() {
     }
 
-    public HDD(double capacidadeTotal, int numeroParticoes, String statusSaude, Maquina maquina) {
-        this.capacidadeTotal = capacidadeTotal;
-        this.numeroParticoes = numeroParticoes;
-        this.statusSaude = statusSaude;
-        this.maquina = maquina;
+    public Integer getIdHDD() {
+        return idHDD;
     }
 
-    public int getIdHDD() {
-        return idHDD;
+    public HDD(Integer idHDD, String nome, String serial, String modelo, long escritas, long leituras, Double bytesDeEscrita, Double bytesDeLeitura, Double tamanho, Double tamanhoAtualDaFita, Double tempoDeTransferencia) {
+        this.idHDD = idHDD;
+        this.nome = nome;
+        this.serial = serial;
+        this.modelo = modelo;
+        this.escritas = escritas;
+        this.leituras = leituras;
+        this.bytesDeEscrita = bytesDeEscrita;
+        this.bytesDeLeitura = bytesDeLeitura;
+        this.tamanho = tamanho;
+        this.tamanhoAtualDaFita = tamanhoAtualDaFita;
+        this.tempoDeTransferencia = tempoDeTransferencia;
     }
 
     public void setIdHDD(Integer idHDD) {
         this.idHDD = idHDD;
     }
 
-    public double getCapacidadeTotal() {
-        return capacidadeTotal;
+    public String getNome() {
+        return nome;
     }
 
-    public void setCapacidadeTotal(long capacidadeTotal) {
-        this.capacidadeTotal = Conversor.converterCasasDecimais(formatarBytes(capacidadeTotal), 2);
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public int getNumeroParticoes() {
-        return numeroParticoes;
+    public String getSerial() {
+        return serial;
     }
 
-    public void setNumeroParticoes(int numeroParticoes) {
-        this.numeroParticoes = numeroParticoes;
+    public void setSerial(String serial) {
+        this.serial = serial;
     }
 
-    public String getStatusSaude() {
-        return statusSaude;
+    public String getModelo() {
+        return modelo;
     }
 
-    public void setStatusSaude(String statusSaude) {
-        this.statusSaude = statusSaude;
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
     }
 
-    public Maquina getMaquina() {
-        return maquina;
+    public long getEscritas() {
+        return escritas;
     }
 
-    public void setMaquina(Maquina maquina) {
-        this.maquina = maquina;
+    public void setEscritas(long escritas) {
+        this.escritas = escritas;
     }
 
-    private Double formatarBytes(long bytes) {
-        if (bytes < 1024) {
-            return Double.parseDouble(String.valueOf(bytes));
-        } else if (bytes < 1048576) {
-            return bytes / 1024.0;
-        } else if (bytes < 1073741824) {
-            return bytes / 1048576.0;
-        } else {
-            return bytes / 1073741824.0;
-        }
+    public long getLeituras() {
+        return leituras;
+    }
+
+    public void setLeituras(long leituras) {
+        this.leituras = leituras;
+    }
+
+    public Double getBytesDeEscrita() {
+        return bytesDeEscrita;
+    }
+
+    public void setBytesDeEscrita(Double bytesDeEscrita) {
+        this.bytesDeEscrita = bytesDeEscrita;
+    }
+
+    public Double getBytesDeLeitura() {
+        return bytesDeLeitura;
+    }
+
+    public void setBytesDeLeitura(Double bytesDeLeitura) {
+        this.bytesDeLeitura = bytesDeLeitura;
+    }
+
+    public Double getTamanho() {
+        return tamanho;
+    }
+
+    public void setTamanho(Double tamanho) {
+        this.tamanho = tamanho;
+    }
+
+    public Double getTamanhoAtualDaFita() {
+        return tamanhoAtualDaFita;
+    }
+
+    public void setTamanhoAtualDaFita(Double tamanhoAtualDaFita) {
+        this.tamanhoAtualDaFita = tamanhoAtualDaFita;
+    }
+
+    public Double getTempoDeTransferencia() {
+        return tempoDeTransferencia;
+    }
+
+    public void setTempoDeTransferencia(Double tempoDeTransferencia) {
+        this.tempoDeTransferencia = tempoDeTransferencia;
     }
 }

@@ -23,25 +23,7 @@ public class Seguranca {
             if (!usuario.isPresent()) {
                 throw new AutenticationException("Falha ao autenticar o usuário. Verifique suas credenciais.");
             }
-            if (verificarStatusBloqueadoUsuario(usuario.get())) {
-                throw new AutenticationException("O usuário está bloqueado. Entre em contato com o administrador.");
-            }
             return true;
         }
-    }
-
-    // Alterar para a tabela de status
-    public boolean verificarStatusBloqueadoUsuario(Usuario usuario) {
-        return usuario != null && usuario.getStatus().equalsIgnoreCase("bloqueado");
-    }
-
-    // Altera para a tabela de acesso
-    public boolean verificarPermissaoAdmin(Usuario usuario) {
-        return usuario != null && usuario.getStatus().equalsIgnoreCase("admin");
-    }
-
-    // Alterar para a tabela de acesso
-    public boolean verificarPermissaoAcesso(Usuario usuario) {
-        return usuario != null && usuario.getStatus().equalsIgnoreCase("ativo");
     }
 }

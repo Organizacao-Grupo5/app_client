@@ -3,87 +3,61 @@ package model;
 import core.sistema.Conversor;
 
 public class GPU {
-    private int idGPU;
-    private String modelo;
-    private double memoria;
-    private double utilizacao;
-    private String versaoDriver;
-    private Maquina maquina;
-    private Double velocidadeComponente;
-    private Double temperaturaComponente;
-
-    public GPU(String modelo, double memoria, double utilizacao, String versaoDriver, Maquina maquina) {
-        this.modelo = modelo;
-        this.memoria = memoria;
-        this.utilizacao = utilizacao;
-        this.versaoDriver = versaoDriver;
-        this.maquina = maquina;
-    }
+    private Integer idGpu;
+    private String nome;
+    private String fabricante;
+    private String versao;
+    private String idDevice;
+    private Double vRam;
 
     public GPU() {
     }
 
-    public int getIdGPU() {
-        return idGPU;
+    public Integer getIdGpu() {
+        return idGpu;
     }
 
-    public void setIdGPU(int idGPU) {
-        this.idGPU = idGPU;
+    public void setIdGpu(Integer idGpu) {
+        this.idGpu = idGpu;
     }
 
-    public String getModelo() {
-        return modelo;
+    public String getNome() {
+        return nome;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public double getMemoria() {
-        return memoria;
+    public String getFabricante() {
+        return fabricante;
     }
 
-    public void setMemoria(long memoria) {
-        this.memoria = Conversor.converterParaKB(memoria);
+    public void setFabricante(String fabricante) {
+        this.fabricante = fabricante;
     }
 
-    public double getUtilizacao() {
-        return utilizacao;
+    public String getVersao() {
+        return versao;
     }
 
-    public void setUtilizacao(long utilizacao) {
-        this.utilizacao = Conversor.converterParaGB(utilizacao);
+    public void setVersao(String versao) {
+        this.versao = versao;
     }
 
-    public String getVersaoDriver() {
-        return versaoDriver;
+    public String getIdDevice() {
+        return idDevice;
     }
 
-    public void setVersaoDriver(String versaoDriver) {
-        this.versaoDriver = versaoDriver;
+    public void setIdDevice(String idDevice) {
+        this.idDevice = idDevice;
     }
 
-    public Maquina getMaquina() {
-        return maquina;
+    public Double getvRam() {
+        return vRam;
     }
 
-    public void setMaquina(Maquina maquina) {
-        this.maquina = maquina;
-    }
-
-    public Double getVelocidadeComponente() {
-        return velocidadeComponente;
-    }
-
-    public void setVelocidadeComponente(Double velocidadeComponente) {
-        this.velocidadeComponente = velocidadeComponente;
-    }
-
-    public Double getTemperaturaComponente() {
-        return temperaturaComponente;
-    }
-
-    public void setTemperaturaComponente(Double temperaturaComponente) {
-        this.temperaturaComponente = temperaturaComponente;
+    public void setvRam(Double vRam) {
+        this.vRam = vRam;
     }
 }

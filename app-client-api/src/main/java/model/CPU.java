@@ -1,50 +1,83 @@
 package model;
 
 public class CPU {
-    private int idCPU;
-    private String modelo;
-    private String numeroSerie;
+    private Integer idCpu;
+    private Integer numeroDeCpusLogicas;
+    private Integer numeroDeCpusFisicas;
+    private String microarquitetura;
+    private String identificador;
+    private String idCpuLooca;
     private String fabricante;
-    private String arquitetura;
-    private String cache;
-    private Maquina maquina;
-    private Double velocidadeComponente;
-    private Double temperaturaComponente;
+    private Double frequencia;
+    private Integer numeroPacotesFisicos;
+    private Double uso;
+    private String nome;
+    private Double temperatura;
 
     public CPU() {
     }
 
-    public CPU(String modelo, String numeroSerie, String fabricante, String arquitetura, String cache, Maquina maquina) {
-        this.modelo = modelo;
-        this.numeroSerie = numeroSerie;
+    public CPU(Integer idCpu, Integer numeroDeCpusLogicas, Integer numeroDeCpusFisicas, String microarquitetura, String identificador, String idCpuLooca, String fabricante, Double frequencia, Integer numeroPacotesFisicos, Double uso, String nome, Double temperatura) {
+        this.idCpu = idCpu;
+        this.numeroDeCpusLogicas = numeroDeCpusLogicas;
+        this.numeroDeCpusFisicas = numeroDeCpusFisicas;
+        this.microarquitetura = microarquitetura;
+        this.identificador = identificador;
+        this.idCpuLooca = idCpuLooca;
         this.fabricante = fabricante;
-        this.arquitetura = arquitetura;
-        this.cache = cache;
-        this.maquina = maquina;
+        this.frequencia = frequencia;
+        this.numeroPacotesFisicos = numeroPacotesFisicos;
+        this.uso = uso;
+        this.nome = nome;
+        this.temperatura = temperatura;
     }
 
-    public int getIdCPU() {
-        return idCPU;
+    public Integer getIdCpu() {
+        return idCpu;
     }
 
-    public void setIdCPU(int idCPU) {
-        this.idCPU = idCPU;
+    public void setIdCpu(Integer idCpu) {
+        this.idCpu = idCpu;
     }
 
-    public String getModelo() {
-        return modelo;
+    public Integer getNumeroDeCpusLogicas() {
+        return numeroDeCpusLogicas;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+    public void setNumeroDeCpusLogicas(Integer numeroDeCpusLogicas) {
+        this.numeroDeCpusLogicas = numeroDeCpusLogicas;
     }
 
-    public String getNumeroSerie() {
-        return numeroSerie;
+    public Integer getNumeroDeCpusFisicas() {
+        return numeroDeCpusFisicas;
     }
 
-    public void setNumeroSerie(String numeroSerie) {
-        this.numeroSerie = numeroSerie;
+    public void setNumeroDeCpusFisicas(Integer numeroDeCpusFisicas) {
+        this.numeroDeCpusFisicas = numeroDeCpusFisicas;
+    }
+
+    public String getMicroarquitetura() {
+        return microarquitetura;
+    }
+
+    public void setMicroarquitetura(String microarquitetura) {
+        this.microarquitetura = microarquitetura;
+    }
+
+    public String getIdentificador() {
+        return identificador;
+    }
+
+    public void setIdentificador(String identificador) {
+        this.identificador = identificador;
+    }
+
+    public String getIdCpuLooca() {
+        return idCpuLooca;
+    }
+
+    public void setIdCpuLooca(String idCpuLooca) {
+        this.idCpuLooca = idCpuLooca;
     }
 
     public String getFabricante() {
@@ -55,43 +88,44 @@ public class CPU {
         this.fabricante = fabricante;
     }
 
-    public String getArquitetura() {
-        return arquitetura;
+    public Double getFrequencia() {
+        return frequencia;
     }
 
-    public void setArquitetura(String arquitetura) {
-        this.arquitetura = arquitetura;
+    public void setFrequencia(Double frequencia) {
+        this.frequencia = frequencia;
     }
 
-    public String getCache() {
-        return cache;
+    public Integer getNumeroPacotesFisicos() {
+        return numeroPacotesFisicos;
     }
 
-    public void setCache(String cache) {
-        this.cache = cache;
+    public void setNumeroPacotesFisicos(Integer numeroPacotesFisicos) {
+        this.numeroPacotesFisicos = numeroPacotesFisicos;
     }
 
-    public Maquina getMaquina() {
-        return maquina;
+    public Double getUso() {
+        return uso;
     }
 
-    public void setMaquina(Maquina maquina) {
-        this.maquina = maquina;
+    public void setUso(Double uso) {
+        this.uso = uso;
     }
 
-    public Double getVelocidadeComponente() {
-        return velocidadeComponente;
+    public String getNome() {
+        return nome;
     }
 
-    public void setVelocidadeComponente(Double velocidadeComponente) {
-        this.velocidadeComponente = velocidadeComponente;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public Double getTemperaturaComponente() {
-        return temperaturaComponente;
+    public Double getTemperatura() {
+        return temperatura;
     }
 
-    public void setTemperaturaComponente(Double temperaturaComponente) {
-        this.temperaturaComponente = temperaturaComponente;
+    public void setTemperatura(Double temperatura) {
+        this.temperatura = temperatura;
     }
+
 }
