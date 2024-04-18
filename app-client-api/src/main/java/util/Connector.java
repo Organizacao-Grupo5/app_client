@@ -12,7 +12,7 @@ public class Connector {
     public static Connection ConBD() throws SQLException {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            return DriverManager.getConnection("jdbc:mysql://localhost/visualOps", "root", "54157592808");
+            return DriverManager.getConnection("jdbc:mysql://localhost/visualOps", "root", "");
         } catch (ClassNotFoundException e) {
             logger.log(Level.SEVERE, "Driver do MySQL não encontrado", e);
             throw new SQLException("Driver do MySQL não encontrado", e);

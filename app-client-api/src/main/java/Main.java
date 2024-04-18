@@ -19,12 +19,38 @@ public class Main {
     private static final Login login = new Login();
     private static final ServiceMonitoring serviceMonitoring = new ServiceMonitoring();
 
+
+
     public static void main(String[] args) throws Exception {
+        int quadros = 50;
+
+        for (int i = 0; i <= quadros; i++) {
+            int porcentagem = i * 100 / quadros;
+
+            StringBuilder barraCarregamento = new StringBuilder("\u001B[34m[");
+            for (int j = 0; j < quadros; j++) {
+                barraCarregamento.append(j < i ? "=" : " ");
+            }
+            barraCarregamento.append("] ");
+
+            barraCarregamento.append(porcentagem).append("%");
+
+            System.out.print("\r" + barraCarregamento);
+
+            try {
+                Thread.sleep(30);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+        System.out.print("\r" + " ".repeat(quadros + 10));
+
+        System.out.println("\rSeja Bem Vindo a VisualOps!");
+
         Usuario usuarioLogado;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("""
-                Seja bem-vindo ao nosso app client ...
-                                
+        System.out.println("""       
                 Vamos verificar suas permissões para iniciar o monitoramento.
                                 
                 Insira seu email:
@@ -40,20 +66,20 @@ public class Main {
             System.out.println("Terminamos a verificação de seu acesso.");
             if (usuarioLogado != null) {
                 System.out.println("""
-                                                
+
                         --- ACESSO CONCEDIDO ---
-                                                
+
                         Bem-vindo %s
                         email: %s
-                                                
+
                         Vamos verificar as permissões da sua máquina...
                         """.formatted(usuarioLogado.getNome(), usuarioLogado.getEmail()));
 
             } else {
                 System.out.println("""
-                                                
+
                         --- ACESSO NEGADO ---
-                                                
+
                         """);
             }
         } catch (AutenticationException e) {
