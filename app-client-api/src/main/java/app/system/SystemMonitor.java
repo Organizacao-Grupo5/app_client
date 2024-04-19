@@ -28,6 +28,7 @@ public class SystemMonitor {
         looca = new Looca();
         systemInfo = new SystemInfo();
         hardware = systemInfo.getHardware();
+        conversor = new Conversor();
     }
 
     public CPU monitorarCPU() {

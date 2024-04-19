@@ -1,3 +1,4 @@
+import app.integration.HardwareIntegration;
 import app.security.Login;
 import exception.AutenticationException;
 import model.Maquina;
@@ -14,6 +15,7 @@ public class Main {
     private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
     private static final Login login = new Login();
     private static final ServiceMonitoring serviceMonitoring = new ServiceMonitoring();
+    private static HardwareIntegration hardwareIntegration = new HardwareIntegration();
 
 
 
@@ -69,7 +71,8 @@ public class Main {
 
                         Vamos verificar as permissões da sua máquina...
                         """.formatted(usuarioLogado.getNome(), usuarioLogado.getEmail()));
-
+                serviceMonitoring.iniciarMonitoramento();
+                System.out.println(hardwareIntegration.monitorarBateria());
             } else {
                 System.out.println("""
 

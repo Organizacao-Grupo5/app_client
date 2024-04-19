@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class TablePrinter {
-    public static void printTable(List<List<String>> data) {
+    public void printTable(List<List<String>> data) {
         int[] columnWidths = calculateColumnWidths(data);
 
         printSeparator(columnWidths);
@@ -19,7 +19,7 @@ public class TablePrinter {
         printSeparator(columnWidths);
     }
 
-    private static void printSeparator(int[] columnWidths) {
+    private void printSeparator(int[] columnWidths) {
         for (int width : columnWidths) {
             System.out.print("+");
             for (int i = 0; i < width; i++) {
@@ -29,7 +29,7 @@ public class TablePrinter {
         System.out.println("+");
     }
 
-    private static void printRow(List<String> row, int[] columnWidths) {
+    private void printRow(List<String> row, int[] columnWidths) {
         for (int i = 0; i < row.size(); i++) {
             System.out.print("|");
             System.out.print(String.format("%-" + columnWidths[i] + "s", row.get(i)));
@@ -37,7 +37,7 @@ public class TablePrinter {
         System.out.println("|");
     }
 
-    private static int[] calculateColumnWidths(List<List<String>> data) {
+    private int[] calculateColumnWidths(List<List<String>> data) {
         int numColumns = data.get(0).size();
         int[] columnWidths = new int[numColumns];
         for (List<String> row : data) {
