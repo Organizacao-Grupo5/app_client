@@ -4,7 +4,6 @@ import java.util.List;
 
 public class ConexaoUSB {
     private int idConexaoUSB;
-
     private String nomeUsb;
     private String fornecedor;
     private String idDispositivoUSBExclusivo;
@@ -15,8 +14,7 @@ public class ConexaoUSB {
     public ConexaoUSB() {
     }
 
-    public ConexaoUSB(int idConexaoUSB, String nomeUsb, String fornecedor, String idDispositivoUSBExclusivo, String idFornecedor, String numeroSerie, String idProduto) {
-        this.idConexaoUSB = idConexaoUSB;
+    public ConexaoUSB(String nomeUsb, String fornecedor, String idDispositivoUSBExclusivo, String idFornecedor, String numeroSerie, String idProduto) {
         this.nomeUsb = nomeUsb;
         this.fornecedor = fornecedor;
         this.idDispositivoUSBExclusivo = idDispositivoUSBExclusivo;

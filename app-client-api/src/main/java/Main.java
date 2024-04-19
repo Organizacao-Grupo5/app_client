@@ -1,17 +1,13 @@
-import core.auth.Login;
-import core.sistema.SystemMonitor;
+import app.security.Login;
 import exception.AutenticationException;
-import exception.ExceptionMonitoring;
 import model.Maquina;
 import model.Usuario;
 import service.ServiceMonitoring;
 
-import java.io.IOException;
-import java.util.Map;
 import java.util.Scanner;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
+
 import util.logs.*;
 
 public class Main {
@@ -60,7 +56,6 @@ public class Main {
                 Insira sua senha:
                 """);
         String senha = scanner.next();
-
         try {
             usuarioLogado = login.login(email, senha);
             System.out.println("Terminamos a verificação de seu acesso.");

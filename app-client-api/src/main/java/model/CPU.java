@@ -17,8 +17,7 @@ public class CPU {
     public CPU() {
     }
 
-    public CPU(Integer idCpu, Integer numeroDeCpusLogicas, Integer numeroDeCpusFisicas, String microarquitetura, String identificador, String idCpuLooca, String fabricante, Double frequencia, Integer numeroPacotesFisicos, Double uso, String nome, Double temperatura) {
-        this.idCpu = idCpu;
+    public CPU(Integer numeroDeCpusLogicas, Integer numeroDeCpusFisicas, String microarquitetura, String identificador, String idCpuLooca, String fabricante, Double frequencia, Integer numeroPacotesFisicos, Double uso, String nome, Double temperatura) {
         this.numeroDeCpusLogicas = numeroDeCpusLogicas;
         this.numeroDeCpusFisicas = numeroDeCpusFisicas;
         this.microarquitetura = microarquitetura;

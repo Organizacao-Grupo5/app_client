@@ -1,9 +1,5 @@
 package model;
 
-import core.sistema.Conversor;
-
-import java.util.Set;
-
 public class HDD {
     private Integer idHDD;
     private String nome;
@@ -24,8 +20,7 @@ public class HDD {
         return idHDD;
     }
 
-    public HDD(Integer idHDD, String nome, String serial, String modelo, long escritas, long leituras, Double bytesDeEscrita, Double bytesDeLeitura, Double tamanho, Double tamanhoAtualDaFita, Double tempoDeTransferencia) {
-        this.idHDD = idHDD;
+    public HDD(String nome, String serial, String modelo, long escritas, long leituras, Double bytesDeEscrita, Double bytesDeLeitura, Double tamanho, Double tamanhoAtualDaFita, Double tempoDeTransferencia) {
         this.nome = nome;
         this.serial = serial;
         this.modelo = modelo;

@@ -1,28 +1,26 @@
 package model;
 
+import java.awt.*;
 import java.util.Date;
 
 public class APP {
     private int idApp;
-    private Maquina maquina;
-    private String nomeApp;
-    private Date dtInstalacao;
-    private Date ultimaDtInstalacao;
-    private String tamanhoAplicativo;
+    private String nome;
+
+    private String comando;
+    private Double janelaID;
+    private Double pid;
+    private Rectangle localizacaoEtamanho;
 
     public APP() {
     }
 
-    public Maquina getMaquina() {
-        return maquina;
-    }
-
-    public APP(Maquina maquina, String nomeApp, Date dtInstalacao, Date ultimaDtInstalacao, String tamanhoAplicativo) {
-        this.maquina = maquina;
-        this.nomeApp = nomeApp;
-        this.dtInstalacao = dtInstalacao;
-        this.ultimaDtInstalacao = ultimaDtInstalacao;
-        this.tamanhoAplicativo = tamanhoAplicativo;
+    public APP(String nome, String comando, Double janelaID, Double pid, Rectangle localizacaoEtamanho) {
+        this.nome = nome;
+        this.comando = comando;
+        this.janelaID = janelaID;
+        this.pid = pid;
+        this.localizacaoEtamanho = localizacaoEtamanho;
     }
 
     public int getIdApp() {
@@ -33,39 +31,43 @@ public class APP {
         this.idApp = idApp;
     }
 
-    public void setMaquina(Maquina maquina) {
-        this.maquina = maquina;
+    public String getNome() {
+        return nome;
     }
 
-    public String getNomeApp() {
-        return nomeApp;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public void setNomeApp(String nomeApp) {
-        this.nomeApp = nomeApp;
+    public String getComando() {
+        return comando;
     }
 
-    public Date getDtInstalacao() {
-        return dtInstalacao;
+    public void setComando(String comando) {
+        this.comando = comando;
     }
 
-    public void setDtInstalacao(Date dtInstalacao) {
-        this.dtInstalacao = dtInstalacao;
+    public Double getJanelaID() {
+        return janelaID;
     }
 
-    public Date getUltimaDtInstalacao() {
-        return ultimaDtInstalacao;
+    public void setJanelaID(Double janelaID) {
+        this.janelaID = janelaID;
     }
 
-    public void setUltimaDtInstalacao(Date ultimaDtInstalacao) {
-        this.ultimaDtInstalacao = ultimaDtInstalacao;
+    public Double getPid() {
+        return pid;
     }
 
-    public String getTamanhoAplicativo() {
-        return tamanhoAplicativo;
+    public void setPid(Double pid) {
+        this.pid = pid;
     }
 
-    public void setTamanhoAplicativo(String tamanhoAplicativo) {
-        this.tamanhoAplicativo = tamanhoAplicativo;
+    public Rectangle getLocalizacaoEtamanho() {
+        return localizacaoEtamanho;
+    }
+
+    public void setLocalizacaoEtamanho(Rectangle localizacaoEtamanho) {
+        this.localizacaoEtamanho = localizacaoEtamanho;
     }
 }

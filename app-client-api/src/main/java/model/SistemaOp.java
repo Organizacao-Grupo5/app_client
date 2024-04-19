@@ -15,8 +15,7 @@ public class SistemaOp {
     public SistemaOp() {
     }
 
-    public SistemaOp(int idSistemaOperacional, String sistemaOperacional, String fabricante, String arquitetura, Instant inicializado, boolean permissao, Double tempoDeAtividade) {
-        this.idSistemaOperacional = idSistemaOperacional;
+    public SistemaOp(String sistemaOperacional, String fabricante, String arquitetura, Instant inicializado, boolean permissao, Double tempoDeAtividade) {
         this.sistemaOperacional = sistemaOperacional;
         this.fabricante = fabricante;
         this.arquitetura = arquitetura;

@@ -1,7 +1,5 @@
 package model;
 
-import core.sistema.Conversor;
-
 public class GPU {
     private Integer idGpu;
     private String nome;
@@ -11,6 +9,14 @@ public class GPU {
     private Double vRam;
 
     public GPU() {
+    }
+
+    public GPU(String nome, String fabricante, String versao, String idDevice, Double vRam) {
+        this.nome = nome;
+        this.fabricante = fabricante;
+        this.versao = versao;
+        this.idDevice = idDevice;
+        this.vRam = vRam;
     }
 
     public Integer getIdGpu() {

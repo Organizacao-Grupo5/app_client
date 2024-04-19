@@ -1,7 +1,5 @@
 package model;
 
-import core.sistema.Conversor;
-
 public class MemoriaRam {
     private int idMemoriaRAM;
     private Double memoriaDisponivel;
