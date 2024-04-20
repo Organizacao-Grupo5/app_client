@@ -1,8 +1,6 @@
 import app.integration.HardwareIntegration;
 import app.security.Login;
-import app.system.Components.CPUMonitoring;
-import app.system.Components.HDDMonitoring;
-import app.system.Components.SistemaOPMonitoring;
+
 import app.system.SystemMonitor;
 import exception.AutenticationException;
 import model.*;
@@ -21,8 +19,6 @@ public class Main {
     private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
     private static final Login login = new Login();
     private static ScheduledExecutorService executorService;
-    private static final ServiceMonitoring serviceMonitoring = new ServiceMonitoring();
-    private static HardwareIntegration hardwareIntegration = new HardwareIntegration();
 
     private static CPU cpu = new CPU();
     private static List<GPU> gpu = new ArrayList<>();
@@ -116,18 +112,16 @@ public class Main {
 
     public static void iniciarMonitoramento() {
         SystemMonitor systemMonitor = new SystemMonitor();
-        CPUMonitoring cpuMonitoring = new CPUMonitoring();
-        HDDMonitoring hddMonitoring = new HDDMonitoring();
-        SistemaOPMonitoring sistemaOPMonitoring = new SistemaOPMonitoring();
+        ServiceMonitoring serviceMonitoring = new ServiceMonitoring();
 
         try {
             executorService = Executors.newScheduledThreadPool(1);
             executorService.scheduleAtFixedRate(new Runnable() {
                 @Override
                 public void run() {
-                    cpu = cpuMonitoring.monitorarCPU();
-                    hdd = hddMonitoring.monitorarHDD();
-                    sistemaOp = sistemaOPMonitoring.monitorarSistemaOperacional();
+                    cpu = systemMonitor.monitorarCPU();
+                    hdd = systemMonitor.monitorarHDD();
+                    sistemaOp = systemMonitor.monitorarSistemaOperacional();
                 }
             }, 0, 5, TimeUnit.SECONDS);
 

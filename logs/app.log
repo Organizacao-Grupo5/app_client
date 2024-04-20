@@ -1,1 +1,30 @@
-[2024-04-20 18:00:04] INFO: Servidor iniciando.
+[2024-04-20 19:22:46] INFO: Servidor iniciando.
+[2024-04-20 19:22:48] INFO: Servidor iniciado com sucesso.
+[2024-04-20 19:22:53] INFO: Verificando informações de login do usuário.
+[2024-04-20 19:22:53] INFO: Usuário foi encontrado com sucesso.
+[2024-04-20 19:22:53] INFO: Usuário logado com sucesso: clau@gmail
+[2024-04-20 19:22:54] INFO: Capturando dados da sua CPU.
+[2024-04-20 19:22:57] INFO: Dados da CPU capturados com sucesso.
+[2024-04-20 19:22:57] INFO: Capturando dados do seu HDD
+[2024-04-20 19:22:57] INFO: Dados do disco gravados.
+[2024-04-20 19:22:57] INFO: Capturando dados do sistema operacional.
+[2024-04-20 19:22:58] INFO: Ação escolhida: Exibir Monitoramento
+[2024-04-20 19:22:58] INFO: Iniciando o monitoramento dos componentes
+[2024-04-20 19:22:58] INFO: Enviando informações para exibir a tabela do HDD 0025_38D3_3101_18C2. no sistema de monitoramento no HDD 
+[2024-04-20 19:22:59] INFO: Capturando dados da sua CPU.
+[2024-04-20 19:22:59] INFO: Dados da CPU capturados com sucesso.
+[2024-04-20 19:22:59] INFO: Dados do disco gravados.
+[2024-04-20 19:22:59] INFO: Capturando dados do sistema operacional.
+[2024-04-20 19:23:04] INFO: Capturando dados da sua CPU.
+[2024-04-20 19:23:04] INFO: Dados da CPU capturados com sucesso.
+[2024-04-20 19:23:04] INFO: Dados do disco gravados.
+[2024-04-20 19:23:04] INFO: Capturando dados do sistema operacional.
+[2024-04-20 19:23:07] INFO: Ação escolhida: Ver logs
+[2024-04-20 19:23:09] INFO: Capturando dados da sua CPU.
+[2024-04-20 19:23:09] INFO: Dados da CPU capturados com sucesso.
+[2024-04-20 19:23:09] INFO: Dados do disco gravados.
+[2024-04-20 19:23:09] INFO: Capturando dados do sistema operacional.
+[2024-04-20 19:23:14] INFO: Capturando dados da sua CPU.
+[2024-04-20 19:23:14] INFO: Dados da CPU capturados com sucesso.
+[2024-04-20 19:23:14] INFO: Dados do disco gravados.
+[2024-04-20 19:23:14] INFO: Capturando dados do sistema operacional.
