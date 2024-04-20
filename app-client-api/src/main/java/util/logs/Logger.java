@@ -1,15 +1,24 @@
 package util.logs;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringWriter;
+import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Logger {
 
-    private static final String LOG_FILE = "app.log";
+    private static final String LOG_DIRECTORY = "logs/";
+    private static final String LOG_FILE = LOG_DIRECTORY + "app.log";
+
+    static {
+        File logFile = new File(LOG_FILE);
+        if (logFile.exists()) {
+            try (PrintWriter writer = new PrintWriter(LOG_FILE)) {
+                writer.print("");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 
     public static void logInfo(String message) {
         log("INFO", message);
@@ -40,5 +49,16 @@ public class Logger {
         PrintWriter pw = new PrintWriter(sw);
         throwable.printStackTrace(pw);
         return sw.toString();
+    }
+
+    public static void displayLogsInConsole() {
+        try (BufferedReader reader = new BufferedReader(new FileReader(LOG_FILE))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -1,10 +1,13 @@
 package service;
 
 import app.system.SystemMonitor;
+import com.mysql.cj.util.StringUtils;
+import exception.ExceptionMonitoring;
 import model.CPU;
 import model.HDD;
 import model.SistemaOp;
 import util.TablePrinter;
+import util.logs.Logger;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -16,14 +19,29 @@ public class ServiceMonitoring {
     SystemMonitor systemMonitor = new SystemMonitor();
 
     public void iniciarMonitoramento() {
-        monitorarCPU();
-        monitorarSO();
-        monitorarHDD();
+        try {
+            Logger.logInfo("Iniciando o monitoramento dos componentes");
+
+            if (systemMonitor == null || tablePrinter == null) {
+                throw new NullPointerException("O sistema de monitoramento ou o printer de tabela são nulos.");
+            }
+
+            monitorarCPU();
+            monitorarSO();
+            monitorarHDD();
+        } catch (NullPointerException e) {
+            Logger.logError("Erro ao iniciar monitoramento: ", e.getMessage(), e);
+        } catch (ExceptionMonitoring e) {
+            Logger.logError("Ocorreu um erro durante o monitoramento", e.getMessage(), e);
+        }
     }
 
-    public void monitorarCPU() {
+    public void monitorarCPU() throws ExceptionMonitoring{
         CPU cpu = systemMonitor.monitorarCPU();
-
+        if (cpu == null) {
+            Logger.logWarning("CPU não encontrada durante o monitoramento.");
+            return;
+        }
         tablePrinter.printTable(Arrays.asList(
                 Arrays.asList("", "CPU"),
                 Arrays.asList("Nome", cpu.getNome()),
@@ -40,8 +58,12 @@ public class ServiceMonitoring {
         ));
     }
 
-    public void monitorarSO(){
+    public void monitorarSO() throws ExceptionMonitoring{
         SistemaOp sistemaOp = systemMonitor.monitorarSistemaOperacional();
+        if (sistemaOp == null) {
+            Logger.logWarning("Sistema operacional não encontrado durante o monitoramento.");
+            return;
+        }
         tablePrinter.printTable(Arrays.asList(
                 Arrays.asList("", "Sistema Operacional"),
                 Arrays.asList("Nome Sistema", sistemaOp.getSistemaOperacional()),
@@ -53,9 +75,15 @@ public class ServiceMonitoring {
         );
     }
 
-    public void monitorarHDD() {
+    public void monitorarHDD() throws ExceptionMonitoring{
         List<HDD> listaHDD = systemMonitor.monitorarHDD();
-        listaHDD.forEach(hdd -> tablePrinter.printTable(
+        if (StringUtils.isNullOrEmpty(listaHDD.toString())) {
+            Logger.logWarning("Nenhum HDD encontrado durante o monitoramento.");
+            return;
+        }
+        listaHDD.forEach(hdd -> {
+            Logger.logInfo("Enviando informações para exibir a tabela do HDD %s no sistema de monitoramento no HDD ".formatted(hdd.getSerial()));
+            tablePrinter.printTable(
                 Arrays.asList(
                         Arrays.asList("", "HDD"),
                         Arrays.asList("Nome", hdd.getNome()),
@@ -69,7 +97,7 @@ public class ServiceMonitoring {
                         Arrays.asList("Tamanho atual", hdd.getTamanhoAtualDaFita().toString()),
                         Arrays.asList("Tempo de transferência", hdd.getTempoDeTransferencia().toString())
                 )
-        ));
+        );});
     }
 
 

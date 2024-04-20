@@ -20,6 +20,7 @@ public class Main {
 
 
     public static void main(String[] args) throws Exception {
+        Logger.logInfo("Servidor iniciando.");
         int quadros = 50;
 
         for (int i = 0; i <= quadros; i++) {
@@ -41,16 +42,21 @@ public class Main {
                 e.printStackTrace();
             }
         }
-
+        Logger.logInfo("Servidor iniciado com sucesso.");
         System.out.print("\r" + " ".repeat(quadros + 10));
-
-        System.out.println("\rSeja Bem Vindo a VisualOps!");
-
         Usuario usuarioLogado;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("""       
+
+        System.out.println(""" 
+                \n
+                __     _____ ____  _   _   _    _           ___  ____  ____ \s
+                \\ \\   / /_ _/ ___|| | | | / \\  | |         / _ \\|  _ \\/ ___|\s
+                 \\ \\ / / | |\\___ \\| | | |/ _ \\ | |   _____| | | | |_) \\___ \\\s
+                  \\ V /  | | ___) | |_| / ___ \\| |__|_____| |_| |  __/ ___) |
+                   \\_/  |___|____/ \\___/_/   \\_\\_____|     \\___/|_|   |____/\s
+                _____________________________________________________________  
                 Vamos verificar suas permissões para iniciar o monitoramento.
-                                
+                _____________________________________________________________
                 Insira seu email:
                 """);
         String email = scanner.next();
@@ -71,13 +77,16 @@ public class Main {
 
                         Vamos verificar as permissões da sua máquina...
                         """.formatted(usuarioLogado.getNome(), usuarioLogado.getEmail()));
+                Logger.logInfo("Usuário logado com sucesso: " + usuarioLogado.getEmail());
                 serviceMonitoring.iniciarMonitoramento();
+                Logger.displayLogsInConsole();
             } else {
                 System.out.println("""
 
                         --- ACESSO NEGADO ---
 
                         """);
+                Logger.logWarning("Tentativa de login falhou para o email: " + email);
             }
         } catch (AutenticationException e) {
             Logger.logError("Erro ao fazer login: ", e.getMessage(), e);
@@ -93,7 +102,7 @@ public class Main {
         try {
 
         } catch (Exception e) {
-            Logger.logError("Erro : ", e.getMessage(), e);
+            Logger.logError("Erro ao iniciar monitoramento: ", e.getMessage(), e);
         }
     }
 

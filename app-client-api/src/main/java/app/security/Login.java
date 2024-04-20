@@ -15,9 +15,11 @@ public class Login {
     }
 
     public Usuario login(String email, String senha) throws AutenticationException {
+        Logger.logInfo("Verificando informações de login do usuário.");
         try {
             if (seguranca.autenticarUsuario(email, senha)) {
                 Usuario usuario = serviceUser.autenticarUsuario(email, senha).get();
+                Logger.logInfo("Usuário foi encontrado com sucesso.");
                 return usuario;
             }
         } catch (AutenticationException e) {
