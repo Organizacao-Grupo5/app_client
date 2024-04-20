@@ -22,6 +22,9 @@ public class ServiceMonitoring {
         exibirTabelaCPU(cpu);
         exibirTabelaSO(so);
         exibirTabelaHDD(hdd);
+        exibirTabelaBateria(bateria);
+        exibirTabelaMemoriaRAM(ram);
+
     }
 
     private void exibirTabelaCPU(CPU cpu) {
@@ -92,5 +95,57 @@ public class ServiceMonitoring {
 
             tablePrinter.printTable(hddData);
         });
+    }
+
+    public void exibirTabelaMemoriaRAM(MemoriaRam memoriaRam) {
+        if (memoriaRam == null) {
+            Logger.logWarning("Memória RAM não encontrada durante o monitoramento.");
+            return;
+        }
+
+        List<List<String>> memoriaRamData = Arrays.asList(
+                Arrays.asList("", "Memória RAM"),
+                Arrays.asList("ID", String.valueOf(memoriaRam.getIdMemoriaRAM())),
+                Arrays.asList("Memória Disponível", String.valueOf(memoriaRam.getMemoriaDisponivel())),
+                Arrays.asList("Memória em Uso", String.valueOf(memoriaRam.getMemoriaEmUso())),
+                Arrays.asList("Memória Total", String.valueOf(memoriaRam.getMemoriaTotal()))
+        );
+
+        tablePrinter.printTable(memoriaRamData);
+    }
+
+    public void exibirTabelaBateria(List<Bateria> baterias) {
+        if (baterias == null || baterias.isEmpty()) {
+            Logger.logWarning("Nenhuma bateria encontrada durante o monitoramento.");
+            return;
+        }
+
+        for (int i = 0; i < baterias.size(); i++) {
+            Bateria bateria = baterias.get(i);
+            List<List<String>> bateriaData = Arrays.asList(
+                    Arrays.asList("", "Bateria " + (i + 1)),
+                    Arrays.asList("ID", String.valueOf(bateria.getIdBateria())),
+                    Arrays.asList("Amperagem", String.valueOf(bateria.getAmperagem())),
+                    Arrays.asList("Nome do Dispositivo", bateria.getNomeDispositivo()),
+                    Arrays.asList("Número Serial", bateria.getNumeroSerial()),
+                    Arrays.asList("Química", bateria.getQuimica()),
+                    Arrays.asList("Nome", bateria.getNome()),
+                    Arrays.asList("Voltagem", String.valueOf(bateria.getVoltagem())),
+                    Arrays.asList("Unidades de Capacidade", bateria.getUnidadesCapacidade()),
+                    Arrays.asList("Capacidade Atual", String.valueOf(bateria.getCapacidadeAtual())),
+                    Arrays.asList("Ciclos", String.valueOf(bateria.getCiclos())),
+                    Arrays.asList("Capacidade Design", String.valueOf(bateria.getCapacidadeDesign())),
+                    Arrays.asList("Tempo Restante Instantâneo", String.valueOf(bateria.getTempoRestanteInstantaneo())),
+                    Arrays.asList("Tempo Restante Estimado", String.valueOf(bateria.getTempoRestanteEstimado())),
+                    Arrays.asList("Taxa de Uso de Energia", String.valueOf(bateria.getTaxaUsoEnergia())),
+                    Arrays.asList("Temperatura", String.valueOf(bateria.getTemperatura())),
+                    Arrays.asList("Capacidade Máxima", String.valueOf(bateria.getCapacidadeMaxima())),
+                    Arrays.asList("Percentual Capacidade Restante", String.valueOf(bateria.getPercentualCapacidadeRestante())),
+                    Arrays.asList("Data de Fabricação", bateria.getDataFabricacao()),
+                    Arrays.asList("Fabricante", bateria.getFabricante())
+            );
+
+            tablePrinter.printTable(bateriaData);
+        }
     }
 }

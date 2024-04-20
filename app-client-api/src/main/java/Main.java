@@ -122,8 +122,10 @@ public class Main {
                     cpu = systemMonitor.monitorarCPU();
                     hdd = systemMonitor.monitorarHDD();
                     sistemaOp = systemMonitor.monitorarSistemaOperacional();
+                    bateria = systemMonitor.monitorarBateria();
+                    ram = systemMonitor.monitorarRAM();
                 }
-            }, 0, 5, TimeUnit.SECONDS);
+            }, 0, 10, TimeUnit.SECONDS);
 
             Scanner scanner = new Scanner(System.in);
             boolean running = true;
