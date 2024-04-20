@@ -1,5 +1,8 @@
 import app.integration.HardwareIntegration;
 import app.security.Login;
+import app.system.Components.CPUMonitoring;
+import app.system.Components.HDDMonitoring;
+import app.system.Components.SistemaOPMonitoring;
 import app.system.SystemMonitor;
 import exception.AutenticationException;
 import model.*;
@@ -113,21 +116,18 @@ public class Main {
 
     public static void iniciarMonitoramento() {
         SystemMonitor systemMonitor = new SystemMonitor();
+        CPUMonitoring cpuMonitoring = new CPUMonitoring();
+        HDDMonitoring hddMonitoring = new HDDMonitoring();
+        SistemaOPMonitoring sistemaOPMonitoring = new SistemaOPMonitoring();
 
         try {
             executorService = Executors.newScheduledThreadPool(1);
             executorService.scheduleAtFixedRate(new Runnable() {
                 @Override
                 public void run() {
-                    cpu = systemMonitor.monitorarCPU();
-                    hdd = systemMonitor.monitorarHDD();
-                    sistemaOp = systemMonitor.monitorarSistemaOperacional();
-                    gpu = systemMonitor.monitorarGPU();
-                    usb = systemMonitor.monitorarUSB();
-                    bateria = systemMonitor.monitorarBateria();
-                    app = systemMonitor.monitorarDisplay();
-                    volume = systemMonitor.monitorarVolumeLogico();
-                    ram = systemMonitor.monitorarRAM();
+                    cpu = cpuMonitoring.monitorarCPU();
+                    hdd = hddMonitoring.monitorarHDD();
+                    sistemaOp = sistemaOPMonitoring.monitorarSistemaOperacional();
                 }
             }, 0, 5, TimeUnit.SECONDS);
 
@@ -155,7 +155,7 @@ public class Main {
                     case 1:
                         System.out.print("\033[H\033[2J");
                         System.out.flush();
-                        serviceMonitoring.iniciarMonitoramento(cpu, gpu, hdd, sistemaOp, ram, app, usb, bateria, volume);
+                        serviceMonitoring.exibirTabelas(cpu, gpu, hdd, sistemaOp, ram, app, usb, bateria, volume);
                         break;
                     case 2:
                         System.out.print("\033[H\033[2J");
