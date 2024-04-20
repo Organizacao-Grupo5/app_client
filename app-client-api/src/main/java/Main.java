@@ -1,23 +1,37 @@
 import app.integration.HardwareIntegration;
 import app.security.Login;
+import app.system.SystemMonitor;
 import exception.AutenticationException;
-import model.Maquina;
-import model.Usuario;
+import model.*;
 import service.ServiceMonitoring;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 import util.logs.*;
 
 public class Main {
     private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
     private static final Login login = new Login();
+    private static ScheduledExecutorService executorService;
     private static final ServiceMonitoring serviceMonitoring = new ServiceMonitoring();
     private static HardwareIntegration hardwareIntegration = new HardwareIntegration();
 
-
+    private static CPU cpu = new CPU();
+    private static List<GPU> gpu = new ArrayList<>();
+    private static List<HDD> hdd = new ArrayList<>();
+    private static MemoriaRam ram = new MemoriaRam();
+    private static List<APP> app = new ArrayList<>();
+    private static List<Bateria> bateria = new ArrayList<>();
+    private static List<Volume> volume = new ArrayList<>();
+    private static SistemaOp sistemaOp = new SistemaOp();
+    private static PlacaMae placaMae = new PlacaMae();
+    private static Maquina maquina = new Maquina();
+    private static List<ConexaoUSB> usb = new ArrayList<>();
 
     public static void main(String[] args) throws Exception {
         Logger.logInfo("Servidor iniciando.");
@@ -78,8 +92,7 @@ public class Main {
                         Vamos verificar as permissões da sua máquina...
                         """.formatted(usuarioLogado.getNome(), usuarioLogado.getEmail()));
                 Logger.logInfo("Usuário logado com sucesso: " + usuarioLogado.getEmail());
-                serviceMonitoring.iniciarMonitoramento();
-                Logger.displayLogsInConsole();
+                iniciarMonitoramento();
             } else {
                 System.out.println("""
 
@@ -98,8 +111,66 @@ public class Main {
         }
     }
 
-    public static void iniciarMonitoramento(Maquina maquina, Usuario usuario) {
+    public static void iniciarMonitoramento() {
+        SystemMonitor systemMonitor = new SystemMonitor();
+
         try {
+            executorService = Executors.newScheduledThreadPool(1);
+            executorService.scheduleAtFixedRate(new Runnable() {
+                @Override
+                public void run() {
+                    cpu = systemMonitor.monitorarCPU();
+                    hdd = systemMonitor.monitorarHDD();
+                    sistemaOp = systemMonitor.monitorarSistemaOperacional();
+                    gpu = systemMonitor.monitorarGPU();
+                    usb = systemMonitor.monitorarUSB();
+                    bateria = systemMonitor.monitorarBateria();
+                    app = systemMonitor.monitorarDisplay();
+                    volume = systemMonitor.monitorarVolumeLogico();
+                    ram = systemMonitor.monitorarRAM();
+                }
+            }, 0, 5, TimeUnit.SECONDS);
+
+            Scanner scanner = new Scanner(System.in);
+            boolean running = true;
+            System.out.println("""
+                    +----------------------------------------------------+
+                    | Seu monitoramento iniciou e está em segundo plano  |
+                    +----------------------------------------------------+
+                    | Escolha uma opção :                                |
+                    +--------------------------+--------------+----------+
+                    | 1 - Exibir monitoramento | 2 - Ver Logs | 3 - Sair |
+                    +--------------------------+--------------+----------+
+                    """);
+
+            while (running) {
+                Integer input = scanner.nextInt();
+                System.out.println("""
+                    +--------------------------+--------------+----------+
+                    | 1 - Exibir monitoramento | 2 - Ver Logs | 3 - Sair |
+                    +--------------------------+--------------+----------+
+                    """);
+                Logger.logInfo("Ação escolhida: " + (input == 1 ? "Exibir Monitoramento": input == 2 ? "Ver logs" : "Sair"));
+                switch (input) {
+                    case 1:
+                        System.out.print("\033[H\033[2J");
+                        System.out.flush();
+                        serviceMonitoring.iniciarMonitoramento(cpu, gpu, hdd, sistemaOp, ram, app, usb, bateria, volume);
+                        break;
+                    case 2:
+                        System.out.print("\033[H\033[2J");
+                        System.out.flush();
+                        Logger.displayLogsInConsole();
+                        break;
+                    case 3:
+                        System.out.print("\033[H\033[2J");
+                        System.out.flush();
+                        System.exit(0);
+                        break;
+                }
+            }
+
+            executorService.shutdown();
 
         } catch (Exception e) {
             Logger.logError("Erro ao iniciar monitoramento: ", e.getMessage(), e);

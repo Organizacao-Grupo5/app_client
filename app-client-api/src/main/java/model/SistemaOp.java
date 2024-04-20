@@ -8,19 +8,19 @@ public class SistemaOp {
     private String sistemaOperacional;
     private String fabricante;
     private String arquitetura;
-    private Instant inicializado;
-    private boolean permissao;
-    private Double tempoDeAtividade;
+    private String inicializado;
+    private String permissao;
+    private String tempoDeAtividade;
 
     public SistemaOp() {
     }
 
-    public SistemaOp(String sistemaOperacional, String fabricante, String arquitetura, Instant inicializado, boolean permissao, Double tempoDeAtividade) {
+    public SistemaOp(String sistemaOperacional, String fabricante, String arquitetura, String inicializado, String permissao, String tempoDeAtividade) {
         this.sistemaOperacional = sistemaOperacional;
         this.fabricante = fabricante;
         this.arquitetura = arquitetura;
         this.inicializado = inicializado;
-        this.permissao = permissao;
+        this.permissao = permissao ;
         this.tempoDeAtividade = tempoDeAtividade;
     }
 
@@ -56,27 +56,27 @@ public class SistemaOp {
         this.arquitetura = arquitetura;
     }
 
-    public Instant getInicializado() {
+    public String getInicializado() {
         return inicializado;
     }
 
-    public void setInicializado(Instant inicializado) {
+    public void setInicializado(String inicializado) {
         this.inicializado = inicializado;
     }
 
-    public boolean isPermissao() {
+    public String isPermissao() {
         return permissao;
     }
 
-    public void setPermissao(boolean permissao) {
+    public void setPermissao(String permissao) {
         this.permissao = permissao;
     }
 
-    public Double getTempoDeAtividade() {
+    public String getTempoDeAtividade() {
         return tempoDeAtividade;
     }
 
-    public void setTempoDeAtividade(Double tempoDeAtividade) {
+    public void setTempoDeAtividade(String tempoDeAtividade) {
         this.tempoDeAtividade = tempoDeAtividade;
     }
 }
