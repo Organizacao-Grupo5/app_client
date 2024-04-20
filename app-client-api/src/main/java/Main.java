@@ -72,7 +72,6 @@ public class Main {
                         Vamos verificar as permissões da sua máquina...
                         """.formatted(usuarioLogado.getNome(), usuarioLogado.getEmail()));
                 serviceMonitoring.iniciarMonitoramento();
-                System.out.println(hardwareIntegration.monitorarBateria());
             } else {
                 System.out.println("""
 

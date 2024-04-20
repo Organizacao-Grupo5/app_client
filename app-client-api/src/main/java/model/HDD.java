@@ -5,8 +5,8 @@ public class HDD {
     private String nome;
     private String serial;
     private String modelo;
-    private long escritas;
-    private long leituras;
+    private Double escritas;
+    private Double leituras;
     private Double bytesDeEscrita;
     private Double bytesDeLeitura;
     private Double tamanho;
@@ -20,7 +20,7 @@ public class HDD {
         return idHDD;
     }
 
-    public HDD(String nome, String serial, String modelo, long escritas, long leituras, Double bytesDeEscrita, Double bytesDeLeitura, Double tamanho, Double tamanhoAtualDaFita, Double tempoDeTransferencia) {
+    public HDD(String nome, String serial, String modelo, Double escritas, Double leituras, Double bytesDeEscrita, Double bytesDeLeitura, Double tamanho, Double tamanhoAtualDaFita, Double tempoDeTransferencia) {
         this.nome = nome;
         this.serial = serial;
         this.modelo = modelo;
@@ -61,19 +61,19 @@ public class HDD {
         this.modelo = modelo;
     }
 
-    public long getEscritas() {
+    public Double getEscritas() {
         return escritas;
     }
 
-    public void setEscritas(long escritas) {
+    public void setEscritas(Double escritas) {
         this.escritas = escritas;
     }
 
-    public long getLeituras() {
+    public Double getLeituras() {
         return leituras;
     }
 
-    public void setLeituras(long leituras) {
+    public void setLeituras(Double leituras) {
         this.leituras = leituras;
     }
 
