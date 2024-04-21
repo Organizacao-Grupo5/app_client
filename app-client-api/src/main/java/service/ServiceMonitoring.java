@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 
 public class ServiceMonitoring {
 
-    private final TablePrinter tablePrinter = new TablePrinter();
+    public final TablePrinter tablePrinter = new TablePrinter();
 
     public void exibirTabelas(CPU cpu, List<GPU> gpus, List<HDD> hdd, SistemaOp so, MemoriaRam ram, List<APP> apps, List<ConexaoUSB> usb, List<Bateria> bateria, List<Volume> volumes) throws Exception {
         Logger.logInfo("Iniciando o monitoramento dos componentes");
@@ -51,7 +51,7 @@ public class ServiceMonitoring {
         }
     }
 
-    private void exibirTabelaCPU(CPU cpu) {
+    public void exibirTabelaCPU(CPU cpu) {
         if (cpu == null) {
             Logger.logWarning("CPU não encontrada durante o monitoramento.");
             return;
@@ -75,7 +75,7 @@ public class ServiceMonitoring {
         tablePrinter.printTable(cpuData);
     }
 
-    private void exibirTabelaSO(SistemaOp sistemaOp) {
+    public void exibirTabelaSO(SistemaOp sistemaOp) {
         if (sistemaOp == null) {
             Logger.logWarning("Sistema operacional não encontrado durante o monitoramento.");
             return;
@@ -94,7 +94,7 @@ public class ServiceMonitoring {
         tablePrinter.printTable(soData);
     }
 
-    private void exibirTabelaHDD(List<HDD> listaHDD) {
+    public void exibirTabelaHDD(List<HDD> listaHDD) {
         if (StringUtils.isNullOrEmpty(listaHDD.toString())) {
             Logger.logWarning("Nenhum HDD encontrado durante o monitoramento.");
             return;
@@ -173,7 +173,7 @@ public class ServiceMonitoring {
         }
     }
 
-    private void exibirTabelaAPP(List<APP> apps) {
+    public void exibirTabelaAPP(List<APP> apps) {
 
         if (apps == null || apps.isEmpty()) {
             Logger.logWarning("Nenhum aplicativo encontrado durante o monitoramento.");

@@ -110,24 +110,19 @@ public class Main {
 
     public static void iniciarMonitoramento() {
         SystemMonitor systemMonitor = new SystemMonitor();
-        ServiceMonitoring serviceMonitoring = new ServiceMonitoring();
 
         try {
             executorService = Executors.newScheduledThreadPool(1);
-            executorService.scheduleAtFixedRate(new Runnable() {
-                @Override
-                public void run() {
-                    sistemaOp = systemMonitor.monitorarSistemaOperacional();
-                    cpu = systemMonitor.monitorarCPU();
-                    hdd = systemMonitor.monitorarHDD();
-                    bateria = systemMonitor.monitorarBateria();
-                    ram = systemMonitor.monitorarRAM();
-                    gpu = systemMonitor.monitorarGPU();
-                    usb = systemMonitor.monitorarUSB();
-                    volume = systemMonitor.monitorarVolumeLogico();
-                    app = systemMonitor.monitorarDisplay();
-
-                }
+            executorService.scheduleAtFixedRate(() -> {
+                sistemaOp = systemMonitor.monitorarSistemaOperacional();
+                cpu = systemMonitor.monitorarCPU();
+                hdd = systemMonitor.monitorarHDD();
+                bateria = systemMonitor.monitorarBateria();
+                ram = systemMonitor.monitorarRAM();
+                gpu = systemMonitor.monitorarGPU();
+                usb = systemMonitor.monitorarUSB();
+                volume = systemMonitor.monitorarVolumeLogico();
+                app = systemMonitor.monitorarDisplay();
             }, 0, 10, TimeUnit.SECONDS);
 
             Scanner scanner = new Scanner(System.in);
@@ -135,34 +130,34 @@ public class Main {
 
             while (running) {
                 System.out.println("""
-                +------------------------------------------+----------------------+
-                | Seu monitoramento está em segundo plano                         |
-                +-----------------------------------------------------------------+
-                | Escolha uma opção :                                             |
-                +--------------------------+--------------+----------+------------+
-                | 1 - Exibir monitoramento | 2 - Ver Logs | 3 - Sair | 4 - Voltar |
-                +--------------------------+--------------+----------+------------+
-                """);
-                Integer input = scanner.nextInt();
-                Logger.logInfo("Ação escolhida: " + (input == 1 ? "Exibir Monitoramento": input == 2 ? "Ver logs" : input == 3 ? "Sair" : input == 4 ? "Voltar" : "Ação não reconhecida"));
-
+                        +------------------------------------------+----------------------+
+                        | Seu monitoramento está em segundo plano                         |
+                        +-----------------------------------------------------------------+
+                        | Escolha uma opção :                                             |
+                        +--------------------------+--------------+----------+------------+
+                        | a - Exibir monitoramento | b - Ver Logs | c - Sair | d - Voltar |
+                        +--------------------------+--------------+----------+------------+
+                        """);
+                String input = scanner.next();
 
                 switch (input) {
-                    case 1:
+                    case "a":
                         clearTerminal();
-                        serviceMonitoring.exibirTabelas(cpu, gpu, hdd, sistemaOp, ram, app, usb, bateria, volume);
+                        displayTables();
                         break;
-                    case 2:
+                    case "b":
                         clearTerminal();
                         Logger.displayLogsInConsole();
                         break;
-                    case 3:
+                    case "c":
                         clearTerminal();
                         System.exit(0);
                         break;
-                    case 4:
+                    case "d":
                         clearTerminal();
                         break;
+                    default:
+                        System.out.println("Opção inválida!");
                 }
             }
 
@@ -183,6 +178,82 @@ public class Main {
             }
         } catch (Exception ex) {
             ex.printStackTrace();
+        }
+    }
+
+    public static void displayTables() throws Exception {
+        ServiceMonitoring serviceMonitoring = new ServiceMonitoring();
+        System.out.println("""
+                +---------------------------------------------------------------------------+
+                |             Muitos dados foram capturados. Escolha o que exibir            |
+                +---------------------------------------------------------------------------+
+                | a - Todas as tabelas  | b - Tabela CPU        | c - Tabela de HDD         |
+                | d - Tabelas de GPU    | e - Tabela de Ram     | f - Tabela de APPs abertos|                                             |
+                | g - Tabela de Bateria | h - Tabela de Sist.Op | i - Tabela de Volume      | 
+                | j - Tabela de USB     |                       |                           |
+                +--------------------------+--------------+----------+----------------------+
+                | 1 - Exibir monitoramento | 2 - Ver Logs | 3 - Sair | 4 - Voltar           |
+                +--------------------------+--------------+----------+----------------------+
+                """);
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.next();
+
+        switch (input) {
+            case "a":
+                clearTerminal();
+                System.out.println("Mostrando todas as tabelas...");
+                serviceMonitoring.exibirTabelas(cpu, gpu, hdd, sistemaOp, ram, app, usb, bateria, volume);
+                break;
+            case "b":
+                System.out.println("Mostrando a tabela de CPU...");
+                serviceMonitoring.exibirTabelaCPU(cpu);
+                break;
+            case "c":
+                System.out.println("Mostrando a tabela de HDD...");
+                serviceMonitoring.exibirTabelaHDD(hdd);
+                break;
+            case "d":
+                System.out.println("Mostrando as tabelas de GPU...");
+                serviceMonitoring.exibirTabelaGPU(gpu);
+                break;
+            case "e":
+                System.out.println("Mostrando a tabela de RAM...");
+                serviceMonitoring.exibirTabelaMemoriaRAM(ram);
+                break;
+            case "f":
+                System.out.println("Mostrando a tabela de APPs abertos...");
+                serviceMonitoring.exibirTabelaAPP(app);
+                break;
+            case "g":
+                System.out.println("Mostrando a tabela de Bateria...");
+                serviceMonitoring.exibirTabelaBateria(bateria);
+                break;
+            case "h":
+                System.out.println("Mostrando a tabela de Sistema Operacional...");
+                serviceMonitoring.exibirTabelaSO(sistemaOp);
+                break;
+            case "i":
+                System.out.println("Mostrando a tabela de Volume...");
+                serviceMonitoring.exibirTabelaVolume(volume);
+                break;
+            case "j":
+                System.out.println("Mostrando a tabela de USB...");
+                serviceMonitoring.exibirTabelaConexaoUSB(usb);
+                break;
+            case "1":
+                clearTerminal();
+                break;
+            case "2":
+                Logger.displayLogsInConsole();
+                break;
+            case "3":
+                clearTerminal();
+                System.out.println("Saindo...");
+                System.exit(0);
+                break;
+            case "4":
+                System.out.println("Voltando...");
+                break;
         }
     }
 
