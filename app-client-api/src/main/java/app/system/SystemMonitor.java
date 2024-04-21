@@ -21,6 +21,8 @@ public class SystemMonitor {
     private final Conversor conversor = new Conversor();
     private boolean dadosJanelaValidados = false;
     private boolean dadosHDDValidados = false;
+    private boolean dadosBateriaValidados = false;
+    private boolean dadosGPUValidados = false;
     private final HardwareAbstractionLayer hardware = new SystemInfo().getHardware();
 
     public CPU monitorarCPU() {
@@ -40,7 +42,7 @@ public class SystemMonitor {
             cpu.setNumeroPacotesFisicos(processor.getNumeroPacotesFisicos());
             cpu.setUso(processor.getUso());
             cpu.setNome(processor.getNome());
-            cpu.setTemperatura(looca.getTemperatura().getTemperatura());
+            cpu.setTemperatura(0.0);
 
             Logger.logInfo("Dados da CPU capturados com sucesso.");
         } catch (Exception e) {
@@ -80,9 +82,9 @@ public class SystemMonitor {
     }
 
     private void validarDados(Janela janela) {
-        if (!dadosJanelaValidados && (janela.getTitulo() == null || janela.getTitulo().isEmpty() ||
-                janela.getComando() == null || janela.getComando().isEmpty() ||
-                janela.getJanelaId() <= 0 || janela.getPid() <= 0 || janela.getLocalizacaoETamanho() == null)) {
+        if (!dadosJanelaValidados && (janela.getTitulo() == null || janela.getTitulo().isEmpty()
+                || janela.getComando() == null || janela.getComando().isEmpty() || janela.getJanelaId() <= 0
+                || janela.getPid() <= 0 || janela.getLocalizacaoETamanho() == null)) {
             Logger.logWarning("Dados incompletos da janela.");
         }
     }
@@ -112,9 +114,9 @@ public class SystemMonitor {
     }
 
     private void validarDadosDisco(Disco disco) {
-        if (!dadosHDDValidados && (disco.getNome() == null || disco.getNome().isEmpty() ||
-                disco.getSerial() == null || disco.getSerial().isEmpty() ||
-                disco.getModelo() == null || disco.getModelo().isEmpty() || disco.getTamanho() <= 0)) {
+        if (!dadosHDDValidados && (disco.getNome() == null || disco.getNome().isEmpty() || disco.getSerial() == null
+                || disco.getSerial().isEmpty() || disco.getModelo() == null || disco.getModelo().isEmpty()
+                || disco.getTamanho() <= 0)) {
             Logger.logWarning("Dados incompletos do disco.");
         }
     }
@@ -129,30 +131,89 @@ public class SystemMonitor {
     }
 
     public List<Bateria> monitorarBateria() {
-        Logger.logInfo("Capturando dados da sua bateria.");
-        return hardware.getPowerSources().stream()
-                .map(power -> new Bateria(power.getAmperage(), power.getDeviceName(), power.getSerialNumber(),
-                        power.getChemistry(), power.getName(), power.getVoltage(), "mAh",
-                        conversor.formatarBytes(power.getCurrentCapacity()), power.getCycleCount(),
-                        conversor.formatarBytes(power.getDesignCapacity()), power.getTimeRemainingInstant(),
-                        power.getTimeRemainingEstimated(), power.getPowerUsageRate(), power.getTemperature(),
-                        conversor.formatarBytes(power.getMaxCapacity()),
-                        conversor.convertePorcentagem(power.getMaxCapacity(),
-                                power.getRemainingCapacityPercent() * power.getMaxCapacity() / 100),
-                        power.getManufactureDate().toString(), power.getManufacturer()))
-                .collect(Collectors.toList());
+        if (!dadosBateriaValidados) {
+            Logger.logInfo("Capturando dados da sua bateria.");
+            dadosBateriaValidados = true;
+        }
+
+        List<Bateria> baterias = new ArrayList<>();
+
+        try {
+            hardware.getPowerSources().forEach(power -> {
+                try {
+                    validarDadosBateria(power);
+                    baterias.add(mapearPowerParaBateria(power));
+                } catch (InvalidDataException e) {
+                    Logger.logWarning("Erro ao processar dados da bateria: " + e.getMessage());
+                }
+            });
+            Logger.logInfo("Dados da bateria gravados.");
+        } catch (Exception e) {
+            Logger.logError("Erro ao acessar informações do sistema: ", e.getMessage(), e);
+        }
+        return baterias;
     }
 
+    private void validarDadosBateria(PowerSource power) {
+        if (!dadosBateriaValidados && (power.getDeviceName() == null || power.getDeviceName().isEmpty()
+                || power.getSerialNumber() == null || power.getSerialNumber().isEmpty() || power.getChemistry() == null
+                || power.getChemistry().isEmpty() || power.getName() == null || power.getName().isEmpty())) {
+            Logger.logWarning("Dados incompletos da bateria.");
+        }
+    }
+
+    private Bateria mapearPowerParaBateria(PowerSource power) throws InvalidDataException {
+        String manufactureDateStr = power.getManufactureDate() != null ? power.getManufactureDate().toString() : "N/A";
+        return new Bateria(power.getAmperage(), power.getDeviceName(), power.getSerialNumber(), power.getChemistry(),
+                power.getName(), power.getVoltage(), "mAh", conversor.formatarBytes(power.getCurrentCapacity()),
+                power.getCycleCount(), conversor.formatarBytes(power.getDesignCapacity()),
+                power.getTimeRemainingInstant(), power.getTimeRemainingEstimated(), power.getPowerUsageRate(),
+                power.getTemperature(), conversor.formatarBytes(power.getMaxCapacity()),
+                conversor.convertePorcentagem(power.getMaxCapacity(),
+                        power.getRemainingCapacityPercent() * power.getMaxCapacity() / 100),
+                manufactureDateStr, power.getManufacturer());
+    }
+
+
     public List<GPU> monitorarGPU() {
-        Logger.logInfo("Capturando dados da sua GPU");
+        if (!dadosGPUValidados) {
+            Logger.logInfo("Capturando dados da sua GPU");
+            dadosGPUValidados = true;
+        }
+
+        List<GPU> gpus = new ArrayList<>();
         List<GraphicsCard> graphicsCards = hardware.getGraphicsCards();
 
-        if (graphicsCards == null || graphicsCards.isEmpty()) {
-            Logger.logWarning("Dados da GPU não puderam ser capturados: nenhuma placa gráfica encontrada.");
+        try {
+            if (graphicsCards == null || graphicsCards.isEmpty()) {
+                Logger.logWarning("Dados da GPU não puderam ser capturados: nenhuma placa gráfica encontrada.");
+            } else {
+                graphicsCards.forEach(gpu -> {
+                    try {
+                        validarDadosGPU(gpu);
+                        gpus.add(mapearGPU(gpu));
+                    } catch (InvalidDataException e) {
+                        Logger.logWarning("Erro ao processar dados da GPU: " + e.getMessage());
+                    }
+                });
+                Logger.logInfo("Dados da GPU gravados.");
+            }
+        } catch (Exception e) {
+            Logger.logError("Erro ao acessar informações do sistema: ", e.getMessage(), e);
         }
-        return hardware.getGraphicsCards().stream().map(gpu -> new GPU(gpu.getName(), gpu.getVendor(),
-                        gpu.getVersionInfo(), gpu.getDeviceId(), conversor.formatarBytes(gpu.getVRam())))
-                .collect(Collectors.toList());
+        return gpus;
+    }
+
+    private void validarDadosGPU(GraphicsCard gpu) {
+        if (!dadosGPUValidados && (gpu.getName() == null || gpu.getName().isEmpty() || gpu.getVendor() == null
+                || gpu.getVendor().isEmpty() || gpu.getVersionInfo() == null || gpu.getVersionInfo().isEmpty())) {
+            Logger.logWarning("Dados incompletos da GPU.");
+        }
+    }
+
+    private GPU mapearGPU(GraphicsCard gpu) throws InvalidDataException {
+        return new GPU(gpu.getName(), gpu.getVendor(), gpu.getVersionInfo(), gpu.getDeviceId(),
+                conversor.formatarBytes(gpu.getVRam()));
     }
 
     public MemoriaRam monitorarRAM() {
@@ -181,14 +242,11 @@ public class SystemMonitor {
         }
 
         return new SistemaOp(Optional.ofNullable(sistema.getSistemaOperacional()).orElse("VALOR NÃO ENCONTRADO"),
-                Optional.ofNullable(sistema.getFabricante())
-                        .orElse("VALOR NÃO ENCONTRADO"),
+                Optional.ofNullable(sistema.getFabricante()).orElse("VALOR NÃO ENCONTRADO"),
                 Optional.ofNullable(sistema.getArquitetura()).map(arquitetura -> arquitetura.toString())
                         .orElse("VALOR NÃO ENCONTRADO"),
-                Optional.ofNullable(sistema.getInicializado())
-                        .map(Object::toString).orElse("VALOR NÃO ENCONTRADO"),
-                Optional.ofNullable(sistema.getPermissao())
-                        .map(p -> p ? "SIM" : "NÃO").orElse("VALOR NÃO ENCONTRADO"),
+                Optional.ofNullable(sistema.getInicializado()).map(Object::toString).orElse("VALOR NÃO ENCONTRADO"),
+                Optional.ofNullable(sistema.getPermissao()).map(p -> p ? "SIM" : "NÃO").orElse("VALOR NÃO ENCONTRADO"),
                 Optional.ofNullable(sistema.getTempoDeAtividade()).map(conversor::converterSegundosParaHoras)
                         .map(Object::toString).orElse("VALOR NÃO ENCONTRADO"));
     }
@@ -202,15 +260,11 @@ public class SystemMonitor {
     }
 
     public List<Volume> monitorarVolumeLogico() {
-        return looca.getGrupoDeDiscos().getVolumes().stream().map(volume -> new Volume(
-                volume.getNome(),
-                volume.getVolume(),
-                conversor.formatarBytes(volume.getDisponivel()),
-                conversor.formatarBytes(volume.getTotal()),
-                volume.getTipo(),
-                volume.getUUID(),
-                volume.getPontoDeMontagem()
-        )).collect(Collectors.toList());
+        return looca.getGrupoDeDiscos().getVolumes().stream()
+                .map(volume -> new Volume(volume.getNome(), volume.getVolume(),
+                        conversor.formatarBytes(volume.getDisponivel()), conversor.formatarBytes(volume.getTotal()),
+                        volume.getTipo(), volume.getUUID(), volume.getPontoDeMontagem()))
+                .collect(Collectors.toList());
     }
 
 }

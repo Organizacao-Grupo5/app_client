@@ -6,8 +6,8 @@ import java.util.Date;
 
 public class Logger {
 
-    private static final String LOG_DIRECTORY = "logs/";
-    private static final String LOG_FILE = LOG_DIRECTORY + "app.log";
+    private static final String LOG_PATH = System.getProperty("user.dir") + "/logs/";
+    private static final String LOG_FILE = LOG_PATH + "app.log";
 
     static {
         File logFile = new File(LOG_FILE);

@@ -119,11 +119,12 @@ public class Main {
             executorService.scheduleAtFixedRate(new Runnable() {
                 @Override
                 public void run() {
+                    sistemaOp = systemMonitor.monitorarSistemaOperacional();
                     cpu = systemMonitor.monitorarCPU();
                     hdd = systemMonitor.monitorarHDD();
-                    sistemaOp = systemMonitor.monitorarSistemaOperacional();
                     bateria = systemMonitor.monitorarBateria();
                     ram = systemMonitor.monitorarRAM();
+                    gpu = systemMonitor.monitorarGPU();
                 }
             }, 0, 10, TimeUnit.SECONDS);
 
@@ -149,18 +150,15 @@ public class Main {
                 Logger.logInfo("Ação escolhida: " + (input == 1 ? "Exibir Monitoramento": input == 2 ? "Ver logs" : "Sair"));
                 switch (input) {
                     case 1:
-                        System.out.print("\033[H\033[2J");
-                        System.out.flush();
+                        clearTerminal();
                         serviceMonitoring.exibirTabelas(cpu, gpu, hdd, sistemaOp, ram, app, usb, bateria, volume);
                         break;
                     case 2:
-                        System.out.print("\033[H\033[2J");
-                        System.out.flush();
+                        clearTerminal();
                         Logger.displayLogsInConsole();
                         break;
                     case 3:
-                        System.out.print("\033[H\033[2J");
-                        System.out.flush();
+                        clearTerminal();
                         System.exit(0);
                         break;
                 }
@@ -173,8 +171,17 @@ public class Main {
         }
     }
 
-    public static void limparConsole() {
-
+    public static void clearTerminal() {
+        String os = System.getProperty("os.name").toLowerCase();
+        try {
+            if (os.contains("win")) {
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            } else if (os.contains("nix") || os.contains("nux") || os.contains("aix")) {
+                new ProcessBuilder("bash", "-c", "clear").inheritIO().start().waitFor();
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 
 }

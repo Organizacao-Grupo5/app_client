@@ -19,12 +19,33 @@ public class ServiceMonitoring {
             throw new NullPointerException("O sistema de monitoramento ou o printer de tabela falharam.");
         }
 
-        exibirTabelaCPU(cpu);
         exibirTabelaSO(so);
+        exibirTabelaCPU(cpu);
         exibirTabelaHDD(hdd);
         exibirTabelaBateria(bateria);
         exibirTabelaMemoriaRAM(ram);
+        exibirTabelaGPU(gpus);
+    }
+    public void exibirTabelaGPU(List<GPU> gpus) {
+        if (gpus == null || gpus.isEmpty()) {
+            Logger.logWarning("Nenhuma GPU encontrada durante o monitoramento.");
+            return;
+        }
 
+        for (int i = 0; i < gpus.size(); i++) {
+            GPU gpu = gpus.get(i);
+            List<List<String>> gpuData = Arrays.asList(
+                    Arrays.asList("", "GPU " + (i + 1)),
+                    Arrays.asList("ID", String.valueOf(gpu.getIdGpu())),
+                    Arrays.asList("Nome", gpu.getNome()),
+                    Arrays.asList("Fabricante", gpu.getFabricante()),
+                    Arrays.asList("Versão", gpu.getVersao()),
+                    Arrays.asList("ID Device", gpu.getIdDevice()),
+                    Arrays.asList("VRAM", String.valueOf(gpu.getvRam()))
+            );
+
+            tablePrinter.printTable(gpuData);
+        }
     }
 
     private void exibirTabelaCPU(CPU cpu) {
