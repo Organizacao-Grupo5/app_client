@@ -1,5 +1,7 @@
 package model;
 
+import java.time.LocalDateTime;
+
 public class Bateria {
     private Integer idBateria;
     private Double amperagem;
@@ -20,6 +22,7 @@ public class Bateria {
     private Double percentualCapacidadeRestante;
     private String dataFabricacao;
     private String fabricante;
+    private LocalDateTime dataHoraCaptura;
 
     public Bateria() {
     }
@@ -47,6 +50,15 @@ public class Bateria {
         this.percentualCapacidadeRestante = percentualCapacidadeRestante;
         this.dataFabricacao = dataFabricacao;
         this.fabricante = fabricante;
+        this.dataHoraCaptura = LocalDateTime.now();
+    }
+
+    public LocalDateTime getDataHoraCaptura() {
+        return dataHoraCaptura;
+    }
+
+    public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
+        this.dataHoraCaptura = dataHoraCaptura;
     }
 
     public void setIdBateria(Integer idBateria) {

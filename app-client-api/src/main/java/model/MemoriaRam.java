@@ -1,10 +1,13 @@
 package model;
 
+import java.time.LocalDateTime;
+
 public class MemoriaRam {
     private int idMemoriaRAM;
     private Double memoriaDisponivel;
     private Double memoriaEmUso;
     private Double memoriaTotal;
+    private LocalDateTime dataHoraCaptura;
 
     public MemoriaRam() {
     }
@@ -14,6 +17,7 @@ public class MemoriaRam {
         this.memoriaDisponivel = memoriaDisponivel;
         this.memoriaEmUso = memoriaEmUso;
         this.memoriaTotal = memoriaTotal;
+        this.dataHoraCaptura = LocalDateTime.now();
     }
 
     public int getIdMemoriaRAM() {

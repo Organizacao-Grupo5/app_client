@@ -1,5 +1,6 @@
 package model;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class ConexaoUSB {
@@ -10,6 +11,7 @@ public class ConexaoUSB {
     private String idFornecedor;
     private String numeroSerie;
     private String idProduto;
+    private LocalDateTime dataHoraCaptura;
 
     public ConexaoUSB() {
     }
@@ -21,6 +23,15 @@ public class ConexaoUSB {
         this.idFornecedor = idFornecedor;
         this.numeroSerie = numeroSerie;
         this.idProduto = idProduto;
+        this.dataHoraCaptura = LocalDateTime.now();
+    }
+
+    public LocalDateTime getDataHoraCaptura() {
+        return dataHoraCaptura;
+    }
+
+    public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
+        this.dataHoraCaptura = dataHoraCaptura;
     }
 
     public int getIdConexaoUSB() {

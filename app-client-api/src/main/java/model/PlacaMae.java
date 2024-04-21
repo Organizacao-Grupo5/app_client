@@ -1,9 +1,12 @@
 package model;
 
+import java.time.LocalDateTime;
+
 public class PlacaMae {
     private int idPlacaMae;
     private String fabricante;
     private String modelo;
+    private LocalDateTime dataHoraCaptura;
 
     public PlacaMae() {
     }
@@ -11,6 +14,7 @@ public class PlacaMae {
     public PlacaMae(String fabricante, String modelo) {
         this.fabricante = fabricante;
         this.modelo = modelo;
+        this.dataHoraCaptura = LocalDateTime.now();
     }
 
     public int getIdPlacaMae() {

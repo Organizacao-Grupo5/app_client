@@ -2,6 +2,7 @@ package app.system;
 
 import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.discos.Disco;
+import com.github.britooo.looca.api.group.dispositivos.DispositivoUsb;
 import com.github.britooo.looca.api.group.janelas.Janela;
 import com.github.britooo.looca.api.group.memoria.Memoria;
 import com.github.britooo.looca.api.group.processador.Processador;
@@ -23,6 +24,8 @@ public class SystemMonitor {
     private boolean dadosHDDValidados = false;
     private boolean dadosBateriaValidados = false;
     private boolean dadosGPUValidados = false;
+    private boolean dadosUSBValidados = false;
+
     private final HardwareAbstractionLayer hardware = new SystemInfo().getHardware();
 
     public CPU monitorarCPU() {
@@ -252,11 +255,31 @@ public class SystemMonitor {
     }
 
     public List<ConexaoUSB> monitorarUSB() {
-        Logger.logInfo("Capturando dados das suas conexões USB");
-        return looca.getDispositivosUsbGrupo().getDispositivosUsbConectados().stream()
-                .map(usb -> new ConexaoUSB(usb.getNome(), usb.getForncecedor(), usb.getIdDispositivoUsbExclusivo(),
-                        usb.getIdFornecedor(), usb.getNumeroDeSerie(), usb.getIdProduto()))
+        if (!dadosUSBValidados) {
+            Logger.logInfo("Capturando dados das suas conexões USB");
+            dadosUSBValidados = true;
+        }
+
+        List<ConexaoUSB> conexoesUSB = looca.getDispositivosUsbGrupo().getDispositivosUsbConectados().stream()
+                .map(usb -> mapearConexaoUSB(usb))
                 .collect(Collectors.toList());
+
+        validarDadosUSB(conexoesUSB);
+
+        return conexoesUSB;
+    }
+
+    private ConexaoUSB mapearConexaoUSB(DispositivoUsb usb) {
+        return new ConexaoUSB(usb.getNome(), usb.getForncecedor(), usb.getIdDispositivoUsbExclusivo(),
+                usb.getIdFornecedor(), usb.getNumeroDeSerie(), usb.getIdProduto());
+    }
+
+    private void validarDadosUSB(List<ConexaoUSB> conexoesUSB) {
+        if (!dadosUSBValidados) {
+            if (conexoesUSB == null || conexoesUSB.isEmpty()) {
+                Logger.logWarning("Nenhuma conexão USB detectada.");
+            }
+        }
     }
 
     public List<Volume> monitorarVolumeLogico() {

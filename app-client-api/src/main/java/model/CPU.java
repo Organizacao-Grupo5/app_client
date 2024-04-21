@@ -1,5 +1,7 @@
 package model;
 
+import java.time.LocalDateTime;
+
 public class CPU {
     private Integer idCpu;
     private Integer numeroDeCpusLogicas;
@@ -13,6 +15,7 @@ public class CPU {
     private Double uso;
     private String nome;
     private Double temperatura;
+    private LocalDateTime dataHoraCaptura;
 
     public CPU() {
     }
@@ -29,6 +32,7 @@ public class CPU {
         this.uso = uso;
         this.nome = nome;
         this.temperatura = temperatura;
+        this.dataHoraCaptura = LocalDateTime.now();
     }
 
     public Integer getIdCpu() {

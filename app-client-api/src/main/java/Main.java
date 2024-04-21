@@ -70,16 +70,14 @@ public class Main {
                 _____________________________________________________________  
                 Vamos verificar suas permissões para iniciar o monitoramento.
                 _____________________________________________________________
-                Insira seu email:
                 """);
+        System.out.print(" - Insira seu email: ");
         String email = scanner.next();
-        System.out.println("""
-                Insira sua senha:
-                """);
+        System.out.print(" - Insira sua senha: ");
         String senha = scanner.next();
         try {
             usuarioLogado = login.login(email, senha);
-            System.out.println("Terminamos a verificação de seu acesso.");
+            System.out.println(" - Terminamos a verificação de seu acesso...   ");
             if (usuarioLogado != null) {
                 System.out.println("""
 
@@ -125,29 +123,30 @@ public class Main {
                     bateria = systemMonitor.monitorarBateria();
                     ram = systemMonitor.monitorarRAM();
                     gpu = systemMonitor.monitorarGPU();
+                    usb = systemMonitor.monitorarUSB();
+                    volume = systemMonitor.monitorarVolumeLogico();
+                    app = systemMonitor.monitorarDisplay();
+
                 }
             }, 0, 10, TimeUnit.SECONDS);
 
             Scanner scanner = new Scanner(System.in);
             boolean running = true;
-            System.out.println("""
-                    +----------------------------------------------------+
-                    | Seu monitoramento iniciou e está em segundo plano  |
-                    +----------------------------------------------------+
-                    | Escolha uma opção :                                |
-                    +--------------------------+--------------+----------+
-                    | 1 - Exibir monitoramento | 2 - Ver Logs | 3 - Sair |
-                    +--------------------------+--------------+----------+
-                    """);
 
             while (running) {
-                Integer input = scanner.nextInt();
                 System.out.println("""
-                    +--------------------------+--------------+----------+
-                    | 1 - Exibir monitoramento | 2 - Ver Logs | 3 - Sair |
-                    +--------------------------+--------------+----------+
-                    """);
-                Logger.logInfo("Ação escolhida: " + (input == 1 ? "Exibir Monitoramento": input == 2 ? "Ver logs" : "Sair"));
+                +------------------------------------------+----------------------+
+                | Seu monitoramento está em segundo plano                         |
+                +-----------------------------------------------------------------+
+                | Escolha uma opção :                                             |
+                +--------------------------+--------------+----------+------------+
+                | 1 - Exibir monitoramento | 2 - Ver Logs | 3 - Sair | 4 - Voltar |
+                +--------------------------+--------------+----------+------------+
+                """);
+                Integer input = scanner.nextInt();
+                Logger.logInfo("Ação escolhida: " + (input == 1 ? "Exibir Monitoramento": input == 2 ? "Ver logs" : input == 3 ? "Sair" : input == 4 ? "Voltar" : "Ação não reconhecida"));
+
+
                 switch (input) {
                     case 1:
                         clearTerminal();
@@ -160,6 +159,9 @@ public class Main {
                     case 3:
                         clearTerminal();
                         System.exit(0);
+                        break;
+                    case 4:
+                        clearTerminal();
                         break;
                 }
             }

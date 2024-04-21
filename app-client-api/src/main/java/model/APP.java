@@ -1,6 +1,7 @@
 package model;
 
 import java.awt.*;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class APP {
@@ -11,6 +12,7 @@ public class APP {
     private Double janelaID;
     private Double pid;
     private Rectangle localizacaoEtamanho;
+    private LocalDateTime dataHoraCaptura;
 
     public APP() {
     }
@@ -21,6 +23,15 @@ public class APP {
         this.janelaID = janelaID;
         this.pid = pid;
         this.localizacaoEtamanho = localizacaoEtamanho;
+        this.dataHoraCaptura = LocalDateTime.now();
+    }
+
+    public LocalDateTime getDataHoraCaptura() {
+        return dataHoraCaptura;
+    }
+
+    public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
+        this.dataHoraCaptura = dataHoraCaptura;
     }
 
     public int getIdApp() {

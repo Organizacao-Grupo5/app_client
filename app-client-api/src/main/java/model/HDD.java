@@ -1,5 +1,7 @@
 package model;
 
+import java.time.LocalDateTime;
+
 public class HDD {
     private Integer idHDD;
     private String nome;
@@ -12,6 +14,7 @@ public class HDD {
     private Double tamanho;
     private Double tamanhoAtualDaFita;
     private Double tempoDeTransferencia;
+    private LocalDateTime dataHoraCaptura;
 
     public HDD() {
     }
@@ -31,6 +34,7 @@ public class HDD {
         this.tamanho = tamanho;
         this.tamanhoAtualDaFita = tamanhoAtualDaFita;
         this.tempoDeTransferencia = tempoDeTransferencia;
+        this.dataHoraCaptura = LocalDateTime.now();
     }
 
     public void setIdHDD(Integer idHDD) {

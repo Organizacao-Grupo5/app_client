@@ -1,5 +1,7 @@
 package model;
 
+import java.time.LocalDateTime;
+
 public class Volume {
     private Integer idVolume;
     private String nome;
@@ -9,6 +11,7 @@ public class Volume {
     private String tipo;
     private String uuid;
     private String pontoDeMontagem;
+    private LocalDateTime dataHoraCaptura;
 
     public Volume() {
     }
@@ -21,6 +24,15 @@ public class Volume {
         this.tipo = tipo;
         this.uuid = uuid;
         this.pontoDeMontagem = pontoDeMontagem;
+        this.dataHoraCaptura = LocalDateTime.now();
+    }
+
+    public LocalDateTime getDataHoraCaptura() {
+        return dataHoraCaptura;
+    }
+
+    public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
+        this.dataHoraCaptura = dataHoraCaptura;
     }
 
     public Integer getIdVolume() {

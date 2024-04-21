@@ -1,5 +1,7 @@
 package model;
 
+import java.time.LocalDateTime;
+
 public class GPU {
     private Integer idGpu;
     private String nome;
@@ -7,6 +9,7 @@ public class GPU {
     private String versao;
     private String idDevice;
     private Double vRam;
+    private LocalDateTime dataHoraCaptura;
 
     public GPU() {
     }
@@ -17,6 +20,15 @@ public class GPU {
         this.versao = versao;
         this.idDevice = idDevice;
         this.vRam = vRam;
+        this.dataHoraCaptura = LocalDateTime.now();
+    }
+
+    public LocalDateTime getDataHoraCaptura() {
+        return dataHoraCaptura;
+    }
+
+    public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
+        this.dataHoraCaptura = dataHoraCaptura;
     }
 
     public Integer getIdGpu() {

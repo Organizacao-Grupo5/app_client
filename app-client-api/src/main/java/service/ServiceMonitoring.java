@@ -7,6 +7,7 @@ import model.*;
 import util.TablePrinter;
 import util.logs.Logger;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class ServiceMonitoring {
 
@@ -18,13 +19,15 @@ public class ServiceMonitoring {
         if (tablePrinter == null) {
             throw new NullPointerException("O sistema de monitoramento ou o printer de tabela falharam.");
         }
-
         exibirTabelaSO(so);
         exibirTabelaCPU(cpu);
         exibirTabelaHDD(hdd);
+        exibirTabelaConexaoUSB(usb);
         exibirTabelaBateria(bateria);
         exibirTabelaMemoriaRAM(ram);
         exibirTabelaGPU(gpus);
+        exibirTabelaVolume(volumes);
+        exibirTabelaAPP(apps);
     }
     public void exibirTabelaGPU(List<GPU> gpus) {
         if (gpus == null || gpus.isEmpty()) {
@@ -169,4 +172,72 @@ public class ServiceMonitoring {
             tablePrinter.printTable(bateriaData);
         }
     }
+
+    private void exibirTabelaAPP(List<APP> apps) {
+
+        if (apps == null || apps.isEmpty()) {
+            Logger.logWarning("Nenhum aplicativo encontrado durante o monitoramento.");
+            return;
+        }
+
+        apps.forEach(app -> {
+            List<List<String>> appData = Arrays.asList(
+                   Arrays.asList("", "APP"),
+                   Arrays.asList("Nome", app.getNome()),
+                   Arrays.asList("Comando", app.getComando()),
+                   Arrays.asList("Data hora captura", app.getDataHoraCaptura().toString()),
+                   Arrays.asList("PID", app.getPid().toString()),
+                   Arrays.asList("Id Janela", app.getJanelaID().toString()),
+                   Arrays.asList("Localização e tamanho", app.getLocalizacaoEtamanho().toString())
+            );
+            tablePrinter.printTable(appData);
+        });
+    }
+
+
+    public void exibirTabelaConexaoUSB(List<ConexaoUSB> conexoesUSB) {
+        if (conexoesUSB == null || conexoesUSB.isEmpty()) {
+            Logger.logWarning("Nenhuma conexão USB encontrada durante o monitoramento.");
+            return;
+        }
+
+        conexoesUSB.forEach(usb -> {
+            List<List<String>> usbData = Arrays.asList(
+                    Arrays.asList("", "Conexão USB"),
+                    Arrays.asList("Nome USB", usb.getNomeUsb()),
+                    Arrays.asList("Fornecedor", usb.getFornecedor()),
+                    Arrays.asList("Data hora captura", usb.getDataHoraCaptura().toString()),
+                    Arrays.asList("Id Fornecedor", usb.getIdFornecedor().toString()),
+                    Arrays.asList("Número Série", usb.getNumeroSerie().toString()),
+                    Arrays.asList("Id Dispositivo USB exclusivo", usb.getIdDispositivoUSBExclusivo().toString()),
+                    Arrays.asList("Id Produto", usb.getIdProduto().toString())
+            );
+            tablePrinter.printTable(usbData);
+        });
+    }
+
+
+    public void exibirTabelaVolume(List<Volume> volumes) {
+        if (volumes == null || volumes.isEmpty()) {
+            Logger.logWarning("Nenhum volume encontrado durante o monitoramento.");
+            return;
+        }
+
+        for (int i = 0; i < volumes.size(); i++) {
+            Volume volume = volumes.get(i);
+            List<List<String>> volumeData = Arrays.asList(
+                    Arrays.asList("", "Volume " + (i + 1)),
+                    Arrays.asList("Nome", volume.getNome()),
+                    Arrays.asList("Volume", volume.getVolume()),
+                    Arrays.asList("Disponível", String.valueOf(volume.getDisponivel())),
+                    Arrays.asList("Total", String.valueOf(volume.getTotal())),
+                    Arrays.asList("Tipo", volume.getTipo()),
+                    Arrays.asList("UUID", volume.getUuid()),
+                    Arrays.asList("Ponto de Montagem", volume.getPontoDeMontagem())
+            );
+
+            tablePrinter.printTable(volumeData);
+        }
+    }
+
 }

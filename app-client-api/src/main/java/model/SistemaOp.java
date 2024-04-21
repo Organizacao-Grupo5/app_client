@@ -1,6 +1,7 @@
 package model;
 
 import java.time.Instant;
+import java.time.LocalDateTime;
 
 public class SistemaOp {
     private int idSistemaOperacional;
@@ -11,6 +12,7 @@ public class SistemaOp {
     private String inicializado;
     private String permissao;
     private String tempoDeAtividade;
+    private LocalDateTime dataHoraCaptura;
 
     public SistemaOp() {
     }
@@ -22,6 +24,19 @@ public class SistemaOp {
         this.inicializado = inicializado;
         this.permissao = permissao ;
         this.tempoDeAtividade = tempoDeAtividade;
+        this.dataHoraCaptura = LocalDateTime.now();
+    }
+
+    public String getPermissao() {
+        return permissao;
+    }
+
+    public LocalDateTime getDataHoraCaptura() {
+        return dataHoraCaptura;
+    }
+
+    public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
+        this.dataHoraCaptura = dataHoraCaptura;
     }
 
     public int getIdSistemaOperacional() {

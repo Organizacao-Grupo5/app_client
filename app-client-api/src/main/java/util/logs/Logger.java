@@ -1,18 +1,25 @@
 package util.logs;
 
+import com.sun.jdi.connect.Connector;
+
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Logger {
 
-    private static final String LOG_PATH = System.getProperty("user.dir") + "/logs/";
-    private static final String LOG_FILE = LOG_PATH + "app.log";
+    private static final String LOG_FOLDER_NAME = "logs";
+    private static final String LOG_FILE_NAME = "app.log";
+
+    public static String getLogPath() {
+        String jarDir = new File(Connector.class.getProtectionDomain().getCodeSource().getLocation().getPath()).getParentFile().getPath();
+        return jarDir + File.separator + LOG_FOLDER_NAME + File.separator + LOG_FILE_NAME;
+    }
 
     static {
-        File logFile = new File(LOG_FILE);
+        File logFile = new File(LOG_FILE_NAME);
         if (logFile.exists()) {
-            try (PrintWriter writer = new PrintWriter(LOG_FILE)) {
+            try (PrintWriter writer = new PrintWriter(LOG_FILE_NAME)) {
                 writer.print("");
             } catch (IOException e) {
                 e.printStackTrace();
@@ -37,7 +44,7 @@ public class Logger {
         String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
         String formattedMessage = String.format("[%s] %s: %s", timeStamp, level, message);
 
-        try (PrintWriter writer = new PrintWriter(new FileWriter(LOG_FILE, true))) {
+        try (PrintWriter writer = new PrintWriter(new FileWriter(LOG_FILE_NAME, true))) {
             writer.println(formattedMessage);
         } catch (IOException e) {
             e.printStackTrace();
@@ -52,7 +59,7 @@ public class Logger {
     }
 
     public static void displayLogsInConsole() {
-        try (BufferedReader reader = new BufferedReader(new FileReader(LOG_FILE))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(LOG_FILE_NAME))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
