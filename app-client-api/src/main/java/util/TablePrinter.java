@@ -1,40 +1,50 @@
 package util;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class TablePrinter {
-    public void printTable(List<List<String>> data) {
+    public String printTable(List<List<String>> data) {
+        StringBuilder tableString = new StringBuilder();
+
         int[] columnWidths = calculateColumnWidths(data);
 
-        printSeparator(columnWidths);
-        printRow(data.get(0), columnWidths);
-        printSeparator(columnWidths);
+        tableString.append(printSeparator(columnWidths));
+        tableString.append(printRow(data.get(0), columnWidths));
+        tableString.append(printSeparator(columnWidths));
 
         for (int i = 1; i < data.size(); i++) {
-            printRow(data.get(i), columnWidths);
+            tableString.append(printRow(data.get(i), columnWidths));
         }
 
-        printSeparator(columnWidths);
+        tableString.append(printSeparator(columnWidths));
+
+        return tableString.toString();
     }
 
-    private void printSeparator(int[] columnWidths) {
+    private String printSeparator(int[] columnWidths) {
+        StringBuilder separator = new StringBuilder();
+
         for (int width : columnWidths) {
-            System.out.print("+");
+            separator.append("+");
             for (int i = 0; i < width; i++) {
-                System.out.print("-");
+                separator.append("-");
             }
         }
-        System.out.println("+");
+        separator.append("+\n");
+
+        return separator.toString();
     }
 
-    private void printRow(List<String> row, int[] columnWidths) {
+    private String printRow(List<String> row, int[] columnWidths) {
+        StringBuilder rowString = new StringBuilder();
+
         for (int i = 0; i < row.size(); i++) {
-            System.out.print("|");
-            System.out.print(String.format("%-" + columnWidths[i] + "s", row.get(i)));
+            rowString.append("|");
+            rowString.append(String.format("%-" + columnWidths[i] + "s", row.get(i)));
         }
-        System.out.println("|");
+        rowString.append("|\n");
+
+        return rowString.toString();
     }
 
     private int[] calculateColumnWidths(List<List<String>> data) {

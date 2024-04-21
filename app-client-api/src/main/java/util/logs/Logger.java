@@ -58,14 +58,18 @@ public class Logger {
         return sw.toString();
     }
 
-    public static void displayLogsInConsole() {
+    public static String displayLogsInConsole() {
         try (BufferedReader reader = new BufferedReader(new FileReader(LOG_FILE_NAME))) {
             String line;
+            StringBuilder linhas = new StringBuilder();
             while ((line = reader.readLine()) != null) {
-                System.out.println(line);
+                linhas.append(line);
+                linhas.append("\n");
             }
+            return linhas.toString();
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return "";
     }
 }

@@ -13,28 +13,51 @@ public class ServiceMonitoring {
 
     public final TablePrinter tablePrinter = new TablePrinter();
 
-    public void exibirTabelas(CPU cpu, List<GPU> gpus, List<HDD> hdd, SistemaOp so, MemoriaRam ram, List<APP> apps, List<ConexaoUSB> usb, List<Bateria> bateria, List<Volume> volumes) throws Exception {
+    public Map<String, Object> exibirTabelas(CPU cpu, List<GPU> gpus, List<HDD> hdd, SistemaOp so, MemoriaRam ram, List<APP> apps, List<ConexaoUSB> usb, List<Bateria> bateria, List<Volume> volumes) throws Exception {
         Logger.logInfo("Iniciando o monitoramento dos componentes");
 
         if (tablePrinter == null) {
             throw new NullPointerException("O sistema de monitoramento ou o printer de tabela falharam.");
         }
-        exibirTabelaSO(so);
-        exibirTabelaCPU(cpu);
-        exibirTabelaHDD(hdd);
-        exibirTabelaConexaoUSB(usb);
-        exibirTabelaBateria(bateria);
-        exibirTabelaMemoriaRAM(ram);
-        exibirTabelaGPU(gpus);
-        exibirTabelaVolume(volumes);
-        exibirTabelaAPP(apps);
+
+        Map<String, Object> mapaTodasTabelas = new HashMap<>();
+        StringBuilder tables = new StringBuilder();
+
+        tables.append(exibirTabelaSO(so).get("SOSTRING"));
+        tables.append(exibirTabelaCPU(cpu).get("CPUSTRING"));
+        tables.append(exibirTabelaHDD(hdd).get("HDDSTRING"));
+        tables.append(exibirTabelaConexaoUSB(usb).get("ConexaoUSBSTRING"));
+        tables.append(exibirTabelaBateria(bateria).get("BateriaSTRING"));
+        tables.append(exibirTabelaMemoriaRAM(ram).get("MemoriaRAMSTRING"));
+        tables.append(exibirTabelaGPU(gpus).get("GPUSTRING"));
+        tables.append(exibirTabelaVolume(volumes).get("VolumeSTRING"));
+        tables.append(exibirTabelaAPP(apps).get("APPSTRING"));
+
+        mapaTodasTabelas.put("TODASSTRING", tables);
+
+        List<List<String>> todasAsTabelas = new ArrayList<>();
+        todasAsTabelas.add((List<String>) exibirTabelaSO(so).get("SOSTRING"));
+        todasAsTabelas.add((List<String>) exibirTabelaCPU(cpu).get("CPUSTRING"));
+        todasAsTabelas.add((List<String>) exibirTabelaHDD(hdd).get("HDDSTRING"));
+        todasAsTabelas.add((List<String>) exibirTabelaConexaoUSB(usb).get("ConexaoUSBSTRING"));
+        todasAsTabelas.add((List<String>) exibirTabelaBateria(bateria).get("BateriaSTRING"));
+        todasAsTabelas.add((List<String>) exibirTabelaMemoriaRAM(ram).get("MemoriaRAMSTRING"));
+        todasAsTabelas.add((List<String>) exibirTabelaGPU(gpus).get("GPUSTRING"));
+        todasAsTabelas.add((List<String>) exibirTabelaVolume(volumes).get("VolumeSTRING"));
+        todasAsTabelas.add((List<String>) exibirTabelaAPP(apps).get("APPSTRING"));
+
+        mapaTodasTabelas.put("TODAS", todasAsTabelas);
+
+        return mapaTodasTabelas;
     }
-    public void exibirTabelaGPU(List<GPU> gpus) {
+
+    public Map<String, Object> exibirTabelaGPU(List<GPU> gpus) {
         if (gpus == null || gpus.isEmpty()) {
             Logger.logWarning("Nenhuma GPU encontrada durante o monitoramento.");
-            return;
+            return new HashMap<>();
         }
-
+        StringBuilder table = new StringBuilder();
+        Map<String, Object> mapaGpu = new HashMap<>();
         for (int i = 0; i < gpus.size(); i++) {
             GPU gpu = gpus.get(i);
             List<List<String>> gpuData = Arrays.asList(
@@ -46,17 +69,19 @@ public class ServiceMonitoring {
                     Arrays.asList("ID Device", gpu.getIdDevice()),
                     Arrays.asList("VRAM", String.valueOf(gpu.getvRam()))
             );
-
-            tablePrinter.printTable(gpuData);
+            mapaGpu.put("GPU " + i, gpuData);
+            table.append(tablePrinter.printTable(gpuData));
         }
+        mapaGpu.put("GPUSTRIG", table);
+        return mapaGpu;
     }
 
-    public void exibirTabelaCPU(CPU cpu) {
+    public Map<String, Object> exibirTabelaCPU(CPU cpu) {
         if (cpu == null) {
             Logger.logWarning("CPU não encontrada durante o monitoramento.");
-            return;
+            return new HashMap<>();
         }
-
+        Map<String, Object> mapaCpu = new HashMap<>();
         List<List<String>> cpuData = Arrays.asList(
                 Arrays.asList("", "CPU"),
                 Arrays.asList("Nome", cpu.getNome()),
@@ -71,16 +96,18 @@ public class ServiceMonitoring {
                 Arrays.asList("Uso", cpu.getUso().toString()),
                 Arrays.asList("Temperatura", cpu.getTemperatura().toString())
         );
+        mapaCpu.put("CPU", cpu);
+        mapaCpu.put("CPUSTRING", tablePrinter.printTable(cpuData));
 
-        tablePrinter.printTable(cpuData);
+        return mapaCpu;
     }
 
-    public void exibirTabelaSO(SistemaOp sistemaOp) {
+    public Map<String, Object> exibirTabelaSO(SistemaOp sistemaOp) {
         if (sistemaOp == null) {
             Logger.logWarning("Sistema operacional não encontrado durante o monitoramento.");
-            return;
+            return new HashMap<>();
         }
-
+        Map<String, Object> mapaSO = new HashMap<>();
         List<List<String>> soData = Arrays.asList(
                 Arrays.asList("", "Sistema Operacional"),
                 Arrays.asList("Nome Sistema", Optional.ofNullable(sistemaOp.getSistemaOperacional()).orElse("VALOR NÃO ENCONTRADO")),
@@ -90,17 +117,22 @@ public class ServiceMonitoring {
                 Arrays.asList("Permissão", Optional.ofNullable(sistemaOp.isPermissao()).map(Object::toString).orElse("VALOR NÃO ENCONTRADO")),
                 Arrays.asList("Tempo de atividade", Optional.ofNullable(sistemaOp.getTempoDeAtividade()).orElse("VALOR NÃO IDENTIFICADO"))
         );
+        mapaSO.put("SOSTRING", tablePrinter.printTable(soData));
+        mapaSO.put("SO", soData);
 
-        tablePrinter.printTable(soData);
+        return mapaSO;
     }
 
-    public void exibirTabelaHDD(List<HDD> listaHDD) {
-        if (StringUtils.isNullOrEmpty(listaHDD.toString())) {
+    public Map<String, Object> exibirTabelaHDD(List<HDD> listaHDD) {
+        if (listaHDD == null || listaHDD.isEmpty()) {
             Logger.logWarning("Nenhum HDD encontrado durante o monitoramento.");
-            return;
+            return new HashMap<>();
         }
 
-        listaHDD.forEach(hdd -> {
+        StringBuilder table = new StringBuilder();
+        Map<String, Object> mapaHDD = new HashMap<>();
+        Integer i = 0;
+        for (HDD hdd : listaHDD) {
             Logger.logInfo("Enviando informações para exibir a tabela do HDD %s no sistema de monitoramento no HDD ".formatted(hdd.getSerial()));
 
             List<List<String>> hddData = Arrays.asList(
@@ -116,15 +148,19 @@ public class ServiceMonitoring {
                     Arrays.asList("Tamanho atual", hdd.getTamanhoAtualDaFita().toString()),
                     Arrays.asList("Tempo de transferência", hdd.getTempoDeTransferencia().toString())
             );
-
-            tablePrinter.printTable(hddData);
-        });
+            mapaHDD.put("HDD " + i, hddData);
+            i++;
+            table.append(tablePrinter.printTable(hddData));
+        }
+        mapaHDD.put("HDDSTRING", table.toString());
+        return mapaHDD;
     }
 
-    public void exibirTabelaMemoriaRAM(MemoriaRam memoriaRam) {
+
+    public Map<String, Object> exibirTabelaMemoriaRAM(MemoriaRam memoriaRam) {
         if (memoriaRam == null) {
             Logger.logWarning("Memória RAM não encontrada durante o monitoramento.");
-            return;
+            return new HashMap<>();
         }
 
         List<List<String>> memoriaRamData = Arrays.asList(
@@ -135,15 +171,21 @@ public class ServiceMonitoring {
                 Arrays.asList("Memória Total", String.valueOf(memoriaRam.getMemoriaTotal()))
         );
 
-        tablePrinter.printTable(memoriaRamData);
+        Map<String, Object> mapaMemoriaRAM = new HashMap<>();
+        mapaMemoriaRAM.put("MemoriaRAM", memoriaRamData);
+        mapaMemoriaRAM.put("MemoriaRAMSTRING", tablePrinter.printTable(memoriaRamData));
+
+        return mapaMemoriaRAM;
     }
 
-    public void exibirTabelaBateria(List<Bateria> baterias) {
+    public Map<String, Object> exibirTabelaBateria(List<Bateria> baterias) {
         if (baterias == null || baterias.isEmpty()) {
             Logger.logWarning("Nenhuma bateria encontrada durante o monitoramento.");
-            return;
+            return new HashMap<>();
         }
 
+        StringBuilder table = new StringBuilder();
+        Map<String, Object> mapaBateria = new HashMap<>();
         for (int i = 0; i < baterias.size(); i++) {
             Bateria bateria = baterias.get(i);
             List<List<String>> bateriaData = Arrays.asList(
@@ -169,38 +211,47 @@ public class ServiceMonitoring {
                     Arrays.asList("Fabricante", bateria.getFabricante())
             );
 
-            tablePrinter.printTable(bateriaData);
+            mapaBateria.put("Bateria " + i, bateriaData);
+            table.append(tablePrinter.printTable(bateriaData));
         }
+        mapaBateria.put("BateriaSTRING", table.toString());
+
+        return mapaBateria;
     }
 
-    public void exibirTabelaAPP(List<APP> apps) {
-
+    public Map<String, Object> exibirTabelaAPP(List<APP> apps) {
         if (apps == null || apps.isEmpty()) {
             Logger.logWarning("Nenhum aplicativo encontrado durante o monitoramento.");
-            return;
+            return new HashMap<>();
         }
 
+        StringBuilder table = new StringBuilder();
+        Map<String, Object> mapaAPP = new HashMap<>();
         apps.forEach(app -> {
             List<List<String>> appData = Arrays.asList(
-                   Arrays.asList("", "APP"),
-                   Arrays.asList("Nome", app.getNome()),
-                   Arrays.asList("Comando", app.getComando()),
-                   Arrays.asList("Data hora captura", app.getDataHoraCaptura().toString()),
-                   Arrays.asList("PID", app.getPid().toString()),
-                   Arrays.asList("Id Janela", app.getJanelaID().toString()),
-                   Arrays.asList("Localização e tamanho", app.getLocalizacaoEtamanho().toString())
+                    Arrays.asList("", "APP"),
+                    Arrays.asList("Nome", app.getNome()),
+                    Arrays.asList("Comando", app.getComando()),
+                    Arrays.asList("Data hora captura", app.getDataHoraCaptura().toString()),
+                    Arrays.asList("PID", app.getPid().toString()),
+                    Arrays.asList("Id Janela", app.getJanelaID().toString()),
+                    Arrays.asList("Localização e tamanho", app.getLocalizacaoEtamanho().toString())
             );
-            tablePrinter.printTable(appData);
+            table.append(tablePrinter.printTable(appData));
         });
+        mapaAPP.put("APPSTRING", table.toString());
+
+        return mapaAPP;
     }
 
-
-    public void exibirTabelaConexaoUSB(List<ConexaoUSB> conexoesUSB) {
+    public Map<String, Object> exibirTabelaConexaoUSB(List<ConexaoUSB> conexoesUSB) {
         if (conexoesUSB == null || conexoesUSB.isEmpty()) {
             Logger.logWarning("Nenhuma conexão USB encontrada durante o monitoramento.");
-            return;
+            return new HashMap<>();
         }
 
+        StringBuilder table = new StringBuilder();
+        Map<String, Object> mapaConexaoUSB = new HashMap<>();
         conexoesUSB.forEach(usb -> {
             List<List<String>> usbData = Arrays.asList(
                     Arrays.asList("", "Conexão USB"),
@@ -212,17 +263,21 @@ public class ServiceMonitoring {
                     Arrays.asList("Id Dispositivo USB exclusivo", usb.getIdDispositivoUSBExclusivo().toString()),
                     Arrays.asList("Id Produto", usb.getIdProduto().toString())
             );
-            tablePrinter.printTable(usbData);
+            table.append(tablePrinter.printTable(usbData));
         });
+        mapaConexaoUSB.put("ConexaoUSBSTRING", table.toString());
+
+        return mapaConexaoUSB;
     }
 
-
-    public void exibirTabelaVolume(List<Volume> volumes) {
+    public Map<String, Object> exibirTabelaVolume(List<Volume> volumes) {
         if (volumes == null || volumes.isEmpty()) {
             Logger.logWarning("Nenhum volume encontrado durante o monitoramento.");
-            return;
+            return new HashMap<>();
         }
 
+        StringBuilder table = new StringBuilder();
+        Map<String, Object> mapaVolume = new HashMap<>();
         for (int i = 0; i < volumes.size(); i++) {
             Volume volume = volumes.get(i);
             List<List<String>> volumeData = Arrays.asList(
@@ -236,8 +291,12 @@ public class ServiceMonitoring {
                     Arrays.asList("Ponto de Montagem", volume.getPontoDeMontagem())
             );
 
-            tablePrinter.printTable(volumeData);
+            mapaVolume.put("Volume " + i, volumeData);
+            table.append(tablePrinter.printTable(volumeData));
         }
+        mapaVolume.put("VolumeSTRING", table.toString());
+
+        return mapaVolume;
     }
 
 }
