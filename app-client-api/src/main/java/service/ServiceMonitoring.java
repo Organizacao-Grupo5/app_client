@@ -21,32 +21,31 @@ public class ServiceMonitoring {
         }
 
         Map<String, Object> mapaTodasTabelas = new HashMap<>();
-        StringBuilder tables = new StringBuilder();
 
-        tables.append(exibirTabelaSO(so).get("SOSTRING"));
-        tables.append(exibirTabelaCPU(cpu).get("CPUSTRING"));
-        tables.append(exibirTabelaHDD(hdd).get("HDDSTRING"));
-        tables.append(exibirTabelaConexaoUSB(usb).get("ConexaoUSBSTRING"));
-        tables.append(exibirTabelaBateria(bateria).get("BateriaSTRING"));
-        tables.append(exibirTabelaMemoriaRAM(ram).get("MemoriaRAMSTRING"));
-        tables.append(exibirTabelaGPU(gpus).get("GPUSTRING"));
-        tables.append(exibirTabelaVolume(volumes).get("VolumeSTRING"));
-        tables.append(exibirTabelaAPP(apps).get("APPSTRING"));
+        mapaTodasTabelas.put("SO", exibirTabelaSO(so));
+        mapaTodasTabelas.put("CPU", exibirTabelaCPU(cpu));
+        mapaTodasTabelas.put("HDD", exibirTabelaHDD(hdd));
+        mapaTodasTabelas.put("ConexaoUSB", exibirTabelaConexaoUSB(usb));
+        mapaTodasTabelas.put("Bateria", exibirTabelaBateria(bateria));
+        mapaTodasTabelas.put("MemoriaRAM", exibirTabelaMemoriaRAM(ram));
+        mapaTodasTabelas.put("GPU", exibirTabelaGPU(gpus));
+        mapaTodasTabelas.put("Volume", exibirTabelaVolume(volumes));
+        mapaTodasTabelas.put("APP", exibirTabelaAPP(apps));
 
-        mapaTodasTabelas.put("TODASSTRING", tables);
-
-        List<List<String>> todasAsTabelas = new ArrayList<>();
-        todasAsTabelas.add((List<String>) exibirTabelaSO(so).get("SOSTRING"));
-        todasAsTabelas.add((List<String>) exibirTabelaCPU(cpu).get("CPUSTRING"));
-        todasAsTabelas.add((List<String>) exibirTabelaHDD(hdd).get("HDDSTRING"));
-        todasAsTabelas.add((List<String>) exibirTabelaConexaoUSB(usb).get("ConexaoUSBSTRING"));
-        todasAsTabelas.add((List<String>) exibirTabelaBateria(bateria).get("BateriaSTRING"));
-        todasAsTabelas.add((List<String>) exibirTabelaMemoriaRAM(ram).get("MemoriaRAMSTRING"));
-        todasAsTabelas.add((List<String>) exibirTabelaGPU(gpus).get("GPUSTRING"));
-        todasAsTabelas.add((List<String>) exibirTabelaVolume(volumes).get("VolumeSTRING"));
-        todasAsTabelas.add((List<String>) exibirTabelaAPP(apps).get("APPSTRING"));
-
-        mapaTodasTabelas.put("TODAS", todasAsTabelas);
+        StringBuilder todasAsTabelasString = new StringBuilder();
+        for (Object tabela : mapaTodasTabelas.values()) {
+            if (tabela instanceof String) {
+                todasAsTabelasString.append((String) tabela);
+            } else if (tabela instanceof Map) {
+                Map<String, Object> mapaTabela = (Map<String, Object>) tabela;
+                for (Object value : mapaTabela.values()) {
+                    if (value instanceof String) {
+                        todasAsTabelasString.append((String) value);
+                    }
+                }
+            }
+        }
+        mapaTodasTabelas.put("TODASSTRING", todasAsTabelasString.toString());
 
         return mapaTodasTabelas;
     }
@@ -72,7 +71,7 @@ public class ServiceMonitoring {
             mapaGpu.put("GPU " + i, gpuData);
             table.append(tablePrinter.printTable(gpuData));
         }
-        mapaGpu.put("GPUSTRIG", table);
+        mapaGpu.put("GPUSTRING", table);
         return mapaGpu;
     }
 

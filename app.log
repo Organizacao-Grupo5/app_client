@@ -1,123 +1,104 @@
-[2024-04-21 20:37:09] INFO: Servidor iniciando.
-[2024-04-21 20:37:11] INFO: Servidor iniciado com sucesso.
-[2024-04-21 20:37:18] INFO: Verificando informações de login do usuário.
-[2024-04-21 20:37:18] INFO: Usuário foi encontrado com sucesso.
-[2024-04-21 20:37:18] INFO: Usuário logado com sucesso: clau@gmail
-[2024-04-21 20:37:19] INFO: Capturando dados do sistema operacional.
-[2024-04-21 20:37:19] INFO: Capturando dados da sua CPU.
-[2024-04-21 20:37:21] INFO: Dados da CPU capturados com sucesso.
-[2024-04-21 20:37:21] INFO: Capturando dados do seu HDD
-[2024-04-21 20:37:21] INFO: Dados do disco gravados.
-[2024-04-21 20:37:21] INFO: Capturando dados da sua bateria.
-[2024-04-21 20:37:22] INFO: Dados da bateria gravados.
-[2024-04-21 20:37:22] INFO: Capturando dados da sua memória Ram.
-[2024-04-21 20:37:22] INFO: Capturando dados da sua GPU
-[2024-04-21 20:37:22] INFO: Dados da GPU gravados.
-[2024-04-21 20:37:22] INFO: Capturando dados das suas conexões USB
-[2024-04-21 20:37:22] INFO: Capturando dados dos seus Apps.
-[2024-04-21 20:37:22] INFO: Dados da janela gravados.
-[2024-04-21 20:37:22] INFO: Dados da janela gravados.
-[2024-04-21 20:37:22] INFO: Dados da janela gravados.
-[2024-04-21 20:37:22] INFO: Dados da janela gravados.
-[2024-04-21 20:37:22] INFO: Dados da janela gravados.
-[2024-04-21 20:37:22] INFO: Dados da janela gravados.
-[2024-04-21 20:37:22] INFO: Dados da janela gravados.
-[2024-04-21 20:37:22] INFO: Dados da janela gravados.
-[2024-04-21 20:37:22] INFO: Dados da janela gravados.
-[2024-04-21 20:37:22] INFO: Dados da janela gravados.
-[2024-04-21 20:37:22] INFO: Dados da janela gravados.
-[2024-04-21 20:37:22] INFO: Dados da janela gravados.
-[2024-04-21 20:37:22] INFO: Dados da janela gravados.
-[2024-04-21 20:37:22] INFO: Dados da janela gravados.
-[2024-04-21 20:37:22] INFO: Dados da janela gravados.
-[2024-04-21 20:37:22] INFO: Dados da janela gravados.
-[2024-04-21 20:37:22] INFO: Dados da janela gravados.
-[2024-04-21 20:37:22] INFO: Dados da janela gravados.
-[2024-04-21 20:37:22] INFO: Todas as janelas verificadas.
-[2024-04-21 20:37:22] INFO: Iniciando o monitoramento dos componentes
-[2024-04-21 20:37:22] INFO: Enviando informações para exibir a tabela do HDD 0025_38D3_3101_18C2. no sistema de monitoramento no HDD 
-[2024-04-21 20:37:22] ERROR: Erro ao iniciar monitoramento: 
-java.lang.ClassCastException: class java.lang.String cannot be cast to class java.util.List (java.lang.String and java.util.List are in module java.base of loader 'bootstrap')
-	at service.ServiceMonitoring.exibirTabelas(ServiceMonitoring.java:39)
-	at Main.displayTables(Main.java:209)
-	at Main.iniciarMonitoramento(Main.java:146)
-	at Main.main(Main.java:92)
-
-[2024-04-21 20:37:29] INFO: Capturando dados do sistema operacional.
-[2024-04-21 20:37:29] INFO: Capturando dados da sua CPU.
-[2024-04-21 20:37:29] INFO: Dados da CPU capturados com sucesso.
-[2024-04-21 20:37:29] INFO: Dados do disco gravados.
-[2024-04-21 20:37:29] INFO: Dados da bateria gravados.
-[2024-04-21 20:37:29] INFO: Capturando dados da sua memória Ram.
-[2024-04-21 20:37:29] INFO: Dados da GPU gravados.
-[2024-04-21 20:37:29] INFO: Dados da janela gravados.
-[2024-04-21 20:37:29] INFO: Dados da janela gravados.
-[2024-04-21 20:37:29] INFO: Dados da janela gravados.
-[2024-04-21 20:37:29] INFO: Dados da janela gravados.
-[2024-04-21 20:37:29] INFO: Dados da janela gravados.
-[2024-04-21 20:37:29] INFO: Dados da janela gravados.
-[2024-04-21 20:37:29] INFO: Dados da janela gravados.
-[2024-04-21 20:37:29] INFO: Dados da janela gravados.
-[2024-04-21 20:37:29] INFO: Dados da janela gravados.
-[2024-04-21 20:37:29] INFO: Dados da janela gravados.
-[2024-04-21 20:37:29] INFO: Dados da janela gravados.
-[2024-04-21 20:37:29] INFO: Dados da janela gravados.
-[2024-04-21 20:37:29] INFO: Dados da janela gravados.
-[2024-04-21 20:37:29] INFO: Dados da janela gravados.
-[2024-04-21 20:37:29] INFO: Dados da janela gravados.
-[2024-04-21 20:37:29] INFO: Dados da janela gravados.
-[2024-04-21 20:37:29] INFO: Dados da janela gravados.
-[2024-04-21 20:37:29] INFO: Dados da janela gravados.
-[2024-04-21 20:37:29] INFO: Todas as janelas verificadas.
-[2024-04-21 20:37:39] INFO: Capturando dados do sistema operacional.
-[2024-04-21 20:37:39] INFO: Capturando dados da sua CPU.
-[2024-04-21 20:37:39] INFO: Dados da CPU capturados com sucesso.
-[2024-04-21 20:37:39] INFO: Dados do disco gravados.
-[2024-04-21 20:37:39] INFO: Dados da bateria gravados.
-[2024-04-21 20:37:39] INFO: Capturando dados da sua memória Ram.
-[2024-04-21 20:37:39] INFO: Dados da GPU gravados.
-[2024-04-21 20:37:39] INFO: Dados da janela gravados.
-[2024-04-21 20:37:39] INFO: Dados da janela gravados.
-[2024-04-21 20:37:39] INFO: Dados da janela gravados.
-[2024-04-21 20:37:39] INFO: Dados da janela gravados.
-[2024-04-21 20:37:39] INFO: Dados da janela gravados.
-[2024-04-21 20:37:39] INFO: Dados da janela gravados.
-[2024-04-21 20:37:39] INFO: Dados da janela gravados.
-[2024-04-21 20:37:39] INFO: Dados da janela gravados.
-[2024-04-21 20:37:39] INFO: Dados da janela gravados.
-[2024-04-21 20:37:39] INFO: Dados da janela gravados.
-[2024-04-21 20:37:39] INFO: Dados da janela gravados.
-[2024-04-21 20:37:39] INFO: Dados da janela gravados.
-[2024-04-21 20:37:39] INFO: Dados da janela gravados.
-[2024-04-21 20:37:39] INFO: Dados da janela gravados.
-[2024-04-21 20:37:39] INFO: Dados da janela gravados.
-[2024-04-21 20:37:39] INFO: Dados da janela gravados.
-[2024-04-21 20:37:39] INFO: Dados da janela gravados.
-[2024-04-21 20:37:39] INFO: Dados da janela gravados.
-[2024-04-21 20:37:39] INFO: Todas as janelas verificadas.
-[2024-04-21 20:37:49] INFO: Capturando dados do sistema operacional.
-[2024-04-21 20:37:49] INFO: Capturando dados da sua CPU.
-[2024-04-21 20:37:49] INFO: Dados da CPU capturados com sucesso.
-[2024-04-21 20:37:49] INFO: Dados do disco gravados.
-[2024-04-21 20:37:49] INFO: Dados da bateria gravados.
-[2024-04-21 20:37:49] INFO: Capturando dados da sua memória Ram.
-[2024-04-21 20:37:49] INFO: Dados da GPU gravados.
-[2024-04-21 20:37:49] INFO: Dados da janela gravados.
-[2024-04-21 20:37:49] INFO: Dados da janela gravados.
-[2024-04-21 20:37:49] INFO: Dados da janela gravados.
-[2024-04-21 20:37:49] INFO: Dados da janela gravados.
-[2024-04-21 20:37:49] INFO: Dados da janela gravados.
-[2024-04-21 20:37:49] INFO: Dados da janela gravados.
-[2024-04-21 20:37:49] INFO: Dados da janela gravados.
-[2024-04-21 20:37:49] INFO: Dados da janela gravados.
-[2024-04-21 20:37:49] INFO: Dados da janela gravados.
-[2024-04-21 20:37:49] INFO: Dados da janela gravados.
-[2024-04-21 20:37:49] INFO: Dados da janela gravados.
-[2024-04-21 20:37:49] INFO: Dados da janela gravados.
-[2024-04-21 20:37:49] INFO: Dados da janela gravados.
-[2024-04-21 20:37:49] INFO: Dados da janela gravados.
-[2024-04-21 20:37:49] INFO: Dados da janela gravados.
-[2024-04-21 20:37:49] INFO: Dados da janela gravados.
-[2024-04-21 20:37:49] INFO: Dados da janela gravados.
-[2024-04-21 20:37:49] INFO: Dados da janela gravados.
-[2024-04-21 20:37:49] INFO: Todas as janelas verificadas.
+[2024-04-21 22:29:42] INFO: Servidor iniciando.
+[2024-04-21 22:29:43] INFO: Servidor iniciado com sucesso.
+[2024-04-21 22:29:47] INFO: Verificando informações de login do usuário.
+[2024-04-21 22:29:48] INFO: Usuário foi encontrado com sucesso.
+[2024-04-21 22:29:48] INFO: Usuário logado com sucesso: clau@gmail
+[2024-04-21 22:29:49] INFO: Capturando dados do sistema operacional.
+[2024-04-21 22:29:49] INFO: Capturando dados da sua CPU.
+[2024-04-21 22:29:51] INFO: Dados da CPU capturados com sucesso.
+[2024-04-21 22:29:51] INFO: Capturando dados do seu HDD
+[2024-04-21 22:29:51] INFO: Dados do disco gravados.
+[2024-04-21 22:29:51] INFO: Capturando dados da sua bateria.
+[2024-04-21 22:29:51] INFO: Dados da bateria gravados.
+[2024-04-21 22:29:51] INFO: Capturando dados da sua memória Ram.
+[2024-04-21 22:29:51] INFO: Capturando dados da sua GPU
+[2024-04-21 22:29:51] INFO: Dados da GPU gravados.
+[2024-04-21 22:29:51] INFO: Capturando dados das suas conexões USB
+[2024-04-21 22:29:51] INFO: Capturando dados dos seus Apps.
+[2024-04-21 22:29:52] INFO: Dados da janela gravados.
+[2024-04-21 22:29:52] INFO: Dados da janela gravados.
+[2024-04-21 22:29:52] INFO: Dados da janela gravados.
+[2024-04-21 22:29:52] INFO: Dados da janela gravados.
+[2024-04-21 22:29:52] INFO: Dados da janela gravados.
+[2024-04-21 22:29:52] INFO: Dados da janela gravados.
+[2024-04-21 22:29:52] INFO: Dados da janela gravados.
+[2024-04-21 22:29:52] INFO: Dados da janela gravados.
+[2024-04-21 22:29:52] INFO: Dados da janela gravados.
+[2024-04-21 22:29:52] INFO: Dados da janela gravados.
+[2024-04-21 22:29:52] INFO: Dados da janela gravados.
+[2024-04-21 22:29:52] INFO: Dados da janela gravados.
+[2024-04-21 22:29:52] INFO: Dados da janela gravados.
+[2024-04-21 22:29:52] INFO: Dados da janela gravados.
+[2024-04-21 22:29:52] INFO: Dados da janela gravados.
+[2024-04-21 22:29:52] INFO: Todas as janelas verificadas.
+[2024-04-21 22:29:52] INFO: Iniciando o monitoramento dos componentes
+[2024-04-21 22:29:52] INFO: Enviando informações para exibir a tabela do HDD 0025_38D3_3101_18C2. no sistema de monitoramento no HDD 
+[2024-04-21 22:29:59] INFO: Capturando dados do sistema operacional.
+[2024-04-21 22:29:59] INFO: Capturando dados da sua CPU.
+[2024-04-21 22:29:59] INFO: Dados da CPU capturados com sucesso.
+[2024-04-21 22:29:59] INFO: Dados do disco gravados.
+[2024-04-21 22:29:59] INFO: Dados da bateria gravados.
+[2024-04-21 22:29:59] INFO: Capturando dados da sua memória Ram.
+[2024-04-21 22:29:59] INFO: Dados da GPU gravados.
+[2024-04-21 22:29:59] INFO: Dados da janela gravados.
+[2024-04-21 22:29:59] INFO: Dados da janela gravados.
+[2024-04-21 22:29:59] INFO: Dados da janela gravados.
+[2024-04-21 22:29:59] INFO: Dados da janela gravados.
+[2024-04-21 22:29:59] INFO: Dados da janela gravados.
+[2024-04-21 22:29:59] INFO: Dados da janela gravados.
+[2024-04-21 22:29:59] INFO: Dados da janela gravados.
+[2024-04-21 22:29:59] INFO: Dados da janela gravados.
+[2024-04-21 22:29:59] INFO: Dados da janela gravados.
+[2024-04-21 22:29:59] INFO: Dados da janela gravados.
+[2024-04-21 22:29:59] INFO: Dados da janela gravados.
+[2024-04-21 22:29:59] INFO: Dados da janela gravados.
+[2024-04-21 22:29:59] INFO: Dados da janela gravados.
+[2024-04-21 22:29:59] INFO: Dados da janela gravados.
+[2024-04-21 22:29:59] INFO: Dados da janela gravados.
+[2024-04-21 22:29:59] INFO: Todas as janelas verificadas.
+[2024-04-21 22:30:09] INFO: Capturando dados do sistema operacional.
+[2024-04-21 22:30:09] INFO: Capturando dados da sua CPU.
+[2024-04-21 22:30:09] INFO: Dados da CPU capturados com sucesso.
+[2024-04-21 22:30:09] INFO: Dados do disco gravados.
+[2024-04-21 22:30:09] INFO: Dados da bateria gravados.
+[2024-04-21 22:30:09] INFO: Capturando dados da sua memória Ram.
+[2024-04-21 22:30:09] INFO: Dados da GPU gravados.
+[2024-04-21 22:30:09] INFO: Dados da janela gravados.
+[2024-04-21 22:30:09] INFO: Dados da janela gravados.
+[2024-04-21 22:30:09] INFO: Dados da janela gravados.
+[2024-04-21 22:30:09] INFO: Dados da janela gravados.
+[2024-04-21 22:30:09] INFO: Dados da janela gravados.
+[2024-04-21 22:30:09] INFO: Dados da janela gravados.
+[2024-04-21 22:30:09] INFO: Dados da janela gravados.
+[2024-04-21 22:30:09] INFO: Dados da janela gravados.
+[2024-04-21 22:30:09] INFO: Dados da janela gravados.
+[2024-04-21 22:30:09] INFO: Dados da janela gravados.
+[2024-04-21 22:30:09] INFO: Dados da janela gravados.
+[2024-04-21 22:30:09] INFO: Dados da janela gravados.
+[2024-04-21 22:30:09] INFO: Dados da janela gravados.
+[2024-04-21 22:30:09] INFO: Dados da janela gravados.
+[2024-04-21 22:30:09] INFO: Dados da janela gravados.
+[2024-04-21 22:30:09] INFO: Todas as janelas verificadas.
+[2024-04-21 22:30:19] INFO: Capturando dados do sistema operacional.
+[2024-04-21 22:30:19] INFO: Capturando dados da sua CPU.
+[2024-04-21 22:30:19] INFO: Dados da CPU capturados com sucesso.
+[2024-04-21 22:30:19] INFO: Dados do disco gravados.
+[2024-04-21 22:30:19] INFO: Dados da bateria gravados.
+[2024-04-21 22:30:19] INFO: Capturando dados da sua memória Ram.
+[2024-04-21 22:30:19] INFO: Dados da GPU gravados.
+[2024-04-21 22:30:19] INFO: Dados da janela gravados.
+[2024-04-21 22:30:19] INFO: Dados da janela gravados.
+[2024-04-21 22:30:19] INFO: Dados da janela gravados.
+[2024-04-21 22:30:19] INFO: Dados da janela gravados.
+[2024-04-21 22:30:19] INFO: Dados da janela gravados.
+[2024-04-21 22:30:19] INFO: Dados da janela gravados.
+[2024-04-21 22:30:19] INFO: Dados da janela gravados.
+[2024-04-21 22:30:19] INFO: Dados da janela gravados.
+[2024-04-21 22:30:19] INFO: Dados da janela gravados.
+[2024-04-21 22:30:19] INFO: Dados da janela gravados.
+[2024-04-21 22:30:19] INFO: Dados da janela gravados.
+[2024-04-21 22:30:19] INFO: Dados da janela gravados.
+[2024-04-21 22:30:19] INFO: Dados da janela gravados.
+[2024-04-21 22:30:19] INFO: Dados da janela gravados.
+[2024-04-21 22:30:19] INFO: Dados da janela gravados.
+[2024-04-21 22:30:19] INFO: Todas as janelas verificadas.
