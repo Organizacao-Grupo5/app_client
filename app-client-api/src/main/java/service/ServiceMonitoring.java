@@ -8,6 +8,8 @@ import model.*;
 import util.CreatePDFInfos;
 import util.TablePrinter;
 import util.logs.Logger;
+
+import java.awt.geom.GeneralPath;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -59,6 +61,7 @@ public class ServiceMonitoring {
             return new HashMap<>();
         }
         StringBuilder table = new StringBuilder();
+        StringBuilder pdf =  new StringBuilder();
         Map<String, Object> mapaGpu = new HashMap<>();
         for (int i = 0; i < gpus.size(); i++) {
             GPU gpu = gpus.get(i);
@@ -73,9 +76,10 @@ public class ServiceMonitoring {
             );
             mapaGpu.put("GPU " + i, gpuData);
             table.append(tablePrinter.printTable(gpuData));
-
+            pdf.append(createPDFInfos.gerarLayoutPDF(gpuData));
         }
         mapaGpu.put("GPUSTRING", table);
+        mapaGpu.put("GPUPDF", pdf);
         return mapaGpu;
     }
 
@@ -101,6 +105,7 @@ public class ServiceMonitoring {
         );
         mapaCpu.put("CPU", cpu);
         mapaCpu.put("CPUSTRING", tablePrinter.printTable(cpuData));
+        mapaCpu.put("CPUPDF", createPDFInfos.gerarLayoutPDF(cpuData));
 
         return mapaCpu;
     }
@@ -120,9 +125,9 @@ public class ServiceMonitoring {
                 Arrays.asList("Permissão", Optional.ofNullable(sistemaOp.isPermissao()).map(Object::toString).orElse("VALOR NÃO ENCONTRADO")),
                 Arrays.asList("Tempo de atividade", Optional.ofNullable(sistemaOp.getTempoDeAtividade()).orElse("VALOR NÃO IDENTIFICADO"))
         );
-        mapaSO.put("SOSTRING", tablePrinter.printTable(soData));
         mapaSO.put("SO", soData);
-
+        mapaSO.put("SOSTRING", tablePrinter.printTable(soData));
+        mapaSO.put("SOPDF", createPDFInfos.gerarLayoutPDF(soData));
         return mapaSO;
     }
 
@@ -133,8 +138,10 @@ public class ServiceMonitoring {
         }
 
         StringBuilder table = new StringBuilder();
+        StringBuilder pdf = new StringBuilder();
         Map<String, Object> mapaHDD = new HashMap<>();
         Integer i = 0;
+
         for (HDD hdd : listaHDD) {
             Logger.logInfo("Enviando informações para exibir a tabela do HDD %s no sistema de monitoramento no HDD ".formatted(hdd.getSerial()));
 
@@ -154,8 +161,10 @@ public class ServiceMonitoring {
             mapaHDD.put("HDD " + i, hddData);
             i++;
             table.append(tablePrinter.printTable(hddData));
+            pdf.append(createPDFInfos.gerarLayoutPDF(hddData));
         }
         mapaHDD.put("HDDSTRING", table.toString());
+        mapaHDD.put("HDDPDF", pdf.toString());
         return mapaHDD;
     }
 
@@ -177,6 +186,7 @@ public class ServiceMonitoring {
         Map<String, Object> mapaMemoriaRAM = new HashMap<>();
         mapaMemoriaRAM.put("MemoriaRAM", memoriaRamData);
         mapaMemoriaRAM.put("MemoriaRAMSTRING", tablePrinter.printTable(memoriaRamData));
+        mapaMemoriaRAM.put("MemoriaRAMPDF", createPDFInfos.gerarLayoutPDF(memoriaRamData));
 
         return mapaMemoriaRAM;
     }
@@ -188,6 +198,7 @@ public class ServiceMonitoring {
         }
 
         StringBuilder table = new StringBuilder();
+        StringBuilder pdf = new StringBuilder();
         Map<String, Object> mapaBateria = new HashMap<>();
         for (int i = 0; i < baterias.size(); i++) {
             Bateria bateria = baterias.get(i);
@@ -216,8 +227,10 @@ public class ServiceMonitoring {
 
             mapaBateria.put("Bateria " + i, bateriaData);
             table.append(tablePrinter.printTable(bateriaData));
+            pdf.append(createPDFInfos.gerarLayoutPDF(bateriaData));
         }
         mapaBateria.put("BateriaSTRING", table.toString());
+        mapaBateria.put("BateriaPDF", pdf.toString());
 
         return mapaBateria;
     }
@@ -229,6 +242,7 @@ public class ServiceMonitoring {
         }
 
         StringBuilder table = new StringBuilder();
+        StringBuilder pdf = new StringBuilder();
         Map<String, Object> mapaAPP = new HashMap<>();
         apps.forEach(app -> {
             List<List<String>> appData = Arrays.asList(
@@ -241,8 +255,10 @@ public class ServiceMonitoring {
                     Arrays.asList("Localização e tamanho", app.getLocalizacaoEtamanho().toString())
             );
             table.append(tablePrinter.printTable(appData));
+            table.append(createPDFInfos.gerarLayoutPDF(appData));
         });
         mapaAPP.put("APPSTRING", table.toString());
+        mapaAPP.put("APPPDF", pdf.toString());
 
         return mapaAPP;
     }
@@ -254,6 +270,7 @@ public class ServiceMonitoring {
         }
 
         StringBuilder table = new StringBuilder();
+        StringBuilder pdf = new StringBuilder();
         Map<String, Object> mapaConexaoUSB = new HashMap<>();
         conexoesUSB.forEach(usb -> {
             List<List<String>> usbData = Arrays.asList(
@@ -267,8 +284,10 @@ public class ServiceMonitoring {
                     Arrays.asList("Id Produto", usb.getIdProduto().toString())
             );
             table.append(tablePrinter.printTable(usbData));
+            pdf.append(createPDFInfos.gerarLayoutPDF(usbData));
         });
         mapaConexaoUSB.put("ConexaoUSBSTRING", table.toString());
+        mapaConexaoUSB.put("ConexaoUSBPDF", pdf.toString());
 
         return mapaConexaoUSB;
     }
@@ -280,6 +299,7 @@ public class ServiceMonitoring {
         }
 
         StringBuilder table = new StringBuilder();
+        StringBuilder pdf = new StringBuilder();
         Map<String, Object> mapaVolume = new HashMap<>();
         for (int i = 0; i < volumes.size(); i++) {
             Volume volume = volumes.get(i);
@@ -293,11 +313,12 @@ public class ServiceMonitoring {
                     Arrays.asList("UUID", volume.getUuid()),
                     Arrays.asList("Ponto de Montagem", volume.getPontoDeMontagem())
             );
-
+            pdf.append(createPDFInfos.gerarLayoutPDF(volumeData));
             mapaVolume.put("Volume " + i, volumeData);
             table.append(tablePrinter.printTable(volumeData));
         }
         mapaVolume.put("VolumeSTRING", table.toString());
+        mapaVolume.put("VolumePDF", pdf.toString());
 
         return mapaVolume;
     }

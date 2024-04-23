@@ -325,7 +325,7 @@ public class Main {
             case "5":
                 String chaveString = null;
                 for (String chave : tabela.keySet()) {
-                    if (chave.toUpperCase().contains("STRING")) {
+                    if (chave.toUpperCase().contains("PDF")) {
                         chaveString = chave;
                         break;
                     }
