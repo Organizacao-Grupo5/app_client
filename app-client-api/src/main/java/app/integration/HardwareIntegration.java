@@ -1,8 +1,12 @@
 package app.integration;
 
+import util.logs.Logger;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.Serializable;
+import java.util.Optional;
 
 public class HardwareIntegration {
     Boolean isWindows = System.getProperty("os.name").toLowerCase().startsWith("windows");
@@ -37,5 +41,35 @@ public class HardwareIntegration {
 
         return numbersOutput.toString().trim();
     }
+
+    public double monitorarTemperatura() throws IOException, InterruptedException {
+        Serializable output = null;
+        try {
+            String scriptPath = "app-client-api/src/scripts" + directory + "/cpuTemperature.ps1";
+
+            String command = "powershell.exe -ExecutionPolicy Bypass -File " + scriptPath;
+
+            Process process = Runtime.getRuntime().exec(command);
+
+            process.waitFor();
+
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            StringBuilder stringBuilder = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) {
+                stringBuilder.append(line).append("\n");
+            }
+            output = stringBuilder.toString();
+        } catch (IOException | InterruptedException e) {
+            Logger.logWarning("Não conseguimos obter a temperatura: Saída " + output);
+        }
+        if (output == null) {
+            return 0.0;
+        } else {
+            String outputString = ((String) output).replace(',', '.');
+            return Double.parseDouble(outputString);
+        }
+    }
+
 
 }

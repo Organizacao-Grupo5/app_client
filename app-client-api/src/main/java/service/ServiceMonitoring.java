@@ -1,9 +1,11 @@
 package service;
 
 import app.system.SystemMonitor;
+import com.itextpdf.text.pdf.PdfAction;
 import com.mysql.cj.util.StringUtils;
 import exception.ExceptionMonitoring;
 import model.*;
+import util.CreatePDFInfos;
 import util.TablePrinter;
 import util.logs.Logger;
 import java.util.*;
@@ -12,6 +14,7 @@ import java.util.stream.Collectors;
 public class ServiceMonitoring {
 
     public final TablePrinter tablePrinter = new TablePrinter();
+    public final CreatePDFInfos createPDFInfos = new CreatePDFInfos();
 
     public Map<String, Object> exibirTabelas(CPU cpu, List<GPU> gpus, List<HDD> hdd, SistemaOp so, MemoriaRam ram, List<APP> apps, List<ConexaoUSB> usb, List<Bateria> bateria, List<Volume> volumes) throws Exception {
         Logger.logInfo("Iniciando o monitoramento dos componentes");
@@ -70,6 +73,7 @@ public class ServiceMonitoring {
             );
             mapaGpu.put("GPU " + i, gpuData);
             table.append(tablePrinter.printTable(gpuData));
+
         }
         mapaGpu.put("GPUSTRING", table);
         return mapaGpu;
@@ -93,7 +97,7 @@ public class ServiceMonitoring {
                 Arrays.asList("Número de pacotes físicos", cpu.getNumeroPacotesFisicos().toString()),
                 Arrays.asList("Frequência", cpu.getFrequencia().toString()),
                 Arrays.asList("Uso", cpu.getUso().toString()),
-                Arrays.asList("Temperatura", cpu.getTemperatura().toString())
+                Arrays.asList("Temperatura", Optional.ofNullable(cpu.getTemperatura()).orElse(0.0).toString())
         );
         mapaCpu.put("CPU", cpu);
         mapaCpu.put("CPUSTRING", tablePrinter.printTable(cpuData));

@@ -16,7 +16,6 @@ public class PDFGenerator {
         Document document = new Document();
 
         try {
-            content = formatTableContent(content);
             String userHome = System.getProperty("user.home");
             String downloadsDir = userHome + FileSystems.getDefault().getSeparator() + "Downloads";
 
@@ -45,22 +44,6 @@ public class PDFGenerator {
         }
     }
 
-    private String formatTableContent(String content) {
-        content = content.replaceAll("[|+-]", "");
-        String[] lines = content.split("\\r?\\n");
-        StringBuilder formattedContent = new StringBuilder();
 
-        for (String line : lines) {
-            String[] parts = line.split("\\|");
-            if (parts.length >= 2) {
-                parts[0] = parts[0].replaceAll("\\s+", ": ");
-                formattedContent.append(parts[0]).append("|").append(parts[1]).append("\n");
-            } else {
-                formattedContent.append(line).append("\n");
-            }
-        }
-
-        return formattedContent.toString();
-    }
 
 }

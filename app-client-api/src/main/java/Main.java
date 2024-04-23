@@ -6,6 +6,7 @@ import exception.AutenticationException;
 import model.*;
 import service.ServiceMonitoring;
 
+import java.io.Console;
 import java.util.*;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -73,8 +74,19 @@ public class Main {
                 """);
         System.out.print(" - Insira seu email: ");
         String email = scanner.next();
-        System.out.print(" - Insira sua senha: ");
-        String senha = scanner.next();
+        Console console = System.console();
+        String senha = "";
+
+        if (console == null) {
+            System.out.print(" - Insira sua senha: ");
+            senha = scanner.next();
+        } else{
+            char[] senhaArray = console.readPassword(" - Insira sua senha: ");
+            senha = new String(senhaArray);
+
+            java.util.Arrays.fill(senhaArray, ' ');
+        }
+
         try {
             usuarioLogado = login.login(email, senha);
             System.out.println(" - Terminamos a verificação de seu acesso...   ");

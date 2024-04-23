@@ -1,5 +1,6 @@
 package app.system;
 
+import app.integration.HardwareIntegration;
 import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.discos.Disco;
 import com.github.britooo.looca.api.group.dispositivos.DispositivoUsb;
@@ -28,6 +29,8 @@ public class SystemMonitor {
 
     private final HardwareAbstractionLayer hardware = new SystemInfo().getHardware();
 
+    HardwareIntegration hardwareIntegration = new HardwareIntegration();
+
     public CPU monitorarCPU() {
         Logger.logInfo("Capturando dados da sua CPU.");
         CPU cpu = new CPU();
@@ -45,7 +48,8 @@ public class SystemMonitor {
             cpu.setNumeroPacotesFisicos(processor.getNumeroPacotesFisicos());
             cpu.setUso(processor.getUso());
             cpu.setNome(processor.getNome());
-            cpu.setTemperatura(0.0);
+
+            cpu.setTemperatura(Optional.ofNullable(hardwareIntegration.monitorarTemperatura()).orElse(0.00));
 
             Logger.logInfo("Dados da CPU capturados com sucesso.");
         } catch (Exception e) {
