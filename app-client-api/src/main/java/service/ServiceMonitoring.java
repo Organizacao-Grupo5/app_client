@@ -158,8 +158,10 @@ public class ServiceMonitoring {
                     Arrays.asList("Tamanho atual", hdd.getTamanhoAtualDaFita().toString()),
                     Arrays.asList("Tempo de transferência", hdd.getTempoDeTransferencia().toString())
             );
+
             mapaHDD.put("HDD " + i, hddData);
             i++;
+
             table.append(tablePrinter.printTable(hddData));
             pdf.append(createPDFInfos.gerarLayoutPDF(hddData));
         }
@@ -169,6 +171,7 @@ public class ServiceMonitoring {
     }
 
 
+
     public Map<String, Object> exibirTabelaMemoriaRAM(MemoriaRam memoriaRam) {
         if (memoriaRam == null) {
             Logger.logWarning("Memória RAM não encontrada durante o monitoramento.");
@@ -176,17 +179,19 @@ public class ServiceMonitoring {
         }
 
         List<List<String>> memoriaRamData = Arrays.asList(
-                Arrays.asList("", "Memória RAM"),
+                Arrays.asList("", "RAM"),
                 Arrays.asList("ID", String.valueOf(memoriaRam.getIdMemoriaRAM())),
                 Arrays.asList("Memória Disponível", String.valueOf(memoriaRam.getMemoriaDisponivel())),
                 Arrays.asList("Memória em Uso", String.valueOf(memoriaRam.getMemoriaEmUso())),
                 Arrays.asList("Memória Total", String.valueOf(memoriaRam.getMemoriaTotal()))
         );
+        List<List<String>> listaProv = new ArrayList<>(memoriaRamData);
+        listaProv.add(Arrays.asList("VALOR", memoriaRam.getMemoriaTotal().toString(), memoriaRam.getMemoriaEmUso().toString(), "GB"));
 
         Map<String, Object> mapaMemoriaRAM = new HashMap<>();
         mapaMemoriaRAM.put("MemoriaRAM", memoriaRamData);
         mapaMemoriaRAM.put("MemoriaRAMSTRING", tablePrinter.printTable(memoriaRamData));
-        mapaMemoriaRAM.put("MemoriaRAMPDF", createPDFInfos.gerarLayoutPDF(memoriaRamData));
+        mapaMemoriaRAM.put("MemoriaRAMPDF", createPDFInfos.gerarLayoutPDF(listaProv));
 
         return mapaMemoriaRAM;
     }
@@ -255,7 +260,7 @@ public class ServiceMonitoring {
                     Arrays.asList("Localização e tamanho", app.getLocalizacaoEtamanho().toString())
             );
             table.append(tablePrinter.printTable(appData));
-            table.append(createPDFInfos.gerarLayoutPDF(appData));
+            pdf.append(createPDFInfos.gerarLayoutPDF(appData));
         });
         mapaAPP.put("APPSTRING", table.toString());
         mapaAPP.put("APPPDF", pdf.toString());
@@ -304,7 +309,7 @@ public class ServiceMonitoring {
         for (int i = 0; i < volumes.size(); i++) {
             Volume volume = volumes.get(i);
             List<List<String>> volumeData = Arrays.asList(
-                    Arrays.asList("", "Volume " + (i + 1)),
+                    Arrays.asList("", "VOLUME " + (i + 1)),
                     Arrays.asList("Nome", volume.getNome()),
                     Arrays.asList("Volume", volume.getVolume()),
                     Arrays.asList("Disponível", String.valueOf(volume.getDisponivel())),
@@ -313,7 +318,10 @@ public class ServiceMonitoring {
                     Arrays.asList("UUID", volume.getUuid()),
                     Arrays.asList("Ponto de Montagem", volume.getPontoDeMontagem())
             );
-            pdf.append(createPDFInfos.gerarLayoutPDF(volumeData));
+            List<List<String>> listaProv = new ArrayList<>(volumeData);
+            listaProv.add(Arrays.asList("VALOR", volume.getTotal().toString(),String.valueOf(volume.getTotal() - volume.getDisponivel()), "GB"));
+
+            pdf.append(createPDFInfos.gerarLayoutPDF(listaProv));
             mapaVolume.put("Volume " + i, volumeData);
             table.append(tablePrinter.printTable(volumeData));
         }

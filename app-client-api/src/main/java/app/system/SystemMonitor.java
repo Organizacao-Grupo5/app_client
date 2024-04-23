@@ -133,7 +133,7 @@ public class SystemMonitor {
                 conversor.formatarBytes(disco.getEscritas()), conversor.formatarBytes(disco.getLeituras()),
                 conversor.formatarBytes(disco.getBytesDeEscritas()), conversor.formatarBytes(disco.getBytesDeLeitura()),
                 conversor.converterCasasDecimais(conversor.formatarBytes(disco.getTamanho()), 2),
-                conversor.converterCasasDecimais(conversor.formatarBytes(disco.getTamanhoAtualDaFila()), 2),
+                conversor.converterCasasDecimais(conversor.formatarBytes(looca.getGrupoDeDiscos().getVolumes().getFirst().getTotal()) - conversor.formatarBytes(looca.getGrupoDeDiscos().getVolumes().getFirst().getDisponivel()), 2),
                 conversor.converterSegundosParaHoras(disco.getTempoDeTransferencia()));
     }
 
