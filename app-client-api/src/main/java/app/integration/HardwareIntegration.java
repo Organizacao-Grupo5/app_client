@@ -8,9 +8,11 @@ import java.io.InputStreamReader;
 import java.io.Serializable;
 import java.util.Optional;
 
+import static com.sun.jna.Platform.isWindows;
+
 public class HardwareIntegration {
-    Boolean isWindows = System.getProperty("os.name").toLowerCase().startsWith("windows");
-    String directory = isWindows ? "/powershell" : "bash";
+    private static Boolean isWindows = System.getProperty("os.name").toLowerCase().startsWith("windows");
+    String directory = isWindows ? "/powershell" : "/bash";
     ProcessBuilder builder = new ProcessBuilder();
 
     public String monitorarBateria() {
@@ -42,12 +44,17 @@ public class HardwareIntegration {
         return numbersOutput.toString().trim();
     }
 
-    public double monitorarTemperatura() throws IOException, InterruptedException {
+    public Double monitorarTemperatura() throws IOException, InterruptedException {
         Serializable output = null;
+        String command = "";
         try {
-            String scriptPath = "app-client-api/src/scripts" + directory + "/cpuTemperature.ps1";
-
-            String command = "powershell.exe -ExecutionPolicy Bypass -File " + scriptPath;
+            if (!isWindows()) {
+                String scriptPath = "app-client-api/src/scripts" + directory + "/cpuTemperature.sh";
+                command = "sh " + scriptPath;
+            } else {
+                String scriptPath = "app-client-api/src/scripts" + directory + "/cpuTemperature.ps1";
+                command = "powershell.exe -ExecutionPolicy Bypass -File " + scriptPath;
+            }
 
             Process process = Runtime.getRuntime().exec(command);
 

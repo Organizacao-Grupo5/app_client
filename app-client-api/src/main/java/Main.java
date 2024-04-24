@@ -240,7 +240,7 @@ public class Main {
                 clearTerminal();
                 System.out.println("Mostrando as tabelas de GPU...");
                 Map<String, Object> tabelaGPU = serviceMonitoring.exibirTabelaGPU(gpu);
-                System.out.println(tabelaGPU.get("GPUSTRIG"));
+                System.out.println(tabelaGPU.get("GPUSTRING"));
                 baixarPDFExcel(tabelaGPU);
                 break;
             case "e":

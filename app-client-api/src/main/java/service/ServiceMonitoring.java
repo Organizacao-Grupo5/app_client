@@ -38,19 +38,21 @@ public class ServiceMonitoring {
         mapaTodasTabelas.put("APP", exibirTabelaAPP(apps));
 
         StringBuilder todasAsTabelasString = new StringBuilder();
-        for (Object tabela : mapaTodasTabelas.values()) {
-            if (tabela instanceof String) {
-                todasAsTabelasString.append((String) tabela);
-            } else if (tabela instanceof Map) {
-                Map<String, Object> mapaTabela = (Map<String, Object>) tabela;
-                for (Object value : mapaTabela.values()) {
-                    if (value instanceof String) {
-                        todasAsTabelasString.append((String) value);
-                    }
+        StringBuilder todasAsTabelasPDF = new StringBuilder();
+
+        mapaTodasTabelas.forEach((chave, valor) -> {
+            Map<String, Object> mapaComponente = (Map<String, Object>) valor;
+            mapaComponente.forEach((chaveComponente, valorComponente) -> {
+                if(chaveComponente.contains("STRING")){
+                    todasAsTabelasString.append(valorComponente);
+                } else if (chaveComponente.contains("PDF")){
+                    todasAsTabelasPDF.append(valorComponente);
                 }
-            }
-        }
+            });
+        });
+
         mapaTodasTabelas.put("TODASSTRING", todasAsTabelasString.toString());
+        mapaTodasTabelas.put("TODASASTABELASPDF", todasAsTabelasPDF.toString());
 
         return mapaTodasTabelas;
     }
@@ -67,19 +69,21 @@ public class ServiceMonitoring {
             GPU gpu = gpus.get(i);
             List<List<String>> gpuData = Arrays.asList(
                     Arrays.asList("", "GPU " + (i + 1)),
+                    Arrays.asList("Data Hora captura", String.valueOf(gpu.getDataHoraCaptura())),
                     Arrays.asList("ID", String.valueOf(gpu.getIdGpu())),
                     Arrays.asList("Nome", gpu.getNome()),
                     Arrays.asList("Fabricante", gpu.getFabricante()),
                     Arrays.asList("Versão", gpu.getVersao()),
                     Arrays.asList("ID Device", gpu.getIdDevice()),
-                    Arrays.asList("VRAM", String.valueOf(gpu.getvRam()))
+                    Arrays.asList("VRAM", String.valueOf(gpu.getvRam())),
+                    Arrays.asList("Temperatura", Optional.ofNullable(gpu.getTemperatura()).orElse(0.0).toString())
             );
             mapaGpu.put("GPU " + i, gpuData);
             table.append(tablePrinter.printTable(gpuData));
             pdf.append(createPDFInfos.gerarLayoutPDF(gpuData));
         }
-        mapaGpu.put("GPUSTRING", table);
-        mapaGpu.put("GPUPDF", pdf);
+        mapaGpu.put("GPUSTRING", table.toString());
+        mapaGpu.put("GPUPDF", pdf.toString());
         return mapaGpu;
     }
 
@@ -91,6 +95,7 @@ public class ServiceMonitoring {
         Map<String, Object> mapaCpu = new HashMap<>();
         List<List<String>> cpuData = Arrays.asList(
                 Arrays.asList("", "CPU"),
+                Arrays.asList("Data Hora captura", String.valueOf(cpu.getDataHoraCaptura())),
                 Arrays.asList("Nome", cpu.getNome()),
                 Arrays.asList("Fabricante", cpu.getFabricante()),
                 Arrays.asList("Microarquitetura", cpu.getMicroarquitetura()),
@@ -118,6 +123,7 @@ public class ServiceMonitoring {
         Map<String, Object> mapaSO = new HashMap<>();
         List<List<String>> soData = Arrays.asList(
                 Arrays.asList("", "Sistema Operacional"),
+                Arrays.asList("Data Hora captura", String.valueOf(sistemaOp.getDataHoraCaptura())),
                 Arrays.asList("Nome Sistema", Optional.ofNullable(sistemaOp.getSistemaOperacional()).orElse("VALOR NÃO ENCONTRADO")),
                 Arrays.asList("Fabricante", Optional.ofNullable(sistemaOp.getFabricante()).orElse("VALOR NÃO ENCONTRADO")),
                 Arrays.asList("Arquitetura", Optional.ofNullable(sistemaOp.getArquitetura()).orElse("VALOR NÃO ENCONTRADO")),
@@ -147,6 +153,7 @@ public class ServiceMonitoring {
 
             List<List<String>> hddData = Arrays.asList(
                     Arrays.asList("", "HDD"),
+                    Arrays.asList("Data Hora captura", String.valueOf(hdd.getDataHoraCaptura())),
                     Arrays.asList("Nome", hdd.getNome()),
                     Arrays.asList("Serial", hdd.getSerial()),
                     Arrays.asList("Modelo", hdd.getModelo()),
@@ -155,7 +162,6 @@ public class ServiceMonitoring {
                     Arrays.asList("Bytes de escrita", hdd.getBytesDeEscrita().toString()),
                     Arrays.asList("Bytes de leitura", hdd.getBytesDeLeitura().toString()),
                     Arrays.asList("Tamanho", hdd.getTamanho().toString()),
-                    Arrays.asList("Tamanho atual", hdd.getTamanhoAtualDaFita().toString()),
                     Arrays.asList("Tempo de transferência", hdd.getTempoDeTransferencia().toString())
             );
 
@@ -180,6 +186,7 @@ public class ServiceMonitoring {
 
         List<List<String>> memoriaRamData = Arrays.asList(
                 Arrays.asList("", "RAM"),
+                Arrays.asList("Data Hora captura", String.valueOf(memoriaRam.getDataHoraCaptura())),
                 Arrays.asList("ID", String.valueOf(memoriaRam.getIdMemoriaRAM())),
                 Arrays.asList("Memória Disponível", String.valueOf(memoriaRam.getMemoriaDisponivel())),
                 Arrays.asList("Memória em Uso", String.valueOf(memoriaRam.getMemoriaEmUso())),
@@ -209,6 +216,7 @@ public class ServiceMonitoring {
             Bateria bateria = baterias.get(i);
             List<List<String>> bateriaData = Arrays.asList(
                     Arrays.asList("", "Bateria " + (i + 1)),
+                    Arrays.asList("Data Hora captura", String.valueOf(bateria.getDataHoraCaptura())),
                     Arrays.asList("ID", String.valueOf(bateria.getIdBateria())),
                     Arrays.asList("Amperagem", String.valueOf(bateria.getAmperagem())),
                     Arrays.asList("Nome do Dispositivo", bateria.getNomeDispositivo()),
@@ -227,7 +235,8 @@ public class ServiceMonitoring {
                     Arrays.asList("Capacidade Máxima", String.valueOf(bateria.getCapacidadeMaxima())),
                     Arrays.asList("Percentual Capacidade Restante", String.valueOf(bateria.getPercentualCapacidadeRestante())),
                     Arrays.asList("Data de Fabricação", bateria.getDataFabricacao()),
-                    Arrays.asList("Fabricante", bateria.getFabricante())
+                    Arrays.asList("Fabricante", bateria.getFabricante()),
+                    Arrays.asList("Bateria Atual (%)", bateria.getBateriaAtual().toString())
             );
 
             mapaBateria.put("Bateria " + i, bateriaData);
@@ -252,6 +261,7 @@ public class ServiceMonitoring {
         apps.forEach(app -> {
             List<List<String>> appData = Arrays.asList(
                     Arrays.asList("", "APP"),
+                    Arrays.asList("Data Hora captura", String.valueOf(app.getDataHoraCaptura())),
                     Arrays.asList("Nome", app.getNome()),
                     Arrays.asList("Comando", app.getComando()),
                     Arrays.asList("Data hora captura", app.getDataHoraCaptura().toString()),
@@ -280,6 +290,7 @@ public class ServiceMonitoring {
         conexoesUSB.forEach(usb -> {
             List<List<String>> usbData = Arrays.asList(
                     Arrays.asList("", "Conexão USB"),
+                    Arrays.asList("Data Hora captura", String.valueOf(usb.getDataHoraCaptura())),
                     Arrays.asList("Nome USB", usb.getNomeUsb()),
                     Arrays.asList("Fornecedor", usb.getFornecedor()),
                     Arrays.asList("Data hora captura", usb.getDataHoraCaptura().toString()),
@@ -309,7 +320,8 @@ public class ServiceMonitoring {
         for (int i = 0; i < volumes.size(); i++) {
             Volume volume = volumes.get(i);
             List<List<String>> volumeData = Arrays.asList(
-                    Arrays.asList("", "VOLUME " + (i + 1)),
+                    Arrays.asList("", "VOLUME"),
+                    Arrays.asList("Data Hora captura", String.valueOf(volume.getDataHoraCaptura())),
                     Arrays.asList("Nome", volume.getNome()),
                     Arrays.asList("Volume", volume.getVolume()),
                     Arrays.asList("Disponível", String.valueOf(volume.getDisponivel())),

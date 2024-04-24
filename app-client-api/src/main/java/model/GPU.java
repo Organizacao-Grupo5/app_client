@@ -10,6 +10,7 @@ public class GPU {
     private String idDevice;
     private Double vRam;
     private LocalDateTime dataHoraCaptura;
+    private Double temperatura;
 
     public GPU() {
     }
@@ -21,6 +22,14 @@ public class GPU {
         this.idDevice = idDevice;
         this.vRam = vRam;
         this.dataHoraCaptura = LocalDateTime.now();
+    }
+
+    public Double getTemperatura() {
+        return temperatura;
+    }
+
+    public void setTemperatura(Double temperatura) {
+        this.temperatura = temperatura;
     }
 
     public LocalDateTime getDataHoraCaptura() {

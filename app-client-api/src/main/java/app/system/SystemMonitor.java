@@ -13,6 +13,8 @@ import model.*;
 import util.logs.Logger;
 import oshi.SystemInfo;
 import oshi.hardware.*;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -107,7 +109,6 @@ public class SystemMonitor {
         try {
             looca.getGrupoDeDiscos().getDiscos().forEach(disco -> {
                 try {
-                    validarDadosDisco(disco);
                     hdds.add(mapearDiscoParaHDD(disco));
                 } catch (InvalidDataException e) {
                     Logger.logWarning("Erro ao processar dados do HDD: " + e.getMessage());
@@ -120,20 +121,11 @@ public class SystemMonitor {
         return hdds;
     }
 
-    private void validarDadosDisco(Disco disco) {
-        if (!dadosHDDValidados && (disco.getNome() == null || disco.getNome().isEmpty() || disco.getSerial() == null
-                || disco.getSerial().isEmpty() || disco.getModelo() == null || disco.getModelo().isEmpty()
-                || disco.getTamanho() <= 0)) {
-            Logger.logWarning("Dados incompletos do disco.");
-        }
-    }
-
     private HDD mapearDiscoParaHDD(Disco disco) throws InvalidDataException {
         return new HDD(disco.getNome(), disco.getSerial(), disco.getModelo(),
                 conversor.formatarBytes(disco.getEscritas()), conversor.formatarBytes(disco.getLeituras()),
                 conversor.formatarBytes(disco.getBytesDeEscritas()), conversor.formatarBytes(disco.getBytesDeLeitura()),
                 conversor.converterCasasDecimais(conversor.formatarBytes(disco.getTamanho()), 2),
-                conversor.converterCasasDecimais(conversor.formatarBytes(looca.getGrupoDeDiscos().getVolumes().getFirst().getTotal()) - conversor.formatarBytes(looca.getGrupoDeDiscos().getVolumes().getFirst().getDisponivel()), 2),
                 conversor.converterSegundosParaHoras(disco.getTempoDeTransferencia()));
     }
 
@@ -148,7 +140,6 @@ public class SystemMonitor {
         try {
             hardware.getPowerSources().forEach(power -> {
                 try {
-                    validarDadosBateria(power);
                     baterias.add(mapearPowerParaBateria(power));
                 } catch (InvalidDataException e) {
                     Logger.logWarning("Erro ao processar dados da bateria: " + e.getMessage());
@@ -161,14 +152,6 @@ public class SystemMonitor {
         return baterias;
     }
 
-    private void validarDadosBateria(PowerSource power) {
-        if (!dadosBateriaValidados && (power.getDeviceName() == null || power.getDeviceName().isEmpty()
-                || power.getSerialNumber() == null || power.getSerialNumber().isEmpty() || power.getChemistry() == null
-                || power.getChemistry().isEmpty() || power.getName() == null || power.getName().isEmpty())) {
-            Logger.logWarning("Dados incompletos da bateria.");
-        }
-    }
-
     private Bateria mapearPowerParaBateria(PowerSource power) throws InvalidDataException {
         String manufactureDateStr = power.getManufactureDate() != null ? power.getManufactureDate().toString() : "N/A";
         return new Bateria(power.getAmperage(), power.getDeviceName(), power.getSerialNumber(), power.getChemistry(),
@@ -178,16 +161,11 @@ public class SystemMonitor {
                 power.getTemperature(), conversor.formatarBytes(power.getMaxCapacity()),
                 conversor.convertePorcentagem(power.getMaxCapacity(),
                         power.getRemainingCapacityPercent() * power.getMaxCapacity() / 100),
-                manufactureDateStr, power.getManufacturer());
+                manufactureDateStr, power.getManufacturer(), Double.parseDouble(hardwareIntegration.monitorarBateria()));
     }
 
 
     public List<GPU> monitorarGPU() {
-        if (!dadosGPUValidados) {
-            Logger.logInfo("Capturando dados da sua GPU");
-            dadosGPUValidados = true;
-        }
-
         List<GPU> gpus = new ArrayList<>();
         List<GraphicsCard> graphicsCards = hardware.getGraphicsCards();
 
@@ -197,9 +175,16 @@ public class SystemMonitor {
             } else {
                 graphicsCards.forEach(gpu -> {
                     try {
-                        validarDadosGPU(gpu);
-                        gpus.add(mapearGPU(gpu));
-                    } catch (InvalidDataException e) {
+                        GPU gpuAtual = mapearGPU(gpu);
+                        try {
+                            double temperatura = hardwareIntegration.monitorarTemperatura();
+                            gpuAtual.setTemperatura(temperatura);
+                        } catch (Exception e) {
+                            Logger.logWarning("Erro ao capturar temperatura da GPU: " + e.getMessage());
+                            gpuAtual.setTemperatura(0.0);
+                        }
+                        gpus.add(gpuAtual);
+                    } catch (Exception e) {
                         Logger.logWarning("Erro ao processar dados da GPU: " + e.getMessage());
                     }
                 });
@@ -211,14 +196,7 @@ public class SystemMonitor {
         return gpus;
     }
 
-    private void validarDadosGPU(GraphicsCard gpu) {
-        if (!dadosGPUValidados && (gpu.getName() == null || gpu.getName().isEmpty() || gpu.getVendor() == null
-                || gpu.getVendor().isEmpty() || gpu.getVersionInfo() == null || gpu.getVersionInfo().isEmpty())) {
-            Logger.logWarning("Dados incompletos da GPU.");
-        }
-    }
-
-    private GPU mapearGPU(GraphicsCard gpu) throws InvalidDataException {
+    private GPU mapearGPU(GraphicsCard gpu) throws InvalidDataException, IOException, InterruptedException {
         return new GPU(gpu.getName(), gpu.getVendor(), gpu.getVersionInfo(), gpu.getDeviceId(),
                 conversor.formatarBytes(gpu.getVRam()));
     }
@@ -268,8 +246,6 @@ public class SystemMonitor {
                 .map(usb -> mapearConexaoUSB(usb))
                 .collect(Collectors.toList());
 
-        validarDadosUSB(conexoesUSB);
-
         return conexoesUSB;
     }
 
@@ -278,13 +254,6 @@ public class SystemMonitor {
                 usb.getIdFornecedor(), usb.getNumeroDeSerie(), usb.getIdProduto());
     }
 
-    private void validarDadosUSB(List<ConexaoUSB> conexoesUSB) {
-        if (!dadosUSBValidados) {
-            if (conexoesUSB == null || conexoesUSB.isEmpty()) {
-                Logger.logWarning("Nenhuma conexão USB detectada.");
-            }
-        }
-    }
 
     public List<Volume> monitorarVolumeLogico() {
         return looca.getGrupoDeDiscos().getVolumes().stream()

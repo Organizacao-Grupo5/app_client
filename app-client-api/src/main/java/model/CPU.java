@@ -35,6 +35,14 @@ public class CPU {
         this.dataHoraCaptura = LocalDateTime.now();
     }
 
+    public LocalDateTime getDataHoraCaptura() {
+        return dataHoraCaptura;
+    }
+
+    public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
+        this.dataHoraCaptura = dataHoraCaptura;
+    }
+
     public Integer getIdCpu() {
         return idCpu;
     }

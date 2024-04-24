@@ -17,6 +17,14 @@ public class PlacaMae {
         this.dataHoraCaptura = LocalDateTime.now();
     }
 
+    public LocalDateTime getDataHoraCaptura() {
+        return dataHoraCaptura;
+    }
+
+    public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
+        this.dataHoraCaptura = dataHoraCaptura;
+    }
+
     public int getIdPlacaMae() {
         return idPlacaMae;
     }

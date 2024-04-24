@@ -12,7 +12,6 @@ public class HDD {
     private Double bytesDeEscrita;
     private Double bytesDeLeitura;
     private Double tamanho;
-    private Double tamanhoAtualDaFita;
     private Double tempoDeTransferencia;
     private LocalDateTime dataHoraCaptura;
 
@@ -23,7 +22,7 @@ public class HDD {
         return idHDD;
     }
 
-    public HDD(String nome, String serial, String modelo, Double escritas, Double leituras, Double bytesDeEscrita, Double bytesDeLeitura, Double tamanho, Double tamanhoAtualDaFita, Double tempoDeTransferencia) {
+    public HDD(String nome, String serial, String modelo, Double escritas, Double leituras, Double bytesDeEscrita, Double bytesDeLeitura, Double tamanho, Double tempoDeTransferencia) {
         this.nome = nome;
         this.serial = serial;
         this.modelo = modelo;
@@ -32,7 +31,6 @@ public class HDD {
         this.bytesDeEscrita = bytesDeEscrita;
         this.bytesDeLeitura = bytesDeLeitura;
         this.tamanho = tamanho;
-        this.tamanhoAtualDaFita = tamanhoAtualDaFita;
         this.tempoDeTransferencia = tempoDeTransferencia;
         this.dataHoraCaptura = LocalDateTime.now();
     }
@@ -101,16 +99,16 @@ public class HDD {
         return tamanho;
     }
 
+    public LocalDateTime getDataHoraCaptura() {
+        return dataHoraCaptura;
+    }
+
+    public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
+        this.dataHoraCaptura = dataHoraCaptura;
+    }
+
     public void setTamanho(Double tamanho) {
         this.tamanho = tamanho;
-    }
-
-    public Double getTamanhoAtualDaFita() {
-        return tamanhoAtualDaFita;
-    }
-
-    public void setTamanhoAtualDaFita(Double tamanhoAtualDaFita) {
-        this.tamanhoAtualDaFita = tamanhoAtualDaFita;
     }
 
     public Double getTempoDeTransferencia() {

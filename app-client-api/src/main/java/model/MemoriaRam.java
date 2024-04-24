@@ -24,6 +24,14 @@ public class MemoriaRam {
         return idMemoriaRAM;
     }
 
+    public LocalDateTime getDataHoraCaptura() {
+        return dataHoraCaptura;
+    }
+
+    public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
+        this.dataHoraCaptura = dataHoraCaptura;
+    }
+
     public void setIdMemoriaRAM(int idMemoriaRAM) {
         this.idMemoriaRAM = idMemoriaRAM;
     }

@@ -36,7 +36,7 @@ public class CreatePDFInfos {
                         """.formatted(porcentagemAtual, 100 - porcentagemAtual, max, unidadeMedida, atual, unidadeMedida, max - atual, unidadeMedida
                 ));
 
-                displayAll.append("\nDESCRIÇÃO: " + MensagemSuporte.getByNumeroComponente(porcentagemAtual >= 75.0 ? 1 : porcentagemAtual >= 50.0 ? 2 : 1, data.get(0).get(1)) + "\n");
+                displayAll.append("\nDESCRIÇÃO: " + MensagemSuporte.getByNumeroComponente(porcentagemAtual >= 75.0 ? 1 : porcentagemAtual >= 50.0 ? 2 : 1, data.get(0).get(1).toUpperCase()) + "\n");
 
             }
         }
