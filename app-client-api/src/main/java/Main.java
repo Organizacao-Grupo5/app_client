@@ -161,7 +161,7 @@ public class Main {
                         clearTerminal();
                         System.out.println(Logger.displayLogsInConsole());
                         Map<String, Object> mapaLogs = new HashMap<>();
-                        mapaLogs.put("LOGSSTRING",Logger.displayLogsInConsole());
+                        mapaLogs.put("LOGSPDF",Logger.displayLogsInConsole());
                         baixarPDFExcel(mapaLogs);
                         break;
                     case "c":

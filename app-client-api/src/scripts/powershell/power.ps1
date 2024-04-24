@@ -1,4 +1,4 @@
-if ($env:OS -like "*Windows_NT*") {
+if ($env:OS -like "*Windows_ NT*") {
     $batteryInfo = Get-WmiObject -Class Win32_Battery | Select-Object EstimatedChargeRemaining, EstimatedRunTime
     $batteryPercentage = $batteryInfo.EstimatedChargeRemaining
     Write-Output  $batteryPercentage
