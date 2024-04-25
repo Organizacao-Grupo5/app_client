@@ -1,6 +1,12 @@
 package model;
 
+import com.mysql.cj.xdevapi.Table;
+import util.TablePrinter;
+
 import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
 
 public class CPU {
     private Integer idCpu;
@@ -139,5 +145,23 @@ public class CPU {
     public void setTemperatura(Double temperatura) {
         this.temperatura = temperatura;
     }
-
+    
+    public String tabela(){
+        List<List<String>> cpuData = Arrays.asList(
+                Arrays.asList("", "CPU"),
+                Arrays.asList("Data Hora captura", String.valueOf(dataHoraCaptura)),
+                Arrays.asList("Nome", nome),
+                Arrays.asList("Fabricante", fabricante),
+                Arrays.asList("Microarquitetura", microarquitetura),
+                Arrays.asList("Identificador", identificador),
+                Arrays.asList("ID CPU", idCpuLooca),
+                Arrays.asList("Número de CPUs lógicas", numeroDeCpusLogicas.toString()),
+                Arrays.asList("Número de CPUs Físicas", numeroDeCpusFisicas.toString()),
+                Arrays.asList("Número de pacotes físicos", numeroPacotesFisicos.toString()),
+                Arrays.asList("Frequência", frequencia.toString()),
+                Arrays.asList("Uso", uso.toString()),
+                Arrays.asList("Temperatura", Optional.ofNullable(temperatura).orElse(0.0).toString() + "°C")
+        );
+        return TablePrinter.printTable(cpuData);
+    }
 }

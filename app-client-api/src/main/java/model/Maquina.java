@@ -1,10 +1,13 @@
 package model;
 
+import java.util.List;
+
 public class Maquina {
     private int idMaquina;
     private String ipv4;
     private Usuario usuario;
     private PlacaMae placaMae;
+    private List<Object> componentes;
 
     public Maquina() {
     }
@@ -45,5 +48,17 @@ public class Maquina {
 
     public void setPlacaMae(PlacaMae placaMae) {
         this.placaMae = placaMae;
+    }
+
+    public List<Object> getComponentes() {
+        return componentes;
+    }
+
+    public void setComponentes(List<Object> componentes) {
+        this.componentes = componentes;
+    }
+
+    public void exibirTabela(List<List<String>> tabela){
+
     }
 }

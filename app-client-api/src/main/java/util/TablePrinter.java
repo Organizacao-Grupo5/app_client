@@ -3,7 +3,7 @@ package util;
 import java.util.List;
 
 public class TablePrinter {
-    public String printTable(List<List<String>> data) {
+    public static String printTable(List<List<String>> data) {
         StringBuilder tableString = new StringBuilder();
 
         int[] columnWidths = calculateColumnWidths(data);
@@ -21,7 +21,7 @@ public class TablePrinter {
         return tableString.toString();
     }
 
-    private String printSeparator(int[] columnWidths) {
+    private static String printSeparator(int[] columnWidths) {
         StringBuilder separator = new StringBuilder();
 
         for (int width : columnWidths) {
@@ -35,7 +35,7 @@ public class TablePrinter {
         return separator.toString();
     }
 
-    private String printRow(List<String> row, int[] columnWidths) {
+    private static String printRow(List<String> row, int[] columnWidths) {
         StringBuilder rowString = new StringBuilder();
 
         for (int i = 0; i < row.size(); i++) {
@@ -47,7 +47,7 @@ public class TablePrinter {
         return rowString.toString();
     }
 
-    private int[] calculateColumnWidths(List<List<String>> data) {
+    private static int[] calculateColumnWidths(List<List<String>> data) {
         int numColumns = data.get(0).size();
         int[] columnWidths = new int[numColumns];
         for (List<String> row : data) {

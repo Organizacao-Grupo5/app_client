@@ -1,4 +1,3 @@
-import app.integration.HardwareIntegration;
 import app.security.Login;
 
 import app.system.SystemMonitor;
@@ -162,7 +161,7 @@ public class Main {
                         System.out.println(Logger.displayLogsInConsole());
                         Map<String, Object> mapaLogs = new HashMap<>();
                         mapaLogs.put("LOGSPDF",Logger.displayLogsInConsole());
-                        baixarPDFExcel(mapaLogs);
+                        baixarPDF(mapaLogs);
                         break;
                     case "c":
                         clearTerminal();
@@ -220,70 +219,68 @@ public class Main {
                 System.out.println("Mostrando todas as tabelas...");
                 Map<String, Object> todasAsTabelas = serviceMonitoring.exibirTabelas(cpu, gpu, hdd, sistemaOp, ram, app, usb, bateria, volume);
                 System.out.println(todasAsTabelas.get("TODASSTRING"));
-                baixarPDFExcel(todasAsTabelas);
+                baixarPDF(todasAsTabelas);
                 break;
             case "b":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de CPU...");
                 Map<String, Object> tabelaCpu = serviceMonitoring.exibirTabelaCPU(cpu);
                 System.out.println(tabelaCpu.get("CPUSTRING"));
-                baixarPDFExcel(tabelaCpu);
+                baixarPDF(tabelaCpu);
                 break;
             case "c":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de HDD...");
                 Map<String, Object> tabelaHDD = serviceMonitoring.exibirTabelaHDD(hdd);
                 System.out.println(tabelaHDD.get("HDDSTRING"));
-                baixarPDFExcel(tabelaHDD);
+                baixarPDF(tabelaHDD);
                 break;
             case "d":
                 clearTerminal();
                 System.out.println("Mostrando as tabelas de GPU...");
-                Map<String, Object> tabelaGPU = serviceMonitoring.exibirTabelaGPU(gpu);
-                System.out.println(tabelaGPU.get("GPUSTRING"));
-                baixarPDFExcel(tabelaGPU);
+                System.out.println(gpu.get(0).tabela());
+//                baixarPDF(tabelaGPU);
                 break;
             case "e":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de RAM...");
                 Map<String, Object> tabelaRam = serviceMonitoring.exibirTabelaMemoriaRAM(ram);
                 System.out.println(tabelaRam.get("MemoriaRAMSTRING"));
-                baixarPDFExcel(tabelaRam);
+                baixarPDF(tabelaRam);
                 break;
             case "f":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de APPs abertos...");
                 Map<String, Object> tabelaApps = serviceMonitoring.exibirTabelaAPP(app);
                 System.out.println(tabelaApps.get("APPSTRING"));
-                baixarPDFExcel(tabelaApps);
+                baixarPDF(tabelaApps);
                 break;
             case "g":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de Bateria...");
-                Map<String, Object> tabelaBateria = serviceMonitoring.exibirTabelaBateria(bateria);
-                System.out.println(tabelaBateria.get("BateriaSTRING"));
-                baixarPDFExcel(tabelaBateria);
+                System.out.println(bateria.get(0).tabela());
+//                baixarPDF(tabelaBateria);
                 break;
             case "h":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de Sistema Operacional...");
                 Map<String, Object> tabelaSistemaOP = serviceMonitoring.exibirTabelaSO(sistemaOp);
                 System.out.println(tabelaSistemaOP.get("SOSTRING"));
-                baixarPDFExcel(tabelaSistemaOP);
+                baixarPDF(tabelaSistemaOP);
                 break;
             case "i":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de Volume...");
                 Map<String, Object> tabelaVolume = serviceMonitoring.exibirTabelaVolume(volume);
                 System.out.println(tabelaVolume.get("VolumeSTRING"));
-                baixarPDFExcel(tabelaVolume);
+                baixarPDF(tabelaVolume);
                 break;
             case "j":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de USB...");
                 Map<String, Object> tabelaUSB = serviceMonitoring.exibirTabelaConexaoUSB(usb);
                 System.out.println(tabelaUSB.get("ConexaoUSBSTRING"));
-                baixarPDFExcel(tabelaUSB);
+                baixarPDF(tabelaUSB);
                 break;
             case "1":
                 clearTerminal();
@@ -293,7 +290,7 @@ public class Main {
                 System.out.println(Logger.displayLogsInConsole());
                 Map<String, Object> mapaLogs = new HashMap<>();
                 mapaLogs.put("LOGSSTRING",Logger.displayLogsInConsole());
-                baixarPDFExcel(mapaLogs);
+                baixarPDF(mapaLogs);
                 break;
             case "3":
                 clearTerminal();
@@ -307,20 +304,18 @@ public class Main {
         }
     }
 
-    public static void baixarPDFExcel(Map<String, Object> tabela) {
+    public static void baixarPDF(Map<String, Object> tabela) {
         PDFGenerator pdfGenerator = new PDFGenerator();
 
         System.out.println("""
         +----------------------------------+
         | 5 - Baixar informações em PDF    |
-        | 6 - Baixar informações no Excell |
-        | 7 - Não                          |
+        | Aperte algum botão - Não         |
         +----------------------------------+
         """);
 
         Scanner scanner = new Scanner(System.in);
         String choice = scanner.nextLine();
-
         switch (choice) {
             case "5":
                 String chaveString = null;
@@ -335,16 +330,6 @@ public class Main {
                 } else {
                     Logger.logWarning("Não foi possível gerar o PDF.");
                 }
-                break;
-            case "6":
-                List<List<String>> listaToExcell = new ArrayList<>();
-                for (String chave : tabela.keySet()){
-                    if (!chave.toUpperCase().contains("STRING")){
-                        listaToExcell.add((List<String>) tabela.get(chave));
-                    }
-                }
-                break;
-            case "7":
                 break;
         }
     }

@@ -31,9 +31,7 @@ public class ServiceMonitoring {
         mapaTodasTabelas.put("CPU", exibirTabelaCPU(cpu));
         mapaTodasTabelas.put("HDD", exibirTabelaHDD(hdd));
         mapaTodasTabelas.put("ConexaoUSB", exibirTabelaConexaoUSB(usb));
-        mapaTodasTabelas.put("Bateria", exibirTabelaBateria(bateria));
         mapaTodasTabelas.put("MemoriaRAM", exibirTabelaMemoriaRAM(ram));
-        mapaTodasTabelas.put("GPU", exibirTabelaGPU(gpus));
         mapaTodasTabelas.put("Volume", exibirTabelaVolume(volumes));
         mapaTodasTabelas.put("APP", exibirTabelaAPP(apps));
 
@@ -55,36 +53,6 @@ public class ServiceMonitoring {
         mapaTodasTabelas.put("TODASASTABELASPDF", todasAsTabelasPDF.toString());
 
         return mapaTodasTabelas;
-    }
-
-    public Map<String, Object> exibirTabelaGPU(List<GPU> gpus) {
-        if (gpus == null || gpus.isEmpty()) {
-            Logger.logWarning("Nenhuma GPU encontrada durante o monitoramento.");
-            return new HashMap<>();
-        }
-        StringBuilder table = new StringBuilder();
-        StringBuilder pdf =  new StringBuilder();
-        Map<String, Object> mapaGpu = new HashMap<>();
-        for (int i = 0; i < gpus.size(); i++) {
-            GPU gpu = gpus.get(i);
-            List<List<String>> gpuData = Arrays.asList(
-                    Arrays.asList("", "GPU " + (i + 1)),
-                    Arrays.asList("Data Hora captura", String.valueOf(gpu.getDataHoraCaptura())),
-                    Arrays.asList("ID", String.valueOf(gpu.getIdGpu())),
-                    Arrays.asList("Nome", gpu.getNome()),
-                    Arrays.asList("Fabricante", gpu.getFabricante()),
-                    Arrays.asList("Versão", gpu.getVersao()),
-                    Arrays.asList("ID Device", gpu.getIdDevice()),
-                    Arrays.asList("VRAM", String.valueOf(gpu.getvRam())),
-                    Arrays.asList("Temperatura", Optional.ofNullable(gpu.getTemperatura()).orElse(0.0).toString())
-            );
-            mapaGpu.put("GPU " + i, gpuData);
-            table.append(tablePrinter.printTable(gpuData));
-            pdf.append(createPDFInfos.gerarLayoutPDF(gpuData));
-        }
-        mapaGpu.put("GPUSTRING", table.toString());
-        mapaGpu.put("GPUPDF", pdf.toString());
-        return mapaGpu;
     }
 
     public Map<String, Object> exibirTabelaCPU(CPU cpu) {
@@ -201,52 +169,6 @@ public class ServiceMonitoring {
         mapaMemoriaRAM.put("MemoriaRAMPDF", createPDFInfos.gerarLayoutPDF(listaProv));
 
         return mapaMemoriaRAM;
-    }
-
-    public Map<String, Object> exibirTabelaBateria(List<Bateria> baterias) {
-        if (baterias == null || baterias.isEmpty()) {
-            Logger.logWarning("Nenhuma bateria encontrada durante o monitoramento.");
-            return new HashMap<>();
-        }
-
-        StringBuilder table = new StringBuilder();
-        StringBuilder pdf = new StringBuilder();
-        Map<String, Object> mapaBateria = new HashMap<>();
-        for (int i = 0; i < baterias.size(); i++) {
-            Bateria bateria = baterias.get(i);
-            List<List<String>> bateriaData = Arrays.asList(
-                    Arrays.asList("", "Bateria " + (i + 1)),
-                    Arrays.asList("Data Hora captura", String.valueOf(bateria.getDataHoraCaptura())),
-                    Arrays.asList("ID", String.valueOf(bateria.getIdBateria())),
-                    Arrays.asList("Amperagem", String.valueOf(bateria.getAmperagem())),
-                    Arrays.asList("Nome do Dispositivo", bateria.getNomeDispositivo()),
-                    Arrays.asList("Número Serial", bateria.getNumeroSerial()),
-                    Arrays.asList("Química", bateria.getQuimica()),
-                    Arrays.asList("Nome", bateria.getNome()),
-                    Arrays.asList("Voltagem", String.valueOf(bateria.getVoltagem())),
-                    Arrays.asList("Unidades de Capacidade", bateria.getUnidadesCapacidade()),
-                    Arrays.asList("Capacidade Atual", String.valueOf(bateria.getCapacidadeAtual())),
-                    Arrays.asList("Ciclos", String.valueOf(bateria.getCiclos())),
-                    Arrays.asList("Capacidade Design", String.valueOf(bateria.getCapacidadeDesign())),
-                    Arrays.asList("Tempo Restante Instantâneo", String.valueOf(bateria.getTempoRestanteInstantaneo())),
-                    Arrays.asList("Tempo Restante Estimado", String.valueOf(bateria.getTempoRestanteEstimado())),
-                    Arrays.asList("Taxa de Uso de Energia", String.valueOf(bateria.getTaxaUsoEnergia())),
-                    Arrays.asList("Temperatura", String.valueOf(bateria.getTemperatura())),
-                    Arrays.asList("Capacidade Máxima", String.valueOf(bateria.getCapacidadeMaxima())),
-                    Arrays.asList("Percentual Capacidade Restante", String.valueOf(bateria.getPercentualCapacidadeRestante())),
-                    Arrays.asList("Data de Fabricação", bateria.getDataFabricacao()),
-                    Arrays.asList("Fabricante", bateria.getFabricante()),
-                    Arrays.asList("Bateria Atual (%)", bateria.getBateriaAtual().toString())
-            );
-
-            mapaBateria.put("Bateria " + i, bateriaData);
-            table.append(tablePrinter.printTable(bateriaData));
-            pdf.append(createPDFInfos.gerarLayoutPDF(bateriaData));
-        }
-        mapaBateria.put("BateriaSTRING", table.toString());
-        mapaBateria.put("BateriaPDF", pdf.toString());
-
-        return mapaBateria;
     }
 
     public Map<String, Object> exibirTabelaAPP(List<APP> apps) {

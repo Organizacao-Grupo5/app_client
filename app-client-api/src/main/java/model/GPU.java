@@ -1,6 +1,11 @@
 package model;
 
+import util.TablePrinter;
+
 import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
 
 public class GPU {
     private Integer idGpu;
@@ -87,5 +92,20 @@ public class GPU {
 
     public void setvRam(Double vRam) {
         this.vRam = vRam;
+    }
+    
+    public String tabela(){
+        List<List<String>> gpuData = Arrays.asList(
+                Arrays.asList("", "GPU "),
+                Arrays.asList("Data Hora captura", String.valueOf(dataHoraCaptura)),
+                Arrays.asList("ID", String.valueOf(idGpu)),
+                Arrays.asList("Nome", nome),
+                Arrays.asList("Fabricante", fabricante),
+                Arrays.asList("Versão", versao),
+                Arrays.asList("ID Device", idDevice),
+                Arrays.asList("VRAM", String.valueOf(vRam)),
+                Arrays.asList("Temperatura", Optional.ofNullable(temperatura).orElse(0.0).toString() + "°C")
+        );
+        return TablePrinter.printTable(gpuData);
     }
 }

@@ -1,6 +1,10 @@
 package model;
 
+import util.TablePrinter;
+
 import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.List;
 
 public class Bateria {
     private Integer idBateria;
@@ -219,4 +223,33 @@ public class Bateria {
     public void setFabricante(String fabricante) {
         this.fabricante = fabricante;
     }
+
+    public String tabela() {
+        List<List<String>> bateriaData = Arrays.asList(
+                Arrays.asList("", "Bateria"),
+                Arrays.asList("Data Hora captura", String.valueOf(dataHoraCaptura)),
+                Arrays.asList("ID", String.valueOf(idBateria)),
+                Arrays.asList("Amperagem", String.valueOf(amperagem)),
+                Arrays.asList("Nome do Dispositivo", nomeDispositivo),
+                Arrays.asList("Número Serial", numeroSerial),
+                Arrays.asList("Química", quimica),
+                Arrays.asList("Nome", nome),
+                Arrays.asList("Voltagem", String.valueOf(voltagem)),
+                Arrays.asList("Unidades de Capacidade", unidadesCapacidade),
+                Arrays.asList("Capacidade Atual", String.valueOf(capacidadeAtual)),
+                Arrays.asList("Ciclos", String.valueOf(ciclos)),
+                Arrays.asList("Capacidade Design", String.valueOf(capacidadeDesign)),
+                Arrays.asList("Tempo Restante Instantâneo", String.valueOf(tempoRestanteInstantaneo)),
+                Arrays.asList("Tempo Restante Estimado", String.valueOf(tempoRestanteEstimado)),
+                Arrays.asList("Taxa de Uso de Energia", String.valueOf(taxaUsoEnergia)),
+                Arrays.asList("Temperatura", String.valueOf(temperatura)),
+                Arrays.asList("Capacidade Máxima", String.valueOf(capacidadeMaxima)),
+                Arrays.asList("Percentual Capacidade Restante", String.valueOf(percentualCapacidadeRestante)),
+                Arrays.asList("Data de Fabricação", dataFabricacao),
+                Arrays.asList("Fabricante", fabricante),
+                Arrays.asList("Bateria Atual (%)", bateriaAtual.toString() + "%")
+        );
+        return TablePrinter.printTable(bateriaData);
+    }
+
 }
