@@ -14,6 +14,7 @@ public class Volume {
     private LocalDateTime dataHoraCaptura;
 
     public Volume() {
+        this.dataHoraCaptura = LocalDateTime.now();
     }
 
     public Volume(String nome, String volume, Double disponivel, Double total, String tipo, String uuid, String pontoDeMontagem) {

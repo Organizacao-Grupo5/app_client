@@ -15,6 +15,7 @@ public class APP {
     private LocalDateTime dataHoraCaptura;
 
     public APP() {
+        this.dataHoraCaptura = LocalDateTime.now();
     }
 
     public APP(String nome, String comando, Double janelaID, Double pid, Rectangle localizacaoEtamanho) {

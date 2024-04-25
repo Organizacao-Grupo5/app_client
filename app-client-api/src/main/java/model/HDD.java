@@ -16,6 +16,7 @@ public class HDD {
     private LocalDateTime dataHoraCaptura;
 
     public HDD() {
+        this.dataHoraCaptura = LocalDateTime.now();
     }
 
     public Integer getIdHDD() {

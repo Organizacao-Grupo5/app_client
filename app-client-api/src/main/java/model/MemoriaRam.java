@@ -10,6 +10,7 @@ public class MemoriaRam {
     private LocalDateTime dataHoraCaptura;
 
     public MemoriaRam() {
+        this.dataHoraCaptura = LocalDateTime.now();
     }
 
     public MemoriaRam(int idMemoriaRAM, Double memoriaDisponivel, Double memoriaEmUso, Double memoriaTotal) {

@@ -18,6 +18,7 @@ public class CPU {
     private LocalDateTime dataHoraCaptura;
 
     public CPU() {
+        this.dataHoraCaptura = LocalDateTime.now();
     }
 
     public CPU(Integer numeroDeCpusLogicas, Integer numeroDeCpusFisicas, String microarquitetura, String identificador, String idCpuLooca, String fabricante, Double frequencia, Integer numeroPacotesFisicos, Double uso, String nome, Double temperatura) {

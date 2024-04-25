@@ -4,6 +4,8 @@ if [[ "$(uname -s)" == "Linux" ]]; then
 
         battery_percentage=$(echo "$battery_info" | grep "percentage" | awk '{print $2}')
 
+        battery_percentage=${battery_percentage//[!0-9]/}
+
         echo $battery_percentage
     fi
 fi

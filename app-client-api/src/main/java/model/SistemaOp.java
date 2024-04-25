@@ -15,6 +15,7 @@ public class SistemaOp {
     private LocalDateTime dataHoraCaptura;
 
     public SistemaOp() {
+        dataHoraCaptura = LocalDateTime.now();
     }
 
     public SistemaOp(String sistemaOperacional, String fabricante, String arquitetura, String inicializado, String permissao, String tempoDeAtividade) {

@@ -13,6 +13,7 @@ public class GPU {
     private Double temperatura;
 
     public GPU() {
+        dataHoraCaptura = LocalDateTime.now();
     }
 
     public GPU(String nome, String fabricante, String versao, String idDevice, Double vRam) {

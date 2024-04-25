@@ -26,6 +26,7 @@ public class Bateria {
     private Double bateriaAtual;
 
     public Bateria() {
+        this.dataHoraCaptura = LocalDateTime.now();
     }
 
     public Integer getIdBateria() {
@@ -139,7 +140,7 @@ public class Bateria {
         this.capacidadeAtual = capacidadeAtual;
     }
 
-    public int getCiclos() {
+    public Integer getCiclos() {
         return ciclos;
     }
 

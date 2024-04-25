@@ -14,6 +14,7 @@ public class ConexaoUSB {
     private LocalDateTime dataHoraCaptura;
 
     public ConexaoUSB() {
+        this.dataHoraCaptura = LocalDateTime.now();
     }
 
     public ConexaoUSB(String nomeUsb, String fornecedor, String idDispositivoUSBExclusivo, String idFornecedor, String numeroSerie, String idProduto) {

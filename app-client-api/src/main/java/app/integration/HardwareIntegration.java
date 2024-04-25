@@ -1,5 +1,7 @@
 package app.integration;
 
+import com.mysql.cj.util.StringUtils;
+import org.apache.poi.util.StringUtil;
 import util.logs.Logger;
 
 import java.io.BufferedReader;
@@ -15,33 +17,38 @@ public class HardwareIntegration {
     String directory = isWindows ? "/powershell" : "/bash";
     ProcessBuilder builder = new ProcessBuilder();
 
-    public String monitorarBateria() {
-        StringBuilder output = new StringBuilder();
+    public Double monitorarBateria() {
+        String output = null;
 
         try {
-            String scriptPath = "app-client-api/src/scripts" + directory + "/power.ps1";
-            String command = "powershell.exe -ExecutionPolicy Bypass -File " + scriptPath;
+            String command = "";
+            if (!isWindows()) {
+                String scriptPath = "app-client-api/src/scripts" + directory + "/power.sh";
+                command = "sh " + scriptPath;
+            } else {
+                String scriptPath = "app-client-api/src/scripts" + directory + "/power.ps1";
+                command = "powershell.exe -ExecutionPolicy Bypass -File " + scriptPath;
+            }
             Process process = Runtime.getRuntime().exec(command);
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            StringBuilder stringBuilder = new StringBuilder();
             String line;
             while ((line = reader.readLine()) != null) {
-                output.append(line).append("\n");
+                stringBuilder.append(line).append("\n");
             }
-
             process.waitFor();
+
+            output = stringBuilder.toString().trim();
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
-
-        String outputString = output.toString();
-        String[] numbers = outputString.replaceAll("\\D+", " ").trim().split("\\s+");
-        StringBuilder numbersOutput = new StringBuilder();
-        for (String number : numbers) {
-            numbersOutput.append(number).append(" ");
+        if (StringUtils.isNullOrEmpty(output)) {
+            return null;
+        } else {
+            String outputString = output.replace(',', '.');
+            return Double.parseDouble(outputString);
         }
-
-        return numbersOutput.toString().trim();
     }
 
     public Double monitorarTemperatura() throws IOException, InterruptedException {
@@ -70,8 +77,8 @@ public class HardwareIntegration {
         } catch (IOException | InterruptedException e) {
             Logger.logWarning("Não conseguimos obter a temperatura: Saída " + output);
         }
-        if (output == null) {
-            return 0.0;
+        if (StringUtils.isNullOrEmpty(output.toString())) {
+            return null;
         } else {
             String outputString = ((String) output).replace(',', '.');
             return Double.parseDouble(outputString);

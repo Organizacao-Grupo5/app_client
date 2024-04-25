@@ -9,6 +9,7 @@ public class PlacaMae {
     private LocalDateTime dataHoraCaptura;
 
     public PlacaMae() {
+        this.dataHoraCaptura = LocalDateTime.now();
     }
 
     public PlacaMae(String fabricante, String modelo) {
