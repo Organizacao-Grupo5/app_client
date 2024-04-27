@@ -8,11 +8,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-public class HDD implements Componente{
-    private Integer idHDD;
+public class HDD extends Componente{
     private String nome;
     private String serial;
-    private String modelo;
     private Double escritas;
     private Double leituras;
     private Double bytesDeEscrita;
@@ -25,14 +23,10 @@ public class HDD implements Componente{
         this.dataHoraCaptura = LocalDateTime.now();
     }
 
-    public Integer getIdHDD() {
-        return idHDD;
-    }
-
-    public HDD(String nome, String serial, String modelo, Double escritas, Double leituras, Double bytesDeEscrita, Double bytesDeLeitura, Double tamanho, Double tempoDeTransferencia) {
+    public HDD(String nome, String serial, Double escritas, Double leituras, Double bytesDeEscrita, Double bytesDeLeitura, Double tamanho, Double tempoDeTransferencia) {
+        super();
         this.nome = nome;
         this.serial = serial;
-        this.modelo = modelo;
         this.escritas = escritas;
         this.leituras = leituras;
         this.bytesDeEscrita = bytesDeEscrita;
@@ -40,10 +34,6 @@ public class HDD implements Componente{
         this.tamanho = tamanho;
         this.tempoDeTransferencia = tempoDeTransferencia;
         this.dataHoraCaptura = LocalDateTime.now();
-    }
-
-    public void setIdHDD(Integer idHDD) {
-        this.idHDD = idHDD;
     }
 
     public String getNome() {
@@ -60,14 +50,6 @@ public class HDD implements Componente{
 
     public void setSerial(String serial) {
         this.serial = serial;
-    }
-
-    public String getModelo() {
-        return modelo;
-    }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
     }
 
     public Double getEscritas() {

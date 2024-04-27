@@ -80,11 +80,11 @@ public class SystemMonitor {
             } else {
                 Logger.logInfo("Uso da CPU: " + cpu.getUso());
             }
-            cpu.setNome(processor.getNome());
-            if (cpu.getNome() == null || cpu.getNome().isEmpty()) {
+            cpu.setModelo(processor.getNome());
+            if (cpu.getModelo() == null || cpu.getModelo().isEmpty()) {
                 Logger.logWarning("Nome da CPU não foi capturado.");
             } else {
-                Logger.logInfo("Nome da CPU: " + cpu.getNome());
+                Logger.logInfo("Nome da CPU: " + cpu.getModelo());
             }
             Double temperatura = hardwareIntegration.monitorarTemperatura();
             cpu.setTemperatura(temperatura);
@@ -271,11 +271,11 @@ public class SystemMonitor {
                         Logger.logInfo("Química da bateria: " + bateria.getQuimica());
                     }
 
-                    bateria.setNome(power.getName());
-                    if (StringUtils.isNullOrEmpty(bateria.getNome())) {
+                    bateria.setModelo(power.getName());
+                    if (StringUtils.isNullOrEmpty(bateria.getModelo())) {
                         Logger.logWarning("Nome da bateria não foi capturado.");
                     } else {
-                        Logger.logInfo("Nome da bateria: " + bateria.getNome());
+                        Logger.logInfo("Nome da bateria: " + bateria.getModelo());
                     }
 
                     bateria.setVoltagem(power.getVoltage());
@@ -417,11 +417,11 @@ public class SystemMonitor {
                             Logger.logInfo("Dados do ID da sua GPU capturados com sucesso: " + myGpu.getIdDevice());
                         }
 
-                        myGpu.setNome(gpu.getName());
-                        if (StringUtils.isNullOrEmpty(myGpu.getNome())) {
+                        myGpu.setModelo(gpu.getName());
+                        if (StringUtils.isNullOrEmpty(myGpu.getModelo())) {
                             Logger.logWarning("Não foi possível capturar informações sobre o nome da GPU");
                         } else {
-                            Logger.logInfo("O nome da sua GPU foi capturado com sucesso: " + myGpu.getNome());
+                            Logger.logInfo("O nome da sua GPU foi capturado com sucesso: " + myGpu.getModelo());
                         }
 
                         myGpu.setvRam(conversor.formatarBytes(gpu.getVRam()));
@@ -505,11 +505,11 @@ public class SystemMonitor {
         }
         try{
 
-            sistemaOp.setSistemaOperacional(sistema.getSistemaOperacional());
-            if (StringUtils.isNullOrEmpty(sistemaOp.getSistemaOperacional())){
+            sistemaOp.setModelo(sistema.getSistemaOperacional());
+            if (StringUtils.isNullOrEmpty(sistemaOp.getModelo())){
                 Logger.logWarning("Não foi possível identificar o nome do sistema operacional");
             } else{
-                Logger.logInfo("Nome do sistema operacional coletado: " + sistemaOp.getSistemaOperacional());
+                Logger.logInfo("Nome do sistema operacional coletado: " + sistemaOp.getModelo());
             }
 
             sistemaOp.setFabricante(sistema.getFabricante());
@@ -560,18 +560,18 @@ public class SystemMonitor {
             looca.getDispositivosUsbGrupo().getDispositivosUsbConectados().forEach(usb -> {
                 try {
                     ConexaoUSB conexaoUSB = new ConexaoUSB();
-                    conexaoUSB.setNomeUsb(usb.getNome());
-                    if (StringUtils.isNullOrEmpty(conexaoUSB.getNomeUsb())) {
+                    conexaoUSB.setModelo(usb.getNome());
+                    if (StringUtils.isNullOrEmpty(conexaoUSB.getModelo())) {
                         Logger.logWarning("Nome do usb não foi capturado.");
                     } else {
-                        Logger.logInfo("Nome do usb capturado: " + conexaoUSB.getNomeUsb());
+                        Logger.logInfo("Nome do usb capturado: " + conexaoUSB.getModelo());
                     }
 
-                    conexaoUSB.setFornecedor(usb.getForncecedor());
-                    if (StringUtils.isNullOrEmpty(conexaoUSB.getFornecedor())) {
+                    conexaoUSB.setModelo(usb.getForncecedor());
+                    if (StringUtils.isNullOrEmpty(conexaoUSB.getModelo())) {
                         Logger.logWarning("Fornecedor do usb não foi capturado.");
                     } else {
-                        Logger.logInfo("Nome do fornecedor do usb capturado: " + conexaoUSB.getNomeUsb());
+                        Logger.logInfo("Nome do fornecedor do usb capturado: " + conexaoUSB.getModelo());
                     }
 
                     conexaoUSB.setIdDispositivoUSBExclusivo(usb.getIdDispositivoUsbExclusivo());
@@ -626,11 +626,11 @@ public class SystemMonitor {
                         try {
                             Volume volumeLogico = new Volume();
 
-                            volumeLogico.setNome(volume.getNome());
-                            if (StringUtils.isNullOrEmpty(volumeLogico.getNome())) {
+                            volumeLogico.setModelo(volume.getNome());
+                            if (StringUtils.isNullOrEmpty(volumeLogico.getModelo())) {
                                 Logger.logWarning("Nome do volume lógico não foi capturado.");
                             } else {
-                                Logger.logInfo("Nome do volume lógico capturado: " + volumeLogico.getNome());
+                                Logger.logInfo("Nome do volume lógico capturado: " + volumeLogico.getModelo());
                             }
 
                             volumeLogico.setVolume(volume.getVolume());
@@ -710,7 +710,10 @@ public class SystemMonitor {
                 Logger.logInfo("Modelo da placa mãe capturado: " + modeloPlacaMae);
             }
 
-            PlacaMae placaMae = new PlacaMae(fabricantePlacaMae, modeloPlacaMae);
+            PlacaMae placaMae = new PlacaMae();
+            placaMae.setComponente("Placa mãe");
+            placaMae.setFabricante(fabricantePlacaMae);
+            placaMae.setModelo( modeloPlacaMae);
             Logger.logInfo("Dados da placa mãe gravados.");
             return placaMae;
         } catch (IllegalArgumentException e) {

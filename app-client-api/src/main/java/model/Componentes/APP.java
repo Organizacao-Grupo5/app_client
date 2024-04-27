@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-public class APP implements Componente{
+public class APP extends Componente{
     private int idApp;
     private String nome;
 
@@ -20,6 +20,7 @@ public class APP implements Componente{
     private LocalDateTime dataHoraCaptura;
 
     public APP() {
+        super();
         this.dataHoraCaptura = LocalDateTime.now();
     }
 

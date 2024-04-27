@@ -8,9 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-public class Volume implements Componente{
-    private Integer idVolume;
-    private String nome;
+public class Volume extends Componente{
     private String volume;
     private Double disponivel;
     private Double total;
@@ -23,8 +21,8 @@ public class Volume implements Componente{
         this.dataHoraCaptura = LocalDateTime.now();
     }
 
-    public Volume(String nome, String volume, Double disponivel, Double total, String tipo, String uuid, String pontoDeMontagem) {
-        this.nome = nome;
+    public Volume(String volume, Double disponivel, Double total, String tipo, String uuid, String pontoDeMontagem) {
+        super();
         this.volume = volume;
         this.disponivel = disponivel;
         this.total = total;
@@ -40,22 +38,6 @@ public class Volume implements Componente{
 
     public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
         this.dataHoraCaptura = dataHoraCaptura;
-    }
-
-    public Integer getIdVolume() {
-        return idVolume;
-    }
-
-    public void setIdVolume(Integer idVolume) {
-        this.idVolume = idVolume;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
     }
 
     public String getVolume() {
@@ -111,7 +93,7 @@ public class Volume implements Componente{
         return Arrays.asList(
                 Arrays.asList("", "VOLUME"),
                 Arrays.asList("Data Hora captura", String.valueOf(dataHoraCaptura)),
-                Arrays.asList("Nome", Optional.ofNullable(nome).orElse("N/A")),
+                Arrays.asList("Nome", Optional.ofNullable(modelo).orElse("N/A")),
                 Arrays.asList("Volume", Optional.ofNullable(volume).orElse("N/A")),
                 Arrays.asList("Disponível", Optional.ofNullable(disponivel).map(Object::toString).orElse("N/A")),
                 Arrays.asList("Total", Optional.ofNullable(total).map(Object::toString).orElse("N/A")),

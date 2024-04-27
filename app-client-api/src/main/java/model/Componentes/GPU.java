@@ -8,10 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-public class GPU implements Componente{
-    private Integer idGpu;
-    private String nome;
-    private String fabricante;
+public class GPU extends Componente{
     private String versao;
     private String idDevice;
     private Double vRam;
@@ -22,9 +19,8 @@ public class GPU implements Componente{
         dataHoraCaptura = LocalDateTime.now();
     }
 
-    public GPU(String nome, String fabricante, String versao, String idDevice, Double vRam) {
-        this.nome = nome;
-        this.fabricante = fabricante;
+    public GPU(String versao, String idDevice, Double vRam) {
+        super();
         this.versao = versao;
         this.idDevice = idDevice;
         this.vRam = vRam;
@@ -45,30 +41,6 @@ public class GPU implements Componente{
 
     public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
         this.dataHoraCaptura = dataHoraCaptura;
-    }
-
-    public Integer getIdGpu() {
-        return idGpu;
-    }
-
-    public void setIdGpu(Integer idGpu) {
-        this.idGpu = idGpu;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getFabricante() {
-        return fabricante;
-    }
-
-    public void setFabricante(String fabricante) {
-        this.fabricante = fabricante;
     }
 
     public String getVersao() {
@@ -100,8 +72,8 @@ public class GPU implements Componente{
         return Arrays.asList(
                 Arrays.asList("", "GPU"),
                 Arrays.asList("Data Hora captura", String.valueOf(dataHoraCaptura)),
-                Arrays.asList("ID", Optional.ofNullable(idGpu).map(Object::toString).orElse("N/A")),
-                Arrays.asList("Nome", Optional.ofNullable(nome).orElse("N/A")),
+                Arrays.asList("ID", Optional.ofNullable(super.idComponente).map(Object::toString).orElse("N/A")),
+                Arrays.asList("Nome", Optional.ofNullable(modelo).orElse("N/A")),
                 Arrays.asList("Fabricante", Optional.ofNullable(fabricante).orElse("N/A")),
                 Arrays.asList("Versão", Optional.ofNullable(versao).orElse("N/A")),
                 Arrays.asList("ID Device", Optional.ofNullable(idDevice).orElse("N/A")),

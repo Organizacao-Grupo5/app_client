@@ -8,36 +8,34 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-public class CPU implements Componente{
-    private Integer idCpu;
+public class CPU extends Componente{
     private Integer numeroDeCpusLogicas;
     private Integer numeroDeCpusFisicas;
     private String microarquitetura;
     private String identificador;
     private String idCpuLooca;
-    private String fabricante;
+
     private Double frequencia;
     private Integer numeroPacotesFisicos;
     private Double uso;
-    private String nome;
     private Double temperatura;
     private LocalDateTime dataHoraCaptura;
 
     public CPU() {
+        super();
         this.dataHoraCaptura = LocalDateTime.now();
     }
 
-    public CPU(Integer numeroDeCpusLogicas, Integer numeroDeCpusFisicas, String microarquitetura, String identificador, String idCpuLooca, String fabricante, Double frequencia, Integer numeroPacotesFisicos, Double uso, String nome, Double temperatura) {
+    public CPU(Integer numeroDeCpusLogicas, Integer numeroDeCpusFisicas, String microarquitetura, String identificador, String idCpuLooca, Double frequencia, Integer numeroPacotesFisicos, Double uso, Double temperatura) {
+        super();
         this.numeroDeCpusLogicas = numeroDeCpusLogicas;
         this.numeroDeCpusFisicas = numeroDeCpusFisicas;
         this.microarquitetura = microarquitetura;
         this.identificador = identificador;
         this.idCpuLooca = idCpuLooca;
-        this.fabricante = fabricante;
         this.frequencia = frequencia;
         this.numeroPacotesFisicos = numeroPacotesFisicos;
         this.uso = uso;
-        this.nome = nome;
         this.temperatura = temperatura;
         this.dataHoraCaptura = LocalDateTime.now();
     }
@@ -48,14 +46,6 @@ public class CPU implements Componente{
 
     public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
         this.dataHoraCaptura = dataHoraCaptura;
-    }
-
-    public Integer getIdCpu() {
-        return idCpu;
-    }
-
-    public void setIdCpu(Integer idCpu) {
-        this.idCpu = idCpu;
     }
 
     public Integer getNumeroDeCpusLogicas() {
@@ -98,14 +88,6 @@ public class CPU implements Componente{
         this.idCpuLooca = idCpuLooca;
     }
 
-    public String getFabricante() {
-        return fabricante;
-    }
-
-    public void setFabricante(String fabricante) {
-        this.fabricante = fabricante;
-    }
-
     public Double getFrequencia() {
         return frequencia;
     }
@@ -130,14 +112,6 @@ public class CPU implements Componente{
         this.uso = uso;
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public Double getTemperatura() {
         return temperatura;
     }
@@ -151,7 +125,7 @@ public class CPU implements Componente{
         return Arrays.asList(
                 Arrays.asList("", "CPU"),
                 Arrays.asList("Data Hora captura", String.valueOf(dataHoraCaptura)),
-                Arrays.asList("Nome", Optional.ofNullable(nome).orElse("N/A")),
+                Arrays.asList("Nome", Optional.ofNullable(modelo).orElse("N/A")),
                 Arrays.asList("Fabricante", Optional.ofNullable(fabricante).orElse("N/A")),
                 Arrays.asList("Microarquitetura", Optional.ofNullable(microarquitetura).orElse("N/A")),
                 Arrays.asList("Identificador", Optional.ofNullable(identificador).orElse("N/A")),

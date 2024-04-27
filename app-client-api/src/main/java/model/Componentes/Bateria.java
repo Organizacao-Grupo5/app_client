@@ -8,13 +8,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-public class Bateria implements Componente{
-    private Integer idBateria;
+public class Bateria extends Componente{
     private Double amperagem;
     private String nomeDispositivo;
     private String numeroSerial;
     private String quimica;
-    private String nome;
     private Double voltagem;
     private String unidadesCapacidade;
     private Double capacidadeAtual;
@@ -27,7 +25,6 @@ public class Bateria implements Componente{
     private Double capacidadeMaxima;
     private Double percentualCapacidadeRestante;
     private String dataFabricacao;
-    private String fabricante;
     private LocalDateTime dataHoraCaptura;
     private Double bateriaAtual;
 
@@ -35,16 +32,12 @@ public class Bateria implements Componente{
         this.dataHoraCaptura = LocalDateTime.now();
     }
 
-    public Integer getIdBateria() {
-        return idBateria;
-    }
-
-    public Bateria(Double amperagem, String nomeDispositivo, String numeroSerial, String quimica, String nome, Double voltagem, String unidadesCapacidade, Double capacidadeAtual, int ciclos, Double capacidadeDesign, Double tempoRestanteInstantaneo, Double tempoRestanteEstimado, Double taxaUsoEnergia, Double temperatura, Double capacidadeMaxima, Double percentualCapacidadeRestante, String dataFabricacao, String fabricante, Double bateriaAtual) {
+    public Bateria(Double amperagem, String nomeDispositivo, String numeroSerial, String quimica, Double voltagem, String unidadesCapacidade, Double capacidadeAtual, int ciclos, Double capacidadeDesign, Double tempoRestanteInstantaneo, Double tempoRestanteEstimado, Double taxaUsoEnergia, Double temperatura, Double capacidadeMaxima, Double percentualCapacidadeRestante, String dataFabricacao, Double bateriaAtual) {
+        super();
         this.amperagem = amperagem;
         this.nomeDispositivo = nomeDispositivo;
         this.numeroSerial = numeroSerial;
         this.quimica = quimica;
-        this.nome = nome;
         this.voltagem = voltagem;
         this.unidadesCapacidade = unidadesCapacidade;
         this.capacidadeAtual = capacidadeAtual;
@@ -78,10 +71,6 @@ public class Bateria implements Componente{
         this.dataHoraCaptura = dataHoraCaptura;
     }
 
-    public void setIdBateria(Integer idBateria) {
-        this.idBateria = idBateria;
-    }
-
     public Double getAmperagem() {
         return amperagem;
     }
@@ -112,14 +101,6 @@ public class Bateria implements Componente{
 
     public void setQuimica(String quimica) {
         this.quimica = quimica;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
     }
 
     public Double getVoltagem() {
@@ -231,12 +212,12 @@ public class Bateria implements Componente{
         return Arrays.asList(
                 Arrays.asList("", "Bateria"),
                 Arrays.asList("Data Hora captura", String.valueOf(dataHoraCaptura)),
-                Arrays.asList("ID", Optional.ofNullable(idBateria).map(Object::toString).orElse("N/A")),
+                Arrays.asList("ID", Optional.ofNullable(super.idComponente).map(Object::toString).orElse("N/A")),
                 Arrays.asList("Amperagem", Optional.ofNullable(amperagem).map(Object::toString).orElse("N/A")),
                 Arrays.asList("Nome do Dispositivo", Optional.ofNullable(nomeDispositivo).orElse("N/A")),
                 Arrays.asList("Número Serial", Optional.ofNullable(numeroSerial).orElse("N/A")),
                 Arrays.asList("Química", Optional.ofNullable(quimica).orElse("N/A")),
-                Arrays.asList("Nome", Optional.ofNullable(nome).orElse("N/A")),
+                Arrays.asList("Nome", Optional.ofNullable(modelo).orElse("N/A")),
                 Arrays.asList("Voltagem", Optional.ofNullable(voltagem).map(Object::toString).orElse("N/A")),
                 Arrays.asList("Unidades de Capacidade", Optional.ofNullable(unidadesCapacidade).orElse("N/A")),
                 Arrays.asList("Capacidade Atual", Optional.ofNullable(capacidadeAtual).map(Object::toString).orElse("N/A")),

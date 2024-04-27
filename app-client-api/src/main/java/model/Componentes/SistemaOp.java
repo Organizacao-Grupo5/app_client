@@ -8,11 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-public class SistemaOp implements Componente{
-    private int idSistemaOperacional;
-
-    private String sistemaOperacional;
-    private String fabricante;
+public class SistemaOp extends Componente{
     private String arquitetura;
     private String inicializado;
     private String permissao;
@@ -23,9 +19,8 @@ public class SistemaOp implements Componente{
         dataHoraCaptura = LocalDateTime.now();
     }
 
-    public SistemaOp(String sistemaOperacional, String fabricante, String arquitetura, String inicializado, String permissao, String tempoDeAtividade) {
-        this.sistemaOperacional = sistemaOperacional;
-        this.fabricante = fabricante;
+    public SistemaOp(String arquitetura, String inicializado, String permissao, String tempoDeAtividade) {
+        super();
         this.arquitetura = arquitetura;
         this.inicializado = inicializado;
         this.permissao = permissao ;
@@ -43,30 +38,6 @@ public class SistemaOp implements Componente{
 
     public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
         this.dataHoraCaptura = dataHoraCaptura;
-    }
-
-    public int getIdSistemaOperacional() {
-        return idSistemaOperacional;
-    }
-
-    public void setIdSistemaOperacional(int idSistemaOperacional) {
-        this.idSistemaOperacional = idSistemaOperacional;
-    }
-
-    public String getSistemaOperacional() {
-        return sistemaOperacional;
-    }
-
-    public void setSistemaOperacional(String sistemaOperacional) {
-        this.sistemaOperacional = sistemaOperacional;
-    }
-
-    public String getFabricante() {
-        return fabricante;
-    }
-
-    public void setFabricante(String fabricante) {
-        this.fabricante = fabricante;
     }
 
     public String getArquitetura() {
@@ -105,7 +76,7 @@ public class SistemaOp implements Componente{
         return Arrays.asList(
                 Arrays.asList("", "Sistema Operacional"),
                 Arrays.asList("Data Hora captura", String.valueOf(dataHoraCaptura)),
-                Arrays.asList("Nome Sistema", Optional.ofNullable(sistemaOperacional).orElse("VALOR NÃO ENCONTRADO")),
+                Arrays.asList("Nome Sistema", Optional.ofNullable(modelo).orElse("VALOR NÃO ENCONTRADO")),
                 Arrays.asList("Fabricante", Optional.ofNullable(fabricante).orElse("VALOR NÃO ENCONTRADO")),
                 Arrays.asList("Arquitetura", Optional.ofNullable(arquitetura).orElse("VALOR NÃO ENCONTRADO")),
                 Arrays.asList("Inicializado", Optional.ofNullable(inicializado).map(Object::toString).orElse("VALOR NÃO ENCONTRADO")),

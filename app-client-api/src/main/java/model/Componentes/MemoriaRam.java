@@ -8,8 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-public class MemoriaRam implements Componente{
-    private int idMemoriaRAM;
+public class MemoriaRam extends Componente{
     private Double memoriaDisponivel;
     private Double memoriaEmUso;
     private Double memoriaTotal;
@@ -20,15 +19,11 @@ public class MemoriaRam implements Componente{
     }
 
     public MemoriaRam(int idMemoriaRAM, Double memoriaDisponivel, Double memoriaEmUso, Double memoriaTotal) {
-        this.idMemoriaRAM = idMemoriaRAM;
+        super();
         this.memoriaDisponivel = memoriaDisponivel;
         this.memoriaEmUso = memoriaEmUso;
         this.memoriaTotal = memoriaTotal;
         this.dataHoraCaptura = LocalDateTime.now();
-    }
-
-    public int getIdMemoriaRAM() {
-        return idMemoriaRAM;
     }
 
     public LocalDateTime getDataHoraCaptura() {
@@ -37,10 +32,6 @@ public class MemoriaRam implements Componente{
 
     public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
         this.dataHoraCaptura = dataHoraCaptura;
-    }
-
-    public void setIdMemoriaRAM(int idMemoriaRAM) {
-        this.idMemoriaRAM = idMemoriaRAM;
     }
 
     public Double getMemoriaDisponivel() {
@@ -72,7 +63,7 @@ public class MemoriaRam implements Componente{
         return Arrays.asList(
                 Arrays.asList("", "RAM"),
                 Arrays.asList("Data Hora captura", String.valueOf(dataHoraCaptura)),
-                Arrays.asList("ID", Optional.ofNullable(idMemoriaRAM).map(Object::toString).orElse("N/A")),
+                Arrays.asList("ID", Optional.ofNullable(super.idComponente).map(Object::toString).orElse("N/A")),
                 Arrays.asList("Memória Disponível", Optional.ofNullable(memoriaDisponivel).map(Object::toString).orElse("N/A")),
                 Arrays.asList("Memória em Uso", Optional.ofNullable(memoriaEmUso).map(Object::toString).orElse("N/A")),
                 Arrays.asList("Memória Total", Optional.ofNullable(memoriaTotal).map(Object::toString).orElse("N/A"))
