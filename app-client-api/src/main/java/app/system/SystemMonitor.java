@@ -711,7 +711,6 @@ public class SystemMonitor {
             }
 
             PlacaMae placaMae = new PlacaMae();
-            placaMae.setComponente("Placa mãe");
             placaMae.setFabricante(fabricantePlacaMae);
             placaMae.setModelo( modeloPlacaMae);
             Logger.logInfo("Dados da placa mãe gravados.");

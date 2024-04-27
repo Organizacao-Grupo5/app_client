@@ -9,17 +9,18 @@ import java.util.stream.Collectors;
 
 public class Maquina {
     private Integer idMaquina;
-    private String ipv4;
+    private List<String> ipv4;
     private Usuario usuario;
     private List<Componente> componentes;
 
     public Maquina() {
         componentes = new ArrayList<>();
+        this.ipv4 = new ArrayList<>();
     }
 
-    public Maquina(Integer idMaquina, String ipv4, Usuario usuario) {
+    public Maquina(Integer idMaquina, Usuario usuario) {
         this.idMaquina = idMaquina;
-        this.ipv4 = ipv4;
+        this.ipv4 = new ArrayList<>();
         this.usuario = usuario;
         this.componentes = new ArrayList<>();
     }
@@ -32,11 +33,11 @@ public class Maquina {
         this.idMaquina = idMaquina;
     }
 
-    public String getIpv4() {
+    public List<String> getIpv4() {
         return ipv4;
     }
 
-    public void setIpv4(String ipv4) {
+    public void setIpv4(List<String> ipv4) {
         this.ipv4 = ipv4;
     }
 

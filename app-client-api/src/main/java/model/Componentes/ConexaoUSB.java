@@ -91,4 +91,8 @@ public class ConexaoUSB extends Componente{
     public String pdfLayout(){
         return CreatePDFInfos.gerarLayoutPDF(tabela());
     }
+    @Override
+    public String getComponente() {
+        return this.getClass().getSimpleName();
+    }
 }

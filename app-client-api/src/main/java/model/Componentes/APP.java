@@ -113,4 +113,8 @@ public class APP extends Componente{
         return CreatePDFInfos.gerarLayoutPDF(tabela());
     }
 
+    @Override
+    public String getComponente() {
+        return this.getClass().getSimpleName();
+    }
 }

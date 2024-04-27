@@ -34,4 +34,8 @@ public class PlacaMae extends Componente{
     public String pdfLayout() {
         return "";
     }
+    @Override
+    public String getComponente() {
+        return this.getClass().getSimpleName();
+    }
 }

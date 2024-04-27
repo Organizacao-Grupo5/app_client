@@ -108,6 +108,12 @@ public class Main {
                         """.formatted(usuarioLogado.getNome(), usuarioLogado.getEmail()));
                 maquina = servicePC.verificarMaquina(usuarioLogado);
 
+                System.out.println("""
+
+                        --- Máquina ---
+
+                        Lista IPV4: %s
+                        """.formatted(maquina.getIpv4().stream().map(ip -> ip).collect(Collectors.joining())));
                 if (maquina == null){
                     Logger.logWarning("Não foi possível acessar a máquina do usuário");
                 }

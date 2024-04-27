@@ -78,4 +78,8 @@ public class MemoriaRam extends Componente{
     public String pdfLayout(){
         return CreatePDFInfos.gerarLayoutPDF(tabela());
     }
+    @Override
+    public String getComponente() {
+        return this.getClass().getSimpleName();
+    }
 }

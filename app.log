@@ -1,1531 +1,547 @@
-[2024-04-27 14:09:37] INFO: Servidor iniciando.
-[2024-04-27 14:09:39] INFO: Servidor iniciado com sucesso.
-[2024-04-27 14:09:44] INFO: Verificando informações de login do usuário.
-[2024-04-27 14:09:45] INFO: Usuário foi encontrado com sucesso.
-[2024-04-27 14:09:45] INFO: Usuário logado com sucesso: clau@gmail
-[2024-04-27 14:09:45] INFO: Sua máquina não contém componentes registrados iremos registrar seus componentes
-[2024-04-27 14:09:46] INFO: Fabricante da placa mãe capturado: SAMSUNG ELECTRONICS CO., LTD.
-[2024-04-27 14:09:46] INFO: Modelo da placa mãe capturado: 550XDA
-[2024-04-27 14:09:46] INFO: Dados da placa mãe gravados.
-[2024-04-27 14:09:46] INFO: Capturando dados do sistema operacional.
-[2024-04-27 14:09:46] INFO: Nome do sistema operacional coletado: Windows
-[2024-04-27 14:09:46] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
-[2024-04-27 14:09:46] INFO: Arquitetura do sistema operacional coletada: 64
-[2024-04-27 14:09:46] INFO: A inicialização do sistema operacional coletada: 64
-[2024-04-27 14:09:46] INFO: O tempo de atividade do sistema operacional foi coletada: 1223681
-[2024-04-27 14:09:46] INFO: A permisão do sistema operacional foi coletada: 1223681
-[2024-04-27 14:09:46] INFO: Capturando dados da sua CPU.
-[2024-04-27 14:09:46] INFO: Número de CPUs lógicas: 8
-[2024-04-27 14:09:46] INFO: Número de CPUs físicas: 4
-[2024-04-27 14:09:46] INFO: Microarquitetura: Tiger Lake
-[2024-04-27 14:09:46] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
-[2024-04-27 14:09:46] INFO: ID da CPU Looca: BFEBFBFF000806C1
-[2024-04-27 14:09:46] INFO: Fabricante: GenuineIntel
-[2024-04-27 14:09:46] INFO: Frequência: 2.419E9
-[2024-04-27 14:09:46] INFO: Número de pacotes físicos: 1
-[2024-04-27 14:09:48] INFO: Uso da CPU: 1.7086766844401358
-[2024-04-27 14:09:48] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-[2024-04-27 14:09:49] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
-[2024-04-27 14:09:49] INFO: Dados da CPU capturados com sucesso.
-[2024-04-27 14:09:49] INFO: Capturando dados da sua memória RAM.
-[2024-04-27 14:09:49] INFO: Memória disponível: 586.98046875
-[2024-04-27 14:09:49] INFO: Memória total: 7.729835510253906
-[2024-04-27 14:09:49] INFO: Memória em uso: 7.156612396240234
-[2024-04-27 14:09:49] INFO: Dados da memória RAM capturados com sucesso.
-[2024-04-27 14:09:49] INFO: Capturando dados da GPU.
-[2024-04-27 14:09:49] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
-[2024-04-27 14:09:49] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
-[2024-04-27 14:09:49] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
-[2024-04-27 14:09:49] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
-[2024-04-27 14:09:49] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
-[2024-04-27 14:09:49] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
-[2024-04-27 14:09:49] INFO: Dados da GPU gravados.
-[2024-04-27 14:09:49] INFO: Capturando dados da sua bateria.
-[2024-04-27 14:09:49] INFO: Amperagem da bateria: -1183.3980403031985
-[2024-04-27 14:09:49] INFO: Nome do dispositivo da bateria: SR Real Battery
-[2024-04-27 14:09:49] INFO: Número de série da bateria: 123456789
-[2024-04-27 14:09:49] INFO: Química da bateria: LION
-[2024-04-27 14:09:49] INFO: Nome da bateria: System Battery
-[2024-04-27 14:09:49] INFO: Voltagem da bateria: 10.818
-[2024-04-27 14:09:49] INFO: Capacidade atual da bateria: 11.7001953125
-[2024-04-27 14:09:49] INFO: Número de ciclos da bateria: 201
-[2024-04-27 14:09:49] INFO: Capacidade de design da bateria: 42.08203125
-[2024-04-27 14:09:49] INFO: Unidade de capacidade da bateria: MWH
-[2024-04-27 14:09:49] INFO: Tempo restante da bateria (instantâneo): 3369.0
-[2024-04-27 14:09:49] INFO: Tempo restante estimado da bateria: -1.0
-[2024-04-27 14:09:49] INFO: Taxa de uso de energia da bateria: -12802.0
-[2024-04-27 14:09:49] INFO: Temperatura da bateria: 0.0
-[2024-04-27 14:09:49] INFO: Capacidade máxima da bateria: 35.0908203125
-[2024-04-27 14:09:49] INFO: Porcentagem de capacidade restante da bateria: 1.0
-[2024-04-27 14:09:49] INFO: Data de fabricação da bateria: N/A
-[2024-04-27 14:09:49] INFO: Fabricante da bateria: SAMSUNG Electronics
-[2024-04-27 14:09:50] INFO: Dados da bateria capturados com sucesso: 33.0
-[2024-04-27 14:09:50] INFO: Dados da bateria gravados.
-[2024-04-27 14:09:50] INFO: Capturando dados das suas conexões USB.
-[2024-04-27 14:09:50] INFO: Nome do usb capturado: USB Root Hub (USB 3.0)
-[2024-04-27 14:09:50] INFO: Nome do fornecedor do usb capturado: (Standard USB HUBs)
-[2024-04-27 14:09:50] INFO: Id exclusivo do usb capturado: USB\ROOT_HUB30\4&457D673&0&0
-[2024-04-27 14:09:50] INFO: Id do fornecedor do usb capturado: 0x8086
-[2024-04-27 14:09:50] INFO: Id do produto do usb capturado: 0xa0ed
-[2024-04-27 14:09:50] WARNING: Número série do usb não foi capturado.
-[2024-04-27 14:09:50] INFO: Dados do usb gravados.
-[2024-04-27 14:09:50] INFO: Nome do usb capturado: USB Root Hub (USB 3.0)
-[2024-04-27 14:09:50] INFO: Nome do fornecedor do usb capturado: (Standard USB HUBs)
-[2024-04-27 14:09:50] INFO: Id exclusivo do usb capturado: USB\ROOT_HUB30\4&3CE02D8&0&0
-[2024-04-27 14:09:50] INFO: Id do fornecedor do usb capturado: 0x8086
-[2024-04-27 14:09:50] INFO: Id do produto do usb capturado: 0x9a13
-[2024-04-27 14:09:50] WARNING: Número série do usb não foi capturado.
-[2024-04-27 14:09:50] INFO: Dados do usb gravados.
-[2024-04-27 14:09:50] INFO: Todos os usbs verificadas.
-[2024-04-27 14:09:50] INFO: Capturando dados dos seus Apps.
-[2024-04-27 14:09:50] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:50] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:50] INFO: ID da janela: 1.3772296905517578
-[2024-04-27 14:09:50] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:50] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
-[2024-04-27 14:09:50] INFO: Dados da janela gravados.
-[2024-04-27 14:09:50] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:50] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:50] INFO: ID da janela: 130.900390625
-[2024-04-27 14:09:50] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:50] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
-[2024-04-27 14:09:50] INFO: Dados da janela gravados.
-[2024-04-27 14:09:50] INFO: Título da janela: app_client – ServiceComponente.java [app-client-api]
-[2024-04-27 14:09:50] INFO: Comando da janela: C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.3\bin\idea64.exe
-[2024-04-27 14:09:50] INFO: ID da janela: 257.3125
-[2024-04-27 14:09:50] INFO: PID da janela: 5.32421875
-[2024-04-27 14:09:50] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-04-27 14:09:50] INFO: Dados da janela gravados.
-[2024-04-27 14:09:50] INFO: Título da janela: ChatGPT - Opera
-[2024-04-27 14:09:50] INFO: Comando da janela: C:\Users\claus\AppData\Local\Programs\Opera GX\opera.exe
-[2024-04-27 14:09:50] INFO: ID da janela: 129.005859375
-[2024-04-27 14:09:50] INFO: PID da janela: 15.4609375
-[2024-04-27 14:09:50] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-04-27 14:09:50] INFO: Dados da janela gravados.
-[2024-04-27 14:09:50] INFO: Título da janela: WhatsApp
-[2024-04-27 14:09:50] INFO: Comando da janela: C:\Program Files\WindowsApps\5319275A.WhatsAppDesktop_2.2414.8.0_x64__cv1g1gvanyjgm\WhatsApp.exe
-[2024-04-27 14:09:50] INFO: ID da janela: 258.916015625
-[2024-04-27 14:09:50] INFO: PID da janela: 28.046875
-[2024-04-27 14:09:50] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
-[2024-04-27 14:09:50] INFO: Dados da janela gravados.
-[2024-04-27 14:09:50] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:50] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:50] INFO: ID da janela: 1.3764781951904297
-[2024-04-27 14:09:50] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:50] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
-[2024-04-27 14:09:50] INFO: Dados da janela gravados.
-[2024-04-27 14:09:50] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:50] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:50] INFO: ID da janela: 4.939916610717773
-[2024-04-27 14:09:50] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:50] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
-[2024-04-27 14:09:50] INFO: Dados da janela gravados.
-[2024-04-27 14:09:50] INFO: Título da janela: MySQL Workbench
-[2024-04-27 14:09:50] INFO: Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
-[2024-04-27 14:09:50] INFO: ID da janela: 897.34765625
-[2024-04-27 14:09:50] INFO: PID da janela: 19.3671875
-[2024-04-27 14:09:50] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
-[2024-04-27 14:09:50] INFO: Dados da janela gravados.
-[2024-04-27 14:09:50] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:50] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:50] INFO: ID da janela: 384.248046875
-[2024-04-27 14:09:50] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:50] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
-[2024-04-27 14:09:50] INFO: Dados da janela gravados.
-[2024-04-27 14:09:50] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:50] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:50] INFO: ID da janela: 2.6892051696777344
-[2024-04-27 14:09:50] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:50] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:09:50] INFO: Dados da janela gravados.
-[2024-04-27 14:09:50] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:50] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:50] INFO: ID da janela: 1.3145427703857422
-[2024-04-27 14:09:50] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:50] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:09:50] INFO: Dados da janela gravados.
-[2024-04-27 14:09:50] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:50] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:50] INFO: ID da janela: 1.0014667510986328
-[2024-04-27 14:09:50] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:50] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:09:50] INFO: Dados da janela gravados.
-[2024-04-27 14:09:50] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:50] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:50] INFO: ID da janela: 512.24609375
-[2024-04-27 14:09:50] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:50] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:09:50] INFO: Dados da janela gravados.
-[2024-04-27 14:09:50] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:50] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:50] INFO: ID da janela: 2.0646724700927734
-[2024-04-27 14:09:50] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:50] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:09:50] INFO: Dados da janela gravados.
-[2024-04-27 14:09:50] INFO: Título da janela: MINGW64:/c/Users/claus/Documents/Arquivos de programação/Estudo/SPTECH/2°Semestre/Projeto PI/front-VisualOps
-[2024-04-27 14:09:50] INFO: Comando da janela: C:\Program Files\Git\usr\bin\mintty.exe
-[2024-04-27 14:09:50] INFO: ID da janela: 21.626680374145508
-[2024-04-27 14:09:50] INFO: PID da janela: 30.36328125
-[2024-04-27 14:09:50] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=192,y=192,width=761,height=457]
-[2024-04-27 14:09:50] INFO: Dados da janela gravados.
-[2024-04-27 14:09:50] INFO: Título da janela: WhatsApp
-[2024-04-27 14:09:50] INFO: Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
-[2024-04-27 14:09:50] INFO: ID da janela: 1.8153800964355469
-[2024-04-27 14:09:50] INFO: PID da janela: 23.1953125
-[2024-04-27 14:09:50] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-32000,y=-32000,width=199,height=34]
-[2024-04-27 14:09:50] INFO: Dados da janela gravados.
-[2024-04-27 14:09:50] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:50] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:50] INFO: ID da janela: 448.517578125
-[2024-04-27 14:09:50] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:50] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-04-27 14:09:50] INFO: Dados da janela gravados.
-[2024-04-27 14:09:50] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:50] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:50] INFO: ID da janela: 448.03515625
-[2024-04-27 14:09:50] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:50] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-04-27 14:09:50] INFO: Dados da janela gravados.
-[2024-04-27 14:09:50] INFO: Título da janela: Program Manager
-[2024-04-27 14:09:50] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:50] INFO: ID da janela: 512.310546875
-[2024-04-27 14:09:50] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:50] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-04-27 14:09:50] INFO: Dados da janela gravados.
-[2024-04-27 14:09:50] INFO: Todas as janelas verificadas.
-[2024-04-27 14:09:50] INFO: Capturando dados do seu HDD
-[2024-04-27 14:09:50] INFO: Nome do disco: \\.\PHYSICALDRIVE0
-[2024-04-27 14:09:50] INFO: Serial do disco: 0025_38D3_3101_18C2.
-[2024-04-27 14:09:50] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
-[2024-04-27 14:09:50] INFO: Escritas do disco: 17.699264526367188
-[2024-04-27 14:09:50] INFO: Leituras do disco: 68.03232383728027
-[2024-04-27 14:09:50] INFO: Bytes de escritas do disco: 1379.5004749298096
-[2024-04-27 14:09:50] INFO: Bytes de leitura do disco: 3106.546943664551
-[2024-04-27 14:09:50] INFO: Tamanho do disco: 238.47
-[2024-04-27 14:09:50] INFO: Tempo de transferência do disco: 26479.48888888889
-[2024-04-27 14:09:50] INFO: Dados do disco gravados.
-[2024-04-27 14:09:50] INFO: Capturando dados dos volumes lógicos.
-[2024-04-27 14:09:50] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
-[2024-04-27 14:09:50] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
-[2024-04-27 14:09:50] INFO: Espaço disponível no volume lógico capturado : 36.55569076538086
-[2024-04-27 14:09:50] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
-[2024-04-27 14:09:50] INFO: Tipo do volume lógico capturado: NTFS
-[2024-04-27 14:09:50] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
-[2024-04-27 14:09:50] INFO: Ponto de montagem do volume lógico capturado: C:\
-[2024-04-27 14:09:50] INFO: Dados do volume lógico gravados.
-[2024-04-27 14:09:50] INFO: Todos os volumes lógicos verificados.
-[2024-04-27 14:09:50] INFO: Salvando componente:
-    +=============================
-    | Placa mãe
-    | 550XDA
-    | SAMSUNG ELECTRONICS CO., LTD.
-    | N/A
-    +=============================
+[2024-04-27 17:40:21] INFO: Servidor iniciando.
+[2024-04-27 17:40:22] INFO: Servidor iniciado com sucesso.
+[2024-04-27 17:40:29] INFO: Verificando informações de login do usuário.
+[2024-04-27 17:40:29] INFO: Usuário foi encontrado com sucesso.
+[2024-04-27 17:40:29] INFO: Usuário logado com sucesso: clau@gmail
+[2024-04-27 17:40:30] INFO: Buscando componentes...
+[2024-04-27 17:40:30] INFO: Componente encontrado :
+    |Componente: PlacaMae
+    |Modelo: 550XDA
+    |Fabricante: SAMSUNG ELECTRONICS CO., LTD.
+    |ID Componente: 1
 
-[2024-04-27 14:09:50] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
+[2024-04-27 17:40:30] INFO: Componente encontrado :
+    |Componente: SistemaOp
+    |Modelo: Windows
+    |Fabricante: Microsoft
+    |ID Componente: 2
 
-[2024-04-27 14:09:50] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | Windows
-    | Microsoft
-    | N/A
-    +=============================
+[2024-04-27 17:40:30] INFO: Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 3
 
-[2024-04-27 14:09:50] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
+[2024-04-27 17:40:30] INFO: Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 4
 
-[2024-04-27 14:09:50] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-    | GenuineIntel
-    | N/A
-    +=============================
+[2024-04-27 17:40:30] INFO: Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 5
 
-[2024-04-27 14:09:50] ERROR: Ocorreu um erro ao salvar seus componentes
-com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'componente' at row 1
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
+[2024-04-27 17:40:30] INFO: Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 6
 
-[2024-04-27 14:09:50] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
+[2024-04-27 17:40:30] INFO: Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 7
 
-[2024-04-27 14:09:50] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
+[2024-04-27 17:40:30] INFO: Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: N/A
+    |ID Componente: 8
 
-[2024-04-27 14:09:50] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | Intel(R) Iris(R) Xe Graphics
-    | Intel Corporation
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | System Battery
-    | SAMSUNG Electronics
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | (Standard USB HUBs)
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | (Standard USB HUBs)
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | N/A
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'componente' at row 1
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Salvando componente:
-    +=============================
-    | N/A
-    | Disco Fixo Local (C:)
-    | N/A
-    | N/A
-    +=============================
-
-[2024-04-27 14:09:51] ERROR: Ocorreu um erro ao salvar seus componentes
-java.sql.SQLException: Field 'fkUsuario' doesn't have a default value
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.ComponenteDAO.salvarComponente(ComponenteDAO.java:114)
-	at service.componente.ServiceComponente.lambda$obterComponentes$6(ServiceComponente.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:53)
-	at Main.iniciarMonitoramento(Main.java:138)
-	at Main.main(Main.java:116)
-
-[2024-04-27 14:09:51] INFO: Capturando dados do sistema operacional.
-[2024-04-27 14:09:51] INFO: Nome do sistema operacional coletado: Windows
-[2024-04-27 14:09:51] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
-[2024-04-27 14:09:51] INFO: Arquitetura do sistema operacional coletada: 64
-[2024-04-27 14:09:51] INFO: A inicialização do sistema operacional coletada: 64
-[2024-04-27 14:09:51] INFO: O tempo de atividade do sistema operacional foi coletada: 1223687
-[2024-04-27 14:09:51] INFO: A permisão do sistema operacional foi coletada: 1223687
-[2024-04-27 14:09:51] INFO: Capturando dados da sua CPU.
-[2024-04-27 14:09:51] INFO: Número de CPUs lógicas: 8
-[2024-04-27 14:09:51] INFO: Número de CPUs físicas: 4
-[2024-04-27 14:09:51] INFO: Microarquitetura: Tiger Lake
-[2024-04-27 14:09:51] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
-[2024-04-27 14:09:51] INFO: ID da CPU Looca: BFEBFBFF000806C1
-[2024-04-27 14:09:51] INFO: Fabricante: GenuineIntel
-[2024-04-27 14:09:51] INFO: Frequência: 2.419E9
-[2024-04-27 14:09:51] INFO: Número de pacotes físicos: 1
-[2024-04-27 14:09:53] INFO: Uso da CPU: 2.880354505169867
-[2024-04-27 14:09:53] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-[2024-04-27 14:09:54] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
-[2024-04-27 14:09:54] INFO: Dados da CPU capturados com sucesso.
-[2024-04-27 14:09:54] INFO: Capturando dados do seu HDD
-[2024-04-27 14:09:54] INFO: Nome do disco: \\.\PHYSICALDRIVE0
-[2024-04-27 14:09:54] INFO: Serial do disco: 0025_38D3_3101_18C2.
-[2024-04-27 14:09:54] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
-[2024-04-27 14:09:54] INFO: Escritas do disco: 17.699397087097168
-[2024-04-27 14:09:54] INFO: Leituras do disco: 68.03542232513428
-[2024-04-27 14:09:54] INFO: Bytes de escritas do disco: 1379.5023403167725
-[2024-04-27 14:09:54] INFO: Bytes de leitura do disco: 3106.689531803131
-[2024-04-27 14:09:54] INFO: Tamanho do disco: 238.47
-[2024-04-27 14:09:54] INFO: Tempo de transferência do disco: 26479.75138888889
-[2024-04-27 14:09:54] INFO: Dados do disco gravados.
-[2024-04-27 14:09:54] INFO: Capturando dados da sua bateria.
-[2024-04-27 14:09:54] INFO: Amperagem da bateria: -1271.933017837641
-[2024-04-27 14:09:54] INFO: Nome do dispositivo da bateria: SR Real Battery
-[2024-04-27 14:09:54] INFO: Número de série da bateria: 123456789
-[2024-04-27 14:09:54] INFO: Química da bateria: LION
-[2024-04-27 14:09:54] INFO: Nome da bateria: System Battery
-[2024-04-27 14:09:54] INFO: Voltagem da bateria: 10.988
-[2024-04-27 14:09:54] INFO: Capacidade atual da bateria: 11.689453125
-[2024-04-27 14:09:54] INFO: Número de ciclos da bateria: 201
-[2024-04-27 14:09:54] INFO: Capacidade de design da bateria: 42.08203125
-[2024-04-27 14:09:54] INFO: Unidade de capacidade da bateria: MWH
-[2024-04-27 14:09:54] INFO: Tempo restante da bateria (instantâneo): 3083.0
-[2024-04-27 14:09:54] INFO: Tempo restante estimado da bateria: -1.0
-[2024-04-27 14:09:54] INFO: Taxa de uso de energia da bateria: -13976.0
-[2024-04-27 14:09:54] INFO: Temperatura da bateria: 0.0
-[2024-04-27 14:09:54] INFO: Capacidade máxima da bateria: 35.0908203125
-[2024-04-27 14:09:54] INFO: Porcentagem de capacidade restante da bateria: 1.0
-[2024-04-27 14:09:54] INFO: Data de fabricação da bateria: N/A
-[2024-04-27 14:09:54] INFO: Fabricante da bateria: SAMSUNG Electronics
-[2024-04-27 14:09:54] INFO: Dados da bateria capturados com sucesso: 33.0
-[2024-04-27 14:09:54] INFO: Dados da bateria gravados.
-[2024-04-27 14:09:54] INFO: Capturando dados da sua memória RAM.
-[2024-04-27 14:09:54] INFO: Memória disponível: 484.6875
-[2024-04-27 14:09:54] INFO: Memória total: 7.729835510253906
-[2024-04-27 14:09:54] INFO: Memória em uso: 7.256507873535156
-[2024-04-27 14:09:54] INFO: Dados da memória RAM capturados com sucesso.
-[2024-04-27 14:09:54] INFO: Capturando dados da GPU.
-[2024-04-27 14:09:54] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
-[2024-04-27 14:09:54] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
-[2024-04-27 14:09:54] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
-[2024-04-27 14:09:54] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
-[2024-04-27 14:09:54] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
-[2024-04-27 14:09:55] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
-[2024-04-27 14:09:55] INFO: Dados da GPU gravados.
-[2024-04-27 14:09:55] INFO: Capturando dados das suas conexões USB.
-[2024-04-27 14:09:55] INFO: Nome do usb capturado: USB Root Hub (USB 3.0)
-[2024-04-27 14:09:55] INFO: Nome do fornecedor do usb capturado: (Standard USB HUBs)
-[2024-04-27 14:09:55] INFO: Id exclusivo do usb capturado: USB\ROOT_HUB30\4&457D673&0&0
-[2024-04-27 14:09:55] INFO: Id do fornecedor do usb capturado: 0x8086
-[2024-04-27 14:09:55] INFO: Id do produto do usb capturado: 0xa0ed
-[2024-04-27 14:09:55] WARNING: Número série do usb não foi capturado.
-[2024-04-27 14:09:55] INFO: Dados do usb gravados.
-[2024-04-27 14:09:55] INFO: Nome do usb capturado: USB Root Hub (USB 3.0)
-[2024-04-27 14:09:55] INFO: Nome do fornecedor do usb capturado: (Standard USB HUBs)
-[2024-04-27 14:09:55] INFO: Id exclusivo do usb capturado: USB\ROOT_HUB30\4&3CE02D8&0&0
-[2024-04-27 14:09:55] INFO: Id do fornecedor do usb capturado: 0x8086
-[2024-04-27 14:09:55] INFO: Id do produto do usb capturado: 0x9a13
-[2024-04-27 14:09:55] WARNING: Número série do usb não foi capturado.
-[2024-04-27 14:09:55] INFO: Dados do usb gravados.
-[2024-04-27 14:09:55] INFO: Todos os usbs verificadas.
-[2024-04-27 14:09:55] INFO: Capturando dados dos volumes lógicos.
-[2024-04-27 14:09:55] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
-[2024-04-27 14:09:55] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
-[2024-04-27 14:09:55] INFO: Espaço disponível no volume lógico capturado : 36.55561447143555
-[2024-04-27 14:09:55] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
-[2024-04-27 14:09:55] INFO: Tipo do volume lógico capturado: NTFS
-[2024-04-27 14:09:55] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
-[2024-04-27 14:09:55] INFO: Ponto de montagem do volume lógico capturado: C:\
-[2024-04-27 14:09:55] INFO: Dados do volume lógico gravados.
-[2024-04-27 14:09:55] INFO: Todos os volumes lógicos verificados.
-[2024-04-27 14:09:55] INFO: Capturando dados dos seus Apps.
-[2024-04-27 14:09:55] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:55] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:55] INFO: ID da janela: 1.3772296905517578
-[2024-04-27 14:09:55] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:55] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
-[2024-04-27 14:09:55] INFO: Dados da janela gravados.
-[2024-04-27 14:09:55] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:55] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:55] INFO: ID da janela: 130.900390625
-[2024-04-27 14:09:55] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:55] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
-[2024-04-27 14:09:55] INFO: Dados da janela gravados.
-[2024-04-27 14:09:55] INFO: Título da janela: app_client – ServiceComponente.java [app-client-api]
-[2024-04-27 14:09:55] INFO: Comando da janela: C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.3\bin\idea64.exe
-[2024-04-27 14:09:55] INFO: ID da janela: 257.3125
-[2024-04-27 14:09:55] INFO: PID da janela: 5.32421875
-[2024-04-27 14:09:55] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-04-27 14:09:55] INFO: Dados da janela gravados.
-[2024-04-27 14:09:55] INFO: Título da janela: ChatGPT - Opera
-[2024-04-27 14:09:55] INFO: Comando da janela: C:\Users\claus\AppData\Local\Programs\Opera GX\opera.exe
-[2024-04-27 14:09:55] INFO: ID da janela: 129.005859375
-[2024-04-27 14:09:55] INFO: PID da janela: 15.4609375
-[2024-04-27 14:09:55] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-04-27 14:09:55] INFO: Dados da janela gravados.
-[2024-04-27 14:09:55] INFO: Título da janela: WhatsApp
-[2024-04-27 14:09:55] INFO: Comando da janela: C:\Program Files\WindowsApps\5319275A.WhatsAppDesktop_2.2414.8.0_x64__cv1g1gvanyjgm\WhatsApp.exe
-[2024-04-27 14:09:55] INFO: ID da janela: 258.916015625
-[2024-04-27 14:09:55] INFO: PID da janela: 28.046875
-[2024-04-27 14:09:55] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
-[2024-04-27 14:09:55] INFO: Dados da janela gravados.
-[2024-04-27 14:09:55] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:55] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:55] INFO: ID da janela: 1.3764781951904297
-[2024-04-27 14:09:55] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:55] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
-[2024-04-27 14:09:55] INFO: Dados da janela gravados.
-[2024-04-27 14:09:55] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:55] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:55] INFO: ID da janela: 4.939916610717773
-[2024-04-27 14:09:55] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:55] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
-[2024-04-27 14:09:55] INFO: Dados da janela gravados.
-[2024-04-27 14:09:55] INFO: Título da janela: MySQL Workbench
-[2024-04-27 14:09:55] INFO: Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
-[2024-04-27 14:09:55] INFO: ID da janela: 897.34765625
-[2024-04-27 14:09:55] INFO: PID da janela: 19.3671875
-[2024-04-27 14:09:55] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
-[2024-04-27 14:09:55] INFO: Dados da janela gravados.
-[2024-04-27 14:09:55] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:55] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:55] INFO: ID da janela: 384.248046875
-[2024-04-27 14:09:55] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:55] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
-[2024-04-27 14:09:55] INFO: Dados da janela gravados.
-[2024-04-27 14:09:55] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:55] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:55] INFO: ID da janela: 2.6892051696777344
-[2024-04-27 14:09:55] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:55] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:09:55] INFO: Dados da janela gravados.
-[2024-04-27 14:09:55] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:55] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:55] INFO: ID da janela: 1.3145427703857422
-[2024-04-27 14:09:55] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:55] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:09:55] INFO: Dados da janela gravados.
-[2024-04-27 14:09:55] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:55] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:55] INFO: ID da janela: 1.0014667510986328
-[2024-04-27 14:09:55] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:55] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:09:55] INFO: Dados da janela gravados.
-[2024-04-27 14:09:55] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:55] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:55] INFO: ID da janela: 512.24609375
-[2024-04-27 14:09:55] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:55] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:09:55] INFO: Dados da janela gravados.
-[2024-04-27 14:09:55] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:55] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:55] INFO: ID da janela: 2.0646724700927734
-[2024-04-27 14:09:55] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:55] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:09:55] INFO: Dados da janela gravados.
-[2024-04-27 14:09:55] INFO: Título da janela: MINGW64:/c/Users/claus/Documents/Arquivos de programação/Estudo/SPTECH/2°Semestre/Projeto PI/front-VisualOps
-[2024-04-27 14:09:55] INFO: Comando da janela: C:\Program Files\Git\usr\bin\mintty.exe
-[2024-04-27 14:09:55] INFO: ID da janela: 21.626680374145508
-[2024-04-27 14:09:55] INFO: PID da janela: 30.36328125
-[2024-04-27 14:09:55] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=192,y=192,width=761,height=457]
-[2024-04-27 14:09:55] INFO: Dados da janela gravados.
-[2024-04-27 14:09:55] INFO: Título da janela: WhatsApp
-[2024-04-27 14:09:55] INFO: Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
-[2024-04-27 14:09:55] INFO: ID da janela: 1.8153800964355469
-[2024-04-27 14:09:55] INFO: PID da janela: 23.1953125
-[2024-04-27 14:09:55] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-32000,y=-32000,width=199,height=34]
-[2024-04-27 14:09:55] INFO: Dados da janela gravados.
-[2024-04-27 14:09:55] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:55] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:55] INFO: ID da janela: 448.517578125
-[2024-04-27 14:09:55] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:55] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-04-27 14:09:55] INFO: Dados da janela gravados.
-[2024-04-27 14:09:55] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:09:55] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:55] INFO: ID da janela: 448.03515625
-[2024-04-27 14:09:55] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:55] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-04-27 14:09:55] INFO: Dados da janela gravados.
-[2024-04-27 14:09:55] INFO: Título da janela: Program Manager
-[2024-04-27 14:09:55] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:09:55] INFO: ID da janela: 512.310546875
-[2024-04-27 14:09:55] INFO: PID da janela: 28.546875
-[2024-04-27 14:09:55] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-04-27 14:09:55] INFO: Dados da janela gravados.
-[2024-04-27 14:09:55] INFO: Todas as janelas verificadas.
-[2024-04-27 14:10:01] INFO: Capturando dados do sistema operacional.
-[2024-04-27 14:10:01] INFO: Nome do sistema operacional coletado: Windows
-[2024-04-27 14:10:01] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
-[2024-04-27 14:10:01] INFO: Arquitetura do sistema operacional coletada: 64
-[2024-04-27 14:10:01] INFO: A inicialização do sistema operacional coletada: 64
-[2024-04-27 14:10:01] INFO: O tempo de atividade do sistema operacional foi coletada: 1223697
-[2024-04-27 14:10:01] INFO: A permisão do sistema operacional foi coletada: 1223697
-[2024-04-27 14:10:01] INFO: Capturando dados da sua CPU.
-[2024-04-27 14:10:01] INFO: Número de CPUs lógicas: 8
-[2024-04-27 14:10:01] INFO: Número de CPUs físicas: 4
-[2024-04-27 14:10:01] INFO: Microarquitetura: Tiger Lake
-[2024-04-27 14:10:01] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
-[2024-04-27 14:10:01] INFO: ID da CPU Looca: BFEBFBFF000806C1
-[2024-04-27 14:10:01] INFO: Fabricante: GenuineIntel
-[2024-04-27 14:10:01] INFO: Frequência: 2.419E9
-[2024-04-27 14:10:01] INFO: Número de pacotes físicos: 1
-[2024-04-27 14:10:01] INFO: Uso da CPU: 2.880354505169867
-[2024-04-27 14:10:01] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-[2024-04-27 14:10:02] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
-[2024-04-27 14:10:02] INFO: Dados da CPU capturados com sucesso.
-[2024-04-27 14:10:02] INFO: Capturando dados do seu HDD
-[2024-04-27 14:10:02] INFO: Nome do disco: \\.\PHYSICALDRIVE0
-[2024-04-27 14:10:02] INFO: Serial do disco: 0025_38D3_3101_18C2.
-[2024-04-27 14:10:02] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
-[2024-04-27 14:10:02] INFO: Escritas do disco: 17.69955825805664
-[2024-04-27 14:10:02] INFO: Leituras do disco: 68.03599739074707
-[2024-04-27 14:10:02] INFO: Bytes de escritas do disco: 1379.5045948028564
-[2024-04-27 14:10:02] INFO: Bytes de leitura do disco: 3106.716980934143
-[2024-04-27 14:10:02] INFO: Tamanho do disco: 238.47
-[2024-04-27 14:10:02] INFO: Tempo de transferência do disco: 26479.9075
-[2024-04-27 14:10:02] INFO: Dados do disco gravados.
-[2024-04-27 14:10:02] INFO: Capturando dados da sua bateria.
-[2024-04-27 14:10:02] INFO: Amperagem da bateria: -799.6169281284202
-[2024-04-27 14:10:02] INFO: Nome do dispositivo da bateria: SR Real Battery
-[2024-04-27 14:10:02] INFO: Número de série da bateria: 123456789
-[2024-04-27 14:10:02] INFO: Química da bateria: LION
-[2024-04-27 14:10:02] INFO: Nome da bateria: System Battery
-[2024-04-27 14:10:02] INFO: Voltagem da bateria: 10.964
-[2024-04-27 14:10:02] INFO: Capacidade atual da bateria: 11.65625
-[2024-04-27 14:10:02] INFO: Número de ciclos da bateria: 201
-[2024-04-27 14:10:02] INFO: Capacidade de design da bateria: 42.08203125
-[2024-04-27 14:10:02] INFO: Unidade de capacidade da bateria: MWH
-[2024-04-27 14:10:02] INFO: Tempo restante da bateria (instantâneo): 4901.0
-[2024-04-27 14:10:02] INFO: Tempo restante estimado da bateria: -1.0
-[2024-04-27 14:10:02] INFO: Taxa de uso de energia da bateria: -8767.0
-[2024-04-27 14:10:02] INFO: Temperatura da bateria: 0.0
-[2024-04-27 14:10:02] INFO: Capacidade máxima da bateria: 35.0908203125
-[2024-04-27 14:10:02] INFO: Porcentagem de capacidade restante da bateria: 1.0
-[2024-04-27 14:10:02] INFO: Data de fabricação da bateria: N/A
-[2024-04-27 14:10:02] INFO: Fabricante da bateria: SAMSUNG Electronics
-[2024-04-27 14:10:02] INFO: Dados da bateria capturados com sucesso: 33.0
-[2024-04-27 14:10:02] INFO: Dados da bateria gravados.
-[2024-04-27 14:10:02] INFO: Capturando dados da sua memória RAM.
-[2024-04-27 14:10:02] INFO: Memória disponível: 478.4375
-[2024-04-27 14:10:02] INFO: Memória total: 7.729835510253906
-[2024-04-27 14:10:02] INFO: Memória em uso: 7.262611389160156
-[2024-04-27 14:10:02] INFO: Dados da memória RAM capturados com sucesso.
-[2024-04-27 14:10:02] INFO: Capturando dados da GPU.
-[2024-04-27 14:10:02] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
-[2024-04-27 14:10:02] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
-[2024-04-27 14:10:02] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
-[2024-04-27 14:10:02] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
-[2024-04-27 14:10:02] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
-[2024-04-27 14:10:03] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
-[2024-04-27 14:10:03] INFO: Dados da GPU gravados.
-[2024-04-27 14:10:03] INFO: Capturando dados das suas conexões USB.
-[2024-04-27 14:10:03] INFO: Nome do usb capturado: USB Root Hub (USB 3.0)
-[2024-04-27 14:10:03] INFO: Nome do fornecedor do usb capturado: (Standard USB HUBs)
-[2024-04-27 14:10:03] INFO: Id exclusivo do usb capturado: USB\ROOT_HUB30\4&457D673&0&0
-[2024-04-27 14:10:03] INFO: Id do fornecedor do usb capturado: 0x8086
-[2024-04-27 14:10:03] INFO: Id do produto do usb capturado: 0xa0ed
-[2024-04-27 14:10:03] WARNING: Número série do usb não foi capturado.
-[2024-04-27 14:10:03] INFO: Dados do usb gravados.
-[2024-04-27 14:10:03] INFO: Nome do usb capturado: USB Root Hub (USB 3.0)
-[2024-04-27 14:10:03] INFO: Nome do fornecedor do usb capturado: (Standard USB HUBs)
-[2024-04-27 14:10:03] INFO: Id exclusivo do usb capturado: USB\ROOT_HUB30\4&3CE02D8&0&0
-[2024-04-27 14:10:03] INFO: Id do fornecedor do usb capturado: 0x8086
-[2024-04-27 14:10:03] INFO: Id do produto do usb capturado: 0x9a13
-[2024-04-27 14:10:03] WARNING: Número série do usb não foi capturado.
-[2024-04-27 14:10:03] INFO: Dados do usb gravados.
-[2024-04-27 14:10:03] INFO: Todos os usbs verificadas.
-[2024-04-27 14:10:03] INFO: Capturando dados dos volumes lógicos.
-[2024-04-27 14:10:03] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
-[2024-04-27 14:10:03] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
-[2024-04-27 14:10:03] INFO: Espaço disponível no volume lógico capturado : 36.5554313659668
-[2024-04-27 14:10:03] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
-[2024-04-27 14:10:03] INFO: Tipo do volume lógico capturado: NTFS
-[2024-04-27 14:10:03] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
-[2024-04-27 14:10:03] INFO: Ponto de montagem do volume lógico capturado: C:\
-[2024-04-27 14:10:03] INFO: Dados do volume lógico gravados.
-[2024-04-27 14:10:03] INFO: Todos os volumes lógicos verificados.
-[2024-04-27 14:10:03] INFO: Capturando dados dos seus Apps.
-[2024-04-27 14:10:03] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:03] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:03] INFO: ID da janela: 1.3772296905517578
-[2024-04-27 14:10:03] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
-[2024-04-27 14:10:03] INFO: Dados da janela gravados.
-[2024-04-27 14:10:03] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:03] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:03] INFO: ID da janela: 130.900390625
-[2024-04-27 14:10:03] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
-[2024-04-27 14:10:03] INFO: Dados da janela gravados.
-[2024-04-27 14:10:03] INFO: Título da janela: app_client – ServiceComponente.java [app-client-api]
-[2024-04-27 14:10:03] INFO: Comando da janela: C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.3\bin\idea64.exe
-[2024-04-27 14:10:03] INFO: ID da janela: 257.3125
-[2024-04-27 14:10:03] INFO: PID da janela: 5.32421875
-[2024-04-27 14:10:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-04-27 14:10:03] INFO: Dados da janela gravados.
-[2024-04-27 14:10:03] INFO: Título da janela: ChatGPT - Opera
-[2024-04-27 14:10:03] INFO: Comando da janela: C:\Users\claus\AppData\Local\Programs\Opera GX\opera.exe
-[2024-04-27 14:10:03] INFO: ID da janela: 129.005859375
-[2024-04-27 14:10:03] INFO: PID da janela: 15.4609375
-[2024-04-27 14:10:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-04-27 14:10:03] INFO: Dados da janela gravados.
-[2024-04-27 14:10:03] INFO: Título da janela: WhatsApp
-[2024-04-27 14:10:03] INFO: Comando da janela: C:\Program Files\WindowsApps\5319275A.WhatsAppDesktop_2.2414.8.0_x64__cv1g1gvanyjgm\WhatsApp.exe
-[2024-04-27 14:10:03] INFO: ID da janela: 258.916015625
-[2024-04-27 14:10:03] INFO: PID da janela: 28.046875
-[2024-04-27 14:10:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
-[2024-04-27 14:10:03] INFO: Dados da janela gravados.
-[2024-04-27 14:10:03] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:03] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:03] INFO: ID da janela: 1.3764781951904297
-[2024-04-27 14:10:03] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
-[2024-04-27 14:10:03] INFO: Dados da janela gravados.
-[2024-04-27 14:10:03] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:03] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:03] INFO: ID da janela: 4.939916610717773
-[2024-04-27 14:10:03] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
-[2024-04-27 14:10:03] INFO: Dados da janela gravados.
-[2024-04-27 14:10:03] INFO: Título da janela: MySQL Workbench
-[2024-04-27 14:10:03] INFO: Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
-[2024-04-27 14:10:03] INFO: ID da janela: 897.34765625
-[2024-04-27 14:10:03] INFO: PID da janela: 19.3671875
-[2024-04-27 14:10:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
-[2024-04-27 14:10:03] INFO: Dados da janela gravados.
-[2024-04-27 14:10:03] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:03] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:03] INFO: ID da janela: 384.248046875
-[2024-04-27 14:10:03] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
-[2024-04-27 14:10:03] INFO: Dados da janela gravados.
-[2024-04-27 14:10:03] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:03] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:03] INFO: ID da janela: 2.6892051696777344
-[2024-04-27 14:10:03] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:10:03] INFO: Dados da janela gravados.
-[2024-04-27 14:10:03] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:03] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:03] INFO: ID da janela: 1.3145427703857422
-[2024-04-27 14:10:03] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:10:03] INFO: Dados da janela gravados.
-[2024-04-27 14:10:03] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:03] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:03] INFO: ID da janela: 1.0014667510986328
-[2024-04-27 14:10:03] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:10:03] INFO: Dados da janela gravados.
-[2024-04-27 14:10:03] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:03] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:03] INFO: ID da janela: 512.24609375
-[2024-04-27 14:10:03] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:10:03] INFO: Dados da janela gravados.
-[2024-04-27 14:10:03] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:03] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:03] INFO: ID da janela: 2.0646724700927734
-[2024-04-27 14:10:03] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:10:03] INFO: Dados da janela gravados.
-[2024-04-27 14:10:03] INFO: Título da janela: MINGW64:/c/Users/claus/Documents/Arquivos de programação/Estudo/SPTECH/2°Semestre/Projeto PI/front-VisualOps
-[2024-04-27 14:10:03] INFO: Comando da janela: C:\Program Files\Git\usr\bin\mintty.exe
-[2024-04-27 14:10:03] INFO: ID da janela: 21.626680374145508
-[2024-04-27 14:10:03] INFO: PID da janela: 30.36328125
-[2024-04-27 14:10:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=192,y=192,width=761,height=457]
-[2024-04-27 14:10:03] INFO: Dados da janela gravados.
-[2024-04-27 14:10:03] INFO: Título da janela: WhatsApp
-[2024-04-27 14:10:03] INFO: Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
-[2024-04-27 14:10:03] INFO: ID da janela: 1.8153800964355469
-[2024-04-27 14:10:03] INFO: PID da janela: 23.1953125
-[2024-04-27 14:10:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-32000,y=-32000,width=199,height=34]
-[2024-04-27 14:10:03] INFO: Dados da janela gravados.
-[2024-04-27 14:10:03] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:03] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:03] INFO: ID da janela: 448.517578125
-[2024-04-27 14:10:03] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-04-27 14:10:03] INFO: Dados da janela gravados.
-[2024-04-27 14:10:03] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:03] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:03] INFO: ID da janela: 448.03515625
-[2024-04-27 14:10:03] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-04-27 14:10:03] INFO: Dados da janela gravados.
-[2024-04-27 14:10:03] INFO: Título da janela: Program Manager
-[2024-04-27 14:10:03] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:03] INFO: ID da janela: 512.310546875
-[2024-04-27 14:10:03] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-04-27 14:10:03] INFO: Dados da janela gravados.
-[2024-04-27 14:10:03] INFO: Todas as janelas verificadas.
-[2024-04-27 14:10:11] INFO: Capturando dados do sistema operacional.
-[2024-04-27 14:10:11] INFO: Nome do sistema operacional coletado: Windows
-[2024-04-27 14:10:11] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
-[2024-04-27 14:10:11] INFO: Arquitetura do sistema operacional coletada: 64
-[2024-04-27 14:10:11] INFO: A inicialização do sistema operacional coletada: 64
-[2024-04-27 14:10:11] INFO: O tempo de atividade do sistema operacional foi coletada: 1223707
-[2024-04-27 14:10:11] INFO: A permisão do sistema operacional foi coletada: 1223707
-[2024-04-27 14:10:11] INFO: Capturando dados da sua CPU.
-[2024-04-27 14:10:11] INFO: Número de CPUs lógicas: 8
-[2024-04-27 14:10:11] INFO: Número de CPUs físicas: 4
-[2024-04-27 14:10:11] INFO: Microarquitetura: Tiger Lake
-[2024-04-27 14:10:11] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
-[2024-04-27 14:10:11] INFO: ID da CPU Looca: BFEBFBFF000806C1
-[2024-04-27 14:10:11] INFO: Fabricante: GenuineIntel
-[2024-04-27 14:10:11] INFO: Frequência: 2.419E9
-[2024-04-27 14:10:11] INFO: Número de pacotes físicos: 1
-[2024-04-27 14:10:11] INFO: Uso da CPU: 8.27076923076923
-[2024-04-27 14:10:11] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-[2024-04-27 14:10:12] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
-[2024-04-27 14:10:12] INFO: Dados da CPU capturados com sucesso.
-[2024-04-27 14:10:12] INFO: Capturando dados do seu HDD
-[2024-04-27 14:10:12] INFO: Nome do disco: \\.\PHYSICALDRIVE0
-[2024-04-27 14:10:12] INFO: Serial do disco: 0025_38D3_3101_18C2.
-[2024-04-27 14:10:12] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
-[2024-04-27 14:10:12] INFO: Escritas do disco: 17.699726104736328
-[2024-04-27 14:10:12] INFO: Leituras do disco: 68.03622913360596
-[2024-04-27 14:10:12] INFO: Bytes de escritas do disco: 1379.5064449310303
-[2024-04-27 14:10:12] INFO: Bytes de leitura do disco: 3106.7276468276978
-[2024-04-27 14:10:12] INFO: Tamanho do disco: 238.47
-[2024-04-27 14:10:12] INFO: Tempo de transferência do disco: 26480.024444444443
-[2024-04-27 14:10:12] INFO: Dados do disco gravados.
-[2024-04-27 14:10:12] INFO: Capturando dados da sua bateria.
-[2024-04-27 14:10:12] INFO: Amperagem da bateria: -1032.86427598729
-[2024-04-27 14:10:12] INFO: Nome do dispositivo da bateria: SR Real Battery
-[2024-04-27 14:10:12] INFO: Número de série da bateria: 123456789
-[2024-04-27 14:10:12] INFO: Química da bateria: LION
-[2024-04-27 14:10:12] INFO: Nome da bateria: System Battery
-[2024-04-27 14:10:12] INFO: Voltagem da bateria: 11.015
-[2024-04-27 14:10:12] INFO: Capacidade atual da bateria: 11.623046875
-[2024-04-27 14:10:12] INFO: Número de ciclos da bateria: 201
-[2024-04-27 14:10:12] INFO: Capacidade de design da bateria: 42.08203125
-[2024-04-27 14:10:12] INFO: Unidade de capacidade da bateria: MWH
-[2024-04-27 14:10:12] INFO: Tempo restante da bateria (instantâneo): 3766.0
-[2024-04-27 14:10:12] INFO: Tempo restante estimado da bateria: -1.0
-[2024-04-27 14:10:12] INFO: Taxa de uso de energia da bateria: -11377.0
-[2024-04-27 14:10:12] INFO: Temperatura da bateria: 0.0
-[2024-04-27 14:10:12] INFO: Capacidade máxima da bateria: 35.0908203125
-[2024-04-27 14:10:12] INFO: Porcentagem de capacidade restante da bateria: 1.0
-[2024-04-27 14:10:12] INFO: Data de fabricação da bateria: N/A
-[2024-04-27 14:10:12] INFO: Fabricante da bateria: SAMSUNG Electronics
-[2024-04-27 14:10:12] INFO: Dados da bateria capturados com sucesso: 33.0
-[2024-04-27 14:10:12] INFO: Dados da bateria gravados.
-[2024-04-27 14:10:12] INFO: Capturando dados da sua memória RAM.
-[2024-04-27 14:10:12] INFO: Memória disponível: 474.47265625
-[2024-04-27 14:10:12] INFO: Memória total: 7.729835510253906
-[2024-04-27 14:10:12] INFO: Memória em uso: 7.266483306884766
-[2024-04-27 14:10:12] INFO: Dados da memória RAM capturados com sucesso.
-[2024-04-27 14:10:12] INFO: Capturando dados da GPU.
-[2024-04-27 14:10:12] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
-[2024-04-27 14:10:12] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
-[2024-04-27 14:10:12] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
-[2024-04-27 14:10:12] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
-[2024-04-27 14:10:12] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
-[2024-04-27 14:10:13] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
-[2024-04-27 14:10:13] INFO: Dados da GPU gravados.
-[2024-04-27 14:10:13] INFO: Capturando dados das suas conexões USB.
-[2024-04-27 14:10:13] INFO: Nome do usb capturado: USB Root Hub (USB 3.0)
-[2024-04-27 14:10:13] INFO: Nome do fornecedor do usb capturado: (Standard USB HUBs)
-[2024-04-27 14:10:13] INFO: Id exclusivo do usb capturado: USB\ROOT_HUB30\4&457D673&0&0
-[2024-04-27 14:10:13] INFO: Id do fornecedor do usb capturado: 0x8086
-[2024-04-27 14:10:13] INFO: Id do produto do usb capturado: 0xa0ed
-[2024-04-27 14:10:13] WARNING: Número série do usb não foi capturado.
-[2024-04-27 14:10:13] INFO: Dados do usb gravados.
-[2024-04-27 14:10:13] INFO: Nome do usb capturado: USB Root Hub (USB 3.0)
-[2024-04-27 14:10:13] INFO: Nome do fornecedor do usb capturado: (Standard USB HUBs)
-[2024-04-27 14:10:13] INFO: Id exclusivo do usb capturado: USB\ROOT_HUB30\4&3CE02D8&0&0
-[2024-04-27 14:10:13] INFO: Id do fornecedor do usb capturado: 0x8086
-[2024-04-27 14:10:13] INFO: Id do produto do usb capturado: 0x9a13
-[2024-04-27 14:10:13] WARNING: Número série do usb não foi capturado.
-[2024-04-27 14:10:13] INFO: Dados do usb gravados.
-[2024-04-27 14:10:13] INFO: Todos os usbs verificadas.
-[2024-04-27 14:10:13] INFO: Capturando dados dos volumes lógicos.
-[2024-04-27 14:10:13] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
-[2024-04-27 14:10:13] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
-[2024-04-27 14:10:13] INFO: Espaço disponível no volume lógico capturado : 36.55529022216797
-[2024-04-27 14:10:13] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
-[2024-04-27 14:10:13] INFO: Tipo do volume lógico capturado: NTFS
-[2024-04-27 14:10:13] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
-[2024-04-27 14:10:13] INFO: Ponto de montagem do volume lógico capturado: C:\
-[2024-04-27 14:10:13] INFO: Dados do volume lógico gravados.
-[2024-04-27 14:10:13] INFO: Todos os volumes lógicos verificados.
-[2024-04-27 14:10:13] INFO: Capturando dados dos seus Apps.
-[2024-04-27 14:10:13] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:13] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:13] INFO: ID da janela: 1.3772296905517578
-[2024-04-27 14:10:13] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
-[2024-04-27 14:10:13] INFO: Dados da janela gravados.
-[2024-04-27 14:10:13] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:13] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:13] INFO: ID da janela: 130.900390625
-[2024-04-27 14:10:13] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
-[2024-04-27 14:10:13] INFO: Dados da janela gravados.
-[2024-04-27 14:10:13] INFO: Título da janela: app_client – ServiceComponente.java [app-client-api]
-[2024-04-27 14:10:13] INFO: Comando da janela: C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.3\bin\idea64.exe
-[2024-04-27 14:10:13] INFO: ID da janela: 257.3125
-[2024-04-27 14:10:13] INFO: PID da janela: 5.32421875
-[2024-04-27 14:10:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-04-27 14:10:13] INFO: Dados da janela gravados.
-[2024-04-27 14:10:13] INFO: Título da janela: ChatGPT - Opera
-[2024-04-27 14:10:13] INFO: Comando da janela: C:\Users\claus\AppData\Local\Programs\Opera GX\opera.exe
-[2024-04-27 14:10:13] INFO: ID da janela: 129.005859375
-[2024-04-27 14:10:13] INFO: PID da janela: 15.4609375
-[2024-04-27 14:10:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-04-27 14:10:13] INFO: Dados da janela gravados.
-[2024-04-27 14:10:13] INFO: Título da janela: WhatsApp
-[2024-04-27 14:10:13] INFO: Comando da janela: C:\Program Files\WindowsApps\5319275A.WhatsAppDesktop_2.2414.8.0_x64__cv1g1gvanyjgm\WhatsApp.exe
-[2024-04-27 14:10:13] INFO: ID da janela: 258.916015625
-[2024-04-27 14:10:13] INFO: PID da janela: 28.046875
-[2024-04-27 14:10:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
-[2024-04-27 14:10:13] INFO: Dados da janela gravados.
-[2024-04-27 14:10:13] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:13] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:13] INFO: ID da janela: 1.3764781951904297
-[2024-04-27 14:10:13] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
-[2024-04-27 14:10:13] INFO: Dados da janela gravados.
-[2024-04-27 14:10:13] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:13] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:13] INFO: ID da janela: 4.939916610717773
-[2024-04-27 14:10:13] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
-[2024-04-27 14:10:13] INFO: Dados da janela gravados.
-[2024-04-27 14:10:13] INFO: Título da janela: MySQL Workbench
-[2024-04-27 14:10:13] INFO: Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
-[2024-04-27 14:10:13] INFO: ID da janela: 897.34765625
-[2024-04-27 14:10:13] INFO: PID da janela: 19.3671875
-[2024-04-27 14:10:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
-[2024-04-27 14:10:13] INFO: Dados da janela gravados.
-[2024-04-27 14:10:13] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:13] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:13] INFO: ID da janela: 384.248046875
-[2024-04-27 14:10:13] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
-[2024-04-27 14:10:13] INFO: Dados da janela gravados.
-[2024-04-27 14:10:13] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:13] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:13] INFO: ID da janela: 2.6892051696777344
-[2024-04-27 14:10:13] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:10:13] INFO: Dados da janela gravados.
-[2024-04-27 14:10:13] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:13] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:13] INFO: ID da janela: 1.3145427703857422
-[2024-04-27 14:10:13] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:10:13] INFO: Dados da janela gravados.
-[2024-04-27 14:10:13] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:13] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:13] INFO: ID da janela: 1.0014667510986328
-[2024-04-27 14:10:13] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:10:13] INFO: Dados da janela gravados.
-[2024-04-27 14:10:13] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:13] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:13] INFO: ID da janela: 512.24609375
-[2024-04-27 14:10:13] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:10:13] INFO: Dados da janela gravados.
-[2024-04-27 14:10:13] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:13] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:13] INFO: ID da janela: 2.0646724700927734
-[2024-04-27 14:10:13] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-04-27 14:10:13] INFO: Dados da janela gravados.
-[2024-04-27 14:10:13] INFO: Título da janela: MINGW64:/c/Users/claus/Documents/Arquivos de programação/Estudo/SPTECH/2°Semestre/Projeto PI/front-VisualOps
-[2024-04-27 14:10:13] INFO: Comando da janela: C:\Program Files\Git\usr\bin\mintty.exe
-[2024-04-27 14:10:13] INFO: ID da janela: 21.626680374145508
-[2024-04-27 14:10:13] INFO: PID da janela: 30.36328125
-[2024-04-27 14:10:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=192,y=192,width=761,height=457]
-[2024-04-27 14:10:13] INFO: Dados da janela gravados.
-[2024-04-27 14:10:13] INFO: Título da janela: WhatsApp
-[2024-04-27 14:10:13] INFO: Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
-[2024-04-27 14:10:13] INFO: ID da janela: 1.8153800964355469
-[2024-04-27 14:10:13] INFO: PID da janela: 23.1953125
-[2024-04-27 14:10:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-32000,y=-32000,width=199,height=34]
-[2024-04-27 14:10:13] INFO: Dados da janela gravados.
-[2024-04-27 14:10:13] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:13] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:13] INFO: ID da janela: 448.517578125
-[2024-04-27 14:10:13] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-04-27 14:10:13] INFO: Dados da janela gravados.
-[2024-04-27 14:10:13] WARNING: Título da janela não foi capturado.
-[2024-04-27 14:10:13] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:13] INFO: ID da janela: 448.03515625
-[2024-04-27 14:10:13] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-04-27 14:10:13] INFO: Dados da janela gravados.
-[2024-04-27 14:10:13] INFO: Título da janela: Program Manager
-[2024-04-27 14:10:13] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-04-27 14:10:13] INFO: ID da janela: 512.310546875
-[2024-04-27 14:10:13] INFO: PID da janela: 28.546875
-[2024-04-27 14:10:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-04-27 14:10:13] INFO: Dados da janela gravados.
-[2024-04-27 14:10:13] INFO: Todas as janelas verificadas.
+[2024-04-27 17:40:30] INFO: Fabricante da placa mãe capturado: SAMSUNG ELECTRONICS CO., LTD.
+[2024-04-27 17:40:30] INFO: Modelo da placa mãe capturado: 550XDA
+[2024-04-27 17:40:30] INFO: Dados da placa mãe gravados.
+[2024-04-27 17:40:30] INFO: Capturando dados do sistema operacional.
+[2024-04-27 17:40:30] INFO: Nome do sistema operacional coletado: Windows
+[2024-04-27 17:40:30] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-04-27 17:40:30] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-04-27 17:40:30] INFO: A inicialização do sistema operacional coletada: 64
+[2024-04-27 17:40:30] INFO: O tempo de atividade do sistema operacional foi coletada: 1236325
+[2024-04-27 17:40:30] INFO: A permisão do sistema operacional foi coletada: 1236325
+[2024-04-27 17:40:30] INFO: Capturando dados da sua CPU.
+[2024-04-27 17:40:30] INFO: Número de CPUs lógicas: 8
+[2024-04-27 17:40:30] INFO: Número de CPUs físicas: 4
+[2024-04-27 17:40:30] INFO: Microarquitetura: Tiger Lake
+[2024-04-27 17:40:30] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-04-27 17:40:30] INFO: ID da CPU Looca: BFEBFBFF000806C1
+[2024-04-27 17:40:30] INFO: Fabricante: GenuineIntel
+[2024-04-27 17:40:30] INFO: Frequência: 2.419E9
+[2024-04-27 17:40:30] INFO: Número de pacotes físicos: 1
+[2024-04-27 17:40:32] INFO: Uso da CPU: 3.0657473528687516
+[2024-04-27 17:40:32] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-04-27 17:40:32] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-04-27 17:40:32] INFO: Dados da CPU capturados com sucesso.
+[2024-04-27 17:40:32] INFO: Capturando dados da sua memória RAM.
+[2024-04-27 17:40:33] INFO: Memória disponível: 737.96875
+[2024-04-27 17:40:33] INFO: Memória total: 7.729835510253906
+[2024-04-27 17:40:33] INFO: Memória em uso: 7.009162902832031
+[2024-04-27 17:40:33] INFO: Dados da memória RAM capturados com sucesso.
+[2024-04-27 17:40:33] INFO: Capturando dados da GPU.
+[2024-04-27 17:40:33] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-04-27 17:40:33] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-04-27 17:40:33] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-04-27 17:40:33] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-04-27 17:40:33] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-04-27 17:40:33] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-04-27 17:40:33] INFO: Dados da GPU gravados.
+[2024-04-27 17:40:33] INFO: Capturando dados da sua bateria.
+[2024-04-27 17:40:33] INFO: Amperagem da bateria: 312.71118262268703
+[2024-04-27 17:40:33] INFO: Nome do dispositivo da bateria: SR Real Battery
+[2024-04-27 17:40:33] INFO: Número de série da bateria: 123456789
+[2024-04-27 17:40:33] INFO: Química da bateria: LION
+[2024-04-27 17:40:33] INFO: Nome da bateria: System Battery
+[2024-04-27 17:40:33] INFO: Voltagem da bateria: 12.43
+[2024-04-27 17:40:33] INFO: Capacidade atual da bateria: 31.7841796875
+[2024-04-27 17:40:33] INFO: Número de ciclos da bateria: 202
+[2024-04-27 17:40:33] INFO: Capacidade de design da bateria: 42.08203125
+[2024-04-27 17:40:33] INFO: Unidade de capacidade da bateria: MWH
+[2024-04-27 17:40:33] INFO: Tempo restante da bateria (instantâneo): 3230.460509390275
+[2024-04-27 17:40:33] INFO: Tempo restante estimado da bateria: -1.0
+[2024-04-27 17:40:33] INFO: Taxa de uso de energia da bateria: 3887.0
+[2024-04-27 17:40:33] INFO: Temperatura da bateria: 0.0
+[2024-04-27 17:40:33] INFO: Capacidade máxima da bateria: 35.1904296875
+[2024-04-27 17:40:33] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-04-27 17:40:33] INFO: Data de fabricação da bateria: N/A
+[2024-04-27 17:40:33] INFO: Fabricante da bateria: SAMSUNG Electronics
+[2024-04-27 17:40:33] INFO: Dados da bateria capturados com sucesso: 90.0
+[2024-04-27 17:40:33] INFO: Dados da bateria gravados.
+[2024-04-27 17:40:33] INFO: Capturando dados do seu HDD
+[2024-04-27 17:40:33] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-04-27 17:40:33] INFO: Serial do disco: 0025_38D3_3101_18C2.
+[2024-04-27 17:40:33] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-04-27 17:40:33] INFO: Escritas do disco: 18.960620880126953
+[2024-04-27 17:40:33] INFO: Leituras do disco: 72.07907199859619
+[2024-04-27 17:40:33] INFO: Bytes de escritas do disco: 1461.3306498527527
+[2024-04-27 17:40:33] INFO: Bytes de leitura do disco: 3300.1883220672607
+[2024-04-27 17:40:33] INFO: Tamanho do disco: 238.47
+[2024-04-27 17:40:33] INFO: Tempo de transferência do disco: 27788.332777777778
+[2024-04-27 17:40:33] INFO: Dados do disco gravados.
+[2024-04-27 17:40:33] INFO: Capturando dados dos volumes lógicos.
+[2024-04-27 17:40:34] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-04-27 17:40:34] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-04-27 17:40:34] INFO: Espaço disponível no volume lógico capturado : 33.58311080932617
+[2024-04-27 17:40:34] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-04-27 17:40:34] INFO: Tipo do volume lógico capturado: NTFS
+[2024-04-27 17:40:34] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-04-27 17:40:34] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-04-27 17:40:34] INFO: Dados do volume lógico gravados.
+[2024-04-27 17:40:34] INFO: Todos os volumes lógicos verificados.
+[2024-04-27 17:40:34] INFO: Sua máquina contém componentes registrados
+[2024-04-27 17:40:34] INFO: Capturando dados do sistema operacional.
+[2024-04-27 17:40:34] INFO: Nome do sistema operacional coletado: Windows
+[2024-04-27 17:40:34] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-04-27 17:40:34] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-04-27 17:40:34] INFO: A inicialização do sistema operacional coletada: 64
+[2024-04-27 17:40:34] INFO: O tempo de atividade do sistema operacional foi coletada: 1236329
+[2024-04-27 17:40:34] INFO: A permisão do sistema operacional foi coletada: 1236329
+[2024-04-27 17:40:34] INFO: Capturando dados da sua CPU.
+[2024-04-27 17:40:34] INFO: Número de CPUs lógicas: 8
+[2024-04-27 17:40:34] INFO: Número de CPUs físicas: 4
+[2024-04-27 17:40:34] INFO: Microarquitetura: Tiger Lake
+[2024-04-27 17:40:34] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-04-27 17:40:34] INFO: ID da CPU Looca: BFEBFBFF000806C1
+[2024-04-27 17:40:34] INFO: Fabricante: GenuineIntel
+[2024-04-27 17:40:34] INFO: Frequência: 2.419E9
+[2024-04-27 17:40:34] INFO: Número de pacotes físicos: 1
+[2024-04-27 17:40:36] INFO: Uso da CPU: 5.968496185084913
+[2024-04-27 17:40:36] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-04-27 17:40:36] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-04-27 17:40:36] INFO: Dados da CPU capturados com sucesso.
+[2024-04-27 17:40:36] INFO: Capturando dados do seu HDD
+[2024-04-27 17:40:36] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-04-27 17:40:36] INFO: Serial do disco: 0025_38D3_3101_18C2.
+[2024-04-27 17:40:36] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-04-27 17:40:36] INFO: Escritas do disco: 18.96070384979248
+[2024-04-27 17:40:36] INFO: Leituras do disco: 72.08215808868408
+[2024-04-27 17:40:36] INFO: Bytes de escritas do disco: 1461.331370830536
+[2024-04-27 17:40:36] INFO: Bytes de leitura do disco: 3300.291759490967
+[2024-04-27 17:40:36] INFO: Tamanho do disco: 238.47
+[2024-04-27 17:40:36] INFO: Tempo de transferência do disco: 27788.615833333333
+[2024-04-27 17:40:36] INFO: Dados do disco gravados.
+[2024-04-27 17:40:36] INFO: Capturando dados da sua bateria.
+[2024-04-27 17:40:36] INFO: Amperagem da bateria: 41.597205683892994
+[2024-04-27 17:40:36] INFO: Nome do dispositivo da bateria: SR Real Battery
+[2024-04-27 17:40:36] INFO: Número de série da bateria: 123456789
+[2024-04-27 17:40:36] INFO: Química da bateria: LION
+[2024-04-27 17:40:36] INFO: Nome da bateria: System Battery
+[2024-04-27 17:40:36] INFO: Voltagem da bateria: 12.597
+[2024-04-27 17:40:36] INFO: Capacidade atual da bateria: 31.7841796875
+[2024-04-27 17:40:36] INFO: Número de ciclos da bateria: 202
+[2024-04-27 17:40:36] INFO: Capacidade de design da bateria: 42.08203125
+[2024-04-27 17:40:36] INFO: Unidade de capacidade da bateria: MWH
+[2024-04-27 17:40:36] INFO: Tempo restante da bateria (instantâneo): 23963.358778625956
+[2024-04-27 17:40:36] INFO: Tempo restante estimado da bateria: -1.0
+[2024-04-27 17:40:36] INFO: Taxa de uso de energia da bateria: 524.0
+[2024-04-27 17:40:36] INFO: Temperatura da bateria: 0.0
+[2024-04-27 17:40:36] INFO: Capacidade máxima da bateria: 35.1904296875
+[2024-04-27 17:40:36] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-04-27 17:40:36] INFO: Data de fabricação da bateria: N/A
+[2024-04-27 17:40:36] INFO: Fabricante da bateria: SAMSUNG Electronics
+[2024-04-27 17:40:37] INFO: Dados da bateria capturados com sucesso: 90.0
+[2024-04-27 17:40:37] INFO: Dados da bateria gravados.
+[2024-04-27 17:40:37] INFO: Capturando dados da sua memória RAM.
+[2024-04-27 17:40:37] INFO: Memória disponível: 673.30859375
+[2024-04-27 17:40:37] INFO: Memória total: 7.729835510253906
+[2024-04-27 17:40:37] INFO: Memória em uso: 7.072307586669922
+[2024-04-27 17:40:37] INFO: Dados da memória RAM capturados com sucesso.
+[2024-04-27 17:40:37] INFO: Capturando dados da GPU.
+[2024-04-27 17:40:37] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-04-27 17:40:37] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-04-27 17:40:37] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-04-27 17:40:37] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-04-27 17:40:37] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-04-27 17:40:37] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-04-27 17:40:37] INFO: Dados da GPU gravados.
+[2024-04-27 17:40:37] INFO: Capturando dados das suas conexões USB.
+[2024-04-27 17:40:37] INFO: Nome do usb capturado: USB Root Hub (USB 3.0)
+[2024-04-27 17:40:37] INFO: Nome do fornecedor do usb capturado: (Standard USB HUBs)
+[2024-04-27 17:40:37] INFO: Id exclusivo do usb capturado: USB\ROOT_HUB30\4&457D673&0&0
+[2024-04-27 17:40:37] INFO: Id do fornecedor do usb capturado: 0x8086
+[2024-04-27 17:40:37] INFO: Id do produto do usb capturado: 0xa0ed
+[2024-04-27 17:40:37] WARNING: Número série do usb não foi capturado.
+[2024-04-27 17:40:37] INFO: Dados do usb gravados.
+[2024-04-27 17:40:37] INFO: Nome do usb capturado: USB Root Hub (USB 3.0)
+[2024-04-27 17:40:37] INFO: Nome do fornecedor do usb capturado: (Standard USB HUBs)
+[2024-04-27 17:40:37] INFO: Id exclusivo do usb capturado: USB\ROOT_HUB30\4&3CE02D8&0&0
+[2024-04-27 17:40:37] INFO: Id do fornecedor do usb capturado: 0x8086
+[2024-04-27 17:40:37] INFO: Id do produto do usb capturado: 0x9a13
+[2024-04-27 17:40:37] WARNING: Número série do usb não foi capturado.
+[2024-04-27 17:40:37] INFO: Dados do usb gravados.
+[2024-04-27 17:40:37] INFO: Todos os usbs verificadas.
+[2024-04-27 17:40:37] INFO: Capturando dados dos volumes lógicos.
+[2024-04-27 17:40:37] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-04-27 17:40:37] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-04-27 17:40:37] INFO: Espaço disponível no volume lógico capturado : 33.58253479003906
+[2024-04-27 17:40:37] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-04-27 17:40:37] INFO: Tipo do volume lógico capturado: NTFS
+[2024-04-27 17:40:37] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-04-27 17:40:37] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-04-27 17:40:37] INFO: Dados do volume lógico gravados.
+[2024-04-27 17:40:37] INFO: Todos os volumes lógicos verificados.
+[2024-04-27 17:40:37] INFO: Capturando dados dos seus Apps.
+[2024-04-27 17:40:37] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:37] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:37] INFO: ID da janela: 1.3772296905517578
+[2024-04-27 17:40:37] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:37] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-04-27 17:40:37] INFO: Dados da janela gravados.
+[2024-04-27 17:40:37] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:37] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:37] INFO: ID da janela: 130.900390625
+[2024-04-27 17:40:37] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:37] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
+[2024-04-27 17:40:37] INFO: Dados da janela gravados.
+[2024-04-27 17:40:37] INFO: Título da janela: app_client – Componente.java [app-client-api]
+[2024-04-27 17:40:37] INFO: Comando da janela: C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.3\bin\idea64.exe
+[2024-04-27 17:40:37] INFO: ID da janela: 257.3125
+[2024-04-27 17:40:37] INFO: PID da janela: 5.32421875
+[2024-04-27 17:40:37] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-04-27 17:40:37] INFO: Dados da janela gravados.
+[2024-04-27 17:40:37] INFO: Título da janela: MySQL Workbench
+[2024-04-27 17:40:37] INFO: Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
+[2024-04-27 17:40:37] INFO: ID da janela: 897.34765625
+[2024-04-27 17:40:37] INFO: PID da janela: 19.3671875
+[2024-04-27 17:40:37] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
+[2024-04-27 17:40:37] INFO: Dados da janela gravados.
+[2024-04-27 17:40:37] INFO: Título da janela: Verificação e Registro de Componentes - Opera
+[2024-04-27 17:40:37] INFO: Comando da janela: C:\Users\claus\AppData\Local\Programs\Opera GX\opera.exe
+[2024-04-27 17:40:37] INFO: ID da janela: 129.005859375
+[2024-04-27 17:40:37] INFO: PID da janela: 15.4609375
+[2024-04-27 17:40:37] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-04-27 17:40:37] INFO: Dados da janela gravados.
+[2024-04-27 17:40:37] INFO: Título da janela: WhatsApp
+[2024-04-27 17:40:37] INFO: Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-04-27 17:40:37] INFO: ID da janela: 450.673828125
+[2024-04-27 17:40:37] INFO: PID da janela: 23.1953125
+[2024-04-27 17:40:37] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-04-27 17:40:37] INFO: Dados da janela gravados.
+[2024-04-27 17:40:37] INFO: Título da janela: front-VisualOps/src/database/der_grupo_5.png at main · Organizacao-Grupo5/front-VisualOps - Google Chrome
+[2024-04-27 17:40:37] INFO: Comando da janela: C:\Program Files\Google\Chrome\Application\chrome.exe
+[2024-04-27 17:40:37] INFO: ID da janela: 1.0650386810302734
+[2024-04-27 17:40:37] INFO: PID da janela: 17.58203125
+[2024-04-27 17:40:37] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-04-27 17:40:37] INFO: Dados da janela gravados.
+[2024-04-27 17:40:37] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:37] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:37] INFO: ID da janela: 1.3764781951904297
+[2024-04-27 17:40:37] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:37] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-04-27 17:40:37] INFO: Dados da janela gravados.
+[2024-04-27 17:40:37] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:37] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:37] INFO: ID da janela: 4.939916610717773
+[2024-04-27 17:40:37] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:37] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-04-27 17:40:37] INFO: Dados da janela gravados.
+[2024-04-27 17:40:37] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:37] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:37] INFO: ID da janela: 384.248046875
+[2024-04-27 17:40:37] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:37] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
+[2024-04-27 17:40:37] INFO: Dados da janela gravados.
+[2024-04-27 17:40:37] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:37] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:37] INFO: ID da janela: 2.6892051696777344
+[2024-04-27 17:40:37] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:37] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-04-27 17:40:37] INFO: Dados da janela gravados.
+[2024-04-27 17:40:37] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:37] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:37] INFO: ID da janela: 1.3145427703857422
+[2024-04-27 17:40:37] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:37] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-04-27 17:40:37] INFO: Dados da janela gravados.
+[2024-04-27 17:40:37] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:37] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:37] INFO: ID da janela: 1.0014667510986328
+[2024-04-27 17:40:37] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:37] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-04-27 17:40:37] INFO: Dados da janela gravados.
+[2024-04-27 17:40:37] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:37] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:37] INFO: ID da janela: 512.24609375
+[2024-04-27 17:40:37] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:37] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-04-27 17:40:37] INFO: Dados da janela gravados.
+[2024-04-27 17:40:37] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:37] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:37] INFO: ID da janela: 2.0646724700927734
+[2024-04-27 17:40:37] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:37] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-04-27 17:40:37] INFO: Dados da janela gravados.
+[2024-04-27 17:40:37] INFO: Título da janela: MINGW64:/c/Users/claus/Documents/Arquivos de programação/Estudo/SPTECH/2°Semestre/Projeto PI/app_client
+[2024-04-27 17:40:37] INFO: Comando da janela: C:\Program Files\Git\usr\bin\mintty.exe
+[2024-04-27 17:40:37] INFO: ID da janela: 322.69921875
+[2024-04-27 17:40:37] INFO: PID da janela: 8.91796875
+[2024-04-27 17:40:37] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-32000,y=-32000,width=199,height=34]
+[2024-04-27 17:40:37] INFO: Dados da janela gravados.
+[2024-04-27 17:40:37] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:37] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:37] INFO: ID da janela: 448.517578125
+[2024-04-27 17:40:37] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:37] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-04-27 17:40:37] INFO: Dados da janela gravados.
+[2024-04-27 17:40:37] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:37] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:37] INFO: ID da janela: 448.03515625
+[2024-04-27 17:40:37] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:37] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-04-27 17:40:37] INFO: Dados da janela gravados.
+[2024-04-27 17:40:37] INFO: Título da janela: Program Manager
+[2024-04-27 17:40:37] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:37] INFO: ID da janela: 512.310546875
+[2024-04-27 17:40:37] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:37] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-04-27 17:40:37] INFO: Dados da janela gravados.
+[2024-04-27 17:40:37] INFO: Todas as janelas verificadas.
+[2024-04-27 17:40:44] INFO: Capturando dados do sistema operacional.
+[2024-04-27 17:40:44] INFO: Nome do sistema operacional coletado: Windows
+[2024-04-27 17:40:44] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-04-27 17:40:44] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-04-27 17:40:44] INFO: A inicialização do sistema operacional coletada: 64
+[2024-04-27 17:40:44] INFO: O tempo de atividade do sistema operacional foi coletada: 1236339
+[2024-04-27 17:40:44] INFO: A permisão do sistema operacional foi coletada: 1236339
+[2024-04-27 17:40:44] INFO: Capturando dados da sua CPU.
+[2024-04-27 17:40:44] INFO: Número de CPUs lógicas: 8
+[2024-04-27 17:40:44] INFO: Número de CPUs físicas: 4
+[2024-04-27 17:40:44] INFO: Microarquitetura: Tiger Lake
+[2024-04-27 17:40:44] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-04-27 17:40:44] INFO: ID da CPU Looca: BFEBFBFF000806C1
+[2024-04-27 17:40:44] INFO: Fabricante: GenuineIntel
+[2024-04-27 17:40:44] INFO: Frequência: 2.419E9
+[2024-04-27 17:40:44] INFO: Número de pacotes físicos: 1
+[2024-04-27 17:40:44] INFO: Uso da CPU: 5.968496185084913
+[2024-04-27 17:40:44] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-04-27 17:40:44] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-04-27 17:40:44] INFO: Dados da CPU capturados com sucesso.
+[2024-04-27 17:40:44] INFO: Capturando dados do seu HDD
+[2024-04-27 17:40:44] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-04-27 17:40:44] INFO: Serial do disco: 0025_38D3_3101_18C2.
+[2024-04-27 17:40:44] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-04-27 17:40:44] INFO: Escritas do disco: 18.96101951599121
+[2024-04-27 17:40:44] INFO: Leituras do disco: 72.0842924118042
+[2024-04-27 17:40:44] INFO: Bytes de escritas do disco: 1461.3374133110046
+[2024-04-27 17:40:44] INFO: Bytes de leitura do disco: 3300.385402202606
+[2024-04-27 17:40:44] INFO: Tamanho do disco: 238.47
+[2024-04-27 17:40:44] INFO: Tempo de transferência do disco: 27788.891666666666
+[2024-04-27 17:40:44] INFO: Dados do disco gravados.
+[2024-04-27 17:40:44] INFO: Capturando dados da sua bateria.
+[2024-04-27 17:40:44] INFO: Amperagem da bateria: 202.71450115088498
+[2024-04-27 17:40:44] INFO: Nome do dispositivo da bateria: SR Real Battery
+[2024-04-27 17:40:44] INFO: Número de série da bateria: 123456789
+[2024-04-27 17:40:44] INFO: Química da bateria: LION
+[2024-04-27 17:40:44] INFO: Nome da bateria: System Battery
+[2024-04-27 17:40:44] INFO: Voltagem da bateria: 12.599
+[2024-04-27 17:40:44] INFO: Capacidade atual da bateria: 31.794921875
+[2024-04-27 17:40:44] INFO: Número de ciclos da bateria: 202
+[2024-04-27 17:40:44] INFO: Capacidade de design da bateria: 42.08203125
+[2024-04-27 17:40:44] INFO: Unidade de capacidade da bateria: MWH
+[2024-04-27 17:40:44] INFO: Tempo restante da bateria (instantâneo): 4901.018010963195
+[2024-04-27 17:40:44] INFO: Tempo restante estimado da bateria: -1.0
+[2024-04-27 17:40:44] INFO: Taxa de uso de energia da bateria: 2554.0
+[2024-04-27 17:40:44] INFO: Temperatura da bateria: 0.0
+[2024-04-27 17:40:44] INFO: Capacidade máxima da bateria: 35.1904296875
+[2024-04-27 17:40:44] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-04-27 17:40:44] INFO: Data de fabricação da bateria: N/A
+[2024-04-27 17:40:44] INFO: Fabricante da bateria: SAMSUNG Electronics
+[2024-04-27 17:40:45] INFO: Dados da bateria capturados com sucesso: 90.0
+[2024-04-27 17:40:45] INFO: Dados da bateria gravados.
+[2024-04-27 17:40:45] INFO: Capturando dados da sua memória RAM.
+[2024-04-27 17:40:45] INFO: Memória disponível: 471.2109375
+[2024-04-27 17:40:45] INFO: Memória total: 7.729835510253906
+[2024-04-27 17:40:45] INFO: Memória em uso: 7.2696685791015625
+[2024-04-27 17:40:45] INFO: Dados da memória RAM capturados com sucesso.
+[2024-04-27 17:40:45] INFO: Capturando dados da GPU.
+[2024-04-27 17:40:45] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-04-27 17:40:45] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-04-27 17:40:45] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-04-27 17:40:45] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-04-27 17:40:45] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-04-27 17:40:45] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-04-27 17:40:45] INFO: Dados da GPU gravados.
+[2024-04-27 17:40:45] INFO: Capturando dados das suas conexões USB.
+[2024-04-27 17:40:45] INFO: Nome do usb capturado: USB Root Hub (USB 3.0)
+[2024-04-27 17:40:45] INFO: Nome do fornecedor do usb capturado: (Standard USB HUBs)
+[2024-04-27 17:40:45] INFO: Id exclusivo do usb capturado: USB\ROOT_HUB30\4&457D673&0&0
+[2024-04-27 17:40:45] INFO: Id do fornecedor do usb capturado: 0x8086
+[2024-04-27 17:40:45] INFO: Id do produto do usb capturado: 0xa0ed
+[2024-04-27 17:40:45] WARNING: Número série do usb não foi capturado.
+[2024-04-27 17:40:45] INFO: Dados do usb gravados.
+[2024-04-27 17:40:45] INFO: Nome do usb capturado: USB Root Hub (USB 3.0)
+[2024-04-27 17:40:45] INFO: Nome do fornecedor do usb capturado: (Standard USB HUBs)
+[2024-04-27 17:40:45] INFO: Id exclusivo do usb capturado: USB\ROOT_HUB30\4&3CE02D8&0&0
+[2024-04-27 17:40:45] INFO: Id do fornecedor do usb capturado: 0x8086
+[2024-04-27 17:40:45] INFO: Id do produto do usb capturado: 0x9a13
+[2024-04-27 17:40:45] WARNING: Número série do usb não foi capturado.
+[2024-04-27 17:40:45] INFO: Dados do usb gravados.
+[2024-04-27 17:40:45] INFO: Todos os usbs verificadas.
+[2024-04-27 17:40:45] INFO: Capturando dados dos volumes lógicos.
+[2024-04-27 17:40:45] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-04-27 17:40:45] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-04-27 17:40:45] INFO: Espaço disponível no volume lógico capturado : 33.582401275634766
+[2024-04-27 17:40:45] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-04-27 17:40:45] INFO: Tipo do volume lógico capturado: NTFS
+[2024-04-27 17:40:45] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-04-27 17:40:45] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-04-27 17:40:45] INFO: Dados do volume lógico gravados.
+[2024-04-27 17:40:45] INFO: Todos os volumes lógicos verificados.
+[2024-04-27 17:40:45] INFO: Capturando dados dos seus Apps.
+[2024-04-27 17:40:45] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:45] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:45] INFO: ID da janela: 1.3772296905517578
+[2024-04-27 17:40:45] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:45] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-04-27 17:40:45] INFO: Dados da janela gravados.
+[2024-04-27 17:40:45] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:45] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:45] INFO: ID da janela: 130.900390625
+[2024-04-27 17:40:45] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:45] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
+[2024-04-27 17:40:45] INFO: Dados da janela gravados.
+[2024-04-27 17:40:45] INFO: Título da janela: MySQL Workbench
+[2024-04-27 17:40:45] INFO: Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
+[2024-04-27 17:40:45] INFO: ID da janela: 897.34765625
+[2024-04-27 17:40:45] INFO: PID da janela: 19.3671875
+[2024-04-27 17:40:45] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
+[2024-04-27 17:40:45] INFO: Dados da janela gravados.
+[2024-04-27 17:40:45] INFO: Título da janela: app_client – Componente.java [app-client-api]
+[2024-04-27 17:40:45] INFO: Comando da janela: C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.3\bin\idea64.exe
+[2024-04-27 17:40:45] INFO: ID da janela: 257.3125
+[2024-04-27 17:40:45] INFO: PID da janela: 5.32421875
+[2024-04-27 17:40:45] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-04-27 17:40:45] INFO: Dados da janela gravados.
+[2024-04-27 17:40:45] INFO: Título da janela: Verificação e Registro de Componentes - Opera
+[2024-04-27 17:40:45] INFO: Comando da janela: C:\Users\claus\AppData\Local\Programs\Opera GX\opera.exe
+[2024-04-27 17:40:45] INFO: ID da janela: 129.005859375
+[2024-04-27 17:40:45] INFO: PID da janela: 15.4609375
+[2024-04-27 17:40:45] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-04-27 17:40:45] INFO: Dados da janela gravados.
+[2024-04-27 17:40:45] INFO: Título da janela: WhatsApp
+[2024-04-27 17:40:45] INFO: Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-04-27 17:40:45] INFO: ID da janela: 450.673828125
+[2024-04-27 17:40:45] INFO: PID da janela: 23.1953125
+[2024-04-27 17:40:45] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-04-27 17:40:45] INFO: Dados da janela gravados.
+[2024-04-27 17:40:45] INFO: Título da janela: front-VisualOps/src/database/der_grupo_5.png at main · Organizacao-Grupo5/front-VisualOps - Google Chrome
+[2024-04-27 17:40:45] INFO: Comando da janela: C:\Program Files\Google\Chrome\Application\chrome.exe
+[2024-04-27 17:40:45] INFO: ID da janela: 1.0650386810302734
+[2024-04-27 17:40:45] INFO: PID da janela: 17.58203125
+[2024-04-27 17:40:45] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-04-27 17:40:45] INFO: Dados da janela gravados.
+[2024-04-27 17:40:45] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:45] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:45] INFO: ID da janela: 1.3764781951904297
+[2024-04-27 17:40:45] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:45] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-04-27 17:40:45] INFO: Dados da janela gravados.
+[2024-04-27 17:40:45] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:45] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:45] INFO: ID da janela: 4.939916610717773
+[2024-04-27 17:40:45] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:45] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-04-27 17:40:45] INFO: Dados da janela gravados.
+[2024-04-27 17:40:45] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:45] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:45] INFO: ID da janela: 384.248046875
+[2024-04-27 17:40:45] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:45] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
+[2024-04-27 17:40:45] INFO: Dados da janela gravados.
+[2024-04-27 17:40:45] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:45] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:45] INFO: ID da janela: 2.6892051696777344
+[2024-04-27 17:40:45] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:45] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-04-27 17:40:45] INFO: Dados da janela gravados.
+[2024-04-27 17:40:45] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:45] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:45] INFO: ID da janela: 1.3145427703857422
+[2024-04-27 17:40:45] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:45] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-04-27 17:40:45] INFO: Dados da janela gravados.
+[2024-04-27 17:40:45] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:45] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:45] INFO: ID da janela: 1.0014667510986328
+[2024-04-27 17:40:45] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:45] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-04-27 17:40:45] INFO: Dados da janela gravados.
+[2024-04-27 17:40:45] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:45] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:45] INFO: ID da janela: 512.24609375
+[2024-04-27 17:40:45] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:45] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-04-27 17:40:45] INFO: Dados da janela gravados.
+[2024-04-27 17:40:45] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:45] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:45] INFO: ID da janela: 2.0646724700927734
+[2024-04-27 17:40:45] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:45] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-04-27 17:40:45] INFO: Dados da janela gravados.
+[2024-04-27 17:40:45] INFO: Título da janela: MINGW64:/c/Users/claus/Documents/Arquivos de programação/Estudo/SPTECH/2°Semestre/Projeto PI/app_client
+[2024-04-27 17:40:45] INFO: Comando da janela: C:\Program Files\Git\usr\bin\mintty.exe
+[2024-04-27 17:40:45] INFO: ID da janela: 322.69921875
+[2024-04-27 17:40:45] INFO: PID da janela: 8.91796875
+[2024-04-27 17:40:45] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-32000,y=-32000,width=199,height=34]
+[2024-04-27 17:40:45] INFO: Dados da janela gravados.
+[2024-04-27 17:40:45] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:45] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:45] INFO: ID da janela: 448.517578125
+[2024-04-27 17:40:45] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:45] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-04-27 17:40:45] INFO: Dados da janela gravados.
+[2024-04-27 17:40:45] WARNING: Título da janela não foi capturado.
+[2024-04-27 17:40:45] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:45] INFO: ID da janela: 448.03515625
+[2024-04-27 17:40:45] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:45] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-04-27 17:40:45] INFO: Dados da janela gravados.
+[2024-04-27 17:40:45] INFO: Título da janela: Program Manager
+[2024-04-27 17:40:45] INFO: Comando da janela: C:\Windows\explorer.exe
+[2024-04-27 17:40:45] INFO: ID da janela: 512.310546875
+[2024-04-27 17:40:45] INFO: PID da janela: 28.546875
+[2024-04-27 17:40:45] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-04-27 17:40:45] INFO: Dados da janela gravados.
+[2024-04-27 17:40:45] INFO: Todas as janelas verificadas.

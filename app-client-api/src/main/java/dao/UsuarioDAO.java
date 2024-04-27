@@ -13,7 +13,7 @@ public class UsuarioDAO {
 
     public Optional<Usuario> findByEmailAndSenha(String email, String senha) {
         try (Connection conexao = MySQLConnection.ConBD();
-             PreparedStatement preparedStatement = conexao.prepareStatement("SELECT * FROM Usuario JOIN identificacao ON usuario.idUsuario = identificacao.fkUsuario WHERE email = ? and senha = ?")) {
+             PreparedStatement preparedStatement = conexao.prepareStatement("SELECT * FROM Usuario JOIN empresa ON usuario.fkEmpresa = empresa.idEmpresa JOIN plano ON empresa.fkPlano = plano.idPlano WHERE email = ? and senha = ?")) {
 
             preparedStatement.setString(1, email);
             preparedStatement.setString(2, senha);
@@ -37,9 +37,9 @@ public class UsuarioDAO {
         usuario.setNome(resultSet.getString("nome"));
         usuario.setEmail(resultSet.getString("email"));
         usuario.setSenha(resultSet.getString("senha"));
-        usuario.setCpfCnpj(resultSet.getString("cpf_cnpj"));
-        usuario.setFkCargo(resultSet.getInt("fkCargos"));
+        usuario.setCargo(resultSet.getString("cargo"));
         usuario.setFkPlano(resultSet.getInt("fkPlano"));
+        usuario.setFkEmpresa(resultSet.getInt("fkEmpresa"));
         return usuario;
     }
 }

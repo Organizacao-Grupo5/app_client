@@ -208,6 +208,11 @@ public class Bateria extends Componente{
     }
 
     @Override
+    public String getComponente() {
+        return this.getClass().getSimpleName();
+    }
+
+    @Override
     public List<List<String>> tabela() {
         return Arrays.asList(
                 Arrays.asList("", "Bateria"),

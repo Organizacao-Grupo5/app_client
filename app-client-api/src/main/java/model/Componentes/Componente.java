@@ -7,7 +7,7 @@ public class Componente  {
     protected String componente;
     protected String modelo;
     protected String fabricante;
-    protected Double preferenciaAlerta;
+    protected Integer fkMaquina;
 
     public Componente() {
 
@@ -25,12 +25,12 @@ public class Componente  {
         return null;
     }
 
-    public Componente(Integer idComponente, String componente, String modelo, String fabricante, Double preferenciaAlerta) {
+    public Componente(Integer idComponente, String componente, String modelo, String fabricante, Integer fkMaquina) {
         this.idComponente = idComponente;
         this.componente = componente;
         this.modelo = modelo;
         this.fabricante = fabricante;
-        this.preferenciaAlerta = preferenciaAlerta;
+        this.fkMaquina = fkMaquina;
     }
 
     public Componente(String fabricante, String modelo, String componente) {
@@ -56,7 +56,7 @@ public class Componente  {
     }
 
     public String getModelo() {
-        return modelo;
+        return modelo != null ? modelo : "N/A";
     }
 
     public void setModelo(String modelo) {
@@ -64,18 +64,19 @@ public class Componente  {
     }
 
     public String getFabricante() {
-        return fabricante;
+        return fabricante != null ? fabricante : "N/A";
     }
 
     public void setFabricante(String fabricante) {
         this.fabricante = fabricante;
     }
 
-    public Double getPreferenciaAlerta() {
-        return preferenciaAlerta;
+
+    public Integer getFkMaquina() {
+        return fkMaquina;
     }
 
-    public void setPreferenciaAlerta(Double preferenciaAlerta) {
-        this.preferenciaAlerta = preferenciaAlerta;
+    public void setFkMaquina(Integer fkMaquina) {
+        this.fkMaquina = fkMaquina;
     }
 }
