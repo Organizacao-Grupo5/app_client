@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Maquina {
-    private int idMaquina;
+    private Integer idMaquina;
     private String ipv4;
     private Usuario usuario;
     private List<Componente> componentes;
@@ -17,10 +17,11 @@ public class Maquina {
         componentes = new ArrayList<>();
     }
 
-    public Maquina(String ipv4, Usuario usuario) {
+    public Maquina(Integer idMaquina, String ipv4, Usuario usuario) {
+        this.idMaquina = idMaquina;
         this.ipv4 = ipv4;
         this.usuario = usuario;
-        componentes = new ArrayList<>();
+        this.componentes = new ArrayList<>();
     }
 
     public int getIdMaquina() {

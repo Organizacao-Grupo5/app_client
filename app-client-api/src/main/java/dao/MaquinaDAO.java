@@ -32,6 +32,7 @@ public class MaquinaDAO {
 
     private Maquina criaMaquina(ResultSet resultSet, Usuario usuario) throws SQLException {
         return new Maquina(
+                resultSet.getInt("idMaquina"),
                 resultSet.getString("ipv4"),
                 usuario
         );

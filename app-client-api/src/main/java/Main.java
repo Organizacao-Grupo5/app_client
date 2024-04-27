@@ -1,3 +1,4 @@
+import service.componente.ServiceComponente;
 import util.security.Login;
 
 import app.system.SystemMonitor;
@@ -36,6 +37,7 @@ public class Main {
     private static List<ConexaoUSB> usb = new ArrayList<>();
 
     private static ServicePC servicePC = new ServicePC();
+    private static ServiceComponente serviceComponente = new ServiceComponente();
 
     public static void main(String[] args) throws Exception {
         Logger.logInfo("Servidor iniciando.");
@@ -132,16 +134,8 @@ public class Main {
 
     public static void iniciarMonitoramento() {
         SystemMonitor systemMonitor = new SystemMonitor();
-        maquina.setComponentes(Arrays.asList(
-                sistemaOp, cpu, ram
-        ));
 
-        maquina.getComponentes().addAll(hdd);
-        maquina.getComponentes().addAll(bateria);
-        maquina.getComponentes().addAll(gpu);
-        maquina.getComponentes().addAll(usb);
-        maquina.getComponentes().addAll(volume);
-        maquina.getComponentes().addAll(app);
+        serviceComponente.obterComponentes(maquina);
 
         try {
             executorService = Executors.newScheduledThreadPool(1);
