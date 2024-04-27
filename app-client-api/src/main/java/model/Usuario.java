@@ -4,22 +4,22 @@ public class Usuario {
     private int idUsuario;
     private String nome;
     private String cpfCnpj;
-    private String status;
+    private Integer fkPlano;
+    private Integer fkCargo;
     private String email;
     private String senha;
-
-    private int idPlano;
 
     public Usuario() {
     }
 
-    public Usuario(String nome, String cpfCnpj, String status, String email, String senha, int idPlano) {
+    public Usuario(int idUsuario, String nome, String cpfCnpj, Integer fkPlano, Integer fkCargo, String email, String senha) {
+        this.idUsuario = idUsuario;
         this.nome = nome;
         this.cpfCnpj = cpfCnpj;
-        this.status = status;
+        this.fkPlano = fkPlano;
+        this.fkCargo = fkCargo;
         this.email = email;
         this.senha = senha;
-        this.idPlano = idPlano;
     }
 
     public int getIdUsuario() {
@@ -46,12 +46,20 @@ public class Usuario {
         this.cpfCnpj = cpfCnpj;
     }
 
-    public String getStatus() {
-        return status;
+    public Integer getFkPlano() {
+        return fkPlano;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setFkPlano(Integer fkPlano) {
+        this.fkPlano = fkPlano;
+    }
+
+    public Integer getFkCargo() {
+        return fkCargo;
+    }
+
+    public void setFkCargo(Integer fkCargo) {
+        this.fkCargo = fkCargo;
     }
 
     public String getEmail() {
@@ -68,13 +76,5 @@ public class Usuario {
 
     public void setSenha(String senha) {
         this.senha = senha;
-    }
-
-    public int getIdPlano() {
-        return idPlano;
-    }
-
-    public void setIdPlano(int idPlano) {
-        this.idPlano = idPlano;
     }
 }

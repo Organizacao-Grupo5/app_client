@@ -2,24 +2,18 @@ package app.system;
 
 import app.integration.HardwareIntegration;
 import com.github.britooo.looca.api.core.Looca;
-import com.github.britooo.looca.api.group.discos.Disco;
-import com.github.britooo.looca.api.group.dispositivos.DispositivoUsb;
-import com.github.britooo.looca.api.group.janelas.Janela;
 import com.github.britooo.looca.api.group.memoria.Memoria;
 import com.github.britooo.looca.api.group.processador.Processador;
 import com.github.britooo.looca.api.group.sistema.Sistema;
 import com.mysql.cj.util.StringUtils;
-import exception.InvalidDataException;
-import model.*;
+import model.Componentes.*;
+import model.Maquina;
 import oshi.SystemInfo;
 import util.logs.Logger;
 import oshi.hardware.*;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
 public class SystemMonitor {
     private final Looca looca = new Looca();
@@ -693,6 +687,36 @@ public class SystemMonitor {
         }
 
         return volumes;
+    }
+
+    public PlacaMae capturarInformacoesPlacaMae() {
+        SystemInfo systemInfo = new SystemInfo();
+        HardwareAbstractionLayer hardware = systemInfo.getHardware();
+        ComputerSystem computerSystem = hardware.getComputerSystem();
+
+        String fabricantePlacaMae = computerSystem.getManufacturer();
+        String modeloPlacaMae = computerSystem.getModel();
+
+        try {
+            if (fabricantePlacaMae == null || fabricantePlacaMae.isEmpty()) {
+                Logger.logWarning("Fabricante da placa mãe não foi capturado.");
+            } else {
+                Logger.logInfo("Fabricante da placa mãe capturado: " + fabricantePlacaMae);
+            }
+
+            if (modeloPlacaMae == null || modeloPlacaMae.isEmpty()) {
+                Logger.logWarning("Modelo da placa mãe não foi capturado.");
+            } else {
+                Logger.logInfo("Modelo da placa mãe capturado: " + modeloPlacaMae);
+            }
+
+            PlacaMae placaMae = new PlacaMae(fabricantePlacaMae, modeloPlacaMae);
+            Logger.logInfo("Dados da placa mãe gravados.");
+            return placaMae;
+        } catch (IllegalArgumentException e) {
+            Logger.logError("Erro ao capturar informações da placa mãe: ", e.getMessage(), e);
+            return null;
+        }
     }
 
 }

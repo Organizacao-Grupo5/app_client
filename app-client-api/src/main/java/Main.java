@@ -1,17 +1,20 @@
-import app.security.Login;
+import util.security.Login;
 
 import app.system.SystemMonitor;
+import com.mysql.cj.util.StringUtils;
 import exception.AutenticationException;
 import model.*;
-import service.ServiceMonitoring;
+import model.Componentes.*;
+import service.ServicePC;
 
 import java.io.Console;
 import java.util.*;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
-import util.TablePrinter;
+import util.reports.TablePrinter;
 import util.logs.*;
 import util.reports.PDFGenerator;
 
@@ -31,6 +34,8 @@ public class Main {
     private static PlacaMae placaMae = new PlacaMae();
     private static Maquina maquina = new Maquina();
     private static List<ConexaoUSB> usb = new ArrayList<>();
+
+    private static ServicePC servicePC = new ServicePC();
 
     public static void main(String[] args) throws Exception {
         Logger.logInfo("Servidor iniciando.");
@@ -99,6 +104,12 @@ public class Main {
 
                         Vamos verificar as permissões da sua máquina...
                         """.formatted(usuarioLogado.getNome(), usuarioLogado.getEmail()));
+                maquina = servicePC.verificarMaquina(usuarioLogado);
+
+                if (maquina == null){
+                    Logger.logWarning("Não foi possível acessar a máquina do usuário");
+                }
+
                 Logger.logInfo("Usuário logado com sucesso: " + usuarioLogado.getEmail());
                 iniciarMonitoramento();
             } else {
@@ -121,6 +132,16 @@ public class Main {
 
     public static void iniciarMonitoramento() {
         SystemMonitor systemMonitor = new SystemMonitor();
+        maquina.setComponentes(Arrays.asList(
+                sistemaOp, cpu, ram
+        ));
+
+        maquina.getComponentes().addAll(hdd);
+        maquina.getComponentes().addAll(bateria);
+        maquina.getComponentes().addAll(gpu);
+        maquina.getComponentes().addAll(usb);
+        maquina.getComponentes().addAll(volume);
+        maquina.getComponentes().addAll(app);
 
         try {
             executorService = Executors.newScheduledThreadPool(1);
@@ -159,9 +180,7 @@ public class Main {
                     case "b":
                         clearTerminal();
                         System.out.println(Logger.displayLogsInConsole());
-                        Map<String, Object> mapaLogs = new HashMap<>();
-                        mapaLogs.put("LOGSPDF",Logger.displayLogsInConsole());
-                        baixarPDF(mapaLogs);
+                        baixarPDF(Logger.displayLogsInConsole());
                         break;
                     case "c":
                         clearTerminal();
@@ -196,7 +215,7 @@ public class Main {
     }
 
     public static void displayTables() throws Exception {
-        ServiceMonitoring serviceMonitoring = new ServiceMonitoring();
+        ServicePC serviceMonitoring = new ServicePC();
         TablePrinter tablePrinter = new TablePrinter();
         System.out.println("""
                 +---------------------------------------------------------------------------+
@@ -217,70 +236,74 @@ public class Main {
             case "a":
                 clearTerminal();
                 System.out.println("Mostrando todas as tabelas...");
-                Map<String, Object> todasAsTabelas = serviceMonitoring.exibirTabelas(cpu, gpu, hdd, sistemaOp, ram, app, usb, bateria, volume);
-                System.out.println(todasAsTabelas.get("TODASSTRING"));
-                baixarPDF(todasAsTabelas);
+                System.out.println(maquina.exibirTabelaComponentes());
+                baixarPDF(maquina.layoutPdfComponentes());
                 break;
             case "b":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de CPU...");
-                Map<String, Object> tabelaCpu = serviceMonitoring.exibirTabelaCPU(cpu);
-                System.out.println(tabelaCpu.get("CPUSTRING"));
-                baixarPDF(tabelaCpu);
+                System.out.println(cpu.tabelaConvert());
+                baixarPDF(cpu.pdfLayout());
                 break;
             case "c":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de HDD...");
-                Map<String, Object> tabelaHDD = serviceMonitoring.exibirTabelaHDD(hdd);
-                System.out.println(tabelaHDD.get("HDDSTRING"));
-                baixarPDF(tabelaHDD);
+                hdd.forEach(h -> {
+                    System.out.println(h.tabelaConvert());
+                });
+                baixarPDF(new StringBuilder(hdd.stream().map(HDD::pdfLayout).collect(Collectors.joining())).toString());
                 break;
             case "d":
                 clearTerminal();
                 System.out.println("Mostrando as tabelas de GPU...");
-                System.out.println(gpu.get(0).tabela());
-//                baixarPDF(tabelaGPU);
+                gpu.forEach(g -> {
+                    System.out.println(g.tabelaConvert());
+                });
+                baixarPDF(new StringBuilder(gpu.stream().map(GPU::pdfLayout).collect(Collectors.joining())).toString());
                 break;
             case "e":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de RAM...");
-                Map<String, Object> tabelaRam = serviceMonitoring.exibirTabelaMemoriaRAM(ram);
-                System.out.println(tabelaRam.get("MemoriaRAMSTRING"));
-                baixarPDF(tabelaRam);
+                System.out.println(ram.tabelaConvert());
+                baixarPDF(ram.pdfLayout());
                 break;
             case "f":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de APPs abertos...");
-                Map<String, Object> tabelaApps = serviceMonitoring.exibirTabelaAPP(app);
-                System.out.println(tabelaApps.get("APPSTRING"));
-                baixarPDF(tabelaApps);
+                app.forEach(a -> {
+                    System.out.println(a.tabelaConvert());
+                });
+                baixarPDF(new StringBuilder(app.stream().map(APP::tabelaConvert).collect(Collectors.joining())).toString());
                 break;
             case "g":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de Bateria...");
-                System.out.println(bateria.get(0).tabela());
-//                baixarPDF(tabelaBateria);
+                bateria.forEach(b -> {
+                    System.out.println(b.tabelaConvert());
+                });
+                baixarPDF(new StringBuilder(bateria.stream().map(Bateria::tabelaConvert).collect(Collectors.joining())).toString());
                 break;
             case "h":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de Sistema Operacional...");
-                Map<String, Object> tabelaSistemaOP = serviceMonitoring.exibirTabelaSO(sistemaOp);
-                System.out.println(tabelaSistemaOP.get("SOSTRING"));
-                baixarPDF(tabelaSistemaOP);
+                System.out.println(sistemaOp.tabelaConvert());
+                baixarPDF(sistemaOp.tabelaConvert());
                 break;
             case "i":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de Volume...");
-                Map<String, Object> tabelaVolume = serviceMonitoring.exibirTabelaVolume(volume);
-                System.out.println(tabelaVolume.get("VolumeSTRING"));
-                baixarPDF(tabelaVolume);
+                volume.forEach(v -> {
+                    System.out.println(v.tabelaConvert());
+                });
+                baixarPDF(volume.stream().map(Volume::tabelaConvert).collect(Collectors.joining()).toString());
                 break;
             case "j":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de USB...");
-                Map<String, Object> tabelaUSB = serviceMonitoring.exibirTabelaConexaoUSB(usb);
-                System.out.println(tabelaUSB.get("ConexaoUSBSTRING"));
-                baixarPDF(tabelaUSB);
+                usb.forEach(u -> {
+                    System.out.println(u.tabelaConvert());
+                });
+                baixarPDF(usb.stream().map(ConexaoUSB::tabelaConvert).collect(Collectors.joining()).toString());
                 break;
             case "1":
                 clearTerminal();
@@ -288,9 +311,7 @@ public class Main {
             case "2":
                 clearTerminal();
                 System.out.println(Logger.displayLogsInConsole());
-                Map<String, Object> mapaLogs = new HashMap<>();
-                mapaLogs.put("LOGSSTRING",Logger.displayLogsInConsole());
-                baixarPDF(mapaLogs);
+                baixarPDF(Logger.displayLogsInConsole());
                 break;
             case "3":
                 clearTerminal();
@@ -304,7 +325,7 @@ public class Main {
         }
     }
 
-    public static void baixarPDF(Map<String, Object> tabela) {
+    public static void baixarPDF(String tabela) {
         PDFGenerator pdfGenerator = new PDFGenerator();
 
         System.out.println("""
@@ -318,17 +339,10 @@ public class Main {
         String choice = scanner.nextLine();
         switch (choice) {
             case "5":
-                String chaveString = null;
-                for (String chave : tabela.keySet()) {
-                    if (chave.toUpperCase().contains("PDF")) {
-                        chaveString = chave;
-                        break;
-                    }
-                }
-                if (chaveString != null) {
-                    pdfGenerator.gerarPDF(tabela.get(chaveString).toString());
-                } else {
-                    Logger.logWarning("Não foi possível gerar o PDF.");
+                if (!StringUtils.isNullOrEmpty(tabela)){
+                    pdfGenerator.gerarPDF(tabela);
+                } else{
+                    System.out.println("Nenhum layout de pdf encontrado");
                 }
                 break;
         }

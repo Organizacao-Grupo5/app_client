@@ -1,7 +1,7 @@
 package dao;
 
 import model.Usuario;
-import util.Connector;
+import util.database.MySQLConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -12,8 +12,8 @@ import java.util.Optional;
 public class UsuarioDAO {
 
     public Optional<Usuario> findByEmailAndSenha(String email, String senha) {
-        try (Connection conexao = Connector.ConBD();
-             PreparedStatement preparedStatement = conexao.prepareStatement("SELECT * FROM Usuario WHERE email = ? and senha = ?")) {
+        try (Connection conexao = MySQLConnection.ConBD();
+             PreparedStatement preparedStatement = conexao.prepareStatement("SELECT * FROM Usuario JOIN identificacao ON usuario.idUsuario = identificacao.fkUsuario WHERE email = ? and senha = ?")) {
 
             preparedStatement.setString(1, email);
             preparedStatement.setString(2, senha);
@@ -34,12 +34,12 @@ public class UsuarioDAO {
     private Usuario createUser(ResultSet resultSet) throws SQLException {
         Usuario usuario = new Usuario();
         usuario.setIdUsuario(resultSet.getInt("idUsuario"));
-        usuario.setNome(resultSet.getString("Nome"));
-        usuario.setEmail(resultSet.getString("Email"));
-        usuario.setSenha(resultSet.getString("Senha"));
-        usuario.setCpfCnpj(resultSet.getString("CPF_CNPJ"));
-        usuario.setStatus(resultSet.getString("Status"));
-        usuario.setIdPlano(resultSet.getInt("fkPlano"));
+        usuario.setNome(resultSet.getString("nome"));
+        usuario.setEmail(resultSet.getString("email"));
+        usuario.setSenha(resultSet.getString("senha"));
+        usuario.setCpfCnpj(resultSet.getString("cpf_cnpj"));
+        usuario.setFkCargo(resultSet.getInt("fkCargos"));
+        usuario.setFkPlano(resultSet.getInt("fkPlano"));
         return usuario;
     }
 }

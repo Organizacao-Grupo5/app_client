@@ -1,21 +1,26 @@
 package model;
 
+import model.Componentes.Componente;
+import model.Componentes.PlacaMae;
+
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Maquina {
     private int idMaquina;
     private String ipv4;
     private Usuario usuario;
-    private PlacaMae placaMae;
-    private List<Object> componentes;
+    private List<Componente> componentes;
 
     public Maquina() {
+        componentes = new ArrayList<>();
     }
 
-    public Maquina(String ipv4, Usuario usuario, PlacaMae placaMae) {
+    public Maquina(String ipv4, Usuario usuario) {
         this.ipv4 = ipv4;
         this.usuario = usuario;
-        this.placaMae = placaMae;
+        componentes = new ArrayList<>();
     }
 
     public int getIdMaquina() {
@@ -42,23 +47,23 @@ public class Maquina {
         this.usuario = usuario;
     }
 
-    public PlacaMae getPlacaMae() {
-        return placaMae;
-    }
-
-    public void setPlacaMae(PlacaMae placaMae) {
-        this.placaMae = placaMae;
-    }
-
-    public List<Object> getComponentes() {
+    public List<Componente> getComponentes() {
         return componentes;
     }
 
-    public void setComponentes(List<Object> componentes) {
+    public void setComponentes(List<Componente> componentes) {
         this.componentes = componentes;
     }
 
-    public void exibirTabela(List<List<String>> tabela){
+    public String exibirTabelaComponentes(){
+        return new StringBuilder(componentes.stream()
+                .map(Componente::tabelaConvert)
+                .collect(Collectors.joining())).toString();
+    }
 
+    public String layoutPdfComponentes(){
+        return new StringBuilder(componentes.stream()
+                .map(Componente::pdfLayout)
+                .collect(Collectors.joining())).toString();
     }
 }
