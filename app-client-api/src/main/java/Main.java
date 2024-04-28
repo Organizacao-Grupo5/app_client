@@ -383,32 +383,34 @@ public class Main {
 
 	public static String exibirOpcoes() {
 		StringBuilder opcoes = new StringBuilder();
-		opcoes.append("""
-				+---------------------------------------------------------------------------+
-				|             Muitos dados foram capturados. Escolha o que exibir           |
-				+---------------------------------------------------------------------------+
-				| a - Todas as tabelas   |""");
+		opcoes.append(
+				"\n+----------------------------------------------------------------------------+\n" +
+				"|             Muitos dados foram capturados. Escolha o que exibir            |\n" +
+				"+----------------------------------------------------------------------------+\n" +
+				"| a - Todas as tabelas    |");
 
 		boolean hasHDD = false;
 		boolean hasAPPs = false;
-		Integer qtdPLinha = 1;
+		int qtdPLinha = 1;
+		int qtdOpcoesNaLinha = 1;
 		for (Componente componente : maquina.getComponentes()) {
+			if (qtdOpcoesNaLinha >= 3) {
+				opcoes.append("\n|");
+				qtdOpcoesNaLinha = 0;
+			}
+
 			if (componente instanceof CPU) {
-				opcoes.append(" b - Tabela CPU         |");
-			} else if (componente instanceof HDD) {
-				if (!hasHDD) {
-					opcoes.append(" c - Tabela de HDD      |");
-					hasHDD = true;
-				}
+				opcoes.append(" b - Tabela CPU          |");
+			} else if (componente instanceof HDD && !hasHDD) {
+				opcoes.append(" c - Tabela de HDD      |");
+				hasHDD = true;
 			} else if (componente instanceof GPU) {
 				opcoes.append(" d - Tabelas de GPU      |");
 			} else if (componente instanceof MemoriaRam) {
-				opcoes.append(" e - Tabela de Ram      |");
-			} else if (componente instanceof APP) {
-				if (!hasAPPs) {
-					opcoes.append(" f - Tabela de APPs abertos |");
-					hasAPPs = true;
-				}
+				opcoes.append(" e - Tabela de Ram       |");
+			} else if (componente instanceof APP && !hasAPPs) {
+				opcoes.append(" f - Tabela de APPs abertos  |");
+				hasAPPs = true;
 			} else if (componente instanceof Bateria) {
 				opcoes.append(" g - Tabela de Bateria  |");
 			} else if (componente instanceof SistemaOp) {
@@ -416,25 +418,23 @@ public class Main {
 			} else if (componente instanceof Volume) {
 				opcoes.append(" i - Tabela de Volume    |");
 			} else if (componente instanceof ConexaoUSB) {
-				opcoes.append(" j - Tabela de USB      |");
+				opcoes.append(" j - Tabela de USB       |");
 			}
-			if (qtdPLinha % 3 == 0 && qtdPLinha != maquina.getComponentes().size()) {
-				opcoes.append("\n|");
-			}
+
 			qtdPLinha++;
+			qtdOpcoesNaLinha++;
 		}
 
-		int espacosExtras = (3 - (qtdPLinha - 1) % 3) % 3;
-		for (int i = 0; i < espacosExtras; i++) {
+		while (qtdOpcoesNaLinha <= 3) {
 			opcoes.append("                        |");
+			qtdOpcoesNaLinha++;
 		}
 
-		opcoes.append("""
-				\n+--------------------------+--------------+----------+----------------------+
-				| 1 - Exibir monitoramento | 2 - Ver Logs | 3 - Sair | 4 - Voltar           |
-				+--------------------------+--------------+----------+----------------------+
-				""");
+		opcoes.append("\n+-------------------------+--------------+----------+------------------------+\n" +
+				"| 1 - Exibir monitoramento| 2 - Ver Logs | 3 - Sair | 4 - Voltar             |\n" +
+				"+-------------------------+--------------+----------+------------------------+\n");
 
 		return opcoes.toString();
 	}
+
 }

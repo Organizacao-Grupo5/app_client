@@ -11,7 +11,7 @@ public class MySQLConnection {
 
 	public static Connection ConBD() throws SQLException {
 		try {
-			return DriverManager.getConnection("jdbc:mysql://localhost/der_grupo_5", "root", "SUA SENHA DO BANCO");
+			return DriverManager.getConnection("jdbc:mysql://localhost/der_grupo_5", "root", "54157592808");
 		} catch (SQLException e) {
 			logger.log(Level.SEVERE, "Erro ao conectar ao banco de dados", e);
 			throw e;
