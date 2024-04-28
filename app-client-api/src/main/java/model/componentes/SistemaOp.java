@@ -1,4 +1,4 @@
-package model.Componentes;
+package model.componentes;
 
 import util.reports.CreatePDFInfos;
 import util.reports.TablePrinter;
@@ -13,10 +13,10 @@ public class SistemaOp extends Componente{
     private String inicializado;
     private String permissao;
     private String tempoDeAtividade;
-    private LocalDateTime dataHoraCaptura;
+    private LocalDateTime dataCaptura;
 
     public SistemaOp() {
-        dataHoraCaptura = LocalDateTime.now();
+        dataCaptura = LocalDateTime.now();
     }
 
     public SistemaOp(String arquitetura, String inicializado, String permissao, String tempoDeAtividade) {
@@ -25,7 +25,7 @@ public class SistemaOp extends Componente{
         this.inicializado = inicializado;
         this.permissao = permissao ;
         this.tempoDeAtividade = tempoDeAtividade;
-        this.dataHoraCaptura = LocalDateTime.now();
+        this.dataCaptura = LocalDateTime.now();
     }
 
     public String getPermissao() {
@@ -33,11 +33,11 @@ public class SistemaOp extends Componente{
     }
 
     public LocalDateTime getDataHoraCaptura() {
-        return dataHoraCaptura;
+        return dataCaptura;
     }
 
-    public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
-        this.dataHoraCaptura = dataHoraCaptura;
+    public void setDataHoraCaptura(LocalDateTime dataCaptura) {
+        this.dataCaptura = dataCaptura;
     }
 
     public String getArquitetura() {
@@ -75,7 +75,7 @@ public class SistemaOp extends Componente{
     public List<List<String>> tabela() {
         return Arrays.asList(
                 Arrays.asList("", "Sistema Operacional"),
-                Arrays.asList("Data Hora captura", String.valueOf(dataHoraCaptura)),
+                Arrays.asList("Data Hora captura", String.valueOf(dataCaptura)),
                 Arrays.asList("Nome Sistema", Optional.ofNullable(modelo).orElse("VALOR NÃO ENCONTRADO")),
                 Arrays.asList("Fabricante", Optional.ofNullable(fabricante).orElse("VALOR NÃO ENCONTRADO")),
                 Arrays.asList("Arquitetura", Optional.ofNullable(arquitetura).orElse("VALOR NÃO ENCONTRADO")),

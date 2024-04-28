@@ -1,23 +1,23 @@
-package model.Componentes;
+package model.componentes;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
 public class PlacaMae extends Componente{
 
-    private LocalDateTime dataHoraCaptura;
+    private LocalDateTime dataCaptura;
 
     public PlacaMae() {
         super();
-        this.dataHoraCaptura = LocalDateTime.now();
+        this.dataCaptura = LocalDateTime.now();
     }
 
     public LocalDateTime getDataHoraCaptura() {
-        return dataHoraCaptura;
+        return dataCaptura;
     }
 
-    public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
-        this.dataHoraCaptura = dataHoraCaptura;
+    public void setDataHoraCaptura(LocalDateTime dataCaptura) {
+        this.dataCaptura = dataCaptura;
     }
 
     @Override

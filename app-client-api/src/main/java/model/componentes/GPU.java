@@ -1,4 +1,4 @@
-package model.Componentes;
+package model.componentes;
 
 import util.reports.CreatePDFInfos;
 import util.reports.TablePrinter;
@@ -12,11 +12,10 @@ public class GPU extends Componente{
     private String versao;
     private String idDevice;
     private Double vRam;
-    private LocalDateTime dataHoraCaptura;
     private Double temperatura;
 
     public GPU() {
-        dataHoraCaptura = LocalDateTime.now();
+        dataCaptura = LocalDateTime.now();
     }
 
     public GPU(String versao, String idDevice, Double vRam) {
@@ -24,7 +23,7 @@ public class GPU extends Componente{
         this.versao = versao;
         this.idDevice = idDevice;
         this.vRam = vRam;
-        this.dataHoraCaptura = LocalDateTime.now();
+        this.dataCaptura = LocalDateTime.now();
     }
 
     public Double getTemperatura() {
@@ -36,11 +35,11 @@ public class GPU extends Componente{
     }
 
     public LocalDateTime getDataHoraCaptura() {
-        return dataHoraCaptura;
+        return dataCaptura;
     }
 
-    public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
-        this.dataHoraCaptura = dataHoraCaptura;
+    public void setDataHoraCaptura(LocalDateTime dataCaptura) {
+        this.dataCaptura = dataCaptura;
     }
 
     public String getVersao() {
@@ -71,7 +70,7 @@ public class GPU extends Componente{
     public List<List<String>> tabela() {
         return Arrays.asList(
                 Arrays.asList("", "GPU"),
-                Arrays.asList("Data Hora captura", String.valueOf(dataHoraCaptura)),
+                Arrays.asList("Data Hora captura", String.valueOf(dataCaptura)),
                 Arrays.asList("ID", Optional.ofNullable(super.idComponente).map(Object::toString).orElse("N/A")),
                 Arrays.asList("Nome", Optional.ofNullable(modelo).orElse("N/A")),
                 Arrays.asList("Fabricante", Optional.ofNullable(fabricante).orElse("N/A")),
@@ -81,7 +80,6 @@ public class GPU extends Componente{
                 Arrays.asList("Temperatura", Optional.ofNullable(temperatura).map(Object::toString).orElse("N/A") + "°C")
         );
     }
-
     @Override
     public String tabelaConvert(){
         return TablePrinter.printTable(tabela());
@@ -93,5 +91,13 @@ public class GPU extends Componente{
     @Override
     public String getComponente() {
         return this.getClass().getSimpleName();
+    }
+    @Override
+    public String getUnidadeMedida() {
+        return "°C";
+    }
+    @Override
+    public Double getDadoCaptura() {
+        return temperatura;
     }
 }

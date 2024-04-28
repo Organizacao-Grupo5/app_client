@@ -1,4 +1,4 @@
-package model.Componentes;
+package model.componentes;
 
 import util.reports.CreatePDFInfos;
 import util.reports.TablePrinter;
@@ -17,10 +17,9 @@ public class HDD extends Componente{
     private Double bytesDeLeitura;
     private Double tamanho;
     private Double tempoDeTransferencia;
-    private LocalDateTime dataHoraCaptura;
 
     public HDD() {
-        this.dataHoraCaptura = LocalDateTime.now();
+        this.dataCaptura = LocalDateTime.now();
     }
 
     public HDD(String nome, String serial, Double escritas, Double leituras, Double bytesDeEscrita, Double bytesDeLeitura, Double tamanho, Double tempoDeTransferencia) {
@@ -33,7 +32,7 @@ public class HDD extends Componente{
         this.bytesDeLeitura = bytesDeLeitura;
         this.tamanho = tamanho;
         this.tempoDeTransferencia = tempoDeTransferencia;
-        this.dataHoraCaptura = LocalDateTime.now();
+        this.dataCaptura = LocalDateTime.now();
     }
 
     public String getNome() {
@@ -89,11 +88,11 @@ public class HDD extends Componente{
     }
 
     public LocalDateTime getDataHoraCaptura() {
-        return dataHoraCaptura;
+        return dataCaptura;
     }
 
-    public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
-        this.dataHoraCaptura = dataHoraCaptura;
+    public void setDataHoraCaptura(LocalDateTime dataCaptura) {
+        this.dataCaptura = dataCaptura;
     }
 
     public void setTamanho(Double tamanho) {
@@ -112,7 +111,7 @@ public class HDD extends Componente{
     public List<List<String>> tabela() {
         return Arrays.asList(
                 Arrays.asList("", "HDD"),
-                Arrays.asList("Data Hora captura", String.valueOf(dataHoraCaptura)),
+                Arrays.asList("Data Hora captura", String.valueOf(dataCaptura)),
                 Arrays.asList("Nome", Optional.ofNullable(nome).orElse("N/A")),
                 Arrays.asList("Serial", Optional.ofNullable(serial).orElse("N/A")),
                 Arrays.asList("Modelo", Optional.ofNullable(modelo).orElse("N/A")),
@@ -136,5 +135,13 @@ public class HDD extends Componente{
     @Override
     public String getComponente() {
         return this.getClass().getSimpleName();
+    }
+    @Override
+    public String getUnidadeMedida() {
+        return "GB";
+    }
+    @Override
+    public Double getDadoCaptura() {
+        return tamanho;
     }
 }

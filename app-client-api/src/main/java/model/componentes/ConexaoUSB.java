@@ -1,4 +1,4 @@
-package model.Componentes;
+package model.componentes;
 
 import util.reports.CreatePDFInfos;
 import util.reports.TablePrinter;
@@ -13,10 +13,9 @@ public class ConexaoUSB extends Componente{
     private String idFornecedor;
     private String numeroSerie;
     private String idProduto;
-    private LocalDateTime dataHoraCaptura;
 
     public ConexaoUSB() {
-        this.dataHoraCaptura = LocalDateTime.now();
+        this.dataCaptura = LocalDateTime.now();
     }
 
     public ConexaoUSB(String idDispositivoUSBExclusivo, String idFornecedor, String numeroSerie, String idProduto) {
@@ -25,15 +24,15 @@ public class ConexaoUSB extends Componente{
         this.idFornecedor = idFornecedor;
         this.numeroSerie = numeroSerie;
         this.idProduto = idProduto;
-        this.dataHoraCaptura = LocalDateTime.now();
+        this.dataCaptura = LocalDateTime.now();
     }
 
     public LocalDateTime getDataHoraCaptura() {
-        return dataHoraCaptura;
+        return dataCaptura;
     }
 
-    public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
-        this.dataHoraCaptura = dataHoraCaptura;
+    public void setDataHoraCaptura(LocalDateTime dataCaptura) {
+        this.dataCaptura = dataCaptura;
     }
 
     public String getIdDispositivoUSBExclusivo() {
@@ -72,10 +71,10 @@ public class ConexaoUSB extends Componente{
     public List<List<String>> tabela() {
         return Arrays.asList(
                 Arrays.asList("", "Conexão USB"),
-                Arrays.asList("Data Hora captura", String.valueOf(dataHoraCaptura)),
+                Arrays.asList("Data Hora captura", String.valueOf(dataCaptura)),
                 Arrays.asList("Nome USB", Optional.ofNullable(modelo).orElse("N/A")),
                 Arrays.asList("Fornecedor", Optional.ofNullable(fabricante).orElse("N/A")),
-                Arrays.asList("Data hora captura", Optional.ofNullable(dataHoraCaptura).map(Object::toString).orElse("N/A")),
+                Arrays.asList("Data hora captura", Optional.ofNullable(dataCaptura).map(Object::toString).orElse("N/A")),
                 Arrays.asList("Id Fornecedor", Optional.ofNullable(idFornecedor).map(Object::toString).orElse("N/A")),
                 Arrays.asList("Número Série", Optional.ofNullable(numeroSerie).map(Object::toString).orElse("N/A")),
                 Arrays.asList("Id Dispositivo USB exclusivo", Optional.ofNullable(idDispositivoUSBExclusivo).map(Object::toString).orElse("N/A")),

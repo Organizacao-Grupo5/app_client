@@ -1,4 +1,4 @@
-package model.Componentes;
+package model.componentes;
 
 import util.reports.CreatePDFInfos;
 import util.reports.TablePrinter;

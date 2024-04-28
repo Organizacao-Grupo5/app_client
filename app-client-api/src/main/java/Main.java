@@ -5,7 +5,7 @@ import app.system.SystemMonitor;
 import com.mysql.cj.util.StringUtils;
 import exception.AutenticationException;
 import model.*;
-import model.Componentes.*;
+import model.componentes.*;
 import service.ServicePC;
 
 import java.io.Console;
@@ -24,18 +24,7 @@ public class Main {
     private static final Login login = new Login();
     private static ScheduledExecutorService executorService;
 
-    private static CPU cpu = new CPU();
-    private static List<GPU> gpu = new ArrayList<>();
-    private static List<HDD> hdd = new ArrayList<>();
-    private static MemoriaRam ram = new MemoriaRam();
-    private static List<APP> app = new ArrayList<>();
-    private static List<Bateria> bateria = new ArrayList<>();
-    private static List<Volume> volume = new ArrayList<>();
-    private static SistemaOp sistemaOp = new SistemaOp();
-    private static PlacaMae placaMae = new PlacaMae();
     private static Maquina maquina = new Maquina();
-    private static List<ConexaoUSB> usb = new ArrayList<>();
-
     private static ServicePC servicePC = new ServicePC();
     private static ServiceComponente serviceComponente = new ServiceComponente();
 
@@ -106,6 +95,7 @@ public class Main {
 
                         Vamos verificar as permissões da sua máquina...
                         """.formatted(usuarioLogado.getNome(), usuarioLogado.getEmail()));
+
                 maquina = servicePC.verificarMaquina(usuarioLogado);
 
                 if (maquina == null){
@@ -138,18 +128,11 @@ public class Main {
         serviceComponente.obterComponentes(maquina);
 
         try {
+            Logger.logInfo("Capturando os componentes:\n");
             executorService = Executors.newScheduledThreadPool(1);
             executorService.scheduleAtFixedRate(() -> {
-                sistemaOp = systemMonitor.monitorarSistemaOperacional();
-                cpu = systemMonitor.monitorarCPU();
-                hdd = systemMonitor.monitorarHDD();
-                bateria = systemMonitor.monitorarBateria();
-                ram = systemMonitor.monitorarRAM();
-                gpu = systemMonitor.monitorarGPU();
-                usb = systemMonitor.monitorarUSB();
-                volume = systemMonitor.monitorarVolumeLogico();
-                app = systemMonitor.monitorarDisplay();
-            }, 0, 10, TimeUnit.SECONDS);
+                serviceComponente.iniciarCapturas(maquina);
+            }, 0, 5, TimeUnit.SECONDS);
 
             Scanner scanner = new Scanner(System.in);
             boolean running = true;
@@ -236,68 +219,109 @@ public class Main {
             case "b":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de CPU...");
-                System.out.println(cpu.tabelaConvert());
-                baixarPDF(cpu.pdfLayout());
+                System.out.println(maquina.getComponentes().stream()
+                        .filter(componente -> componente instanceof CPU)
+                        .findFirst().get().tabelaConvert());
+                baixarPDF(maquina.getComponentes().stream()
+                        .filter(componente -> componente instanceof CPU)
+                        .findFirst().get().pdfLayout());
                 break;
             case "c":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de HDD...");
-                hdd.forEach(h -> {
-                    System.out.println(h.tabelaConvert());
+                maquina.getComponentes().forEach(componente -> {
+                    if (componente instanceof HDD){
+                        System.out.println(componente.tabelaConvert());
+                    }
                 });
-                baixarPDF(new StringBuilder(hdd.stream().map(HDD::pdfLayout).collect(Collectors.joining())).toString());
+                baixarPDF(new StringBuilder(maquina.getComponentes()
+                        .stream()
+                        .filter(componente -> componente instanceof HDD)
+                        .collect(Collectors.toList()).stream().map(Componente::pdfLayout).collect(Collectors.joining())).toString());
                 break;
             case "d":
                 clearTerminal();
                 System.out.println("Mostrando as tabelas de GPU...");
-                gpu.forEach(g -> {
-                    System.out.println(g.tabelaConvert());
+                maquina.getComponentes().forEach(componente -> {
+                    if (componente instanceof GPU){
+                        System.out.println(componente.tabelaConvert());
+                    }
                 });
-                baixarPDF(new StringBuilder(gpu.stream().map(GPU::pdfLayout).collect(Collectors.joining())).toString());
+                baixarPDF(new StringBuilder(maquina.getComponentes()
+                        .stream()
+                        .filter(componente -> componente instanceof GPU)
+                        .collect(Collectors.toList()).stream().map(Componente::pdfLayout).collect(Collectors.joining())).toString());
                 break;
             case "e":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de RAM...");
-                System.out.println(ram.tabelaConvert());
-                baixarPDF(ram.pdfLayout());
+                System.out.println(maquina.getComponentes().stream()
+                        .filter(componente -> componente instanceof MemoriaRam)
+                        .findFirst().get().tabelaConvert());
+                baixarPDF(maquina.getComponentes().stream()
+                        .filter(componente -> componente instanceof MemoriaRam)
+                        .findFirst().get().pdfLayout());
                 break;
             case "f":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de APPs abertos...");
-                app.forEach(a -> {
-                    System.out.println(a.tabelaConvert());
+                maquina.getComponentes().forEach(componente -> {
+                    if (componente instanceof APP){
+                        System.out.println(componente.tabelaConvert());
+                    }
                 });
-                baixarPDF(new StringBuilder(app.stream().map(APP::tabelaConvert).collect(Collectors.joining())).toString());
+                baixarPDF(new StringBuilder(maquina.getComponentes()
+                        .stream()
+                        .filter(componente -> componente instanceof APP)
+                        .collect(Collectors.toList()).stream().map(Componente::pdfLayout).collect(Collectors.joining())).toString());
                 break;
             case "g":
                 clearTerminal();
-                System.out.println("Mostrando a tabela de Bateria...");
-                bateria.forEach(b -> {
-                    System.out.println(b.tabelaConvert());
+                maquina.getComponentes().forEach(componente -> {
+                    if (componente instanceof Bateria){
+                        System.out.println(componente.tabelaConvert());
+                    }
                 });
-                baixarPDF(new StringBuilder(bateria.stream().map(Bateria::tabelaConvert).collect(Collectors.joining())).toString());
+                baixarPDF(new StringBuilder(maquina.getComponentes()
+                        .stream()
+                        .filter(componente -> componente instanceof Bateria)
+                        .collect(Collectors.toList()).stream().map(Componente::pdfLayout).collect(Collectors.joining())).toString());
                 break;
             case "h":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de Sistema Operacional...");
-                System.out.println(sistemaOp.tabelaConvert());
-                baixarPDF(sistemaOp.tabelaConvert());
+                System.out.println(maquina.getComponentes().stream()
+                        .filter(componente -> componente instanceof SistemaOp)
+                        .findFirst().get().tabelaConvert());
+                baixarPDF(maquina.getComponentes().stream()
+                        .filter(componente -> componente instanceof SistemaOp)
+                        .findFirst().get().pdfLayout());
                 break;
             case "i":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de Volume...");
-                volume.forEach(v -> {
-                    System.out.println(v.tabelaConvert());
+                maquina.getComponentes().forEach(componente -> {
+                    if (componente instanceof Volume){
+                        System.out.println(componente.tabelaConvert());
+                    }
                 });
-                baixarPDF(volume.stream().map(Volume::tabelaConvert).collect(Collectors.joining()).toString());
+                baixarPDF(new StringBuilder(maquina.getComponentes()
+                        .stream()
+                        .filter(componente -> componente instanceof Volume)
+                        .collect(Collectors.toList()).stream().map(Componente::pdfLayout).collect(Collectors.joining())).toString());
                 break;
             case "j":
                 clearTerminal();
                 System.out.println("Mostrando a tabela de USB...");
-                usb.forEach(u -> {
-                    System.out.println(u.tabelaConvert());
+                maquina.getComponentes().forEach(componente -> {
+                    if (componente instanceof ConexaoUSB){
+                        System.out.println(componente.tabelaConvert());
+                    }
                 });
-                baixarPDF(usb.stream().map(ConexaoUSB::tabelaConvert).collect(Collectors.joining()).toString());
+                baixarPDF(new StringBuilder(maquina.getComponentes()
+                        .stream()
+                        .filter(componente -> componente instanceof ConexaoUSB)
+                        .collect(Collectors.toList()).stream().map(Componente::pdfLayout).collect(Collectors.joining())).toString());
                 break;
             case "1":
                 clearTerminal();

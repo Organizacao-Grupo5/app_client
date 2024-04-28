@@ -1,7 +1,6 @@
 package model;
 
-import model.Componentes.Componente;
-import model.Componentes.PlacaMae;
+import model.componentes.Componente;
 
 import java.util.ArrayList;
 import java.util.List;

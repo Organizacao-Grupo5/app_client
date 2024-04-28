@@ -1,5 +1,6 @@
-package model.Componentes;
+package model.componentes;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class Componente  {
@@ -8,6 +9,9 @@ public class Componente  {
     protected String modelo;
     protected String fabricante;
     protected Integer fkMaquina;
+    protected String unidadeMedida;
+    protected Double dadoCaptura;
+    protected LocalDateTime dataCaptura;
 
     public Componente() {
 
@@ -25,12 +29,13 @@ public class Componente  {
         return null;
     }
 
-    public Componente(Integer idComponente, String componente, String modelo, String fabricante, Integer fkMaquina) {
+    public Componente(Integer idComponente, String componente, String modelo, String fabricante, Integer fkMaquina, Double dadoCaptura) {
         this.idComponente = idComponente;
         this.componente = componente;
         this.modelo = modelo;
         this.fabricante = fabricante;
         this.fkMaquina = fkMaquina;
+        this.dadoCaptura = dadoCaptura;
     }
 
     public Componente(String fabricante, String modelo, String componente) {
@@ -78,5 +83,29 @@ public class Componente  {
 
     public void setFkMaquina(Integer fkMaquina) {
         this.fkMaquina = fkMaquina;
+    }
+
+    public String getUnidadeMedida() {
+        return unidadeMedida;
+    }
+
+    public void setUnidadeMedida(String unidadeMedida) {
+        this.unidadeMedida = unidadeMedida;
+    }
+
+    public Double getDadoCaptura() {
+        return dadoCaptura;
+    }
+
+    public void setDadoCaptura(Double dadoCaptura) {
+        this.dadoCaptura = dadoCaptura;
+    }
+
+    public LocalDateTime getDataCaptura() {
+        return dataCaptura;
+    }
+
+    public void setDataCaptura(LocalDateTime dataCaptura) {
+        this.dataCaptura = dataCaptura;
     }
 }

@@ -1,4 +1,4 @@
-package model.Componentes;
+package model.componentes;
 
 import util.reports.CreatePDFInfos;
 import util.reports.TablePrinter;
@@ -15,10 +15,9 @@ public class Volume extends Componente{
     private String tipo;
     private String uuid;
     private String pontoDeMontagem;
-    private LocalDateTime dataHoraCaptura;
 
     public Volume() {
-        this.dataHoraCaptura = LocalDateTime.now();
+        this.dataCaptura = LocalDateTime.now();
     }
 
     public Volume(String volume, Double disponivel, Double total, String tipo, String uuid, String pontoDeMontagem) {
@@ -29,15 +28,15 @@ public class Volume extends Componente{
         this.tipo = tipo;
         this.uuid = uuid;
         this.pontoDeMontagem = pontoDeMontagem;
-        this.dataHoraCaptura = LocalDateTime.now();
+        this.dataCaptura = LocalDateTime.now();
     }
 
     public LocalDateTime getDataHoraCaptura() {
-        return dataHoraCaptura;
+        return dataCaptura;
     }
 
-    public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
-        this.dataHoraCaptura = dataHoraCaptura;
+    public void setDataHoraCaptura(LocalDateTime dataCaptura) {
+        this.dataCaptura = dataCaptura;
     }
 
     public String getVolume() {
@@ -92,7 +91,7 @@ public class Volume extends Componente{
     public List<List<String>> tabela() {
         return Arrays.asList(
                 Arrays.asList("", "VOLUME"),
-                Arrays.asList("Data Hora captura", String.valueOf(dataHoraCaptura)),
+                Arrays.asList("Data Hora captura", String.valueOf(dataCaptura)),
                 Arrays.asList("Nome", Optional.ofNullable(modelo).orElse("N/A")),
                 Arrays.asList("Volume", Optional.ofNullable(volume).orElse("N/A")),
                 Arrays.asList("Disponível", Optional.ofNullable(disponivel).map(Object::toString).orElse("N/A")),
@@ -102,7 +101,6 @@ public class Volume extends Componente{
                 Arrays.asList("Ponto de Montagem", Optional.ofNullable(pontoDeMontagem).orElse("N/A"))
         );
     }
-
     @Override
     public String tabelaConvert(){
         return TablePrinter.printTable(tabela());
@@ -114,5 +112,13 @@ public class Volume extends Componente{
     @Override
     public String getComponente() {
         return this.getClass().getSimpleName();
+    }
+    @Override
+    public String getUnidadeMedida() {
+        return "GB";
+    }
+    @Override
+    public Double getDadoCaptura() {
+        return disponivel;
     }
 }

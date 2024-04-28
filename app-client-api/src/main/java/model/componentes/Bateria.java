@@ -1,4 +1,4 @@
-package model.Componentes;
+package model.componentes;
 
 import util.reports.CreatePDFInfos;
 import util.reports.TablePrinter;
@@ -25,11 +25,10 @@ public class Bateria extends Componente{
     private Double capacidadeMaxima;
     private Double percentualCapacidadeRestante;
     private String dataFabricacao;
-    private LocalDateTime dataHoraCaptura;
     private Double bateriaAtual;
 
     public Bateria() {
-        this.dataHoraCaptura = LocalDateTime.now();
+        this.dataCaptura = LocalDateTime.now();
     }
 
     public Bateria(Double amperagem, String nomeDispositivo, String numeroSerial, String quimica, Double voltagem, String unidadesCapacidade, Double capacidadeAtual, int ciclos, Double capacidadeDesign, Double tempoRestanteInstantaneo, Double tempoRestanteEstimado, Double taxaUsoEnergia, Double temperatura, Double capacidadeMaxima, Double percentualCapacidadeRestante, String dataFabricacao, Double bateriaAtual) {
@@ -51,12 +50,12 @@ public class Bateria extends Componente{
         this.percentualCapacidadeRestante = percentualCapacidadeRestante;
         this.dataFabricacao = dataFabricacao;
         this.fabricante = fabricante;
-        this.dataHoraCaptura = LocalDateTime.now();
+        this.dataCaptura = LocalDateTime.now();
         this.bateriaAtual = bateriaAtual;
     }
 
     public LocalDateTime getDataHoraCaptura() {
-        return dataHoraCaptura;
+        return dataCaptura;
     }
 
     public Double getBateriaAtual() {
@@ -67,8 +66,8 @@ public class Bateria extends Componente{
         this.bateriaAtual = bateriaAtual;
     }
 
-    public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
-        this.dataHoraCaptura = dataHoraCaptura;
+    public void setDataHoraCaptura(LocalDateTime dataCaptura) {
+        this.dataCaptura = dataCaptura;
     }
 
     public Double getAmperagem() {
@@ -216,7 +215,7 @@ public class Bateria extends Componente{
     public List<List<String>> tabela() {
         return Arrays.asList(
                 Arrays.asList("", "Bateria"),
-                Arrays.asList("Data Hora captura", String.valueOf(dataHoraCaptura)),
+                Arrays.asList("Data Hora captura", String.valueOf(dataCaptura)),
                 Arrays.asList("ID", Optional.ofNullable(super.idComponente).map(Object::toString).orElse("N/A")),
                 Arrays.asList("Amperagem", Optional.ofNullable(amperagem).map(Object::toString).orElse("N/A")),
                 Arrays.asList("Nome do Dispositivo", Optional.ofNullable(nomeDispositivo).orElse("N/A")),
@@ -239,7 +238,6 @@ public class Bateria extends Componente{
                 Arrays.asList("Bateria Atual (%)", Optional.ofNullable(bateriaAtual).map(Object::toString).orElse("N/A") + "%")
         );
     }
-
     @Override
     public String tabelaConvert(){
         return TablePrinter.printTable(tabela());
@@ -247,5 +245,13 @@ public class Bateria extends Componente{
     @Override
     public String pdfLayout(){
         return CreatePDFInfos.gerarLayoutPDF(tabela());
+    }
+    @Override
+    public String getUnidadeMedida() {
+        return "%";
+    }
+    @Override
+    public Double getDadoCaptura() {
+        return bateriaAtual;
     }
 }

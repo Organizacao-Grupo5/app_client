@@ -1,5 +1,6 @@
-package model.Componentes;
+package model.componentes;
 
+import app.system.SystemMonitor;
 import util.reports.CreatePDFInfos;
 import util.reports.TablePrinter;
 
@@ -9,6 +10,8 @@ import java.util.List;
 import java.util.Optional;
 
 public class CPU extends Componente{
+    SystemMonitor systemMonitor = new SystemMonitor();
+
     private Integer numeroDeCpusLogicas;
     private Integer numeroDeCpusFisicas;
     private String microarquitetura;
@@ -19,11 +22,10 @@ public class CPU extends Componente{
     private Integer numeroPacotesFisicos;
     private Double uso;
     private Double temperatura;
-    private LocalDateTime dataHoraCaptura;
 
     public CPU() {
         super();
-        this.dataHoraCaptura = LocalDateTime.now();
+        this.dataCaptura = LocalDateTime.now();
     }
 
     public CPU(Integer numeroDeCpusLogicas, Integer numeroDeCpusFisicas, String microarquitetura, String identificador, String idCpuLooca, Double frequencia, Integer numeroPacotesFisicos, Double uso, Double temperatura) {
@@ -37,15 +39,15 @@ public class CPU extends Componente{
         this.numeroPacotesFisicos = numeroPacotesFisicos;
         this.uso = uso;
         this.temperatura = temperatura;
-        this.dataHoraCaptura = LocalDateTime.now();
+        this.dataCaptura = LocalDateTime.now();
     }
 
     public LocalDateTime getDataHoraCaptura() {
-        return dataHoraCaptura;
+        return dataCaptura;
     }
 
-    public void setDataHoraCaptura(LocalDateTime dataHoraCaptura) {
-        this.dataHoraCaptura = dataHoraCaptura;
+    public void setDataHoraCaptura(LocalDateTime dataCaptura) {
+        this.dataCaptura = dataCaptura;
     }
 
     public Integer getNumeroDeCpusLogicas() {
@@ -124,7 +126,7 @@ public class CPU extends Componente{
     public List<List<String>> tabela(){
         return Arrays.asList(
                 Arrays.asList("", "CPU"),
-                Arrays.asList("Data Hora captura", String.valueOf(dataHoraCaptura)),
+                Arrays.asList("Data Hora captura", String.valueOf(dataCaptura)),
                 Arrays.asList("Nome", Optional.ofNullable(modelo).orElse("N/A")),
                 Arrays.asList("Fabricante", Optional.ofNullable(fabricante).orElse("N/A")),
                 Arrays.asList("Microarquitetura", Optional.ofNullable(microarquitetura).orElse("N/A")),
@@ -149,5 +151,13 @@ public class CPU extends Componente{
     @Override
     public String getComponente() {
         return this.getClass().getSimpleName();
+    }
+    @Override
+    public String getUnidadeMedida() {
+        return "°C";
+    }
+    @Override
+    public Double getDadoCaptura() {
+        return temperatura;
     }
 }
