@@ -69,52 +69,7 @@ public class ServiceComponente {
     public void iniciarCapturas(Maquina maquina){
         try{
             maquina.getComponentes().forEach(componente -> {
-                if (componente instanceof CPU){
-                    CPU cpu = systemMonitor.monitorarCPU();
-                    ((CPU) componente).setTemperatura(cpu.getTemperatura());
-                    ((CPU) componente).setDataHoraCaptura(cpu.getDataHoraCaptura());
-                } else if (componente instanceof GPU) {
-                    List<GPU> listaGPU = systemMonitor.monitorarGPU();
-                    listaGPU.forEach(gpu -> {
-                        if (componente.getModelo().equalsIgnoreCase(gpu.getModelo()) &&
-                            componente.getFabricante().equalsIgnoreCase(gpu.getFabricante())){
-                            ((GPU) componente).setTemperatura(gpu.getTemperatura());
-                            ((GPU) componente).setDataHoraCaptura(gpu.getDataHoraCaptura());
-                        }
-                    });
-                } else if (componente instanceof HDD){
-                    List<HDD> listaHDD = systemMonitor.monitorarHDD();
-                    listaHDD.forEach(hdd -> {
-                        if (componente.getModelo().equalsIgnoreCase(hdd.getModelo()) &&
-                            componente.getFabricante().equalsIgnoreCase(hdd.getFabricante())){
-                            ((HDD) componente).setTamanho(hdd.getTamanho());
-                            ((HDD) componente).setDataHoraCaptura(hdd.getDataHoraCaptura());
-                        }
-                    });
-                } else if (componente instanceof Volume){
-                    List<Volume> listaVolume = systemMonitor.monitorarVolumeLogico();
-                    listaVolume.forEach(volume -> {
-                        if (componente.getModelo().equalsIgnoreCase(volume.getModelo()) &&
-                            componente.getFabricante().equalsIgnoreCase(volume.getFabricante())){
-                            ((Volume) componente).setDisponivel(volume.getDisponivel());
-                            ((Volume) componente).setDataHoraCaptura(volume.getDataHoraCaptura());
-                        }
-                    });
-                } else if (componente instanceof Bateria){
-                    List<Bateria> listaBateria = systemMonitor.monitorarBateria();
-                    listaBateria.forEach(bateria -> {
-                        if (componente.getModelo().equalsIgnoreCase(bateria.getModelo()) &&
-                            componente.getFabricante().equalsIgnoreCase(bateria.getFabricante())){
-                            ((Bateria) componente).setBateriaAtual(bateria.getBateriaAtual());
-                            ((Bateria) componente).setDataHoraCaptura(bateria.getDataHoraCaptura());
-                        }
-                    });
-                }else if (componente instanceof MemoriaRam){
-                    MemoriaRam ram = systemMonitor.monitorarRAM();
-                    ((MemoriaRam) componente).setMemoriaEmUso(ram.getMemoriaEmUso());
-                    ((MemoriaRam) componente).setDataHoraCaptura(ram.getDataHoraCaptura());
-                }
-
+                atualizarComponente(componente);
                 capturaDAO.inserirCaptura(maquina, componente);
             });
         } catch (Exception e){
@@ -149,8 +104,7 @@ public class ServiceComponente {
             List<HDD> listaHDD = systemMonitor.monitorarHDD();
             listaHDD.forEach(hdd -> {
                 if (componente.getModelo().equalsIgnoreCase(hdd.getModelo()) &&
-                        componente.getFabricante().equalsIgnoreCase(hdd.getFabricante()) &&
-                        ((HDD) componente).getSerial().equalsIgnoreCase(hdd.getSerial())){
+                        componente.getFabricante().equalsIgnoreCase(hdd.getFabricante())){
                     ((HDD) componente).setTamanho(hdd.getTamanho());
                     ((HDD) componente).setDataHoraCaptura(hdd.getDataHoraCaptura());
                     ((HDD) componente).setLeituras(hdd.getLeituras());
@@ -159,6 +113,7 @@ public class ServiceComponente {
                     ((HDD) componente).setEscritas(hdd.getEscritas());
                     ((HDD) componente).setTempoDeTransferencia(hdd.getTempoDeTransferencia());
                     ((HDD) componente).setBytesDeLeitura(hdd.getBytesDeLeitura());
+                    ((HDD) componente).setNome(hdd.getNome());
                 }
             });
         } else if (componente instanceof Volume){
@@ -171,14 +126,16 @@ public class ServiceComponente {
                     ((Volume) componente).setVolume(volume.getVolume());
                     ((Volume) componente).setDisponivel(volume.getDisponivel());
                     ((Volume) componente).setPontoDeMontagem(volume.getPontoDeMontagem());
+                    ((Volume) componente).setTotal(volume.getTotal());
+                    ((Volume) componente).setTipo(volume.getTipo());
+                    ((Volume) componente).setUuid(volume.getUuid());
                 }
             });
         } else if (componente instanceof Bateria){
             List<Bateria> listaBateria = systemMonitor.monitorarBateria();
             listaBateria.forEach(bateria -> {
                 if (componente.getModelo().equalsIgnoreCase(bateria.getModelo()) &&
-                        componente.getFabricante().equalsIgnoreCase(bateria.getFabricante()) &&
-                        ((Bateria) componente).getNumeroSerial().equalsIgnoreCase(bateria.getNumeroSerial())){
+                        componente.getFabricante().equalsIgnoreCase(bateria.getFabricante())){
                     ((Bateria) componente).setBateriaAtual(bateria.getBateriaAtual());
                     ((Bateria) componente).setDataHoraCaptura(bateria.getDataHoraCaptura());
                     ((Bateria) componente).setAmperagem(bateria.getAmperagem());
@@ -190,6 +147,13 @@ public class ServiceComponente {
                     ((Bateria) componente).setNomeDispositivo(bateria.getNomeDispositivo());
                     ((Bateria) componente).setUnidadesCapacidade(bateria.getUnidadesCapacidade());
                     ((Bateria) componente).setTaxaUsoEnergia(bateria.getTaxaUsoEnergia());
+                    ((Bateria) componente).setNumeroSerial(bateria.getNumeroSerial());
+                    ((Bateria) componente).setQuimica(bateria.getQuimica());
+                    ((Bateria) componente).setVoltagem(bateria.getVoltagem());
+                    ((Bateria) componente).setTempoRestanteEstimado(bateria.getTempoRestanteEstimado());
+                    ((Bateria) componente).setTempoRestanteInstantaneo(bateria.getTempoRestanteInstantaneo());
+                    ((Bateria) componente).setPercentualCapacidadeRestante(bateria.getPercentualCapacidadeRestante());
+                    ((Bateria) componente).setDataFabricacao(bateria.getDataFabricacao());
                 }
             });
         }else if (componente instanceof MemoriaRam){
@@ -198,6 +162,13 @@ public class ServiceComponente {
             ((MemoriaRam) componente).setDataHoraCaptura(ram.getDataHoraCaptura());
             ((MemoriaRam) componente).setMemoriaDisponivel(ram.getMemoriaDisponivel());
             ((MemoriaRam) componente).setMemoriaTotal(ram.getMemoriaTotal());
+        }else if (componente instanceof SistemaOp){
+            SistemaOp sistemaOp = systemMonitor.monitorarSistemaOperacional();
+            ((SistemaOp) componente).setArquitetura(sistemaOp.getArquitetura());
+            ((SistemaOp) componente).setDataHoraCaptura(sistemaOp.getDataHoraCaptura());
+            ((SistemaOp) componente).setInicializado(sistemaOp.getInicializado());
+            ((SistemaOp) componente).setPermissao(sistemaOp.getPermissao());
+            ((SistemaOp) componente).setTempoDeAtividade(sistemaOp.getTempoDeAtividade());
         }
     }
 

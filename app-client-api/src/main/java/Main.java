@@ -194,18 +194,7 @@ public class Main {
     public static void displayTables() throws Exception {
         ServicePC serviceMonitoring = new ServicePC();
         TablePrinter tablePrinter = new TablePrinter();
-        System.out.println("""
-                +---------------------------------------------------------------------------+
-                |             Muitos dados foram capturados. Escolha o que exibir           |
-                +---------------------------------------------------------------------------+
-                | a - Todas as tabelas  | b - Tabela CPU        | c - Tabela de HDD         |
-                | d - Tabelas de GPU    | e - Tabela de Ram     | f - Tabela de APPs abertos|
-                | g - Tabela de Bateria | h - Tabela de Sist.Op | i - Tabela de Volume      | 
-                | j - Tabela de USB     |                       |                           |
-                +--------------------------+--------------+----------+----------------------+
-                | 1 - Exibir monitoramento | 2 - Ver Logs | 3 - Sair | 4 - Voltar           |
-                +--------------------------+--------------+----------+----------------------+
-                """);
+        System.out.println(exibirOpcoes());
         Scanner scanner = new Scanner(System.in);
         String input = scanner.next();
 
@@ -364,5 +353,62 @@ public class Main {
                 }
                 break;
         }
+    }
+
+    public static String exibirOpcoes() {
+        StringBuilder opcoes = new StringBuilder();
+        opcoes.append("""
+        +---------------------------------------------------------------------------+
+        |             Muitos dados foram capturados. Escolha o que exibir           |
+        +---------------------------------------------------------------------------+
+        | a - Todas as tabelas   |""");
+
+        boolean hasHDD = false;
+        boolean hasAPPs = false;
+        Integer qtdPLinha = 1;
+        for (Componente componente : maquina.getComponentes()) {
+            if (componente instanceof CPU) {
+                opcoes.append(" b - Tabela CPU         |");
+            } else if (componente instanceof HDD) {
+                if (!hasHDD) {
+                    opcoes.append(" c - Tabela de HDD      |");
+                    hasHDD = true;
+                }
+            } else if (componente instanceof GPU) {
+                opcoes.append(" d - Tabelas de GPU      |");
+            } else if (componente instanceof MemoriaRam) {
+                opcoes.append(" e - Tabela de Ram      |");
+            } else if (componente instanceof APP) {
+                if (!hasAPPs) {
+                    opcoes.append(" f - Tabela de APPs abertos |");
+                    hasAPPs = true;
+                }
+            } else if (componente instanceof Bateria) {
+                opcoes.append(" g - Tabela de Bateria  |");
+            } else if (componente instanceof SistemaOp) {
+                opcoes.append(" h - Tabela de Sist.Op   |");
+            } else if (componente instanceof Volume) {
+                opcoes.append(" i - Tabela de Volume    |");
+            } else if (componente instanceof ConexaoUSB) {
+                opcoes.append(" j - Tabela de USB      |");
+            }
+            if (qtdPLinha % 3 == 0 && qtdPLinha != maquina.getComponentes().size()) {
+                opcoes.append("\n|");
+            }
+            qtdPLinha++;
+        }
+
+        int espacosExtras = (3 - (qtdPLinha - 1) % 3) % 3;
+        for (int i = 0; i < espacosExtras; i++) {
+            opcoes.append("                        |");
+        }
+
+        opcoes.append("""
+        \n+--------------------------+--------------+----------+----------------------+
+        | 1 - Exibir monitoramento | 2 - Ver Logs | 3 - Sair | 4 - Voltar           |
+        +--------------------------+--------------+----------+----------------------+
+        """);
+
+        return opcoes.toString();
     }
 }
