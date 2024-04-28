@@ -12,38 +12,36 @@ import java.nio.file.FileSystems;
 
 public class PDFGenerator {
 
-    public void gerarPDF(String content) {
-        Document document = new Document();
+	public void gerarPDF(String content) {
+		Document document = new Document();
 
-        try {
-            String userHome = System.getProperty("user.home");
-            String downloadsDir = userHome + FileSystems.getDefault().getSeparator() + "Downloads";
+		try {
+			String userHome = System.getProperty("user.home");
+			String downloadsDir = userHome + FileSystems.getDefault().getSeparator() + "Downloads";
 
-            String fileName = "documento.pdf";
+			String fileName = "documento.pdf";
 
-            String filePath = downloadsDir + FileSystems.getDefault().getSeparator() + fileName;
+			String filePath = downloadsDir + FileSystems.getDefault().getSeparator() + fileName;
 
-            int counter = 1;
-            while (new File(filePath).exists()) {
-                fileName = "documento" + counter + ".pdf";
-                filePath = downloadsDir + FileSystems.getDefault().getSeparator() + fileName;
-                counter++;
-            }
+			int counter = 1;
+			while (new File(filePath).exists()) {
+				fileName = "documento" + counter + ".pdf";
+				filePath = downloadsDir + FileSystems.getDefault().getSeparator() + fileName;
+				counter++;
+			}
 
-            PdfWriter.getInstance(document, new FileOutputStream(filePath));
-            document.open();
+			PdfWriter.getInstance(document, new FileOutputStream(filePath));
+			document.open();
 
-            Paragraph paragraph = new Paragraph(content);
-            paragraph.setAlignment(Element.ALIGN_LEFT);
-            document.add(paragraph);
+			Paragraph paragraph = new Paragraph(content);
+			paragraph.setAlignment(Element.ALIGN_LEFT);
+			document.add(paragraph);
 
-            document.close();
-            System.out.println("PDF gerado com sucesso e salvo em: " + filePath);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-
+			document.close();
+			System.out.println("PDF gerado com sucesso e salvo em: " + filePath);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
 }
