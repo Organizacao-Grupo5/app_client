@@ -1,7 +1,6 @@
 package app.integration;
 
 import com.mysql.cj.util.StringUtils;
-import org.apache.poi.util.StringUtil;
 import util.logs.Logger;
 
 import java.io.BufferedReader;
@@ -75,7 +74,11 @@ public class HardwareIntegration {
 			}
 			output = stringBuilder.toString();
 		} catch (IOException | InterruptedException e) {
-			Logger.logWarning("Não conseguimos obter a temperatura: Saída " + output);
+			if(isWindows){
+				Logger.logWarning("Não conseguimos obter a temperatura: Saída " + output);
+			}
+				Logger.logError("Não conseguimos obter a temperatura:", e.getMessage(), e);
+			throw new IOException();
 		}
 		if (StringUtils.isNullOrEmpty(output.toString())) {
 			return null;

@@ -4,6 +4,7 @@ import util.reports.CreatePDFInfos;
 import util.reports.TablePrinter;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -85,7 +86,9 @@ public class GPU extends Componente {
 
 	@Override
 	public String pdfLayout() {
-		return CreatePDFInfos.gerarLayoutPDF(tabela());
+		List<List<String>> listaPDF = new ArrayList<>(tabela());
+		listaPDF.add(Arrays.asList("VALOR", String.valueOf(85.0), temperatura.toString(), "°C"));
+		return CreatePDFInfos.gerarLayoutPDF(listaPDF);
 	}
 
 	@Override

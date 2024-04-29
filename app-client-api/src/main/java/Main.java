@@ -170,9 +170,6 @@ public class Main {
 					System.out.println("Opção inválida!");
 				}
 			}
-
-			executorService.shutdown();
-
 		} catch (Exception e) {
 			Logger.logError("Erro ao iniciar monitoramento: ", e.getMessage(), e);
 		}

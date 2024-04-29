@@ -4,6 +4,7 @@ import util.reports.CreatePDFInfos;
 import util.reports.TablePrinter;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -74,7 +75,9 @@ public class MemoriaRam extends Componente {
 
 	@Override
 	public String pdfLayout() {
-		return CreatePDFInfos.gerarLayoutPDF(tabela());
+		List<List<String>> listaPDF = new ArrayList<>(tabela());
+		listaPDF.add(Arrays.asList("VALOR", memoriaTotal.toString(), memoriaEmUso.toString(), "GB"));
+		return CreatePDFInfos.gerarLayoutPDF(listaPDF);
 	}
 
 	@Override
