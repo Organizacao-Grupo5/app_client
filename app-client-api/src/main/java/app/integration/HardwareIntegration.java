@@ -53,34 +53,32 @@ public class HardwareIntegration {
 	public Double monitorarTemperatura() throws IOException, InterruptedException {
 		Serializable output = null;
 		String command = "";
-		try {
-			if (!isWindows()) {
+
+		// Verifica se o sistema operacional é Linux antes de executar o código relacionado ao shell script
+		if (!isWindows()) {
+			try {
 				String scriptPath = "app-client-api/src/scripts" + directory + "/cpuTemperature.sh";
 				command = "sh " + scriptPath;
-			} else {
-				String scriptPath = "app-client-api/src/scripts" + directory + "/cpuTemperature.ps1";
-				command = "powershell.exe -ExecutionPolicy Bypass -File " + scriptPath;
-			}
 
-			Process process = Runtime.getRuntime().exec(command);
+				Process process = Runtime.getRuntime().exec(command);
+				process.waitFor();
 
-			process.waitFor();
-
-			BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-			StringBuilder stringBuilder = new StringBuilder();
-			String line;
-			while ((line = reader.readLine()) != null) {
-				stringBuilder.append(line).append("\n");
+				BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+				StringBuilder stringBuilder = new StringBuilder();
+				String line;
+				while ((line = reader.readLine()) != null) {
+					stringBuilder.append(line).append("\n");
+				}
+				output = stringBuilder.toString();
+			} catch (IOException | InterruptedException e) {
+				Logger.logError("Não foi possível obter a temperatura:", e.getMessage(), e);
+				throw new IOException();
 			}
-			output = stringBuilder.toString();
-		} catch (IOException | InterruptedException e) {
-			if(isWindows){
-				Logger.logWarning("Não conseguimos obter a temperatura: Saída " + output);
-			}
-				Logger.logError("Não conseguimos obter a temperatura:", e.getMessage(), e);
-			throw new IOException();
+		} else {
+			Logger.logWarning("O monitoramento de temperatura só é suportado em sistemas Linux.");
 		}
-		if (StringUtils.isNullOrEmpty(output.toString())) {
+
+		if (StringUtils.isNullOrEmpty((String) output)) {
 			return null;
 		} else {
 			String outputString = ((String) output).replace(',', '.');
