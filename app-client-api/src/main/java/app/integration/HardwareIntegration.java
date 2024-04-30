@@ -54,28 +54,30 @@ public class HardwareIntegration {
 		Serializable output = null;
 		String command = "";
 
-		// Verifica se o sistema operacional é Linux antes de executar o código relacionado ao shell script
-		if (!isWindows()) {
-			try {
+		try {
+			if (!isWindows()) {
 				String scriptPath = "app-client-api/src/scripts" + directory + "/cpuTemperature.sh";
 				command = "sh " + scriptPath;
+			} else {
+				String scriptPath = "app-client-api/src/scripts" + directory + "/cpuTemperature.ps1";
+				command = "powershell.exe -ExecutionPolicy Bypass -File " + scriptPath;
+			}
 
-				Process process = Runtime.getRuntime().exec(command);
-				process.waitFor();
+			Process process = Runtime.getRuntime().exec(command);
+			process.waitFor();
 
-				BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-				StringBuilder stringBuilder = new StringBuilder();
-				String line;
-				while ((line = reader.readLine()) != null) {
+			BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+			StringBuilder stringBuilder = new StringBuilder();
+			String line;
+			while ((line = reader.readLine()) != null) {
+				if (!line.contains("Microsoft Corporation")) {
 					stringBuilder.append(line).append("\n");
 				}
-				output = stringBuilder.toString();
-			} catch (IOException | InterruptedException e) {
-				Logger.logError("Não foi possível obter a temperatura:", e.getMessage(), e);
-				throw new IOException();
 			}
-		} else {
-			Logger.logWarning("O monitoramento de temperatura só é suportado em sistemas Linux.");
+			output = stringBuilder.toString().trim();
+		} catch (IOException | InterruptedException e) {
+			Logger.logError("Não foi possível obter a temperatura:", e.getMessage(), e);
+			return null;
 		}
 
 		if (StringUtils.isNullOrEmpty((String) output)) {
@@ -85,5 +87,4 @@ public class HardwareIntegration {
 			return Double.parseDouble(outputString);
 		}
 	}
-
 }

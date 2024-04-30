@@ -1,9 +1,6 @@
 if ! command -v sensors &> /dev/null; then
-    echo "O comando 'sensors' não está instalado."
-    echo "Instalando 'lm-sensors'..."
     sudo apt-get update
     sudo apt-get install -y lm-sensors
-    echo "Instalação concluída. Configurando sensores..."
     sudo sensors-detect --auto
 fi
 
