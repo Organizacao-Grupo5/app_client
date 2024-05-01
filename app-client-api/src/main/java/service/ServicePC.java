@@ -1,14 +1,11 @@
 package service;
 
 import dao.MaquinaDAO;
-import exception.ExceptionMonitoring;
 import model.Maquina;
 import model.Usuario;
 import util.logs.Logger;
 
 import java.net.InetAddress;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.Optional;
 
 public class ServicePC {

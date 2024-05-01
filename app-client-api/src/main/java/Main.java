@@ -3,7 +3,7 @@ import util.security.Login;
 
 import app.system.SystemMonitor;
 import com.mysql.cj.util.StringUtils;
-import exception.AutenticationException;
+import util.exception.AutenticationException;
 import model.*;
 import model.componentes.*;
 import service.ServicePC;
@@ -181,7 +181,7 @@ public class Main {
 			if (os.contains("win")) {
 				new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
 			} else if (os.contains("nix") || os.contains("nux") || os.contains("aix")) {
-				new ProcessBuilder("bash", "-c", "clear").inheritIO().start().waitFor();
+				new ProcessBuilder("scripts/bash", "-c", "clear").inheritIO().start().waitFor();
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();

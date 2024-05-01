@@ -7,7 +7,7 @@ import static com.sun.jna.Platform.isWindows;
 
 public class Userinfo {
 	private static Boolean isWindows = System.getProperty("os.name").toLowerCase().startsWith("windows");
-	String directory = isWindows ? "/powershell" : "/bash";
+	String directory = isWindows ? "/scripts/powershell" : "/scripts/bash";
 	ProcessBuilder processBuilder = new ProcessBuilder();
 
 	public String userName() {
