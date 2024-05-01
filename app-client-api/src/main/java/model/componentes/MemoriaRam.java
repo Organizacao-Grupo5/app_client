@@ -60,10 +60,11 @@ public class MemoriaRam extends Componente {
 
 	@Override
 	public List<List<String>> tabela() {
-		return Arrays.asList(Arrays.asList("", "RAM"), Arrays.asList("Data Hora captura", String.valueOf(dataCaptura)),
+		return Arrays.asList(
+				Arrays.asList("", "RAM"),
+				Arrays.asList("Data Hora captura", String.valueOf(dataCaptura)),
 				Arrays.asList("ID", Optional.ofNullable(super.idComponente).map(Object::toString).orElse("N/A")),
-				Arrays.asList("Memória Disponível",
-						Optional.ofNullable(memoriaDisponivel).map(Object::toString).orElse("N/A")),
+				Arrays.asList("Memória Disponível", Optional.ofNullable(memoriaDisponivel).map(Object::toString).orElse("N/A")),
 				Arrays.asList("Memória em Uso", Optional.ofNullable(memoriaEmUso).map(Object::toString).orElse("N/A")),
 				Arrays.asList("Memória Total", Optional.ofNullable(memoriaTotal).map(Object::toString).orElse("N/A")));
 	}

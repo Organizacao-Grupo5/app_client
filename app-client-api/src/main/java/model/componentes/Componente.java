@@ -1,6 +1,10 @@
 package model.componentes;
 
+import util.reports.CreatePDFInfos;
+import util.reports.TablePrinter;
+
 import java.time.LocalDateTime;
+import java.util.Arrays;
 import java.util.List;
 
 public class Componente {
@@ -18,15 +22,18 @@ public class Componente {
 	}
 
 	public List<List<String>> tabela() {
-		return null;
+		return Arrays.asList(Arrays.asList("", componente),
+		Arrays.asList("Modelo", modelo),
+		Arrays.asList("Fabricante", fabricante)
+		);
 	}
 
 	public String tabelaConvert() {
-		return null;
+		return TablePrinter.printTable(tabela());
 	}
 
 	public String pdfLayout() {
-		return null;
+		return CreatePDFInfos.gerarLayoutPDF(tabela());
 	}
 
 	public Componente(Integer idComponente, String componente, String modelo, String fabricante, Integer fkMaquina,

@@ -73,12 +73,10 @@ public class ConexaoUSB extends Componente {
 				Arrays.asList("Data Hora captura", String.valueOf(dataCaptura)),
 				Arrays.asList("Nome USB", Optional.ofNullable(modelo).orElse("N/A")),
 				Arrays.asList("Fornecedor", Optional.ofNullable(fabricante).orElse("N/A")),
-				Arrays.asList("Data hora captura",
-						Optional.ofNullable(dataCaptura).map(Object::toString).orElse("N/A")),
+				Arrays.asList("Data hora captura", Optional.ofNullable(dataCaptura).map(Object::toString).orElse("N/A")),
 				Arrays.asList("Id Fornecedor", Optional.ofNullable(idFornecedor).map(Object::toString).orElse("N/A")),
 				Arrays.asList("Número Série", Optional.ofNullable(numeroSerie).map(Object::toString).orElse("N/A")),
-				Arrays.asList("Id Dispositivo USB exclusivo",
-						Optional.ofNullable(idDispositivoUSBExclusivo).map(Object::toString).orElse("N/A")),
+				Arrays.asList("Id Dispositivo USB exclusivo", Optional.ofNullable(idDispositivoUSBExclusivo).map(Object::toString).orElse("N/A")),
 				Arrays.asList("Id Produto", Optional.ofNullable(idProduto).map(Object::toString).orElse("N/A")));
 	}
 

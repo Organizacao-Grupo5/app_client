@@ -75,15 +75,15 @@ public class SistemaOp extends Componente {
 	public List<List<String>> tabela() {
 		return Arrays.asList(Arrays.asList("", "Sistema Operacional"),
 				Arrays.asList("Data Hora captura", String.valueOf(dataCaptura)),
-				Arrays.asList("Nome Sistema", Optional.ofNullable(modelo).orElse("VALOR NÃO ENCONTRADO")),
-				Arrays.asList("Fabricante", Optional.ofNullable(fabricante).orElse("VALOR NÃO ENCONTRADO")),
-				Arrays.asList("Arquitetura", Optional.ofNullable(arquitetura).orElse("VALOR NÃO ENCONTRADO")),
+				Arrays.asList("Nome Sistema", Optional.ofNullable(modelo).orElse("N/A")),
+				Arrays.asList("Fabricante", Optional.ofNullable(fabricante).orElse("N/A")),
+				Arrays.asList("Arquitetura", Optional.ofNullable(arquitetura).orElse("N/A")),
 				Arrays.asList("Inicializado",
-						Optional.ofNullable(inicializado).map(Object::toString).orElse("VALOR NÃO ENCONTRADO")),
+						Optional.ofNullable(inicializado).map(Object::toString).orElse("N/A")),
 				Arrays.asList("Permissão",
-						Optional.ofNullable(permissao).map(Object::toString).orElse("VALOR NÃO ENCONTRADO")),
+						Optional.ofNullable(permissao).map(Object::toString).orElse("N/A")),
 				Arrays.asList("Tempo de atividade",
-						Optional.ofNullable(tempoDeAtividade).map(Object::toString).orElse("VALOR NÃO ENCONTRADO")));
+						Optional.ofNullable(tempoDeAtividade).map(Object::toString).orElse("N/A")));
 	}
 
 	@Override

@@ -1,1380 +1,779 @@
-[2024-05-01 17:05:07] INFO: Servidor iniciando.
-[2024-05-01 17:05:08] INFO: Servidor iniciado com sucesso.
-[2024-05-01 17:05:13] INFO: Verificando informações de login do usuário.
-[2024-05-01 17:05:14] INFO: Usuário foi encontrado com sucesso.
-[2024-05-01 17:05:15] INFO: Usuário logado com sucesso: clau@gmail
-[2024-05-01 17:05:15] INFO: Buscando componentes...
-[2024-05-01 17:05:15] INFO: Componente encontrado :
+[2024-05-01 18:25:18] INFO: Servidor iniciando.
+[2024-05-01 18:25:20] INFO: Servidor iniciado com sucesso.
+[2024-05-01 18:25:39] INFO: Verificando informações de login do usuário.
+[2024-05-01 18:25:40] INFO: Usuário foi encontrado com sucesso.
+[2024-05-01 18:25:40] INFO: Usuário logado com sucesso: clau@gmail
+[2024-05-01 18:25:40] INFO: Buscando componentes...
+[2024-05-01 18:25:40] INFO: Componente encontrado :
     |Componente: CPU
     |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
     |Fabricante: GenuineIntel
     |ID Componente: 1
 
-[2024-05-01 17:05:15] INFO: Componente encontrado :
+[2024-05-01 18:25:40] INFO: Componente encontrado :
     |Componente: HDD
     |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
     |Fabricante: N/A
     |ID Componente: 2
 
-[2024-05-01 17:05:15] INFO: Componente encontrado :
+[2024-05-01 18:25:40] INFO: Componente encontrado :
     |Componente: GPU
     |Modelo: Intel(R) Iris(R) Xe Graphics
     |Fabricante: Intel Corporation
     |ID Componente: 3
 
-[2024-05-01 17:05:15] INFO: Componente encontrado :
+[2024-05-01 18:25:40] INFO: Componente encontrado :
     |Componente: MemoriaRam
     |Modelo: N/A
     |Fabricante: N/A
     |ID Componente: 4
 
-[2024-05-01 17:05:15] INFO: Componente encontrado :
+[2024-05-01 18:25:40] INFO: Componente encontrado :
     |Componente: Bateria
     |Modelo: System Battery
     |Fabricante: SAMSUNG Electronics
     |ID Componente: 5
 
-[2024-05-01 17:05:15] INFO: Componente encontrado :
+[2024-05-01 18:25:41] INFO: Componente encontrado :
     |Componente: PlacaMae
     |Modelo: 550XDA
     |Fabricante: SAMSUNG ELECTRONICS CO., LTD.
     |ID Componente: 6
 
-[2024-05-01 17:05:15] INFO: Componente encontrado :
+[2024-05-01 18:25:41] INFO: Componente encontrado :
     |Componente: SistemaOp
     |Modelo: Windows
     |Fabricante: Microsoft
     |ID Componente: 7
 
-[2024-05-01 17:05:15] INFO: Componente encontrado :
+[2024-05-01 18:25:41] INFO: Componente encontrado :
     |Componente: Volume
     |Modelo: Disco Fixo Local (C:)
     |Fabricante: N/A
     |ID Componente: 8
 
-[2024-05-01 17:05:15] INFO: Componente encontrado :
-    |Componente: ConexaoUSB
-    |Modelo: (Standard USB HUBs)
-    |Fabricante: N/A
-    |ID Componente: 9
+[2024-05-01 18:25:41] INFO: Capturando dados da sua CPU.
+[2024-05-01 18:25:41] INFO: Número de CPUs lógicas: 8
+[2024-05-01 18:25:41] INFO: Número de CPUs físicas: 4
+[2024-05-01 18:25:41] INFO: Microarquitetura: Tiger Lake
+[2024-05-01 18:25:41] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-05-01 18:25:41] INFO: ID da CPU Looca: BFEBFBFF000806C1
+[2024-05-01 18:25:41] INFO: Fabricante: GenuineIntel
+[2024-05-01 18:25:41] INFO: Frequência: 2.419E9
+[2024-05-01 18:25:41] INFO: Número de pacotes físicos: 1
+[2024-05-01 18:25:43] INFO: Uso da CPU: 0.74447646493756
+[2024-05-01 18:25:43] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-05-01 18:25:44] INFO: Temperatura da CPU: 60.05
+[2024-05-01 18:25:44] INFO: Dados da CPU capturados com sucesso.
+[2024-05-01 18:25:44] INFO: Capturando dados do seu HDD
+[2024-05-01 18:25:44] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-05-01 18:25:44] INFO: Serial do disco: 0025_38D3_3101_18C2.
+[2024-05-01 18:25:44] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-05-01 18:25:44] INFO: Escritas do disco: 24.896265029907227
+[2024-05-01 18:25:44] INFO: Leituras do disco: 96.50011920928955
+[2024-05-01 18:25:44] INFO: Bytes de escritas do disco: 1920.009207725525
+[2024-05-01 18:25:44] INFO: Bytes de leitura do disco: 4415.537534713745
+[2024-05-01 18:25:44] INFO: Tamanho do disco: 238.47
+[2024-05-01 18:25:44] INFO: Tempo de transferência do disco: 38561.03888888889
+[2024-05-01 18:25:44] INFO: Dados do disco gravados.
+[2024-05-01 18:25:44] INFO: Capturando dados da GPU.
+[2024-05-01 18:25:44] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-05-01 18:25:44] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-05-01 18:25:44] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-05-01 18:25:44] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-05-01 18:25:44] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-05-01 18:25:45] INFO: Temperatura da GPU: 60.05
+[2024-05-01 18:25:45] INFO: Dados da GPU gravados.
+[2024-05-01 18:25:45] INFO: Capturando dados da sua memória RAM.
+[2024-05-01 18:25:45] INFO: Memória disponível: 1.1720428466796875
+[2024-05-01 18:25:45] INFO: Memória total: 7.729835510253906
+[2024-05-01 18:25:45] INFO: Memória em uso: 6.557792663574219
+[2024-05-01 18:25:45] INFO: Dados da memória RAM capturados com sucesso.
+[2024-05-01 18:25:45] INFO: Capturando dados da sua bateria.
+[2024-05-01 18:25:45] INFO: Amperagem da bateria: -1681.7086730911788
+[2024-05-01 18:25:45] INFO: Nome do dispositivo da bateria: SR Real Battery
+[2024-05-01 18:25:45] INFO: Número de série da bateria: 123456789
+[2024-05-01 18:25:45] INFO: Química da bateria: LION
+[2024-05-01 18:25:45] INFO: Nome da bateria: System Battery
+[2024-05-01 18:25:45] INFO: Voltagem da bateria: 10.792
+[2024-05-01 18:25:45] INFO: Capacidade atual da bateria: 7.8935546875
+[2024-05-01 18:25:45] INFO: Número de ciclos da bateria: 206
+[2024-05-01 18:25:45] INFO: Capacidade de design da bateria: 42.08203125
+[2024-05-01 18:25:45] INFO: Unidade de capacidade da bateria: MWH
+[2024-05-01 18:25:45] INFO: Tempo restante da bateria (instantâneo): 1603.0
+[2024-05-01 18:25:45] INFO: Tempo restante estimado da bateria: -1.0
+[2024-05-01 18:25:45] INFO: Taxa de uso de energia da bateria: -18149.0
+[2024-05-01 18:25:45] INFO: Temperatura da bateria: 0.0
+[2024-05-01 18:25:45] INFO: Capacidade máxima da bateria: 33.587890625
+[2024-05-01 18:25:45] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-05-01 18:25:45] INFO: Data de fabricação da bateria: N/A
+[2024-05-01 18:25:45] INFO: Fabricante da bateria: SAMSUNG Electronics
+[2024-05-01 18:25:46] INFO: Dados da bateria capturados com sucesso: 23.0
+[2024-05-01 18:25:46] INFO: Dados da bateria gravados.
+[2024-05-01 18:25:46] INFO: Fabricante da placa mãe capturado: SAMSUNG ELECTRONICS CO., LTD.
+[2024-05-01 18:25:46] INFO: Modelo da placa mãe capturado: 550XDA
+[2024-05-01 18:25:46] INFO: Dados da placa mãe gravados.
+[2024-05-01 18:25:46] INFO: Capturando dados do sistema operacional.
+[2024-05-01 18:25:46] INFO: Nome do sistema operacional coletado: Windows
+[2024-05-01 18:25:46] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-05-01 18:25:46] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-05-01 18:25:46] INFO: A inicialização do sistema operacional coletada: 64
+[2024-05-01 18:25:46] INFO: O tempo de atividade do sistema operacional foi coletada: 1584644
+[2024-05-01 18:25:46] INFO: A permisão do sistema operacional foi coletada: 1584644
+[2024-05-01 18:25:46] INFO: Capturando dados dos volumes lógicos.
+[2024-05-01 18:25:46] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-05-01 18:25:46] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-05-01 18:25:46] INFO: Espaço disponível no volume lógico capturado : 28.136287689208984
+[2024-05-01 18:25:46] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-05-01 18:25:46] INFO: Tipo do volume lógico capturado: NTFS
+[2024-05-01 18:25:46] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-05-01 18:25:46] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-05-01 18:25:46] INFO: Dados do volume lógico gravados.
+[2024-05-01 18:25:46] INFO: Todos os volumes lógicos verificados.
+[2024-05-01 18:25:46] INFO: Sua máquina contém componentes registrados
+[2024-05-01 18:25:46] INFO: Capturando os componentes:
 
-[2024-05-01 17:05:15] WARNING: Não foi possível instânciar o componente.
-[2024-05-01 17:05:15] INFO: Capturando dados da sua CPU.
-[2024-05-01 17:05:15] INFO: Número de CPUs lógicas: 8
-[2024-05-01 17:05:15] INFO: Número de CPUs físicas: 4
-[2024-05-01 17:05:15] INFO: Microarquitetura: Tiger Lake
-[2024-05-01 17:05:15] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
-[2024-05-01 17:05:15] INFO: ID da CPU Looca: BFEBFBFF000806C1
-[2024-05-01 17:05:15] INFO: Fabricante: GenuineIntel
-[2024-05-01 17:05:15] INFO: Frequência: 2.419E9
-[2024-05-01 17:05:15] INFO: Número de pacotes físicos: 1
-[2024-05-01 17:05:17] INFO: Uso da CPU: 0.9367396593673966
-[2024-05-01 17:05:17] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-[2024-05-01 17:05:18] INFO: Temperatura da CPU: 60.05
-[2024-05-01 17:05:18] INFO: Dados da CPU capturados com sucesso.
-[2024-05-01 17:05:18] INFO: Capturando dados do seu HDD
-[2024-05-01 17:05:18] INFO: Nome do disco: \\.\PHYSICALDRIVE0
-[2024-05-01 17:05:18] INFO: Serial do disco: 0025_38D3_3101_18C2.
-[2024-05-01 17:05:18] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
-[2024-05-01 17:05:18] INFO: Escritas do disco: 24.812406539916992
-[2024-05-01 17:05:18] INFO: Leituras do disco: 96.04957294464111
-[2024-05-01 17:05:18] INFO: Bytes de escritas do disco: 1910.967559337616
-[2024-05-01 17:05:18] INFO: Bytes de leitura do disco: 4396.7941155433655
-[2024-05-01 17:05:18] INFO: Tamanho do disco: 238.47
-[2024-05-01 17:05:18] INFO: Tempo de transferência do disco: 38414.032222222224
-[2024-05-01 17:05:18] INFO: Dados do disco gravados.
-[2024-05-01 17:05:18] INFO: Capturando dados da GPU.
-[2024-05-01 17:05:18] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
-[2024-05-01 17:05:18] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
-[2024-05-01 17:05:18] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
-[2024-05-01 17:05:18] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
-[2024-05-01 17:05:18] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
-[2024-05-01 17:05:19] INFO: Temperatura da GPU: 60.05
-[2024-05-01 17:05:19] INFO: Dados da GPU gravados.
-[2024-05-01 17:05:19] INFO: Capturando dados da sua memória RAM.
-[2024-05-01 17:05:19] INFO: Memória disponível: 1.0785026550292969
-[2024-05-01 17:05:19] INFO: Memória total: 7.729835510253906
-[2024-05-01 17:05:19] INFO: Memória em uso: 6.651332855224609
-[2024-05-01 17:05:19] INFO: Dados da memória RAM capturados com sucesso.
-[2024-05-01 17:05:19] INFO: Capturando dados da sua bateria.
-[2024-05-01 17:05:19] INFO: Amperagem da bateria: -779.2149465552861
-[2024-05-01 17:05:19] INFO: Nome do dispositivo da bateria: SR Real Battery
-[2024-05-01 17:05:19] INFO: Número de série da bateria: 123456789
-[2024-05-01 17:05:19] INFO: Química da bateria: LION
-[2024-05-01 17:05:19] INFO: Nome da bateria: System Battery
-[2024-05-01 17:05:19] INFO: Voltagem da bateria: 11.133
-[2024-05-01 17:05:19] INFO: Capacidade atual da bateria: 19.4375
-[2024-05-01 17:05:19] INFO: Número de ciclos da bateria: 206
-[2024-05-01 17:05:19] INFO: Capacidade de design da bateria: 42.08203125
-[2024-05-01 17:05:19] INFO: Unidade de capacidade da bateria: MWH
-[2024-05-01 17:05:19] INFO: Tempo restante da bateria (instantâneo): 8259.0
-[2024-05-01 17:05:19] INFO: Tempo restante estimado da bateria: -1.0
-[2024-05-01 17:05:19] INFO: Taxa de uso de energia da bateria: -8675.0
-[2024-05-01 17:05:19] INFO: Temperatura da bateria: 0.0
-[2024-05-01 17:05:19] INFO: Capacidade máxima da bateria: 33.587890625
-[2024-05-01 17:05:19] INFO: Porcentagem de capacidade restante da bateria: 1.0
-[2024-05-01 17:05:19] INFO: Data de fabricação da bateria: N/A
-[2024-05-01 17:05:19] INFO: Fabricante da bateria: SAMSUNG Electronics
-[2024-05-01 17:05:19] INFO: Dados da bateria capturados com sucesso: 57.0
-[2024-05-01 17:05:19] INFO: Dados da bateria gravados.
-[2024-05-01 17:05:19] INFO: Fabricante da placa mãe capturado: SAMSUNG ELECTRONICS CO., LTD.
-[2024-05-01 17:05:19] INFO: Modelo da placa mãe capturado: 550XDA
-[2024-05-01 17:05:19] INFO: Dados da placa mãe gravados.
-[2024-05-01 17:05:19] INFO: Capturando dados do sistema operacional.
-[2024-05-01 17:05:19] INFO: Nome do sistema operacional coletado: Windows
-[2024-05-01 17:05:19] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
-[2024-05-01 17:05:19] INFO: Arquitetura do sistema operacional coletada: 64
-[2024-05-01 17:05:19] INFO: A inicialização do sistema operacional coletada: 64
-[2024-05-01 17:05:19] INFO: O tempo de atividade do sistema operacional foi coletada: 1579817
-[2024-05-01 17:05:19] INFO: A permisão do sistema operacional foi coletada: 1579817
-[2024-05-01 17:05:19] INFO: Capturando dados dos volumes lógicos.
-[2024-05-01 17:05:19] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
-[2024-05-01 17:05:19] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
-[2024-05-01 17:05:19] INFO: Espaço disponível no volume lógico capturado : 28.14917755126953
-[2024-05-01 17:05:19] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
-[2024-05-01 17:05:19] INFO: Tipo do volume lógico capturado: NTFS
-[2024-05-01 17:05:19] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
-[2024-05-01 17:05:19] INFO: Ponto de montagem do volume lógico capturado: C:\
-[2024-05-01 17:05:19] INFO: Dados do volume lógico gravados.
-[2024-05-01 17:05:19] INFO: Todos os volumes lógicos verificados.
-[2024-05-01 17:05:19] INFO: Sua máquina contém componentes registrados
-[2024-05-01 17:05:19] INFO: Capturando os componentes:
-
-[2024-05-01 17:05:19] INFO: Capturando dados da sua CPU.
-[2024-05-01 17:05:19] INFO: Número de CPUs lógicas: 8
-[2024-05-01 17:05:19] INFO: Número de CPUs físicas: 4
-[2024-05-01 17:05:19] INFO: Microarquitetura: Tiger Lake
-[2024-05-01 17:05:19] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
-[2024-05-01 17:05:19] INFO: ID da CPU Looca: BFEBFBFF000806C1
-[2024-05-01 17:05:19] INFO: Fabricante: GenuineIntel
-[2024-05-01 17:05:19] INFO: Frequência: 2.419E9
-[2024-05-01 17:05:19] INFO: Número de pacotes físicos: 1
-[2024-05-01 17:05:19] INFO: Uso da CPU: 0.9367396593673966
-[2024-05-01 17:05:19] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-[2024-05-01 17:05:20] INFO: Temperatura da CPU: 60.05
-[2024-05-01 17:05:20] INFO: Dados da CPU capturados com sucesso.
-[2024-05-01 17:05:20] INFO: 
+[2024-05-01 18:25:46] INFO: Capturando dados da sua CPU.
+[2024-05-01 18:25:46] INFO: Número de CPUs lógicas: 8
+[2024-05-01 18:25:46] INFO: Número de CPUs físicas: 4
+[2024-05-01 18:25:46] INFO: Microarquitetura: Tiger Lake
+[2024-05-01 18:25:46] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-05-01 18:25:46] INFO: ID da CPU Looca: BFEBFBFF000806C1
+[2024-05-01 18:25:46] INFO: Fabricante: GenuineIntel
+[2024-05-01 18:25:46] INFO: Frequência: 2.419E9
+[2024-05-01 18:25:46] INFO: Número de pacotes físicos: 1
+[2024-05-01 18:25:46] INFO: Uso da CPU: 0.74447646493756
+[2024-05-01 18:25:46] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-05-01 18:25:46] INFO: Temperatura da CPU: 60.05
+[2024-05-01 18:25:46] INFO: Dados da CPU capturados com sucesso.
+[2024-05-01 18:25:46] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: CPU
     |Dado capturado: 60,05
     |Unidade de medida: °C
-    |Data hora captura: 2024-05-01T17:05:20.508736300
+    |Data hora captura: 2024-05-01T18:25:46.995233500
     |Id componente: 1
 
-[2024-05-01 17:05:20] INFO: Capturando dados do seu HDD
-[2024-05-01 17:05:20] INFO: Nome do disco: \\.\PHYSICALDRIVE0
-[2024-05-01 17:05:20] INFO: Serial do disco: 0025_38D3_3101_18C2.
-[2024-05-01 17:05:20] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
-[2024-05-01 17:05:20] INFO: Escritas do disco: 24.812472343444824
-[2024-05-01 17:05:20] INFO: Leituras do disco: 96.0496416091919
-[2024-05-01 17:05:20] INFO: Bytes de escritas do disco: 1910.968650341034
-[2024-05-01 17:05:20] INFO: Bytes de leitura do disco: 4396.797510623932
-[2024-05-01 17:05:20] INFO: Tamanho do disco: 238.47
-[2024-05-01 17:05:20] INFO: Tempo de transferência do disco: 38414.05527777778
-[2024-05-01 17:05:20] INFO: Dados do disco gravados.
-[2024-05-01 17:05:20] INFO: 
+[2024-05-01 18:25:47] INFO: Capturando dados do seu HDD
+[2024-05-01 18:25:47] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-05-01 18:25:47] INFO: Serial do disco: 0025_38D3_3101_18C2.
+[2024-05-01 18:25:47] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-05-01 18:25:47] INFO: Escritas do disco: 24.896377563476562
+[2024-05-01 18:25:47] INFO: Leituras do disco: 96.50033664703369
+[2024-05-01 18:25:47] INFO: Bytes de escritas do disco: 1920.0107526779175
+[2024-05-01 18:25:47] INFO: Bytes de leitura do disco: 4415.54300403595
+[2024-05-01 18:25:47] INFO: Tamanho do disco: 238.47
+[2024-05-01 18:25:47] INFO: Tempo de transferência do disco: 38561.07083333333
+[2024-05-01 18:25:47] INFO: Dados do disco gravados.
+[2024-05-01 18:25:47] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: HDD
     |Dado capturado: 238,47
     |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:20.655630
+    |Data hora captura: 2024-05-01T18:25:47.147570
     |Id componente: 2
 
-[2024-05-01 17:05:20] INFO: Capturando dados da GPU.
-[2024-05-01 17:05:20] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
-[2024-05-01 17:05:20] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
-[2024-05-01 17:05:20] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
-[2024-05-01 17:05:20] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
-[2024-05-01 17:05:20] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
-[2024-05-01 17:05:21] INFO: Temperatura da GPU: 60.05
-[2024-05-01 17:05:21] INFO: Dados da GPU gravados.
-[2024-05-01 17:05:21] INFO: 
+[2024-05-01 18:25:47] INFO: Capturando dados da GPU.
+[2024-05-01 18:25:47] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-05-01 18:25:47] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-05-01 18:25:47] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-05-01 18:25:47] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-05-01 18:25:47] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-05-01 18:25:47] INFO: Temperatura da GPU: 60.05
+[2024-05-01 18:25:47] INFO: Dados da GPU gravados.
+[2024-05-01 18:25:47] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: GPU
     |Dado capturado: 60,05
     |Unidade de medida: °C
-    |Data hora captura: 2024-05-01T17:05:21.202558500
+    |Data hora captura: 2024-05-01T18:25:47.714128100
     |Id componente: 3
 
-[2024-05-01 17:05:21] INFO: Capturando dados da sua memória RAM.
-[2024-05-01 17:05:21] INFO: Memória disponível: 1.0675582885742188
-[2024-05-01 17:05:21] INFO: Memória total: 7.729835510253906
-[2024-05-01 17:05:21] INFO: Memória em uso: 6.6622772216796875
-[2024-05-01 17:05:21] INFO: Dados da memória RAM capturados com sucesso.
-[2024-05-01 17:05:21] INFO: 
+[2024-05-01 18:25:47] INFO: Capturando dados da sua memória RAM.
+[2024-05-01 18:25:47] INFO: Memória disponível: 1.1437721252441406
+[2024-05-01 18:25:47] INFO: Memória total: 7.729835510253906
+[2024-05-01 18:25:47] INFO: Memória em uso: 6.586063385009766
+[2024-05-01 18:25:47] INFO: Dados da memória RAM capturados com sucesso.
+[2024-05-01 18:25:47] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: MemoriaRam
-    |Dado capturado: 6,66
+    |Dado capturado: 6,59
     |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:21.234043500
+    |Data hora captura: 2024-05-01T18:25:47.759128700
     |Id componente: 4
 
-[2024-05-01 17:05:21] INFO: Capturando dados da sua bateria.
-[2024-05-01 17:05:21] INFO: Amperagem da bateria: -1602.0919005900232
-[2024-05-01 17:05:21] INFO: Nome do dispositivo da bateria: SR Real Battery
-[2024-05-01 17:05:21] INFO: Número de série da bateria: 123456789
-[2024-05-01 17:05:21] INFO: Química da bateria: LION
-[2024-05-01 17:05:21] INFO: Nome da bateria: System Battery
-[2024-05-01 17:05:21] INFO: Voltagem da bateria: 11.186
-[2024-05-01 17:05:21] INFO: Capacidade atual da bateria: 19.4267578125
-[2024-05-01 17:05:21] INFO: Número de ciclos da bateria: 206
-[2024-05-01 17:05:21] INFO: Capacidade de design da bateria: 42.08203125
-[2024-05-01 17:05:21] INFO: Unidade de capacidade da bateria: MWH
-[2024-05-01 17:05:21] INFO: Tempo restante da bateria (instantâneo): 3996.0
-[2024-05-01 17:05:21] INFO: Tempo restante estimado da bateria: -1.0
-[2024-05-01 17:05:21] INFO: Taxa de uso de energia da bateria: -17921.0
-[2024-05-01 17:05:21] INFO: Temperatura da bateria: 0.0
-[2024-05-01 17:05:21] INFO: Capacidade máxima da bateria: 33.587890625
-[2024-05-01 17:05:21] INFO: Porcentagem de capacidade restante da bateria: 1.0
-[2024-05-01 17:05:21] INFO: Data de fabricação da bateria: N/A
-[2024-05-01 17:05:21] INFO: Fabricante da bateria: SAMSUNG Electronics
-[2024-05-01 17:05:21] INFO: Dados da bateria capturados com sucesso: 57.0
-[2024-05-01 17:05:21] INFO: Dados da bateria gravados.
-[2024-05-01 17:05:21] INFO: 
+[2024-05-01 18:25:47] INFO: Capturando dados da sua bateria.
+[2024-05-01 18:25:47] INFO: Amperagem da bateria: -1754.1349191600073
+[2024-05-01 18:25:47] INFO: Nome do dispositivo da bateria: SR Real Battery
+[2024-05-01 18:25:47] INFO: Número de série da bateria: 123456789
+[2024-05-01 18:25:47] INFO: Química da bateria: LION
+[2024-05-01 18:25:47] INFO: Nome da bateria: System Battery
+[2024-05-01 18:25:47] INFO: Voltagem da bateria: 10.762
+[2024-05-01 18:25:47] INFO: Capacidade atual da bateria: 7.8935546875
+[2024-05-01 18:25:47] INFO: Número de ciclos da bateria: 206
+[2024-05-01 18:25:47] INFO: Capacidade de design da bateria: 42.08203125
+[2024-05-01 18:25:47] INFO: Unidade de capacidade da bateria: MWH
+[2024-05-01 18:25:47] INFO: Tempo restante da bateria (instantâneo): 1541.0
+[2024-05-01 18:25:47] INFO: Tempo restante estimado da bateria: -1.0
+[2024-05-01 18:25:47] INFO: Taxa de uso de energia da bateria: -18878.0
+[2024-05-01 18:25:47] INFO: Temperatura da bateria: 0.0
+[2024-05-01 18:25:47] INFO: Capacidade máxima da bateria: 33.587890625
+[2024-05-01 18:25:47] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-05-01 18:25:47] INFO: Data de fabricação da bateria: N/A
+[2024-05-01 18:25:47] INFO: Fabricante da bateria: SAMSUNG Electronics
+[2024-05-01 18:25:48] INFO: Dados da bateria capturados com sucesso: 23.0
+[2024-05-01 18:25:48] INFO: Dados da bateria gravados.
+[2024-05-01 18:25:48] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Bateria
-    |Dado capturado: 57,00
+    |Dado capturado: 23,00
     |Unidade de medida: %
-    |Data hora captura: 2024-05-01T17:05:21.836738900
+    |Data hora captura: 2024-05-01T18:25:48.381755
     |Id componente: 5
 
-[2024-05-01 17:05:21] INFO: 
+[2024-05-01 18:25:48] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: PlacaMae
     |Dado capturado: nu
     |Unidade de medida: null
-    |Data hora captura: 2024-05-01T17:05:21.861142800
+    |Data hora captura: 2024-05-01T18:25:48.406010300
     |Id componente: 6
 
-[2024-05-01 17:05:21] INFO: Capturando dados do sistema operacional.
-[2024-05-01 17:05:21] INFO: Nome do sistema operacional coletado: Windows
-[2024-05-01 17:05:21] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
-[2024-05-01 17:05:21] INFO: Arquitetura do sistema operacional coletada: 64
-[2024-05-01 17:05:21] INFO: A inicialização do sistema operacional coletada: 64
-[2024-05-01 17:05:21] INFO: O tempo de atividade do sistema operacional foi coletada: 1579819
-[2024-05-01 17:05:21] INFO: A permisão do sistema operacional foi coletada: 1579819
-[2024-05-01 17:05:21] INFO: 
+[2024-05-01 18:25:48] INFO: Capturando dados do sistema operacional.
+[2024-05-01 18:25:48] INFO: Nome do sistema operacional coletado: Windows
+[2024-05-01 18:25:48] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-05-01 18:25:48] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-05-01 18:25:48] INFO: A inicialização do sistema operacional coletada: 64
+[2024-05-01 18:25:48] INFO: O tempo de atividade do sistema operacional foi coletada: 1584646
+[2024-05-01 18:25:48] INFO: A permisão do sistema operacional foi coletada: 1584646
+[2024-05-01 18:25:48] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: SistemaOp
     |Dado capturado: nu
     |Unidade de medida: null
-    |Data hora captura: 2024-05-01T17:05:21.892438700
+    |Data hora captura: 2024-05-01T18:25:48.437188300
     |Id componente: 7
 
-[2024-05-01 17:05:21] INFO: Capturando dados dos volumes lógicos.
-[2024-05-01 17:05:21] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
-[2024-05-01 17:05:21] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
-[2024-05-01 17:05:21] INFO: Espaço disponível no volume lógico capturado : 28.148101806640625
-[2024-05-01 17:05:21] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
-[2024-05-01 17:05:21] INFO: Tipo do volume lógico capturado: NTFS
-[2024-05-01 17:05:21] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
-[2024-05-01 17:05:21] INFO: Ponto de montagem do volume lógico capturado: C:\
-[2024-05-01 17:05:21] INFO: Dados do volume lógico gravados.
-[2024-05-01 17:05:21] INFO: Todos os volumes lógicos verificados.
-[2024-05-01 17:05:21] INFO: 
+[2024-05-01 18:25:48] INFO: Capturando dados dos volumes lógicos.
+[2024-05-01 18:25:48] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-05-01 18:25:48] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-05-01 18:25:48] INFO: Espaço disponível no volume lógico capturado : 28.135913848876953
+[2024-05-01 18:25:48] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-05-01 18:25:48] INFO: Tipo do volume lógico capturado: NTFS
+[2024-05-01 18:25:48] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-05-01 18:25:48] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-05-01 18:25:48] INFO: Dados do volume lógico gravados.
+[2024-05-01 18:25:48] INFO: Todos os volumes lógicos verificados.
+[2024-05-01 18:25:48] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Volume
-    |Dado capturado: 28,15
+    |Dado capturado: 28,14
     |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:21.967651200
+    |Data hora captura: 2024-05-01T18:25:48.491503200
     |Id componente: 8
 
-[2024-05-01 17:05:22] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.componentes.Componente.getComponente()" because "componente" is null
-	at dao.componente.CapturaDAO.inserirCaptura(CapturaDAO.java:23)
-	at service.componente.ServiceComponente.lambda$iniciarCapturas$6(ServiceComponente.java:73)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-
-[2024-05-01 17:05:24] INFO: Capturando dados da sua CPU.
-[2024-05-01 17:05:24] INFO: Número de CPUs lógicas: 8
-[2024-05-01 17:05:24] INFO: Número de CPUs físicas: 4
-[2024-05-01 17:05:24] INFO: Microarquitetura: Tiger Lake
-[2024-05-01 17:05:24] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
-[2024-05-01 17:05:24] INFO: ID da CPU Looca: BFEBFBFF000806C1
-[2024-05-01 17:05:24] INFO: Fabricante: GenuineIntel
-[2024-05-01 17:05:24] INFO: Frequência: 2.419E9
-[2024-05-01 17:05:24] INFO: Número de pacotes físicos: 1
-[2024-05-01 17:05:24] INFO: Uso da CPU: 7.42182747292858
-[2024-05-01 17:05:24] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-[2024-05-01 17:05:25] INFO: Temperatura da CPU: 60.05
-[2024-05-01 17:05:25] INFO: Dados da CPU capturados com sucesso.
-[2024-05-01 17:05:25] INFO: 
+[2024-05-01 18:25:51] INFO: Capturando dados da sua CPU.
+[2024-05-01 18:25:51] INFO: Número de CPUs lógicas: 8
+[2024-05-01 18:25:51] INFO: Número de CPUs físicas: 4
+[2024-05-01 18:25:51] INFO: Microarquitetura: Tiger Lake
+[2024-05-01 18:25:51] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-05-01 18:25:51] INFO: ID da CPU Looca: BFEBFBFF000806C1
+[2024-05-01 18:25:51] INFO: Fabricante: GenuineIntel
+[2024-05-01 18:25:51] INFO: Frequência: 2.419E9
+[2024-05-01 18:25:51] INFO: Número de pacotes físicos: 1
+[2024-05-01 18:25:51] INFO: Uso da CPU: 8.662483081087732
+[2024-05-01 18:25:51] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-05-01 18:25:51] INFO: Temperatura da CPU: 60.05
+[2024-05-01 18:25:51] INFO: Dados da CPU capturados com sucesso.
+[2024-05-01 18:25:51] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: CPU
     |Dado capturado: 60,05
     |Unidade de medida: °C
-    |Data hora captura: 2024-05-01T17:05:25.515647200
+    |Data hora captura: 2024-05-01T18:25:51.961239400
     |Id componente: 1
 
-[2024-05-01 17:05:25] INFO: Capturando dados do seu HDD
-[2024-05-01 17:05:25] INFO: Nome do disco: \\.\PHYSICALDRIVE0
-[2024-05-01 17:05:25] INFO: Serial do disco: 0025_38D3_3101_18C2.
-[2024-05-01 17:05:25] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
-[2024-05-01 17:05:25] INFO: Escritas do disco: 24.812678337097168
-[2024-05-01 17:05:25] INFO: Leituras do disco: 96.04978561401367
-[2024-05-01 17:05:25] INFO: Bytes de escritas do disco: 1910.971263408661
-[2024-05-01 17:05:25] INFO: Bytes de leitura do disco: 4396.804409503937
-[2024-05-01 17:05:25] INFO: Tamanho do disco: 238.47
-[2024-05-01 17:05:25] INFO: Tempo de transferência do disco: 38414.13527777778
-[2024-05-01 17:05:25] INFO: Dados do disco gravados.
-[2024-05-01 17:05:25] INFO: 
+[2024-05-01 18:25:51] INFO: Capturando dados do seu HDD
+[2024-05-01 18:25:52] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-05-01 18:25:52] INFO: Serial do disco: 0025_38D3_3101_18C2.
+[2024-05-01 18:25:52] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-05-01 18:25:52] INFO: Escritas do disco: 24.89659595489502
+[2024-05-01 18:25:52] INFO: Leituras do disco: 96.500657081604
+[2024-05-01 18:25:52] INFO: Bytes de escritas do disco: 1920.0130453109741
+[2024-05-01 18:25:52] INFO: Bytes de leitura do disco: 4415.553781986237
+[2024-05-01 18:25:52] INFO: Tamanho do disco: 238.47
+[2024-05-01 18:25:52] INFO: Tempo de transferência do disco: 38561.16777777778
+[2024-05-01 18:25:52] INFO: Dados do disco gravados.
+[2024-05-01 18:25:52] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: HDD
     |Dado capturado: 238,47
     |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:25.624688700
+    |Data hora captura: 2024-05-01T18:25:52.076384600
     |Id componente: 2
 
-[2024-05-01 17:05:25] INFO: Capturando dados da GPU.
-[2024-05-01 17:05:25] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
-[2024-05-01 17:05:25] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
-[2024-05-01 17:05:25] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
-[2024-05-01 17:05:25] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
-[2024-05-01 17:05:25] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
-[2024-05-01 17:05:26] INFO: Temperatura da GPU: 60.05
-[2024-05-01 17:05:26] INFO: Dados da GPU gravados.
-[2024-05-01 17:05:26] INFO: 
+[2024-05-01 18:25:52] INFO: Capturando dados da GPU.
+[2024-05-01 18:25:52] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-05-01 18:25:52] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-05-01 18:25:52] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-05-01 18:25:52] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-05-01 18:25:52] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-05-01 18:25:52] INFO: Temperatura da GPU: 60.05
+[2024-05-01 18:25:52] INFO: Dados da GPU gravados.
+[2024-05-01 18:25:52] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: GPU
     |Dado capturado: 60,05
     |Unidade de medida: °C
-    |Data hora captura: 2024-05-01T17:05:26.207245300
+    |Data hora captura: 2024-05-01T18:25:52.631276600
     |Id componente: 3
 
-[2024-05-01 17:05:26] INFO: Capturando dados da sua memória RAM.
-[2024-05-01 17:05:26] INFO: Memória disponível: 1.0563888549804688
-[2024-05-01 17:05:26] INFO: Memória total: 7.729835510253906
-[2024-05-01 17:05:26] INFO: Memória em uso: 6.6734466552734375
-[2024-05-01 17:05:26] INFO: Dados da memória RAM capturados com sucesso.
-[2024-05-01 17:05:26] INFO: 
+[2024-05-01 18:25:52] INFO: Capturando dados da sua memória RAM.
+[2024-05-01 18:25:52] INFO: Memória disponível: 1.1295013427734375
+[2024-05-01 18:25:52] INFO: Memória total: 7.729835510253906
+[2024-05-01 18:25:52] INFO: Memória em uso: 6.600334167480469
+[2024-05-01 18:25:52] INFO: Dados da memória RAM capturados com sucesso.
+[2024-05-01 18:25:52] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: MemoriaRam
-    |Dado capturado: 6,67
+    |Dado capturado: 6,60
     |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:26.239256500
+    |Data hora captura: 2024-05-01T18:25:52.664285200
     |Id componente: 4
 
-[2024-05-01 17:05:26] INFO: Capturando dados da sua bateria.
-[2024-05-01 17:05:26] INFO: Amperagem da bateria: -1485.3563867325336
-[2024-05-01 17:05:26] INFO: Nome do dispositivo da bateria: SR Real Battery
-[2024-05-01 17:05:26] INFO: Número de série da bateria: 123456789
-[2024-05-01 17:05:26] INFO: Química da bateria: LION
-[2024-05-01 17:05:26] INFO: Nome da bateria: System Battery
-[2024-05-01 17:05:26] INFO: Voltagem da bateria: 11.336
-[2024-05-01 17:05:26] INFO: Capacidade atual da bateria: 19.404296875
-[2024-05-01 17:05:26] INFO: Número de ciclos da bateria: 206
-[2024-05-01 17:05:26] INFO: Capacidade de design da bateria: 42.08203125
-[2024-05-01 17:05:26] INFO: Unidade de capacidade da bateria: MWH
-[2024-05-01 17:05:26] INFO: Tempo restante da bateria (instantâneo): 4248.0
-[2024-05-01 17:05:26] INFO: Tempo restante estimado da bateria: -1.0
-[2024-05-01 17:05:26] INFO: Taxa de uso de energia da bateria: -16838.0
-[2024-05-01 17:05:26] INFO: Temperatura da bateria: 0.0
-[2024-05-01 17:05:26] INFO: Capacidade máxima da bateria: 33.587890625
-[2024-05-01 17:05:26] INFO: Porcentagem de capacidade restante da bateria: 1.0
-[2024-05-01 17:05:26] INFO: Data de fabricação da bateria: N/A
-[2024-05-01 17:05:26] INFO: Fabricante da bateria: SAMSUNG Electronics
-[2024-05-01 17:05:26] INFO: Dados da bateria capturados com sucesso: 57.0
-[2024-05-01 17:05:26] INFO: Dados da bateria gravados.
-[2024-05-01 17:05:26] INFO: 
+[2024-05-01 18:25:52] INFO: Capturando dados da sua bateria.
+[2024-05-01 18:25:52] INFO: Amperagem da bateria: -694.7943682845498
+[2024-05-01 18:25:52] INFO: Nome do dispositivo da bateria: SR Real Battery
+[2024-05-01 18:25:52] INFO: Número de série da bateria: 123456789
+[2024-05-01 18:25:52] INFO: Química da bateria: LION
+[2024-05-01 18:25:52] INFO: Nome da bateria: System Battery
+[2024-05-01 18:25:52] INFO: Voltagem da bateria: 10.796
+[2024-05-01 18:25:52] INFO: Capacidade atual da bateria: 7.87109375
+[2024-05-01 18:25:52] INFO: Número de ciclos da bateria: 206
+[2024-05-01 18:25:52] INFO: Capacidade de design da bateria: 42.08203125
+[2024-05-01 18:25:52] INFO: Unidade de capacidade da bateria: MWH
+[2024-05-01 18:25:52] INFO: Tempo restante da bateria (instantâneo): 3868.0
+[2024-05-01 18:25:52] INFO: Tempo restante estimado da bateria: -1.0
+[2024-05-01 18:25:52] INFO: Taxa de uso de energia da bateria: -7501.0
+[2024-05-01 18:25:52] INFO: Temperatura da bateria: 0.0
+[2024-05-01 18:25:52] INFO: Capacidade máxima da bateria: 33.587890625
+[2024-05-01 18:25:52] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-05-01 18:25:52] INFO: Data de fabricação da bateria: N/A
+[2024-05-01 18:25:52] INFO: Fabricante da bateria: SAMSUNG Electronics
+[2024-05-01 18:25:53] INFO: Dados da bateria capturados com sucesso: 23.0
+[2024-05-01 18:25:53] INFO: Dados da bateria gravados.
+[2024-05-01 18:25:53] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Bateria
-    |Dado capturado: 57,00
+    |Dado capturado: 23,00
     |Unidade de medida: %
-    |Data hora captura: 2024-05-01T17:05:26.840523500
+    |Data hora captura: 2024-05-01T18:25:53.288496400
     |Id componente: 5
 
-[2024-05-01 17:05:26] INFO: 
+[2024-05-01 18:25:53] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: PlacaMae
     |Dado capturado: nu
     |Unidade de medida: null
-    |Data hora captura: 2024-05-01T17:05:26.862199800
+    |Data hora captura: 2024-05-01T18:25:53.310882500
     |Id componente: 6
 
-[2024-05-01 17:05:26] INFO: Capturando dados do sistema operacional.
-[2024-05-01 17:05:26] INFO: Nome do sistema operacional coletado: Windows
-[2024-05-01 17:05:26] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
-[2024-05-01 17:05:26] INFO: Arquitetura do sistema operacional coletada: 64
-[2024-05-01 17:05:26] INFO: A inicialização do sistema operacional coletada: 64
-[2024-05-01 17:05:26] INFO: O tempo de atividade do sistema operacional foi coletada: 1579824
-[2024-05-01 17:05:26] INFO: A permisão do sistema operacional foi coletada: 1579824
-[2024-05-01 17:05:26] INFO: 
+[2024-05-01 18:25:53] INFO: Capturando dados do sistema operacional.
+[2024-05-01 18:25:53] INFO: Nome do sistema operacional coletado: Windows
+[2024-05-01 18:25:53] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-05-01 18:25:53] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-05-01 18:25:53] INFO: A inicialização do sistema operacional coletada: 64
+[2024-05-01 18:25:53] INFO: O tempo de atividade do sistema operacional foi coletada: 1584651
+[2024-05-01 18:25:53] INFO: A permisão do sistema operacional foi coletada: 1584651
+[2024-05-01 18:25:53] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: SistemaOp
     |Dado capturado: nu
     |Unidade de medida: null
-    |Data hora captura: 2024-05-01T17:05:26.888227800
+    |Data hora captura: 2024-05-01T18:25:53.339499300
     |Id componente: 7
 
-[2024-05-01 17:05:26] INFO: Capturando dados dos volumes lógicos.
-[2024-05-01 17:05:26] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
-[2024-05-01 17:05:26] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
-[2024-05-01 17:05:26] INFO: Espaço disponível no volume lógico capturado : 28.151386260986328
-[2024-05-01 17:05:26] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
-[2024-05-01 17:05:26] INFO: Tipo do volume lógico capturado: NTFS
-[2024-05-01 17:05:26] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
-[2024-05-01 17:05:26] INFO: Ponto de montagem do volume lógico capturado: C:\
-[2024-05-01 17:05:26] INFO: Dados do volume lógico gravados.
-[2024-05-01 17:05:26] INFO: Todos os volumes lógicos verificados.
-[2024-05-01 17:05:26] INFO: 
+[2024-05-01 18:25:53] INFO: Capturando dados dos volumes lógicos.
+[2024-05-01 18:25:53] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-05-01 18:25:53] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-05-01 18:25:53] INFO: Espaço disponível no volume lógico capturado : 28.13540267944336
+[2024-05-01 18:25:53] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-05-01 18:25:53] INFO: Tipo do volume lógico capturado: NTFS
+[2024-05-01 18:25:53] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-05-01 18:25:53] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-05-01 18:25:53] INFO: Dados do volume lógico gravados.
+[2024-05-01 18:25:53] INFO: Todos os volumes lógicos verificados.
+[2024-05-01 18:25:53] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Volume
-    |Dado capturado: 28,15
+    |Dado capturado: 28,14
     |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:26.945181800
+    |Data hora captura: 2024-05-01T18:25:53.395374200
     |Id componente: 8
 
-[2024-05-01 17:05:26] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.componentes.Componente.getComponente()" because "componente" is null
-	at dao.componente.CapturaDAO.inserirCaptura(CapturaDAO.java:23)
-	at service.componente.ServiceComponente.lambda$iniciarCapturas$6(ServiceComponente.java:73)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-
-[2024-05-01 17:05:29] INFO: Capturando dados da sua CPU.
-[2024-05-01 17:05:29] INFO: Número de CPUs lógicas: 8
-[2024-05-01 17:05:29] INFO: Número de CPUs físicas: 4
-[2024-05-01 17:05:29] INFO: Microarquitetura: Tiger Lake
-[2024-05-01 17:05:29] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
-[2024-05-01 17:05:29] INFO: ID da CPU Looca: BFEBFBFF000806C1
-[2024-05-01 17:05:29] INFO: Fabricante: GenuineIntel
-[2024-05-01 17:05:29] INFO: Frequência: 2.419E9
-[2024-05-01 17:05:29] INFO: Número de pacotes físicos: 1
-[2024-05-01 17:05:29] INFO: Uso da CPU: 8.438766736273186
-[2024-05-01 17:05:29] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-[2024-05-01 17:05:30] INFO: Temperatura da CPU: 60.05
-[2024-05-01 17:05:30] INFO: Dados da CPU capturados com sucesso.
-[2024-05-01 17:05:30] INFO: 
+[2024-05-01 18:25:56] INFO: Capturando dados da sua CPU.
+[2024-05-01 18:25:56] INFO: Número de CPUs lógicas: 8
+[2024-05-01 18:25:56] INFO: Número de CPUs físicas: 4
+[2024-05-01 18:25:56] INFO: Microarquitetura: Tiger Lake
+[2024-05-01 18:25:56] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-05-01 18:25:56] INFO: ID da CPU Looca: BFEBFBFF000806C1
+[2024-05-01 18:25:56] INFO: Fabricante: GenuineIntel
+[2024-05-01 18:25:56] INFO: Frequência: 2.419E9
+[2024-05-01 18:25:56] INFO: Número de pacotes físicos: 1
+[2024-05-01 18:25:56] INFO: Uso da CPU: 6.964864191378021
+[2024-05-01 18:25:56] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-05-01 18:25:56] INFO: Temperatura da CPU: 60.05
+[2024-05-01 18:25:56] INFO: Dados da CPU capturados com sucesso.
+[2024-05-01 18:25:56] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: CPU
     |Dado capturado: 60,05
     |Unidade de medida: °C
-    |Data hora captura: 2024-05-01T17:05:30.556845900
+    |Data hora captura: 2024-05-01T18:25:56.992770900
     |Id componente: 1
 
-[2024-05-01 17:05:30] INFO: Capturando dados do seu HDD
-[2024-05-01 17:05:30] INFO: Nome do disco: \\.\PHYSICALDRIVE0
-[2024-05-01 17:05:30] INFO: Serial do disco: 0025_38D3_3101_18C2.
-[2024-05-01 17:05:30] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
-[2024-05-01 17:05:30] INFO: Escritas do disco: 24.81298828125
-[2024-05-01 17:05:30] INFO: Leituras do disco: 96.04991817474365
-[2024-05-01 17:05:30] INFO: Bytes de escritas do disco: 1910.9745364189148
-[2024-05-01 17:05:30] INFO: Bytes de leitura do disco: 4396.810319900513
-[2024-05-01 17:05:30] INFO: Tamanho do disco: 238.47
-[2024-05-01 17:05:30] INFO: Tempo de transferência do disco: 38414.204722222225
-[2024-05-01 17:05:30] INFO: Dados do disco gravados.
-[2024-05-01 17:05:30] INFO: 
+[2024-05-01 18:25:56] INFO: Capturando dados do seu HDD
+[2024-05-01 18:25:57] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-05-01 18:25:57] INFO: Serial do disco: 0025_38D3_3101_18C2.
+[2024-05-01 18:25:57] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-05-01 18:25:57] INFO: Escritas do disco: 24.89680576324463
+[2024-05-01 18:25:57] INFO: Leituras do disco: 96.500807762146
+[2024-05-01 18:25:57] INFO: Bytes de escritas do disco: 1920.0155477523804
+[2024-05-01 18:25:57] INFO: Bytes de leitura do disco: 4415.5591769218445
+[2024-05-01 18:25:57] INFO: Tamanho do disco: 238.47
+[2024-05-01 18:25:57] INFO: Tempo de transferência do disco: 38561.23527777778
+[2024-05-01 18:25:57] INFO: Dados do disco gravados.
+[2024-05-01 18:25:57] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: HDD
     |Dado capturado: 238,47
     |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:30.665477200
+    |Data hora captura: 2024-05-01T18:25:57.127435300
     |Id componente: 2
 
-[2024-05-01 17:05:30] INFO: Capturando dados da GPU.
-[2024-05-01 17:05:30] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
-[2024-05-01 17:05:30] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
-[2024-05-01 17:05:30] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
-[2024-05-01 17:05:30] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
-[2024-05-01 17:05:30] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
-[2024-05-01 17:05:31] INFO: Temperatura da GPU: 60.05
-[2024-05-01 17:05:31] INFO: Dados da GPU gravados.
-[2024-05-01 17:05:31] INFO: 
+[2024-05-01 18:25:57] INFO: Capturando dados da GPU.
+[2024-05-01 18:25:57] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-05-01 18:25:57] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-05-01 18:25:57] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-05-01 18:25:57] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-05-01 18:25:57] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-05-01 18:25:57] INFO: Temperatura da GPU: 60.05
+[2024-05-01 18:25:57] INFO: Dados da GPU gravados.
+[2024-05-01 18:25:57] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: GPU
     |Dado capturado: 60,05
     |Unidade de medida: °C
-    |Data hora captura: 2024-05-01T17:05:31.220658800
+    |Data hora captura: 2024-05-01T18:25:57.690880800
     |Id componente: 3
 
-[2024-05-01 17:05:31] INFO: Capturando dados da sua memória RAM.
-[2024-05-01 17:05:31] INFO: Memória disponível: 1.052978515625
-[2024-05-01 17:05:31] INFO: Memória total: 7.729835510253906
-[2024-05-01 17:05:31] INFO: Memória em uso: 6.676856994628906
-[2024-05-01 17:05:31] INFO: Dados da memória RAM capturados com sucesso.
-[2024-05-01 17:05:31] INFO: 
+[2024-05-01 18:25:57] INFO: Capturando dados da sua memória RAM.
+[2024-05-01 18:25:57] INFO: Memória disponível: 1.1112823486328125
+[2024-05-01 18:25:57] INFO: Memória total: 7.729835510253906
+[2024-05-01 18:25:57] INFO: Memória em uso: 6.618553161621094
+[2024-05-01 18:25:57] INFO: Dados da memória RAM capturados com sucesso.
+[2024-05-01 18:25:57] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 6,62
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-01T18:25:57.719882
+    |Id componente: 4
+
+[2024-05-01 18:25:57] INFO: Capturando dados da sua bateria.
+[2024-05-01 18:25:57] INFO: Amperagem da bateria: -1350.9890922536513
+[2024-05-01 18:25:57] INFO: Nome do dispositivo da bateria: SR Real Battery
+[2024-05-01 18:25:57] INFO: Número de série da bateria: 123456789
+[2024-05-01 18:25:57] INFO: Química da bateria: LION
+[2024-05-01 18:25:57] INFO: Nome da bateria: System Battery
+[2024-05-01 18:25:57] INFO: Voltagem da bateria: 10.818
+[2024-05-01 18:25:57] INFO: Capacidade atual da bateria: 7.8486328125
+[2024-05-01 18:25:57] INFO: Número de ciclos da bateria: 206
+[2024-05-01 18:25:57] INFO: Capacidade de design da bateria: 42.08203125
+[2024-05-01 18:25:57] INFO: Unidade de capacidade da bateria: MWH
+[2024-05-01 18:25:57] INFO: Tempo restante da bateria (instantâneo): 1979.0
+[2024-05-01 18:25:57] INFO: Tempo restante estimado da bateria: -1.0
+[2024-05-01 18:25:57] INFO: Taxa de uso de energia da bateria: -14615.0
+[2024-05-01 18:25:57] INFO: Temperatura da bateria: 0.0
+[2024-05-01 18:25:57] INFO: Capacidade máxima da bateria: 33.587890625
+[2024-05-01 18:25:57] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-05-01 18:25:57] INFO: Data de fabricação da bateria: N/A
+[2024-05-01 18:25:57] INFO: Fabricante da bateria: SAMSUNG Electronics
+[2024-05-01 18:25:58] INFO: Dados da bateria capturados com sucesso: 23.0
+[2024-05-01 18:25:58] INFO: Dados da bateria gravados.
+[2024-05-01 18:25:58] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 23,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-05-01T18:25:58.322929500
+    |Id componente: 5
+
+[2024-05-01 18:25:58] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: PlacaMae
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-05-01T18:25:58.342613
+    |Id componente: 6
+
+[2024-05-01 18:25:58] INFO: Capturando dados do sistema operacional.
+[2024-05-01 18:25:58] INFO: Nome do sistema operacional coletado: Windows
+[2024-05-01 18:25:58] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-05-01 18:25:58] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-05-01 18:25:58] INFO: A inicialização do sistema operacional coletada: 64
+[2024-05-01 18:25:58] INFO: O tempo de atividade do sistema operacional foi coletada: 1584656
+[2024-05-01 18:25:58] INFO: A permisão do sistema operacional foi coletada: 1584656
+[2024-05-01 18:25:58] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-05-01T18:25:58.365616300
+    |Id componente: 7
+
+[2024-05-01 18:25:58] INFO: Capturando dados dos volumes lógicos.
+[2024-05-01 18:25:58] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-05-01 18:25:58] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-05-01 18:25:58] INFO: Espaço disponível no volume lógico capturado : 28.13528823852539
+[2024-05-01 18:25:58] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-05-01 18:25:58] INFO: Tipo do volume lógico capturado: NTFS
+[2024-05-01 18:25:58] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-05-01 18:25:58] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-05-01 18:25:58] INFO: Dados do volume lógico gravados.
+[2024-05-01 18:25:58] INFO: Todos os volumes lógicos verificados.
+[2024-05-01 18:25:58] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 28,14
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-01T18:25:58.413604300
+    |Id componente: 8
+
+[2024-05-01 18:26:01] INFO: Capturando dados da sua CPU.
+[2024-05-01 18:26:01] INFO: Número de CPUs lógicas: 8
+[2024-05-01 18:26:01] INFO: Número de CPUs físicas: 4
+[2024-05-01 18:26:01] INFO: Microarquitetura: Tiger Lake
+[2024-05-01 18:26:01] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-05-01 18:26:01] INFO: ID da CPU Looca: BFEBFBFF000806C1
+[2024-05-01 18:26:01] INFO: Fabricante: GenuineIntel
+[2024-05-01 18:26:01] INFO: Frequência: 2.419E9
+[2024-05-01 18:26:01] INFO: Número de pacotes físicos: 1
+[2024-05-01 18:26:01] INFO: Uso da CPU: 12.122333210013565
+[2024-05-01 18:26:01] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-05-01 18:26:01] INFO: Temperatura da CPU: 60.05
+[2024-05-01 18:26:01] INFO: Dados da CPU capturados com sucesso.
+[2024-05-01 18:26:02] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 60,05
+    |Unidade de medida: °C
+    |Data hora captura: 2024-05-01T18:26:02.010921400
+    |Id componente: 1
+
+[2024-05-01 18:26:02] INFO: Capturando dados do seu HDD
+[2024-05-01 18:26:02] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-05-01 18:26:02] INFO: Serial do disco: 0025_38D3_3101_18C2.
+[2024-05-01 18:26:02] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-05-01 18:26:02] INFO: Escritas do disco: 24.896967887878418
+[2024-05-01 18:26:02] INFO: Leituras do disco: 96.50092029571533
+[2024-05-01 18:26:02] INFO: Bytes de escritas do disco: 1920.0177221298218
+[2024-05-01 18:26:02] INFO: Bytes de leitura do disco: 4415.5636677742
+[2024-05-01 18:26:02] INFO: Tamanho do disco: 238.47
+[2024-05-01 18:26:02] INFO: Tempo de transferência do disco: 38561.28916666667
+[2024-05-01 18:26:02] INFO: Dados do disco gravados.
+[2024-05-01 18:26:02] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-01T18:26:02.116095400
+    |Id componente: 2
+
+[2024-05-01 18:26:02] INFO: Capturando dados da GPU.
+[2024-05-01 18:26:02] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-05-01 18:26:02] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-05-01 18:26:02] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-05-01 18:26:02] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-05-01 18:26:02] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-05-01 18:26:02] INFO: Temperatura da GPU: 60.05
+[2024-05-01 18:26:02] INFO: Dados da GPU gravados.
+[2024-05-01 18:26:02] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 60,05
+    |Unidade de medida: °C
+    |Data hora captura: 2024-05-01T18:26:02.669326600
+    |Id componente: 3
+
+[2024-05-01 18:26:02] INFO: Capturando dados da sua memória RAM.
+[2024-05-01 18:26:02] INFO: Memória disponível: 1.1062736511230469
+[2024-05-01 18:26:02] INFO: Memória total: 7.729835510253906
+[2024-05-01 18:26:02] INFO: Memória em uso: 6.623561859130859
+[2024-05-01 18:26:02] INFO: Dados da memória RAM capturados com sucesso.
+[2024-05-01 18:26:02] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 6,62
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-01T18:26:02.697328200
+    |Id componente: 4
+
+[2024-05-01 18:26:02] INFO: Capturando dados da sua bateria.
+[2024-05-01 18:26:02] INFO: Amperagem da bateria: -1224.4708503527663
+[2024-05-01 18:26:02] INFO: Nome do dispositivo da bateria: SR Real Battery
+[2024-05-01 18:26:02] INFO: Número de série da bateria: 123456789
+[2024-05-01 18:26:02] INFO: Química da bateria: LION
+[2024-05-01 18:26:02] INFO: Nome da bateria: System Battery
+[2024-05-01 18:26:02] INFO: Voltagem da bateria: 10.772
+[2024-05-01 18:26:02] INFO: Capacidade atual da bateria: 7.837890625
+[2024-05-01 18:26:02] INFO: Número de ciclos da bateria: 206
+[2024-05-01 18:26:02] INFO: Capacidade de design da bateria: 42.08203125
+[2024-05-01 18:26:02] INFO: Unidade de capacidade da bateria: MWH
+[2024-05-01 18:26:02] INFO: Tempo restante da bateria (instantâneo): 2190.0
+[2024-05-01 18:26:02] INFO: Tempo restante estimado da bateria: -1.0
+[2024-05-01 18:26:02] INFO: Taxa de uso de energia da bateria: -13190.0
+[2024-05-01 18:26:02] INFO: Temperatura da bateria: 0.0
+[2024-05-01 18:26:02] INFO: Capacidade máxima da bateria: 33.587890625
+[2024-05-01 18:26:02] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-05-01 18:26:02] INFO: Data de fabricação da bateria: N/A
+[2024-05-01 18:26:02] INFO: Fabricante da bateria: SAMSUNG Electronics
+[2024-05-01 18:26:03] INFO: Dados da bateria capturados com sucesso: 23.0
+[2024-05-01 18:26:03] INFO: Dados da bateria gravados.
+[2024-05-01 18:26:03] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 23,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-05-01T18:26:03.296669500
+    |Id componente: 5
+
+[2024-05-01 18:26:03] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: PlacaMae
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-05-01T18:26:03.316669900
+    |Id componente: 6
+
+[2024-05-01 18:26:03] INFO: Capturando dados do sistema operacional.
+[2024-05-01 18:26:03] INFO: Nome do sistema operacional coletado: Windows
+[2024-05-01 18:26:03] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-05-01 18:26:03] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-05-01 18:26:03] INFO: A inicialização do sistema operacional coletada: 64
+[2024-05-01 18:26:03] INFO: O tempo de atividade do sistema operacional foi coletada: 1584661
+[2024-05-01 18:26:03] INFO: A permisão do sistema operacional foi coletada: 1584661
+[2024-05-01 18:26:03] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-05-01T18:26:03.347750500
+    |Id componente: 7
+
+[2024-05-01 18:26:03] INFO: Capturando dados dos volumes lógicos.
+[2024-05-01 18:26:03] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-05-01 18:26:03] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-05-01 18:26:03] INFO: Espaço disponível no volume lógico capturado : 28.135154724121094
+[2024-05-01 18:26:03] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-05-01 18:26:03] INFO: Tipo do volume lógico capturado: NTFS
+[2024-05-01 18:26:03] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-05-01 18:26:03] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-05-01 18:26:03] INFO: Dados do volume lógico gravados.
+[2024-05-01 18:26:03] INFO: Todos os volumes lógicos verificados.
+[2024-05-01 18:26:03] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 28,14
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-01T18:26:03.395753800
+    |Id componente: 8
+
+[2024-05-01 18:26:06] INFO: Capturando dados da sua CPU.
+[2024-05-01 18:26:06] INFO: Número de CPUs lógicas: 8
+[2024-05-01 18:26:06] INFO: Número de CPUs físicas: 4
+[2024-05-01 18:26:06] INFO: Microarquitetura: Tiger Lake
+[2024-05-01 18:26:06] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-05-01 18:26:06] INFO: ID da CPU Looca: BFEBFBFF000806C1
+[2024-05-01 18:26:06] INFO: Fabricante: GenuineIntel
+[2024-05-01 18:26:06] INFO: Frequência: 2.419E9
+[2024-05-01 18:26:06] INFO: Número de pacotes físicos: 1
+[2024-05-01 18:26:06] INFO: Uso da CPU: 8.217462106977328
+[2024-05-01 18:26:06] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-05-01 18:26:06] INFO: Temperatura da CPU: 60.05
+[2024-05-01 18:26:06] INFO: Dados da CPU capturados com sucesso.
+[2024-05-01 18:26:06] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 60,05
+    |Unidade de medida: °C
+    |Data hora captura: 2024-05-01T18:26:06.971909600
+    |Id componente: 1
+
+[2024-05-01 18:26:06] INFO: Capturando dados do seu HDD
+[2024-05-01 18:26:07] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-05-01 18:26:07] INFO: Serial do disco: 0025_38D3_3101_18C2.
+[2024-05-01 18:26:07] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-05-01 18:26:07] INFO: Escritas do disco: 24.89716148376465
+[2024-05-01 18:26:07] INFO: Leituras do disco: 96.50181198120117
+[2024-05-01 18:26:07] INFO: Bytes de escritas do disco: 1920.0200262069702
+[2024-05-01 18:26:07] INFO: Bytes de leitura do disco: 4415.5910539627075
+[2024-05-01 18:26:07] INFO: Tamanho do disco: 238.47
+[2024-05-01 18:26:07] INFO: Tempo de transferência do disco: 38561.41222222222
+[2024-05-01 18:26:07] INFO: Dados do disco gravados.
+[2024-05-01 18:26:07] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-01T18:26:07.075219300
+    |Id componente: 2
+
+[2024-05-01 18:26:07] INFO: Capturando dados da GPU.
+[2024-05-01 18:26:07] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-05-01 18:26:07] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-05-01 18:26:07] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-05-01 18:26:07] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-05-01 18:26:07] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-05-01 18:26:07] INFO: Temperatura da GPU: 60.05
+[2024-05-01 18:26:07] INFO: Dados da GPU gravados.
+[2024-05-01 18:26:07] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 60,05
+    |Unidade de medida: °C
+    |Data hora captura: 2024-05-01T18:26:07.677014700
+    |Id componente: 3
+
+[2024-05-01 18:26:07] INFO: Capturando dados da sua memória RAM.
+[2024-05-01 18:26:07] INFO: Memória disponível: 1.0470085144042969
+[2024-05-01 18:26:07] INFO: Memória total: 7.729835510253906
+[2024-05-01 18:26:07] INFO: Memória em uso: 6.682826995849609
+[2024-05-01 18:26:07] INFO: Dados da memória RAM capturados com sucesso.
+[2024-05-01 18:26:07] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: MemoriaRam
     |Dado capturado: 6,68
     |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:31.251675400
+    |Data hora captura: 2024-05-01T18:26:07.704544900
     |Id componente: 4
 
-[2024-05-01 17:05:31] INFO: Capturando dados da sua bateria.
-[2024-05-01 17:05:31] INFO: Amperagem da bateria: -622.2261989978525
-[2024-05-01 17:05:31] INFO: Nome do dispositivo da bateria: SR Real Battery
-[2024-05-01 17:05:31] INFO: Número de série da bateria: 123456789
-[2024-05-01 17:05:31] INFO: Química da bateria: LION
-[2024-05-01 17:05:31] INFO: Nome da bateria: System Battery
-[2024-05-01 17:05:31] INFO: Voltagem da bateria: 11.176
-[2024-05-01 17:05:31] INFO: Capacidade atual da bateria: 19.3935546875
-[2024-05-01 17:05:31] INFO: Número de ciclos da bateria: 206
-[2024-05-01 17:05:31] INFO: Capacidade de design da bateria: 42.08203125
-[2024-05-01 17:05:31] INFO: Unidade de capacidade da bateria: MWH
-[2024-05-01 17:05:31] INFO: Tempo restante da bateria (instantâneo): 10280.0
-[2024-05-01 17:05:31] INFO: Tempo restante estimado da bateria: -1.0
-[2024-05-01 17:05:31] INFO: Taxa de uso de energia da bateria: -6954.0
-[2024-05-01 17:05:31] INFO: Temperatura da bateria: 0.0
-[2024-05-01 17:05:31] INFO: Capacidade máxima da bateria: 33.587890625
-[2024-05-01 17:05:31] INFO: Porcentagem de capacidade restante da bateria: 1.0
-[2024-05-01 17:05:31] INFO: Data de fabricação da bateria: N/A
-[2024-05-01 17:05:31] INFO: Fabricante da bateria: SAMSUNG Electronics
-[2024-05-01 17:05:31] INFO: Dados da bateria capturados com sucesso: 57.0
-[2024-05-01 17:05:31] INFO: Dados da bateria gravados.
-[2024-05-01 17:05:31] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 57,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-05-01T17:05:31.889915
-    |Id componente: 5
-
-[2024-05-01 17:05:31] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: PlacaMae
-    |Dado capturado: nu
-    |Unidade de medida: null
-    |Data hora captura: 2024-05-01T17:05:31.909911800
-    |Id componente: 6
-
-[2024-05-01 17:05:31] INFO: Capturando dados do sistema operacional.
-[2024-05-01 17:05:31] INFO: Nome do sistema operacional coletado: Windows
-[2024-05-01 17:05:31] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
-[2024-05-01 17:05:31] INFO: Arquitetura do sistema operacional coletada: 64
-[2024-05-01 17:05:31] INFO: A inicialização do sistema operacional coletada: 64
-[2024-05-01 17:05:31] INFO: O tempo de atividade do sistema operacional foi coletada: 1579829
-[2024-05-01 17:05:31] INFO: A permisão do sistema operacional foi coletada: 1579829
-[2024-05-01 17:05:31] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: SistemaOp
-    |Dado capturado: nu
-    |Unidade de medida: null
-    |Data hora captura: 2024-05-01T17:05:31.932906200
-    |Id componente: 7
-
-[2024-05-01 17:05:31] INFO: Capturando dados dos volumes lógicos.
-[2024-05-01 17:05:31] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
-[2024-05-01 17:05:31] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
-[2024-05-01 17:05:31] INFO: Espaço disponível no volume lógico capturado : 28.15131378173828
-[2024-05-01 17:05:31] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
-[2024-05-01 17:05:31] INFO: Tipo do volume lógico capturado: NTFS
-[2024-05-01 17:05:31] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
-[2024-05-01 17:05:31] INFO: Ponto de montagem do volume lógico capturado: C:\
-[2024-05-01 17:05:31] INFO: Dados do volume lógico gravados.
-[2024-05-01 17:05:31] INFO: Todos os volumes lógicos verificados.
-[2024-05-01 17:05:31] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 28,15
-    |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:31.984883100
-    |Id componente: 8
-
-[2024-05-01 17:05:32] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.componentes.Componente.getComponente()" because "componente" is null
-	at dao.componente.CapturaDAO.inserirCaptura(CapturaDAO.java:23)
-	at service.componente.ServiceComponente.lambda$iniciarCapturas$6(ServiceComponente.java:73)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-
-[2024-05-01 17:05:34] INFO: Capturando dados da sua CPU.
-[2024-05-01 17:05:34] INFO: Número de CPUs lógicas: 8
-[2024-05-01 17:05:34] INFO: Número de CPUs físicas: 4
-[2024-05-01 17:05:34] INFO: Microarquitetura: Tiger Lake
-[2024-05-01 17:05:34] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
-[2024-05-01 17:05:34] INFO: ID da CPU Looca: BFEBFBFF000806C1
-[2024-05-01 17:05:34] INFO: Fabricante: GenuineIntel
-[2024-05-01 17:05:34] INFO: Frequência: 2.419E9
-[2024-05-01 17:05:34] INFO: Número de pacotes físicos: 1
-[2024-05-01 17:05:34] INFO: Uso da CPU: 7.78944736184046
-[2024-05-01 17:05:34] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-[2024-05-01 17:05:35] INFO: Temperatura da CPU: 60.05
-[2024-05-01 17:05:35] INFO: Dados da CPU capturados com sucesso.
-[2024-05-01 17:05:35] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 60,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-05-01T17:05:35.469389900
-    |Id componente: 1
-
-[2024-05-01 17:05:35] INFO: Capturando dados do seu HDD
-[2024-05-01 17:05:35] INFO: Nome do disco: \\.\PHYSICALDRIVE0
-[2024-05-01 17:05:35] INFO: Serial do disco: 0025_38D3_3101_18C2.
-[2024-05-01 17:05:35] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
-[2024-05-01 17:05:35] INFO: Escritas do disco: 24.8131685256958
-[2024-05-01 17:05:35] INFO: Leituras do disco: 96.04998302459717
-[2024-05-01 17:05:35] INFO: Bytes de escritas do disco: 1910.9769320487976
-[2024-05-01 17:05:35] INFO: Bytes de leitura do disco: 4396.813524246216
-[2024-05-01 17:05:35] INFO: Tamanho do disco: 238.47
-[2024-05-01 17:05:35] INFO: Tempo de transferência do disco: 38414.26138888889
-[2024-05-01 17:05:35] INFO: Dados do disco gravados.
-[2024-05-01 17:05:35] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:35.575782900
-    |Id componente: 2
-
-[2024-05-01 17:05:35] INFO: Capturando dados da GPU.
-[2024-05-01 17:05:35] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
-[2024-05-01 17:05:35] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
-[2024-05-01 17:05:35] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
-[2024-05-01 17:05:35] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
-[2024-05-01 17:05:35] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
-[2024-05-01 17:05:36] INFO: Temperatura da GPU: 60.05
-[2024-05-01 17:05:36] INFO: Dados da GPU gravados.
-[2024-05-01 17:05:36] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 60,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-05-01T17:05:36.151927400
-    |Id componente: 3
-
-[2024-05-01 17:05:36] INFO: Capturando dados da sua memória RAM.
-[2024-05-01 17:05:36] INFO: Memória disponível: 1.0433349609375
-[2024-05-01 17:05:36] INFO: Memória total: 7.729835510253906
-[2024-05-01 17:05:36] INFO: Memória em uso: 6.686500549316406
-[2024-05-01 17:05:36] INFO: Dados da memória RAM capturados com sucesso.
-[2024-05-01 17:05:36] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,69
-    |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:36.184442800
-    |Id componente: 4
-
-[2024-05-01 17:05:36] INFO: Capturando dados da sua bateria.
-[2024-05-01 17:05:36] INFO: Amperagem da bateria: -1542.1644413211525
-[2024-05-01 17:05:36] INFO: Nome do dispositivo da bateria: SR Real Battery
-[2024-05-01 17:05:36] INFO: Número de série da bateria: 123456789
-[2024-05-01 17:05:36] INFO: Química da bateria: LION
-[2024-05-01 17:05:36] INFO: Nome da bateria: System Battery
-[2024-05-01 17:05:36] INFO: Voltagem da bateria: 11.384
-[2024-05-01 17:05:36] INFO: Capacidade atual da bateria: 19.37109375
-[2024-05-01 17:05:36] INFO: Número de ciclos da bateria: 206
-[2024-05-01 17:05:36] INFO: Capacidade de design da bateria: 42.08203125
-[2024-05-01 17:05:36] INFO: Unidade de capacidade da bateria: MWH
-[2024-05-01 17:05:36] INFO: Tempo restante da bateria (instantâneo): 4067.0
-[2024-05-01 17:05:36] INFO: Tempo restante estimado da bateria: -1.0
-[2024-05-01 17:05:36] INFO: Taxa de uso de energia da bateria: -17556.0
-[2024-05-01 17:05:36] INFO: Temperatura da bateria: 0.0
-[2024-05-01 17:05:36] INFO: Capacidade máxima da bateria: 33.587890625
-[2024-05-01 17:05:36] INFO: Porcentagem de capacidade restante da bateria: 1.0
-[2024-05-01 17:05:36] INFO: Data de fabricação da bateria: N/A
-[2024-05-01 17:05:36] INFO: Fabricante da bateria: SAMSUNG Electronics
-[2024-05-01 17:05:36] INFO: Dados da bateria capturados com sucesso: 57.0
-[2024-05-01 17:05:36] INFO: Dados da bateria gravados.
-[2024-05-01 17:05:36] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 57,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-05-01T17:05:36.819147700
-    |Id componente: 5
-
-[2024-05-01 17:05:36] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: PlacaMae
-    |Dado capturado: nu
-    |Unidade de medida: null
-    |Data hora captura: 2024-05-01T17:05:36.838117800
-    |Id componente: 6
-
-[2024-05-01 17:05:36] INFO: Capturando dados do sistema operacional.
-[2024-05-01 17:05:36] INFO: Nome do sistema operacional coletado: Windows
-[2024-05-01 17:05:36] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
-[2024-05-01 17:05:36] INFO: Arquitetura do sistema operacional coletada: 64
-[2024-05-01 17:05:36] INFO: A inicialização do sistema operacional coletada: 64
-[2024-05-01 17:05:36] INFO: O tempo de atividade do sistema operacional foi coletada: 1579834
-[2024-05-01 17:05:36] INFO: A permisão do sistema operacional foi coletada: 1579834
-[2024-05-01 17:05:36] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: SistemaOp
-    |Dado capturado: nu
-    |Unidade de medida: null
-    |Data hora captura: 2024-05-01T17:05:36.859055400
-    |Id componente: 7
-
-[2024-05-01 17:05:36] INFO: Capturando dados dos volumes lógicos.
-[2024-05-01 17:05:36] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
-[2024-05-01 17:05:36] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
-[2024-05-01 17:05:36] INFO: Espaço disponível no volume lógico capturado : 28.151241302490234
-[2024-05-01 17:05:36] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
-[2024-05-01 17:05:36] INFO: Tipo do volume lógico capturado: NTFS
-[2024-05-01 17:05:36] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
-[2024-05-01 17:05:36] INFO: Ponto de montagem do volume lógico capturado: C:\
-[2024-05-01 17:05:36] INFO: Dados do volume lógico gravados.
-[2024-05-01 17:05:36] INFO: Todos os volumes lógicos verificados.
-[2024-05-01 17:05:36] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 28,15
-    |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:36.902746500
-    |Id componente: 8
-
-[2024-05-01 17:05:36] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.componentes.Componente.getComponente()" because "componente" is null
-	at dao.componente.CapturaDAO.inserirCaptura(CapturaDAO.java:23)
-	at service.componente.ServiceComponente.lambda$iniciarCapturas$6(ServiceComponente.java:73)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-
-[2024-05-01 17:05:39] INFO: Capturando dados da sua CPU.
-[2024-05-01 17:05:39] INFO: Número de CPUs lógicas: 8
-[2024-05-01 17:05:39] INFO: Número de CPUs físicas: 4
-[2024-05-01 17:05:39] INFO: Microarquitetura: Tiger Lake
-[2024-05-01 17:05:39] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
-[2024-05-01 17:05:39] INFO: ID da CPU Looca: BFEBFBFF000806C1
-[2024-05-01 17:05:39] INFO: Fabricante: GenuineIntel
-[2024-05-01 17:05:39] INFO: Frequência: 2.419E9
-[2024-05-01 17:05:39] INFO: Número de pacotes físicos: 1
-[2024-05-01 17:05:39] INFO: Uso da CPU: 6.164636397194537
-[2024-05-01 17:05:39] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-[2024-05-01 17:05:40] INFO: Temperatura da CPU: 60.05
-[2024-05-01 17:05:40] INFO: Dados da CPU capturados com sucesso.
-[2024-05-01 17:05:40] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 60,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-05-01T17:05:40.556877100
-    |Id componente: 1
-
-[2024-05-01 17:05:40] INFO: Capturando dados do seu HDD
-[2024-05-01 17:05:40] INFO: Nome do disco: \\.\PHYSICALDRIVE0
-[2024-05-01 17:05:40] INFO: Serial do disco: 0025_38D3_3101_18C2.
-[2024-05-01 17:05:40] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
-[2024-05-01 17:05:40] INFO: Escritas do disco: 24.81337833404541
-[2024-05-01 17:05:40] INFO: Leituras do disco: 96.0501823425293
-[2024-05-01 17:05:40] INFO: Bytes de escritas do disco: 1910.979651927948
-[2024-05-01 17:05:40] INFO: Bytes de leitura do disco: 4396.82306098938
-[2024-05-01 17:05:40] INFO: Tamanho do disco: 238.47
-[2024-05-01 17:05:40] INFO: Tempo de transferência do disco: 38414.34527777778
-[2024-05-01 17:05:40] INFO: Dados do disco gravados.
-[2024-05-01 17:05:40] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:40.682295500
-    |Id componente: 2
-
-[2024-05-01 17:05:40] INFO: Capturando dados da GPU.
-[2024-05-01 17:05:40] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
-[2024-05-01 17:05:40] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
-[2024-05-01 17:05:40] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
-[2024-05-01 17:05:40] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
-[2024-05-01 17:05:40] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
-[2024-05-01 17:05:41] INFO: Temperatura da GPU: 60.05
-[2024-05-01 17:05:41] INFO: Dados da GPU gravados.
-[2024-05-01 17:05:41] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 60,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-05-01T17:05:41.261998500
-    |Id componente: 3
-
-[2024-05-01 17:05:41] INFO: Capturando dados da sua memória RAM.
-[2024-05-01 17:05:41] INFO: Memória disponível: 943.4921875
-[2024-05-01 17:05:41] INFO: Memória total: 7.729835510253906
-[2024-05-01 17:05:41] INFO: Memória em uso: 6.8084564208984375
-[2024-05-01 17:05:41] INFO: Dados da memória RAM capturados com sucesso.
-[2024-05-01 17:05:41] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,81
-    |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:41.293519500
-    |Id componente: 4
-
-[2024-05-01 17:05:41] INFO: Capturando dados da sua bateria.
-[2024-05-01 17:05:41] INFO: Amperagem da bateria: -880.6639748766263
-[2024-05-01 17:05:41] INFO: Nome do dispositivo da bateria: SR Real Battery
-[2024-05-01 17:05:41] INFO: Número de série da bateria: 123456789
-[2024-05-01 17:05:41] INFO: Química da bateria: LION
-[2024-05-01 17:05:41] INFO: Nome da bateria: System Battery
-[2024-05-01 17:05:41] INFO: Voltagem da bateria: 11.145
-[2024-05-01 17:05:41] INFO: Capacidade atual da bateria: 19.3603515625
-[2024-05-01 17:05:41] INFO: Número de ciclos da bateria: 206
-[2024-05-01 17:05:41] INFO: Capacidade de design da bateria: 42.08203125
-[2024-05-01 17:05:41] INFO: Unidade de capacidade da bateria: MWH
-[2024-05-01 17:05:41] INFO: Tempo restante da bateria (instantâneo): 7271.0
-[2024-05-01 17:05:41] INFO: Tempo restante estimado da bateria: -1.0
-[2024-05-01 17:05:41] INFO: Taxa de uso de energia da bateria: -9815.0
-[2024-05-01 17:05:41] INFO: Temperatura da bateria: 0.0
-[2024-05-01 17:05:41] INFO: Capacidade máxima da bateria: 33.587890625
-[2024-05-01 17:05:41] INFO: Porcentagem de capacidade restante da bateria: 1.0
-[2024-05-01 17:05:41] INFO: Data de fabricação da bateria: N/A
-[2024-05-01 17:05:41] INFO: Fabricante da bateria: SAMSUNG Electronics
-[2024-05-01 17:05:41] INFO: Dados da bateria capturados com sucesso: 57.0
-[2024-05-01 17:05:41] INFO: Dados da bateria gravados.
-[2024-05-01 17:05:41] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 57,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-05-01T17:05:41.844357900
-    |Id componente: 5
-
-[2024-05-01 17:05:41] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: PlacaMae
-    |Dado capturado: nu
-    |Unidade de medida: null
-    |Data hora captura: 2024-05-01T17:05:41.860372300
-    |Id componente: 6
-
-[2024-05-01 17:05:41] INFO: Capturando dados do sistema operacional.
-[2024-05-01 17:05:41] INFO: Nome do sistema operacional coletado: Windows
-[2024-05-01 17:05:41] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
-[2024-05-01 17:05:41] INFO: Arquitetura do sistema operacional coletada: 64
-[2024-05-01 17:05:41] INFO: A inicialização do sistema operacional coletada: 64
-[2024-05-01 17:05:41] INFO: O tempo de atividade do sistema operacional foi coletada: 1579839
-[2024-05-01 17:05:41] INFO: A permisão do sistema operacional foi coletada: 1579839
-[2024-05-01 17:05:41] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: SistemaOp
-    |Dado capturado: nu
-    |Unidade de medida: null
-    |Data hora captura: 2024-05-01T17:05:41.881056400
-    |Id componente: 7
-
-[2024-05-01 17:05:41] INFO: Capturando dados dos volumes lógicos.
-[2024-05-01 17:05:41] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
-[2024-05-01 17:05:41] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
-[2024-05-01 17:05:41] INFO: Espaço disponível no volume lógico capturado : 28.15109634399414
-[2024-05-01 17:05:41] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
-[2024-05-01 17:05:41] INFO: Tipo do volume lógico capturado: NTFS
-[2024-05-01 17:05:41] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
-[2024-05-01 17:05:41] INFO: Ponto de montagem do volume lógico capturado: C:\
-[2024-05-01 17:05:41] INFO: Dados do volume lógico gravados.
-[2024-05-01 17:05:41] INFO: Todos os volumes lógicos verificados.
-[2024-05-01 17:05:41] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 28,15
-    |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:41.937190100
-    |Id componente: 8
-
-[2024-05-01 17:05:41] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.componentes.Componente.getComponente()" because "componente" is null
-	at dao.componente.CapturaDAO.inserirCaptura(CapturaDAO.java:23)
-	at service.componente.ServiceComponente.lambda$iniciarCapturas$6(ServiceComponente.java:73)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-
-[2024-05-01 17:05:44] INFO: Capturando dados da sua CPU.
-[2024-05-01 17:05:44] INFO: Número de CPUs lógicas: 8
-[2024-05-01 17:05:44] INFO: Número de CPUs físicas: 4
-[2024-05-01 17:05:44] INFO: Microarquitetura: Tiger Lake
-[2024-05-01 17:05:44] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
-[2024-05-01 17:05:44] INFO: ID da CPU Looca: BFEBFBFF000806C1
-[2024-05-01 17:05:44] INFO: Fabricante: GenuineIntel
-[2024-05-01 17:05:44] INFO: Frequência: 2.419E9
-[2024-05-01 17:05:44] INFO: Número de pacotes físicos: 1
-[2024-05-01 17:05:44] INFO: Uso da CPU: 12.057522123893804
-[2024-05-01 17:05:44] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-[2024-05-01 17:05:45] INFO: Temperatura da CPU: 60.05
-[2024-05-01 17:05:45] INFO: Dados da CPU capturados com sucesso.
-[2024-05-01 17:05:45] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 60,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-05-01T17:05:45.543605300
-    |Id componente: 1
-
-[2024-05-01 17:05:45] INFO: Capturando dados do seu HDD
-[2024-05-01 17:05:45] INFO: Nome do disco: \\.\PHYSICALDRIVE0
-[2024-05-01 17:05:45] INFO: Serial do disco: 0025_38D3_3101_18C2.
-[2024-05-01 17:05:45] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
-[2024-05-01 17:05:45] INFO: Escritas do disco: 24.814102172851562
-[2024-05-01 17:05:45] INFO: Leituras do disco: 96.05206394195557
-[2024-05-01 17:05:45] INFO: Bytes de escritas do disco: 1910.9854731559753
-[2024-05-01 17:05:45] INFO: Bytes de leitura do disco: 4396.904034614563
-[2024-05-01 17:05:45] INFO: Tamanho do disco: 238.47
-[2024-05-01 17:05:45] INFO: Tempo de transferência do disco: 38414.950277777774
-[2024-05-01 17:05:45] INFO: Dados do disco gravados.
-[2024-05-01 17:05:45] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:45.657621600
-    |Id componente: 2
-
-[2024-05-01 17:05:45] INFO: Capturando dados da GPU.
-[2024-05-01 17:05:45] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
-[2024-05-01 17:05:45] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
-[2024-05-01 17:05:45] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
-[2024-05-01 17:05:45] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
-[2024-05-01 17:05:45] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
-[2024-05-01 17:05:46] INFO: Temperatura da GPU: 60.05
-[2024-05-01 17:05:46] INFO: Dados da GPU gravados.
-[2024-05-01 17:05:46] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 60,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-05-01T17:05:46.292528100
-    |Id componente: 3
-
-[2024-05-01 17:05:46] INFO: Capturando dados da sua memória RAM.
-[2024-05-01 17:05:46] INFO: Memória disponível: 861.0
-[2024-05-01 17:05:46] INFO: Memória total: 7.729835510253906
-[2024-05-01 17:05:46] INFO: Memória em uso: 6.889015197753906
-[2024-05-01 17:05:46] INFO: Dados da memória RAM capturados com sucesso.
-[2024-05-01 17:05:46] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,89
-    |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:46.317159
-    |Id componente: 4
-
-[2024-05-01 17:05:46] INFO: Capturando dados da sua bateria.
-[2024-05-01 17:05:46] INFO: Amperagem da bateria: -1864.218388760448
-[2024-05-01 17:05:46] INFO: Nome do dispositivo da bateria: SR Real Battery
-[2024-05-01 17:05:46] INFO: Número de série da bateria: 123456789
-[2024-05-01 17:05:46] INFO: Química da bateria: LION
-[2024-05-01 17:05:46] INFO: Nome da bateria: System Battery
-[2024-05-01 17:05:46] INFO: Voltagem da bateria: 11.246
-[2024-05-01 17:05:46] INFO: Capacidade atual da bateria: 19.326171875
-[2024-05-01 17:05:46] INFO: Número de ciclos da bateria: 206
-[2024-05-01 17:05:46] INFO: Capacidade de design da bateria: 42.08203125
-[2024-05-01 17:05:46] INFO: Unidade de capacidade da bateria: MWH
-[2024-05-01 17:05:46] INFO: Tempo restante da bateria (instantâneo): 3398.0
-[2024-05-01 17:05:46] INFO: Tempo restante estimado da bateria: -1.0
-[2024-05-01 17:05:46] INFO: Taxa de uso de energia da bateria: -20965.0
-[2024-05-01 17:05:46] INFO: Temperatura da bateria: 0.0
-[2024-05-01 17:05:46] INFO: Capacidade máxima da bateria: 33.587890625
-[2024-05-01 17:05:46] INFO: Porcentagem de capacidade restante da bateria: 1.0
-[2024-05-01 17:05:46] INFO: Data de fabricação da bateria: N/A
-[2024-05-01 17:05:46] INFO: Fabricante da bateria: SAMSUNG Electronics
-[2024-05-01 17:05:46] INFO: Dados da bateria capturados com sucesso: 57.0
-[2024-05-01 17:05:46] INFO: Dados da bateria gravados.
-[2024-05-01 17:05:46] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 57,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-05-01T17:05:46.905126400
-    |Id componente: 5
-
-[2024-05-01 17:05:46] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: PlacaMae
-    |Dado capturado: nu
-    |Unidade de medida: null
-    |Data hora captura: 2024-05-01T17:05:46.933131800
-    |Id componente: 6
-
-[2024-05-01 17:05:46] INFO: Capturando dados do sistema operacional.
-[2024-05-01 17:05:46] INFO: Nome do sistema operacional coletado: Windows
-[2024-05-01 17:05:46] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
-[2024-05-01 17:05:46] INFO: Arquitetura do sistema operacional coletada: 64
-[2024-05-01 17:05:46] INFO: A inicialização do sistema operacional coletada: 64
-[2024-05-01 17:05:46] INFO: O tempo de atividade do sistema operacional foi coletada: 1579844
-[2024-05-01 17:05:46] INFO: A permisão do sistema operacional foi coletada: 1579844
-[2024-05-01 17:05:46] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: SistemaOp
-    |Dado capturado: nu
-    |Unidade de medida: null
-    |Data hora captura: 2024-05-01T17:05:46.956122700
-    |Id componente: 7
-
-[2024-05-01 17:05:46] INFO: Capturando dados dos volumes lógicos.
-[2024-05-01 17:05:46] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
-[2024-05-01 17:05:46] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
-[2024-05-01 17:05:46] INFO: Espaço disponível no volume lógico capturado : 28.14830780029297
-[2024-05-01 17:05:46] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
-[2024-05-01 17:05:46] INFO: Tipo do volume lógico capturado: NTFS
-[2024-05-01 17:05:46] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
-[2024-05-01 17:05:46] INFO: Ponto de montagem do volume lógico capturado: C:\
-[2024-05-01 17:05:46] INFO: Dados do volume lógico gravados.
-[2024-05-01 17:05:46] INFO: Todos os volumes lógicos verificados.
-[2024-05-01 17:05:47] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 28,15
-    |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:47.004169100
-    |Id componente: 8
-
-[2024-05-01 17:05:47] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.componentes.Componente.getComponente()" because "componente" is null
-	at dao.componente.CapturaDAO.inserirCaptura(CapturaDAO.java:23)
-	at service.componente.ServiceComponente.lambda$iniciarCapturas$6(ServiceComponente.java:73)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-
-[2024-05-01 17:05:49] INFO: Capturando dados da sua CPU.
-[2024-05-01 17:05:49] INFO: Número de CPUs lógicas: 8
-[2024-05-01 17:05:49] INFO: Número de CPUs físicas: 4
-[2024-05-01 17:05:49] INFO: Microarquitetura: Tiger Lake
-[2024-05-01 17:05:49] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
-[2024-05-01 17:05:49] INFO: ID da CPU Looca: BFEBFBFF000806C1
-[2024-05-01 17:05:49] INFO: Fabricante: GenuineIntel
-[2024-05-01 17:05:49] INFO: Frequência: 2.419E9
-[2024-05-01 17:05:49] INFO: Número de pacotes físicos: 1
-[2024-05-01 17:05:49] INFO: Uso da CPU: 11.038237841851256
-[2024-05-01 17:05:49] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-[2024-05-01 17:05:50] INFO: Temperatura da CPU: 60.05
-[2024-05-01 17:05:50] INFO: Dados da CPU capturados com sucesso.
-[2024-05-01 17:05:50] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 60,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-05-01T17:05:50.512698200
-    |Id componente: 1
-
-[2024-05-01 17:05:50] INFO: Capturando dados do seu HDD
-[2024-05-01 17:05:50] INFO: Nome do disco: \\.\PHYSICALDRIVE0
-[2024-05-01 17:05:50] INFO: Serial do disco: 0025_38D3_3101_18C2.
-[2024-05-01 17:05:50] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
-[2024-05-01 17:05:50] INFO: Escritas do disco: 24.814433097839355
-[2024-05-01 17:05:50] INFO: Leituras do disco: 96.05230903625488
-[2024-05-01 17:05:50] INFO: Bytes de escritas do disco: 1911.0576357841492
-[2024-05-01 17:05:50] INFO: Bytes de leitura do disco: 4396.915414810181
-[2024-05-01 17:05:50] INFO: Tamanho do disco: 238.47
-[2024-05-01 17:05:50] INFO: Tempo de transferência do disco: 38415.058333333334
-[2024-05-01 17:05:50] INFO: Dados do disco gravados.
-[2024-05-01 17:05:50] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:50.613925500
-    |Id componente: 2
-
-[2024-05-01 17:05:50] INFO: Capturando dados da GPU.
-[2024-05-01 17:05:50] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
-[2024-05-01 17:05:50] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
-[2024-05-01 17:05:50] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
-[2024-05-01 17:05:50] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
-[2024-05-01 17:05:50] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
-[2024-05-01 17:05:51] INFO: Temperatura da GPU: 60.05
-[2024-05-01 17:05:51] INFO: Dados da GPU gravados.
-[2024-05-01 17:05:51] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 60,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-05-01T17:05:51.171267700
-    |Id componente: 3
-
-[2024-05-01 17:05:51] INFO: Capturando dados da sua memória RAM.
-[2024-05-01 17:05:51] INFO: Memória disponível: 928.58984375
-[2024-05-01 17:05:51] INFO: Memória total: 7.729835510253906
-[2024-05-01 17:05:51] INFO: Memória em uso: 6.823009490966797
-[2024-05-01 17:05:51] INFO: Dados da memória RAM capturados com sucesso.
-[2024-05-01 17:05:51] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,82
-    |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:51.198249200
-    |Id componente: 4
-
-[2024-05-01 17:05:51] INFO: Capturando dados da sua bateria.
-[2024-05-01 17:05:51] INFO: Amperagem da bateria: -1293.3297375044947
-[2024-05-01 17:05:51] INFO: Nome do dispositivo da bateria: SR Real Battery
-[2024-05-01 17:05:51] INFO: Número de série da bateria: 123456789
-[2024-05-01 17:05:51] INFO: Química da bateria: LION
-[2024-05-01 17:05:51] INFO: Nome da bateria: System Battery
-[2024-05-01 17:05:51] INFO: Voltagem da bateria: 11.124
-[2024-05-01 17:05:51] INFO: Capacidade atual da bateria: 19.3154296875
-[2024-05-01 17:05:51] INFO: Número de ciclos da bateria: 206
-[2024-05-01 17:05:51] INFO: Capacidade de design da bateria: 42.08203125
-[2024-05-01 17:05:51] INFO: Unidade de capacidade da bateria: MWH
-[2024-05-01 17:05:51] INFO: Tempo restante da bateria (instantâneo): 4949.0
-[2024-05-01 17:05:51] INFO: Tempo restante estimado da bateria: -1.0
-[2024-05-01 17:05:51] INFO: Taxa de uso de energia da bateria: -14387.0
-[2024-05-01 17:05:51] INFO: Temperatura da bateria: 0.0
-[2024-05-01 17:05:51] INFO: Capacidade máxima da bateria: 33.587890625
-[2024-05-01 17:05:51] INFO: Porcentagem de capacidade restante da bateria: 1.0
-[2024-05-01 17:05:51] INFO: Data de fabricação da bateria: N/A
-[2024-05-01 17:05:51] INFO: Fabricante da bateria: SAMSUNG Electronics
-[2024-05-01 17:05:51] INFO: Dados da bateria capturados com sucesso: 57.0
-[2024-05-01 17:05:51] INFO: Dados da bateria gravados.
-[2024-05-01 17:05:51] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 57,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-05-01T17:05:51.822960600
-    |Id componente: 5
-
-[2024-05-01 17:05:51] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: PlacaMae
-    |Dado capturado: nu
-    |Unidade de medida: null
-    |Data hora captura: 2024-05-01T17:05:51.846901400
-    |Id componente: 6
-
-[2024-05-01 17:05:51] INFO: Capturando dados do sistema operacional.
-[2024-05-01 17:05:51] INFO: Nome do sistema operacional coletado: Windows
-[2024-05-01 17:05:51] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
-[2024-05-01 17:05:51] INFO: Arquitetura do sistema operacional coletada: 64
-[2024-05-01 17:05:51] INFO: A inicialização do sistema operacional coletada: 64
-[2024-05-01 17:05:51] INFO: O tempo de atividade do sistema operacional foi coletada: 1579849
-[2024-05-01 17:05:51] INFO: A permisão do sistema operacional foi coletada: 1579849
-[2024-05-01 17:05:51] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: SistemaOp
-    |Dado capturado: nu
-    |Unidade de medida: null
-    |Data hora captura: 2024-05-01T17:05:51.872935300
-    |Id componente: 7
-
-[2024-05-01 17:05:51] INFO: Capturando dados dos volumes lógicos.
-[2024-05-01 17:05:51] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
-[2024-05-01 17:05:51] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
-[2024-05-01 17:05:51] INFO: Espaço disponível no volume lógico capturado : 28.148082733154297
-[2024-05-01 17:05:51] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
-[2024-05-01 17:05:51] INFO: Tipo do volume lógico capturado: NTFS
-[2024-05-01 17:05:51] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
-[2024-05-01 17:05:51] INFO: Ponto de montagem do volume lógico capturado: C:\
-[2024-05-01 17:05:51] INFO: Dados do volume lógico gravados.
-[2024-05-01 17:05:51] INFO: Todos os volumes lógicos verificados.
-[2024-05-01 17:05:51] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 28,15
-    |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:51.914919
-    |Id componente: 8
-
-[2024-05-01 17:05:51] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.componentes.Componente.getComponente()" because "componente" is null
-	at dao.componente.CapturaDAO.inserirCaptura(CapturaDAO.java:23)
-	at service.componente.ServiceComponente.lambda$iniciarCapturas$6(ServiceComponente.java:73)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-
-[2024-05-01 17:05:54] INFO: Capturando dados da sua CPU.
-[2024-05-01 17:05:54] ERROR: Erro ao iniciar monitoramento: 
-java.lang.NullPointerException
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:556)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:702)
-	at model.Maquina.exibirTabelaComponentes(Maquina.java:60)
-	at Main.displayTables(Main.java:202)
-	at Main.iniciarMonitoramento(Main.java:155)
-	at Main.main(Main.java:106)
-
-[2024-05-01 17:05:54] INFO: Número de CPUs lógicas: 8
-[2024-05-01 17:05:54] INFO: Número de CPUs físicas: 4
-[2024-05-01 17:05:54] INFO: Microarquitetura: Tiger Lake
-[2024-05-01 17:05:54] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
-[2024-05-01 17:05:54] INFO: ID da CPU Looca: BFEBFBFF000806C1
-[2024-05-01 17:05:54] INFO: Fabricante: GenuineIntel
-[2024-05-01 17:05:54] INFO: Frequência: 2.419E9
-[2024-05-01 17:05:54] INFO: Número de pacotes físicos: 1
-[2024-05-01 17:05:54] INFO: Uso da CPU: 11.544615384615385
-[2024-05-01 17:05:54] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-[2024-05-01 17:05:55] INFO: Temperatura da CPU: 60.05
-[2024-05-01 17:05:55] INFO: Dados da CPU capturados com sucesso.
-[2024-05-01 17:05:55] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 60,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-05-01T17:05:55.505314200
-    |Id componente: 1
-
-[2024-05-01 17:05:55] INFO: Capturando dados do seu HDD
-[2024-05-01 17:05:55] INFO: Nome do disco: \\.\PHYSICALDRIVE0
-[2024-05-01 17:05:55] INFO: Serial do disco: 0025_38D3_3101_18C2.
-[2024-05-01 17:05:55] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
-[2024-05-01 17:05:55] INFO: Escritas do disco: 24.81469440460205
-[2024-05-01 17:05:55] INFO: Leituras do disco: 96.05247020721436
-[2024-05-01 17:05:55] INFO: Bytes de escritas do disco: 1911.0611109733582
-[2024-05-01 17:05:55] INFO: Bytes de leitura do disco: 4396.923162460327
-[2024-05-01 17:05:55] INFO: Tamanho do disco: 238.47
-[2024-05-01 17:05:55] INFO: Tempo de transferência do disco: 38415.12777777778
-[2024-05-01 17:05:55] INFO: Dados do disco gravados.
-[2024-05-01 17:05:55] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:55.599458400
-    |Id componente: 2
-
-[2024-05-01 17:05:55] INFO: Capturando dados da GPU.
-[2024-05-01 17:05:55] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
-[2024-05-01 17:05:55] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
-[2024-05-01 17:05:55] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
-[2024-05-01 17:05:55] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
-[2024-05-01 17:05:55] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
-[2024-05-01 17:05:56] INFO: Temperatura da GPU: 60.05
-[2024-05-01 17:05:56] INFO: Dados da GPU gravados.
-[2024-05-01 17:05:56] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 60,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-05-01T17:05:56.161170900
-    |Id componente: 3
-
-[2024-05-01 17:05:56] INFO: Capturando dados da sua memória RAM.
-[2024-05-01 17:05:56] INFO: Memória disponível: 938.12109375
-[2024-05-01 17:05:56] INFO: Memória total: 7.729835510253906
-[2024-05-01 17:05:56] INFO: Memória em uso: 6.813701629638672
-[2024-05-01 17:05:56] INFO: Dados da memória RAM capturados com sucesso.
-[2024-05-01 17:05:56] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,81
-    |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:56.187256900
-    |Id componente: 4
-
-[2024-05-01 17:05:56] INFO: Capturando dados da sua bateria.
-[2024-05-01 17:05:56] INFO: Amperagem da bateria: -1472.1753794266442
-[2024-05-01 17:05:56] INFO: Nome do dispositivo da bateria: SR Real Battery
-[2024-05-01 17:05:56] INFO: Número de série da bateria: 123456789
-[2024-05-01 17:05:56] INFO: Química da bateria: LION
-[2024-05-01 17:05:56] INFO: Nome da bateria: System Battery
-[2024-05-01 17:05:56] INFO: Voltagem da bateria: 11.267
-[2024-05-01 17:05:56] INFO: Capacidade atual da bateria: 19.29296875
-[2024-05-01 17:05:56] INFO: Número de ciclos da bateria: 206
-[2024-05-01 17:05:56] INFO: Capacidade de design da bateria: 42.08203125
-[2024-05-01 17:05:56] INFO: Unidade de capacidade da bateria: MWH
-[2024-05-01 17:05:56] INFO: Tempo restante da bateria (instantâneo): 4287.0
-[2024-05-01 17:05:56] INFO: Tempo restante estimado da bateria: -1.0
-[2024-05-01 17:05:56] INFO: Taxa de uso de energia da bateria: -16587.0
-[2024-05-01 17:05:56] INFO: Temperatura da bateria: 0.0
-[2024-05-01 17:05:56] INFO: Capacidade máxima da bateria: 33.587890625
-[2024-05-01 17:05:56] INFO: Porcentagem de capacidade restante da bateria: 1.0
-[2024-05-01 17:05:56] INFO: Data de fabricação da bateria: N/A
-[2024-05-01 17:05:56] INFO: Fabricante da bateria: SAMSUNG Electronics
-[2024-05-01 17:05:56] INFO: Dados da bateria capturados com sucesso: 57.0
-[2024-05-01 17:05:56] INFO: Dados da bateria gravados.
-[2024-05-01 17:05:56] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 57,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-05-01T17:05:56.806560900
-    |Id componente: 5
-
-[2024-05-01 17:05:56] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: PlacaMae
-    |Dado capturado: nu
-    |Unidade de medida: null
-    |Data hora captura: 2024-05-01T17:05:56.825593500
-    |Id componente: 6
-
-[2024-05-01 17:05:56] INFO: Capturando dados do sistema operacional.
-[2024-05-01 17:05:56] INFO: Nome do sistema operacional coletado: Windows
-[2024-05-01 17:05:56] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
-[2024-05-01 17:05:56] INFO: Arquitetura do sistema operacional coletada: 64
-[2024-05-01 17:05:56] INFO: A inicialização do sistema operacional coletada: 64
-[2024-05-01 17:05:56] INFO: O tempo de atividade do sistema operacional foi coletada: 1579854
-[2024-05-01 17:05:56] INFO: A permisão do sistema operacional foi coletada: 1579854
-[2024-05-01 17:05:56] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: SistemaOp
-    |Dado capturado: nu
-    |Unidade de medida: null
-    |Data hora captura: 2024-05-01T17:05:56.848534600
-    |Id componente: 7
-
-[2024-05-01 17:05:56] INFO: Capturando dados dos volumes lógicos.
-[2024-05-01 17:05:56] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
-[2024-05-01 17:05:56] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
-[2024-05-01 17:05:56] INFO: Espaço disponível no volume lógico capturado : 28.147525787353516
-[2024-05-01 17:05:56] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
-[2024-05-01 17:05:56] INFO: Tipo do volume lógico capturado: NTFS
-[2024-05-01 17:05:56] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
-[2024-05-01 17:05:56] INFO: Ponto de montagem do volume lógico capturado: C:\
-[2024-05-01 17:05:56] INFO: Dados do volume lógico gravados.
-[2024-05-01 17:05:56] INFO: Todos os volumes lógicos verificados.
-[2024-05-01 17:05:56] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 28,15
-    |Unidade de medida: GB
-    |Data hora captura: 2024-05-01T17:05:56.894556900
-    |Id componente: 8
-
-[2024-05-01 17:05:56] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.componentes.Componente.getComponente()" because "componente" is null
-	at dao.componente.CapturaDAO.inserirCaptura(CapturaDAO.java:23)
-	at service.componente.ServiceComponente.lambda$iniciarCapturas$6(ServiceComponente.java:73)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-
+[2024-05-01 18:26:07] INFO: Capturando dados da sua bateria.
+[2024-05-01 18:26:07] INFO: Amperagem da bateria: -1812.3269976010336
+[2024-05-01 18:26:07] INFO: Nome do dispositivo da bateria: SR Real Battery
+[2024-05-01 18:26:07] INFO: Número de série da bateria: 123456789
+[2024-05-01 18:26:07] INFO: Química da bateria: LION
+[2024-05-01 18:26:07] INFO: Nome da bateria: System Battery
+[2024-05-01 18:26:07] INFO: Voltagem da bateria: 10.838
+[2024-05-01 18:26:07] INFO: Capacidade atual da bateria: 7.8154296875
+[2024-05-01 18:26:07] INFO: Número de ciclos da bateria: 206
+[2024-05-01 18:26:07] INFO: Capacidade de design da bateria: 42.08203125
+[2024-05-01 18:26:07] INFO: Unidade de capacidade da bateria: MWH
+[2024-05-01 18:26:07] INFO: Tempo restante da bateria (instantâneo): 1466.0
+[2024-05-01 18:26:07] INFO: Tempo restante estimado da bateria: -1.0
+[2024-05-01 18:26:07] INFO: Taxa de uso de energia da bateria: -19642.0
+[2024-05-01 18:26:07] INFO: Temperatura da bateria: 0.0
+[2024-05-01 18:26:07] INFO: Capacidade máxima da bateria: 33.587890625
+[2024-05-01 18:26:07] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-05-01 18:26:07] INFO: Data de fabricação da bateria: N/A
+[2024-05-01 18:26:07] INFO: Fabricante da bateria: SAMSUNG Electronics

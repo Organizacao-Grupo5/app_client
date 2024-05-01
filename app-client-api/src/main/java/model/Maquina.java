@@ -1,6 +1,9 @@
 package model;
 
 import model.componentes.Componente;
+import util.reports.CreatePDFInfos;
+import util.reports.PDFGenerator;
+import util.reports.TablePrinter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,12 +60,22 @@ public class Maquina {
 	}
 
 	public String exibirTabelaComponentes() {
-		return new StringBuilder(componentes.stream().map(Componente::tabelaConvert).collect(Collectors.joining()))
-				.toString();
+		StringBuilder stringBuilder = new StringBuilder();
+		componentes.forEach(componente -> {
+			String tablePrinter = componente.tabelaConvert();
+			stringBuilder.append(tablePrinter);
+		});
+
+		return stringBuilder.toString();
 	}
 
 	public String layoutPdfComponentes() {
-		return new StringBuilder(componentes.stream().map(Componente::pdfLayout).collect(Collectors.joining()))
-				.toString();
+		StringBuilder stringBuilder = new StringBuilder();
+		componentes.forEach(componente -> {
+			String tablePrinter = componente.pdfLayout();
+			stringBuilder.append(tablePrinter);
+		});
+
+		return stringBuilder.toString();
 	}
 }

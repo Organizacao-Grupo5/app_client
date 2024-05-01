@@ -132,15 +132,11 @@ public class CPU extends Componente {
 				Arrays.asList("Microarquitetura", Optional.ofNullable(microarquitetura).orElse("N/A")),
 				Arrays.asList("Identificador", Optional.ofNullable(identificador).orElse("N/A")),
 				Arrays.asList("ID CPU", Optional.ofNullable(idCpuLooca).orElse("N/A")),
-				Arrays.asList("Número de CPUs lógicas",
-						Optional.ofNullable(numeroDeCpusLogicas).map(Object::toString).orElse("N/A")),
-				Arrays.asList("Número de CPUs Físicas",
-						Optional.ofNullable(numeroDeCpusFisicas).map(Object::toString).orElse("N/A")),
-				Arrays.asList("Número de pacotes físicos",
-						Optional.ofNullable(numeroPacotesFisicos).map(Object::toString).orElse("N/A")),
+				Arrays.asList("Número de CPUs lógicas", Optional.ofNullable(numeroDeCpusLogicas).map(Object::toString).orElse("N/A")),
+				Arrays.asList("Número de CPUs Físicas", Optional.ofNullable(numeroDeCpusFisicas).map(Object::toString).orElse("N/A")),
+				Arrays.asList("Número de pacotes físicos", Optional.ofNullable(numeroPacotesFisicos).map(Object::toString).orElse("N/A")),
 				Arrays.asList("Frequência", Optional.ofNullable(frequencia).map(Object::toString).orElse("N/A")),
-				Arrays.asList("Uso", Optional.ofNullable(uso).map(Object::toString).orElse("N/A")), Arrays.asList(
-						"Temperatura", Optional.ofNullable(temperatura).map(Object::toString).orElse("N/A") + "°C"));
+				Arrays.asList("Uso", Optional.ofNullable(uso).map(Object::toString).orElse("N/A")), Arrays.asList("Temperatura", Optional.ofNullable(temperatura).map(Object::toString).orElse("N/A") + "°C"));
 	}
 
 	@Override
