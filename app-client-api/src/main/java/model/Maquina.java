@@ -60,22 +60,16 @@ public class Maquina {
 	}
 
 	public String exibirTabelaComponentes() {
-		StringBuilder stringBuilder = new StringBuilder();
-		componentes.forEach(componente -> {
-			String tablePrinter = componente.tabelaConvert();
-			stringBuilder.append(tablePrinter);
-		});
-
-		return stringBuilder.toString();
+		return (new StringBuilder(componentes.stream()
+				.map(Componente::tabelaConvert)
+				.collect(Collectors.joining()))
+		).toString();
 	}
 
 	public String layoutPdfComponentes() {
-		StringBuilder stringBuilder = new StringBuilder();
-		componentes.forEach(componente -> {
-			String tablePrinter = componente.pdfLayout();
-			stringBuilder.append(tablePrinter);
-		});
-
-		return stringBuilder.toString();
+		return (new StringBuilder(componentes.stream()
+				.map(Componente::pdfLayout)
+				.collect(Collectors.joining()))
+		).toString();
 	}
 }
