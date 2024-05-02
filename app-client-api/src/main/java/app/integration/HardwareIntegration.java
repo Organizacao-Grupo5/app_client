@@ -49,7 +49,7 @@ public class HardwareIntegration {
 
 		try {
 			String scriptName = isWindows ? "cpuTemperature.bat" : "cpuTemperature.sh";
-			InputStream inputStream = getClass().getResourceAsStream("/scripts/cmd/" + scriptName);
+			InputStream inputStream = getClass().getResourceAsStream("/scripts" + (isWindows ? "/cmd/" : "/bash/") + scriptName);
 			if (inputStream == null) {
 				throw new IOException("Arquivo BAT não encontrado no recurso.");
 			}

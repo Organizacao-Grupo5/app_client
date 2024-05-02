@@ -1,10 +1,10 @@
-[2024-05-02 17:47:59] INFO: Servidor iniciando.
-[2024-05-02 17:48:01] INFO: Servidor iniciado com sucesso.
-[2024-05-02 17:48:06] INFO: Verificando informações de login do usuário.
-[2024-05-02 17:48:07] INFO: Usuário foi encontrado com sucesso.
-[2024-05-02 17:48:07] INFO: Usuário logado com sucesso: clau@gmail
-[2024-05-02 17:48:07] INFO: Buscando componentes...
-[2024-05-02 17:48:07] INFO: Componente encontrado :
+[2024-05-02 19:21:44] INFO: Servidor iniciando.
+[2024-05-02 19:21:46] INFO: Servidor iniciado com sucesso.
+[2024-05-02 19:22:01] INFO: Verificando informações de login do usuário.
+[2024-05-02 19:22:02] INFO: Usuário foi encontrado com sucesso.
+[2024-05-02 19:22:02] INFO: Usuário logado com sucesso: clau@gmail
+[2024-05-02 19:22:02] INFO: Buscando componentes...
+[2024-05-02 19:22:02] INFO: Componente encontrado :
     |Componente: CPU
     |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
     |Fabricante: GenuineIntel
