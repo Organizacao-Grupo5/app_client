@@ -114,13 +114,13 @@ public class HDD extends Componente {
 				Arrays.asList("Nome", Optional.ofNullable(nome).orElse("N/A")),
 				Arrays.asList("Serial", Optional.ofNullable(serial).orElse("N/A")),
 				Arrays.asList("Modelo", Optional.ofNullable(modelo).orElse("N/A")),
-				Arrays.asList("Escritas", Optional.ofNullable(escritas).map(Object::toString).orElse("N/A")),
-				Arrays.asList("Leituras", Optional.ofNullable(leituras).map(Object::toString).orElse("N/A")),
+				Arrays.asList("Escritas", Optional.ofNullable(arredondaValor(escritas)).map(Object::toString).orElse("N/A") + " MB/s"),
+				Arrays.asList("Leituras", Optional.ofNullable(arredondaValor(leituras)).map(Object::toString).orElse("N/A") + " MB/s"),
 				Arrays.asList("Bytes de escrita",
 						Optional.ofNullable(bytesDeEscrita).map(Object::toString).orElse("N/A")),
 				Arrays.asList("Bytes de leitura",
 						Optional.ofNullable(bytesDeLeitura).map(Object::toString).orElse("N/A")),
-				Arrays.asList("Tamanho", Optional.ofNullable(tamanho).map(Object::toString).orElse("N/A")),
+				Arrays.asList("Tamanho", Optional.ofNullable(tamanho).map(Object::toString).orElse("N/A") + " GB"),
 				Arrays.asList("Tempo de transferência",
 						Optional.ofNullable(tempoDeTransferencia).map(Object::toString).orElse("N/A")));
 	}
@@ -148,5 +148,12 @@ public class HDD extends Componente {
 	@Override
 	public Double getDadoCaptura() {
 		return tamanho;
+	}
+
+	public Double arredondaValor(Double valor){
+		if(!valor.equals(null)){
+			return (double) Math.ceil(valor * 100) / 100;
+		}
+		return null;
 	}
 }

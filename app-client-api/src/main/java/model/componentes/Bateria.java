@@ -219,27 +219,27 @@ public class Bateria extends Componente {
 		return Arrays.asList(Arrays.asList("", "Bateria"),
 				Arrays.asList("Data Hora captura", String.valueOf(dataCaptura)),
 				Arrays.asList("ID", Optional.ofNullable(super.idComponente).map(Object::toString).orElse("N/A")),
-				Arrays.asList("Amperagem", Optional.ofNullable(amperagem).map(Object::toString).orElse("N/A")),
+				Arrays.asList("Amperagem", Optional.ofNullable(arredondaValor(amperagem)).map(Object::toString).orElse("N/A") + " mAh"),
 				Arrays.asList("Nome do Dispositivo", Optional.ofNullable(nomeDispositivo).orElse("N/A")),
 				Arrays.asList("Número Serial", Optional.ofNullable(numeroSerial).orElse("N/A")),
 				Arrays.asList("Química", Optional.ofNullable(quimica).orElse("N/A")),
 				Arrays.asList("Nome", Optional.ofNullable(modelo).orElse("N/A")),
-				Arrays.asList("Voltagem", Optional.ofNullable(voltagem).map(Object::toString).orElse("N/A")),
+				Arrays.asList("Voltagem", Optional.ofNullable(arredondaValor(voltagem)).map(Object::toString).orElse("N/A") + " V"),
 				Arrays.asList("Unidades de Capacidade", Optional.ofNullable(unidadesCapacidade).orElse("N/A")),
 				Arrays.asList("Capacidade Atual",
-						Optional.ofNullable(capacidadeAtual).map(Object::toString).orElse("N/A")),
+						Optional.ofNullable(arredondaValor(capacidadeAtual)).map(Object::toString).orElse("N/A") + " Wh"),
 				Arrays.asList("Ciclos", Optional.ofNullable(ciclos).map(Object::toString).orElse("N/A")),
 				Arrays.asList("Capacidade Design",
-						Optional.ofNullable(capacidadeDesign).map(Object::toString).orElse("N/A")),
+						Optional.ofNullable(arredondaValor(capacidadeDesign)).map(Object::toString).orElse("N/A") + " Wh"),
 				Arrays.asList("Tempo Restante Instantâneo",
 						Optional.ofNullable(tempoRestanteInstantaneo).map(Object::toString).orElse("N/A")),
 				Arrays.asList("Tempo Restante Estimado",
 						Optional.ofNullable(tempoRestanteEstimado).map(Object::toString).orElse("N/A")),
 				Arrays.asList("Taxa de Uso de Energia",
-						Optional.ofNullable(taxaUsoEnergia).map(Object::toString).orElse("N/A")),
+						Optional.ofNullable(taxaUsoEnergia).map(Object::toString).orElse("N/A") + " mAh"),
 				Arrays.asList("Temperatura", Optional.ofNullable(temperatura).map(Object::toString).orElse("N/A")),
 				Arrays.asList("Capacidade Máxima",
-						Optional.ofNullable(capacidadeMaxima).map(Object::toString).orElse("N/A")),
+						Optional.ofNullable(arredondaValor(capacidadeMaxima)).map(Object::toString).orElse("N/A") + " Wh"),
 				Arrays.asList("Percentual Capacidade Restante",
 						Optional.ofNullable(percentualCapacidadeRestante).map(Object::toString).orElse("N/A")),
 				Arrays.asList("Data de Fabricação", Optional.ofNullable(dataFabricacao).orElse("N/A")),
@@ -266,5 +266,12 @@ public class Bateria extends Componente {
 	@Override
 	public Double getDadoCaptura() {
 		return bateriaAtual;
+	}
+
+	public Double arredondaValor(Double valor){
+		if(!valor.equals(null)){
+			return (double) Math.round(valor * 100) / 100;
+		}
+		return null;
 	}
 }

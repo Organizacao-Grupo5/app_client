@@ -94,8 +94,8 @@ public class Volume extends Componente {
 				Arrays.asList("Data Hora captura", String.valueOf(dataCaptura)),
 				Arrays.asList("Nome", Optional.ofNullable(modelo).orElse("N/A")),
 				Arrays.asList("Volume", Optional.ofNullable(volume).orElse("N/A")),
-				Arrays.asList("Disponível", Optional.ofNullable(disponivel).map(Object::toString).orElse("N/A")),
-				Arrays.asList("Total", Optional.ofNullable(total).map(Object::toString).orElse("N/A")),
+				Arrays.asList("Disponível", Optional.ofNullable(arredondaValor(disponivel)).map(Object::toString).orElse("N/A") + " GB"),
+				Arrays.asList("Total", Optional.ofNullable(arredondaValor(total)).map(Object::toString).orElse("N/A") + " GB"),
 				Arrays.asList("Tipo", Optional.ofNullable(tipo).orElse("N/A")),
 				Arrays.asList("UUID", Optional.ofNullable(uuid).orElse("N/A")),
 				Arrays.asList("Ponto de Montagem", Optional.ofNullable(pontoDeMontagem).orElse("N/A")));
@@ -126,5 +126,12 @@ public class Volume extends Componente {
 	@Override
 	public Double getDadoCaptura() {
 		return disponivel;
+	}
+
+	public Double arredondaValor(Double valor){
+		if(!valor.equals(null)){
+			return (double) Math.round(valor * 100) / 100;
+		}
+		return null;
 	}
 }

@@ -64,9 +64,9 @@ public class MemoriaRam extends Componente {
 				Arrays.asList("", "RAM"),
 				Arrays.asList("Data Hora captura", String.valueOf(dataCaptura)),
 				Arrays.asList("ID", Optional.ofNullable(super.idComponente).map(Object::toString).orElse("N/A")),
-				Arrays.asList("Memória Disponível", Optional.ofNullable(memoriaDisponivel).map(Object::toString).orElse("N/A")),
-				Arrays.asList("Memória em Uso", Optional.ofNullable(memoriaEmUso).map(Object::toString).orElse("N/A")),
-				Arrays.asList("Memória Total", Optional.ofNullable(memoriaTotal).map(Object::toString).orElse("N/A")));
+				Arrays.asList("Memória Disponível", Optional.ofNullable(arredondaValor(memoriaDisponivel)).map(Object::toString).orElse("N/A") + " GB"),
+				Arrays.asList("Memória em Uso", Optional.ofNullable(arredondaValor(memoriaEmUso)).map(Object::toString).orElse("N/A") + " GB"),
+				Arrays.asList("Memória Total", Optional.ofNullable(arredondaValor(memoriaTotal)).map(Object::toString).orElse("N/A") + " GB"));
 	}
 
 	@Override
@@ -94,5 +94,12 @@ public class MemoriaRam extends Componente {
 	@Override
 	public Double getDadoCaptura() {
 		return memoriaEmUso;
+	}
+
+	public Double arredondaValor(Double valor){
+		if(!valor.equals(null)){
+			return (double) Math.round(valor * 100) / 100;
+		}
+		return null;
 	}
 }

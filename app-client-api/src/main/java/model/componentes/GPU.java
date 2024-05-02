@@ -75,7 +75,7 @@ public class GPU extends Componente {
 				Arrays.asList("Fabricante", Optional.ofNullable(fabricante).orElse("N/A")),
 				Arrays.asList("Versão", Optional.ofNullable(versao).orElse("N/A")),
 				Arrays.asList("ID Device", Optional.ofNullable(idDevice).orElse("N/A")),
-				Arrays.asList("VRAM", Optional.ofNullable(vRam).map(Object::toString).orElse("N/A")),
+				Arrays.asList("VRAM", Optional.ofNullable(vRam).map(Object::toString).orElse("N/A") + " GB"),
 				Arrays.asList("Temperatura", Optional.ofNullable(temperatura).map(Object::toString).orElse("N/A") + "°C"));
 	}
 
