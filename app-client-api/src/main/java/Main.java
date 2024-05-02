@@ -108,7 +108,7 @@ public class Main {
                     Logger.logInfo("Usuário logado com sucesso: " + usuarioLogado.getEmail());
                     System.out.println("""
                             Informações da máquina
-                             - %s
+                             - Lista IPV4 da máquina: %s
                             """.formatted((new StringBuilder(maquina.getIpv4().stream()
                                     .map(e -> e).collect(Collectors.joining("; "))
                             ).toString())));
