@@ -12,6 +12,7 @@ import util.reports.TablePrinter;
 import util.security.Login;
 
 import java.io.Console;
+import java.io.IOException;
 import java.util.Scanner;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -28,6 +29,7 @@ public class Main {
     private static ServiceComponente serviceComponente = new ServiceComponente();
 
     public static void main(String[] args) throws Exception {
+
         Logger.logInfo("Servidor iniciando.");
         int quadros = 50;
 
@@ -439,7 +441,6 @@ public class Main {
             opcoes.append("                        |");
             qtdOpcoesNaLinha++;
         }
-
         opcoes.append("\n+-------------------------+--------------+----------+------------------------+\n" +
                 "| 1 - Exibir monitoramento| 2 - Ver Logs | 3 - Sair | 4 - Voltar             |\n" +
                 "+-------------------------+--------------+----------+------------------------+\n");
