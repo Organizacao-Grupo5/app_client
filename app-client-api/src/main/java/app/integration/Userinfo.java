@@ -1,51 +1,56 @@
 package app.integration;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
 import static com.sun.jna.Platform.isWindows;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.net.SocketException;
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.List;
+
+import com.itextpdf.text.pdf.PdfStructTreeController.returnType;
+
+
 public class Userinfo {
+
 	private static Boolean isWindows = System.getProperty("os.name").toLowerCase().startsWith("windows");
-	String directory = isWindows ? "/scripts/powershell" : "/scripts/bash";
-	ProcessBuilder processBuilder = new ProcessBuilder();
-
-	public String userName() {
+	String directory = "app-client-api\\src\\main\\resources\\scripts";
+	ProcessBuilder processBuilder;
+	String[] arrayCommand;
+	
+	public String username() {
 		try {
-
-			String command = "";
-			if (!isWindows()) {
-				String scriptPath = "app-client-api/src/scripts" + directory + "/userInfo.sh";
-				command = "sh " + scriptPath;
+			
+			if(!isWindows) {
+				arrayCommand = new String[] {"sh", directory + "\\bash\\userinfo\\userUsername.sh"  };
 			} else {
-				String scriptPath = "app-client-api/src/scripts" + directory + "/userInfo.ps1";
-
-				command = "powershell.exe -ExecutionPolicy Bypass -File " + scriptPath;
+				arrayCommand = new String[] {"cmd.exe", "/c", directory + "\\cmd\\userinfo\\userUsername.cmd"};
 			}
 
-			processBuilder.command(splitCommand(command));
+			processBuilder = new ProcessBuilder(arrayCommand);
 
 			Process process = processBuilder.start();
 
-			int output = process.waitFor();
-
 			BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-
-			StringBuilder stringBuilder = new StringBuilder();
-
+			
+			List<String> listStrings = new ArrayList<>();
+			
 			String line;
-
-			System.out.println(reader.readLine());
-
+			
 			while ((line = reader.readLine()) != null) {
-				stringBuilder.append(line).append("\n");
+				listStrings.add(line);
 			}
 
-			System.out.println(stringBuilder);
-
-			if (output == 0) {
-				return stringBuilder.toString();
+			BufferedReader erroReader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+			
+			while ((line = erroReader.readLine()) != null) {
+				System.err.println("Saída de erro: "+ line);
 			}
+
+			return listStrings.get(2);
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -54,8 +59,68 @@ public class Userinfo {
 		return null;
 	}
 
-	private String[] splitCommand(String command) {
-		// Dividir a string de comando em tokens pelo espaço em branco
-		return command.split("\\s+");
+	public String hostname() {
+		try {
+
+			if(!isWindows) {
+				arrayCommand = new String[] {"sh", directory + "\\bash\\userinfo\\userHostname.sh"  };
+			} else {
+				arrayCommand = new String[] {"cmd.exe", "/c", directory + "\\cmd\\userinfo\\userHostname.cmd"};
+			}
+
+			processBuilder = new ProcessBuilder(arrayCommand);
+
+			Process process = processBuilder.start();
+
+			BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+			
+			List<String> listStrings = new ArrayList<>();
+			
+			String line;
+			
+			while ((line = reader.readLine()) != null) {
+				listStrings.add(line);
+			}
+
+			BufferedReader erroReader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+			
+			while ((line = erroReader.readLine()) != null) {
+				System.err.println("Saída de erro: "+ line);
+			}
+
+			return listStrings.get(2);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return null;
+	}
+
+	public String ipv4() {
+		String ip;
+
+		try {
+
+			Enumeration<NetworkInterface> interfaces = NetworkInterface.getNetworkInterfaces();
+
+			while (interfaces.hasMoreElements()) {
+			NetworkInterface iface = interfaces.nextElement();
+			if (iface.isLoopback() || !iface.isUp()) continue;
+
+			Enumeration<InetAddress> addresses = iface.getInetAddresses();
+			while (addresses.hasMoreElements()) {
+				InetAddress addr = addresses.nextElement();
+				ip = addr.getHostAddress();
+				return ip;
+			}
+		}
+
+		} catch (SocketException e) {
+			e.printStackTrace();
+		}
+
+		return null;
+
 	}
 }

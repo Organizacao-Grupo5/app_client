@@ -1,3 +1,0 @@
-HOSTNAME
-
-$env:USERNAME

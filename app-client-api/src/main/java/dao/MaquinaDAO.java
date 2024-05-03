@@ -2,6 +2,7 @@ package dao;
 
 import model.Maquina;
 import model.Usuario;
+import oshi.SystemInfo;
 import util.database.MySQLConnection;
 import util.logs.Logger;
 
@@ -11,6 +12,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
+
+import app.integration.Userinfo;
 
 public class MaquinaDAO {
 	public Optional<Maquina> monitorarMaquina(Usuario usuario) throws SQLException {
@@ -26,6 +29,22 @@ public class MaquinaDAO {
 					if (maquina == null) {
 						maquina = criaMaquina(resultSet, usuario);
 					}
+
+					Userinfo userinfo = new Userinfo();
+
+					// VERIFICAR SE EXISTE ESSA INFORMAÇÔES NO BANCO ANTES DE INSERIR;
+					
+					SystemInfo systemInfo = new SystemInfo();
+					String manufacturer = systemInfo.getHardware().getComputerSystem().getManufacturer();
+        			String model = systemInfo.getHardware().getComputerSystem().getModel();
+			        String serialNumber = systemInfo.getHardware().getComputerSystem().getSerialNumber();
+
+					String hostname = userinfo.hostname();
+					String username = userinfo.username();
+					
+					maquina.setHostname(hostname);
+					maquina.setUsername(username);
+
 					maquina.getIpv4().add(resultSet.getString("numeroIP"));
 				}
 				return Optional.of(maquina);
