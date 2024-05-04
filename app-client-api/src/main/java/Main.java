@@ -2,6 +2,8 @@ import service.componente.ServiceComponente;
 import util.security.Login;
 import app.integration.Userinfo;
 import app.system.SystemMonitor;
+import dao.MaquinaDAO;
+
 import com.mysql.cj.util.StringUtils;
 import util.exception.AutenticationException;
 import model.*;
@@ -32,423 +34,410 @@ public class Main {
 	public static void main(String[] args) throws Exception {
 
 		Userinfo userinfo = new Userinfo();
-		String hostname = userinfo.hostname();
-		String username = userinfo.username();
 
-		SystemInfo systemInfo = new SystemInfo();
+		Logger.logInfo("Servidor iniciando.");
+		int quadros = 50;
 
-		String manufacturer = systemInfo.getHardware().getComputerSystem().getManufacturer();
-		String model = systemInfo.getHardware().getComputerSystem().getModel();
-		String serialNumber = systemInfo.getHardware().getComputerSystem().getSerialNumber();
+		for (int i = 0; i <= quadros; i++) {
+			int porcentagem = i * 100 / quadros;
 
-		System.out.println(hostname);
-		System.out.println(username);
-		System.out.println(model);
-		System.out.println(manufacturer);
-		System.out.println(serialNumber);
-	// 	Logger.logInfo("Servidor iniciando.");
-	// 	int quadros = 50;
+			StringBuilder barraCarregamento = new StringBuilder("\u001B[34m[");
+			for (int j = 0; j < quadros; j++) {
+				barraCarregamento.append(j < i ? "=" : " ");
+			}
+			barraCarregamento.append("] ");
 
-	// 	for (int i = 0; i <= quadros; i++) {
-	// 		int porcentagem = i * 100 / quadros;
+			barraCarregamento.append(porcentagem).append("%");
 
-	// 		StringBuilder barraCarregamento = new StringBuilder("\u001B[34m[");
-	// 		for (int j = 0; j < quadros; j++) {
-	// 			barraCarregamento.append(j < i ? "=" : " ");
-	// 		}
-	// 		barraCarregamento.append("] ");
+			System.out.print("\r" + barraCarregamento);
 
-	// 		barraCarregamento.append(porcentagem).append("%");
+			try {
+				Thread.sleep(30);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		Logger.logInfo("Servidor iniciado com sucesso.");
+		System.out.print("\r" + " ".repeat(quadros + 10));
+		Usuario usuarioLogado;
+		Scanner scanner = new Scanner(System.in);
 
-	// 		System.out.print("\r" + barraCarregamento);
+		System.out.println("""
+				\n
+				__     _____ ____  _   _   _    _           ___  ____  ____ \s
+				\\ \\   / /_ _/ ___|| | | | / \\  | |         / _ \\|  _ \\/ ___|\s
+				 \\ \\ / / | |\\___ \\| | | |/ _ \\ | |   _____| | | | |_) \\___ \\\s
+				  \\ V /  | | ___) | |_| / ___ \\| |__|_____| |_| |  __/ ___) |
+				   \\_/  |___|____/ \\___/_/   \\_\\_____|     \\___/|_|   |____/\s
+				_____________________________________________________________
+				Vamos verificar suas permissões para iniciar o monitoramento.
+				_____________________________________________________________
+				""");
+		System.out.print(" - Insira seu email: ");
+		String email = scanner.next();
+		Console console = System.console();
+		String senha = "";
 
-	// 		try {
-	// 			Thread.sleep(30);
-	// 		} catch (InterruptedException e) {
-	// 			e.printStackTrace();
-	// 		}
-	// 	}
-	// 	Logger.logInfo("Servidor iniciado com sucesso.");
-	// 	System.out.print("\r" + " ".repeat(quadros + 10));
-	// 	Usuario usuarioLogado;
-	// 	Scanner scanner = new Scanner(System.in);
+		if (console == null) {
+			System.out.print(" - Insira sua senha: ");
+			senha = scanner.next();
+		} else {
+			char[] senhaArray = console.readPassword(" - Insira sua senha: ");
+			senha = new String(senhaArray);
 
-	// 	System.out.println("""
-	// 			\n
-	// 			__     _____ ____  _   _   _    _           ___  ____  ____ \s
-	// 			\\ \\   / /_ _/ ___|| | | | / \\  | |         / _ \\|  _ \\/ ___|\s
-	// 			 \\ \\ / / | |\\___ \\| | | |/ _ \\ | |   _____| | | | |_) \\___ \\\s
-	// 			  \\ V /  | | ___) | |_| / ___ \\| |__|_____| |_| |  __/ ___) |
-	// 			   \\_/  |___|____/ \\___/_/   \\_\\_____|     \\___/|_|   |____/\s
-	// 			_____________________________________________________________
-	// 			Vamos verificar suas permissões para iniciar o monitoramento.
-	// 			_____________________________________________________________
-	// 			""");
-	// 	System.out.print(" - Insira seu email: ");
-	// 	String email = scanner.next();
-	// 	Console console = System.console();
-	// 	String senha = "";
+			java.util.Arrays.fill(senhaArray, ' ');
+		}
 
-	// 	if (console == null) {
-	// 		System.out.print(" - Insira sua senha: ");
-	// 		senha = scanner.next();
-	// 	} else {
-	// 		char[] senhaArray = console.readPassword(" - Insira sua senha: ");
-	// 		senha = new String(senhaArray);
+		try {
+			usuarioLogado = login.login(email, senha);
+			System.out.println(" - Terminamos a verificação de seu acesso...   ");
+			if (usuarioLogado != null) {
+				System.out.println("""
 
-	// 		java.util.Arrays.fill(senhaArray, ' ');
-	// 	}
+						--- ACESSO CONCEDIDO ---
 
-	// 	try {
-	// 		usuarioLogado = login.login(email, senha);
-	// 		System.out.println(" - Terminamos a verificação de seu acesso...   ");
-	// 		if (usuarioLogado != null) {
-	// 			System.out.println("""
+						Bem-vindo %s
+						email: %s
 
-	// 					--- ACESSO CONCEDIDO ---
+						Vamos verificar as permissões da sua máquina...
+						""".formatted(usuarioLogado.getNome(), usuarioLogado.getEmail()));
 
-	// 					Bem-vindo %s
-	// 					email: %s
+				maquina = servicePC.verificarMaquina(usuarioLogado);
 
-	// 					Vamos verificar as permissões da sua máquina...
-	// 					""".formatted(usuarioLogado.getNome(), usuarioLogado.getEmail()));
+				if (maquina == null) {
+					Logger.logWarning("Não foi possível acessar a máquina do usuário");
+				}
 
-	// 			maquina = servicePC.verificarMaquina(usuarioLogado);
+				Logger.logInfo("Usuário logado com sucesso: " + usuarioLogado.getEmail());
+				iniciarMonitoramento();
+			} else {
+				System.out.println("""
 
-	// 			if (maquina == null) {
-	// 				Logger.logWarning("Não foi possível acessar a máquina do usuário");
-	// 			}
+						--- ACESSO NEGADO ---
 
-	// 			Logger.logInfo("Usuário logado com sucesso: " + usuarioLogado.getEmail());
-	// 			iniciarMonitoramento();
-	// 		} else {
-	// 			System.out.println("""
+						""");
+				Logger.logWarning("Tentativa de login falhou para o email: " + email);
+			}
+		} catch (AutenticationException e) {
+			Logger.logError("Erro ao fazer login: ", e.getMessage(), e);
+		} catch (Exception e) {
+			System.out.println("Ocorreu um erro inesperado: " + e.getMessage());
+			e.printStackTrace();
+		} finally {
+			scanner.close();
+		}
+	}
 
-	// 					--- ACESSO NEGADO ---
+	public static void iniciarMonitoramento() {
+		SystemMonitor systemMonitor = new SystemMonitor();
 
-	// 					""");
-	// 			Logger.logWarning("Tentativa de login falhou para o email: " + email);
-	// 		}
-	// 	} catch (AutenticationException e) {
-	// 		Logger.logError("Erro ao fazer login: ", e.getMessage(), e);
-	// 	} catch (Exception e) {
-	// 		System.out.println("Ocorreu um erro inesperado: " + e.getMessage());
-	// 		e.printStackTrace();
-	// 	} finally {
-	// 		scanner.close();
-	// 	}
-	// }
+		serviceComponente.obterComponentes(maquina);
 
-	// public static void iniciarMonitoramento() {
-	// 	SystemMonitor systemMonitor = new SystemMonitor();
+		try {
+			Logger.logInfo("Capturando os componentes:\n");
+			executorService = Executors.newScheduledThreadPool(1);
+			executorService.scheduleAtFixedRate(() -> {
+				serviceComponente.iniciarCapturas(maquina);
+			}, 0, 5, TimeUnit.SECONDS);
 
-	// 	serviceComponente.obterComponentes(maquina);
+			Scanner scanner = new Scanner(System.in);
+			boolean running = true;
 
-	// 	try {
-	// 		Logger.logInfo("Capturando os componentes:\n");
-	// 		executorService = Executors.newScheduledThreadPool(1);
-	// 		executorService.scheduleAtFixedRate(() -> {
-	// 			serviceComponente.iniciarCapturas(maquina);
-	// 		}, 0, 5, TimeUnit.SECONDS);
+			while (running) {
+				System.out.println("""
+						+------------------------------------------+----------------------+
+						| Seu monitoramento está em segundo plano                         |
+						+-----------------------------------------------------------------+
+						| Escolha uma opção :                                             |
+						+--------------------------+--------------+----------+------------+
+						| a - Exibir monitoramento | b - Ver Logs | c - Sair | d - Voltar |
+						+--------------------------+--------------+----------+------------+
+						""");
+				String input = scanner.next();
 
-	// 		Scanner scanner = new Scanner(System.in);
-	// 		boolean running = true;
+				switch (input) {
+				case "a":
+					clearTerminal();
+					displayTables();
+					break;
+				case "b":
+					clearTerminal();
+					System.out.println(Logger.displayLogsInConsole());
+					baixarPDF(Logger.displayLogsInConsole());
+					break;
+				case "c":
+					clearTerminal();
+					System.exit(0);
+					break;
+				case "d":
+					clearTerminal();
+					break;
+				default:
+					System.out.println("Opção inválida!");
+				}
+			}
+		} catch (Exception e) {
+			Logger.logError("Erro ao iniciar monitoramento: ", e.getMessage(), e);
+		}
+	}
 
-	// 		while (running) {
-	// 			System.out.println("""
-	// 					+------------------------------------------+----------------------+
-	// 					| Seu monitoramento está em segundo plano                         |
-	// 					+-----------------------------------------------------------------+
-	// 					| Escolha uma opção :                                             |
-	// 					+--------------------------+--------------+----------+------------+
-	// 					| a - Exibir monitoramento | b - Ver Logs | c - Sair | d - Voltar |
-	// 					+--------------------------+--------------+----------+------------+
-	// 					""");
-	// 			String input = scanner.next();
+	public static void clearTerminal() {
+		String os = System.getProperty("os.name").toLowerCase();
+		try {
+			if (os.contains("win")) {
+				new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+			} else if (os.contains("nix") || os.contains("nux") || os.contains("aix")) {
+				new ProcessBuilder("scripts/bash", "-c", "clear").inheritIO().start().waitFor();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+	}
 
-	// 			switch (input) {
-	// 			case "a":
-	// 				clearTerminal();
-	// 				displayTables();
-	// 				break;
-	// 			case "b":
-	// 				clearTerminal();
-	// 				System.out.println(Logger.displayLogsInConsole());
-	// 				baixarPDF(Logger.displayLogsInConsole());
-	// 				break;
-	// 			case "c":
-	// 				clearTerminal();
-	// 				System.exit(0);
-	// 				break;
-	// 			case "d":
-	// 				clearTerminal();
-	// 				break;
-	// 			default:
-	// 				System.out.println("Opção inválida!");
-	// 			}
-	// 		}
-	// 	} catch (Exception e) {
-	// 		Logger.logError("Erro ao iniciar monitoramento: ", e.getMessage(), e);
-	// 	}
-	// }
+	public static void displayTables() throws Exception {
+		ServicePC serviceMonitoring = new ServicePC();
+		TablePrinter tablePrinter = new TablePrinter();
+		System.out.println(exibirOpcoes());
+		Scanner scanner = new Scanner(System.in);
+		String input = scanner.next();
 
-	// public static void clearTerminal() {
-	// 	String os = System.getProperty("os.name").toLowerCase();
-	// 	try {
-	// 		if (os.contains("win")) {
-	// 			new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-	// 		} else if (os.contains("nix") || os.contains("nux") || os.contains("aix")) {
-	// 			new ProcessBuilder("scripts/bash", "-c", "clear").inheritIO().start().waitFor();
-	// 		}
-	// 	} catch (Exception ex) {
-	// 		ex.printStackTrace();
-	// 	}
-	// }
+		switch (input) {
+		case "a":
+			clearTerminal();
+			System.out.println("Mostrando todas as tabelas...");
+			System.out.println(maquina.exibirTabelaComponentes());
+			baixarPDF(maquina.layoutPdfComponentes());
+			break;
+		case "b":
+			if (maquina.getComponentes().stream().anyMatch(c -> c instanceof CPU)) {
+				clearTerminal();
+				System.out.println("Mostrando a tabela de CPU...");
+				System.out.println(maquina.getComponentes().stream().filter(componente -> componente instanceof CPU)
+						.findFirst().get().tabelaConvert());
+				baixarPDF(maquina.getComponentes().stream().filter(componente -> componente instanceof CPU).findFirst()
+						.get().pdfLayout());
+			} else {
+				System.out.println("Opção inválida!");
+			}
+			break;
+		case "c":
+			if (maquina.getComponentes().stream().anyMatch(c -> c instanceof HDD)) {
+				clearTerminal();
+				System.out.println("Mostrando a tabela de HDD...");
+				maquina.getComponentes().forEach(componente -> {
+					if (componente instanceof HDD) {
+						System.out.println(componente.tabelaConvert());
+					}
+				});
+				baixarPDF(new StringBuilder(maquina.getComponentes().stream()
+						.filter(componente -> componente instanceof HDD).collect(Collectors.toList()).stream()
+						.map(Componente::pdfLayout).collect(Collectors.joining())).toString());
+			} else {
+				System.out.println("Opção inválida!");
+			}
+			break;
+		case "d":
+			if (maquina.getComponentes().stream().anyMatch(c -> c instanceof GPU)) {
+				clearTerminal();
+				System.out.println("Mostrando as tabelas de GPU...");
+				maquina.getComponentes().forEach(componente -> {
+					if (componente instanceof GPU) {
+						System.out.println(componente.tabelaConvert());
+					}
+				});
+				baixarPDF(new StringBuilder(maquina.getComponentes().stream()
+						.filter(componente -> componente instanceof GPU).collect(Collectors.toList()).stream()
+						.map(Componente::pdfLayout).collect(Collectors.joining())).toString());
+			} else {
+				System.out.println("Opção inválida!");
+			}
+			break;
+		case "e":
+			if (maquina.getComponentes().stream().anyMatch(c -> c instanceof MemoriaRam)) {
+				clearTerminal();
+				System.out.println("Mostrando a tabela de RAM...");
+				System.out.println(maquina.getComponentes().stream()
+						.filter(componente -> componente instanceof MemoriaRam).findFirst().get().tabelaConvert());
+				baixarPDF(maquina.getComponentes().stream().filter(componente -> componente instanceof MemoriaRam)
+						.findFirst().get().pdfLayout());
+			} else {
+				System.out.println("Opção inválida");
+			}
+			break;
+		case "f":
+			if (maquina.getComponentes().stream().anyMatch(c -> c instanceof APP)) {
+				clearTerminal();
+				System.out.println("Mostrando a tabela de APPs abertos...");
+				maquina.getComponentes().forEach(componente -> {
+					if (componente instanceof APP) {
+						System.out.println(componente.tabelaConvert());
+					}
+				});
+				baixarPDF(new StringBuilder(maquina.getComponentes().stream()
+						.filter(componente -> componente instanceof APP).collect(Collectors.toList()).stream()
+						.map(Componente::pdfLayout).collect(Collectors.joining())).toString());
+			} else {
+				System.out.println("Opção inválida!");
+			}
+			break;
+		case "g":
+			if (maquina.getComponentes().stream().anyMatch(c -> c instanceof Bateria)) {
+				clearTerminal();
+				maquina.getComponentes().forEach(componente -> {
+					if (componente instanceof Bateria) {
+						System.out.println(componente.tabelaConvert());
+					}
+				});
+				baixarPDF(new StringBuilder(maquina.getComponentes().stream()
+						.filter(componente -> componente instanceof Bateria).collect(Collectors.toList()).stream()
+						.map(Componente::pdfLayout).collect(Collectors.joining())).toString());
+			} else {
+				System.out.println("Opção inválida!");
+			}
+			break;
+		case "h":
+			if (maquina.getComponentes().stream().anyMatch(c -> c instanceof SistemaOp)) {
+				clearTerminal();
+				System.out.println("Mostrando a tabela de Sistema Operacional...");
+				System.out.println(maquina.getComponentes().stream()
+						.filter(componente -> componente instanceof SistemaOp).findFirst().get().tabelaConvert());
+				baixarPDF(maquina.getComponentes().stream().filter(componente -> componente instanceof SistemaOp)
+						.findFirst().get().pdfLayout());
+			} else {
+				System.out.println("Opção inválida!");
+			}
+			break;
+		case "i":
+			if (maquina.getComponentes().stream().anyMatch(c -> c instanceof Volume)) {
+				clearTerminal();
+				System.out.println("Mostrando a tabela de Volume...");
+				maquina.getComponentes().forEach(componente -> {
+					if (componente instanceof Volume) {
+						System.out.println(componente.tabelaConvert());
+					}
+				});
+				baixarPDF(new StringBuilder(maquina.getComponentes().stream()
+						.filter(componente -> componente instanceof Volume).collect(Collectors.toList()).stream()
+						.map(Componente::pdfLayout).collect(Collectors.joining())).toString());
+			} else {
+				System.out.println("Opção inválida!");
+			}
+			break;
+		case "j":
+			if (maquina.getComponentes().stream().anyMatch(c -> c instanceof ConexaoUSB)) {
+				clearTerminal();
+				System.out.println("Mostrando a tabela de USB...");
+				maquina.getComponentes().forEach(componente -> {
+					if (componente instanceof ConexaoUSB) {
+						System.out.println(componente.tabelaConvert());
+					}
+				});
+				baixarPDF(new StringBuilder(maquina.getComponentes().stream()
+						.filter(componente -> componente instanceof ConexaoUSB).collect(Collectors.toList()).stream()
+						.map(Componente::pdfLayout).collect(Collectors.joining())).toString());
+			} else {
+				System.out.println("Opção inválida!");
+			}
+			break;
+		case "1":
+			clearTerminal();
+			break;
+		case "2":
+			clearTerminal();
+			System.out.println(Logger.displayLogsInConsole());
+			baixarPDF(Logger.displayLogsInConsole());
+			break;
+		case "3":
+			clearTerminal();
+			System.out.println("Saindo...");
+			System.exit(0);
+			break;
+		case "4":
+			clearTerminal();
+			System.out.println("Voltando...");
+			break;
+		default:
+			System.out.println("Opção inválida!");
+		}
+	}
 
-	// public static void displayTables() throws Exception {
-	// 	ServicePC serviceMonitoring = new ServicePC();
-	// 	TablePrinter tablePrinter = new TablePrinter();
-	// 	System.out.println(exibirOpcoes());
-	// 	Scanner scanner = new Scanner(System.in);
-	// 	String input = scanner.next();
+	public static void baixarPDF(String tabela) {
+		PDFGenerator pdfGenerator = new PDFGenerator();
 
-	// 	switch (input) {
-	// 	case "a":
-	// 		clearTerminal();
-	// 		System.out.println("Mostrando todas as tabelas...");
-	// 		System.out.println(maquina.exibirTabelaComponentes());
-	// 		baixarPDF(maquina.layoutPdfComponentes());
-	// 		break;
-	// 	case "b":
-	// 		if (maquina.getComponentes().stream().anyMatch(c -> c instanceof CPU)) {
-	// 			clearTerminal();
-	// 			System.out.println("Mostrando a tabela de CPU...");
-	// 			System.out.println(maquina.getComponentes().stream().filter(componente -> componente instanceof CPU)
-	// 					.findFirst().get().tabelaConvert());
-	// 			baixarPDF(maquina.getComponentes().stream().filter(componente -> componente instanceof CPU).findFirst()
-	// 					.get().pdfLayout());
-	// 		} else {
-	// 			System.out.println("Opção inválida!");
-	// 		}
-	// 		break;
-	// 	case "c":
-	// 		if (maquina.getComponentes().stream().anyMatch(c -> c instanceof HDD)) {
-	// 			clearTerminal();
-	// 			System.out.println("Mostrando a tabela de HDD...");
-	// 			maquina.getComponentes().forEach(componente -> {
-	// 				if (componente instanceof HDD) {
-	// 					System.out.println(componente.tabelaConvert());
-	// 				}
-	// 			});
-	// 			baixarPDF(new StringBuilder(maquina.getComponentes().stream()
-	// 					.filter(componente -> componente instanceof HDD).collect(Collectors.toList()).stream()
-	// 					.map(Componente::pdfLayout).collect(Collectors.joining())).toString());
-	// 		} else {
-	// 			System.out.println("Opção inválida!");
-	// 		}
-	// 		break;
-	// 	case "d":
-	// 		if (maquina.getComponentes().stream().anyMatch(c -> c instanceof GPU)) {
-	// 			clearTerminal();
-	// 			System.out.println("Mostrando as tabelas de GPU...");
-	// 			maquina.getComponentes().forEach(componente -> {
-	// 				if (componente instanceof GPU) {
-	// 					System.out.println(componente.tabelaConvert());
-	// 				}
-	// 			});
-	// 			baixarPDF(new StringBuilder(maquina.getComponentes().stream()
-	// 					.filter(componente -> componente instanceof GPU).collect(Collectors.toList()).stream()
-	// 					.map(Componente::pdfLayout).collect(Collectors.joining())).toString());
-	// 		} else {
-	// 			System.out.println("Opção inválida!");
-	// 		}
-	// 		break;
-	// 	case "e":
-	// 		if (maquina.getComponentes().stream().anyMatch(c -> c instanceof MemoriaRam)) {
-	// 			clearTerminal();
-	// 			System.out.println("Mostrando a tabela de RAM...");
-	// 			System.out.println(maquina.getComponentes().stream()
-	// 					.filter(componente -> componente instanceof MemoriaRam).findFirst().get().tabelaConvert());
-	// 			baixarPDF(maquina.getComponentes().stream().filter(componente -> componente instanceof MemoriaRam)
-	// 					.findFirst().get().pdfLayout());
-	// 		} else {
-	// 			System.out.println("Opção inválida");
-	// 		}
-	// 		break;
-	// 	case "f":
-	// 		if (maquina.getComponentes().stream().anyMatch(c -> c instanceof APP)) {
-	// 			clearTerminal();
-	// 			System.out.println("Mostrando a tabela de APPs abertos...");
-	// 			maquina.getComponentes().forEach(componente -> {
-	// 				if (componente instanceof APP) {
-	// 					System.out.println(componente.tabelaConvert());
-	// 				}
-	// 			});
-	// 			baixarPDF(new StringBuilder(maquina.getComponentes().stream()
-	// 					.filter(componente -> componente instanceof APP).collect(Collectors.toList()).stream()
-	// 					.map(Componente::pdfLayout).collect(Collectors.joining())).toString());
-	// 		} else {
-	// 			System.out.println("Opção inválida!");
-	// 		}
-	// 		break;
-	// 	case "g":
-	// 		if (maquina.getComponentes().stream().anyMatch(c -> c instanceof Bateria)) {
-	// 			clearTerminal();
-	// 			maquina.getComponentes().forEach(componente -> {
-	// 				if (componente instanceof Bateria) {
-	// 					System.out.println(componente.tabelaConvert());
-	// 				}
-	// 			});
-	// 			baixarPDF(new StringBuilder(maquina.getComponentes().stream()
-	// 					.filter(componente -> componente instanceof Bateria).collect(Collectors.toList()).stream()
-	// 					.map(Componente::pdfLayout).collect(Collectors.joining())).toString());
-	// 		} else {
-	// 			System.out.println("Opção inválida!");
-	// 		}
-	// 		break;
-	// 	case "h":
-	// 		if (maquina.getComponentes().stream().anyMatch(c -> c instanceof SistemaOp)) {
-	// 			clearTerminal();
-	// 			System.out.println("Mostrando a tabela de Sistema Operacional...");
-	// 			System.out.println(maquina.getComponentes().stream()
-	// 					.filter(componente -> componente instanceof SistemaOp).findFirst().get().tabelaConvert());
-	// 			baixarPDF(maquina.getComponentes().stream().filter(componente -> componente instanceof SistemaOp)
-	// 					.findFirst().get().pdfLayout());
-	// 		} else {
-	// 			System.out.println("Opção inválida!");
-	// 		}
-	// 		break;
-	// 	case "i":
-	// 		if (maquina.getComponentes().stream().anyMatch(c -> c instanceof Volume)) {
-	// 			clearTerminal();
-	// 			System.out.println("Mostrando a tabela de Volume...");
-	// 			maquina.getComponentes().forEach(componente -> {
-	// 				if (componente instanceof Volume) {
-	// 					System.out.println(componente.tabelaConvert());
-	// 				}
-	// 			});
-	// 			baixarPDF(new StringBuilder(maquina.getComponentes().stream()
-	// 					.filter(componente -> componente instanceof Volume).collect(Collectors.toList()).stream()
-	// 					.map(Componente::pdfLayout).collect(Collectors.joining())).toString());
-	// 		} else {
-	// 			System.out.println("Opção inválida!");
-	// 		}
-	// 		break;
-	// 	case "j":
-	// 		if (maquina.getComponentes().stream().anyMatch(c -> c instanceof ConexaoUSB)) {
-	// 			clearTerminal();
-	// 			System.out.println("Mostrando a tabela de USB...");
-	// 			maquina.getComponentes().forEach(componente -> {
-	// 				if (componente instanceof ConexaoUSB) {
-	// 					System.out.println(componente.tabelaConvert());
-	// 				}
-	// 			});
-	// 			baixarPDF(new StringBuilder(maquina.getComponentes().stream()
-	// 					.filter(componente -> componente instanceof ConexaoUSB).collect(Collectors.toList()).stream()
-	// 					.map(Componente::pdfLayout).collect(Collectors.joining())).toString());
-	// 		} else {
-	// 			System.out.println("Opção inválida!");
-	// 		}
-	// 		break;
-	// 	case "1":
-	// 		clearTerminal();
-	// 		break;
-	// 	case "2":
-	// 		clearTerminal();
-	// 		System.out.println(Logger.displayLogsInConsole());
-	// 		baixarPDF(Logger.displayLogsInConsole());
-	// 		break;
-	// 	case "3":
-	// 		clearTerminal();
-	// 		System.out.println("Saindo...");
-	// 		System.exit(0);
-	// 		break;
-	// 	case "4":
-	// 		clearTerminal();
-	// 		System.out.println("Voltando...");
-	// 		break;
-	// 	default:
-	// 		System.out.println("Opção inválida!");
-	// 	}
-	// }
+		System.out.println("""
+				+----------------------------------+
+				| 5 - Baixar informações em PDF    |
+				| Aperte qualquer botão - Não      |
+				+----------------------------------+
+				""");
 
-	// public static void baixarPDF(String tabela) {
-	// 	PDFGenerator pdfGenerator = new PDFGenerator();
+		Scanner scanner = new Scanner(System.in);
+		String choice = scanner.nextLine();
+		switch (choice) {
+		case "5":
+			if (!StringUtils.isNullOrEmpty(tabela)) {
+				pdfGenerator.gerarPDF(tabela);
+			} else {
+				System.out.println("Nenhum layout de pdf encontrado");
+			}
+			break;
+		}
+	}
 
-	// 	System.out.println("""
-	// 			+----------------------------------+
-	// 			| 5 - Baixar informações em PDF    |
-	// 			| Aperte qualquer botão - Não      |
-	// 			+----------------------------------+
-	// 			""");
+	public static String exibirOpcoes() {
+		StringBuilder opcoes = new StringBuilder();
+		opcoes.append(
+				"\n+----------------------------------------------------------------------------+\n" +
+				"|             Muitos dados foram capturados. Escolha o que exibir            |\n" +
+				"+----------------------------------------------------------------------------+\n" +
+				"| a - Todas as tabelas    |");
 
-	// 	Scanner scanner = new Scanner(System.in);
-	// 	String choice = scanner.nextLine();
-	// 	switch (choice) {
-	// 	case "5":
-	// 		if (!StringUtils.isNullOrEmpty(tabela)) {
-	// 			pdfGenerator.gerarPDF(tabela);
-	// 		} else {
-	// 			System.out.println("Nenhum layout de pdf encontrado");
-	// 		}
-	// 		break;
-	// 	}
-	// }
+		boolean hasHDD = false;
+		boolean hasAPPs = false;
+		int qtdPLinha = 1;
+		int qtdOpcoesNaLinha = 1;
+		for (Componente componente : maquina.getComponentes()) {
+			if (qtdOpcoesNaLinha >= 3) {
+				opcoes.append("\n|");
+				qtdOpcoesNaLinha = 0;
+			}
 
-	// public static String exibirOpcoes() {
-	// 	StringBuilder opcoes = new StringBuilder();
-	// 	opcoes.append(
-	// 			"\n+----------------------------------------------------------------------------+\n" +
-	// 			"|             Muitos dados foram capturados. Escolha o que exibir            |\n" +
-	// 			"+----------------------------------------------------------------------------+\n" +
-	// 			"| a - Todas as tabelas    |");
+			if (componente instanceof CPU) {
+				opcoes.append(" b - Tabela CPU          |");
+			} else if (componente instanceof HDD && !hasHDD) {
+				opcoes.append(" c - Tabela de HDD      |");
+				hasHDD = true;
+			} else if (componente instanceof GPU) {
+				opcoes.append(" d - Tabelas de GPU      |");
+			} else if (componente instanceof MemoriaRam) {
+				opcoes.append(" e - Tabela de Ram       |");
+			} else if (componente instanceof APP && !hasAPPs) {
+				opcoes.append(" f - Tabela de APPs abertos  |");
+				hasAPPs = true;
+			} else if (componente instanceof Bateria) {
+				opcoes.append(" g - Tabela de Bateria  |");
+			} else if (componente instanceof SistemaOp) {
+				opcoes.append(" h - Tabela de Sist.Op   |");
+			} else if (componente instanceof Volume) {
+				opcoes.append(" i - Tabela de Volume    |");
+			} else if (componente instanceof ConexaoUSB) {
+				opcoes.append(" j - Tabela de USB       |");
+			}
 
-	// 	boolean hasHDD = false;
-	// 	boolean hasAPPs = false;
-	// 	int qtdPLinha = 1;
-	// 	int qtdOpcoesNaLinha = 1;
-	// 	for (Componente componente : maquina.getComponentes()) {
-	// 		if (qtdOpcoesNaLinha >= 3) {
-	// 			opcoes.append("\n|");
-	// 			qtdOpcoesNaLinha = 0;
-	// 		}
+			qtdPLinha++;
+			qtdOpcoesNaLinha++;
+		}
 
-	// 		if (componente instanceof CPU) {
-	// 			opcoes.append(" b - Tabela CPU          |");
-	// 		} else if (componente instanceof HDD && !hasHDD) {
-	// 			opcoes.append(" c - Tabela de HDD      |");
-	// 			hasHDD = true;
-	// 		} else if (componente instanceof GPU) {
-	// 			opcoes.append(" d - Tabelas de GPU      |");
-	// 		} else if (componente instanceof MemoriaRam) {
-	// 			opcoes.append(" e - Tabela de Ram       |");
-	// 		} else if (componente instanceof APP && !hasAPPs) {
-	// 			opcoes.append(" f - Tabela de APPs abertos  |");
-	// 			hasAPPs = true;
-	// 		} else if (componente instanceof Bateria) {
-	// 			opcoes.append(" g - Tabela de Bateria  |");
-	// 		} else if (componente instanceof SistemaOp) {
-	// 			opcoes.append(" h - Tabela de Sist.Op   |");
-	// 		} else if (componente instanceof Volume) {
-	// 			opcoes.append(" i - Tabela de Volume    |");
-	// 		} else if (componente instanceof ConexaoUSB) {
-	// 			opcoes.append(" j - Tabela de USB       |");
-	// 		}
+		while (qtdOpcoesNaLinha <= 3) {
+			opcoes.append("                        |");
+			qtdOpcoesNaLinha++;
+		}
 
-	// 		qtdPLinha++;
-	// 		qtdOpcoesNaLinha++;
-	// 	}
+		opcoes.append("\n+-------------------------+--------------+----------+------------------------+\n" +
+				"| 1 - Exibir monitoramento| 2 - Ver Logs | 3 - Sair | 4 - Voltar             |\n" +
+				"+-------------------------+--------------+----------+------------------------+\n");
 
-	// 	while (qtdOpcoesNaLinha <= 3) {
-	// 		opcoes.append("                        |");
-	// 		qtdOpcoesNaLinha++;
-	// 	}
-
-	// 	opcoes.append("\n+-------------------------+--------------+----------+------------------------+\n" +
-	// 			"| 1 - Exibir monitoramento| 2 - Ver Logs | 3 - Sair | 4 - Voltar             |\n" +
-	// 			"+-------------------------+--------------+----------+------------------------+\n");
-
-	// 	return opcoes.toString();
+		return opcoes.toString();
 	}
 
 }

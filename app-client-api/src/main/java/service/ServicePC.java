@@ -16,7 +16,7 @@ public class ServicePC {
 
 	public Maquina verificarMaquina(Usuario usuario) {
 		try {
-			String ipv4 = InetAddress.getLocalHost().getHostAddress();
+			String ipv4 = MaquinaDAO.getIpv4();
 			Optional<Maquina> maquina = maquinaDAO.monitorarMaquina(usuario);
 
 			if (maquina.isEmpty()) {
@@ -25,7 +25,9 @@ public class ServicePC {
 			} else if (!maquina.get().getIpv4().contains(ipv4)) {
 				Logger.logWarning("A máquina / rede a qual você está utilizando não está vinculada ao seu usuário!");
 			} else {
-				Maquina maquinaExemplo = maquina.get();
+				// Maquina maquinaExemplo = maquina.get(); chamar metodo aqui
+				
+
 				return maquina.get();
 			}
 
