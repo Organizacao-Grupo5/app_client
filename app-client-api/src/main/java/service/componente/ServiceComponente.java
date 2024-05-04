@@ -1,5 +1,6 @@
 package service.componente;
 
+import app.integration.ShellIntegration;
 import app.system.SystemMonitor;
 import dao.componente.CapturaDAO;
 import dao.componente.ComponenteDAO;
@@ -15,6 +16,7 @@ public class ServiceComponente {
 	private ComponenteDAO componenteDAO = new ComponenteDAO();
 	private SystemMonitor systemMonitor = new SystemMonitor();
 	private CapturaDAO capturaDAO = new CapturaDAO();
+	private ShellIntegration shellIntegration = new ShellIntegration();
 
 	public void obterComponentes(Maquina maquina) {
 		try {
@@ -31,6 +33,7 @@ public class ServiceComponente {
 			systemMonitor.monitorarGPU().forEach(gpu -> listaComponente.add(gpu));
 			listaComponente.add(systemMonitor.monitorarRAM());
 			systemMonitor.monitorarBateria().forEach(bateria -> listaComponente.add(bateria));
+			systemMonitor.monitorarDisplay().forEach(janela -> listaComponente.add(janela));
 			listaComponente.add(systemMonitor.capturarInformacoesPlacaMae());
 			listaComponente.add(systemMonitor.monitorarSistemaOperacional());
 			systemMonitor.monitorarVolumeLogico().forEach(volume -> listaComponente.add(volume));
@@ -169,6 +172,18 @@ public class ServiceComponente {
 			((SistemaOp) componente).setInicializado(sistemaOp.getInicializado());
 			((SistemaOp) componente).setPermissao(sistemaOp.getPermissao());
 			((SistemaOp) componente).setTempoDeAtividade(sistemaOp.getTempoDeAtividade());
+		}else if (componente instanceof APP) {
+			List<APP> listaJanelas = systemMonitor.monitorarDisplay();
+			listaJanelas.forEach(janela -> {
+				if (((APP) componente).getFabricante().equalsIgnoreCase(janela.getFabricante()) &&
+						((APP) componente).getModelo().equalsIgnoreCase(janela.getModelo())){
+					((APP) componente).setDataHoraCaptura(janela.getDataHoraCaptura());
+					((APP) componente).setLocalizacaoEtamanho(janela.getLocalizacaoEtamanho());
+					((APP) componente).setDataCaptura(janela.getDataCaptura());
+					((APP) componente).setNome(janela.getNome());
+					((APP) componente).setDadoCaptura();
+				}
+			});
 		}
 	}
 

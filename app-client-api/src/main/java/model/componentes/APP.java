@@ -1,5 +1,6 @@
 package model.componentes;
 
+import app.integration.ShellIntegration;
 import util.reports.CreatePDFInfos;
 import util.reports.TablePrinter;
 
@@ -10,12 +11,11 @@ import java.util.List;
 import java.util.Optional;
 
 public class APP extends Componente {
-	private int idApp;
-	private String nome;
+	ShellIntegration shellIntegration = new ShellIntegration();
 
+	private int idApp;
 	private String comando;
-	private Double janelaID;
-	private Double pid;
+	private String nome;
 	private Rectangle localizacaoEtamanho;
 	private LocalDateTime dataHoraCaptura;
 
@@ -24,11 +24,11 @@ public class APP extends Componente {
 		this.dataHoraCaptura = LocalDateTime.now();
 	}
 
-	public APP(String nome, String comando, Double janelaID, Double pid, Rectangle localizacaoEtamanho) {
-		this.nome = nome;
+	public APP(String nome, String comando, Double janelaID, Long pid, Rectangle localizacaoEtamanho) {
+		modelo = pid.toString();
+		fabricante = janelaID.toString();
 		this.comando = comando;
-		this.janelaID = janelaID;
-		this.pid = pid;
+		this.nome = nome;
 		this.localizacaoEtamanho = localizacaoEtamanho;
 		this.dataHoraCaptura = LocalDateTime.now();
 	}
@@ -49,36 +49,24 @@ public class APP extends Componente {
 		this.idApp = idApp;
 	}
 
+	public String getComando() {
+		return comando;
+	}
+
+	public void setComando(String comando){
+		this.comando = comando;
+	}
+
+	public void setJanelaID(String comando) {
+		this.comando = comando;
+	}
+
 	public String getNome() {
 		return nome;
 	}
 
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-
-	public String getComando() {
-		return comando;
-	}
-
-	public void setComando(String comando) {
-		this.comando = comando;
-	}
-
-	public Double getJanelaID() {
-		return janelaID;
-	}
-
-	public void setJanelaID(Double janelaID) {
-		this.janelaID = janelaID;
-	}
-
-	public Double getPid() {
-		return pid;
-	}
-
-	public void setPid(Double pid) {
-		this.pid = pid;
 	}
 
 	public Rectangle getLocalizacaoEtamanho() {
@@ -97,8 +85,9 @@ public class APP extends Componente {
 				Arrays.asList("Comando", Optional.ofNullable(comando).orElse("N/A")),
 				Arrays.asList("Data hora captura",
 						Optional.ofNullable(dataHoraCaptura).map(Object::toString).orElse("N/A")),
-				Arrays.asList("PID", Optional.ofNullable(pid).map(Object::toString).orElse("N/A")),
-				Arrays.asList("Id Janela", Optional.ofNullable(janelaID).map(Object::toString).orElse("N/A")),
+				Arrays.asList("PID", Optional.ofNullable(modelo).map(Object::toString).orElse("N/A")),
+				Arrays.asList("Uso de ram", Optional.ofNullable(dadoCaptura).map(Object::toString).orElse("N/A") + "MB"),
+				Arrays.asList("Id Janela", Optional.ofNullable(fabricante).map(Object::toString).orElse("N/A")),
 				Arrays.asList("Localização e tamanho",
 						Optional.ofNullable(localizacaoEtamanho).map(Object::toString).orElse("N/A")));
 	}
@@ -116,5 +105,14 @@ public class APP extends Componente {
 	@Override
 	public String getComponente() {
 		return this.getClass().getSimpleName();
+	}
+
+	@Override
+	public String getUnidadeMedida() {
+		return "MB";
+	}
+
+	public void setDadoCaptura() {
+		dadoCaptura = shellIntegration.monitorarUsoDeRamDaJanela(modelo);
 	}
 }
