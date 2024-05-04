@@ -1,6 +1,6 @@
 package app.system;
 
-import app.integration.HardwareIntegration;
+import app.integration.ShellIntegration;
 import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.memoria.Memoria;
 import com.github.britooo.looca.api.group.processador.Processador;
