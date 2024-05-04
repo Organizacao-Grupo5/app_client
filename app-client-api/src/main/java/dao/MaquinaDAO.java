@@ -24,9 +24,6 @@ import com.mysql.cj.MysqlConnection;
 
 import app.integration.Userinfo;
 
-// update se não
-
-
 public class MaquinaDAO {
 	public Optional<Maquina> monitorarMaquina(Usuario usuario) throws SQLException {
 		try (Connection conexao = MySQLConnection.ConBD()) {
