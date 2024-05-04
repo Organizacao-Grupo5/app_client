@@ -8,12 +8,15 @@ import util.logs.Logger;
 import java.net.InetAddress;
 import java.util.Optional;
 
+import com.sun.jna.platform.win32.Netapi32Util.UserInfo;
+
 public class ServicePC {
 	MaquinaDAO maquinaDAO = new MaquinaDAO();
+	UserInfo userInfo = new UserInfo();
 
 	public Maquina verificarMaquina(Usuario usuario) {
 		try {
-			String ipv4 = InetAddress.getLocalHost().getHostAddress();
+			String ipv4 = MaquinaDAO.getIpv4();
 			Optional<Maquina> maquina = maquinaDAO.monitorarMaquina(usuario);
 
 			if (maquina.isEmpty()) {
@@ -22,7 +25,6 @@ public class ServicePC {
 			} else if (!maquina.get().getIpv4().contains(ipv4)) {
 				Logger.logWarning("A máquina / rede a qual você está utilizando não está vinculada ao seu usuário!");
 			} else {
-				Maquina maquinaExemplo = maquina.get();
 				return maquina.get();
 			}
 

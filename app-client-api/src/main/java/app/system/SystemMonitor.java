@@ -5,6 +5,7 @@ import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.memoria.Memoria;
 import com.github.britooo.looca.api.group.processador.Processador;
 import com.github.britooo.looca.api.group.sistema.Sistema;
+import com.itextpdf.text.pdf.PdfStructTreeController.returnType;
 import com.mysql.cj.util.StringUtils;
 import model.componentes.*;
 import oshi.SystemInfo;
@@ -13,6 +14,8 @@ import oshi.hardware.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class SystemMonitor {
 	private final Looca looca = new Looca();
@@ -696,8 +699,6 @@ public class SystemMonitor {
 	}
 
 	public PlacaMae capturarInformacoesPlacaMae() {
-		SystemInfo systemInfo = new SystemInfo();
-		HardwareAbstractionLayer hardware = systemInfo.getHardware();
 		ComputerSystem computerSystem = hardware.getComputerSystem();
 
 		String fabricantePlacaMae = computerSystem.getManufacturer();
