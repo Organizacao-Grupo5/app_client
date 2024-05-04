@@ -69,6 +69,9 @@ public class ComponenteDAO {
 		case "placamae":
 			componenteInstanciado = new PlacaMae();
 			break;
+		case "app":
+			componenteInstanciado = new APP();
+			break;
 		}
 
 		if (componenteInstanciado != null) {

@@ -147,7 +147,7 @@ public class Main {
             executorService = Executors.newScheduledThreadPool(1);
             executorService.scheduleAtFixedRate(() -> {
                 serviceComponente.iniciarCapturas(maquina);
-            }, 0, 5, TimeUnit.SECONDS);
+            }, 0, 10, TimeUnit.SECONDS);
 
             Scanner scanner = new Scanner(System.in);
             boolean running = true;
@@ -392,7 +392,6 @@ public class Main {
                 break;
         }
     }
-
     public static String exibirOpcoes() {
         StringBuilder opcoes = new StringBuilder();
         opcoes.append(
@@ -403,44 +402,61 @@ public class Main {
 
         boolean hasHDD = false;
         boolean hasAPPs = false;
-        int qtdPLinha = 1;
         int qtdOpcoesNaLinha = 1;
-        for (Componente componente : maquina.getComponentes()) {
+        int qtdTotalOpcoes = (int) maquina.getComponentes().stream().distinct().count();
+        int contadorOpcoes = 1;
+        for (int i = 0; i < qtdTotalOpcoes; i++) {
             if (qtdOpcoesNaLinha >= 3) {
                 opcoes.append("\n|");
                 qtdOpcoesNaLinha = 0;
             }
-
+            Componente componente = maquina.getComponentes().get(i);
             if (componente instanceof CPU) {
                 opcoes.append(" b - Tabela CPU          |");
+                qtdOpcoesNaLinha++;
+                contadorOpcoes++;
             } else if (componente instanceof HDD && !hasHDD) {
                 opcoes.append(" c - Tabela de HDD      |");
                 hasHDD = true;
+                qtdOpcoesNaLinha++;
+                contadorOpcoes++;
             } else if (componente instanceof GPU) {
                 opcoes.append(" d - Tabelas de GPU      |");
+                qtdOpcoesNaLinha++;
+                contadorOpcoes++;
             } else if (componente instanceof MemoriaRam) {
                 opcoes.append(" e - Tabela de Ram       |");
+                qtdOpcoesNaLinha++;
+                contadorOpcoes++;
             } else if (componente instanceof APP && !hasAPPs) {
-                opcoes.append(" f - Tabela de APPs abertos  |");
+                opcoes.append(" f - Tabela de Apps     |");
                 hasAPPs = true;
+                qtdOpcoesNaLinha++;
+                contadorOpcoes++;
             } else if (componente instanceof Bateria) {
                 opcoes.append(" g - Tabela de Bateria  |");
+                qtdOpcoesNaLinha++;
+                contadorOpcoes++;
             } else if (componente instanceof SistemaOp) {
                 opcoes.append(" h - Tabela de Sist.Op   |");
+                qtdOpcoesNaLinha++;
+                contadorOpcoes++;
             } else if (componente instanceof Volume) {
                 opcoes.append(" i - Tabela de Volume    |");
+                qtdOpcoesNaLinha++;
+                contadorOpcoes++;
             } else if (componente instanceof ConexaoUSB) {
                 opcoes.append(" j - Tabela de USB       |");
+                qtdOpcoesNaLinha++;
+                contadorOpcoes++;
             }
-
-            qtdPLinha++;
-            qtdOpcoesNaLinha++;
         }
 
-        while (qtdOpcoesNaLinha <= 3) {
+        while (qtdOpcoesNaLinha <= 3 && contadorOpcoes % 3 != 0) {
             opcoes.append("                        |");
             qtdOpcoesNaLinha++;
         }
+
         opcoes.append("\n+-------------------------+--------------+----------+------------------------+\n" +
                 "| 1 - Exibir monitoramento| 2 - Ver Logs | 3 - Sair | 4 - Voltar             |\n" +
                 "+-------------------------+--------------+----------+------------------------+\n");

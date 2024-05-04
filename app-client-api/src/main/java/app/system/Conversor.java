@@ -56,6 +56,10 @@ public class Conversor {
 		return Double.longBitsToDouble(valorLong);
 	}
 
+	public double converterKBparaMB(double valorKB) {
+		return valorKB / 1024;
+	}
+
 	public Double converterSegundosParaHoras(long segundos) {
 		return (double) segundos / 3600;
 	}

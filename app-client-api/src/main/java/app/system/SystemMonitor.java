@@ -1,6 +1,6 @@
 package app.system;
 
-import app.integration.HardwareIntegration;
+import app.integration.ShellIntegration;
 import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.memoria.Memoria;
 import com.github.britooo.looca.api.group.processador.Processador;
@@ -13,12 +13,13 @@ import oshi.hardware.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class SystemMonitor {
 	private final Looca looca = new Looca();
 	private final Conversor conversor = new Conversor();
 	private final HardwareAbstractionLayer hardware = new SystemInfo().getHardware();
-	private final HardwareIntegration hardwareIntegration = new HardwareIntegration();
+	private final ShellIntegration shellIntegration = new ShellIntegration();
 
 	public CPU monitorarCPU() {
 		Logger.logInfo("Capturando dados da sua CPU.");
@@ -85,7 +86,7 @@ public class SystemMonitor {
 			} else {
 				Logger.logInfo("Nome da CPU: " + cpu.getModelo());
 			}
-			Double temperatura = hardwareIntegration.monitorarTemperatura();
+			Double temperatura = shellIntegration.monitorarTemperatura();
 			cpu.setTemperatura(temperatura);
 			if (cpu.getTemperatura() == null) {
 				Logger.logWarning("Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .");
@@ -104,9 +105,9 @@ public class SystemMonitor {
 		Logger.logInfo("Capturando dados dos seus Apps.");
 		List<APP> apps = new ArrayList<>();
 		try {
-			looca.getGrupoDeJanelas().getJanelasVisiveis().forEach(janela -> {
+			looca.getGrupoDeJanelas().getJanelas().forEach(janela -> {
+				APP app = new APP();
 				try {
-					APP app = new APP();
 					app.setNome(janela.getTitulo());
 					if (StringUtils.isNullOrEmpty(app.getNome())) {
 						Logger.logWarning("Título da janela não foi capturado.");
@@ -119,17 +120,17 @@ public class SystemMonitor {
 					} else {
 						Logger.logInfo("Comando da janela: " + app.getComando());
 					}
-					app.setJanelaID(conversor.formatarBytes(janela.getJanelaId()));
-					if (StringUtils.isNullOrEmpty(app.getJanelaID().toString())) {
+					app.setFabricante(janela.getJanelaId().toString());
+					if (StringUtils.isNullOrEmpty(app.getFabricante())) {
 						Logger.logWarning("ID da janela não foi capturado.");
 					} else {
-						Logger.logInfo("ID da janela: " + app.getJanelaID());
+						Logger.logInfo("ID da janela: " + app.getFabricante());
 					}
-					app.setPid(conversor.formatarBytes(janela.getPid()));
-					if (StringUtils.isNullOrEmpty(app.getPid().toString())) {
+					app.setModelo(janela.getPid().toString());
+					if (StringUtils.isNullOrEmpty(app.getModelo())) {
 						Logger.logWarning("PID da janela não foi capturado.");
 					} else {
-						Logger.logInfo("PID da janela: " + app.getPid());
+						Logger.logInfo("PID da janela: " + Optional.ofNullable(app.getModelo()).orElse("PID não encontrado."));
 					}
 					app.setLocalizacaoEtamanho(janela.getLocalizacaoETamanho());
 					if (app.getLocalizacaoEtamanho() == null) {
@@ -137,11 +138,17 @@ public class SystemMonitor {
 					} else {
 						Logger.logInfo("Localização e tamanho da janela: " + app.getLocalizacaoEtamanho());
 					}
-					apps.add(app);
+					app.setDadoCaptura();
+					if (app.getDadoCaptura() == null){
+						Logger.logWarning("O uso da RAM pela janela %s não foi capturado.".formatted(app.getModelo()));
+					}else {
+						Logger.logInfo("Uso da ram pela janela: " + app.getDadoCaptura());
+					}
 					Logger.logInfo("Dados da janela gravados.");
 				} catch (Exception e) {
 					Logger.logError("Erro ao processar janela: ", e.getMessage(), e);
 				}
+				apps.add(app);
 			});
 			Logger.logInfo("Todas as janelas verificadas.");
 		} catch (Exception e) {
@@ -372,7 +379,7 @@ public class SystemMonitor {
 						Logger.logInfo("Fabricante da bateria: " + bateria.getFabricante());
 					}
 
-					bateria.setBateriaAtual(hardwareIntegration.monitorarBateria());
+					bateria.setBateriaAtual(shellIntegration.monitorarBateria());
 					if (bateria.getBateriaAtual() == null) {
 						Logger.logWarning("Dados da bateria atual não foram capturados, será apresentada como 0.");
 						bateria.setBateriaAtual(0.0);
@@ -440,7 +447,7 @@ public class SystemMonitor {
 							Logger.logInfo("A Versão da sua GPU foi capturada com sucesso: " + myGpu.getVersao());
 						}
 
-						myGpu.setTemperatura(hardwareIntegration.monitorarTemperatura());
+						myGpu.setTemperatura(shellIntegration.monitorarTemperatura());
 						if (myGpu.getTemperatura() == null) {
 							Logger.logWarning(
 									"Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .");
