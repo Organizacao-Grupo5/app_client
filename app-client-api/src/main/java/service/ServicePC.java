@@ -25,9 +25,6 @@ public class ServicePC {
 			} else if (!maquina.get().getIpv4().contains(ipv4)) {
 				Logger.logWarning("A máquina / rede a qual você está utilizando não está vinculada ao seu usuário!");
 			} else {
-				// Maquina maquinaExemplo = maquina.get(); chamar metodo aqui
-				
-
 				return maquina.get();
 			}
 

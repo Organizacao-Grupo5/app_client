@@ -98,23 +98,25 @@ public class Userinfo {
 	}
 
 	public String ipv4() {
-		String ip;
+		List<String> ips = new ArrayList<>();
+		
 
 		try {
 
 			Enumeration<NetworkInterface> interfaces = NetworkInterface.getNetworkInterfaces();
 
 			while (interfaces.hasMoreElements()) {
-			NetworkInterface iface = interfaces.nextElement();
-			if (iface.isLoopback() || !iface.isUp()) continue;
+				NetworkInterface iface = interfaces.nextElement();
+				if (iface.isLoopback() || !iface.isUp()) continue;
 
-			Enumeration<InetAddress> addresses = iface.getInetAddresses();
-			while (addresses.hasMoreElements()) {
-				InetAddress addr = addresses.nextElement();
-				ip = addr.getHostAddress();
-				return ip;
+				Enumeration<InetAddress> addresses = iface.getInetAddresses();
+				while (addresses.hasMoreElements()) {
+					InetAddress addr = addresses.nextElement();
+					ips.add(addr.getHostAddress());
+				}
 			}
-		}
+
+			return ips.get(ips.size()-1);
 
 		} catch (SocketException e) {
 			e.printStackTrace();

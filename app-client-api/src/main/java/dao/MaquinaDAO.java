@@ -13,12 +13,14 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
 import com.google.common.graph.Network;
 import com.itextpdf.text.pdf.PdfStructTreeController.returnType;
+import com.mysql.cj.MysqlConnection;
 
 import app.integration.Userinfo;
 
@@ -52,16 +54,39 @@ public class MaquinaDAO {
 	}
 
 	public void especificarMaquina(Maquina maquina) {
+		
+		try (Connection con = MySQLConnection.ConBD()) {
+			verifyMaquina(maquina);
+			
+			PreparedStatement preparedStatement = con.prepareStatement("UPDATE Maquina SET numeroIdentificacao = ?, modelo = ?, marca = ?, username = ?, hostname = ? WHERE idMaquina = ?");
 
+			preparedStatement.setString(1, maquina.getNumeroSerial());
+			preparedStatement.setString(2, maquina.getModelo());
+			preparedStatement.setString(3, maquina.getMarca());
+			preparedStatement.setString(4, maquina.getUsername());
+			preparedStatement.setString(5, maquina.getHostname());
+			preparedStatement.setInt(6, maquina.getIdMaquina());
+
+			preparedStatement.executeUpdate();
+
+		} catch (SQLException e) {
+			Logger.logError("Não foi possível encontrar a máquina:", e.getMessage(), e);
+		}
+		
+	}
+	
+	public static String getIpv4() {
+		Userinfo userinfo = new Userinfo();
+		return userinfo.ipv4();
+	}
+	
+	private void verifyMaquina(Maquina maquina) {
 		HardwareAbstractionLayer hardware = new SystemInfo().getHardware();
 		ComputerSystem computerSystem = hardware.getComputerSystem();
-
+	
 		String fabricante = computerSystem.getManufacturer();
 		String modelo = computerSystem.getModel();
 		String numeroDeSerie = computerSystem.getSerialNumber();
-
-		List<NetworkIF> networkIFs = hardware.getNetworkIFs();
-		List<String> macAddresses = networkIFs.stream().map(NetworkIF :: getMacaddr).collect(Collectors.toList());
 
 		Userinfo userinfo = new Userinfo();
 		String hostname = userinfo.hostname();
@@ -79,20 +104,12 @@ public class MaquinaDAO {
 					maquina.setUsername(resultSet.getString("username") == username ? maquina.getUsername() : username);
 					maquina.setHostname(resultSet.getString("hostname") == hostname ? maquina.getHostname() : hostname);
 				}
-			} catch (Exception e) {
-				e.printStackTrace();
 			}
-		} catch (SQLException e) {
-			Logger.logError("Não foi possível encontrar a máquina:", e.getMessage(), e);
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-
 	}
-
-	public static String getIpv4() {
-		Userinfo userinfo = new Userinfo();
-		return userinfo.ipv4();
-	}
-
+	
 	private Maquina criaMaquina(ResultSet resultSet, Usuario usuario) throws SQLException {
 		return new Maquina(resultSet.getInt("idMaquina"), usuario);
 	}
