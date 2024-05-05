@@ -63,7 +63,7 @@ public class Userinfo {
 		try {
 
 			if(!isWindows) {
-				arrayCommand = new String[] {"sh", directory + "\\bash\\userinfo\\userHostname.sh"  };
+				arrayCommand = new String[] {"sh", directory + "\\bash\\userinfo\\userHostname.sh"};
 			} else {
 				arrayCommand = new String[] {"cmd.exe", "/c", directory + "\\cmd\\userinfo\\userHostname.cmd"};
 			}
@@ -98,31 +98,61 @@ public class Userinfo {
 	}
 
 	public String ipv4() {
-		List<String> ips = new ArrayList<>();
-		
+        try {
+            if (!isWindows) {
+				arrayCommand = new String[] {"sh", directory + "\\bash\\userinfo\\ipv4.sh"};
+            } else {
+				arrayCommand = new String[] {"cmd.exe", "/c", directory + "\\cmd\\userinfo\\ipv4.cmd"};
+            }
+            
+            processBuilder = new ProcessBuilder(arrayCommand);
+            Process process = processBuilder.start();
+            
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
 
-		try {
+            List<String> listStrings = new ArrayList<>();
 
-			Enumeration<NetworkInterface> interfaces = NetworkInterface.getNetworkInterfaces();
+            String line;
 
-			while (interfaces.hasMoreElements()) {
-				NetworkInterface iface = interfaces.nextElement();
-				if (iface.isLoopback() || !iface.isUp()) continue;
+            while((line = reader.readLine()) != null) {
+                listStrings.add(line);
+            }
 
-				Enumeration<InetAddress> addresses = iface.getInetAddresses();
-				while (addresses.hasMoreElements()) {
-					InetAddress addr = addresses.nextElement();
-					ips.add(addr.getHostAddress());
+            BufferedReader erroReader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+        
+            while ((line = erroReader.readLine()) != null) {
+                System.err.println("Saída de erro: "+ line);
+            }
+
+            String ipv4 = listStrings.get(2);
+            
+			
+			if (isWindows()) {
+				Boolean doisPontos = false;
+	
+				StringBuilder sb = new StringBuilder();
+	
+				for (int i = 0; i < ipv4.length(); i++) {
+					if (ipv4.charAt(i) == ':' || doisPontos) {
+						doisPontos = true;
+	
+						char c = ipv4.charAt(i);
+				
+						if (Character.isDigit(c) || c == '.') {
+							sb.append(c);
+						}
+					}
 				}
+				ipv4 = sb.toString();
 			}
 
-			return ips.get(ips.size()-1);
+			return ipv4;
 
-		} catch (SocketException e) {
-			e.printStackTrace();
+
+        } catch (Exception e) {
+            e.printStackTrace();
 		}
 
 		return null;
-
 	}
 }
