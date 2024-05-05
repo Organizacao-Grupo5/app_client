@@ -111,9 +111,13 @@ public class Main {
                     System.out.println("""
                             Informações da máquina
                              - Lista IPV4 da máquina: %s
+                             - Modelo: %s
+                             - HostName: %s
+                             - Número Serial: %s
+                             - Username: %s
                             """.formatted((new StringBuilder(maquina.getIpv4().stream()
                                     .map(e -> e).collect(Collectors.joining("; "))
-                            ).toString())));
+                            ).toString()), maquina.getModelo(), maquina.getHostname(), maquina.getNumeroSerial(), maquina.getUsername()));
 
                     iniciarMonitoramento();
                     scanner.close();
