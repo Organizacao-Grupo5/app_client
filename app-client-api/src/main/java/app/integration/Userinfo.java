@@ -1,12 +1,18 @@
 package app.integration;
 
 import static com.sun.jna.Platform.isWindows;
+import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 
 import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.net.SocketException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
@@ -17,24 +23,24 @@ import com.itextpdf.text.pdf.PdfStructTreeController.returnType;
 public class Userinfo {
 
 	private static Boolean isWindows = System.getProperty("os.name").toLowerCase().startsWith("windows");
-	String directory = "app-client-api\\src\\main\\resources\\scripts";
-	ProcessBuilder processBuilder;
-	String[] arrayCommand;
-	
+
 	public String username() {
 		try {
-			
-			if(!isWindows) {
-				arrayCommand = new String[] {"sh", directory + "\\bash\\userinfo\\userUsername.sh"  };
-			} else {
-				arrayCommand = new String[] {"cmd.exe", "/c", directory + "\\cmd\\userinfo\\userUsername.cmd"};
+			String scriptName = isWindows ? "userUsername.cmd" : "userUsername.sh";
+
+			InputStream inputStream = getClass().getResourceAsStream("/scripts" + (isWindows ? "/cmd/" : "/bash/") + "userinfo/" + scriptName);
+			if (inputStream == null) {
+				throw new IOException("Arquivo BAT não encontrado no recurso.");
 			}
 
-			processBuilder = new ProcessBuilder(arrayCommand);
+			Path tempFile = Files.createTempFile("temp_script", isWindows ? ".bat" : ".sh");
+			Files.copy(inputStream, tempFile, StandardCopyOption.REPLACE_EXISTING);
 
-			Process process = processBuilder.start();
+			String absolutePath = tempFile.toAbsolutePath().toString();
 
-			BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+			Process processo = Runtime.getRuntime().exec(absolutePath);
+
+			BufferedReader reader = new BufferedReader(new InputStreamReader(processo.getInputStream()));
 			
 			List<String> listStrings = new ArrayList<>();
 			
@@ -44,7 +50,7 @@ public class Userinfo {
 				listStrings.add(line);
 			}
 
-			BufferedReader erroReader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+			BufferedReader erroReader = new BufferedReader(new InputStreamReader(processo.getErrorStream()));
 			
 			while ((line = erroReader.readLine()) != null) {
 				System.err.println("Saída de erro: "+ line);
@@ -61,19 +67,22 @@ public class Userinfo {
 
 	public String hostname() {
 		try {
+			String scriptName = isWindows ? "userHostname.cmd" : "hostname.sh";
 
-			if(!isWindows) {
-				arrayCommand = new String[] {"sh", directory + "\\bash\\userinfo\\userHostname.sh"};
-			} else {
-				arrayCommand = new String[] {"cmd.exe", "/c", directory + "\\cmd\\userinfo\\userHostname.cmd"};
+			InputStream inputStream = getClass().getResourceAsStream("/scripts" + (isWindows ? "/cmd/" : "/bash/") + "userinfo/" + scriptName);
+			if (inputStream == null) {
+				throw new IOException("Arquivo BAT não encontrado no recurso.");
 			}
 
-			processBuilder = new ProcessBuilder(arrayCommand);
+			Path tempFile = Files.createTempFile("temp_script", isWindows ? ".bat" : ".sh");
+			Files.copy(inputStream, tempFile, StandardCopyOption.REPLACE_EXISTING);
 
-			Process process = processBuilder.start();
+			String absolutePath = tempFile.toAbsolutePath().toString();
 
-			BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-			
+			Process processo = Runtime.getRuntime().exec(absolutePath);
+
+			BufferedReader reader = new BufferedReader(new InputStreamReader(processo.getInputStream()));
+
 			List<String> listStrings = new ArrayList<>();
 			
 			String line;
@@ -82,7 +91,7 @@ public class Userinfo {
 				listStrings.add(line);
 			}
 
-			BufferedReader erroReader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+			BufferedReader erroReader = new BufferedReader(new InputStreamReader(processo.getErrorStream()));
 			
 			while ((line = erroReader.readLine()) != null) {
 				System.err.println("Saída de erro: "+ line);
@@ -99,18 +108,23 @@ public class Userinfo {
 
 	public String ipv4() {
         try {
-            if (!isWindows) {
-				arrayCommand = new String[] {"sh", directory + "\\bash\\userinfo\\ipv4.sh"};
-            } else {
-				arrayCommand = new String[] {"cmd.exe", "/c", directory + "\\cmd\\userinfo\\ipv4.cmd"};
-            }
-            
-            processBuilder = new ProcessBuilder(arrayCommand);
-            Process process = processBuilder.start();
-            
-            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+			String scriptName = isWindows ? "ipv4.cmd" : "ipv4.sh";
 
-            List<String> listStrings = new ArrayList<>();
+			InputStream inputStream = getClass().getResourceAsStream("/scripts" + (isWindows ? "/cmd/" : "/bash/") + "userinfo/" + scriptName);
+			if (inputStream == null) {
+				throw new IOException("Arquivo BAT não encontrado no recurso.");
+			}
+
+			Path tempFile = Files.createTempFile("temp_script", isWindows ? ".bat" : ".sh");
+			Files.copy(inputStream, tempFile, StandardCopyOption.REPLACE_EXISTING);
+
+			String absolutePath = tempFile.toAbsolutePath().toString();
+
+			Process processo = Runtime.getRuntime().exec(absolutePath);
+
+			BufferedReader reader = new BufferedReader(new InputStreamReader(processo.getInputStream()));
+
+			List<String> listStrings = new ArrayList<>();
 
             String line;
 
@@ -118,7 +132,7 @@ public class Userinfo {
                 listStrings.add(line);
             }
 
-            BufferedReader erroReader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+            BufferedReader erroReader = new BufferedReader(new InputStreamReader(processo.getErrorStream()));
         
             while ((line = erroReader.readLine()) != null) {
                 System.err.println("Saída de erro: "+ line);
