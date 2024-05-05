@@ -132,6 +132,7 @@ public class ServiceComponente {
 					((Volume) componente).setTotal(volume.getTotal());
 					((Volume) componente).setTipo(volume.getTipo());
 					((Volume) componente).setUuid(volume.getUuid());
+					((Volume) componente).setDadoCaptura(volume.getDadoCaptura());
 				}
 			});
 		} else if (componente instanceof Bateria) {

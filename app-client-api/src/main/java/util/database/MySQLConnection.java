@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 public class MySQLConnection {
 	private static final Logger logger = Logger.getLogger(MySQLConnection.class.getName());
 
-	private static boolean hml = true;
+	private static boolean hml = false;
 
 	private static final String CONNECTION_STRING = "jdbc:mysql://54.167.113.168:3306/der_grupo_5";
 	private static final String USERNAME = "admin";

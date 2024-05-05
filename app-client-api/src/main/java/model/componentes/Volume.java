@@ -94,10 +94,10 @@ public class Volume extends Componente {
 				Arrays.asList("Data Hora captura", String.valueOf(dataCaptura)),
 				Arrays.asList("Nome", Optional.ofNullable(modelo).orElse("N/A")),
 				Arrays.asList("Volume", Optional.ofNullable(volume).orElse("N/A")),
-				Arrays.asList("Disponível", Optional.ofNullable(arredondaValor(disponivel)).map(Object::toString).orElse("N/A") + " GB"),
-				Arrays.asList("Total", Optional.ofNullable(arredondaValor(total)).map(Object::toString).orElse("N/A") + " GB"),
+				Arrays.asList("Disponível", disponivel != null ? arredondaValor(disponivel).toString() : "N/A" + " GB"),
+				Arrays.asList("Total", total != null ? arredondaValor(total).toString() : "N/A" + " GB"),
 				Arrays.asList("Tipo", Optional.ofNullable(tipo).orElse("N/A")),
-				Arrays.asList("UUID", Optional.ofNullable(uuid).orElse("N/A")),
+				Arrays.asList("UUID", Optional.ofNullable(fabricante).orElse("N/A")),
 				Arrays.asList("Ponto de Montagem", Optional.ofNullable(pontoDeMontagem).orElse("N/A")));
 	}
 
@@ -109,7 +109,7 @@ public class Volume extends Componente {
 	@Override
 	public String pdfLayout() {
 		List<List<String>> listaPDF = new ArrayList<>(tabela());
-		listaPDF.add(Arrays.asList("VALOR", total.toString(), String.valueOf(total - disponivel), "GB"));
+		listaPDF.add(Arrays.asList("VALOR", total.toString(), dadoCaptura.toString(), "GB"));
 		return CreatePDFInfos.gerarLayoutPDF(listaPDF);
 	}
 

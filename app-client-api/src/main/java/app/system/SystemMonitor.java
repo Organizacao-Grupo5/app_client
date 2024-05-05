@@ -658,6 +658,8 @@ public class SystemMonitor {
 								"Espaço disponível no volume lógico capturado : " + volumeLogico.getDisponivel());
 					}
 
+					volumeLogico.setDadoCaptura(conversor.formatarBytes(volume.getDisponivel()) - conversor.formatarBytes(volume.getTotal()));
+
 					volumeLogico.setTotal(conversor.formatarBytes(volume.getTotal()));
 					if (StringUtils.isNullOrEmpty(volumeLogico.getTotal().toString())) {
 						Logger.logWarning("Espaço total do volume lógico não foi capturado.");
@@ -673,11 +675,11 @@ public class SystemMonitor {
 						Logger.logInfo("Tipo do volume lógico capturado: " + volumeLogico.getTipo());
 					}
 
-					volumeLogico.setUuid(volume.getUUID());
-					if (StringUtils.isNullOrEmpty(volumeLogico.getUuid())) {
+					volumeLogico.setFabricante(volume.getUUID());
+					if (StringUtils.isNullOrEmpty(volumeLogico.getFabricante())) {
 						Logger.logWarning("UUID do volume lógico não foi capturado.");
 					} else {
-						Logger.logInfo("UUID do volume lógico capturado: " + volumeLogico.getUuid());
+						Logger.logInfo("UUID do volume lógico capturado: " + volumeLogico.getFabricante());
 					}
 
 					volumeLogico.setPontoDeMontagem(volume.getPontoDeMontagem());
