@@ -34,7 +34,6 @@ public class ServiceComponente {
 			listaComponente.add(systemMonitor.monitorarRAM());
 			systemMonitor.monitorarBateria().forEach(bateria -> listaComponente.add(bateria));
 			systemMonitor.monitorarDisplay().forEach(janela -> listaComponente.add(janela));
-			listaComponente.add(systemMonitor.capturarInformacoesPlacaMae());
 			listaComponente.add(systemMonitor.monitorarSistemaOperacional());
 			systemMonitor.monitorarVolumeLogico().forEach(volume -> listaComponente.add(volume));
 
@@ -42,9 +41,9 @@ public class ServiceComponente {
 				try {
 					boolean existe = false;
 					for (Componente registrado : componentesRegistrados) {
-						if (registrado.getModelo().equals(novoComponente.getModelo())
-								&& registrado.getFabricante().equals(novoComponente.getFabricante())
-								&& registrado.getComponente().equals(novoComponente.getComponente())) {
+						if (registrado.getModelo().equalsIgnoreCase(novoComponente.getModelo())
+								&& registrado.getFabricante().equalsIgnoreCase(novoComponente.getFabricante())
+								&& registrado.getComponente().equalsIgnoreCase(novoComponente.getComponente())) {
 							existe = true;
 							break;
 						}
@@ -132,6 +131,8 @@ public class ServiceComponente {
 					((Volume) componente).setTotal(volume.getTotal());
 					((Volume) componente).setTipo(volume.getTipo());
 					((Volume) componente).setUuid(volume.getUuid());
+					((Volume) componente).setFabricante(volume.getFabricante());
+					((Volume) componente).setModelo(volume.getModelo());
 					((Volume) componente).setDadoCaptura(volume.getDadoCaptura());
 				}
 			});

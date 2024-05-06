@@ -109,7 +109,7 @@ public class Volume extends Componente {
 	@Override
 	public String pdfLayout() {
 		List<List<String>> listaPDF = new ArrayList<>(tabela());
-		listaPDF.add(Arrays.asList("VALOR", total.toString(), dadoCaptura.toString(), "GB"));
+		listaPDF.add(Arrays.asList("VALOR", total.toString(), disponivel.toString(), "GB"));
 		return CreatePDFInfos.gerarLayoutPDF(listaPDF);
 	}
 
@@ -125,7 +125,7 @@ public class Volume extends Componente {
 
 	@Override
 	public Double getDadoCaptura() {
-		return disponivel;
+		return total - disponivel;
 	}
 
 	public Double arredondaValor(Double valor){

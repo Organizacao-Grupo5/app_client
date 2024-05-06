@@ -633,8 +633,8 @@ public class SystemMonitor {
 
 		try {
 			looca.getGrupoDeDiscos().getVolumes().stream().forEach(volume -> {
+				Volume volumeLogico = new Volume();
 				try {
-					Volume volumeLogico = new Volume();
 
 					volumeLogico.setModelo(volume.getNome());
 					if (StringUtils.isNullOrEmpty(volumeLogico.getModelo())) {
@@ -690,11 +690,11 @@ public class SystemMonitor {
 								"Ponto de montagem do volume lógico capturado: " + volumeLogico.getPontoDeMontagem());
 					}
 
-					volumes.add(volumeLogico);
 					Logger.logInfo("Dados do volume lógico gravados.");
 				} catch (Exception e) {
 					Logger.logError("Erro ao processar dados do volume lógico: ", e.getMessage(), e);
 				}
+				volumes.add(volumeLogico);
 			});
 			Logger.logInfo("Todos os volumes lógicos verificados.");
 		} catch (Exception e) {

@@ -151,7 +151,7 @@ public class Main {
             executorService = Executors.newScheduledThreadPool(1);
             executorService.scheduleAtFixedRate(() -> {
                 serviceComponente.iniciarCapturas(maquina);
-            }, 0, 10, TimeUnit.SECONDS);
+            }, 0, 3, TimeUnit.SECONDS);
 
             Scanner scanner = new Scanner(System.in);
             boolean running = true;
