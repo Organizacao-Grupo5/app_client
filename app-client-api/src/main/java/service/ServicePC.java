@@ -12,7 +12,7 @@ import com.sun.jna.platform.win32.Netapi32Util.UserInfo;
 
 public class ServicePC {
 	MaquinaDAO maquinaDAO = new MaquinaDAO();
-	UserInfo userInfo = new UserInfo();
+	// UserInfo userInfo = new UserInfo();
 
 	public Maquina verificarMaquina(Usuario usuario) {
 		try {
