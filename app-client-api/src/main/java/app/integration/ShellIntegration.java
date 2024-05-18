@@ -1,7 +1,6 @@
 package app.integration;
 import app.system.Conversor;
 import com.mysql.cj.util.StringUtils;
-import model.componentes.APP;
 import util.logs.Logger;
 
 import java.io.BufferedReader;
@@ -11,7 +10,6 @@ import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
-import java.util.Optional;
 
 import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 

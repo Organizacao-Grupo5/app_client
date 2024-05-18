@@ -1,6 +1,5 @@
 package service.componente;
 
-import app.integration.ShellIntegration;
 import app.system.SystemMonitor;
 import dao.componente.CapturaDAO;
 import dao.componente.ComponenteDAO;
@@ -16,7 +15,6 @@ public class ServiceComponente {
 	private ComponenteDAO componenteDAO = new ComponenteDAO();
 	private SystemMonitor systemMonitor = new SystemMonitor();
 	private CapturaDAO capturaDAO = new CapturaDAO();
-	private ShellIntegration shellIntegration = new ShellIntegration();
 
 	public void obterComponentes(Maquina maquina) {
 		try {

@@ -6,6 +6,7 @@ import model.Usuario;
 import service.ServiceUser;
 import util.logs.Logger;
 
+import java.sql.SQLException;
 import java.util.Optional;
 
 public class Seguranca {
@@ -16,7 +17,7 @@ public class Seguranca {
 		this.serviceUser = new ServiceUser();
 	}
 
-	public boolean autenticarUsuario(String email, String senha) throws AutenticationException {
+	public boolean autenticarUsuario(String email, String senha) throws AutenticationException, SQLException {
 		if (StringUtils.isNullOrEmpty(email) || StringUtils.isNullOrEmpty(senha)) {
 			Logger.logWarning("Credencias de acesso inválidas.");
 			throw new AutenticationException("Email e/ou senha não podem estar vazios!");

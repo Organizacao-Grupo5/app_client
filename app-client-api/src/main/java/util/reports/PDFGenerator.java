@@ -4,7 +4,6 @@ import com.itextpdf.text.Document;
 import com.itextpdf.text.Element;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
-import util.logs.Logger;
 
 import java.io.File;
 import java.io.FileOutputStream;

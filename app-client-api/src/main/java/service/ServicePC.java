@@ -5,10 +5,8 @@ import model.Maquina;
 import model.Usuario;
 import util.logs.Logger;
 
-import java.net.InetAddress;
 import java.util.Optional;
 
-import com.sun.jna.platform.win32.Netapi32Util.UserInfo;
 
 public class ServicePC {
 	MaquinaDAO maquinaDAO = new MaquinaDAO();

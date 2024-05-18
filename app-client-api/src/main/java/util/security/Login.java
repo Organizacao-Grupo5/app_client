@@ -1,6 +1,9 @@
 package util.security;
 
 import util.exception.AutenticationException;
+
+import java.sql.SQLException;
+
 import model.Usuario;
 import service.ServiceUser;
 import util.logs.Logger;
@@ -14,7 +17,7 @@ public class Login {
 		this.serviceUser = new ServiceUser();
 	}
 
-	public Usuario login(String email, String senha) throws AutenticationException {
+	public Usuario login(String email, String senha) throws AutenticationException, SQLException {
 		Logger.logInfo("Verificando informações de login do usuário.");
 		try {
 			if (seguranca.autenticarUsuario(email, senha)) {

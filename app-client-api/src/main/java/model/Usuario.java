@@ -50,11 +50,11 @@ public class Usuario {
 	}
 
 	public Integer getFkPlano() {
-		return fkEmpresa;
+		return fkPlano;
 	}
 
-	public void setFkPlano(Integer fkEmpresa) {
-		this.fkEmpresa = fkEmpresa;
+	public void setFkPlano(Integer fkPlano) {
+		this.fkPlano = fkPlano;
 	}
 
 	public String getCargo() {

@@ -1,9 +1,6 @@
 package model;
 
 import model.componentes.Componente;
-import util.reports.CreatePDFInfos;
-import util.reports.PDFGenerator;
-import util.reports.TablePrinter;
 
 import java.util.ArrayList;
 import java.util.List;

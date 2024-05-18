@@ -8,11 +8,9 @@ import service.componente.ServiceComponente;
 import util.exception.AutenticationException;
 import util.logs.Logger;
 import util.reports.PDFGenerator;
-import util.reports.TablePrinter;
 import util.security.Login;
 
 import java.io.Console;
-import java.io.IOException;
 import java.util.Scanner;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -20,7 +18,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 public class Main {
-    private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
     private static final Login login = new Login();
     private static ScheduledExecutorService executorService;
 
@@ -120,7 +117,6 @@ public class Main {
                             ).toString()), maquina.getModelo(), maquina.getHostname(), maquina.getNumeroSerial(), maquina.getUsername()));
 
                     iniciarMonitoramento();
-                    scanner.close();
                     break;
                 } else {
                     System.out.println("""
@@ -137,13 +133,10 @@ public class Main {
                 e.printStackTrace();
             }
         }
-        scanner.close();
-
+        
     }
 
     public static void iniciarMonitoramento() {
-        SystemMonitor systemMonitor = new SystemMonitor();
-
         serviceComponente.obterComponentes(maquina);
 
         try {
@@ -208,8 +201,6 @@ public class Main {
     }
 
     public static void displayTables() throws Exception {
-        ServicePC serviceMonitoring = new ServicePC();
-        TablePrinter tablePrinter = new TablePrinter();
         System.out.println(exibirOpcoes());
         Scanner scanner = new Scanner(System.in);
         String input = scanner.next();

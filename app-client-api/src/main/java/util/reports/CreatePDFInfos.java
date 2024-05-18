@@ -7,9 +7,6 @@ import util.Enum.MensagemSuporte;
 import java.util.List;
 
 public class CreatePDFInfos {
-	private static final String TITULO = "TITULO";
-	private static final String DESCRICAO = "DESCRICAO";
-	private static final String PDF_PREFIX = "PDF";
 
 	public static String gerarLayoutPDF(List<List<String>> data) {
 		Conversor conversor = new Conversor();
