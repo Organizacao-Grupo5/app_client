@@ -7,12 +7,12 @@
 //public class SlackIntegration {
 //
 //    private static String webHooksUrl =
-//            "https://hooks.slack.com/services/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";
-//    private static String oAuthToken = "xoxb-7137794229445-7153694485985-R8o6e6zctLK46CEWVf43jirl";
+//            "https://hooks.slack.com/services/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";
+//    private static String oAuthToken = "xoxb-7137794229445-7163850523392-3dUSE3k7neqNqn7iub8Lbaou";
 //    private static String slackChannel = "visualopsnotificationschannel";
 //
 //    public static void main(String[] args){
-//        enviarMensagemParaSlack("Olá usuário! Testando a integração com Slack");
+//        enviarMensagemParaSlack("Olá usuário! Testando a integração com Slack denovoo");
 //    }
 //
 //    public static void enviarMensagemParaSlack(String mensagem){
