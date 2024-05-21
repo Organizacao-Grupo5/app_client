@@ -2,8 +2,7 @@ package dao;
 
 import model.Usuario;
 import util.database.MySQLConnection;
-import util.logs.Logger;
-
+import util.security.Criptografia;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -12,10 +11,11 @@ import java.util.Optional;
 
 public class UsuarioDAO {
 
-	public Optional<Usuario> findByEmailAndSenha(String email, String senha) throws SQLException {
-		try (Connection connection = MySQLConnection.ConBD()) {
+	public Optional<Usuario> findByEmailAndSenha(String email, String senha) {
+		try (Connection conexao = MySQLConnection.ConBD();
 
-			PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM Usuario JOIN empresa ON usuario.fkEmpresa = empresa.idEmpresa JOIN plano ON empresa.fkPlano = plano.idPlano WHERE email = ? and senha = ?");
+			 PreparedStatement preparedStatement = conexao.prepareStatement(
+					 "SELECT * FROM usuario JOIN empresa ON usuario.fkEmpresa = empresa.idEmpresa JOIN plano ON empresa.fkPlano = plano.idPlano WHERE email = ? and senha = ?")) {
 
 			preparedStatement.setString(1, email);
 			preparedStatement.setString(2, senha);
@@ -24,16 +24,38 @@ public class UsuarioDAO {
 				if (resultSet.next()) {
 					return Optional.of(createUser(resultSet));
 				}
-			} catch (SQLException e) {
-				throw new SQLException("Erro ao buscar usuário por email e senha", e);
 			}
+
 		} catch (SQLException e) {
-			Logger.logError("\"Não foi possível abrir a conexão com o banco!:", e.getMessage(), e);
-			throw new RuntimeException("Erro ao abrir a conexão com o banco!", e);
+			throw new RuntimeException("Erro ao buscar usuário por email e senha", e);
 		}
 
 		return Optional.empty();
 	}
+
+	public void updateUser(String senha, Integer id) {
+
+		try (Connection conexao = MySQLConnection.ConBD();
+			 PreparedStatement preparedStatement = conexao.prepareStatement(
+					 "UPDATE usuario SET senha = ? WHERE idUsuario = ?")) {
+
+			preparedStatement.setString(1, senha);
+			preparedStatement.setInt(2, id);
+
+			int rowsUpdated = preparedStatement.executeUpdate();
+
+			if (rowsUpdated == 0) {
+				System.err.println("No rows were updated. Please check if the ID exists.");
+			}
+
+		} catch (SQLException e) {
+			System.err.println("Error updating user password: " + e.getMessage());
+			e.printStackTrace();
+			throw new RuntimeException("Error updating user password", e);
+		}
+	}
+
+
 
 	private Usuario createUser(ResultSet resultSet) throws SQLException {
 		Usuario usuario = new Usuario();
