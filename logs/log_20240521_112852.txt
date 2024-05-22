@@ -1,0 +1,5 @@
+[2024-05-21 11:28:52] [INFO] Servidor iniciando.
+[2024-05-21 11:28:54] [INFO] Servidor iniciado com sucesso.
+[2024-05-21 11:29:02] [WARNING] Não foi possível acessar a máquina do usuário
+[2024-05-21 11:29:02] [INFO] Usuário logado com sucesso: pedro.rocha@sptech.school
+[2024-05-21 11:29:07] [INFO] Sua senha foi criptograda com sucesso

@@ -1,14 +1,14 @@
-[2024-05-20 21:21:47] INFO: Servidor iniciando.
-[2024-05-20 21:21:48] INFO: Servidor iniciado com sucesso.
-[2024-05-20 21:22:12] INFO: Verificando informações de login do usuário.
-[2024-05-20 21:22:13] INFO: Usuário foi encontrado com sucesso.
-[2024-05-20 21:22:13] ERROR: Não foi possível abrir a conexão com o banco!:
+[2024-05-22 10:17:36] INFO: Servidor iniciando.
+[2024-05-22 10:17:38] INFO: Servidor iniciado com sucesso.
+[2024-05-22 10:17:43] INFO: Verificando informações de login do usuário.
+[2024-05-22 10:17:43] INFO: Usuário foi encontrado com sucesso.
+[2024-05-22 10:17:44] ERROR: Não foi possível abrir a conexão com o banco!:
 java.sql.SQLException: Erro ao executar a consulta da maquina no banco!
 	at dao.MaquinaDAO.verifyMaquina(MaquinaDAO.java:102)
 	at dao.MaquinaDAO.especificarMaquina(MaquinaDAO.java:53)
 	at dao.MaquinaDAO.monitorarMaquina(MaquinaDAO.java:35)
 	at service.ServicePC.verificarMaquina(ServicePC.java:18)
-	at Main.main(Main.java:108)
+	at Main.main(Main.java:112)
 Caused by: java.sql.SQLSyntaxErrorException: Table 'der_grupo_5.Maquina' doesn't exist
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
@@ -17,13 +17,13 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'der_grupo_5.Maquina' doesn't
 	at dao.MaquinaDAO.verifyMaquina(MaquinaDAO.java:93)
 	... 4 more
 
-[2024-05-20 21:22:13] ERROR: Erro ao acessar máquina:
+[2024-05-22 10:17:44] ERROR: Erro ao acessar máquina:
 java.lang.RuntimeException: Erro ao abrir conexão com o banco!!
 	at dao.MaquinaDAO.verifyMaquina(MaquinaDAO.java:106)
 	at dao.MaquinaDAO.especificarMaquina(MaquinaDAO.java:53)
 	at dao.MaquinaDAO.monitorarMaquina(MaquinaDAO.java:35)
 	at service.ServicePC.verificarMaquina(ServicePC.java:18)
-	at Main.main(Main.java:108)
+	at Main.main(Main.java:112)
 Caused by: java.sql.SQLException: Erro ao executar a consulta da maquina no banco!
 	at dao.MaquinaDAO.verifyMaquina(MaquinaDAO.java:102)
 	... 4 more
@@ -35,22 +35,22 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'der_grupo_5.Maquina' doesn't
 	at dao.MaquinaDAO.verifyMaquina(MaquinaDAO.java:93)
 	... 4 more
 
-[2024-05-20 21:22:13] WARNING: Não foi possível acessar a máquina do usuário
-[2024-05-20 21:22:13] INFO: Usuário logado com sucesso: diego.santos@sptech.school
-[2024-05-20 21:22:30] INFO: Buscando componentes...
-[2024-05-20 21:22:30] ERROR: Ocorreu um erro ao obter seus componentes:
+[2024-05-22 10:17:44] WARNING: Não foi possível acessar a máquina do usuário
+[2024-05-22 10:17:44] INFO: Usuário logado com sucesso: diego.santos@sptech.school
+[2024-05-22 10:17:45] INFO: Buscando componentes...
+[2024-05-22 10:17:45] ERROR: Ocorreu um erro ao obter seus componentes:
 java.lang.NullPointerException: Cannot invoke "model.Maquina.getIdMaquina()" because "maquina" is null
 	at dao.componente.ComponenteDAO.getComponentes(ComponenteDAO.java:20)
 	at service.componente.ServiceComponente.obterComponentes(ServiceComponente.java:21)
-	at Main.iniciarMonitoramento(Main.java:150)
-	at Main.main(Main.java:129)
+	at Main.iniciarMonitoramento(Main.java:159)
+	at Main.main(Main.java:133)
 
-[2024-05-20 21:22:30] INFO: Capturando os componentes:
+[2024-05-22 10:17:45] INFO: Capturando os componentes:
 
-[2024-05-20 21:22:30] ERROR: Ocorreu um erro durante a captura:
+[2024-05-22 10:17:45] ERROR: Ocorreu um erro durante a captura:
 java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
 	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
+	at Main.lambda$iniciarMonitoramento$0(Main.java:166)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
 	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
 	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
@@ -58,307 +58,10 @@ java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" b
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 
-[2024-05-20 21:22:33] ERROR: Ocorreu um erro durante a captura:
+[2024-05-22 10:17:48] ERROR: Ocorreu um erro durante a captura:
 java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
 	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:22:36] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:22:39] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:22:42] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:22:45] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:22:48] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:22:51] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:22:54] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:22:57] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:23:00] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:23:03] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:23:06] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:23:09] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:23:12] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:23:15] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:23:18] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:23:21] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:23:24] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:23:27] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:23:30] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:23:33] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:23:36] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:23:39] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:23:42] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:23:45] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:23:48] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:23:51] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-05-20 21:23:54] ERROR: Ocorreu um erro durante a captura:
-java.lang.NullPointerException: Cannot invoke "model.Maquina.getComponentes()" because "maquina" is null
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:71)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:156)
+	at Main.lambda$iniciarMonitoramento$0(Main.java:166)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
 	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
 	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)

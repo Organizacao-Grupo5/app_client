@@ -41,6 +41,9 @@ public class Logger {
 		log("ERROR", fullMessage);
 	}
 
+
+
+
 	private static void log(String level, String message) {
 		String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
 		String formattedMessage = String.format("[%s] %s: %s", timeStamp, level, message);

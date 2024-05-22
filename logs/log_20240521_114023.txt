@@ -1,0 +1,6 @@
+[2024-05-21 11:40:23] [INFO] Servidor iniciando.
+[2024-05-21 11:40:25] [INFO] Servidor iniciado com sucesso.
+[2024-05-21 11:40:32] [WARNING] Não foi possível acessar a máquina do usuário
+[2024-05-21 11:40:32] [INFO] Usuário logado com sucesso: diego.santos@sptech.school
+[2024-05-21 11:40:32] [INFO] Capturando os componentes:
+

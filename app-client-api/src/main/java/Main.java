@@ -1,6 +1,8 @@
 import dao.UsuarioDAO;
 import service.componente.ServiceComponente;
 import util.security.Login;
+
+import java.io.IOException;
 import java.util.Scanner;
 import app.system.SystemMonitor;
 import com.mysql.cj.util.StringUtils;
@@ -31,6 +33,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         Logger.logInfo("Servidor iniciando.");
+        logGenerator.logInfo("Servidor iniciando.");
         int quadros = 50;
 
         for (int i = 0; i <= quadros; i++) {
@@ -53,6 +56,7 @@ public class Main {
             }
         }
         Logger.logInfo("Servidor iniciado com sucesso.");
+        logGenerator.logInfo("Servidor iniciado com sucesso.");
         System.out.print("\r" + " ".repeat(quadros + 10));
         Usuario usuarioLogado;
         Scanner scanner = new Scanner(System.in);
@@ -109,9 +113,11 @@ public class Main {
 
                 if (maquina == null) {
                     Logger.logWarning("Não foi possível acessar a máquina do usuário");
+                    logGenerator.logWarning("Não foi possível acessar a máquina do usuário");
                 }
 
                 Logger.logInfo("Usuário logado com sucesso: " + usuarioLogado.getEmail());
+                logGenerator.logInfo(("Usuário logado com sucesso: " + usuarioLogado.getEmail()));
                 int shift = 3;
                 String senhaCriptografada = Criptografia.encrypt(senha, shift);
 
@@ -121,6 +127,7 @@ public class Main {
                     if (resposta.equalsIgnoreCase("s")) {
                         login.updatePasswordUser(senhaCriptografada,usuarioLogado.getIdUsuario());
                         System.out.println("Sua senha foi criptografada com sucesso!");
+                        logGenerator.logInfo("Sua senha foi criptograda com sucesso");
                     }
                     if (resposta.equalsIgnoreCase("n")){
                         iniciarMonitoramento();
@@ -134,9 +141,11 @@ public class Main {
 
 						""");
                 Logger.logWarning("Tentativa de login falhou para o email: " + email);
+                logGenerator.logWarning("Tentativa de login falhou para o email: " + email);
             }
         } catch (AutenticationException e) {
             Logger.logError("Erro ao fazer login: ", e.getMessage(), e);
+            logGenerator.logError("Erro ao fazer login: ", e.getMessage(), e);
         } catch (Exception e) {
             System.out.println("Ocorreu um erro inesperado: " + e.getMessage());
             e.printStackTrace();
@@ -146,11 +155,12 @@ public class Main {
     }
 
 
-    public static void iniciarMonitoramento() {
+    public static void iniciarMonitoramento() throws IOException {
         serviceComponente.obterComponentes(maquina);
 
         try {
             Logger.logInfo("Capturando os componentes:\n");
+            logGenerator.logInfo("Capturando os componentes:\n");
             executorService = Executors.newScheduledThreadPool(1);
             executorService.scheduleAtFixedRate(() -> {
                 serviceComponente.iniciarCapturas(maquina);
@@ -194,6 +204,7 @@ public class Main {
             }
         } catch (Exception e) {
             Logger.logError("Erro ao iniciar monitoramento: ", e.getMessage(), e);
+            logGenerator.logError("Erro ao iniciar monitoramento: ", e.getMessage(), e);
         }
     }
 
