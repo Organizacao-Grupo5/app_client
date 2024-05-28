@@ -10,6 +10,9 @@ import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
+import java.nio.file.attribute.PosixFilePermission;
+import java.nio.file.attribute.PosixFilePermissions;
+import java.util.Set;
 
 import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 
@@ -31,6 +34,11 @@ public class ShellIntegration {
 
 			Path tempFile = Files.createTempFile("temp_script", isWindows ? ".ps1" : ".sh");
 			Files.copy(inputStream, tempFile, REPLACE_EXISTING);
+
+			if (!isWindows) {
+				Set<PosixFilePermission> permissions = PosixFilePermissions.fromString("rwxr-xr-x");
+				Files.setPosixFilePermissions(tempFile, permissions);
+			}
 
 			String absolutePath = tempFile.toAbsolutePath().toString();
 			String command = isWindows ? "powershell.exe -ExecutionPolicy Bypass -File " + absolutePath : "sh " + absolutePath;
@@ -66,6 +74,11 @@ public class ShellIntegration {
 			Path tempFile = Files.createTempFile("temp_script", isWindows ? ".bat" : ".sh");
 			Files.copy(inputStream, tempFile, REPLACE_EXISTING);
 
+			if (!isWindows) {
+				Set<PosixFilePermission> permissions = PosixFilePermissions.fromString("rwxr-xr-x");
+				Files.setPosixFilePermissions(tempFile, permissions);
+			}
+
 			String absolutePath = tempFile.toAbsolutePath().toString();
 
 			Process processo = Runtime.getRuntime().exec(absolutePath);
@@ -81,6 +94,7 @@ public class ShellIntegration {
 
 		} catch (IOException | InterruptedException e) {
 			Logger.logError("Não foi possível monitorar a temperatura.", e.getMessage(), e);
+			e.printStackTrace();
 		}
 		return parseOutput(output);
 	}
@@ -96,6 +110,11 @@ public class ShellIntegration {
 
 			Path tempFile = Files.createTempFile("temp_script", isWindows ? ".bat" : ".sh");
 			Files.copy(inputStream, tempFile, StandardCopyOption.REPLACE_EXISTING);
+
+			if (!isWindows) {
+				Set<PosixFilePermission> permissions = PosixFilePermissions.fromString("rwxr-xr-x");
+				Files.setPosixFilePermissions(tempFile, permissions);
+			}
 
 			String absolutePath = tempFile.toAbsolutePath().toString();
 
@@ -126,6 +145,7 @@ public class ShellIntegration {
 
 		} catch (IOException | InterruptedException e) {
 			Logger.logError("Não foi possível monitorar o uso de RAM do PID: " + pid, e.getMessage(), e);
+			e.printStackTrace();
 		}
 		return parseOutput(output) != null ? conversor.converterKBparaMB(parseOutput(output)) : null;
 	}

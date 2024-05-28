@@ -1,5 +1,8 @@
 package app.integration;
 
+import util.logs.LogGenerator;
+import util.logs.Logger;
+
 import static com.sun.jna.Platform.isWindows;
 
 import java.io.BufferedReader;
@@ -9,16 +12,19 @@ import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
+import java.nio.file.attribute.PosixFilePermission;
 import java.util.ArrayList;
 import java.util.List;
-
+import java.nio.file.attribute.PosixFilePermissions;
+import java.util.Set;
 
 
 public class Userinfo {
+	private static LogGenerator logGenerator = new LogGenerator();
 
 	private static Boolean isWindows = System.getProperty("os.name").toLowerCase().startsWith("windows");
 
-	public String username() {
+	public String username() throws IOException {
 		try {
 			String scriptName = isWindows ? "userUsername.cmd" : "userUsername.sh";
 
@@ -30,6 +36,11 @@ public class Userinfo {
 			Path tempFile = Files.createTempFile("temp_script", isWindows ? ".bat" : ".sh");
 			Files.copy(inputStream, tempFile, StandardCopyOption.REPLACE_EXISTING);
 
+			if (!isWindows) {
+				Set<PosixFilePermission> permissions = PosixFilePermissions.fromString("rwxr-xr-x");
+				Files.setPosixFilePermissions(tempFile, permissions);
+			}
+
 			String absolutePath = tempFile.toAbsolutePath().toString();
 
 			Process processo = Runtime.getRuntime().exec(absolutePath);
@@ -50,16 +61,26 @@ public class Userinfo {
 				System.err.println("Saída de erro: "+ line);
 			}
 
-			return listStrings.get(2);
+			String res;
+
+			if (isWindows()) {
+				res = listStrings.get(2);
+			} else {
+				res = listStrings.get(0);
+			}
+
+			return res;
+
 
 		} catch (Exception e) {
+			LogGenerator.logError("Erro na integração com as informações da máquina do usuário", e.getMessage(), e);
 			e.printStackTrace();
 		}
 
 		return null;
 	}
 
-	public String hostname() {
+	public String hostname() throws IOException {
 		try {
 			String scriptName = isWindows ? "userHostname.cmd" : "hostname.sh";
 
@@ -71,6 +92,11 @@ public class Userinfo {
 			Path tempFile = Files.createTempFile("temp_script", isWindows ? ".bat" : ".sh");
 			Files.copy(inputStream, tempFile, StandardCopyOption.REPLACE_EXISTING);
 
+			if (!isWindows) {
+				Set<PosixFilePermission> permissions = PosixFilePermissions.fromString("rwxr-xr-x");
+				Files.setPosixFilePermissions(tempFile, permissions);
+			}
+
 			String absolutePath = tempFile.toAbsolutePath().toString();
 
 			Process processo = Runtime.getRuntime().exec(absolutePath);
@@ -91,16 +117,23 @@ public class Userinfo {
 				System.err.println("Saída de erro: "+ line);
 			}
 
-			return listStrings.get(2);
+			String res;
 
+			if (isWindows()) {
+				res = listStrings.get(2);
+			} else {
+				res =  listStrings.get(0);
+			}
+
+			return res;
 		} catch (Exception e) {
+			LogGenerator.logError("Erro na integração com as informações da máquina do usuário", e.getMessage(), e);
 			e.printStackTrace();
 		}
-
 		return null;
 	}
 
-	public String ipv4() {
+	public String ipv4() throws IOException {
         try {
 			String scriptName = isWindows ? "ipv4.cmd" : "ipv4.sh";
 
@@ -111,6 +144,11 @@ public class Userinfo {
 
 			Path tempFile = Files.createTempFile("temp_script", isWindows ? ".bat" : ".sh");
 			Files.copy(inputStream, tempFile, StandardCopyOption.REPLACE_EXISTING);
+
+			if (!isWindows) {
+				Set<PosixFilePermission> permissions = PosixFilePermissions.fromString("rwxr-xr-x");
+				Files.setPosixFilePermissions(tempFile, permissions);
+			}
 
 			String absolutePath = tempFile.toAbsolutePath().toString();
 
@@ -132,33 +170,18 @@ public class Userinfo {
                 System.err.println("Saída de erro: "+ line);
             }
 
-            String ipv4 = listStrings.get(2);
-            
-			
+			String ipv4;
 			if (isWindows()) {
-				Boolean doisPontos = false;
-	
-				StringBuilder sb = new StringBuilder();
-	
-				for (int i = 0; i < ipv4.length(); i++) {
-					if (ipv4.charAt(i) == ':' || doisPontos) {
-						doisPontos = true;
-	
-						char c = ipv4.charAt(i);
-				
-						if (Character.isDigit(c) || c == '.') {
-							sb.append(c);
-						}
-					}
-				}
-				ipv4 = sb.toString();
+				 ipv4 = listStrings.get(2);
+			} else {
+				ipv4 = listStrings.get(0);
 			}
 
 			return ipv4;
 
-
         } catch (Exception e) {
-            e.printStackTrace();
+			LogGenerator.logError("Erro na integração com as informações da máquina do usuário", e.getMessage(), e);
+			e.printStackTrace();
 		}
 
 		return null;

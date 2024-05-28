@@ -16,7 +16,7 @@ public class ComponenteDAO {
 		List<Componente> componentes = new ArrayList<>();
 		try (Connection connection = MySQLConnection.ConBD()) {
 			PreparedStatement preparedStatement = connection.prepareStatement(
-					"SELECT * FROM componente JOIN maquina ON componente.fkMaquina = maquina.idMaquina WHERE idMaquina = ?");
+					"SELECT * FROM componente JOIN Maquina ON componente.fkMaquina = Maquina.idMaquina WHERE idMaquina = ?");
 			preparedStatement.setInt(1, maquina.getIdMaquina());
 			try (ResultSet resultSet = preparedStatement.executeQuery()) {
 				while (resultSet.next()) {
