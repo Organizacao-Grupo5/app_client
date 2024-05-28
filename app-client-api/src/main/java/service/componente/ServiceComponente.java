@@ -31,7 +31,7 @@ public class ServiceComponente {
 			systemMonitor.monitorarGPU().forEach(gpu -> listaComponente.add(gpu));
 			listaComponente.add(systemMonitor.monitorarRAM());
 			systemMonitor.monitorarBateria().forEach(bateria -> listaComponente.add(bateria));
-			systemMonitor.monitorarDisplay().forEach(janela -> listaComponente.add(janela));
+//			systemMonitor.monitorarDisplay().forEach(janela -> listaComponente.add(janela));
 			listaComponente.add(systemMonitor.monitorarSistemaOperacional());
 			systemMonitor.monitorarVolumeLogico().forEach(volume -> listaComponente.add(volume));
 

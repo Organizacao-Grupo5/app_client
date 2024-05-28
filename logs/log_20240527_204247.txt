@@ -1,0 +1,7 @@
+[2024-05-27 20:42:47] [INFO] Servidor iniciando.
+[2024-05-27 20:42:48] [INFO] Servidor iniciado com sucesso.
+[2024-05-27 20:43:07] [ERROR] Erro na integração com as informações da máquina do usuário
+[2024-05-27 20:43:07] [ERROR] Erro na integração com as informações da máquina do usuário
+[2024-05-27 20:43:07] [ERROR] Erro na integração com as informações da máquina do usuário
+[2024-05-27 20:43:08] [WARNING] Não foi possível acessar a máquina do usuário
+[2024-05-27 20:43:08] [INFO] Usuário logado com sucesso: diego.santos@sptech.school

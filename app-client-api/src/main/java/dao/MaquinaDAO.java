@@ -8,6 +8,7 @@ import oshi.hardware.HardwareAbstractionLayer;
 import util.database.MySQLConnection;
 import util.logs.Logger;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -23,7 +24,7 @@ public class MaquinaDAO {
 		try (Connection connection = MySQLConnection.ConBD()) {
 
 			PreparedStatement preparedStatement = connection.prepareStatement(
-					"SELECT * FROM maquina JOIN usuario on maquina.fkUsuario = usuario.idUsuario JOIN ipv4 ON ipv4.fkMaquina = maquina.idMaquina WHERE idUsuario = ?");
+					"SELECT * FROM Maquina JOIN usuario on Maquina.fkUsuario = usuario.idUsuario JOIN ipv4 ON ipv4.fkMaquina = Maquina.idMaquina WHERE idUsuario = ?");
 
 			preparedStatement.setInt(1, usuario.getIdUsuario());
 
@@ -62,18 +63,18 @@ public class MaquinaDAO {
 			preparedStatement.setInt(6, maquina.getIdMaquina());
 
 			preparedStatement.executeUpdate();		
-		} catch (SQLException e) {
+		} catch (SQLException | IOException e) {
 			Logger.logError("Não foi possível abrir a conexão com o banco!:", e.getMessage(), e);
 			throw new RuntimeException("Erro ao abrir conexão com o banco!!", e);
 		}
 	}
 	
-	public static String getIpv4() {
+	public static String getIpv4() throws IOException {
 		Userinfo userinfo = new Userinfo();
 		return userinfo.ipv4();
 	}
 	
-	private void verifyMaquina(Maquina maquina) throws SQLException {
+	private void verifyMaquina(Maquina maquina) throws SQLException, IOException {
 		HardwareAbstractionLayer hardware = new SystemInfo().getHardware();
 		ComputerSystem computerSystem = hardware.getComputerSystem();
 	
