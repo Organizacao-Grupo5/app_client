@@ -9,3 +9,4 @@ if [[ "$(uname -s)" == "Linux" ]]; then
         echo $battery_percentage
     fi
 fi
+
