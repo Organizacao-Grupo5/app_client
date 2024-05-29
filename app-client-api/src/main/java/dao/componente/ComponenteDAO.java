@@ -3,16 +3,19 @@ package dao.componente;
 import model.componentes.*;
 import model.Maquina;
 import util.database.MySQLConnection;
+import util.logs.LogGenerator;
 import util.logs.Logger;
 
+import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 public class ComponenteDAO {
-	public List<Componente> getComponentes(Maquina maquina) throws SQLException {
+	public List<Componente> getComponentes(Maquina maquina) throws SQLException, IOException {
 		Logger.logInfo("Buscando componentes...");
+		LogGenerator.logInfo("Buscando componentes...");
 		List<Componente> componentes = new ArrayList<>();
 		try (Connection connection = MySQLConnection.ConBD()) {
 			PreparedStatement preparedStatement = connection.prepareStatement(
@@ -26,16 +29,25 @@ public class ComponenteDAO {
 			}
 		} catch (SQLException e) {
 			Logger.logError("Ocorreu um erro ao buscar seus componentes", e.getMessage(), e);
+			LogGenerator.logError("Ocorreu um erro ao buscar seus componentes", e.getMessage(), e);
 		}
 		return componentes;
 	}
 
-	private Componente verificaTipoComponente(ResultSet resultSet) throws SQLException {
+	private Componente verificaTipoComponente(ResultSet resultSet) throws SQLException, IOException {
 		String componente = resultSet.getString("componente");
 		String modelo = resultSet.getString("modelo");
 		String fabricante = resultSet.getString("fabricante");
 
 		Logger.logInfo("""
+				Componente encontrado :
+				    |Componente: %s
+				    |Modelo: %s
+				    |Fabricante: %s
+				    |ID Componente: %d
+				""".formatted(componente, modelo, fabricante, resultSet.getInt("idComponente")));
+
+		LogGenerator.logInfo("""
 				Componente encontrado :
 				    |Componente: %s
 				    |Modelo: %s
@@ -81,6 +93,7 @@ public class ComponenteDAO {
 			componenteInstanciado.setFabricante(fabricante);
 		} else {
 			Logger.logWarning("Não foi possível instânciar o componente.");
+			LogGenerator.logWarning("Não foi possível instânciar o componente.");
 		}
 
 		return componenteInstanciado;
@@ -89,9 +102,11 @@ public class ComponenteDAO {
 	public void salvarComponente(Maquina maquina, Componente componente) throws SQLException {
 		try (Connection connection = MySQLConnection.ConBD()) {
 			Logger.logInfo("Iniciando verificação se o componente já existe no banco de dados.");
+			LogGenerator.logInfo("Iniciando verificação se o componente já existe no banco de dados.");
 			if (!componenteExistenteNoBanco(componente, maquina)) {
 				try {
 					Logger.logInfo("Inserindo dados do componente no banco!");
+					LogGenerator.logInfo("Inserindo dados do componente no banco!");
 					PreparedStatement preparedStatement = connection.prepareStatement(
 							"INSERT INTO componente (componente, modelo, fabricante, fkMaquina, fkUsuario) VALUES (?,?,?,?,?)",
 							Statement.RETURN_GENERATED_KEYS);
@@ -112,18 +127,22 @@ public class ComponenteDAO {
 							int idComponente = generatedKeys.getInt(1);
 							componente.setIdComponente(idComponente);
 							Logger.logInfo("ID do componente criado: " + idComponente);
+							LogGenerator.logInfo("ID do componente criado: " + idComponente);
 						} else {
 							throw new SQLException("Falha ao obter o ID do componente criado.");
 						}
 					}
 				} catch (SQLException e) {
 					Logger.logError("Ocorreu um erro ao salvar seus componentes", e.getMessage(), e);
+					LogGenerator.logError("Ocorreu um erro ao salvar seus componentes", e.getMessage(), e);
 				}
 			}
-		}
-	}
+		} catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
-	public boolean componenteExistenteNoBanco(Componente componente, Maquina maquina) throws SQLException {
+	public boolean componenteExistenteNoBanco(Componente componente, Maquina maquina) throws SQLException, IOException {
 		boolean existe = false;
 		try (Connection connection = MySQLConnection.ConBD()) {
 			Logger.logInfo("""
@@ -134,6 +153,18 @@ public class ComponenteDAO {
 					        Id Máquina: %d
 					""".formatted(componente.getComponente(), componente.getModelo(), componente.getFabricante(),
 					maquina.getIdMaquina()));
+
+
+
+			LogGenerator.logInfo("""
+
+					        Verificando se o componente %s existe no banco de dados.
+					        Modelo: %s
+					        Fabricante: %s
+					        Id Máquina: %d
+					""".formatted(componente.getComponente(), componente.getModelo(), componente.getFabricante(),
+					maquina.getIdMaquina()));
+
 			PreparedStatement preparedStatement = connection.prepareStatement(
 					"SELECT * FROM componente WHERE componente = ? AND modelo = ? AND fabricante = ? AND fkMaquina = ?");
 			preparedStatement.setString(1, componente.getComponente());
@@ -146,8 +177,12 @@ public class ComponenteDAO {
 			}
 		} catch (SQLException e) {
 			Logger.logError("Ocorreu um erro ao verificar se o componente existe no banco de dados", e.getMessage(), e);
-		}
-		Logger.logInfo("O componente %s no banco de dados.".formatted(existe ? "existe" : "não existe"));
+			LogGenerator.logError("Ocorreu um erro ao verificar se o componente existe no banco de dados", e.getMessage(), e);
+		} catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        Logger.logInfo("O componente %s no banco de dados.".formatted(existe ? "existe" : "não existe"));
+		LogGenerator.logInfo("O componente %s no banco de dados.".formatted(existe ? "existe" : "não existe"));
 		return existe;
 	}
 }

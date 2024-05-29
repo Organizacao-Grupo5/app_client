@@ -14,6 +14,7 @@ public class LogGenerator {
 
     private static BufferedWriter bw;
     private static File logFile;
+    private static final String BASE_LOG_PATH = "/home/diegosouza/Downloads/app_client/logs";
 
     public enum LogType {
         INFO, WARNING, ERROR
@@ -37,22 +38,21 @@ public class LogGenerator {
     }
 
     private static void generateLog(String message, LogType logType) throws IOException {
-        if (bw == null) {
-            Path path = Paths.get("/home/diegosouza/Downloads/app_client/logs");
+        Path path = Paths.get(BASE_LOG_PATH);
 
-            if (!Files.exists(path)) {
-                Files.createDirectories(path);
-            }
-
-            String logFileName = "log_" + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()) + ".txt";
-            logFile = new File(path.toString(), logFileName);
-
-            if (!logFile.exists()) {
-                logFile.createNewFile();
-            }
-
-            bw = new BufferedWriter(new FileWriter(logFile, true));
+        if (!Files.exists(path)) {
+            Files.createDirectories(path);
+            createSubDirectories(path);
         }
+
+        Path logFilePath = getLogFilePath(logType);
+        logFile = logFilePath.toFile();
+
+        if (!logFile.exists()) {
+            logFile.createNewFile();
+        }
+
+        bw = new BufferedWriter(new FileWriter(logFile, true));
 
         String logMessage = String.format("[%s] [%s] %s",
                 new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()),
@@ -60,6 +60,32 @@ public class LogGenerator {
         bw.write(logMessage);
         bw.newLine();
         bw.flush();
+        bw.close();
+    }
+
+    private static void createSubDirectories(Path basePath) throws IOException {
+        Files.createDirectories(basePath.resolve("banco"));
+        Files.createDirectories(basePath.resolve("autenticar"));
+        Files.createDirectories(basePath.resolve("monitoramento"));
+    }
+
+    private static Path getLogFilePath(LogType logType) {
+        String subDir;
+        switch (logType) {
+            case INFO:
+                subDir = "autenticar";
+                break;
+            case WARNING:
+                subDir = "monitoramento";
+                break;
+            case ERROR:
+                subDir = "banco";
+                break;
+            default:
+                throw new IllegalArgumentException("Invalid log type");
+        }
+        String logFileName = logType.name().toLowerCase() + "_log_" + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()) + ".txt";
+        return Paths.get(BASE_LOG_PATH, subDir, logFileName);
     }
 
     public static void closeLogFile() throws IOException {

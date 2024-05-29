@@ -1,2 +1,0 @@
-[2024-05-27 20:47:30] [INFO] Servidor iniciando.
-[2024-05-27 20:47:31] [INFO] Servidor iniciado com sucesso.

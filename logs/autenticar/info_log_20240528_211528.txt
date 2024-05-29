@@ -1,0 +1,88 @@
+[2024-05-28 21:15:28] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 43,80
+    |Unidade de medida: °C
+    |Data hora captura: 2024-05-28T21:15:28.148841100
+    |Id componente: 1
+
+[2024-05-28 21:15:28] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 476,94
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-28T21:15:28.172106029
+    |Id componente: 2
+
+[2024-05-28 21:15:28] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 9,56
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-28T21:15:28.192172252
+    |Id componente: 3
+
+[2024-05-28 21:15:28] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 4,00
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-28T21:15:28.211096160
+    |Id componente: 4
+
+[2024-05-28 21:15:28] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 43,80
+    |Unidade de medida: °C
+    |Data hora captura: 2024-05-28T21:15:28.281625812
+    |Id componente: 5
+
+[2024-05-28 21:15:28] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 9,20
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-28T21:15:28.296615172
+    |Id componente: 6
+
+[2024-05-28 21:15:28] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 0,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-05-28T21:15:28.316700601
+    |Id componente: 7
+
+[2024-05-28 21:15:28] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-05-28T21:15:28.330691308
+    |Id componente: 8
+
+[2024-05-28 21:15:28] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 188,02
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-28T21:15:28.354215696
+    |Id componente: 9
+
+[2024-05-28 21:15:28] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 367,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-28T21:15:28.377585945
+    |Id componente: 10
+
+[2024-05-28 21:15:28] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 2,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-28T21:15:28.400512566
+    |Id componente: 11
+

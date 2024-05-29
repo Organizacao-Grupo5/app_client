@@ -160,7 +160,11 @@ public class Main {
             LogGenerator.logInfo("Capturando os componentes:\n");
             executorService = Executors.newScheduledThreadPool(1);
             executorService.scheduleAtFixedRate(() -> {
-                serviceComponente.iniciarCapturas(maquina);
+                try {
+                    serviceComponente.iniciarCapturas(maquina);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
             }, 0, 3, TimeUnit.SECONDS);
 
             Scanner scanner = new Scanner(System.in);

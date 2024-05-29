@@ -1,0 +1,1 @@
+[2024-05-28 21:11:00] [INFO] Usuário logado com sucesso: diego.santos@sptech.school

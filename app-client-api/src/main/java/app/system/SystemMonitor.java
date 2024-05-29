@@ -399,6 +399,8 @@ public class SystemMonitor {
 		return baterias;
 	}
 
+
+
 	public List<GPU> monitorarGPU() {
 		Logger.logInfo("Capturando dados da GPU.");
 		List<GPU> gpus = new ArrayList<>();
