@@ -1,3 +1,0 @@
-[2024-05-21 13:10:48] [INFO] Servidor iniciando.
-[2024-05-21 13:10:50] [INFO] Servidor iniciado com sucesso.
-[2024-05-21 13:10:57] [WARNING] Tentativa de login falhou para o email: diego.santos@sptech.school

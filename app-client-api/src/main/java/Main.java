@@ -1,7 +1,12 @@
 import service.componente.ServiceComponente;
 import util.security.Login;
 
+import java.io.Console;
+import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 import com.mysql.cj.util.StringUtils;
@@ -29,8 +34,7 @@ public class Main {
     private static ServiceComponente serviceComponente = new ServiceComponente();
 
     public static void main(String[] args) throws Exception {
-        Logger.logInfo("Servidor iniciando.");
-        LogGenerator.logInfo("Servidor iniciando.");
+        LogGenerator.logInfo("Servidor iniciando.", LogGenerator.LogType.INFO);
         int quadros = 50;
 
         for (int i = 0; i <= quadros; i++) {
@@ -52,10 +56,9 @@ public class Main {
                 e.printStackTrace();
             }
         }
-        Logger.logInfo("Servidor iniciado com sucesso.");
-        LogGenerator.logInfo("Servidor iniciado com sucesso.");
+        LogGenerator.logInfo("Servidor iniciado com sucesso.", LogGenerator.LogType.INFO);
         System.out.print("\r" + " ".repeat(quadros + 10));
-        Usuario usuarioLogado;
+        Usuario usuarioLogado = null;
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("""
@@ -80,20 +83,17 @@ public class Main {
         } else {
             char[] senhaArray = console.readPassword(" - Insira sua senha: ");
             senha = new String(senhaArray);
-
             java.util.Arrays.fill(senhaArray, ' ');
         }
 
         try {
-
             usuarioLogado = login.login(email, senha);
 
             System.out.println(" - Terminamos a verificação de seu acesso...   ");
 
-            if(usuarioLogado==null){
-                usuarioLogado= login.login(email, Criptografia.encrypt(senha,3));
+            if (usuarioLogado == null) {
+                usuarioLogado = login.login(email, Criptografia.encrypt(senha, 3));
             }
-
 
             if (usuarioLogado != null) {
                 System.out.println("""
@@ -109,27 +109,29 @@ public class Main {
                 maquina = servicePC.verificarMaquina(usuarioLogado);
 
                 if (maquina == null) {
-                    Logger.logWarning("Não foi possível acessar a máquina do usuário");
                     LogGenerator.logWarning("Não foi possível acessar a máquina do usuário");
                 }
-
-                Logger.logInfo("Usuário logado com sucesso: " + usuarioLogado.getEmail());
-                LogGenerator.logInfo(("Usuário logado com sucesso: " + usuarioLogado.getEmail()));
+                LogGenerator.logInfo(("Usuário logado com sucesso: " + usuarioLogado.getEmail()), LogGenerator.LogType.INFO);
                 int shift = 3;
                 String senhaCriptografada = Criptografia.encrypt(senha, shift);
 
-                if(!usuarioLogado.getSenha().equals(senhaCriptografada)) {
+                if (!usuarioLogado.getSenha().equals(senhaCriptografada)) {
                     System.out.print("Deseja criptografar sua senha? (s/n): ");
                     String resposta = scanner.next();
                     if (resposta.equalsIgnoreCase("s")) {
-                        login.updatePasswordUser(senhaCriptografada,usuarioLogado.getIdUsuario());
+                        login.updatePasswordUser(senhaCriptografada, usuarioLogado.getIdUsuario());
                         System.out.println("Sua senha foi criptografada com sucesso!");
-                        LogGenerator.logInfo("Sua senha foi criptograda com sucesso");
+                        LogGenerator.logInfo("Sua senha foi criptograda com sucesso", LogGenerator.LogType.INFO);
                     }
-                    if (resposta.equalsIgnoreCase("n")){
+                    if (resposta.equalsIgnoreCase("n")) {
                         iniciarMonitoramento();
                     }
                 }
+
+                // Finaliza o arquivo de log e move para a pasta "autenticar"
+                LogGenerator.closeLogFile();
+                moveLogFileToAutenticar();
+
                 iniciarMonitoramento();
             } else {
                 System.out.println("""
@@ -137,11 +139,9 @@ public class Main {
 						--- ACESSO NEGADO ---
 
 						""");
-                Logger.logWarning("Tentativa de login falhou para o email: " + email);
                 LogGenerator.logWarning("Tentativa de login falhou para o email: " + email);
             }
         } catch (AutenticationException e) {
-            Logger.logError("Erro ao fazer login: ", e.getMessage(), e);
             LogGenerator.logError("Erro ao fazer login: ", e.getMessage(), e);
         } catch (Exception e) {
             System.out.println("Ocorreu um erro inesperado: " + e.getMessage());
@@ -151,13 +151,29 @@ public class Main {
         }
     }
 
+    private static void moveLogFileToAutenticar() {
+        try {
+            // Diretório de origem e destino
+            Path source = Paths.get(LogGenerator.getLogFilePath());
+            Path destinationDir = Paths.get("/home/diegosouza/Downloads/app_client/logs/autenticar");
+
+            if (!Files.exists(destinationDir)) {
+                Files.createDirectories(destinationDir);
+            }
+
+            Files.move(source, destinationDir.resolve(source.getFileName()));
+        } catch (IOException e) {
+            e.printStackTrace();
+            Logger.logError("Erro ao mover arquivo de log para pasta 'autenticar'", e.getMessage(), e);
+        }
+    }
+
 
     public static void iniciarMonitoramento() throws IOException {
         serviceComponente.obterComponentes(maquina);
 
         try {
-            Logger.logInfo("Capturando os componentes:\n");
-            LogGenerator.logInfo("Capturando os componentes:\n");
+            LogGenerator.logInfo("Capturando os componentes:\n", LogGenerator.LogType.INFO);
             executorService = Executors.newScheduledThreadPool(1);
             executorService.scheduleAtFixedRate(() -> {
                 serviceComponente.iniciarCapturas(maquina);
@@ -200,7 +216,6 @@ public class Main {
                 }
             }
         } catch (Exception e) {
-            Logger.logError("Erro ao iniciar monitoramento: ", e.getMessage(), e);
             LogGenerator.logError("Erro ao iniciar monitoramento: ", e.getMessage(), e);
         }
     }

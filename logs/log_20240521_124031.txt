@@ -1,3 +1,0 @@
-[2024-05-21 12:40:31] [INFO] Servidor iniciando.
-[2024-05-21 12:40:33] [INFO] Servidor iniciado com sucesso.
-[2024-05-21 12:40:53] [WARNING] Tentativa de login falhou para o email: deigo.samtaoeg@sptech.school

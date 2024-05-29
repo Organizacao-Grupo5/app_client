@@ -7,6 +7,7 @@ import model.componentes.*;
 import model.Maquina;
 import util.logs.Logger;
 
+import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -70,8 +71,12 @@ public class ServiceComponente {
 		try {
 			maquina.getComponentes().forEach(componente -> {
 				atualizarComponente(componente);
-				capturaDAO.inserirCaptura(maquina, componente);
-			});
+                try {
+                    capturaDAO.inserirCaptura(maquina, componente);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            });
 		} catch (Exception e) {
 			Logger.logError("Ocorreu um erro durante a captura:", e.getMessage(), e);
 		}
