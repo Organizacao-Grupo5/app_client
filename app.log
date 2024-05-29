@@ -1,998 +1,431 @@
-[2024-05-05 23:12:45] INFO: Servidor iniciando.
-[2024-05-05 23:12:46] INFO: Servidor iniciado com sucesso.
-[2024-05-05 23:12:52] INFO: Verificando informações de login do usuário.
-[2024-05-05 23:12:52] INFO: Usuário foi encontrado com sucesso.
-[2024-05-05 23:12:53] INFO: Usuário logado com sucesso: clau@gmail
-[2024-05-05 23:12:53] INFO: Buscando componentes...
-[2024-05-05 23:12:53] INFO: Capturando dados da sua CPU.
-[2024-05-05 23:12:53] INFO: Número de CPUs lógicas: 8
-[2024-05-05 23:12:53] INFO: Número de CPUs físicas: 4
-[2024-05-05 23:12:53] INFO: Microarquitetura: Tiger Lake
-[2024-05-05 23:12:53] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
-[2024-05-05 23:12:53] INFO: ID da CPU Looca: BFEBFBFF000806C1
-[2024-05-05 23:12:53] INFO: Fabricante: GenuineIntel
-[2024-05-05 23:12:53] INFO: Frequência: 2.419E9
-[2024-05-05 23:12:53] INFO: Número de pacotes físicos: 1
-[2024-05-05 23:12:55] INFO: Uso da CPU: 4.193746167995095
-[2024-05-05 23:12:55] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-[2024-05-05 23:12:56] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
-[2024-05-05 23:12:56] INFO: Dados da CPU capturados com sucesso.
-[2024-05-05 23:12:56] INFO: Capturando dados do seu HDD
-[2024-05-05 23:12:56] INFO: Nome do disco: \\.\PHYSICALDRIVE0
-[2024-05-05 23:12:56] INFO: Serial do disco: 0025_38D3_3101_18C2.
-[2024-05-05 23:12:56] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
-[2024-05-05 23:12:56] INFO: Escritas do disco: 30.166147232055664
-[2024-05-05 23:12:56] INFO: Leituras do disco: 117.83533573150635
-[2024-05-05 23:12:56] INFO: Bytes de escritas do disco: 2340.0008521080017
-[2024-05-05 23:12:56] INFO: Bytes de leitura do disco: 5348.365102291107
-[2024-05-05 23:12:56] INFO: Tamanho do disco: 238.47
-[2024-05-05 23:12:56] INFO: Tempo de transferência do disco: 46343.69222222222
-[2024-05-05 23:12:56] INFO: Dados do disco gravados.
-[2024-05-05 23:12:56] INFO: Capturando dados da GPU.
-[2024-05-05 23:12:56] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
-[2024-05-05 23:12:56] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
-[2024-05-05 23:12:56] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
-[2024-05-05 23:12:56] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
-[2024-05-05 23:12:56] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
-[2024-05-05 23:12:56] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
-[2024-05-05 23:12:56] INFO: Dados da GPU gravados.
-[2024-05-05 23:12:56] INFO: Capturando dados da sua memória RAM.
-[2024-05-05 23:12:56] INFO: Memória disponível: 466.0
-[2024-05-05 23:12:56] INFO: Memória total: 7.729835510253906
-[2024-05-05 23:12:56] INFO: Memória em uso: 7.274757385253906
-[2024-05-05 23:12:56] INFO: Dados da memória RAM capturados com sucesso.
-[2024-05-05 23:12:56] INFO: Capturando dados da sua bateria.
-[2024-05-05 23:12:57] INFO: Amperagem da bateria: 376.5249215754618
-[2024-05-05 23:12:57] INFO: Nome do dispositivo da bateria: SR Real Battery
-[2024-05-05 23:12:57] INFO: Número de série da bateria: 123456789
-[2024-05-05 23:12:57] INFO: Química da bateria: LION
-[2024-05-05 23:12:57] INFO: Nome da bateria: System Battery
-[2024-05-05 23:12:57] INFO: Voltagem da bateria: 11.476
-[2024-05-05 23:12:57] INFO: Capacidade atual da bateria: 5.1767578125
-[2024-05-05 23:12:57] INFO: Número de ciclos da bateria: 211
-[2024-05-05 23:12:57] INFO: Capacidade de design da bateria: 42.08203125
-[2024-05-05 23:12:57] INFO: Unidade de capacidade da bateria: MWH
-[2024-05-05 23:12:57] INFO: Tempo restante da bateria (instantâneo): 24295.209442258736
-[2024-05-05 23:12:57] INFO: Tempo restante estimado da bateria: -1.0
-[2024-05-05 23:12:57] INFO: Taxa de uso de energia da bateria: 4321.0
-[2024-05-05 23:12:57] INFO: Temperatura da bateria: 0.0
-[2024-05-05 23:12:57] INFO: Capacidade máxima da bateria: 33.654296875
-[2024-05-05 23:12:57] INFO: Porcentagem de capacidade restante da bateria: 1.0
-[2024-05-05 23:12:57] INFO: Data de fabricação da bateria: N/A
-[2024-05-05 23:12:57] INFO: Fabricante da bateria: SAMSUNG Electronics
-[2024-05-05 23:12:57] INFO: Dados da bateria capturados com sucesso: 15.0
-[2024-05-05 23:12:57] INFO: Dados da bateria gravados.
-[2024-05-05 23:12:57] INFO: Capturando dados dos seus Apps.
-[2024-05-05 23:12:57] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:12:57] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:12:57] INFO: ID da janela: 198176
-[2024-05-05 23:12:57] INFO: PID da janela: 10104
-[2024-05-05 23:12:57] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
-[2024-05-05 23:12:57] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 123.168 MB
-
-[2024-05-05 23:12:57] INFO: Uso da ram pela janela: 0.12028125
-[2024-05-05 23:12:57] INFO: Dados da janela gravados.
-[2024-05-05 23:12:57] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:12:57] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:12:57] INFO: ID da janela: 65786
-[2024-05-05 23:12:57] INFO: PID da janela: 10104
-[2024-05-05 23:12:57] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
-[2024-05-05 23:12:58] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 123.184 MB
-
-[2024-05-05 23:12:58] INFO: Uso da ram pela janela: 0.120296875
-[2024-05-05 23:12:58] INFO: Dados da janela gravados.
-[2024-05-05 23:12:58] INFO: Título da janela: app_client – Volume.java [app-client-api]
-[2024-05-05 23:12:58] INFO: Comando da janela: C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.3\bin\idea64.exe
-[2024-05-05 23:12:58] INFO: ID da janela: 4590162
-[2024-05-05 23:12:58] INFO: PID da janela: 24760
-[2024-05-05 23:12:58] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-05-05 23:12:58] INFO: A ram utilizada na janela de PID 24760 foi coletada com sucesso, uso de ram: 1.048.560 MB
-
-[2024-05-05 23:12:58] WARNING: O uso da RAM pela janela 24760 não foi capturado.
-[2024-05-05 23:12:58] INFO: Dados da janela gravados.
-[2024-05-05 23:12:58] INFO: Título da janela: MySQL Workbench
-[2024-05-05 23:12:58] INFO: Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
-[2024-05-05 23:12:58] INFO: ID da janela: 723374
-[2024-05-05 23:12:58] INFO: PID da janela: 20184
-[2024-05-05 23:12:58] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
-[2024-05-05 23:12:59] INFO: A ram utilizada na janela de PID 20184 foi coletada com sucesso, uso de ram: 58.120 MB
-
-[2024-05-05 23:12:59] INFO: Uso da ram pela janela: 0.0567578125
-[2024-05-05 23:12:59] INFO: Dados da janela gravados.
-[2024-05-05 23:12:59] INFO: Título da janela: WhatsApp
-[2024-05-05 23:12:59] INFO: Comando da janela: C:\Program Files\WindowsApps\5319275A.WhatsAppDesktop_2.2417.4.0_x64__cv1g1gvanyjgm\WhatsApp.exe
-[2024-05-05 23:12:59] INFO: ID da janela: 132584
-[2024-05-05 23:12:59] INFO: PID da janela: 20056
-[2024-05-05 23:12:59] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
-[2024-05-05 23:12:59] INFO: A ram utilizada na janela de PID 20056 foi coletada com sucesso, uso de ram: 139.764 MB
-
-[2024-05-05 23:12:59] INFO: Uso da ram pela janela: 0.13648828125
-[2024-05-05 23:12:59] INFO: Dados da janela gravados.
-[2024-05-05 23:12:59] INFO: Título da janela: Downloads
-[2024-05-05 23:12:59] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:12:59] INFO: ID da janela: 4655668
-[2024-05-05 23:12:59] INFO: PID da janela: 10104
-[2024-05-05 23:12:59] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-05-05 23:12:59] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 123.188 MB
-
-[2024-05-05 23:12:59] INFO: Uso da ram pela janela: 0.12030078125
-[2024-05-05 23:12:59] INFO: Dados da janela gravados.
-[2024-05-05 23:12:59] INFO: Título da janela: duvido - Pesquisa Google - Opera
-[2024-05-05 23:12:59] INFO: Comando da janela: C:\Users\claus\AppData\Local\Programs\Opera GX\opera.exe
-[2024-05-05 23:12:59] INFO: ID da janela: 132018
-[2024-05-05 23:12:59] INFO: PID da janela: 31576
-[2024-05-05 23:12:59] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-05-05 23:12:59] INFO: A ram utilizada na janela de PID 31576 foi coletada com sucesso, uso de ram: 97.156 MB
-
-[2024-05-05 23:12:59] INFO: Uso da ram pela janela: 0.09487890625
-[2024-05-05 23:12:59] INFO: Dados da janela gravados.
-[2024-05-05 23:12:59] INFO: Título da janela: Canva
-[2024-05-05 23:12:59] INFO: Comando da janela: C:\Users\claus\AppData\Local\Programs\Canva\Canva.exe
-[2024-05-05 23:12:59] INFO: ID da janela: 198650
-[2024-05-05 23:12:59] INFO: PID da janela: 31036
-[2024-05-05 23:12:59] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-05-05 23:13:00] INFO: A ram utilizada na janela de PID 31036 foi coletada com sucesso, uso de ram: 50.264 MB
-
-[2024-05-05 23:13:00] INFO: Uso da ram pela janela: 0.0490859375
-[2024-05-05 23:13:00] INFO: Dados da janela gravados.
-[2024-05-05 23:13:00] INFO: Título da janela: S2_US01 - Login através de outras plataformas - OneNote
-[2024-05-05 23:13:00] INFO: Comando da janela: C:\Program Files\Microsoft Office\root\Office16\ONENOTE.EXE
-[2024-05-05 23:13:00] INFO: ID da janela: 132600
-[2024-05-05 23:13:00] INFO: PID da janela: 30044
-[2024-05-05 23:13:00] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-05-05 23:13:00] INFO: A ram utilizada na janela de PID 30044 foi coletada com sucesso, uso de ram: 45.052 MB
-
-[2024-05-05 23:13:00] INFO: Uso da ram pela janela: 0.04399609375
-[2024-05-05 23:13:00] INFO: Dados da janela gravados.
-[2024-05-05 23:13:00] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:00] INFO: Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
-[2024-05-05 23:13:00] INFO: ID da janela: 10028800
-[2024-05-05 23:13:00] INFO: PID da janela: 12044
-[2024-05-05 23:13:00] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=166,height=47]
-[2024-05-05 23:13:01] INFO: A ram utilizada na janela de PID 12044 foi coletada com sucesso, uso de ram: 17.156 MB
-
-[2024-05-05 23:13:01] INFO: Uso da ram pela janela: 0.01675390625
-[2024-05-05 23:13:01] INFO: Dados da janela gravados.
-[2024-05-05 23:13:01] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:01] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:01] INFO: ID da janela: 132918
-[2024-05-05 23:13:01] INFO: PID da janela: 10104
-[2024-05-05 23:13:01] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
-[2024-05-05 23:13:01] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.128 MB
-
-[2024-05-05 23:13:01] INFO: Uso da ram pela janela: 0.1095
-[2024-05-05 23:13:01] INFO: Dados da janela gravados.
-[2024-05-05 23:13:01] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:01] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:01] INFO: ID da janela: 853722
-[2024-05-05 23:13:01] INFO: PID da janela: 10104
-[2024-05-05 23:13:01] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
-[2024-05-05 23:13:01] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.128 MB
-
-[2024-05-05 23:13:01] INFO: Uso da ram pela janela: 0.1095
-[2024-05-05 23:13:01] INFO: Dados da janela gravados.
-[2024-05-05 23:13:01] INFO: Título da janela: Experiência de Entrada do Windows
-[2024-05-05 23:13:01] INFO: Comando da janela: C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe
-[2024-05-05 23:13:01] INFO: ID da janela: 131930
-[2024-05-05 23:13:01] INFO: PID da janela: 18208
-[2024-05-05 23:13:01] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-05-05 23:13:02] INFO: A ram utilizada na janela de PID 18208 foi coletada com sucesso, uso de ram: 25.892 MB
-
-[2024-05-05 23:13:02] INFO: Uso da ram pela janela: 0.02528515625
-[2024-05-05 23:13:02] INFO: Dados da janela gravados.
-[2024-05-05 23:13:02] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:02] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:02] INFO: ID da janela: 65958
-[2024-05-05 23:13:02] INFO: PID da janela: 10104
-[2024-05-05 23:13:02] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
-[2024-05-05 23:13:02] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.148 MB
-
-[2024-05-05 23:13:02] INFO: Uso da ram pela janela: 0.10951953125
-[2024-05-05 23:13:02] INFO: Dados da janela gravados.
-[2024-05-05 23:13:02] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:02] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:02] INFO: ID da janela: 65998
-[2024-05-05 23:13:02] INFO: PID da janela: 10104
-[2024-05-05 23:13:02] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-05-05 23:13:02] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.148 MB
-
-[2024-05-05 23:13:02] INFO: Uso da ram pela janela: 0.10951953125
-[2024-05-05 23:13:02] INFO: Dados da janela gravados.
-[2024-05-05 23:13:02] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:02] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:02] INFO: ID da janela: 65932
-[2024-05-05 23:13:02] INFO: PID da janela: 10104
-[2024-05-05 23:13:02] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-05-05 23:13:02] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.148 MB
-
-[2024-05-05 23:13:02] INFO: Uso da ram pela janela: 0.10951953125
-[2024-05-05 23:13:02] INFO: Dados da janela gravados.
-[2024-05-05 23:13:02] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:02] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:02] INFO: ID da janela: 65930
-[2024-05-05 23:13:02] INFO: PID da janela: 10104
-[2024-05-05 23:13:02] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-05-05 23:13:03] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.152 MB
-
-[2024-05-05 23:13:03] INFO: Uso da ram pela janela: 0.1095234375
-[2024-05-05 23:13:03] INFO: Dados da janela gravados.
-[2024-05-05 23:13:03] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:03] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:03] INFO: ID da janela: 65928
-[2024-05-05 23:13:03] INFO: PID da janela: 10104
-[2024-05-05 23:13:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-05-05 23:13:03] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.152 MB
-
-[2024-05-05 23:13:03] INFO: Uso da ram pela janela: 0.1095234375
-[2024-05-05 23:13:03] INFO: Dados da janela gravados.
-[2024-05-05 23:13:03] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:03] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:03] INFO: ID da janela: 65926
-[2024-05-05 23:13:03] INFO: PID da janela: 10104
-[2024-05-05 23:13:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-05-05 23:13:03] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.152 MB
-
-[2024-05-05 23:13:03] INFO: Uso da ram pela janela: 0.1095234375
-[2024-05-05 23:13:03] INFO: Dados da janela gravados.
-[2024-05-05 23:13:03] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:03] INFO: Comando da janela: C:\Program Files\Microsoft Office\root\Office16\ONENOTE.EXE
-[2024-05-05 23:13:03] INFO: ID da janela: 2688710
-[2024-05-05 23:13:03] INFO: PID da janela: 30044
-[2024-05-05 23:13:03] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-05-05 23:13:04] INFO: A ram utilizada na janela de PID 30044 foi coletada com sucesso, uso de ram: 45.132 MB
-
-[2024-05-05 23:13:04] INFO: Uso da ram pela janela: 0.04407421875
-[2024-05-05 23:13:04] INFO: Dados da janela gravados.
-[2024-05-05 23:13:04] INFO: Título da janela: WhatsApp
-[2024-05-05 23:13:04] INFO: Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
-[2024-05-05 23:13:04] INFO: ID da janela: 1443548
-[2024-05-05 23:13:04] INFO: PID da janela: 12044
-[2024-05-05 23:13:04] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-32000,y=-32000,width=199,height=34]
-[2024-05-05 23:13:04] INFO: A ram utilizada na janela de PID 12044 foi coletada com sucesso, uso de ram: 17.156 MB
-
-[2024-05-05 23:13:04] INFO: Uso da ram pela janela: 0.01675390625
-[2024-05-05 23:13:04] INFO: Dados da janela gravados.
-[2024-05-05 23:13:04] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:04] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:04] INFO: ID da janela: 66048
-[2024-05-05 23:13:04] INFO: PID da janela: 10104
-[2024-05-05 23:13:04] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-05-05 23:13:04] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.168 MB
-
-[2024-05-05 23:13:04] INFO: Uso da ram pela janela: 0.1095390625
-[2024-05-05 23:13:04] INFO: Dados da janela gravados.
-[2024-05-05 23:13:04] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:04] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:04] INFO: ID da janela: 66050
-[2024-05-05 23:13:04] INFO: PID da janela: 10104
-[2024-05-05 23:13:04] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-05-05 23:13:05] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.176 MB
-
-[2024-05-05 23:13:05] INFO: Uso da ram pela janela: 0.109546875
-[2024-05-05 23:13:05] INFO: Dados da janela gravados.
-[2024-05-05 23:13:05] INFO: Título da janela: Program Manager
-[2024-05-05 23:13:05] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:05] INFO: ID da janela: 65874
-[2024-05-05 23:13:05] INFO: PID da janela: 10104
-[2024-05-05 23:13:05] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-05-05 23:13:05] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.176 MB
-
-[2024-05-05 23:13:05] INFO: Uso da ram pela janela: 0.109546875
-[2024-05-05 23:13:05] INFO: Dados da janela gravados.
-[2024-05-05 23:13:05] INFO: Todas as janelas verificadas.
-[2024-05-05 23:13:05] INFO: Capturando dados do sistema operacional.
-[2024-05-05 23:13:05] INFO: Nome do sistema operacional coletado: Windows
-[2024-05-05 23:13:05] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
-[2024-05-05 23:13:05] INFO: Arquitetura do sistema operacional coletada: 64
-[2024-05-05 23:13:05] INFO: A inicialização do sistema operacional coletada: 64
-[2024-05-05 23:13:05] INFO: O tempo de atividade do sistema operacional foi coletada: 1947483
-[2024-05-05 23:13:05] INFO: A permisão do sistema operacional foi coletada: 1947483
-[2024-05-05 23:13:05] INFO: Capturando dados dos volumes lógicos.
-[2024-05-05 23:13:05] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
-[2024-05-05 23:13:05] INFO: Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
-[2024-05-05 23:13:05] INFO: Espaço disponível no volume lógico capturado : 24.988338470458984
-[2024-05-05 23:13:05] INFO: Espaço total do volume lógico capturado com sucesso: 222.97167587280273
-[2024-05-05 23:13:05] INFO: Tipo do volume lógico capturado: NTFS
-[2024-05-05 23:13:05] INFO: UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
-[2024-05-05 23:13:05] INFO: Ponto de montagem do volume lógico capturado: C:\
-[2024-05-05 23:13:05] INFO: Dados do volume lógico gravados.
-[2024-05-05 23:13:05] INFO: Todos os volumes lógicos verificados.
-[2024-05-05 23:13:05] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:05] INFO: 
-        Verificando se o componente CPU existe no banco de dados.
-        Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-        Fabricante: GenuineIntel
-        Id Máquina: 1
-
-[2024-05-05 23:13:05] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:05] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:05] INFO: ID do componente criado: 1
-[2024-05-05 23:13:05] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:05] INFO: 
-        Verificando se o componente HDD existe no banco de dados.
-        Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
-        Fabricante: N/A
-        Id Máquina: 1
-
-[2024-05-05 23:13:05] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:05] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:05] INFO: ID do componente criado: 2
-[2024-05-05 23:13:05] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:05] INFO: 
-        Verificando se o componente GPU existe no banco de dados.
-        Modelo: Intel(R) Iris(R) Xe Graphics
-        Fabricante: Intel Corporation
-        Id Máquina: 1
-
-[2024-05-05 23:13:05] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:05] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:05] INFO: ID do componente criado: 3
-[2024-05-05 23:13:05] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:05] INFO: 
-        Verificando se o componente MemoriaRam existe no banco de dados.
-        Modelo: N/A
-        Fabricante: N/A
-        Id Máquina: 1
-
-[2024-05-05 23:13:05] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:05] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:05] INFO: ID do componente criado: 4
-[2024-05-05 23:13:05] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:05] INFO: 
-        Verificando se o componente Bateria existe no banco de dados.
-        Modelo: System Battery
-        Fabricante: SAMSUNG Electronics
-        Id Máquina: 1
-
-[2024-05-05 23:13:05] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:05] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:05] INFO: ID do componente criado: 5
-[2024-05-05 23:13:05] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:05] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 10104
-        Fabricante: 198176
-        Id Máquina: 1
-
-[2024-05-05 23:13:05] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:05] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:05] INFO: ID do componente criado: 6
-[2024-05-05 23:13:05] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:05] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 10104
-        Fabricante: 65786
-        Id Máquina: 1
-
-[2024-05-05 23:13:05] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:05] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:05] INFO: ID do componente criado: 7
-[2024-05-05 23:13:05] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:05] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 24760
-        Fabricante: 4590162
-        Id Máquina: 1
-
-[2024-05-05 23:13:05] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:05] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:05] INFO: ID do componente criado: 8
-[2024-05-05 23:13:05] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:05] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 20184
-        Fabricante: 723374
-        Id Máquina: 1
-
-[2024-05-05 23:13:05] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:05] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:05] INFO: ID do componente criado: 9
-[2024-05-05 23:13:05] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:05] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 20056
-        Fabricante: 132584
-        Id Máquina: 1
-
-[2024-05-05 23:13:05] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:05] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:05] INFO: ID do componente criado: 10
-[2024-05-05 23:13:05] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:05] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 10104
-        Fabricante: 4655668
-        Id Máquina: 1
-
-[2024-05-05 23:13:05] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:05] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:05] INFO: ID do componente criado: 11
-[2024-05-05 23:13:05] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:05] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 31576
-        Fabricante: 132018
-        Id Máquina: 1
-
-[2024-05-05 23:13:05] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:05] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:05] INFO: ID do componente criado: 12
-[2024-05-05 23:13:05] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:05] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 31036
-        Fabricante: 198650
-        Id Máquina: 1
-
-[2024-05-05 23:13:05] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:05] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:05] INFO: ID do componente criado: 13
-[2024-05-05 23:13:05] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:05] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 30044
-        Fabricante: 132600
-        Id Máquina: 1
-
-[2024-05-05 23:13:05] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:05] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:05] INFO: ID do componente criado: 14
-[2024-05-05 23:13:05] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:05] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 12044
-        Fabricante: 10028800
-        Id Máquina: 1
-
-[2024-05-05 23:13:05] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:05] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:05] INFO: ID do componente criado: 15
-[2024-05-05 23:13:05] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:05] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 10104
-        Fabricante: 132918
-        Id Máquina: 1
-
-[2024-05-05 23:13:05] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:05] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:05] INFO: ID do componente criado: 16
-[2024-05-05 23:13:05] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:05] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 10104
-        Fabricante: 853722
-        Id Máquina: 1
-
-[2024-05-05 23:13:05] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:05] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:05] INFO: ID do componente criado: 17
-[2024-05-05 23:13:05] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:05] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 18208
-        Fabricante: 131930
-        Id Máquina: 1
-
-[2024-05-05 23:13:06] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:06] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:06] INFO: ID do componente criado: 18
-[2024-05-05 23:13:06] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:06] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 10104
-        Fabricante: 65958
-        Id Máquina: 1
-
-[2024-05-05 23:13:06] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:06] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:06] INFO: ID do componente criado: 19
-[2024-05-05 23:13:06] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:06] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 10104
-        Fabricante: 65998
-        Id Máquina: 1
-
-[2024-05-05 23:13:06] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:06] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:06] INFO: ID do componente criado: 20
-[2024-05-05 23:13:06] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:06] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 10104
-        Fabricante: 65932
-        Id Máquina: 1
-
-[2024-05-05 23:13:06] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:06] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:06] INFO: ID do componente criado: 21
-[2024-05-05 23:13:06] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:06] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 10104
-        Fabricante: 65930
-        Id Máquina: 1
-
-[2024-05-05 23:13:06] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:06] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:06] INFO: ID do componente criado: 22
-[2024-05-05 23:13:06] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:06] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 10104
-        Fabricante: 65928
-        Id Máquina: 1
-
-[2024-05-05 23:13:06] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:06] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:06] INFO: ID do componente criado: 23
-[2024-05-05 23:13:06] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:06] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 10104
-        Fabricante: 65926
-        Id Máquina: 1
-
-[2024-05-05 23:13:06] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:06] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:06] INFO: ID do componente criado: 24
-[2024-05-05 23:13:06] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:06] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 30044
-        Fabricante: 2688710
-        Id Máquina: 1
-
-[2024-05-05 23:13:06] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:06] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:06] INFO: ID do componente criado: 25
-[2024-05-05 23:13:06] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:06] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 12044
-        Fabricante: 1443548
-        Id Máquina: 1
-
-[2024-05-05 23:13:06] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:06] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:06] INFO: ID do componente criado: 26
-[2024-05-05 23:13:06] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:06] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 10104
-        Fabricante: 66048
-        Id Máquina: 1
-
-[2024-05-05 23:13:06] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:06] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:06] INFO: ID do componente criado: 27
-[2024-05-05 23:13:06] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:06] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 10104
-        Fabricante: 66050
-        Id Máquina: 1
-
-[2024-05-05 23:13:06] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:06] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:06] INFO: ID do componente criado: 28
-[2024-05-05 23:13:06] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:06] INFO: 
-        Verificando se o componente APP existe no banco de dados.
-        Modelo: 10104
-        Fabricante: 65874
-        Id Máquina: 1
-
-[2024-05-05 23:13:06] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:06] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:06] INFO: ID do componente criado: 29
-[2024-05-05 23:13:06] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:06] INFO: 
-        Verificando se o componente SistemaOp existe no banco de dados.
-        Modelo: Windows
-        Fabricante: Microsoft
-        Id Máquina: 1
-
-[2024-05-05 23:13:06] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:06] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:06] INFO: ID do componente criado: 30
-[2024-05-05 23:13:06] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-05-05 23:13:06] INFO: 
-        Verificando se o componente Volume existe no banco de dados.
-        Modelo: Disco Fixo Local (C:)
-        Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
-        Id Máquina: 1
-
-[2024-05-05 23:13:06] INFO: O componente não existe no banco de dados.
-[2024-05-05 23:13:06] INFO: Inserindo dados do componente no banco!
-[2024-05-05 23:13:06] INFO: ID do componente criado: 31
-[2024-05-05 23:13:06] INFO: Todos os componentes da sua máquina foram registrados
-[2024-05-05 23:13:06] INFO: Capturando os componentes:
-
-[2024-05-05 23:13:06] INFO: Capturando dados da sua CPU.
-[2024-05-05 23:13:06] INFO: Número de CPUs lógicas: 8
-[2024-05-05 23:13:06] INFO: Número de CPUs físicas: 4
-[2024-05-05 23:13:06] INFO: Microarquitetura: Tiger Lake
-[2024-05-05 23:13:06] INFO: Identificador: Intel64 Family 6 Model 140 Stepping 1
-[2024-05-05 23:13:06] INFO: ID da CPU Looca: BFEBFBFF000806C1
-[2024-05-05 23:13:06] INFO: Fabricante: GenuineIntel
-[2024-05-05 23:13:06] INFO: Frequência: 2.419E9
-[2024-05-05 23:13:06] INFO: Número de pacotes físicos: 1
-[2024-05-05 23:13:06] INFO: Uso da CPU: 4.193746167995095
-[2024-05-05 23:13:06] INFO: Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-[2024-05-05 23:13:06] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
-[2024-05-05 23:13:06] INFO: Dados da CPU capturados com sucesso.
-[2024-05-05 23:13:06] INFO: 
-Inserindo captura de dados no banco de dados:
+[2024-05-19 13:57:57] INFO: Servidor iniciando.
+[2024-05-19 13:57:59] INFO: Servidor iniciado com sucesso.
+[2024-05-19 13:58:08] INFO: Verificando informações de login do usuário.
+[2024-05-19 13:58:10] INFO: Usuário foi encontrado com sucesso.
+[2024-05-19 13:58:12] INFO: Usuário logado com sucesso: usuario1@empresa.com
+[2024-05-19 13:58:12] INFO: Buscando componentes...
+[2024-05-19 13:58:12] INFO: Componente encontrado :
     |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-05-05T23:13:06.872378500
-    |Id componente: 1
+    |Modelo: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 1
 
-[2024-05-05 23:13:06] INFO: Capturando dados do seu HDD
-[2024-05-05 23:13:06] INFO: Nome do disco: \\.\PHYSICALDRIVE0
-[2024-05-05 23:13:06] INFO: Serial do disco: 0025_38D3_3101_18C2.
-[2024-05-05 23:13:06] INFO: Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
-[2024-05-05 23:13:06] INFO: Escritas do disco: 30.167651176452637
-[2024-05-05 23:13:06] INFO: Leituras do disco: 117.84328174591064
-[2024-05-05 23:13:06] INFO: Bytes de escritas do disco: 2340.047902584076
-[2024-05-05 23:13:06] INFO: Bytes de leitura do disco: 5348.711197376251
-[2024-05-05 23:13:06] INFO: Tamanho do disco: 238.47
-[2024-05-05 23:13:06] INFO: Tempo de transferência do disco: 46346.82944444445
-[2024-05-05 23:13:06] INFO: Dados do disco gravados.
-[2024-05-05 23:13:06] INFO: 
-Inserindo captura de dados no banco de dados:
+[2024-05-19 13:58:12] INFO: Componente encontrado :
     |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-05-05T23:13:06.946505300
-    |Id componente: 2
+    |Modelo: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 2
 
-[2024-05-05 23:13:06] INFO: Capturando dados da GPU.
-[2024-05-05 23:13:06] INFO: Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
-[2024-05-05 23:13:06] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
-[2024-05-05 23:13:06] INFO: O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
-[2024-05-05 23:13:06] INFO: A VRam da sua GPU foi capturada com sucesso: 1.0
-[2024-05-05 23:13:06] INFO: A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
-[2024-05-05 23:13:07] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
-[2024-05-05 23:13:07] INFO: Dados da GPU gravados.
-[2024-05-05 23:13:07] INFO: 
-Inserindo captura de dados no banco de dados:
+[2024-05-19 13:58:12] INFO: Componente encontrado :
     |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-05-05T23:13:07.373239
-    |Id componente: 3
+    |Modelo: NVIDIA GeForce GTX 1050
+    |Fabricante: NVIDIA
+    |ID Componente: 3
 
-[2024-05-05 23:13:07] INFO: Capturando dados da sua memória RAM.
-[2024-05-05 23:13:07] INFO: Memória disponível: 478.15234375
-[2024-05-05 23:13:07] INFO: Memória total: 7.729835510253906
-[2024-05-05 23:13:07] INFO: Memória em uso: 7.262889862060547
-[2024-05-05 23:13:07] INFO: Dados da memória RAM capturados com sucesso.
-[2024-05-05 23:13:07] INFO: 
-Inserindo captura de dados no banco de dados:
+[2024-05-19 13:58:12] INFO: Componente encontrado :
     |Componente: MemoriaRam
-    |Dado capturado: 7,26
-    |Unidade de medida: GB
-    |Data hora captura: 2024-05-05T23:13:07.393264
-    |Id componente: 4
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 4
 
-[2024-05-05 23:13:07] INFO: Capturando dados da sua bateria.
-[2024-05-05 23:13:07] INFO: Amperagem da bateria: 173.84751773049646
-[2024-05-05 23:13:07] INFO: Nome do dispositivo da bateria: SR Real Battery
-[2024-05-05 23:13:07] INFO: Número de série da bateria: 123456789
-[2024-05-05 23:13:07] INFO: Química da bateria: LION
-[2024-05-05 23:13:07] INFO: Nome da bateria: System Battery
-[2024-05-05 23:13:07] INFO: Voltagem da bateria: 11.28
-[2024-05-05 23:13:07] INFO: Capacidade atual da bateria: 5.1875
-[2024-05-05 23:13:07] INFO: Número de ciclos da bateria: 211
-[2024-05-05 23:13:07] INFO: Capacidade de design da bateria: 42.08203125
-[2024-05-05 23:13:07] INFO: Unidade de capacidade da bateria: MWH
-[2024-05-05 23:13:07] INFO: Tempo restante da bateria (instantâneo): 53513.51351351351
-[2024-05-05 23:13:07] INFO: Tempo restante estimado da bateria: -1.0
-[2024-05-05 23:13:07] INFO: Taxa de uso de energia da bateria: 1961.0
-[2024-05-05 23:13:07] INFO: Temperatura da bateria: 0.0
-[2024-05-05 23:13:07] INFO: Capacidade máxima da bateria: 33.654296875
-[2024-05-05 23:13:07] INFO: Porcentagem de capacidade restante da bateria: 1.0
-[2024-05-05 23:13:07] INFO: Data de fabricação da bateria: N/A
-[2024-05-05 23:13:07] INFO: Fabricante da bateria: SAMSUNG Electronics
-[2024-05-05 23:13:07] INFO: Dados da bateria capturados com sucesso: 15.0
-[2024-05-05 23:13:07] INFO: Dados da bateria gravados.
-[2024-05-05 23:13:07] INFO: 
-Inserindo captura de dados no banco de dados:
+[2024-05-19 13:58:12] INFO: Componente encontrado :
     |Componente: Bateria
-    |Dado capturado: 15,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-05-05T23:13:07.833593800
-    |Id componente: 5
+    |Modelo: System Battery
+    |Fabricante: SMP
+    |ID Componente: 5
 
-[2024-05-05 23:13:07] INFO: Capturando dados dos seus Apps.
-[2024-05-05 23:13:07] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:07] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:07] INFO: ID da janela: 198176
-[2024-05-05 23:13:07] INFO: PID da janela: 10104
-[2024-05-05 23:13:07] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
-[2024-05-05 23:13:08] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.148 MB
-
-[2024-05-05 23:13:08] INFO: Uso da ram pela janela: 0.10951953125
-[2024-05-05 23:13:08] INFO: Dados da janela gravados.
-[2024-05-05 23:13:08] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:08] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:08] INFO: ID da janela: 65786
-[2024-05-05 23:13:08] INFO: PID da janela: 10104
-[2024-05-05 23:13:08] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
-[2024-05-05 23:13:08] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.148 MB
-
-[2024-05-05 23:13:08] INFO: Uso da ram pela janela: 0.10951953125
-[2024-05-05 23:13:08] INFO: Dados da janela gravados.
-[2024-05-05 23:13:08] INFO: Título da janela: app_client – Volume.java [app-client-api]
-[2024-05-05 23:13:08] INFO: Comando da janela: C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.3\bin\idea64.exe
-[2024-05-05 23:13:08] INFO: ID da janela: 4590162
-[2024-05-05 23:13:08] INFO: PID da janela: 24760
-[2024-05-05 23:13:08] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-05-05 23:13:08] INFO: A ram utilizada na janela de PID 24760 foi coletada com sucesso, uso de ram: 1.042.760 MB
-
-[2024-05-05 23:13:08] WARNING: O uso da RAM pela janela 24760 não foi capturado.
-[2024-05-05 23:13:08] INFO: Dados da janela gravados.
-[2024-05-05 23:13:08] INFO: Título da janela: MySQL Workbench
-[2024-05-05 23:13:08] INFO: Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
-[2024-05-05 23:13:08] INFO: ID da janela: 723374
-[2024-05-05 23:13:08] INFO: PID da janela: 20184
-[2024-05-05 23:13:08] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
-[2024-05-05 23:13:09] INFO: A ram utilizada na janela de PID 20184 foi coletada com sucesso, uso de ram: 58.476 MB
-
-[2024-05-05 23:13:09] INFO: Uso da ram pela janela: 0.05710546875
-[2024-05-05 23:13:09] INFO: Dados da janela gravados.
-[2024-05-05 23:13:09] INFO: Título da janela: WhatsApp
-[2024-05-05 23:13:09] INFO: Comando da janela: C:\Program Files\WindowsApps\5319275A.WhatsAppDesktop_2.2417.4.0_x64__cv1g1gvanyjgm\WhatsApp.exe
-[2024-05-05 23:13:09] INFO: ID da janela: 132584
-[2024-05-05 23:13:09] INFO: PID da janela: 20056
-[2024-05-05 23:13:09] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
-[2024-05-05 23:13:09] INFO: A ram utilizada na janela de PID 20056 foi coletada com sucesso, uso de ram: 139.928 MB
-
-[2024-05-05 23:13:09] INFO: Uso da ram pela janela: 0.1366484375
-[2024-05-05 23:13:09] INFO: Dados da janela gravados.
-[2024-05-05 23:13:09] INFO: Título da janela: Downloads
-[2024-05-05 23:13:09] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:09] INFO: ID da janela: 4655668
-[2024-05-05 23:13:09] INFO: PID da janela: 10104
-[2024-05-05 23:13:09] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-05-05 23:13:09] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.132 MB
-
-[2024-05-05 23:13:09] INFO: Uso da ram pela janela: 0.10950390625
-[2024-05-05 23:13:09] INFO: Dados da janela gravados.
-[2024-05-05 23:13:09] INFO: Título da janela: duvido - Pesquisa Google - Opera
-[2024-05-05 23:13:09] INFO: Comando da janela: C:\Users\claus\AppData\Local\Programs\Opera GX\opera.exe
-[2024-05-05 23:13:09] INFO: ID da janela: 132018
-[2024-05-05 23:13:09] INFO: PID da janela: 31576
-[2024-05-05 23:13:09] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-05-05 23:13:10] INFO: A ram utilizada na janela de PID 31576 foi coletada com sucesso, uso de ram: 86.780 MB
-
-[2024-05-05 23:13:10] INFO: Uso da ram pela janela: 0.08474609375
-[2024-05-05 23:13:10] INFO: Dados da janela gravados.
-[2024-05-05 23:13:10] INFO: Título da janela: Canva
-[2024-05-05 23:13:10] INFO: Comando da janela: C:\Users\claus\AppData\Local\Programs\Canva\Canva.exe
-[2024-05-05 23:13:10] INFO: ID da janela: 198650
-[2024-05-05 23:13:10] INFO: PID da janela: 31036
-[2024-05-05 23:13:10] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-05-05 23:13:10] INFO: A ram utilizada na janela de PID 31036 foi coletada com sucesso, uso de ram: 50.888 MB
-
-[2024-05-05 23:13:10] INFO: Uso da ram pela janela: 0.0496953125
-[2024-05-05 23:13:10] INFO: Dados da janela gravados.
-[2024-05-05 23:13:10] INFO: Título da janela: S2_US01 - Login através de outras plataformas - OneNote
-[2024-05-05 23:13:10] INFO: Comando da janela: C:\Program Files\Microsoft Office\root\Office16\ONENOTE.EXE
-[2024-05-05 23:13:10] INFO: ID da janela: 132600
-[2024-05-05 23:13:10] INFO: PID da janela: 30044
-[2024-05-05 23:13:10] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-05-05 23:13:10] INFO: A ram utilizada na janela de PID 30044 foi coletada com sucesso, uso de ram: 45.144 MB
-
-[2024-05-05 23:13:10] INFO: Uso da ram pela janela: 0.0440859375
-[2024-05-05 23:13:10] INFO: Dados da janela gravados.
-[2024-05-05 23:13:10] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:10] INFO: Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
-[2024-05-05 23:13:10] INFO: ID da janela: 10028800
-[2024-05-05 23:13:10] INFO: PID da janela: 12044
-[2024-05-05 23:13:10] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=166,height=47]
-[2024-05-05 23:13:10] INFO: A ram utilizada na janela de PID 12044 foi coletada com sucesso, uso de ram: 17.156 MB
-
-[2024-05-05 23:13:10] INFO: Uso da ram pela janela: 0.01675390625
-[2024-05-05 23:13:10] INFO: Dados da janela gravados.
-[2024-05-05 23:13:10] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:10] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:10] INFO: ID da janela: 132918
-[2024-05-05 23:13:10] INFO: PID da janela: 10104
-[2024-05-05 23:13:10] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
-[2024-05-05 23:13:11] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.140 MB
-
-[2024-05-05 23:13:11] INFO: Uso da ram pela janela: 0.10951171875
-[2024-05-05 23:13:11] INFO: Dados da janela gravados.
-[2024-05-05 23:13:11] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:11] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:11] INFO: ID da janela: 853722
-[2024-05-05 23:13:11] INFO: PID da janela: 10104
-[2024-05-05 23:13:11] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
-[2024-05-05 23:13:11] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.140 MB
-
-[2024-05-05 23:13:11] INFO: Uso da ram pela janela: 0.10951171875
-[2024-05-05 23:13:11] INFO: Dados da janela gravados.
-[2024-05-05 23:13:11] INFO: Título da janela: Experiência de Entrada do Windows
-[2024-05-05 23:13:11] INFO: Comando da janela: C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe
-[2024-05-05 23:13:11] INFO: ID da janela: 131930
-[2024-05-05 23:13:11] INFO: PID da janela: 18208
-[2024-05-05 23:13:11] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-05-05 23:13:11] INFO: A ram utilizada na janela de PID 18208 foi coletada com sucesso, uso de ram: 25.884 MB
-
-[2024-05-05 23:13:11] INFO: Uso da ram pela janela: 0.02527734375
-[2024-05-05 23:13:11] INFO: Dados da janela gravados.
-[2024-05-05 23:13:11] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:11] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:11] INFO: ID da janela: 65958
-[2024-05-05 23:13:11] INFO: PID da janela: 10104
-[2024-05-05 23:13:11] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
-[2024-05-05 23:13:12] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.144 MB
-
-[2024-05-05 23:13:12] INFO: Uso da ram pela janela: 0.109515625
-[2024-05-05 23:13:12] INFO: Dados da janela gravados.
-[2024-05-05 23:13:12] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:12] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:12] INFO: ID da janela: 65998
-[2024-05-05 23:13:12] INFO: PID da janela: 10104
-[2024-05-05 23:13:12] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-05-05 23:13:12] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.144 MB
-
-[2024-05-05 23:13:12] INFO: Uso da ram pela janela: 0.109515625
-[2024-05-05 23:13:12] INFO: Dados da janela gravados.
-[2024-05-05 23:13:12] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:12] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:12] INFO: ID da janela: 65932
-[2024-05-05 23:13:12] INFO: PID da janela: 10104
-[2024-05-05 23:13:12] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-05-05 23:13:12] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.144 MB
-
-[2024-05-05 23:13:12] INFO: Uso da ram pela janela: 0.109515625
-[2024-05-05 23:13:12] INFO: Dados da janela gravados.
-[2024-05-05 23:13:12] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:12] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:12] INFO: ID da janela: 65930
-[2024-05-05 23:13:12] INFO: PID da janela: 10104
-[2024-05-05 23:13:12] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-05-05 23:13:13] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.200 MB
-
-[2024-05-05 23:13:13] INFO: Uso da ram pela janela: 0.1095703125
-[2024-05-05 23:13:13] INFO: Dados da janela gravados.
-[2024-05-05 23:13:13] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:13] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:13] INFO: ID da janela: 65928
-[2024-05-05 23:13:13] INFO: PID da janela: 10104
-[2024-05-05 23:13:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-05-05 23:13:13] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.212 MB
-
-[2024-05-05 23:13:13] INFO: Uso da ram pela janela: 0.10958203125
-[2024-05-05 23:13:13] INFO: Dados da janela gravados.
-[2024-05-05 23:13:13] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:13] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:13] INFO: ID da janela: 65926
-[2024-05-05 23:13:13] INFO: PID da janela: 10104
-[2024-05-05 23:13:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-05-05 23:13:13] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.212 MB
-
-[2024-05-05 23:13:13] INFO: Uso da ram pela janela: 0.10958203125
-[2024-05-05 23:13:13] INFO: Dados da janela gravados.
-[2024-05-05 23:13:13] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:13] INFO: Comando da janela: C:\Program Files\Microsoft Office\root\Office16\ONENOTE.EXE
-[2024-05-05 23:13:13] INFO: ID da janela: 2688710
-[2024-05-05 23:13:13] INFO: PID da janela: 30044
-[2024-05-05 23:13:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
-[2024-05-05 23:13:13] INFO: A ram utilizada na janela de PID 30044 foi coletada com sucesso, uso de ram: 45.204 MB
-
-[2024-05-05 23:13:13] INFO: Uso da ram pela janela: 0.04414453125
-[2024-05-05 23:13:13] INFO: Dados da janela gravados.
-[2024-05-05 23:13:13] INFO: Título da janela: WhatsApp
-[2024-05-05 23:13:13] INFO: Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
-[2024-05-05 23:13:13] INFO: ID da janela: 1443548
-[2024-05-05 23:13:13] INFO: PID da janela: 12044
-[2024-05-05 23:13:13] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-32000,y=-32000,width=199,height=34]
-[2024-05-05 23:13:14] INFO: A ram utilizada na janela de PID 12044 foi coletada com sucesso, uso de ram: 17.156 MB
-
-[2024-05-05 23:13:14] INFO: Uso da ram pela janela: 0.01675390625
-[2024-05-05 23:13:14] INFO: Dados da janela gravados.
-[2024-05-05 23:13:14] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:14] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:14] INFO: ID da janela: 66048
-[2024-05-05 23:13:14] INFO: PID da janela: 10104
-[2024-05-05 23:13:14] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-05-05 23:13:14] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.220 MB
-
-[2024-05-05 23:13:14] INFO: Uso da ram pela janela: 0.10958984375
-[2024-05-05 23:13:14] INFO: Dados da janela gravados.
-[2024-05-05 23:13:14] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:14] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:14] INFO: ID da janela: 66050
-[2024-05-05 23:13:14] INFO: PID da janela: 10104
-[2024-05-05 23:13:14] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-05-05 23:13:14] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.220 MB
-
-[2024-05-05 23:13:14] INFO: Uso da ram pela janela: 0.10958984375
-[2024-05-05 23:13:14] INFO: Dados da janela gravados.
-[2024-05-05 23:13:14] INFO: Título da janela: Program Manager
-[2024-05-05 23:13:14] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:14] INFO: ID da janela: 65874
-[2024-05-05 23:13:14] INFO: PID da janela: 10104
-[2024-05-05 23:13:14] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
-[2024-05-05 23:13:15] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.260 MB
-
-[2024-05-05 23:13:15] INFO: Uso da ram pela janela: 0.10962890625
-[2024-05-05 23:13:15] INFO: Dados da janela gravados.
-[2024-05-05 23:13:15] INFO: Todas as janelas verificadas.
-[2024-05-05 23:13:15] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.264 MB
-
-[2024-05-05 23:13:16] INFO: 
-Inserindo captura de dados no banco de dados:
+[2024-05-19 13:58:12] INFO: Componente encontrado :
     |Componente: APP
-    |Dado capturado: 0,11
-    |Unidade de medida: MB
-    |Data hora captura: 2024-05-05T23:13:16.018391900
-    |Id componente: 6
+    |Modelo: 7424
+    |Fabricante: 527604
+    |ID Componente: 6
 
-[2024-05-05 23:13:16] INFO: Capturando dados dos seus Apps.
-[2024-05-05 23:13:16] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:16] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:16] INFO: ID da janela: 198176
-[2024-05-05 23:13:16] INFO: PID da janela: 10104
-[2024-05-05 23:13:16] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
-[2024-05-05 23:13:16] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 112.268 MB
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7424
+    |Fabricante: 1377306
+    |ID Componente: 7
 
-[2024-05-05 23:13:16] INFO: Uso da ram pela janela: 0.10963671875
-[2024-05-05 23:13:16] INFO: Dados da janela gravados.
-[2024-05-05 23:13:16] WARNING: Título da janela não foi capturado.
-[2024-05-05 23:13:16] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:16] INFO: ID da janela: 65786
-[2024-05-05 23:13:16] INFO: PID da janela: 10104
-[2024-05-05 23:13:16] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
-[2024-05-05 23:13:17] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 127.004 MB
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7424
+    |Fabricante: 395274
+    |ID Componente: 8
 
-[2024-05-05 23:13:17] INFO: Uso da ram pela janela: 0.12402734375
-[2024-05-05 23:13:17] INFO: Dados da janela gravados.
-[2024-05-05 23:13:17] INFO: Título da janela: app_client – Volume.java [app-client-api]
-[2024-05-05 23:13:17] INFO: Comando da janela: C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.3\bin\idea64.exe
-[2024-05-05 23:13:17] INFO: ID da janela: 4590162
-[2024-05-05 23:13:17] INFO: PID da janela: 24760
-[2024-05-05 23:13:17] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-05-05 23:13:18] INFO: A ram utilizada na janela de PID 24760 foi coletada com sucesso, uso de ram: 495.696 MB
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7424
+    |Fabricante: 131202
+    |ID Componente: 9
 
-[2024-05-05 23:13:18] INFO: Uso da ram pela janela: 0.484078125
-[2024-05-05 23:13:18] INFO: Dados da janela gravados.
-[2024-05-05 23:13:18] INFO: Título da janela: MySQL Workbench
-[2024-05-05 23:13:18] INFO: Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
-[2024-05-05 23:13:18] INFO: ID da janela: 723374
-[2024-05-05 23:13:18] INFO: PID da janela: 20184
-[2024-05-05 23:13:18] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
-[2024-05-05 23:13:19] INFO: A ram utilizada na janela de PID 20184 foi coletada com sucesso, uso de ram: 58.540 MB
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 16900
+    |Fabricante: 1380200
+    |ID Componente: 10
 
-[2024-05-05 23:13:19] INFO: Uso da ram pela janela: 0.05716796875
-[2024-05-05 23:13:19] INFO: Dados da janela gravados.
-[2024-05-05 23:13:19] INFO: Título da janela: WhatsApp
-[2024-05-05 23:13:19] INFO: Comando da janela: C:\Program Files\WindowsApps\5319275A.WhatsAppDesktop_2.2417.4.0_x64__cv1g1gvanyjgm\WhatsApp.exe
-[2024-05-05 23:13:19] INFO: ID da janela: 132584
-[2024-05-05 23:13:19] INFO: PID da janela: 20056
-[2024-05-05 23:13:19] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
-[2024-05-05 23:13:19] INFO: A ram utilizada na janela de PID 20056 foi coletada com sucesso, uso de ram: 147.612 MB
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7424
+    |Fabricante: 1442796
+    |ID Componente: 11
 
-[2024-05-05 23:13:19] INFO: Uso da ram pela janela: 0.14415234375
-[2024-05-05 23:13:19] INFO: Dados da janela gravados.
-[2024-05-05 23:13:19] INFO: Título da janela: Downloads
-[2024-05-05 23:13:19] INFO: Comando da janela: C:\Windows\explorer.exe
-[2024-05-05 23:13:19] INFO: ID da janela: 4655668
-[2024-05-05 23:13:19] INFO: PID da janela: 10104
-[2024-05-05 23:13:19] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
-[2024-05-05 23:13:19] INFO: A ram utilizada na janela de PID 10104 foi coletada com sucesso, uso de ram: 127.492 MB
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 12932
+    |Fabricante: 1181896
+    |ID Componente: 12
 
-[2024-05-05 23:13:19] INFO: Uso da ram pela janela: 0.12450390625
-[2024-05-05 23:13:19] INFO: Dados da janela gravados.
-[2024-05-05 23:13:19] INFO: Título da janela: duvido - Pesquisa Google - Opera
-[2024-05-05 23:13:19] INFO: Comando da janela: C:\Users\claus\AppData\Local\Programs\Opera GX\opera.exe
-[2024-05-05 23:13:19] INFO: ID da janela: 132018
-[2024-05-05 23:13:19] INFO: PID da janela: 31576
-[2024-05-05 23:13:19] INFO: Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 26036
+    |Fabricante: 789764
+    |ID Componente: 13
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 27720
+    |Fabricante: 920240
+    |ID Componente: 14
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 25716
+    |Fabricante: 5179116
+    |ID Componente: 15
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 14388
+    |Fabricante: 920526
+    |ID Componente: 16
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 5092
+    |Fabricante: 526032
+    |ID Componente: 17
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 5092
+    |Fabricante: 5835590
+    |ID Componente: 18
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 9172
+    |Fabricante: 4655598
+    |ID Componente: 19
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 11636
+    |Fabricante: 3015640
+    |ID Componente: 20
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7424
+    |Fabricante: 265136
+    |ID Componente: 21
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 19092
+    |Fabricante: 985260
+    |ID Componente: 22
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 15128
+    |Fabricante: 198354
+    |ID Componente: 23
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7424
+    |Fabricante: 1640134
+    |ID Componente: 24
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 14144
+    |Fabricante: 788406
+    |ID Componente: 25
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 14152
+    |Fabricante: 67154
+    |ID Componente: 26
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 14144
+    |Fabricante: 132376
+    |ID Componente: 27
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7424
+    |Fabricante: 66014
+    |ID Componente: 28
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7424
+    |Fabricante: 66004
+    |ID Componente: 29
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7424
+    |Fabricante: 65968
+    |ID Componente: 30
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7424
+    |Fabricante: 65966
+    |ID Componente: 31
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7424
+    |Fabricante: 65964
+    |ID Componente: 32
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7424
+    |Fabricante: 65962
+    |ID Componente: 33
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7276
+    |Fabricante: 66074
+    |ID Componente: 34
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7424
+    |Fabricante: 131206
+    |ID Componente: 35
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: SistemaOp
+    |Modelo: Windows
+    |Fabricante: Microsoft
+    |ID Componente: 36
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: 20384a0b-36ae-45cf-b9d6-746edf252892
+    |ID Componente: 37
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 30052
+    |Fabricante: 1313084
+    |ID Componente: 38
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 21456
+    |Fabricante: 10685222
+    |ID Componente: 39
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7856
+    |Fabricante: 592058
+    |ID Componente: 40
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7856
+    |Fabricante: 264082
+    |ID Componente: 41
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7856
+    |Fabricante: 196650
+    |ID Componente: 42
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 21964
+    |Fabricante: 2164972
+    |ID Componente: 43
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 22812
+    |Fabricante: 2623438
+    |ID Componente: 44
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 2784
+    |Fabricante: 328740
+    |ID Componente: 45
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 9976
+    |Fabricante: 198568
+    |ID Componente: 46
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 21964
+    |Fabricante: 2033950
+    |ID Componente: 47
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 1684
+    |Fabricante: 1116620
+    |ID Componente: 48
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 1684
+    |Fabricante: 2230688
+    |ID Componente: 49
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 1684
+    |Fabricante: 1442970
+    |ID Componente: 50
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 1684
+    |Fabricante: 658044
+    |ID Componente: 51
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 1684
+    |Fabricante: 2230812
+    |ID Componente: 52
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 1684
+    |Fabricante: 723220
+    |ID Componente: 53
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 4252
+    |Fabricante: 67132
+    |ID Componente: 54
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 5232
+    |Fabricante: 394618
+    |ID Componente: 55
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 10324
+    |Fabricante: 66304
+    |ID Componente: 56
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7856
+    |Fabricante: 66018
+    |ID Componente: 57
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7856
+    |Fabricante: 66010
+    |ID Componente: 58
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7856
+    |Fabricante: 65982
+    |ID Componente: 59
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7856
+    |Fabricante: 65980
+    |ID Componente: 60
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7856
+    |Fabricante: 65978
+    |ID Componente: 61
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7856
+    |Fabricante: 65976
+    |ID Componente: 62
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 18820
+    |Fabricante: 1247272
+    |ID Componente: 63
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7856
+    |Fabricante: 1968084
+    |ID Componente: 64
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 5232
+    |Fabricante: 1509430
+    |ID Componente: 65
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 14740
+    |Fabricante: 394268
+    |ID Componente: 66
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 13408
+    |Fabricante: 133046
+    |ID Componente: 67
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 13712
+    |Fabricante: 1182210
+    |ID Componente: 68
+
+[2024-05-19 13:58:12] INFO: Componente encontrado :
+    |Componente: APP
+    |Modelo: 7856
+    |Fabricante: 196690
+    |ID Componente: 69
+
+[2024-05-19 13:58:12] INFO: Capturando dados da sua CPU.
+[2024-05-19 13:58:12] INFO: Número de CPUs lógicas: 8
+[2024-05-19 13:58:12] INFO: Número de CPUs físicas: 4
+[2024-05-19 13:58:12] INFO: Microarquitetura: Coffee Lake
+[2024-05-19 13:58:12] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-05-19 13:58:12] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-05-19 13:58:12] INFO: Fabricante: GenuineIntel
+[2024-05-19 13:58:12] INFO: Frequência: 2.4E9
+[2024-05-19 13:58:12] INFO: Número de pacotes físicos: 1
+[2024-05-19 13:58:17] INFO: Uso da CPU: 5.937537109606935
+[2024-05-19 13:58:17] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
