@@ -1,0 +1,292 @@
+[2024-05-29 16:22:57] [INFO] Servidor iniciando.
+[2024-05-29 16:22:59] [INFO] Servidor iniciado com sucesso.
+[2024-05-29 16:23:11] [INFO] Usuário logado com sucesso: diego.santos@sptech.school
+[2024-05-29 16:23:13] [INFO] Buscando componentes...
+[2024-05-29 16:23:15] [INFO] Iniciando verificação se o componente já existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] 
+        Verificando se o componente CPU existe no banco de dados.
+        Modelo: AMD Ryzen 7 5700U with Radeon Graphics
+        Fabricante: AuthenticAMD
+        Id Máquina: 1
+
+[2024-05-29 16:23:15] [INFO] O componente não existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] Inserindo dados do componente no banco!
+[2024-05-29 16:23:15] [INFO] ID do componente criado: 1
+[2024-05-29 16:23:15] [INFO] Iniciando verificação se o componente já existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] 
+        Verificando se o componente HDD existe no banco de dados.
+        Modelo: SSSTC CL4-4D512-Q62
+        Fabricante: N/A
+        Id Máquina: 1
+
+[2024-05-29 16:23:15] [INFO] O componente não existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] Inserindo dados do componente no banco!
+[2024-05-29 16:23:15] [INFO] ID do componente criado: 2
+[2024-05-29 16:23:15] [INFO] Iniciando verificação se o componente já existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] 
+        Verificando se o componente HDD existe no banco de dados.
+        Modelo: unknown
+        Fabricante: N/A
+        Id Máquina: 1
+
+[2024-05-29 16:23:15] [INFO] O componente não existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] Inserindo dados do componente no banco!
+[2024-05-29 16:23:15] [INFO] ID do componente criado: 3
+[2024-05-29 16:23:15] [INFO] Iniciando verificação se o componente já existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] 
+        Verificando se o componente HDD existe no banco de dados.
+        Modelo: Logical Volume Group
+        Fabricante: N/A
+        Id Máquina: 1
+
+[2024-05-29 16:23:15] [INFO] O componente não existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] Inserindo dados do componente no banco!
+[2024-05-29 16:23:15] [INFO] ID do componente criado: 4
+[2024-05-29 16:23:15] [INFO] Iniciando verificação se o componente já existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] 
+        Verificando se o componente GPU existe no banco de dados.
+        Modelo: Lucienne
+        Fabricante: Advanced Micro Devices, Inc. [AMD/ATI] (0x1002)
+        Id Máquina: 1
+
+[2024-05-29 16:23:15] [INFO] O componente não existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] Inserindo dados do componente no banco!
+[2024-05-29 16:23:15] [INFO] ID do componente criado: 5
+[2024-05-29 16:23:15] [INFO] Iniciando verificação se o componente já existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] 
+        Verificando se o componente MemoriaRam existe no banco de dados.
+        Modelo: N/A
+        Fabricante: N/A
+        Id Máquina: 1
+
+[2024-05-29 16:23:15] [INFO] O componente não existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] Inserindo dados do componente no banco!
+[2024-05-29 16:23:15] [INFO] ID do componente criado: 6
+[2024-05-29 16:23:15] [INFO] Iniciando verificação se o componente já existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] 
+        Verificando se o componente Bateria existe no banco de dados.
+        Modelo: BAT0
+        Fabricante: SMP
+        Id Máquina: 1
+
+[2024-05-29 16:23:15] [INFO] O componente não existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] Inserindo dados do componente no banco!
+[2024-05-29 16:23:15] [INFO] ID do componente criado: 7
+[2024-05-29 16:23:15] [INFO] Iniciando verificação se o componente já existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] 
+        Verificando se o componente SistemaOp existe no banco de dados.
+        Modelo: Pop!_OS
+        Fabricante: GNU/Linux
+        Id Máquina: 1
+
+[2024-05-29 16:23:15] [INFO] O componente não existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] Inserindo dados do componente no banco!
+[2024-05-29 16:23:15] [INFO] ID do componente criado: 8
+[2024-05-29 16:23:15] [INFO] Iniciando verificação se o componente já existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] 
+        Verificando se o componente Volume existe no banco de dados.
+        Modelo: /
+        Fabricante: 9892cc35-9a7c-434b-9a05-6efb662ccf09
+        Id Máquina: 1
+
+[2024-05-29 16:23:15] [INFO] O componente não existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] Inserindo dados do componente no banco!
+[2024-05-29 16:23:15] [INFO] ID do componente criado: 9
+[2024-05-29 16:23:15] [INFO] Iniciando verificação se o componente já existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] 
+        Verificando se o componente Volume existe no banco de dados.
+        Modelo: /dev/nvme0n1p1
+        Fabricante: 9f2a-c609
+        Id Máquina: 1
+
+[2024-05-29 16:23:15] [INFO] O componente não existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] Inserindo dados do componente no banco!
+[2024-05-29 16:23:15] [INFO] ID do componente criado: 10
+[2024-05-29 16:23:15] [INFO] Iniciando verificação se o componente já existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] 
+        Verificando se o componente Volume existe no banco de dados.
+        Modelo: /dev/nvme0n1p2
+        Fabricante: 9f2a-c53e
+        Id Máquina: 1
+
+[2024-05-29 16:23:15] [INFO] O componente não existe no banco de dados.
+[2024-05-29 16:23:15] [INFO] Inserindo dados do componente no banco!
+[2024-05-29 16:23:15] [INFO] ID do componente criado: 11
+[2024-05-29 16:23:15] [INFO] Capturando os componentes:
+
+[2024-05-29 16:23:15] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 51,80
+    |Unidade de medida: °C
+    |Data hora captura: 2024-05-29T16:23:15.972144716
+    |Id componente: 1
+
+[2024-05-29 16:23:16] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 476,94
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-29T16:23:16.005423132
+    |Id componente: 2
+
+[2024-05-29 16:23:16] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 9,56
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-29T16:23:16.031540463
+    |Id componente: 3
+
+[2024-05-29 16:23:16] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 4,00
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-29T16:23:16.058326388
+    |Id componente: 4
+
+[2024-05-29 16:23:16] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 52,60
+    |Unidade de medida: °C
+    |Data hora captura: 2024-05-29T16:23:16.129685263
+    |Id componente: 5
+
+[2024-05-29 16:23:16] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 8,17
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-29T16:23:16.152329432
+    |Id componente: 6
+
+[2024-05-29 16:23:16] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 0,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-05-29T16:23:16.177209934
+    |Id componente: 7
+
+[2024-05-29 16:23:16] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-05-29T16:23:16.196093333
+    |Id componente: 8
+
+[2024-05-29 16:23:16] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 188,03
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-29T16:23:16.227457666
+    |Id componente: 9
+
+[2024-05-29 16:23:16] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 367,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-29T16:23:16.254928600
+    |Id componente: 10
+
+[2024-05-29 16:23:16] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 2,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-29T16:23:16.278508439
+    |Id componente: 11
+
+[2024-05-29 16:23:19] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 54,10
+    |Unidade de medida: °C
+    |Data hora captura: 2024-05-29T16:23:19.057421589
+    |Id componente: 1
+
+[2024-05-29 16:23:19] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 476,94
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-29T16:23:19.084289159
+    |Id componente: 2
+
+[2024-05-29 16:23:19] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 9,56
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-29T16:23:19.113627173
+    |Id componente: 3
+
+[2024-05-29 16:23:19] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 4,00
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-29T16:23:19.136085493
+    |Id componente: 4
+
+[2024-05-29 16:23:19] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 54,60
+    |Unidade de medida: °C
+    |Data hora captura: 2024-05-29T16:23:19.197392600
+    |Id componente: 5
+
+[2024-05-29 16:23:19] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 8,18
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-29T16:23:19.213548958
+    |Id componente: 6
+
+[2024-05-29 16:23:19] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 0,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-05-29T16:23:19.235546112
+    |Id componente: 7
+
+[2024-05-29 16:23:19] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-05-29T16:23:19.255120945
+    |Id componente: 8
+
+[2024-05-29 16:23:19] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 188,03
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-29T16:23:19.280208947
+    |Id componente: 9
+
+[2024-05-29 16:23:19] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 367,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-29T16:23:19.305227876
+    |Id componente: 10
+
+[2024-05-29 16:23:19] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 2,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-05-29T16:23:19.329964016
+    |Id componente: 11
+
