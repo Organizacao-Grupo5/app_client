@@ -20,8 +20,7 @@ public class ServicePC {
 
 			System.out.println(ipv4);
 			if (maquina.isEmpty()) {
-				Logger.logWarning(
-						"Não encontramos nenhuma máquina vinculada ao seu usuário, entre em contato com seu gestor!");
+				Logger.logWarning("Não encontramos nenhuma máquina vinculada ao seu usuário, entre em contato com seu gestor!");
 			} else if (!maquina.get().getIpv4().contains(ipv4)) {
 				Logger.logWarning("A máquina / rede a qual você está utilizando não está vinculada ao seu usuário!");
 			} else {

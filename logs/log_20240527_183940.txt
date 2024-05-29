@@ -1,0 +1,13 @@
+[2024-05-27 18:39:40] [INFO] Servidor iniciando.
+[2024-05-27 18:39:41] [INFO] Servidor iniciado com sucesso.
+[2024-05-27 18:39:56] [ERROR] Erro na integração com as informações da máquina do usuário
+[2024-05-27 18:39:56] [ERROR] Erro na integração com as informações da máquina do usuário
+[2024-05-27 18:39:56] [ERROR] Erro na integração com as informações da máquina do usuário
+[2024-05-27 18:39:56] [WARNING] Não foi possível acessar a máquina do usuário
+[2024-05-27 18:39:56] [INFO] Usuário logado com sucesso: diego.santos@sptech.school
+[2024-05-27 18:40:00] [INFO] Capturando os componentes:
+
+[2024-05-27 18:40:01] [ERROR] Erro ao iniciar monitoramento: 
+[2024-05-27 18:40:01] [INFO] Capturando os componentes:
+
+[2024-05-27 18:40:03] [ERROR] Erro ao iniciar monitoramento: 

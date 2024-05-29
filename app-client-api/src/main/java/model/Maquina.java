@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Maquina {
-	private Integer idMaquina;
+	private static Integer idMaquina;
 	private String numeroSerial;
 	private String modelo;
 	private String marca;
@@ -29,7 +29,7 @@ public class Maquina {
 		this.componentes = new ArrayList<>();
 	}
 
-	public int getIdMaquina() {
+	public static int getIdMaquina() {
 		return idMaquina;
 	}
 

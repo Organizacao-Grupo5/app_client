@@ -1,22 +1,26 @@
-import com.mysql.cj.util.StringUtils;
-import model.Maquina;
-import model.Usuario;
-import model.componentes.*;
-import service.ServicePC;
 import service.componente.ServiceComponente;
-import util.exception.AutenticationException;
-import util.logs.Logger;
-import util.reports.PDFGenerator;
 import util.security.Login;
 
-import java.io.Console;
+import java.io.IOException;
 import java.util.Scanner;
+
+import com.mysql.cj.util.StringUtils;
+import util.exception.AutenticationException;
+import model.*;
+import model.componentes.*;
+import service.ServicePC;
+import util.security.Criptografia;
+import java.io.Console;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
+import util.logs.*;
+import util.reports.PDFGenerator;
+
 public class Main {
+    private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
     private static final Login login = new Login();
     private static ScheduledExecutorService executorService;
 
@@ -25,8 +29,8 @@ public class Main {
     private static ServiceComponente serviceComponente = new ServiceComponente();
 
     public static void main(String[] args) throws Exception {
-
         Logger.logInfo("Servidor iniciando.");
+        LogGenerator.logInfo("Servidor iniciando.");
         int quadros = 50;
 
         for (int i = 0; i <= quadros; i++) {
@@ -49,97 +53,111 @@ public class Main {
             }
         }
         Logger.logInfo("Servidor iniciado com sucesso.");
+        LogGenerator.logInfo("Servidor iniciado com sucesso.");
         System.out.print("\r" + " ".repeat(quadros + 10));
         Usuario usuarioLogado;
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("""
-                \n
-                __     _____ ____  _   _   _    _           ___  ____  ____ \s
-                \\ \\   / /_ _/ ___|| | | | / \\  | |         / _ \\|  _ \\/ ___|\s
-                 \\ \\ / / | |\\___ \\| | | |/ _ \\ | |   _____| | | | |_) \\___ \\\s
-                  \\ V /  | | ___) | |_| / ___ \\| |__|_____| |_| |  __/ ___) |
-                   \\_/  |___|____/ \\___/_/   \\_\\_____|     \\___/|_|   |____/\s
-                _____________________________________________________________
-                Vamos verificar suas permissões para iniciar o monitoramento.
-                _____________________________________________________________
-                """);
-        String email = "";
+				\n
+				__     _____ ____  _   _   _    _           ___  ____  ____ \s
+				\\ \\   / /_ _/ ___|| | | | / \\  | |         / _ \\|  _ \\/ ___|\s
+				 \\ \\ / / | |\\___ \\| | | |/ _ \\ | |   _____| | | | |_) \\___ \\\s
+				  \\ V /  | | ___) | |_| / ___ \\| |__|_____| |_| |  __/ ___) |
+				   \\_/  |___|____/ \\___/_/   \\_\\_____|     \\___/|_|   |____/\s
+				_______
+				Vamos verificar suas permissões para iniciar o monitoramento.
+				_______
+				""");
+        System.out.print(" - Insira seu email: ");
+        String email = scanner.next();
+        Console console = System.console();
         String senha = "";
-        while (true) {
-            System.out.print(" - Insira seu email: ");
-            email = scanner.next();
-            Console console = System.console();
 
-            if (console == null) {
-                System.out.print(" - Insira sua senha: ");
-                senha = scanner.next();
-            } else {
-                char[] senhaArray = console.readPassword(" - Insira sua senha: ");
-                senha = new String(senhaArray);
+        if (console == null) {
+            System.out.print(" - Insira sua senha: ");
+            senha = scanner.next();
+        } else {
+            char[] senhaArray = console.readPassword(" - Insira sua senha: ");
+            senha = new String(senhaArray);
 
-                java.util.Arrays.fill(senhaArray, ' ');
-            }
-
-            try {
-                usuarioLogado = login.login(email, senha);
-                System.out.println(" - Terminamos a verificação de seu acesso...   ");
-                if (usuarioLogado != null) {
-                    System.out.println("""
-                                
-                            --- ACESSO CONCEDIDO ---
-                                
-                            Bem-vindo %s
-                            email: %s
-                                
-                            Vamos verificar as permissões da sua máquina...
-                            """.formatted(usuarioLogado.getNome(), usuarioLogado.getEmail()));
-
-                    maquina = servicePC.verificarMaquina(usuarioLogado);
-
-                    if (maquina == null) {
-                        Logger.logWarning("Não foi possível acessar a máquina do usuário");
-                        System.out.println("Não foi possível encontrar sua máquina.");
-                        break;
-                    }
-
-                    Logger.logInfo("Usuário logado com sucesso: " + usuarioLogado.getEmail());
-                    System.out.println("""
-                            Informações da máquina
-                             - Lista IPV4 da máquina: %s
-                             - Modelo: %s
-                             - HostName: %s
-                             - Número Serial: %s
-                             - Username: %s
-                            """.formatted((new StringBuilder(maquina.getIpv4().stream()
-                                    .map(e -> e).collect(Collectors.joining("; "))
-                            ).toString()), maquina.getModelo(), maquina.getHostname(), maquina.getNumeroSerial(), maquina.getUsername()));
-
-                    iniciarMonitoramento();
-                    break;
-                } else {
-                    System.out.println("""
-                                
-                            --- ACESSO NEGADO ---
-                                
-                            """);
-                    Logger.logWarning("Tentativa de login falhou para o email: " + email);
-                }
-            } catch (AutenticationException e) {
-                Logger.logError("Erro ao fazer login: ", e.getMessage(), e);
-            } catch (Exception e) {
-                System.out.println("Ocorreu um erro inesperado: " + e.getMessage());
-                e.printStackTrace();
-            }
+            java.util.Arrays.fill(senhaArray, ' ');
         }
-        
+
+        try {
+
+            usuarioLogado = login.login(email, senha);
+
+            System.out.println(" - Terminamos a verificação de seu acesso...   ");
+
+            if(usuarioLogado==null){
+                usuarioLogado= login.login(email, Criptografia.encrypt(senha,3));
+            }
+
+
+            if (usuarioLogado != null) {
+                System.out.println("""
+
+						--- ACESSO CONCEDIDO ---
+
+						Bem-vindo %s
+						email: %s       
+						
+						Vamos verificar as permissões da sua máquina...
+						""".formatted(usuarioLogado.getNome(), usuarioLogado.getEmail()));
+
+                maquina = servicePC.verificarMaquina(usuarioLogado);
+
+                if (maquina == null) {
+                    Logger.logWarning("Não foi possível acessar a máquina do usuário");
+                    LogGenerator.logWarning("Não foi possível acessar a máquina do usuário");
+                }
+
+                Logger.logInfo("Usuário logado com sucesso: " + usuarioLogado.getEmail());
+                LogGenerator.logInfo(("Usuário logado com sucesso: " + usuarioLogado.getEmail()));
+                int shift = 3;
+                String senhaCriptografada = Criptografia.encrypt(senha, shift);
+
+                if(!usuarioLogado.getSenha().equals(senhaCriptografada)) {
+                    System.out.print("Deseja criptografar sua senha? (s/n): ");
+                    String resposta = scanner.next();
+                    if (resposta.equalsIgnoreCase("s")) {
+                        login.updatePasswordUser(senhaCriptografada,usuarioLogado.getIdUsuario());
+                        System.out.println("Sua senha foi criptografada com sucesso!");
+                        LogGenerator.logInfo("Sua senha foi criptograda com sucesso");
+                    }
+                    if (resposta.equalsIgnoreCase("n")){
+                        iniciarMonitoramento();
+                    }
+                }
+                iniciarMonitoramento();
+            } else {
+                System.out.println("""
+
+						--- ACESSO NEGADO ---
+
+						""");
+                Logger.logWarning("Tentativa de login falhou para o email: " + email);
+                LogGenerator.logWarning("Tentativa de login falhou para o email: " + email);
+            }
+        } catch (AutenticationException e) {
+            Logger.logError("Erro ao fazer login: ", e.getMessage(), e);
+            LogGenerator.logError("Erro ao fazer login: ", e.getMessage(), e);
+        } catch (Exception e) {
+            System.out.println("Ocorreu um erro inesperado: " + e.getMessage());
+            e.printStackTrace();
+        } finally {
+            scanner.close();
+        }
     }
 
-    public static void iniciarMonitoramento() {
+
+    public static void iniciarMonitoramento() throws IOException {
         serviceComponente.obterComponentes(maquina);
 
         try {
             Logger.logInfo("Capturando os componentes:\n");
+            LogGenerator.logInfo("Capturando os componentes:\n");
             executorService = Executors.newScheduledThreadPool(1);
             executorService.scheduleAtFixedRate(() -> {
                 serviceComponente.iniciarCapturas(maquina);
@@ -183,6 +201,7 @@ public class Main {
             }
         } catch (Exception e) {
             Logger.logError("Erro ao iniciar monitoramento: ", e.getMessage(), e);
+            LogGenerator.logError("Erro ao iniciar monitoramento: ", e.getMessage(), e);
         }
     }
 
@@ -192,7 +211,9 @@ public class Main {
             if (os.contains("win")) {
                 new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
             } else if (os.contains("nix") || os.contains("nux") || os.contains("aix")) {
-                new ProcessBuilder("scripts/bash", "-c", "clear").inheritIO().start().waitFor();
+                ProcessBuilder processBuilder = new ProcessBuilder("sh", "-c", "clear");
+                processBuilder.environment().put("TERM", "xterm-256color"); // Defina a variável TERM
+                processBuilder.inheritIO().start().waitFor();
             }
         } catch (Exception ex) {
             ex.printStackTrace();
