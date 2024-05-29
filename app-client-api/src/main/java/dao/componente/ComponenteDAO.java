@@ -15,7 +15,7 @@ import java.util.Optional;
 public class ComponenteDAO {
 	public List<Componente> getComponentes(Maquina maquina) throws SQLException, IOException {
 		Logger.logInfo("Buscando componentes...");
-		LogGenerator.logInfo("Buscando componentes...");
+		LogGenerator.logInfo("Buscando componentes...", LogGenerator.LogType.INFO);
 		List<Componente> componentes = new ArrayList<>();
 		try (Connection connection = MySQLConnection.ConBD()) {
 			PreparedStatement preparedStatement = connection.prepareStatement(
@@ -53,7 +53,7 @@ public class ComponenteDAO {
 				    |Modelo: %s
 				    |Fabricante: %s
 				    |ID Componente: %d
-				""".formatted(componente, modelo, fabricante, resultSet.getInt("idComponente")));
+				""".formatted(componente, modelo, fabricante, resultSet.getInt("idComponente")), LogGenerator.LogType.INFO);
 
 		Componente componenteInstanciado = null;
 		switch (componente.toLowerCase()) {
@@ -102,11 +102,11 @@ public class ComponenteDAO {
 	public void salvarComponente(Maquina maquina, Componente componente) throws SQLException {
 		try (Connection connection = MySQLConnection.ConBD()) {
 			Logger.logInfo("Iniciando verificação se o componente já existe no banco de dados.");
-			LogGenerator.logInfo("Iniciando verificação se o componente já existe no banco de dados.");
+			LogGenerator.logInfo("Iniciando verificação se o componente já existe no banco de dados.", LogGenerator.LogType.INFO);
 			if (!componenteExistenteNoBanco(componente, maquina)) {
 				try {
 					Logger.logInfo("Inserindo dados do componente no banco!");
-					LogGenerator.logInfo("Inserindo dados do componente no banco!");
+					LogGenerator.logInfo("Inserindo dados do componente no banco!", LogGenerator.LogType.INFO);
 					PreparedStatement preparedStatement = connection.prepareStatement(
 							"INSERT INTO componente (componente, modelo, fabricante, fkMaquina, fkUsuario) VALUES (?,?,?,?,?)",
 							Statement.RETURN_GENERATED_KEYS);
@@ -127,7 +127,7 @@ public class ComponenteDAO {
 							int idComponente = generatedKeys.getInt(1);
 							componente.setIdComponente(idComponente);
 							Logger.logInfo("ID do componente criado: " + idComponente);
-							LogGenerator.logInfo("ID do componente criado: " + idComponente);
+							LogGenerator.logInfo("ID do componente criado: " + idComponente, LogGenerator.LogType.INFO);
 						} else {
 							throw new SQLException("Falha ao obter o ID do componente criado.");
 						}
@@ -163,7 +163,7 @@ public class ComponenteDAO {
 					        Fabricante: %s
 					        Id Máquina: %d
 					""".formatted(componente.getComponente(), componente.getModelo(), componente.getFabricante(),
-					maquina.getIdMaquina()));
+					maquina.getIdMaquina()), LogGenerator.LogType.INFO);
 
 			PreparedStatement preparedStatement = connection.prepareStatement(
 					"SELECT * FROM componente WHERE componente = ? AND modelo = ? AND fabricante = ? AND fkMaquina = ?");
@@ -182,7 +182,7 @@ public class ComponenteDAO {
             throw new RuntimeException(e);
         }
         Logger.logInfo("O componente %s no banco de dados.".formatted(existe ? "existe" : "não existe"));
-		LogGenerator.logInfo("O componente %s no banco de dados.".formatted(existe ? "existe" : "não existe"));
+		LogGenerator.logInfo("O componente %s no banco de dados.".formatted(existe ? "existe" : "não existe"), LogGenerator.LogType.INFO);
 		return existe;
 	}
 }

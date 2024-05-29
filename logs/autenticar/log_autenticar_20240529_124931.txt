@@ -1,0 +1,1 @@
+[2024-05-29 12:49:40] [INFO] Usuário logado com sucesso: pedro.rocha@sptech.school

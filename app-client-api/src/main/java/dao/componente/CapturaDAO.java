@@ -34,7 +34,7 @@ public class CapturaDAO {
 					    |Data hora captura: %s
 					    |Id componente: %d
 					""".formatted(componente.getComponente(), componente.getDadoCaptura(),
-					componente.getUnidadeMedida(), LocalDateTime.now().toString(), componente.getIdComponente()));
+					componente.getUnidadeMedida(), LocalDateTime.now().toString(), componente.getIdComponente()), LogGenerator.LogType.INFO);
 
 			PreparedStatement preparedStatement = connection.prepareStatement(
 					"INSERT INTO captura (dadoCaptura, unidadeMedida, dataCaptura, fkComponente) VALUES (?,?,?,?)");

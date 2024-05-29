@@ -5,7 +5,6 @@ import dao.componente.CapturaDAO;
 import dao.componente.ComponenteDAO;
 import model.componentes.*;
 import model.Maquina;
-import util.logs.LogGenerator;
 import util.logs.Logger;
 
 import java.io.IOException;
@@ -18,7 +17,7 @@ public class ServiceComponente {
 	private SystemMonitor systemMonitor = new SystemMonitor();
 	private CapturaDAO capturaDAO = new CapturaDAO();
 
-	public void obterComponentes(Maquina maquina) throws IOException {
+	public void obterComponentes(Maquina maquina) {
 		try {
 			List<Componente> componentesRegistrados = componenteDAO.getComponentes(maquina);
 
@@ -59,19 +58,16 @@ public class ServiceComponente {
 
 			if (!componentesRegistrados.isEmpty()) {
 				Logger.logInfo("Sua máquina contém componentes registrados");
-				LogGenerator.logInfo("Sua máquina contém componentes registrados");
 			} else {
 				Logger.logInfo("Todos os componentes da sua máquina foram registrados");
-				LogGenerator.logInfo("Todos os componentes da sua máquina foram registrados");
 			}
 
 		} catch (Exception e) {
 			Logger.logError("Ocorreu um erro ao obter seus componentes:", e.getMessage(), e);
-			LogGenerator.logError("Ocorreu um erro ao obter seus componentes:", e.getMessage(), e);
 		}
 	}
 
-	public void iniciarCapturas(Maquina maquina) throws IOException {
+	public void iniciarCapturas(Maquina maquina) {
 		try {
 			maquina.getComponentes().forEach(componente -> {
 				atualizarComponente(componente);
@@ -83,7 +79,6 @@ public class ServiceComponente {
             });
 		} catch (Exception e) {
 			Logger.logError("Ocorreu um erro durante a captura:", e.getMessage(), e);
-			LogGenerator.logError("Ocorreu um erro durante a captura:", e.getMessage(), e);
 		}
 	}
 

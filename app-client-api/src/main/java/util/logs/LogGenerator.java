@@ -12,15 +12,25 @@ import java.util.Date;
 
 public class LogGenerator {
 
-    private static BufferedWriter bw;
-    private static File logFile;
-    private static final String BASE_LOG_PATH = "/home/diegosouza/Downloads/app_client/logs";
+    private static BufferedWriter bwMain;
+    private static BufferedWriter bwAutenticar;
+    private static File logFileMain;
+    private static File logFileAutenticar;
+
+    private static final String LOG_DIRECTORY = "/home/diegosouza/Downloads/app_client/logs";
+
+    public static String getLogFilePath() {
+        return logFileMain != null ? logFileMain.getAbsolutePath() : null;
+    }
+
+    public static void closeLogFile() {
+    }
 
     public enum LogType {
         INFO, WARNING, ERROR
     }
 
-    public static void logInfo(String message) throws IOException {
+    public static void logInfo(String message, LogType info) throws IOException {
         generateLog(message, LogType.INFO);
     }
 
@@ -38,60 +48,81 @@ public class LogGenerator {
     }
 
     private static void generateLog(String message, LogType logType) throws IOException {
-        Path path = Paths.get(BASE_LOG_PATH);
+        if (bwMain == null) {
+            Path path = Paths.get(LOG_DIRECTORY);
 
-        if (!Files.exists(path)) {
-            Files.createDirectories(path);
-            createSubDirectories(path);
+            if (!Files.exists(path)) {
+                Files.createDirectories(path);
+            }
+
+            String logFileNameMain = "log_" + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()) + ".txt";
+            logFileMain = new File(path.toString(), logFileNameMain);
+
+            if (!logFileMain.exists()) {
+                logFileMain.createNewFile();
+            }
+
+            bwMain = new BufferedWriter(new FileWriter(logFileMain, true));
         }
 
-        Path logFilePath = getLogFilePath(logType);
-        logFile = logFilePath.toFile();
+        // Cria o arquivo para logs de autenticação se não existir
+        if (bwAutenticar == null) {
+            Path pathAutenticar = Paths.get(LOG_DIRECTORY, "autenticar");
 
-        if (!logFile.exists()) {
-            logFile.createNewFile();
+            if (!Files.exists(pathAutenticar)) {
+                Files.createDirectories(pathAutenticar);
+            }
+
+            String logFileNameAutenticar = "log_autenticar_" + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()) + ".txt";
+            logFileAutenticar = new File(pathAutenticar.toString(), logFileNameAutenticar);
+
+            if (!logFileAutenticar.exists()) {
+                logFileAutenticar.createNewFile();
+            }
+
+            bwAutenticar = new BufferedWriter(new FileWriter(logFileAutenticar, true));
         }
-
-        bw = new BufferedWriter(new FileWriter(logFile, true));
 
         String logMessage = String.format("[%s] [%s] %s",
                 new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()),
                 logType, message);
-        bw.write(logMessage);
-        bw.newLine();
-        bw.flush();
-        bw.close();
-    }
 
-    private static void createSubDirectories(Path basePath) throws IOException {
-        Files.createDirectories(basePath.resolve("banco"));
-        Files.createDirectories(basePath.resolve("autenticar"));
-        Files.createDirectories(basePath.resolve("monitoramento"));
-    }
+        // Escreve no arquivo principal de log
+        bwMain.write(logMessage);
+        bwMain.newLine();
+        bwMain.flush();
 
-    private static Path getLogFilePath(LogType logType) {
-        String subDir;
-        switch (logType) {
-            case INFO:
-                subDir = "autenticar";
-                break;
-            case WARNING:
-                subDir = "monitoramento";
-                break;
-            case ERROR:
-                subDir = "banco";
-                break;
-            default:
-                throw new IllegalArgumentException("Invalid log type");
+        // Se for log de autenticação, escreve no arquivo separado
+        if (message.contains("Usuário logado com sucesso")) {
+            bwAutenticar.write(logMessage);
+            bwAutenticar.newLine();
+            bwAutenticar.flush();
         }
-        String logFileName = logType.name().toLowerCase() + "_log_" + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()) + ".txt";
-        return Paths.get(BASE_LOG_PATH, subDir, logFileName);
     }
 
-    public static void closeLogFile() throws IOException {
-        if (bw != null) {
-            bw.close();
-            bw = null;
+    public static void closeLogFiles() throws IOException {
+        if (bwMain != null) {
+            bwMain.close();
+            bwMain = null;
+        }
+        if (bwAutenticar != null) {
+            bwAutenticar.close();
+            bwAutenticar = null;
+        }
+    }
+
+    public static void moveLogFileToAutenticar() throws IOException {
+        if (logFileAutenticar != null && logFileAutenticar.exists()) {
+            Path sourcePath = logFileAutenticar.toPath();
+            Path destinationDir = Paths.get(LOG_DIRECTORY, "autenticar_final");
+
+            if (!Files.exists(destinationDir)) {
+                Files.createDirectories(destinationDir);
+            }
+
+            Path destinationPath = Paths.get(destinationDir.toString(), logFileAutenticar.getName());
+
+            Files.move(sourcePath, destinationPath);
         }
     }
 }
