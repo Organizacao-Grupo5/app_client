@@ -1,16 +1,10 @@
 package service.componente;
 
 import app.system.SystemMonitor;
-import dao.AlertaDAO;
-import dao.ConfiguracaoDAO;
-import dao.alerta.alertaDAO;
 import dao.componente.CapturaDAO;
 import dao.componente.ComponenteDAO;
-import dao.componente.RegistroAlertasDAO;
 import model.componentes.*;
-import service.ServiceUser;
 import service.ServiceSystem;
-import model.Alerta;
 import model.Maquina;
 import util.logs.Logger;
 
@@ -23,7 +17,6 @@ public class ServiceComponente {
 	private ComponenteDAO componenteDAO = new ComponenteDAO();
 	private SystemMonitor systemMonitor = new SystemMonitor();
 	private CapturaDAO capturaDAO = new CapturaDAO();
-	private ConfiguracaoDAO configuracaoDAO = new ConfiguracaoDAO();
 	private ServiceSystem serviceSystem = new ServiceSystem();
 
 	public void obterComponentes(Maquina maquina) {

@@ -2,7 +2,6 @@ import service.componente.ServiceComponente;
 import util.security.Login;
 
 import java.io.Console;
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -15,7 +14,6 @@ import model.*;
 import model.componentes.*;
 import service.ServicePC;
 import util.security.Criptografia;
-import java.io.Console;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -25,7 +23,6 @@ import util.logs.*;
 import util.reports.PDFGenerator;
 
 public class Main {
-    private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
     private static final Login login = new Login();
     private static ScheduledExecutorService executorService;
 
@@ -122,9 +119,6 @@ public class Main {
                         login.updatePasswordUser(senhaCriptografada, usuarioLogado.getIdUsuario());
                         System.out.println("Sua senha foi criptografada com sucesso!");
                         LogGenerator.logInfo("Sua senha foi criptograda com sucesso", LogGenerator.LogType.INFO);
-                    }
-                    if (resposta.equalsIgnoreCase("n")) {
-                        iniciarMonitoramento();
                     }
                 }
 

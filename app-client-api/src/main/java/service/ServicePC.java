@@ -10,15 +10,12 @@ import java.util.Optional;
 
 public class ServicePC {
 	MaquinaDAO maquinaDAO = new MaquinaDAO();
-	// UserInfo userInfo = new UserInfo();
 
 	public Maquina verificarMaquina(Usuario usuario) {
 		try {
 			String ipv4 = MaquinaDAO.getIpv4();
 			Optional<Maquina> maquina = maquinaDAO.monitorarMaquina(usuario);
 
-
-			System.out.println(ipv4);
 			if (maquina.isEmpty()) {
 				Logger.logWarning("Não encontramos nenhuma máquina vinculada ao seu usuário, entre em contato com seu gestor!");
 			} else if (!maquina.get().getIpv4().contains(ipv4)) {

@@ -1,7 +1,6 @@
 package app.integration;
 
 import util.logs.LogGenerator;
-import util.logs.Logger;
 
 import static com.sun.jna.Platform.isWindows;
 

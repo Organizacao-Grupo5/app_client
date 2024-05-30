@@ -88,7 +88,7 @@ public class CapturaDAO {
 		Captura captura = new Captura();
 		try {
 			captura.setIdCaptura(resultSet.getInt(1));
-			captura.setDadoCaptura(resultSet.getString(2));
+			captura.setDadoCaptura(resultSet.getDouble(2));
 			captura.setUnidadeMedida(resultSet.getString(3));
 			captura.setDataCaptura(resultSet.getTimestamp(4));
 			captura.setFkComponente(resultSet.getInt(5));

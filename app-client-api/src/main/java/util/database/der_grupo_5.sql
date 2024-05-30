@@ -124,15 +124,9 @@ CREATE TABLE alerta (
 		CONSTRAINT ckTipoAlerta CHECK (tipoAlerta IN ('BOM', 'MÉDIO', 'RUIM'))
 );
 
-
-INSERT INTO alerta VALUES
-	(null, "Componente em ótimo estado!", "BOM"),
-    (null, "Componente bom porém está sendo comprometido!", "MÉDIO"),
-    (null, "Componente está comprometido!!", "RUIM");
-
 CREATE TABLE captura (
     idCaptura INT PRIMARY KEY AUTO_INCREMENT,
-    dadoCaptura VARCHAR(45) NOT NULL,
+    dadoCaptura DOUBLE NOT NULL,
     unidadeMedida VARCHAR(5) NOT NULL,
     dataCaptura DATETIME NOT NULL,
     fkComponente INT NOT NULL,
@@ -176,8 +170,13 @@ INSERT INTO maquina (fkUsuario) VALUES
     (2),
     (3);
 
-INSERT INTO ipv4(numeroIP, nomeLocal, fkMaquina, fkUsuario) VALUES 
-	('192.168.15.6', 'Home', 1, 1);
+INSERT INTO alerta VALUES
+	(null, "Componente em ótimo estado!", "BOM"),
+    (null, "Componente bom porém está sendo comprometido!", "MÉDIO"),
+    (null, "Componente está comprometido!!", "RUIM");
+
+INSERT INTO ipv4(numeroIP, nomeLocal, fkMaquina) VALUES 
+	('192.168.15.6', 'Home', 1);
 
 INSERT INTO relRedeIpv4 VALUES
 	(1, 1, DEFAULT);

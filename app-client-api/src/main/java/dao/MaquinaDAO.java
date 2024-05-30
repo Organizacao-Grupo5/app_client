@@ -24,7 +24,7 @@ public class MaquinaDAO {
 		try (Connection connection = MySQLConnection.ConBD()) {
 
 			PreparedStatement preparedStatement = connection.prepareStatement(
-					"SELECT * FROM Maquina JOIN usuario on Maquina.fkUsuario = usuario.idUsuario JOIN ipv4 ON ipv4.fkMaquina = Maquina.idMaquina WHERE idUsuario = ?");
+					"SELECT * FROM maquina JOIN usuario on maquina.fkUsuario = usuario.idUsuario JOIN ipv4 ON ipv4.fkMaquina = maquina.idMaquina WHERE idUsuario = ?");
 
 			preparedStatement.setInt(1, usuario.getIdUsuario());
 
