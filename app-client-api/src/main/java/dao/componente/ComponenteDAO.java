@@ -19,7 +19,7 @@ public class ComponenteDAO {
 		List<Componente> componentes = new ArrayList<>();
 		try (Connection connection = MySQLConnection.ConBD()) {
 			PreparedStatement preparedStatement = connection.prepareStatement(
-					"SELECT * FROM componente JOIN Maquina ON componente.fkMaquina = Maquina.idMaquina WHERE idMaquina = ?");
+					"SELECT * FROM componente JOIN maquina ON componente.fkMaquina = Maquina.idMaquina WHERE idMaquina = ?");
 			preparedStatement.setInt(1, maquina.getIdMaquina());
 			try (ResultSet resultSet = preparedStatement.executeQuery()) {
 				while (resultSet.next()) {
@@ -108,13 +108,12 @@ public class ComponenteDAO {
 					Logger.logInfo("Inserindo dados do componente no banco!");
 					LogGenerator.logInfo("Inserindo dados do componente no banco!", LogGenerator.LogType.INFO);
 					PreparedStatement preparedStatement = connection.prepareStatement(
-							"INSERT INTO componente (componente, modelo, fabricante, fkMaquina, fkUsuario) VALUES (?,?,?,?,?)",
+							"INSERT INTO componente (componente, modelo, fabricante, fkMaquina) VALUES (?,?,?,?)",
 							Statement.RETURN_GENERATED_KEYS);
 					preparedStatement.setString(1, Optional.ofNullable(componente.getComponente()).orElse("N/A"));
 					preparedStatement.setString(2, Optional.ofNullable(componente.getModelo()).orElse("N/A"));
 					preparedStatement.setString(3, Optional.ofNullable(componente.getFabricante()).orElse("N/A"));
 					preparedStatement.setInt(4, maquina.getIdMaquina());
-					preparedStatement.setInt(5, maquina.getUsuario().getIdUsuario());
 
 					int affectedRows = preparedStatement.executeUpdate();
 

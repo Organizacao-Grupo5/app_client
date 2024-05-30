@@ -2,12 +2,14 @@ package service.componente;
 
 import app.system.SystemMonitor;
 import dao.AlertaDAO;
+import dao.ConfiguracaoDAO;
 import dao.alerta.alertaDAO;
 import dao.componente.CapturaDAO;
 import dao.componente.ComponenteDAO;
 import dao.componente.RegistroAlertasDAO;
 import model.componentes.*;
 import service.ServiceUser;
+import service.ServiceSystem;
 import model.Alerta;
 import model.Maquina;
 import util.logs.Logger;
@@ -22,8 +24,7 @@ public class ServiceComponente {
 	private SystemMonitor systemMonitor = new SystemMonitor();
 	private CapturaDAO capturaDAO = new CapturaDAO();
 	private ConfiguracaoDAO configuracaoDAO = new ConfiguracaoDAO();
-	private AlertaDAO alertaDAO = new AlertaDAO();
-	private RegistroAlertasDAO registroAlertasDAO = new RegistroAlertasDAO();
+	private ServiceSystem serviceSystem = new ServiceSystem();
 
 	public void obterComponentes(Maquina maquina) {
 		try {
@@ -57,8 +58,8 @@ public class ServiceComponente {
 					}
 					if (!existe) {
 						componenteDAO.salvarComponente(maquina, novoComponente);
-						configuracaoDAO.criarConfiguracao(novoComponente);
 						maquina.getComponentes().add(novoComponente);
+						serviceSystem.configurar(novoComponente);
 					}
 				} catch (SQLException e) {
 					throw new RuntimeException(e);
@@ -81,11 +82,10 @@ public class ServiceComponente {
 			maquina.getComponentes().forEach(componente -> {
 				try {
 					atualizarComponente(componente);
-					alertaDAO.criarAlerta(componente);
 					
                     int idCaptura = capturaDAO.inserirCaptura(maquina, componente);
 					if (idCaptura > 0) {
-						registroAlertasDAO.insert(idCaptura, componente);
+						serviceSystem.registrar(idCaptura, componente);
 					}
                 } catch (IOException e) {
                     throw new RuntimeException(e);
