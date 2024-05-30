@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 
 public class CapturaDAO {
-	public void inserirCaptura(Maquina maquina, Componente componente) throws IOException {
+	public Integer inserirCaptura(Maquina maquina, Componente componente) throws IOException {
 		try (Connection connection = MySQLConnection.ConBD()) {
 			Logger.logInfo("""
 
@@ -37,7 +37,7 @@ public class CapturaDAO {
 					componente.getUnidadeMedida(), LocalDateTime.now().toString(), componente.getIdComponente()), LogGenerator.LogType.INFO);
 
 			PreparedStatement preparedStatement = connection.prepareStatement(
-					"INSERT INTO captura (dadoCaptura, unidadeMedida, dataCaptura, fkComponente) VALUES (?,?,?,?)");
+					"INSERT INTO captura (dadoCaptura, unidadeMedida, dataCaptura, fkComponente) VALUES (?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
 
 			preparedStatement.setDouble(1, Optional.ofNullable(componente.getDadoCaptura()).orElse(0.0));
 			preparedStatement.setString(2, Optional.ofNullable(componente.getUnidadeMedida()).orElse(""));
@@ -46,11 +46,14 @@ public class CapturaDAO {
 
 			preparedStatement.executeUpdate();
 
+			return preparedStatement.getGeneratedKeys().getInt(1);
+
 		} catch (SQLException e) {
 			Logger.logError("Ocorreu um erro ao salvar suas capturas", e.getMessage(), e);
 			LogGenerator.logError("Ocorreu um erro ao salvar suas capturas", e.getMessage(), e);
 		} catch (IOException e) {
             throw new RuntimeException(e);
         }
+		return null;
     }
 }

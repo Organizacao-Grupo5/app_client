@@ -1,6 +1,8 @@
 package service;
 
+import dao.AlertaDAO;
 import dao.UsuarioDAO;
+import model.Alerta;
 import model.Usuario;
 
 import java.util.Optional;

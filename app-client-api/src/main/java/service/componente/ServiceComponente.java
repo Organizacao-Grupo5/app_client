@@ -1,9 +1,14 @@
 package service.componente;
 
 import app.system.SystemMonitor;
+import dao.AlertaDAO;
+import dao.alerta.alertaDAO;
 import dao.componente.CapturaDAO;
 import dao.componente.ComponenteDAO;
+import dao.componente.RegistroAlertasDAO;
 import model.componentes.*;
+import service.ServiceUser;
+import model.Alerta;
 import model.Maquina;
 import util.logs.Logger;
 
@@ -16,6 +21,8 @@ public class ServiceComponente {
 	private ComponenteDAO componenteDAO = new ComponenteDAO();
 	private SystemMonitor systemMonitor = new SystemMonitor();
 	private CapturaDAO capturaDAO = new CapturaDAO();
+	private AlertaDAO alertaDAO = new AlertaDAO();
+	private RegistroAlertasDAO registroAlertasDAO = new RegistroAlertasDAO();
 
 	public void obterComponentes(Maquina maquina) {
 		try {
@@ -70,9 +77,14 @@ public class ServiceComponente {
 	public void iniciarCapturas(Maquina maquina) {
 		try {
 			maquina.getComponentes().forEach(componente -> {
-				atualizarComponente(componente);
-                try {
-                    capturaDAO.inserirCaptura(maquina, componente);
+				try {
+					atualizarComponente(componente);
+					alertaDAO.criarAlerta(componente);
+					
+                    int idCaptura = capturaDAO.inserirCaptura(maquina, componente);
+					if (idCaptura > 0) {
+						registroAlertasDAO.insert(idCaptura, componente);
+					}
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
