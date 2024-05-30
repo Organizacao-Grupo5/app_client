@@ -26,6 +26,7 @@ public class Main {
     private static final Login login = new Login();
     private static ScheduledExecutorService executorService;
 
+    private static ServiceRede serviceRede = new ServiceRede();
     private static Maquina maquina = new Maquina();
     private static ServicePC servicePC = new ServicePC();
     private static ServiceComponente serviceComponente = new ServiceComponente();
@@ -108,6 +109,16 @@ public class Main {
                 if (maquina == null) {
                     LogGenerator.logWarning("Não foi possível acessar a máquina do usuário");
                 }
+
+                if (!serviceRede.maquinaContemIp(maquina)) {
+                    Logger.logWarning("Essa maquina não está registrada no ip detectado, verifique sua conexão com a internet.");
+                    System.out.println("Essa máquina não está registrada no ip detectado, verifique sua conexão com a internet.");
+                    break;
+                }
+
+                Ipv4 ipv4 = serviceRede.criarIpv4(usuarioLogado, maquina);
+                serviceRede.criarRede(usuarioLogado, ipv4);
+
                 LogGenerator.logInfo(("Usuário logado com sucesso: " + usuarioLogado.getEmail()), LogGenerator.LogType.INFO);
                 int shift = 3;
                 String senhaCriptografada = Criptografia.encrypt(senha, shift);

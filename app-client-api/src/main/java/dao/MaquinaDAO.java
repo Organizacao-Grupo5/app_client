@@ -16,7 +16,7 @@ import java.sql.SQLException;
 import java.util.Optional;
 
 
-import app.integration.Userinfo;
+import app.integration.Computador;
 
 public class MaquinaDAO {
 
@@ -70,7 +70,7 @@ public class MaquinaDAO {
 	}
 
 	public static String getIpv4() throws IOException {
-		Userinfo userinfo = new Userinfo();
+		Computador userinfo = new Computador();
 		return userinfo.ipv4();
 	}
 
@@ -82,7 +82,7 @@ public class MaquinaDAO {
 		String modelo = computerSystem.getModel();
 		String numeroDeSerie = computerSystem.getSerialNumber();
 
-		Userinfo userinfo = new Userinfo();
+		Computador userinfo = new Computador();
 		String hostname = userinfo.hostname();
 		String username = userinfo.username();
 
