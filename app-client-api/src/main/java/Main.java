@@ -124,7 +124,7 @@ public class Main {
 
                 // Finaliza o arquivo de log e move para a pasta "autenticar"
                 LogGenerator.closeLogFile();
-                moveLogFileToAutenticar();
+                // moveLogFileToAutenticar();
 
                 iniciarMonitoramento();
             } else {
@@ -145,22 +145,26 @@ public class Main {
         }
     }
 
-    private static void moveLogFileToAutenticar() {
-        try {
-            // Diretório de origem e destino
-            Path source = Paths.get(LogGenerator.getLogFilePath());
-            Path destinationDir = Paths.get("/home/diegosouza/Downloads/app_client/logs/autenticar");
+    /*
+     * DIEGO ENCONTRE UMA FORMA DE FAZER PARA QUE ESSE DIRETORIO SEJA GENERICO, NÂO PODE SER /home/diegosouza/Downloads/... POR QUE REFERE SOMENTE AO SEU COMPUTADOR 
+    */ 
 
-            if (!Files.exists(destinationDir)) {
-                Files.createDirectories(destinationDir);
-            }
+    // private static void moveLogFileToAutenticar() {
+    //     try {
+    //         // Diretório de origem e destino
+    //         Path source = Paths.get(LogGenerator.getLogFilePath());
+    //         Path destinationDir = Paths.get("/home/diegosouza/Downloads/app_client/logs/autenticar");
 
-            Files.move(source, destinationDir.resolve(source.getFileName()));
-        } catch (IOException e) {
-            e.printStackTrace();
-            Logger.logError("Erro ao mover arquivo de log para pasta 'autenticar'", e.getMessage(), e);
-        }
-    }
+    //         if (!Files.exists(destinationDir)) {
+    //             Files.createDirectories(destinationDir);
+    //         }
+
+    //         Files.move(source, destinationDir.resolve(source.getFileName()));
+    //     } catch (IOException e) {
+    //         e.printStackTrace();
+    //         Logger.logError("Erro ao mover arquivo de log para pasta 'autenticar'", e.getMessage(), e);
+    //     }
+    // }
 
 
     public static void iniciarMonitoramento() throws IOException {

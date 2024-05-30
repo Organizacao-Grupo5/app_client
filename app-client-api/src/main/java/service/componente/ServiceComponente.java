@@ -51,6 +51,9 @@ public class ServiceComponente {
 					}
 					if (!existe) {
 						componenteDAO.salvarComponente(maquina, novoComponente);
+						System.out.println("AQUI");
+						maquina.getComponentes().forEach(componente -> System.out.println(componente));
+						
 						maquina.getComponentes().add(novoComponente);
 						serviceSystem.configurar(novoComponente);
 					}
