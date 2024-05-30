@@ -20,14 +20,14 @@ public class RegistroAlertasDAO {
             
             PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO registroalertas (horario, fkAlerta, fkCaptura, fkComponente) VALUES (?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
 
-			preparedStatement.setTimestamp(1, Timestamp.valueOf(LocalDateTime.now()));
-			preparedStatement.setDouble(2, Optional.ofNullable(componente.getDadoCaptura()).orElse(0.0));
-			preparedStatement.setString(3, Optional.ofNullable(componente.getUnidadeMedida()).orElse(""));
-			preparedStatement.setInt(4, componente.getIdComponente());
+			// preparedStatement.setTimestamp(1, Timestamp.valueOf(LocalDateTime.now()));
+			// preparedStatement.setDouble(2, Optional.ofNullable(componente.getDadoCaptura()).orElse(0.0));
+			// preparedStatement.setString(3, Optional.ofNullable(componente.getUnidadeMedida()).orElse(""));
+			// preparedStatement.setInt(4, componente.getIdComponente());
 
-			preparedStatement.executeUpdate();
+			// preparedStatement.executeUpdate();
 
-			return preparedStatement.getGeneratedKeys().getInt(1);
+			// return preparedStatement.getGeneratedKeys().getInt(1);
 
 		} catch (SQLException e) {
 			Logger.logError("Ocorreu um erro ao salvar suas capturas", e.getMessage(), e);

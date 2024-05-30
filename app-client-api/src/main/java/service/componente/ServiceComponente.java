@@ -21,6 +21,7 @@ public class ServiceComponente {
 	private ComponenteDAO componenteDAO = new ComponenteDAO();
 	private SystemMonitor systemMonitor = new SystemMonitor();
 	private CapturaDAO capturaDAO = new CapturaDAO();
+	private ConfiguracaoDAO configuracaoDAO = new ConfiguracaoDAO();
 	private AlertaDAO alertaDAO = new AlertaDAO();
 	private RegistroAlertasDAO registroAlertasDAO = new RegistroAlertasDAO();
 
@@ -56,6 +57,7 @@ public class ServiceComponente {
 					}
 					if (!existe) {
 						componenteDAO.salvarComponente(maquina, novoComponente);
+						configuracaoDAO.criarConfiguracao(novoComponente);
 						maquina.getComponentes().add(novoComponente);
 					}
 				} catch (SQLException e) {
