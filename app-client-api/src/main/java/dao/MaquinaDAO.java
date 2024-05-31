@@ -16,7 +16,7 @@ import java.sql.SQLException;
 import java.util.Optional;
 
 
-import app.integration.Computador;
+import app.integration.Computer;
 
 public class MaquinaDAO {
 
@@ -70,8 +70,8 @@ public class MaquinaDAO {
 	}
 
 	public static String getIpv4() throws IOException {
-		Computador userinfo = new Computador();
-		return userinfo.ipv4();
+		Computer userinfo = new Computer();
+		return userinfo.getIpv4();
 	}
 
 	private void verifyMaquina(Maquina maquina) throws SQLException, IOException {
@@ -82,9 +82,9 @@ public class MaquinaDAO {
 		String modelo = computerSystem.getModel();
 		String numeroDeSerie = computerSystem.getSerialNumber();
 
-		Computador userinfo = new Computador();
-		String hostname = userinfo.hostname();
-		String username = userinfo.username();
+		Computer userinfo = new Computer();
+		String hostname = userinfo.getHostname();
+		String username = userinfo.getUsername();
 
 		try (Connection connection = MySQLConnection.ConBD()) {
 
