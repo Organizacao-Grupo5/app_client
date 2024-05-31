@@ -7,15 +7,13 @@ public class Ipv4 {
     private String numeroIp;
     private String nomeLocal;
     private Integer fkMaquina;
-    private Integer fkUsuario;
     
-    public Ipv4(Maquina maquina, Usuario usuario) {
+    public Ipv4(Maquina maquina) {
         Computer computer = new Computer();
 
         this.numeroIp = computer.getIpv4();
         this.nomeLocal = "default";
         this.fkMaquina = maquina.getIdMaquina();
-        this.fkUsuario = usuario.getIdUsuario();
     }
     
     public Integer getIdIpv4() {
@@ -41,11 +39,5 @@ public class Ipv4 {
     }
     public void setFkMaquina(Integer fkMaquina) {
         this.fkMaquina = fkMaquina;
-    }
-    public Integer getFkUsuario() {
-        return fkUsuario;
-    }
-    public void setFkUsuario(Integer fkUsuario) {
-        this.fkUsuario = fkUsuario;
     }
 }

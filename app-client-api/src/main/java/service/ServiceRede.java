@@ -3,9 +3,12 @@ package service;
 import java.sql.SQLException;
 import java.util.List;
 
-
+import app.integration.Computer;
+import dao.Ipv4DAO;
 import dao.MaquinaDAO;
+import dao.RedeDAO;
 import dao.RedeIpv4DAO;
+import model.Ipv4;
 import model.Maquina;
 import model.Rede;
 import model.Usuario;
@@ -85,31 +88,28 @@ public class ServiceRede {
             }
 
             this.rede = rede;
-
-            return rede;
             
         } catch (SQLException e) {
             Logger.logError("Ocorreu um erro ao criar a rede:", e.getMessage(), e);
             e.printStackTrace();
         }
+        return rede;
     }
 
     public Ipv4 criarIpv4(Usuario usuario, Maquina maquina) {
+        Ipv4 ipv4 = new Ipv4(maquina);
         try {
-            Ipv4 ipv4 = new Ipv4(maquina, usuario);
-    
             if (!ipv4DAO.existe(ipv4)) {
                 ipv4 = ipv4DAO.insert(ipv4);
             }
 
             ipv4DAO.atribuirId(ipv4);
 
-            return ipv4;
-            
         } catch (SQLException e) {
             Logger.logError("Ocorreu um erro ao criar ipv4:", e.getMessage(), e);
             e.printStackTrace();
         }
+        return ipv4;
     }
 
     public void listarDispositivos() {

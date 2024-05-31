@@ -54,6 +54,7 @@ public class RedeIpv4DAO {
     }
 
     public Boolean existe(Ipv4 ipv4, Rede rede) {
+        Boolean existe = false;
         try (Connection connection = MySQLConnection.ConBD()) {
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM relRedeIpv4 WHERE fkRede = ? AND fkIpv4 = ?");
 
@@ -62,13 +63,11 @@ public class RedeIpv4DAO {
 
             ResultSet resultSet = preparedStatement.executeQuery();
             
-            if (resultSet.next()) return true;
-
-            return false;
-
+            existe = resultSet.next();
         } catch (SQLException e) {
             Logger.logError("Não foi possível listar as informações do ipv4: ", e.getMessage(), e);
 			throw new RuntimeException("Erro ao listar as informações do ipv4 com o numero ip = "+ ipv4.getNumeroIp() +": ", e);
         }
+        return existe;
     }
 }
