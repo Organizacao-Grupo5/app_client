@@ -5,7 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.sql.Types;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.Optional;
 
 import model.Configuracao;
@@ -14,42 +15,35 @@ import util.database.MySQLConnection;
 
 public class ConfiguracaoDAO {
     
-    public Integer inserirConfiguracao(Componente componente) throws SQLException {
-        if (!this.existeConfiguracao(componente)) {
-            try (Connection connection = MySQLConnection.ConBD()) {
-    
-                PreparedStatement preparedStatement = connection.prepareStatement(
-                    "INSERT INTO configuracao (minimoParaSerMedio, minimoParaSerRuim, dataModificacao, fkComponente) VALUES (?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
-    
-                preparedStatement.setDouble(1, Types.FLOAT);
-                preparedStatement.setDouble(2, Types.FLOAT);
-                preparedStatement.setNull(3, Types.TIMESTAMP);
-                preparedStatement.setInt(4, componente.getIdComponente());
-    
-                int affectedRows = preparedStatement.executeUpdate();
-    
-                if (affectedRows == 0) {
-                    throw new SQLException("Falha ao salvar o configuração, nenhuma linha afetada.");
+    public Integer inserirConfiguracao(Integer idComponente) throws SQLException {
+        try (Connection connection = MySQLConnection.ConBD()) {
+
+            PreparedStatement preparedStatement = connection.prepareStatement(
+                "INSERT INTO configuracao (dataModificacao, fkComponente) VALUES (?,?)", Statement.RETURN_GENERATED_KEYS);
+
+            preparedStatement.setTimestamp(1, Timestamp.valueOf(LocalDateTime.now()));
+            preparedStatement.setInt(2, idComponente);
+
+            int affectedRows = preparedStatement.executeUpdate();
+
+            if (affectedRows == 0) {
+                throw new SQLException("Falha ao salvar o configuração, nenhuma linha afetada.");
+            }
+
+            try (ResultSet generatedKeys = preparedStatement.getGeneratedKeys()) {
+                if (generatedKeys.next()) {
+                    int idConfiguracao = generatedKeys.getInt(1);
+                    this.selecionarById(idConfiguracao);
+                    return idConfiguracao;
+                } else {
+                    throw new SQLException("Falha ao obter o ID da Configuração criado.");
                 }
-    
-                try (ResultSet generatedKeys = preparedStatement.getGeneratedKeys()) {
-                    if (generatedKeys.next()) {
-                        int idConfiguracao = generatedKeys.getInt(1);
-                        this.selecionarById(idConfiguracao);
-                        return idConfiguracao;
-                    } else {
-                        throw new SQLException("Falha ao obter o ID da Configuração criado.");
-                    }
-                }
-    
-            } catch (SQLException e) {
-                e.printStackTrace();
-            } 
-        } else {
-            Optional<Configuracao> configuracao = this.selecionarByComponente(componente);
-            return configuracao.get().getIdConfig();
-        }
-        return 0;
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } 
+        return null;
     } 
 
     public Optional<Configuracao> selecionarByComponente(Componente componente) {
@@ -86,11 +80,11 @@ public class ConfiguracaoDAO {
         return Optional.empty();
     }
 
-    public Boolean existeConfiguracao(Componente componente) {
+    public Boolean existeConfiguracao(Integer idComponente) {
         Boolean existe = false;
         try (Connection connection = MySQLConnection.ConBD()) {
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM configuracao WHERE fkComponente = ?");
-            preparedStatement.setInt(1, componente.getIdComponente());
+            preparedStatement.setInt(1, idComponente);
 
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
                 existe = resultSet.next();

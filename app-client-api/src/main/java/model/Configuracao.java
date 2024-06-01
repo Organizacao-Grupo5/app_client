@@ -8,19 +8,15 @@ public class Configuracao {
 	private Float minimoParaSerRuim;
     private Timestamp dataModificacao;
     private Integer fkComponente;
-    private Integer fkMaquina;
-    private Integer fkUsuario;
 
     public Configuracao() {}
 
-    public Configuracao(Integer idConfig, Float minimoParaSerMedio, Float minimoParaSerRuim, Timestamp dataModificacao, Integer fkComponente, Integer fkMaquina, Integer fkUsuario) {
+    public Configuracao(Integer idConfig, Float minimoParaSerMedio, Float minimoParaSerRuim, Timestamp dataModificacao, Integer fkComponente) {
         this.idConfig = idConfig;
         this.minimoParaSerMedio = minimoParaSerMedio;
         this.minimoParaSerRuim = minimoParaSerRuim;
         this.dataModificacao = dataModificacao;
         this.fkComponente = fkComponente;
-        this.fkMaquina = fkMaquina;
-        this.fkUsuario = fkUsuario;
     }
 
     public Integer getIdConfig() {
@@ -61,22 +57,6 @@ public class Configuracao {
 
     public void setDataModificacao(Timestamp dataModificacao) {
         this.dataModificacao = dataModificacao;
-    }
-
-    public Integer getFkMaquina() {
-        return fkMaquina;
-    }
-
-    public void setFkMaquina(Integer fkMaquina) {
-        this.fkMaquina = fkMaquina;
-    }
-
-    public Integer getFkUsuario() {
-        return fkUsuario;
-    }
-
-    public void setFkUsuario(Integer fkUsuario) {
-        this.fkUsuario = fkUsuario;
     }
     
 }

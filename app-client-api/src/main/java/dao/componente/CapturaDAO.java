@@ -67,7 +67,7 @@ public class CapturaDAO {
 		return 0;
     }
 
-	public Optional<Captura> selecionarById(Integer idCaptura) {
+	public Optional<Captura>  selecionarById(Integer idCaptura) {
 		try (Connection connection = MySQLConnection.ConBD()) {
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM captura WHERE idCaptura = ?");
 			preparedStatement.setInt(1, idCaptura);

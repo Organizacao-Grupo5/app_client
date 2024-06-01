@@ -3,9 +3,6 @@ import util.security.Login;
 
 import java.io.Console;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Scanner;
 
 import com.mysql.cj.util.StringUtils;
@@ -13,6 +10,7 @@ import util.exception.AutenticationException;
 import model.*;
 import model.componentes.*;
 import service.ServicePC;
+import service.ServiceRede;
 import util.security.Criptografia;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -113,11 +111,7 @@ public class Main {
                 if (!serviceRede.maquinaContemIp(maquina)) {
                     Logger.logWarning("Essa maquina não está registrada no ip detectado, verifique sua conexão com a internet.");
                     System.out.println("Essa máquina não está registrada no ip detectado, verifique sua conexão com a internet.");
-                    break;
                 }
-
-                Ipv4 ipv4 = serviceRede.criarIpv4(usuarioLogado, maquina);
-                serviceRede.criarRede(usuarioLogado, ipv4);
 
                 LogGenerator.logInfo(("Usuário logado com sucesso: " + usuarioLogado.getEmail()), LogGenerator.LogType.INFO);
                 int shift = 3;
@@ -132,7 +126,6 @@ public class Main {
                         LogGenerator.logInfo("Sua senha foi criptograda com sucesso", LogGenerator.LogType.INFO);
                     }
                 }
-
                 // Finaliza o arquivo de log e move para a pasta "autenticar"
                 LogGenerator.closeLogFile();
                 // moveLogFileToAutenticar();

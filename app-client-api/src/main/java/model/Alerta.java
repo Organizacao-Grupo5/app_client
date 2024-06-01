@@ -2,19 +2,15 @@ package model;
 
 public class Alerta {
     private Integer idAlerta;
-    private Double percentualMaximo; 
     private String mensagem;
     private String tipoAlerta;
-    private String definicaoPercentual;
  
     public Alerta() {}
     
-    public Alerta(Integer idAlerta, Double percentualMaximo, String mensagem, String tipoAlerta, String definicaoPercentual) {
+    public Alerta(Integer idAlerta, String mensagem, String tipoAlerta) {
         this.idAlerta = idAlerta;
-        this.percentualMaximo = percentualMaximo;
         this.mensagem = mensagem;
         this.tipoAlerta = tipoAlerta;
-        this.definicaoPercentual = definicaoPercentual;
     }
 
     public Integer getIdAlerta() {
@@ -23,14 +19,6 @@ public class Alerta {
 
     public void setIdAlerta(Integer idAlerta) {
         this.idAlerta = idAlerta;
-    }
-
-    public Double getPercentualMaximo() {
-        return percentualMaximo;
-    }
-
-    public void setPercentualMaximo(Double percentualMaximo) {
-        this.percentualMaximo = percentualMaximo;
     }
 
     public String getMensagem() {
@@ -49,13 +37,4 @@ public class Alerta {
         this.tipoAlerta = tipoAlerta;
     }
 
-    public String getDefinicaoPercentual() {
-        return definicaoPercentual;
-    }
-
-    public void setDefinicaoPercentual(String definicaoPercentual) {
-        this.definicaoPercentual = definicaoPercentual;
-    }
-
-    
 }

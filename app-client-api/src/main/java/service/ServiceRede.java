@@ -25,7 +25,7 @@ public class ServiceRede {
 		try {
 			String ip = MaquinaDAO.getIpv4();
 						
-			if (ipv4DAO.contem(maquina, ip) < 2) {
+			if (ipv4DAO.existeIpv4(maquina, ip)) {
 				return true;
             } else {
                 Logger.logWarning("A máquina / rede a qual você está utilizando não está vinculada ao seu usuário!");

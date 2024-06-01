@@ -13,13 +13,10 @@ public class ServicePC {
 
 	public Maquina verificarMaquina(Usuario usuario) {
 		try {
-			String ipv4 = MaquinaDAO.getIpv4();
 			Optional<Maquina> maquina = maquinaDAO.monitorarMaquina(usuario);
 
 			if (maquina.isEmpty()) {
 				Logger.logWarning("Não encontramos nenhuma máquina vinculada ao seu usuário, entre em contato com seu gestor!");
-			} else if (!maquina.get().getIpv4().contains(ipv4)) {
-				Logger.logWarning("A máquina / rede a qual você está utilizando não está vinculada ao seu usuário!");
 			} else {
 				return maquina.get();
 			}

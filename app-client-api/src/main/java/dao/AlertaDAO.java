@@ -31,13 +31,15 @@ public class AlertaDAO {
 		return listaAlertas;
 	}
 
-	private Alerta createAlerta(ResultSet resultSet) throws SQLException {
+	private Alerta createAlerta(ResultSet resultSet) {
 		Alerta alerta = new Alerta();
-		alerta.setIdAlerta(resultSet.getInt("idAlertas"));
-		alerta.setDefinicaoPercentual(resultSet.getString("definicaoPercentual"));
-		alerta.setMensagem(resultSet.getString("mensagem"));
-		alerta.setPercentualMaximo(resultSet.getDouble("percentualMaximo"));
-		alerta.setTipoAlerta(resultSet.getString("tipoAlerta"));
+		try {
+			alerta.setIdAlerta(resultSet.getInt(1));
+			alerta.setMensagem(resultSet.getString(2));
+			alerta.setTipoAlerta(resultSet.getString(3));
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 		return alerta;
 	}
 

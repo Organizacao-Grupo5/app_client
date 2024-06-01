@@ -7,6 +7,7 @@ import java.util.Optional;
 import dao.AlertaDAO;
 import dao.ConfiguracaoDAO;
 import dao.componente.CapturaDAO;
+import dao.componente.ComponenteDAO;
 import dao.componente.RegistroAlertasDAO;
 import model.Alerta;
 import model.Captura;
@@ -19,52 +20,72 @@ public class ServiceSystem {
     CapturaDAO capturaDAO;
     ConfiguracaoDAO configuracaoDAO;
     RegistroAlertasDAO registroAlertasDAO;
+    ComponenteDAO componenteDAO;
 
     public ServiceSystem() {
         alertaDAO = new AlertaDAO();
         capturaDAO = new CapturaDAO();
         configuracaoDAO = new ConfiguracaoDAO();
+        registroAlertasDAO = new RegistroAlertasDAO();
+        componenteDAO = new ComponenteDAO();
     }
     
-    public void configurar(Componente componente) throws SQLException {
+    public void configurar(Integer idComponente) throws SQLException {
         try {
-            ConfiguracaoDAO configuracaoDAO = new ConfiguracaoDAO();
-            configuracaoDAO.inserirConfiguracao(componente);
+            if (!configuracaoDAO.existeConfiguracao(idComponente)) {
+                ConfiguracaoDAO configuracaoDAO = new ConfiguracaoDAO();
+                configuracaoDAO.inserirConfiguracao(idComponente);
+            }
         } catch (Exception e) {
             Logger.logError("Ocorreu um erro ao inserir dados à entidade Configuracao:", e.getMessage(), e);
-            e.printStackTrace();
         }
     }
 
     public void registrar(Integer idCaptura, Componente componente) {
-        Integer idAlerta = this.pegarIdAlerta(idCaptura, componente);
-
-        registroAlertasDAO.gerarRegistro(idCaptura, componente, idAlerta);
+        Double valorCaptura = this.obterValorCaptura(idCaptura);
+        Configuracao configuracao = this.obterConfiguracao(componente);
+        Integer idAlerta = this.pegarIdAlerta(valorCaptura, configuracao);
+        
+        registroAlertasDAO.gerarRegistro(idCaptura, idAlerta);
     }
 
-    public Integer pegarIdAlerta(Integer idCaptura, Componente componente) {
+    public Integer pegarIdAlerta(Double valorCaptura, Configuracao configuracao) {
         Integer idAlerta = 0;
         try {
-            Optional<Captura> optionalCaptura = capturaDAO.selecionarById(idCaptura);
-            Double valorCaptura = optionalCaptura.get().getDadoCaptura();
-            
-            Optional<Configuracao>  optionalConfiguracao = configuracaoDAO.selecionarByComponente(componente);
-            Float minParaMedio = optionalConfiguracao.get().getMinimoParaSerMedio();
-            Float minParaRuim = optionalConfiguracao.get().getMinimoParaSerRuim();
-    
             List<Alerta> listaAlertas = alertaDAO.selecionarTodos();
         
-            if (valorCaptura <= 100 && valorCaptura >= minParaRuim) {
+            if (valorCaptura >= configuracao.getMinimoParaSerRuim() && valorCaptura <= 100) {
                 idAlerta = listaAlertas.stream().filter(alerta -> alerta.getTipoAlerta().equals("RUIM")).map(Alerta::getIdAlerta).findFirst().get();
-            } else if (valorCaptura >= minParaMedio) {
+            } else if (valorCaptura >= configuracao.getMinimoParaSerMedio()) {
                 idAlerta = listaAlertas.stream().filter(alerta -> alerta.getTipoAlerta().equals("MÉDIO")).map(Alerta::getIdAlerta).findFirst().get();
             } else {
                 idAlerta = listaAlertas.stream().filter(alerta -> alerta.getTipoAlerta().equals("BOM")).map(Alerta::getIdAlerta).findFirst().get();
             }
         } catch (Exception e) {
-            Logger.logError("Ocorreu um erro ao tentar pegar informações da entidade Captura, Configuração ou Alerta:", e.getMessage(), e);
-            e.printStackTrace();
+            Logger.logError("Ocorreu um erro ao pegar informações da entidade Alerta:", e.getMessage(), e);
         }
         return idAlerta;
+    }
+
+    public Double obterValorCaptura(Integer idCaptura) {
+        Double valorCaptura = 0.0;
+        try {
+            Optional<Captura> optionalCaptura = capturaDAO.selecionarById(idCaptura);
+            valorCaptura = optionalCaptura.get().getDadoCaptura();
+        } catch (Exception e) {
+            Logger.logError("Ocorreu um erro ao obter informações da entidade Captura:", e.getMessage(), e);
+        }
+        return valorCaptura;
+    }
+
+    public Configuracao obterConfiguracao(Componente componente) {
+        Configuracao configuracao = null;
+        try {
+            Optional<Configuracao> optionalConfiguracao = configuracaoDAO.selecionarByComponente(componente);
+            configuracao = optionalConfiguracao.get();    
+        } catch (Exception e) {
+            Logger.logError("Ocorreu um erro ao obter informações da entidade Configuração:", e.getMessage(), e);
+        }
+        return configuracao;
     }
 }
