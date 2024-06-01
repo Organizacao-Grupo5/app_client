@@ -1,383 +1,2845 @@
-[2024-05-31 23:54:34] INFO: Verificando informações de login do usuário.
-[2024-05-31 23:54:35] INFO: Usuário foi encontrado com sucesso.
-[2024-05-31 23:54:37] INFO: Buscando componentes...
-[2024-05-31 23:54:37] INFO: Componente encontrado :
+[2024-06-01 13:03:56] INFO: Verificando informações de login do usuário.
+[2024-06-01 13:03:57] WARNING: Usuário não encontrado.
+[2024-06-01 13:03:57] ERROR: Erro ao autenticar o usuário: 
+util.exception.AutenticationException: Falha ao autenticar o usuário. Verifique suas credenciais.
+	at util.security.Seguranca.autenticarUsuario(Seguranca.java:28)
+	at util.security.Login.login(Login.java:20)
+	at Main.main(Main.java:88)
+
+[2024-06-01 13:03:57] INFO: Verificando informações de login do usuário.
+[2024-06-01 13:03:57] WARNING: Usuário não encontrado.
+[2024-06-01 13:03:57] ERROR: Erro ao autenticar o usuário: 
+util.exception.AutenticationException: Falha ao autenticar o usuário. Verifique suas credenciais.
+	at util.security.Seguranca.autenticarUsuario(Seguranca.java:28)
+	at util.security.Login.login(Login.java:20)
+	at Main.main(Main.java:93)
+
+[2024-06-01 13:04:05] INFO: Verificando informações de login do usuário.
+[2024-06-01 13:04:05] INFO: Usuário foi encontrado com sucesso.
+[2024-06-01 13:04:08] INFO: Buscando componentes...
+[2024-06-01 13:04:08] INFO: Componente encontrado :
     |Componente: CPU
     |Modelo: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
     |Fabricante: GenuineIntel
     |ID Componente: 1
 
-[2024-05-31 23:54:37] INFO: Componente encontrado :
+[2024-06-01 13:04:08] INFO: Componente encontrado :
     |Componente: HDD
     |Modelo: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
     |Fabricante: N/A
     |ID Componente: 2
 
-[2024-05-31 23:54:37] INFO: Componente encontrado :
+[2024-06-01 13:04:08] INFO: Componente encontrado :
     |Componente: GPU
     |Modelo: NVIDIA GeForce GTX 1050
     |Fabricante: NVIDIA
     |ID Componente: 3
 
-[2024-05-31 23:54:37] INFO: Componente encontrado :
+[2024-06-01 13:04:08] INFO: Componente encontrado :
     |Componente: MemoriaRam
     |Modelo: N/A
     |Fabricante: N/A
     |ID Componente: 4
 
-[2024-05-31 23:54:37] INFO: Componente encontrado :
+[2024-06-01 13:04:08] INFO: Componente encontrado :
     |Componente: Bateria
     |Modelo: System Battery
     |Fabricante: SMP
     |ID Componente: 5
 
-[2024-05-31 23:54:37] INFO: Componente encontrado :
+[2024-06-01 13:04:08] INFO: Componente encontrado :
     |Componente: SistemaOp
     |Modelo: Windows
     |Fabricante: Microsoft
     |ID Componente: 6
 
-[2024-05-31 23:54:37] INFO: Componente encontrado :
+[2024-06-01 13:04:08] INFO: Componente encontrado :
     |Componente: Volume
     |Modelo: Disco Fixo Local (C:)
     |Fabricante: 20384a0b-36ae-45cf-b9d6-746edf252892
     |ID Componente: 7
 
-[2024-05-31 23:54:37] INFO: Capturando dados da sua CPU.
-[2024-05-31 23:54:37] INFO: Número de CPUs lógicas: 8
-[2024-05-31 23:54:37] INFO: Número de CPUs físicas: 4
-[2024-05-31 23:54:37] INFO: Microarquitetura: Coffee Lake
-[2024-05-31 23:54:37] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
-[2024-05-31 23:54:37] INFO: ID da CPU Looca: BFEBFBFF000906ED
-[2024-05-31 23:54:37] INFO: Fabricante: GenuineIntel
-[2024-05-31 23:54:37] INFO: Frequência: 2.4E9
-[2024-05-31 23:54:37] INFO: Número de pacotes físicos: 1
-[2024-05-31 23:54:39] INFO: Uso da CPU: 0.3807886009089792
-[2024-05-31 23:54:39] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
-[2024-05-31 23:54:40] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
-[2024-05-31 23:54:40] INFO: Dados da CPU capturados com sucesso.
-[2024-05-31 23:54:40] INFO: Capturando dados do seu HDD
-[2024-05-31 23:54:40] INFO: Nome do disco: \\.\PHYSICALDRIVE0
-[2024-05-31 23:54:40] INFO: Serial do disco:      WD-WX82AA085155
-[2024-05-31 23:54:40] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
-[2024-05-31 23:54:40] INFO: Escritas do disco: 493.4921875
-[2024-05-31 23:54:40] INFO: Leituras do disco: 628.716796875
-[2024-05-31 23:54:40] INFO: Bytes de escritas do disco: 11.103760242462158
-[2024-05-31 23:54:40] INFO: Bytes de leitura do disco: 19.11408567428589
-[2024-05-31 23:54:40] INFO: Tamanho do disco: 931.51
-[2024-05-31 23:54:40] INFO: Tempo de transferência do disco: 17298.10111111111
-[2024-05-31 23:54:40] INFO: Dados do disco gravados.
-[2024-05-31 23:54:40] INFO: Capturando dados da GPU.
-[2024-05-31 23:54:40] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
-[2024-05-31 23:54:40] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
-[2024-05-31 23:54:40] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
-[2024-05-31 23:54:40] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
-[2024-05-31 23:54:40] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
-[2024-05-31 23:54:40] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
-[2024-05-31 23:54:40] INFO: Dados da GPU gravados.
-[2024-05-31 23:54:40] INFO: Capturando dados da sua memória RAM.
-[2024-05-31 23:54:40] INFO: Memória disponível: 1.3608131408691406
-[2024-05-31 23:54:40] INFO: Memória total: 7.922107696533203
-[2024-05-31 23:54:40] INFO: Memória em uso: 6.5612945556640625
-[2024-05-31 23:54:40] INFO: Dados da memória RAM capturados com sucesso.
-[2024-05-31 23:54:40] INFO: Capturando dados da sua bateria.
-[2024-05-31 23:54:40] INFO: Amperagem da bateria: 0.0
-[2024-05-31 23:54:40] INFO: Nome do dispositivo da bateria: L18M3PF1
-[2024-05-31 23:54:40] INFO: Número de série da bateria:  2184
-[2024-05-31 23:54:40] INFO: Química da bateria: LiP
-[2024-05-31 23:54:40] INFO: Nome da bateria: System Battery
-[2024-05-31 23:54:40] INFO: Voltagem da bateria: 12.738
-[2024-05-31 23:54:40] INFO: Capacidade atual da bateria: 34.140625
-[2024-05-31 23:54:40] INFO: Número de ciclos da bateria: 1133
-[2024-05-31 23:54:40] INFO: Capacidade de design da bateria: 43.9453125
-[2024-05-31 23:54:40] INFO: Unidade de capacidade da bateria: MWH
-[2024-05-31 23:54:40] INFO: Tempo restante da bateria (instantâneo): -1.0
-[2024-05-31 23:54:40] INFO: Tempo restante estimado da bateria: -1.0
-[2024-05-31 23:54:40] INFO: Taxa de uso de energia da bateria: 0.0
-[2024-05-31 23:54:40] INFO: Temperatura da bateria: 0.0
-[2024-05-31 23:54:40] INFO: Capacidade máxima da bateria: 34.140625
-[2024-05-31 23:54:40] INFO: Porcentagem de capacidade restante da bateria: 1.0
-[2024-05-31 23:54:40] INFO: Data de fabricação da bateria: N/A
-[2024-05-31 23:54:40] INFO: Fabricante da bateria: SMP
-[2024-05-31 23:54:40] INFO: Dados da bateria capturados com sucesso: 100.0
-[2024-05-31 23:54:40] INFO: Dados da bateria gravados.
-[2024-05-31 23:54:40] INFO: Capturando dados do sistema operacional.
-[2024-05-31 23:54:40] INFO: Nome do sistema operacional coletado: Windows
-[2024-05-31 23:54:40] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
-[2024-05-31 23:54:40] INFO: Arquitetura do sistema operacional coletada: 64
-[2024-05-31 23:54:40] INFO: A inicialização do sistema operacional coletada: 64
-[2024-05-31 23:54:40] INFO: O tempo de atividade do sistema operacional foi coletada: 22601
-[2024-05-31 23:54:40] INFO: A permisão do sistema operacional foi coletada: 22601
-[2024-05-31 23:54:40] INFO: Capturando dados dos volumes lógicos.
-[2024-05-31 23:54:40] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
-[2024-05-31 23:54:40] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
-[2024-05-31 23:54:40] INFO: Espaço disponível no volume lógico capturado : 727.9669380187988
-[2024-05-31 23:54:40] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
-[2024-05-31 23:54:40] INFO: Tipo do volume lógico capturado: NTFS
-[2024-05-31 23:54:40] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
-[2024-05-31 23:54:40] INFO: Ponto de montagem do volume lógico capturado: C:\
-[2024-05-31 23:54:40] INFO: Dados do volume lógico gravados.
-[2024-05-31 23:54:40] INFO: Todos os volumes lógicos verificados.
-[2024-05-31 23:54:40] INFO: Sua máquina contém componentes registrados
-[2024-05-31 23:54:40] INFO: Capturando dados da sua CPU.
-[2024-05-31 23:54:40] INFO: Número de CPUs lógicas: 8
-[2024-05-31 23:54:40] INFO: Número de CPUs físicas: 4
-[2024-05-31 23:54:40] INFO: Microarquitetura: Coffee Lake
-[2024-05-31 23:54:40] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
-[2024-05-31 23:54:40] INFO: ID da CPU Looca: BFEBFBFF000906ED
-[2024-05-31 23:54:40] INFO: Fabricante: GenuineIntel
-[2024-05-31 23:54:40] INFO: Frequência: 2.4E9
-[2024-05-31 23:54:40] INFO: Número de pacotes físicos: 1
-[2024-05-31 23:54:40] INFO: Uso da CPU: 0.3807886009089792
-[2024-05-31 23:54:40] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
-[2024-05-31 23:54:41] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
-[2024-05-31 23:54:41] INFO: Dados da CPU capturados com sucesso.
-[2024-05-31 23:54:41] INFO: 
+[2024-06-01 13:04:08] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:04:08] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:04:08] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:04:08] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:04:08] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:04:08] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:04:08] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:04:08] INFO: Frequência: 2.4E9
+[2024-06-01 13:04:08] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:04:13] INFO: Uso da CPU: 1.0667903525046383
+[2024-06-01 13:04:13] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:04:20] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:20] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:04:20] INFO: Capturando dados do seu HDD
+[2024-06-01 13:04:20] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:04:20] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:04:20] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:04:20] INFO: Escritas do disco: 797.1162109375
+[2024-06-01 13:04:20] INFO: Leituras do disco: 1.0515460968017578
+[2024-06-01 13:04:20] INFO: Bytes de escritas do disco: 24.485136032104492
+[2024-06-01 13:04:20] INFO: Bytes de leitura do disco: 40.145201683044434
+[2024-06-01 13:04:20] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:04:20] INFO: Tempo de transferência do disco: 25622.87
+[2024-06-01 13:04:20] INFO: Dados do disco gravados.
+[2024-06-01 13:04:20] INFO: Capturando dados da GPU.
+[2024-06-01 13:04:20] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:04:20] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:04:20] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:04:20] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:04:20] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:04:21] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:21] INFO: Dados da GPU gravados.
+[2024-06-01 13:04:21] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:04:21] INFO: Memória disponível: 866.203125
+[2024-06-01 13:04:21] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:04:21] INFO: Memória em uso: 7.076206207275391
+[2024-06-01 13:04:21] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:04:21] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:04:21] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:04:21] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:04:21] INFO: Número de série da bateria:  2184
+[2024-06-01 13:04:21] INFO: Química da bateria: LiP
+[2024-06-01 13:04:21] INFO: Nome da bateria: System Battery
+[2024-06-01 13:04:21] INFO: Voltagem da bateria: 12.717
+[2024-06-01 13:04:21] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:04:21] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:04:21] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:04:21] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:04:21] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:04:21] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:04:21] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:04:21] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:04:21] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:04:21] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:04:21] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:04:21] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:04:22] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:04:22] INFO: Dados da bateria gravados.
+[2024-06-01 13:04:22] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:04:22] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:04:22] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:04:22] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:04:22] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:04:22] INFO: O tempo de atividade do sistema operacional foi coletada: 69983
+[2024-06-01 13:04:22] INFO: A permisão do sistema operacional foi coletada: 69983
+[2024-06-01 13:04:22] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:04:22] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:04:22] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:04:22] INFO: Espaço disponível no volume lógico capturado : 727.0516395568848
+[2024-06-01 13:04:22] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:04:22] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:04:22] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:04:22] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:04:22] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:04:22] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:04:22] INFO: Sua máquina contém componentes registrados
+[2024-06-01 13:04:22] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:04:22] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:04:22] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:04:22] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:04:22] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:04:22] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:04:22] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:04:22] INFO: Frequência: 2.4E9
+[2024-06-01 13:04:22] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:04:22] INFO: Uso da CPU: 1.0667903525046383
+[2024-06-01 13:04:22] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:04:22] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:22] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:04:22] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: CPU
     |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-05-31T23:54:41.211518600
+    |Data hora captura: 2024-06-01T13:04:22.923818600
     |Id componente: 1
 
-[2024-05-31 23:55:03] INFO: Capturando dados do seu HDD
-[2024-05-31 23:55:03] INFO: Nome do disco: \\.\PHYSICALDRIVE0
-[2024-05-31 23:55:03] INFO: Serial do disco:      WD-WX82AA085155
-[2024-05-31 23:55:03] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
-[2024-05-31 23:55:03] INFO: Escritas do disco: 493.751953125
-[2024-05-31 23:55:03] INFO: Leituras do disco: 628.7490234375
-[2024-05-31 23:55:03] INFO: Bytes de escritas do disco: 11.107853412628174
-[2024-05-31 23:55:03] INFO: Bytes de leitura do disco: 19.114936351776123
-[2024-05-31 23:55:03] INFO: Tamanho do disco: 931.51
-[2024-05-31 23:55:03] INFO: Tempo de transferência do disco: 17298.39222222222
-[2024-05-31 23:55:03] INFO: Dados do disco gravados.
-[2024-05-31 23:55:03] INFO: 
+[2024-06-01 13:04:23] INFO: Capturando dados do seu HDD
+[2024-06-01 13:04:23] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:04:23] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:04:23] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:04:23] INFO: Escritas do disco: 797.16796875
+[2024-06-01 13:04:23] INFO: Leituras do disco: 1.0517988204956055
+[2024-06-01 13:04:23] INFO: Bytes de escritas do disco: 24.485841751098633
+[2024-06-01 13:04:23] INFO: Bytes de leitura do disco: 40.150962829589844
+[2024-06-01 13:04:23] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:04:23] INFO: Tempo de transferência do disco: 25623.402777777777
+[2024-06-01 13:04:23] INFO: Dados do disco gravados.
+[2024-06-01 13:04:23] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: HDD
     |Dado capturado: 931,51
     |Unidade de medida: GB
-    |Data hora captura: 2024-05-31T23:55:03.574335300
+    |Data hora captura: 2024-06-01T13:04:23.485007800
     |Id componente: 2
 
-[2024-05-31 23:55:17] INFO: Capturando dados da GPU.
-[2024-05-31 23:55:17] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
-[2024-05-31 23:55:17] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
-[2024-05-31 23:55:17] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
-[2024-05-31 23:55:17] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
-[2024-05-31 23:55:17] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
-[2024-05-31 23:55:17] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
-[2024-05-31 23:55:17] INFO: Dados da GPU gravados.
-[2024-05-31 23:55:17] INFO: 
+[2024-06-01 13:04:23] INFO: Capturando dados da GPU.
+[2024-06-01 13:04:23] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:04:23] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:04:23] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:04:23] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:04:23] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:04:24] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:24] INFO: Dados da GPU gravados.
+[2024-06-01 13:04:24] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: GPU
     |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-05-31T23:55:17.679120600
+    |Data hora captura: 2024-06-01T13:04:24.514517100
     |Id componente: 3
 
-[2024-05-31 23:55:22] INFO: Capturando dados da sua memória RAM.
-[2024-05-31 23:55:22] INFO: Memória disponível: 1.1135177612304688
-[2024-05-31 23:55:22] INFO: Memória total: 7.922107696533203
-[2024-05-31 23:55:22] INFO: Memória em uso: 6.808589935302734
-[2024-05-31 23:55:22] INFO: Dados da memória RAM capturados com sucesso.
-[2024-05-31 23:55:22] INFO: 
+[2024-06-01 13:04:25] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:04:25] INFO: Memória disponível: 816.16015625
+[2024-06-01 13:04:25] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:04:25] INFO: Memória em uso: 7.1250762939453125
+[2024-06-01 13:04:25] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:04:25] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,13
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:25.020159500
+    |Id componente: 4
+
+[2024-06-01 13:04:25] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:04:25] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:04:25] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:04:25] INFO: Número de série da bateria:  2184
+[2024-06-01 13:04:25] INFO: Química da bateria: LiP
+[2024-06-01 13:04:25] INFO: Nome da bateria: System Battery
+[2024-06-01 13:04:25] INFO: Voltagem da bateria: 12.718
+[2024-06-01 13:04:25] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:04:25] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:04:25] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:04:25] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:04:25] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:04:25] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:04:25] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:04:25] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:04:25] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:04:25] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:04:25] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:04:25] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:04:25] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:04:25] INFO: Dados da bateria gravados.
+[2024-06-01 13:04:25] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-01T13:04:25.980077
+    |Id componente: 5
+
+[2024-06-01 13:04:26] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:04:26] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:04:26] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:04:26] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:04:26] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:04:26] INFO: O tempo de atividade do sistema operacional foi coletada: 69987
+[2024-06-01 13:04:26] INFO: A permisão do sistema operacional foi coletada: 69987
+[2024-06-01 13:04:26] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-06-01T13:04:26.225256
+    |Id componente: 6
+
+[2024-06-01 13:04:26] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:04:26] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:04:26] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:04:26] INFO: Espaço disponível no volume lógico capturado : 727.051326751709
+[2024-06-01 13:04:26] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:04:26] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:04:26] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:04:26] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:04:26] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:04:26] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:04:26] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 203,21
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:26.494219700
+    |Id componente: 7
+
+[2024-06-01 13:04:26] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:04:26] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:04:26] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:04:26] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:04:26] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:04:26] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:04:26] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:04:26] INFO: Frequência: 2.4E9
+[2024-06-01 13:04:26] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:04:26] INFO: Uso da CPU: 6.025753219152394
+[2024-06-01 13:04:26] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:04:27] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:27] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:04:27] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:27.437535800
+    |Id componente: 1
+
+[2024-06-01 13:04:27] INFO: Capturando dados do seu HDD
+[2024-06-01 13:04:27] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:04:27] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:04:27] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:04:27] INFO: Escritas do disco: 797.4326171875
+[2024-06-01 13:04:27] INFO: Leituras do disco: 1.0519332885742188
+[2024-06-01 13:04:27] INFO: Bytes de escritas do disco: 24.504907608032227
+[2024-06-01 13:04:27] INFO: Bytes de leitura do disco: 40.16406726837158
+[2024-06-01 13:04:27] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:04:27] INFO: Tempo de transferência do disco: 25624.86111111111
+[2024-06-01 13:04:27] INFO: Dados do disco gravados.
+[2024-06-01 13:04:27] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:27.653217500
+    |Id componente: 2
+
+[2024-06-01 13:04:27] INFO: Capturando dados da GPU.
+[2024-06-01 13:04:27] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:04:27] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:04:27] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:04:27] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:04:27] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:04:28] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:28] INFO: Dados da GPU gravados.
+[2024-06-01 13:04:28] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:28.224665700
+    |Id componente: 3
+
+[2024-06-01 13:04:28] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:04:28] INFO: Memória disponível: 785.74609375
+[2024-06-01 13:04:28] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:04:28] INFO: Memória em uso: 7.154777526855469
+[2024-06-01 13:04:28] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:04:28] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,15
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:28.479346
+    |Id componente: 4
+
+[2024-06-01 13:04:28] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:04:28] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:04:28] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:04:28] INFO: Número de série da bateria:  2184
+[2024-06-01 13:04:28] INFO: Química da bateria: LiP
+[2024-06-01 13:04:28] INFO: Nome da bateria: System Battery
+[2024-06-01 13:04:28] INFO: Voltagem da bateria: 12.717
+[2024-06-01 13:04:28] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:04:28] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:04:28] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:04:28] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:04:28] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:04:28] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:04:28] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:04:28] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:04:28] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:04:28] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:04:28] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:04:28] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:04:29] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:04:29] INFO: Dados da bateria gravados.
+[2024-06-01 13:04:29] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-01T13:04:29.049761500
+    |Id componente: 5
+
+[2024-06-01 13:04:29] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:04:29] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:04:29] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:04:29] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:04:29] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:04:29] INFO: O tempo de atividade do sistema operacional foi coletada: 69990
+[2024-06-01 13:04:29] INFO: A permisão do sistema operacional foi coletada: 69990
+[2024-06-01 13:04:29] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-06-01T13:04:29.523629100
+    |Id componente: 6
+
+[2024-06-01 13:04:30] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:04:30] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:04:30] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:04:30] INFO: Espaço disponível no volume lógico capturado : 727.0511856079102
+[2024-06-01 13:04:30] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:04:30] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:04:30] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:04:30] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:04:30] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:04:30] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:04:30] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 203,21
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:30.130241500
+    |Id componente: 7
+
+[2024-06-01 13:04:30] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:04:30] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:04:30] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:04:30] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:04:30] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:04:30] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:04:30] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:04:30] INFO: Frequência: 2.4E9
+[2024-06-01 13:04:30] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:04:30] INFO: Uso da CPU: 7.097327776415788
+[2024-06-01 13:04:30] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:04:31] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:31] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:04:31] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:31.093458800
+    |Id componente: 1
+
+[2024-06-01 13:04:31] INFO: Capturando dados do seu HDD
+[2024-06-01 13:04:31] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:04:31] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:04:31] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:04:31] INFO: Escritas do disco: 797.6123046875
+[2024-06-01 13:04:31] INFO: Leituras do disco: 1.0521430969238281
+[2024-06-01 13:04:31] INFO: Bytes de escritas do disco: 24.50663948059082
+[2024-06-01 13:04:31] INFO: Bytes de leitura do disco: 40.179144859313965
+[2024-06-01 13:04:31] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:04:31] INFO: Tempo de transferência do disco: 25626.7125
+[2024-06-01 13:04:31] INFO: Dados do disco gravados.
+[2024-06-01 13:04:31] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:31.349790700
+    |Id componente: 2
+
+[2024-06-01 13:04:31] INFO: Capturando dados da GPU.
+[2024-06-01 13:04:31] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:04:31] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:04:31] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:04:31] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:04:31] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:04:31] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:31] INFO: Dados da GPU gravados.
+[2024-06-01 13:04:31] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:31.938831100
+    |Id componente: 3
+
+[2024-06-01 13:04:32] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:04:32] INFO: Memória disponível: 761.671875
+[2024-06-01 13:04:32] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:04:32] INFO: Memória em uso: 7.178287506103516
+[2024-06-01 13:04:32] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:04:32] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,18
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:32.118350500
+    |Id componente: 4
+
+[2024-06-01 13:04:32] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:04:32] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:04:32] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:04:32] INFO: Número de série da bateria:  2184
+[2024-06-01 13:04:32] INFO: Química da bateria: LiP
+[2024-06-01 13:04:32] INFO: Nome da bateria: System Battery
+[2024-06-01 13:04:32] INFO: Voltagem da bateria: 12.718
+[2024-06-01 13:04:32] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:04:32] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:04:32] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:04:32] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:04:32] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:04:32] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:04:32] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:04:32] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:04:32] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:04:32] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:04:32] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:04:32] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:04:32] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:04:32] INFO: Dados da bateria gravados.
+[2024-06-01 13:04:32] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-01T13:04:32.673378700
+    |Id componente: 5
+
+[2024-06-01 13:04:32] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:04:32] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:04:32] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:04:32] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:04:32] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:04:32] INFO: O tempo de atividade do sistema operacional foi coletada: 69993
+[2024-06-01 13:04:32] INFO: A permisão do sistema operacional foi coletada: 69993
+[2024-06-01 13:04:32] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-06-01T13:04:32.916748
+    |Id componente: 6
+
+[2024-06-01 13:04:33] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:04:33] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:04:33] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:04:33] INFO: Espaço disponível no volume lógico capturado : 727.0510673522949
+[2024-06-01 13:04:33] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:04:33] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:04:33] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:04:33] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:04:33] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:04:33] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:04:33] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 203,21
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:33.103572400
+    |Id componente: 7
+
+[2024-06-01 13:04:33] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:04:33] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:04:33] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:04:33] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:04:33] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:04:33] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:04:33] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:04:33] INFO: Frequência: 2.4E9
+[2024-06-01 13:04:33] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:04:33] INFO: Uso da CPU: 5.661792275965504
+[2024-06-01 13:04:33] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:04:33] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:33] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:04:33] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:33.793829300
+    |Id componente: 1
+
+[2024-06-01 13:04:33] INFO: Capturando dados do seu HDD
+[2024-06-01 13:04:34] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:04:34] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:04:34] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:04:34] INFO: Escritas do disco: 797.7509765625
+[2024-06-01 13:04:34] INFO: Leituras do disco: 1.052215576171875
+[2024-06-01 13:04:34] INFO: Bytes de escritas do disco: 24.507875442504883
+[2024-06-01 13:04:34] INFO: Bytes de leitura do disco: 40.188414096832275
+[2024-06-01 13:04:34] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:04:34] INFO: Tempo de transferência do disco: 25627.090555555555
+[2024-06-01 13:04:34] INFO: Dados do disco gravados.
+[2024-06-01 13:04:34] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:34.018959800
+    |Id componente: 2
+
+[2024-06-01 13:04:34] INFO: Capturando dados da GPU.
+[2024-06-01 13:04:34] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:04:34] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:04:34] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:04:34] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:04:34] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:04:34] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:34] INFO: Dados da GPU gravados.
+[2024-06-01 13:04:34] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:34.587253800
+    |Id componente: 3
+
+[2024-06-01 13:04:34] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:04:34] INFO: Memória disponível: 721.04296875
+[2024-06-01 13:04:34] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:04:34] INFO: Memória em uso: 7.217964172363281
+[2024-06-01 13:04:34] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:04:34] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,22
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:34.779402200
+    |Id componente: 4
+
+[2024-06-01 13:04:34] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:04:35] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:04:35] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:04:35] INFO: Número de série da bateria:  2184
+[2024-06-01 13:04:35] INFO: Química da bateria: LiP
+[2024-06-01 13:04:35] INFO: Nome da bateria: System Battery
+[2024-06-01 13:04:35] INFO: Voltagem da bateria: 12.717
+[2024-06-01 13:04:35] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:04:35] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:04:35] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:04:35] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:04:35] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:04:35] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:04:35] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:04:35] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:04:35] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:04:35] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:04:35] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:04:35] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:04:35] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:04:35] INFO: Dados da bateria gravados.
+[2024-06-01 13:04:35] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-01T13:04:35.313364200
+    |Id componente: 5
+
+[2024-06-01 13:04:35] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:04:35] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:04:35] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:04:35] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:04:35] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:04:35] INFO: O tempo de atividade do sistema operacional foi coletada: 69996
+[2024-06-01 13:04:35] INFO: A permisão do sistema operacional foi coletada: 69996
+[2024-06-01 13:04:35] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-06-01T13:04:35.521468
+    |Id componente: 6
+
+[2024-06-01 13:04:35] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:04:35] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:04:35] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:04:35] INFO: Espaço disponível no volume lógico capturado : 727.0508155822754
+[2024-06-01 13:04:35] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:04:35] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:04:35] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:04:35] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:04:35] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:04:35] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:04:35] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 203,21
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:35.909396900
+    |Id componente: 7
+
+[2024-06-01 13:04:36] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:04:36] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:04:36] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:04:36] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:04:36] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:04:36] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:04:36] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:04:36] INFO: Frequência: 2.4E9
+[2024-06-01 13:04:36] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:04:36] INFO: Uso da CPU: 10.297596812352136
+[2024-06-01 13:04:36] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:04:36] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:36] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:04:36] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:36.527704700
+    |Id componente: 1
+
+[2024-06-01 13:04:36] INFO: Capturando dados do seu HDD
+[2024-06-01 13:04:36] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:04:36] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:04:36] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:04:36] INFO: Escritas do disco: 797.912109375
+[2024-06-01 13:04:36] INFO: Leituras do disco: 1.0522747039794922
+[2024-06-01 13:04:36] INFO: Bytes de escritas do disco: 24.5092716217041
+[2024-06-01 13:04:36] INFO: Bytes de leitura do disco: 40.19317054748535
+[2024-06-01 13:04:36] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:04:36] INFO: Tempo de transferência do disco: 25627.47333333333
+[2024-06-01 13:04:36] INFO: Dados do disco gravados.
+[2024-06-01 13:04:36] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:36.775305400
+    |Id componente: 2
+
+[2024-06-01 13:04:36] INFO: Capturando dados da GPU.
+[2024-06-01 13:04:36] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:04:36] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:04:36] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:04:36] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:04:36] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:04:37] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:37] INFO: Dados da GPU gravados.
+[2024-06-01 13:04:37] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:37.288987900
+    |Id componente: 3
+
+[2024-06-01 13:04:37] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:04:37] INFO: Memória disponível: 1.1739463806152344
+[2024-06-01 13:04:37] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:04:37] INFO: Memória em uso: 6.748161315917969
+[2024-06-01 13:04:37] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:04:37] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 6,75
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:37.502267
+    |Id componente: 4
+
+[2024-06-01 13:04:37] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:04:37] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:04:37] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:04:37] INFO: Número de série da bateria:  2184
+[2024-06-01 13:04:37] INFO: Química da bateria: LiP
+[2024-06-01 13:04:37] INFO: Nome da bateria: System Battery
+[2024-06-01 13:04:37] INFO: Voltagem da bateria: 12.719
+[2024-06-01 13:04:37] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:04:37] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:04:37] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:04:37] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:04:37] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:04:37] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:04:37] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:04:37] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:04:37] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:04:37] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:04:37] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:04:37] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:04:38] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:04:38] INFO: Dados da bateria gravados.
+[2024-06-01 13:04:38] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-01T13:04:38.040353400
+    |Id componente: 5
+
+[2024-06-01 13:04:38] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:04:38] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:04:38] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:04:38] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:04:38] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:04:38] INFO: O tempo de atividade do sistema operacional foi coletada: 69999
+[2024-06-01 13:04:38] INFO: A permisão do sistema operacional foi coletada: 69999
+[2024-06-01 13:04:38] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-06-01T13:04:38.198976500
+    |Id componente: 6
+
+[2024-06-01 13:04:38] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:04:38] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:04:38] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:04:38] INFO: Espaço disponível no volume lógico capturado : 727.0504951477051
+[2024-06-01 13:04:38] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:04:38] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:04:38] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:04:38] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:04:38] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:04:38] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:04:38] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 203,22
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:38.658109400
+    |Id componente: 7
+
+[2024-06-01 13:04:38] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:04:38] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:04:38] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:04:38] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:04:38] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:04:38] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:04:38] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:04:38] INFO: Frequência: 2.4E9
+[2024-06-01 13:04:38] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:04:38] INFO: Uso da CPU: 9.05511811023622
+[2024-06-01 13:04:38] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:04:39] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:39] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:04:39] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:39.245396200
+    |Id componente: 1
+
+[2024-06-01 13:04:39] INFO: Capturando dados do seu HDD
+[2024-06-01 13:04:39] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:04:39] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:04:39] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:04:39] INFO: Escritas do disco: 798.083984375
+[2024-06-01 13:04:39] INFO: Leituras do disco: 1.0523147583007812
+[2024-06-01 13:04:39] INFO: Bytes de escritas do disco: 24.510744094848633
+[2024-06-01 13:04:39] INFO: Bytes de leitura do disco: 40.19504356384277
+[2024-06-01 13:04:39] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:04:39] INFO: Tempo de transferência do disco: 25627.781666666666
+[2024-06-01 13:04:39] INFO: Dados do disco gravados.
+[2024-06-01 13:04:39] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:39.452749700
+    |Id componente: 2
+
+[2024-06-01 13:04:39] INFO: Capturando dados da GPU.
+[2024-06-01 13:04:39] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:04:39] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:04:39] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:04:39] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:04:39] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:04:39] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:39] INFO: Dados da GPU gravados.
+[2024-06-01 13:04:39] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:39.919956800
+    |Id componente: 3
+
+[2024-06-01 13:04:40] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:04:40] INFO: Memória disponível: 1.1710281372070312
+[2024-06-01 13:04:40] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:04:40] INFO: Memória em uso: 6.751079559326172
+[2024-06-01 13:04:40] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:04:40] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 6,75
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:40.061385
+    |Id componente: 4
+
+[2024-06-01 13:04:40] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:04:40] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:04:40] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:04:40] INFO: Número de série da bateria:  2184
+[2024-06-01 13:04:40] INFO: Química da bateria: LiP
+[2024-06-01 13:04:40] INFO: Nome da bateria: System Battery
+[2024-06-01 13:04:40] INFO: Voltagem da bateria: 12.718
+[2024-06-01 13:04:40] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:04:40] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:04:40] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:04:40] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:04:40] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:04:40] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:04:40] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:04:40] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:04:40] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:04:40] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:04:40] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:04:40] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:04:40] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:04:40] INFO: Dados da bateria gravados.
+[2024-06-01 13:04:40] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-01T13:04:40.543232600
+    |Id componente: 5
+
+[2024-06-01 13:04:40] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:04:40] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:04:40] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:04:40] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:04:40] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:04:40] INFO: O tempo de atividade do sistema operacional foi coletada: 70001
+[2024-06-01 13:04:40] INFO: A permisão do sistema operacional foi coletada: 70001
+[2024-06-01 13:04:40] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-06-01T13:04:40.708846900
+    |Id componente: 6
+
+[2024-06-01 13:04:40] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:04:40] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:04:40] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:04:40] INFO: Espaço disponível no volume lógico capturado : 727.0504913330078
+[2024-06-01 13:04:40] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:04:40] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:04:40] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:04:40] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:04:40] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:04:40] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:04:40] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 203,22
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:40.881694300
+    |Id componente: 7
+
+[2024-06-01 13:04:41] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:04:41] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:04:41] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:04:41] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:04:41] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:04:41] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:04:41] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:04:41] INFO: Frequência: 2.4E9
+[2024-06-01 13:04:41] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:04:41] INFO: Uso da CPU: 10.397138628515048
+[2024-06-01 13:04:41] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:04:41] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:41] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:04:41] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:41.560887100
+    |Id componente: 1
+
+[2024-06-01 13:04:41] INFO: Capturando dados do seu HDD
+[2024-06-01 13:04:41] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:04:41] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:04:41] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:04:41] INFO: Escritas do disco: 798.2138671875
+[2024-06-01 13:04:41] INFO: Leituras do disco: 1.0523195266723633
+[2024-06-01 13:04:41] INFO: Bytes de escritas do disco: 24.511964797973633
+[2024-06-01 13:04:41] INFO: Bytes de leitura do disco: 40.195165157318115
+[2024-06-01 13:04:41] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:04:41] INFO: Tempo de transferência do disco: 25627.851944444443
+[2024-06-01 13:04:41] INFO: Dados do disco gravados.
+[2024-06-01 13:04:41] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:41.762027600
+    |Id componente: 2
+
+[2024-06-01 13:04:41] INFO: Capturando dados da GPU.
+[2024-06-01 13:04:41] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:04:41] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:04:41] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:04:41] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:04:41] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:04:42] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:42] INFO: Dados da GPU gravados.
+[2024-06-01 13:04:42] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:42.246515500
+    |Id componente: 3
+
+[2024-06-01 13:04:42] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:04:42] INFO: Memória disponível: 1.1361160278320312
+[2024-06-01 13:04:42] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:04:42] INFO: Memória em uso: 6.785991668701172
+[2024-06-01 13:04:42] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:04:42] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 6,79
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:42.412052500
+    |Id componente: 4
+
+[2024-06-01 13:04:42] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:04:42] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:04:42] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:04:42] INFO: Número de série da bateria:  2184
+[2024-06-01 13:04:42] INFO: Química da bateria: LiP
+[2024-06-01 13:04:42] INFO: Nome da bateria: System Battery
+[2024-06-01 13:04:42] INFO: Voltagem da bateria: 12.717
+[2024-06-01 13:04:42] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:04:42] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:04:42] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:04:42] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:04:42] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:04:42] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:04:42] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:04:42] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:04:42] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:04:42] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:04:42] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:04:42] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:04:42] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:04:42] INFO: Dados da bateria gravados.
+[2024-06-01 13:04:42] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-01T13:04:42.896956300
+    |Id componente: 5
+
+[2024-06-01 13:04:43] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:04:43] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:04:43] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:04:43] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:04:43] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:04:43] INFO: O tempo de atividade do sistema operacional foi coletada: 70003
+[2024-06-01 13:04:43] INFO: A permisão do sistema operacional foi coletada: 70003
+[2024-06-01 13:04:43] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-06-01T13:04:43.054545900
+    |Id componente: 6
+
+[2024-06-01 13:04:43] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:04:43] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:04:43] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:04:43] INFO: Espaço disponível no volume lógico capturado : 727.050178527832
+[2024-06-01 13:04:43] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:04:43] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:04:43] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:04:43] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:04:43] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:04:43] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:04:43] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 203,22
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:43.280268600
+    |Id componente: 7
+
+[2024-06-01 13:04:43] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:04:43] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:04:43] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:04:43] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:04:43] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:04:43] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:04:43] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:04:43] INFO: Frequência: 2.4E9
+[2024-06-01 13:04:43] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:04:43] INFO: Uso da CPU: 7.6
+[2024-06-01 13:04:43] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:04:43] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:43] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:04:43] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:43.931514700
+    |Id componente: 1
+
+[2024-06-01 13:04:44] INFO: Capturando dados do seu HDD
+[2024-06-01 13:04:44] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:04:44] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:04:44] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:04:44] INFO: Escritas do disco: 798.361328125
+[2024-06-01 13:04:44] INFO: Leituras do disco: 1.052321434020996
+[2024-06-01 13:04:44] INFO: Bytes de escritas do disco: 24.513517379760742
+[2024-06-01 13:04:44] INFO: Bytes de leitura do disco: 40.19524145126343
+[2024-06-01 13:04:44] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:04:44] INFO: Tempo de transferência do disco: 25627.91638888889
+[2024-06-01 13:04:44] INFO: Dados do disco gravados.
+[2024-06-01 13:04:44] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:44.165223300
+    |Id componente: 2
+
+[2024-06-01 13:04:44] INFO: Capturando dados da GPU.
+[2024-06-01 13:04:44] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:04:44] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:04:44] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:04:44] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:04:44] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:04:44] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:44] INFO: Dados da GPU gravados.
+[2024-06-01 13:04:44] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:44.609810100
+    |Id componente: 3
+
+[2024-06-01 13:04:44] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:04:44] INFO: Memória disponível: 1.1161689758300781
+[2024-06-01 13:04:44] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:04:44] INFO: Memória em uso: 6.805938720703125
+[2024-06-01 13:04:44] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:04:44] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: MemoriaRam
     |Dado capturado: 6,81
     |Unidade de medida: GB
-    |Data hora captura: 2024-05-31T23:55:22.263358800
+    |Data hora captura: 2024-06-01T13:04:44.822138
     |Id componente: 4
 
-[2024-05-31 23:55:22] INFO: Capturando dados da sua bateria.
-[2024-05-31 23:55:22] INFO: Amperagem da bateria: 0.0
-[2024-05-31 23:55:22] INFO: Nome do dispositivo da bateria: L18M3PF1
-[2024-05-31 23:55:22] INFO: Número de série da bateria:  2184
-[2024-05-31 23:55:22] INFO: Química da bateria: LiP
-[2024-05-31 23:55:22] INFO: Nome da bateria: System Battery
-[2024-05-31 23:55:22] INFO: Voltagem da bateria: 12.74
-[2024-05-31 23:55:22] INFO: Capacidade atual da bateria: 34.140625
-[2024-05-31 23:55:22] INFO: Número de ciclos da bateria: 1133
-[2024-05-31 23:55:22] INFO: Capacidade de design da bateria: 43.9453125
-[2024-05-31 23:55:22] INFO: Unidade de capacidade da bateria: MWH
-[2024-05-31 23:55:22] INFO: Tempo restante da bateria (instantâneo): -1.0
-[2024-05-31 23:55:22] INFO: Tempo restante estimado da bateria: -1.0
-[2024-05-31 23:55:22] INFO: Taxa de uso de energia da bateria: 0.0
-[2024-05-31 23:55:22] INFO: Temperatura da bateria: 0.0
-[2024-05-31 23:55:22] INFO: Capacidade máxima da bateria: 34.140625
-[2024-05-31 23:55:22] INFO: Porcentagem de capacidade restante da bateria: 1.0
-[2024-05-31 23:55:22] INFO: Data de fabricação da bateria: N/A
-[2024-05-31 23:55:22] INFO: Fabricante da bateria: SMP
-[2024-05-31 23:55:22] INFO: Dados da bateria capturados com sucesso: 100.0
-[2024-05-31 23:55:22] INFO: Dados da bateria gravados.
-[2024-05-31 23:55:22] INFO: 
+[2024-06-01 13:04:45] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:04:45] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:04:45] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:04:45] INFO: Número de série da bateria:  2184
+[2024-06-01 13:04:45] INFO: Química da bateria: LiP
+[2024-06-01 13:04:45] INFO: Nome da bateria: System Battery
+[2024-06-01 13:04:45] INFO: Voltagem da bateria: 12.717
+[2024-06-01 13:04:45] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:04:45] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:04:45] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:04:45] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:04:45] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:04:45] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:04:45] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:04:45] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:04:45] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:04:45] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:04:45] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:04:45] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:04:45] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:04:45] INFO: Dados da bateria gravados.
+[2024-06-01 13:04:45] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Bateria
     |Dado capturado: 100,00
     |Unidade de medida: %
-    |Data hora captura: 2024-05-31T23:55:22.812610900
+    |Data hora captura: 2024-06-01T13:04:45.482091800
     |Id componente: 5
 
-[2024-05-31 23:55:22] INFO: Capturando dados do sistema operacional.
-[2024-05-31 23:55:22] INFO: Nome do sistema operacional coletado: Windows
-[2024-05-31 23:55:22] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
-[2024-05-31 23:55:22] INFO: Arquitetura do sistema operacional coletada: 64
-[2024-05-31 23:55:22] INFO: A inicialização do sistema operacional coletada: 64
-[2024-05-31 23:55:22] INFO: O tempo de atividade do sistema operacional foi coletada: 22643
-[2024-05-31 23:55:22] INFO: A permisão do sistema operacional foi coletada: 22643
-[2024-05-31 23:55:22] INFO: 
+[2024-06-01 13:04:45] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:04:45] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:04:45] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:04:45] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:04:45] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:04:45] INFO: O tempo de atividade do sistema operacional foi coletada: 70006
+[2024-06-01 13:04:45] INFO: A permisão do sistema operacional foi coletada: 70006
+[2024-06-01 13:04:45] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: SistemaOp
     |Dado capturado: nu
     |Unidade de medida: null
-    |Data hora captura: 2024-05-31T23:55:22.994174400
+    |Data hora captura: 2024-06-01T13:04:45.829391200
     |Id componente: 6
 
-[2024-05-31 23:55:23] INFO: Capturando dados dos volumes lógicos.
-[2024-05-31 23:55:23] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
-[2024-05-31 23:55:23] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
-[2024-05-31 23:55:23] INFO: Espaço disponível no volume lógico capturado : 727.9653015136719
-[2024-05-31 23:55:23] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
-[2024-05-31 23:55:23] INFO: Tipo do volume lógico capturado: NTFS
-[2024-05-31 23:55:23] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
-[2024-05-31 23:55:23] INFO: Ponto de montagem do volume lógico capturado: C:\
-[2024-05-31 23:55:23] INFO: Dados do volume lógico gravados.
-[2024-05-31 23:55:23] INFO: Todos os volumes lógicos verificados.
-[2024-05-31 23:55:23] INFO: 
+[2024-06-01 13:04:46] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:04:46] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:04:46] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:04:46] INFO: Espaço disponível no volume lógico capturado : 727.0501098632812
+[2024-06-01 13:04:46] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:04:46] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:04:46] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:04:46] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:04:46] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:04:46] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:04:46] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Volume
-    |Dado capturado: 202,30
+    |Dado capturado: 203,22
     |Unidade de medida: GB
-    |Data hora captura: 2024-05-31T23:55:23.191546400
+    |Data hora captura: 2024-06-01T13:04:46.255917300
     |Id componente: 7
 
-[2024-05-31 23:55:23] INFO: Capturando dados da sua CPU.
-[2024-05-31 23:55:23] INFO: Número de CPUs lógicas: 8
-[2024-05-31 23:55:23] INFO: Número de CPUs físicas: 4
-[2024-05-31 23:55:23] INFO: Microarquitetura: Coffee Lake
-[2024-05-31 23:55:23] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
-[2024-05-31 23:55:23] INFO: ID da CPU Looca: BFEBFBFF000906ED
-[2024-05-31 23:55:23] INFO: Fabricante: GenuineIntel
-[2024-05-31 23:55:23] INFO: Frequência: 2.4E9
-[2024-05-31 23:55:23] INFO: Número de pacotes físicos: 1
-[2024-05-31 23:55:23] INFO: Uso da CPU: 17.336621454993832
-[2024-05-31 23:55:23] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
-[2024-05-31 23:55:23] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
-[2024-05-31 23:55:23] INFO: Dados da CPU capturados com sucesso.
-[2024-05-31 23:55:23] INFO: 
+[2024-06-01 13:04:46] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:04:46] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:04:46] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:04:46] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:04:46] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:04:46] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:04:46] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:04:46] INFO: Frequência: 2.4E9
+[2024-06-01 13:04:46] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:04:46] INFO: Uso da CPU: 9.251968503937007
+[2024-06-01 13:04:46] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:04:47] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:47] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:04:47] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: CPU
     |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-05-31T23:55:23.712232
+    |Data hora captura: 2024-06-01T13:04:47.244429700
     |Id componente: 1
 
-[2024-05-31 23:55:23] INFO: Capturando dados do seu HDD
-[2024-05-31 23:55:24] INFO: Nome do disco: \\.\PHYSICALDRIVE0
-[2024-05-31 23:55:24] INFO: Serial do disco:      WD-WX82AA085155
-[2024-05-31 23:55:24] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
-[2024-05-31 23:55:24] INFO: Escritas do disco: 494.1357421875
-[2024-05-31 23:55:24] INFO: Leituras do disco: 629.12890625
-[2024-05-31 23:55:24] INFO: Bytes de escritas do disco: 11.116432666778564
-[2024-05-31 23:55:24] INFO: Bytes de leitura do disco: 19.13315773010254
-[2024-05-31 23:55:24] INFO: Tamanho do disco: 931.51
-[2024-05-31 23:55:24] INFO: Tempo de transferência do disco: 17300.346666666668
-[2024-05-31 23:55:24] INFO: Dados do disco gravados.
-[2024-05-31 23:55:24] INFO: 
+[2024-06-01 13:04:47] INFO: Capturando dados do seu HDD
+[2024-06-01 13:04:47] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:04:47] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:04:47] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:04:47] INFO: Escritas do disco: 798.533203125
+[2024-06-01 13:04:47] INFO: Leituras do disco: 1.0524730682373047
+[2024-06-01 13:04:47] INFO: Bytes de escritas do disco: 24.515077590942383
+[2024-06-01 13:04:47] INFO: Bytes de leitura do disco: 40.201520919799805
+[2024-06-01 13:04:47] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:04:47] INFO: Tempo de transferência do disco: 25630.192222222224
+[2024-06-01 13:04:47] INFO: Dados do disco gravados.
+[2024-06-01 13:04:47] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: HDD
     |Dado capturado: 931,51
     |Unidade de medida: GB
-    |Data hora captura: 2024-05-31T23:55:24.033327300
+    |Data hora captura: 2024-06-01T13:04:47.645121400
     |Id componente: 2
 
-[2024-05-31 23:55:24] INFO: Capturando dados da GPU.
-[2024-05-31 23:55:24] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
-[2024-05-31 23:55:24] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
-[2024-05-31 23:55:24] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
-[2024-05-31 23:55:24] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
-[2024-05-31 23:55:24] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
-[2024-05-31 23:55:24] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
-[2024-05-31 23:55:24] INFO: Dados da GPU gravados.
-[2024-05-31 23:55:24] INFO: 
+[2024-06-01 13:04:47] INFO: Capturando dados da GPU.
+[2024-06-01 13:04:47] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:04:47] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:04:47] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:04:47] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:04:47] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:04:48] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:48] INFO: Dados da GPU gravados.
+[2024-06-01 13:04:48] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: GPU
     |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-05-31T23:55:24.620935100
+    |Data hora captura: 2024-06-01T13:04:48.216575500
     |Id componente: 3
 
-[2024-05-31 23:55:24] INFO: Capturando dados da sua memória RAM.
-[2024-05-31 23:55:24] INFO: Memória disponível: 1.0638694763183594
-[2024-05-31 23:55:24] INFO: Memória total: 7.922107696533203
-[2024-05-31 23:55:24] INFO: Memória em uso: 6.858238220214844
-[2024-05-31 23:55:24] INFO: Dados da memória RAM capturados com sucesso.
-[2024-05-31 23:55:24] INFO: 
+[2024-06-01 13:04:48] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:04:48] INFO: Memória disponível: 1.0801200866699219
+[2024-06-01 13:04:48] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:04:48] INFO: Memória em uso: 6.841987609863281
+[2024-06-01 13:04:48] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:04:48] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: MemoriaRam
-    |Dado capturado: 6,86
+    |Dado capturado: 6,84
     |Unidade de medida: GB
-    |Data hora captura: 2024-05-31T23:55:24.794993900
+    |Data hora captura: 2024-06-01T13:04:48.488258200
     |Id componente: 4
 
-[2024-05-31 23:55:24] INFO: Capturando dados da sua bateria.
-[2024-05-31 23:55:25] INFO: Amperagem da bateria: 0.0
-[2024-05-31 23:55:25] INFO: Nome do dispositivo da bateria: L18M3PF1
-[2024-05-31 23:55:25] INFO: Número de série da bateria:  2184
-[2024-05-31 23:55:25] INFO: Química da bateria: LiP
-[2024-05-31 23:55:25] INFO: Nome da bateria: System Battery
-[2024-05-31 23:55:25] INFO: Voltagem da bateria: 12.738
-[2024-05-31 23:55:25] INFO: Capacidade atual da bateria: 34.140625
-[2024-05-31 23:55:25] INFO: Número de ciclos da bateria: 1133
-[2024-05-31 23:55:25] INFO: Capacidade de design da bateria: 43.9453125
-[2024-05-31 23:55:25] INFO: Unidade de capacidade da bateria: MWH
-[2024-05-31 23:55:25] INFO: Tempo restante da bateria (instantâneo): -1.0
-[2024-05-31 23:55:25] INFO: Tempo restante estimado da bateria: -1.0
-[2024-05-31 23:55:25] INFO: Taxa de uso de energia da bateria: 0.0
-[2024-05-31 23:55:25] INFO: Temperatura da bateria: 0.0
-[2024-05-31 23:55:25] INFO: Capacidade máxima da bateria: 34.140625
-[2024-05-31 23:55:25] INFO: Porcentagem de capacidade restante da bateria: 1.0
-[2024-05-31 23:55:25] INFO: Data de fabricação da bateria: N/A
-[2024-05-31 23:55:25] INFO: Fabricante da bateria: SMP
-[2024-05-31 23:55:25] INFO: Dados da bateria capturados com sucesso: 100.0
-[2024-05-31 23:55:25] INFO: Dados da bateria gravados.
-[2024-05-31 23:55:25] INFO: 
+[2024-06-01 13:04:48] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:04:48] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:04:48] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:04:48] INFO: Número de série da bateria:  2184
+[2024-06-01 13:04:48] INFO: Química da bateria: LiP
+[2024-06-01 13:04:48] INFO: Nome da bateria: System Battery
+[2024-06-01 13:04:48] INFO: Voltagem da bateria: 12.717
+[2024-06-01 13:04:48] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:04:48] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:04:48] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:04:48] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:04:48] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:04:48] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:04:48] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:04:48] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:04:48] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:04:48] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:04:48] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:04:48] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:04:49] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:04:49] INFO: Dados da bateria gravados.
+[2024-06-01 13:04:49] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Bateria
     |Dado capturado: 100,00
     |Unidade de medida: %
-    |Data hora captura: 2024-05-31T23:55:25.316378600
+    |Data hora captura: 2024-06-01T13:04:49.075371500
     |Id componente: 5
 
-[2024-05-31 23:55:25] INFO: Capturando dados do sistema operacional.
-[2024-05-31 23:55:25] INFO: Nome do sistema operacional coletado: Windows
-[2024-05-31 23:55:25] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
-[2024-05-31 23:55:25] INFO: Arquitetura do sistema operacional coletada: 64
-[2024-05-31 23:55:25] INFO: A inicialização do sistema operacional coletada: 64
-[2024-05-31 23:55:25] INFO: O tempo de atividade do sistema operacional foi coletada: 22646
-[2024-05-31 23:55:25] INFO: A permisão do sistema operacional foi coletada: 22646
-[2024-05-31 23:55:25] INFO: 
+[2024-06-01 13:04:49] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:04:49] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:04:49] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:04:49] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:04:49] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:04:49] INFO: O tempo de atividade do sistema operacional foi coletada: 70010
+[2024-06-01 13:04:49] INFO: A permisão do sistema operacional foi coletada: 70010
+[2024-06-01 13:04:49] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: SistemaOp
     |Dado capturado: nu
     |Unidade de medida: null
-    |Data hora captura: 2024-05-31T23:55:25.476612800
+    |Data hora captura: 2024-06-01T13:04:49.334919300
     |Id componente: 6
 
-[2024-05-31 23:55:25] INFO: Capturando dados dos volumes lógicos.
-[2024-05-31 23:55:25] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
-[2024-05-31 23:55:25] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
-[2024-05-31 23:55:25] INFO: Espaço disponível no volume lógico capturado : 727.9651718139648
-[2024-05-31 23:55:25] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
-[2024-05-31 23:55:25] INFO: Tipo do volume lógico capturado: NTFS
-[2024-05-31 23:55:25] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
-[2024-05-31 23:55:25] INFO: Ponto de montagem do volume lógico capturado: C:\
-[2024-05-31 23:55:25] INFO: Dados do volume lógico gravados.
-[2024-05-31 23:55:25] INFO: Todos os volumes lógicos verificados.
-[2024-05-31 23:55:25] INFO: 
+[2024-06-01 13:04:49] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:04:49] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:04:49] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:04:49] INFO: Espaço disponível no volume lógico capturado : 727.0499153137207
+[2024-06-01 13:04:49] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:04:49] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:04:49] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:04:49] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:04:49] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:04:49] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:04:49] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Volume
-    |Dado capturado: 202,30
+    |Dado capturado: 203,22
     |Unidade de medida: GB
-    |Data hora captura: 2024-05-31T23:55:25.672845400
+    |Data hora captura: 2024-06-01T13:04:49.617733800
     |Id componente: 7
 
+[2024-06-01 13:04:49] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:04:49] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:04:49] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:04:49] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:04:49] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:04:49] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:04:49] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:04:49] INFO: Frequência: 2.4E9
+[2024-06-01 13:04:49] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:04:49] INFO: Uso da CPU: 5.252626313156578
+[2024-06-01 13:04:49] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:04:50] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:50] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:04:50] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:50.129141500
+    |Id componente: 1
+
+[2024-06-01 13:04:50] INFO: Capturando dados do seu HDD
+[2024-06-01 13:04:50] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:04:50] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:04:50] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:04:50] INFO: Escritas do disco: 798.7001953125
+[2024-06-01 13:04:50] INFO: Leituras do disco: 1.0525693893432617
+[2024-06-01 13:04:50] INFO: Bytes de escritas do disco: 24.516347885131836
+[2024-06-01 13:04:50] INFO: Bytes de leitura do disco: 40.203824520111084
+[2024-06-01 13:04:50] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:04:50] INFO: Tempo de transferência do disco: 25630.951666666668
+[2024-06-01 13:04:50] INFO: Dados do disco gravados.
+[2024-06-01 13:04:50] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:50.323742200
+    |Id componente: 2
+
+[2024-06-01 13:04:50] INFO: Capturando dados da GPU.
+[2024-06-01 13:04:50] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:04:50] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:04:50] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:04:50] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:04:50] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:04:50] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:50] INFO: Dados da GPU gravados.
+[2024-06-01 13:04:50] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:50.754500100
+    |Id componente: 3
+
+[2024-06-01 13:04:50] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:04:50] INFO: Memória disponível: 1.0657615661621094
+[2024-06-01 13:04:50] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:04:50] INFO: Memória em uso: 6.856346130371094
+[2024-06-01 13:04:50] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:04:50] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 6,86
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:50.922311200
+    |Id componente: 4
+
+[2024-06-01 13:04:51] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:04:51] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:04:51] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:04:51] INFO: Número de série da bateria:  2184
+[2024-06-01 13:04:51] INFO: Química da bateria: LiP
+[2024-06-01 13:04:51] INFO: Nome da bateria: System Battery
+[2024-06-01 13:04:51] INFO: Voltagem da bateria: 12.717
+[2024-06-01 13:04:51] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:04:51] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:04:51] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:04:51] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:04:51] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:04:51] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:04:51] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:04:51] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:04:51] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:04:51] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:04:51] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:04:51] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:04:51] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:04:51] INFO: Dados da bateria gravados.
+[2024-06-01 13:04:51] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-01T13:04:51.383160700
+    |Id componente: 5
+
+[2024-06-01 13:04:51] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:04:51] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:04:51] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:04:51] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:04:51] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:04:51] INFO: O tempo de atividade do sistema operacional foi coletada: 70012
+[2024-06-01 13:04:51] INFO: A permisão do sistema operacional foi coletada: 70012
+[2024-06-01 13:04:51] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-06-01T13:04:51.572796500
+    |Id componente: 6
+
+[2024-06-01 13:04:51] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:04:51] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:04:51] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:04:51] INFO: Espaço disponível no volume lógico capturado : 727.0497245788574
+[2024-06-01 13:04:51] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:04:51] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:04:51] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:04:51] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:04:51] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:04:51] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:04:51] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 203,22
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:51.744917500
+    |Id componente: 7
+
+[2024-06-01 13:04:52] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:04:52] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:04:52] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:04:52] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:04:52] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:04:52] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:04:52] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:04:52] INFO: Frequência: 2.4E9
+[2024-06-01 13:04:52] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:04:52] INFO: Uso da CPU: 5.663915978994749
+[2024-06-01 13:04:52] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:04:52] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:52] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:04:52] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:52.816126500
+    |Id componente: 1
+
+[2024-06-01 13:04:52] INFO: Capturando dados do seu HDD
+[2024-06-01 13:04:53] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:04:53] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:04:53] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:04:53] INFO: Escritas do disco: 798.837890625
+[2024-06-01 13:04:53] INFO: Leituras do disco: 1.052572250366211
+[2024-06-01 13:04:53] INFO: Bytes de escritas do disco: 24.517526626586914
+[2024-06-01 13:04:53] INFO: Bytes de leitura do disco: 40.203980922698975
+[2024-06-01 13:04:53] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:04:53] INFO: Tempo de transferência do disco: 25631.050277777777
+[2024-06-01 13:04:53] INFO: Dados do disco gravados.
+[2024-06-01 13:04:53] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:53.027314800
+    |Id componente: 2
+
+[2024-06-01 13:04:53] INFO: Capturando dados da GPU.
+[2024-06-01 13:04:53] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:04:53] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:04:53] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:04:53] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:04:53] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:04:53] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:53] INFO: Dados da GPU gravados.
+[2024-06-01 13:04:53] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:53.678487900
+    |Id componente: 3
+
+[2024-06-01 13:04:53] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:04:53] INFO: Memória disponível: 1.0449485778808594
+[2024-06-01 13:04:53] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:04:53] INFO: Memória em uso: 6.877159118652344
+[2024-06-01 13:04:53] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:04:53] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 6,88
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:53.841155500
+    |Id componente: 4
+
+[2024-06-01 13:04:54] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:04:54] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:04:54] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:04:54] INFO: Número de série da bateria:  2184
+[2024-06-01 13:04:54] INFO: Química da bateria: LiP
+[2024-06-01 13:04:54] INFO: Nome da bateria: System Battery
+[2024-06-01 13:04:54] INFO: Voltagem da bateria: 12.718
+[2024-06-01 13:04:54] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:04:54] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:04:54] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:04:54] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:04:54] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:04:54] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:04:54] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:04:54] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:04:54] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:04:54] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:04:54] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:04:54] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:04:54] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:04:54] INFO: Dados da bateria gravados.
+[2024-06-01 13:04:54] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-01T13:04:54.376265700
+    |Id componente: 5
+
+[2024-06-01 13:04:54] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:04:54] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:04:54] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:04:54] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:04:54] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:04:54] INFO: O tempo de atividade do sistema operacional foi coletada: 70015
+[2024-06-01 13:04:54] INFO: A permisão do sistema operacional foi coletada: 70015
+[2024-06-01 13:04:54] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-06-01T13:04:54.567165100
+    |Id componente: 6
+
+[2024-06-01 13:04:54] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:04:54] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:04:54] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:04:54] INFO: Espaço disponível no volume lógico capturado : 727.0495948791504
+[2024-06-01 13:04:54] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:04:54] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:04:54] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:04:54] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:04:54] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:04:54] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:04:54] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 203,22
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:54.762403600
+    |Id componente: 7
+
+[2024-06-01 13:04:55] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:04:55] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:04:55] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:04:55] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:04:55] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:04:55] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:04:55] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:04:55] INFO: Frequência: 2.4E9
+[2024-06-01 13:04:55] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:04:55] INFO: Uso da CPU: 8.650178417620278
+[2024-06-01 13:04:55] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:04:55] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:55] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:04:55] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:55.811821300
+    |Id componente: 1
+
+[2024-06-01 13:04:55] INFO: Capturando dados do seu HDD
+[2024-06-01 13:04:56] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:04:56] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:04:56] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:04:56] INFO: Escritas do disco: 798.98046875
+[2024-06-01 13:04:56] INFO: Leituras do disco: 1.0525856018066406
+[2024-06-01 13:04:56] INFO: Bytes de escritas do disco: 24.518831253051758
+[2024-06-01 13:04:56] INFO: Bytes de leitura do disco: 40.20464468002319
+[2024-06-01 13:04:56] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:04:56] INFO: Tempo de transferência do disco: 25631.226666666666
+[2024-06-01 13:04:56] INFO: Dados do disco gravados.
+[2024-06-01 13:04:56] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:56.020608500
+    |Id componente: 2
+
+[2024-06-01 13:04:56] INFO: Capturando dados da GPU.
+[2024-06-01 13:04:56] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:04:56] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:04:56] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:04:56] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:04:56] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:04:56] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:56] INFO: Dados da GPU gravados.
+[2024-06-01 13:04:56] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:56.492326800
+    |Id componente: 3
+
+[2024-06-01 13:04:56] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:04:56] INFO: Memória disponível: 1.0350189208984375
+[2024-06-01 13:04:56] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:04:56] INFO: Memória em uso: 6.887088775634766
+[2024-06-01 13:04:56] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:04:56] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 6,89
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:56.839260700
+    |Id componente: 4
+
+[2024-06-01 13:04:57] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:04:57] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:04:57] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:04:57] INFO: Número de série da bateria:  2184
+[2024-06-01 13:04:57] INFO: Química da bateria: LiP
+[2024-06-01 13:04:57] INFO: Nome da bateria: System Battery
+[2024-06-01 13:04:57] INFO: Voltagem da bateria: 12.717
+[2024-06-01 13:04:57] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:04:57] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:04:57] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:04:57] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:04:57] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:04:57] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:04:57] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:04:57] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:04:57] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:04:57] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:04:57] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:04:57] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:04:57] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:04:57] INFO: Dados da bateria gravados.
+[2024-06-01 13:04:57] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-01T13:04:57.384516100
+    |Id componente: 5
+
+[2024-06-01 13:04:57] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:04:57] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:04:57] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:04:57] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:04:57] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:04:57] INFO: O tempo de atividade do sistema operacional foi coletada: 70018
+[2024-06-01 13:04:57] INFO: A permisão do sistema operacional foi coletada: 70018
+[2024-06-01 13:04:57] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-06-01T13:04:57.551519900
+    |Id componente: 6
+
+[2024-06-01 13:04:57] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:04:57] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:04:57] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:04:57] INFO: Espaço disponível no volume lógico capturado : 727.0492401123047
+[2024-06-01 13:04:57] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:04:57] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:04:57] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:04:57] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:04:57] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:04:57] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:04:57] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 203,22
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:57.866159800
+    |Id componente: 7
+
+[2024-06-01 13:04:58] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:04:58] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:04:58] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:04:58] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:04:58] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:04:58] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:04:58] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:04:58] INFO: Frequência: 2.4E9
+[2024-06-01 13:04:58] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:04:58] INFO: Uso da CPU: 6.648372209055757
+[2024-06-01 13:04:58] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:04:58] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:58] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:04:58] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:58.939979200
+    |Id componente: 1
+
+[2024-06-01 13:04:59] INFO: Capturando dados do seu HDD
+[2024-06-01 13:04:59] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:04:59] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:04:59] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:04:59] INFO: Escritas do disco: 799.14453125
+[2024-06-01 13:04:59] INFO: Leituras do disco: 1.0526132583618164
+[2024-06-01 13:04:59] INFO: Bytes de escritas do disco: 24.52146339416504
+[2024-06-01 13:04:59] INFO: Bytes de leitura do disco: 40.206743240356445
+[2024-06-01 13:04:59] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:04:59] INFO: Tempo de transferência do disco: 25631.770277777778
+[2024-06-01 13:04:59] INFO: Dados do disco gravados.
+[2024-06-01 13:04:59] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:59.218244100
+    |Id componente: 2
+
+[2024-06-01 13:04:59] INFO: Capturando dados da GPU.
+[2024-06-01 13:04:59] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:04:59] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:04:59] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:04:59] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:04:59] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:04:59] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:04:59] INFO: Dados da GPU gravados.
+[2024-06-01 13:04:59] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:04:59.716408100
+    |Id componente: 3
+
+[2024-06-01 13:04:59] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:04:59] INFO: Memória disponível: 1.0002937316894531
+[2024-06-01 13:04:59] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:04:59] INFO: Memória em uso: 6.92181396484375
+[2024-06-01 13:04:59] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:04:59] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 6,92
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:04:59.889684500
+    |Id componente: 4
+
+[2024-06-01 13:05:00] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:05:00] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:05:00] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:05:00] INFO: Número de série da bateria:  2184
+[2024-06-01 13:05:00] INFO: Química da bateria: LiP
+[2024-06-01 13:05:00] INFO: Nome da bateria: System Battery
+[2024-06-01 13:05:00] INFO: Voltagem da bateria: 12.717
+[2024-06-01 13:05:00] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:05:00] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:05:00] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:05:00] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:05:00] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:05:00] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:05:00] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:05:00] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:05:00] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:05:00] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:05:00] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:05:00] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:05:00] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:05:00] INFO: Dados da bateria gravados.
+[2024-06-01 13:05:00] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-01T13:05:00.348766300
+    |Id componente: 5
+
+[2024-06-01 13:05:00] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:05:00] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:05:00] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:05:00] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:05:00] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:05:00] INFO: O tempo de atividade do sistema operacional foi coletada: 70021
+[2024-06-01 13:05:00] INFO: A permisão do sistema operacional foi coletada: 70021
+[2024-06-01 13:05:00] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-06-01T13:05:00.496099400
+    |Id componente: 6
+
+[2024-06-01 13:05:00] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:05:00] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:05:00] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:05:00] INFO: Espaço disponível no volume lógico capturado : 727.0489921569824
+[2024-06-01 13:05:00] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:05:00] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:05:00] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:05:00] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:05:00] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:05:00] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:05:00] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 203,22
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:00.667784200
+    |Id componente: 7
+
+[2024-06-01 13:05:01] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:05:01] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:05:01] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:05:01] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:05:01] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:05:01] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:05:01] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:05:01] INFO: Frequência: 2.4E9
+[2024-06-01 13:05:01] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:05:01] INFO: Uso da CPU: 5.0086143243908445
+[2024-06-01 13:05:01] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:05:01] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:05:01] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:05:01] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:05:01.781840200
+    |Id componente: 1
+
+[2024-06-01 13:05:01] INFO: Capturando dados do seu HDD
+[2024-06-01 13:05:01] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:05:01] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:05:01] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:05:01] INFO: Escritas do disco: 799.2841796875
+[2024-06-01 13:05:01] INFO: Leituras do disco: 1.0526161193847656
+[2024-06-01 13:05:01] INFO: Bytes de escritas do disco: 24.522668838500977
+[2024-06-01 13:05:01] INFO: Bytes de leitura do disco: 40.20689582824707
+[2024-06-01 13:05:01] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:05:01] INFO: Tempo de transferência do disco: 25631.946111111112
+[2024-06-01 13:05:01] INFO: Dados do disco gravados.
+[2024-06-01 13:05:01] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:01.976594400
+    |Id componente: 2
+
+[2024-06-01 13:05:02] INFO: Capturando dados da GPU.
+[2024-06-01 13:05:02] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:05:02] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:05:02] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:05:02] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:05:02] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:05:02] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:05:02] INFO: Dados da GPU gravados.
+[2024-06-01 13:05:02] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:05:02.485916100
+    |Id componente: 3
+
+[2024-06-01 13:05:02] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:05:02] INFO: Memória disponível: 986.74609375
+[2024-06-01 13:05:02] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:05:02] INFO: Memória em uso: 6.958488464355469
+[2024-06-01 13:05:02] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:05:02] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 6,96
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:02.660510100
+    |Id componente: 4
+
+[2024-06-01 13:05:02] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:05:02] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:05:02] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:05:02] INFO: Número de série da bateria:  2184
+[2024-06-01 13:05:02] INFO: Química da bateria: LiP
+[2024-06-01 13:05:02] INFO: Nome da bateria: System Battery
+[2024-06-01 13:05:02] INFO: Voltagem da bateria: 12.717
+[2024-06-01 13:05:02] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:05:02] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:05:02] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:05:02] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:05:02] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:05:02] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:05:02] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:05:02] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:05:02] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:05:02] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:05:02] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:05:02] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:05:03] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:05:03] INFO: Dados da bateria gravados.
+[2024-06-01 13:05:03] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-01T13:05:03.136280200
+    |Id componente: 5
+
+[2024-06-01 13:05:03] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:05:03] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:05:03] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:05:03] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:05:03] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:05:03] INFO: O tempo de atividade do sistema operacional foi coletada: 70024
+[2024-06-01 13:05:03] INFO: A permisão do sistema operacional foi coletada: 70024
+[2024-06-01 13:05:03] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-06-01T13:05:03.361129400
+    |Id componente: 6
+
+[2024-06-01 13:05:03] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:05:03] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:05:03] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:05:03] INFO: Espaço disponível no volume lógico capturado : 727.0488624572754
+[2024-06-01 13:05:03] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:05:03] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:05:03] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:05:03] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:05:03] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:05:03] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:05:03] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 203,22
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:03.621252100
+    |Id componente: 7
+
+[2024-06-01 13:05:04] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:05:04] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:05:04] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:05:04] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:05:04] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:05:04] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:05:04] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:05:04] INFO: Frequência: 2.4E9
+[2024-06-01 13:05:04] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:05:04] INFO: Uso da CPU: 7.425
+[2024-06-01 13:05:04] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:05:04] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:05:04] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:05:04] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:05:04.800876300
+    |Id componente: 1
+
+[2024-06-01 13:05:04] INFO: Capturando dados do seu HDD
+[2024-06-01 13:05:05] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:05:05] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:05:05] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:05:05] INFO: Escritas do disco: 799.4208984375
+[2024-06-01 13:05:05] INFO: Leituras do disco: 1.0526256561279297
+[2024-06-01 13:05:05] INFO: Bytes de escritas do disco: 24.5240535736084
+[2024-06-01 13:05:05] INFO: Bytes de leitura do disco: 40.20735740661621
+[2024-06-01 13:05:05] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:05:05] INFO: Tempo de transferência do disco: 25632.114444444444
+[2024-06-01 13:05:05] INFO: Dados do disco gravados.
+[2024-06-01 13:05:05] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:05.019513500
+    |Id componente: 2
+
+[2024-06-01 13:05:05] INFO: Capturando dados da GPU.
+[2024-06-01 13:05:05] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:05:05] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:05:05] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:05:05] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:05:05] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:05:05] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:05:05] INFO: Dados da GPU gravados.
+[2024-06-01 13:05:05] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:05:05.497464600
+    |Id componente: 3
+
+[2024-06-01 13:05:05] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:05:05] INFO: Memória disponível: 962.9921875
+[2024-06-01 13:05:05] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:05:05] INFO: Memória em uso: 6.981685638427734
+[2024-06-01 13:05:05] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:05:05] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 6,98
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:05.708614900
+    |Id componente: 4
+
+[2024-06-01 13:05:05] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:05:05] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:05:05] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:05:05] INFO: Número de série da bateria:  2184
+[2024-06-01 13:05:05] INFO: Química da bateria: LiP
+[2024-06-01 13:05:05] INFO: Nome da bateria: System Battery
+[2024-06-01 13:05:05] INFO: Voltagem da bateria: 12.717
+[2024-06-01 13:05:05] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:05:05] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:05:05] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:05:05] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:05:05] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:05:05] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:05:05] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:05:05] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:05:05] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:05:05] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:05:05] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:05:05] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:05:06] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:05:06] INFO: Dados da bateria gravados.
+[2024-06-01 13:05:06] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-01T13:05:06.193276500
+    |Id componente: 5
+
+[2024-06-01 13:05:06] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:05:06] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:05:06] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:05:06] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:05:06] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:05:06] INFO: O tempo de atividade do sistema operacional foi coletada: 70027
+[2024-06-01 13:05:06] INFO: A permisão do sistema operacional foi coletada: 70027
+[2024-06-01 13:05:06] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-06-01T13:05:06.428571100
+    |Id componente: 6
+
+[2024-06-01 13:05:06] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:05:06] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:05:06] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:05:06] INFO: Espaço disponível no volume lógico capturado : 727.0487327575684
+[2024-06-01 13:05:06] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:05:06] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:05:06] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:05:06] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:05:06] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:05:06] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:05:06] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 203,22
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:06.685680900
+    |Id componente: 7
+
+[2024-06-01 13:05:07] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:05:07] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:05:07] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:05:07] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:05:07] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:05:07] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:05:07] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:05:07] INFO: Frequência: 2.4E9
+[2024-06-01 13:05:07] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:05:07] INFO: Uso da CPU: 4.455260202171472
+[2024-06-01 13:05:07] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:05:07] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:05:07] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:05:07] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:05:07.792261600
+    |Id componente: 1
+
+[2024-06-01 13:05:08] INFO: Capturando dados do seu HDD
+[2024-06-01 13:05:08] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:05:08] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:05:08] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:05:08] INFO: Escritas do disco: 799.8583984375
+[2024-06-01 13:05:08] INFO: Leituras do disco: 1.0526294708251953
+[2024-06-01 13:05:08] INFO: Bytes de escritas do disco: 24.531267166137695
+[2024-06-01 13:05:08] INFO: Bytes de leitura do disco: 40.207502365112305
+[2024-06-01 13:05:08] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:05:08] INFO: Tempo de transferência do disco: 25633.698888888888
+[2024-06-01 13:05:08] INFO: Dados do disco gravados.
+[2024-06-01 13:05:08] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:08.172598900
+    |Id componente: 2
+
+[2024-06-01 13:05:08] INFO: Capturando dados da GPU.
+[2024-06-01 13:05:08] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:05:08] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:05:08] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:05:08] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:05:08] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:05:08] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:05:08] INFO: Dados da GPU gravados.
+[2024-06-01 13:05:08] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:05:08.742239500
+    |Id componente: 3
+
+[2024-06-01 13:05:08] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:05:08] INFO: Memória disponível: 920.42578125
+[2024-06-01 13:05:08] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:05:08] INFO: Memória em uso: 7.02325439453125
+[2024-06-01 13:05:08] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:05:08] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,02
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:08.904592700
+    |Id componente: 4
+
+[2024-06-01 13:05:09] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:05:09] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:05:09] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:05:09] INFO: Número de série da bateria:  2184
+[2024-06-01 13:05:09] INFO: Química da bateria: LiP
+[2024-06-01 13:05:09] INFO: Nome da bateria: System Battery
+[2024-06-01 13:05:09] INFO: Voltagem da bateria: 12.718
+[2024-06-01 13:05:09] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:05:09] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:05:09] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:05:09] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:05:09] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:05:09] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:05:09] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:05:09] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:05:09] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:05:09] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:05:09] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:05:09] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:05:09] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:05:09] INFO: Dados da bateria gravados.
+[2024-06-01 13:05:09] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-01T13:05:09.403483900
+    |Id componente: 5
+
+[2024-06-01 13:05:09] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:05:09] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:05:09] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:05:09] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:05:09] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:05:09] INFO: O tempo de atividade do sistema operacional foi coletada: 70030
+[2024-06-01 13:05:09] INFO: A permisão do sistema operacional foi coletada: 70030
+[2024-06-01 13:05:09] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-06-01T13:05:09.548143800
+    |Id componente: 6
+
+[2024-06-01 13:05:09] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:05:09] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:05:09] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:05:09] INFO: Espaço disponível no volume lógico capturado : 727.0484809875488
+[2024-06-01 13:05:09] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:05:09] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:05:09] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:05:09] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:05:09] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:05:09] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:05:09] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 203,22
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:09.756114200
+    |Id componente: 7
+
+[2024-06-01 13:05:10] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:05:10] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:05:10] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:05:10] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:05:10] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:05:10] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:05:10] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:05:10] INFO: Frequência: 2.4E9
+[2024-06-01 13:05:10] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:05:10] INFO: Uso da CPU: 5.563093622795115
+[2024-06-01 13:05:10] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:05:10] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:05:10] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:05:10] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:05:10.796180100
+    |Id componente: 1
+
+[2024-06-01 13:05:10] INFO: Capturando dados do seu HDD
+[2024-06-01 13:05:11] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:05:11] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:05:11] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:05:11] INFO: Escritas do disco: 800.041015625
+[2024-06-01 13:05:11] INFO: Leituras do disco: 1.0526418685913086
+[2024-06-01 13:05:11] INFO: Bytes de escritas do disco: 24.53354835510254
+[2024-06-01 13:05:11] INFO: Bytes de leitura do disco: 40.2081241607666
+[2024-06-01 13:05:11] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:05:11] INFO: Tempo de transferência do disco: 25634.166944444445
+[2024-06-01 13:05:11] INFO: Dados do disco gravados.
+[2024-06-01 13:05:11] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:11.018501600
+    |Id componente: 2
+
+[2024-06-01 13:05:11] INFO: Capturando dados da GPU.
+[2024-06-01 13:05:11] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:05:11] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:05:11] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:05:11] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:05:11] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:05:11] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:05:11] INFO: Dados da GPU gravados.
+[2024-06-01 13:05:11] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:05:11.482109900
+    |Id componente: 3
+
+[2024-06-01 13:05:11] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:05:11] INFO: Memória disponível: 887.03515625
+[2024-06-01 13:05:11] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:05:11] INFO: Memória em uso: 7.0558624267578125
+[2024-06-01 13:05:11] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:05:11] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,06
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:11.673125100
+    |Id componente: 4
+
+[2024-06-01 13:05:11] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:05:11] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:05:11] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:05:11] INFO: Número de série da bateria:  2184
+[2024-06-01 13:05:11] INFO: Química da bateria: LiP
+[2024-06-01 13:05:11] INFO: Nome da bateria: System Battery
+[2024-06-01 13:05:11] INFO: Voltagem da bateria: 12.717
+[2024-06-01 13:05:11] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:05:11] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:05:11] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:05:11] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:05:11] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:05:11] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:05:11] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:05:11] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:05:11] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:05:11] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:05:11] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:05:11] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:05:12] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:05:12] INFO: Dados da bateria gravados.
+[2024-06-01 13:05:12] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-01T13:05:12.181025300
+    |Id componente: 5
+
+[2024-06-01 13:05:12] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:05:12] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:05:12] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:05:12] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:05:12] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:05:12] INFO: O tempo de atividade do sistema operacional foi coletada: 70033
+[2024-06-01 13:05:12] INFO: A permisão do sistema operacional foi coletada: 70033
+[2024-06-01 13:05:12] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-06-01T13:05:12.363018900
+    |Id componente: 6
+
+[2024-06-01 13:05:12] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:05:12] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:05:12] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:05:12] INFO: Espaço disponível no volume lógico capturado : 727.0483551025391
+[2024-06-01 13:05:12] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:05:12] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:05:12] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:05:12] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:05:12] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:05:12] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:05:12] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 203,22
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:12.534031200
+    |Id componente: 7
+
+[2024-06-01 13:05:13] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:05:13] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:05:13] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:05:13] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:05:13] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:05:13] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:05:13] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:05:13] INFO: Frequência: 2.4E9
+[2024-06-01 13:05:13] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:05:13] INFO: Uso da CPU: 5.193846153846153
+[2024-06-01 13:05:13] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:05:13] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:05:13] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:05:13] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:05:13.813750800
+    |Id componente: 1
+
+[2024-06-01 13:05:14] INFO: Capturando dados do seu HDD
+[2024-06-01 13:05:14] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:05:14] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:05:14] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:05:14] INFO: Escritas do disco: 800.1708984375
+[2024-06-01 13:05:14] INFO: Leituras do disco: 1.052663803100586
+[2024-06-01 13:05:14] INFO: Bytes de escritas do disco: 24.534963607788086
+[2024-06-01 13:05:14] INFO: Bytes de leitura do disco: 40.2087926864624
+[2024-06-01 13:05:14] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:05:14] INFO: Tempo de transferência do disco: 25634.42027777778
+[2024-06-01 13:05:14] INFO: Dados do disco gravados.
+[2024-06-01 13:05:14] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:14.175712100
+    |Id componente: 2
+
+[2024-06-01 13:05:14] INFO: Capturando dados da GPU.
+[2024-06-01 13:05:14] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:05:14] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:05:14] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:05:14] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:05:14] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:05:14] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:05:14] INFO: Dados da GPU gravados.
+[2024-06-01 13:05:14] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:05:14.863727900
+    |Id componente: 3
+
+[2024-06-01 13:05:15] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:05:15] INFO: Memória disponível: 882.71875
+[2024-06-01 13:05:15] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:05:15] INFO: Memória em uso: 7.060077667236328
+[2024-06-01 13:05:15] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:05:15] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,06
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:15.113506900
+    |Id componente: 4
+
+[2024-06-01 13:05:15] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:05:15] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:05:15] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:05:15] INFO: Número de série da bateria:  2184
+[2024-06-01 13:05:15] INFO: Química da bateria: LiP
+[2024-06-01 13:05:15] INFO: Nome da bateria: System Battery
+[2024-06-01 13:05:15] INFO: Voltagem da bateria: 12.717
+[2024-06-01 13:05:15] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:05:15] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:05:15] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:05:15] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:05:15] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:05:15] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:05:15] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:05:15] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:05:15] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:05:15] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:05:15] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:05:15] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:05:15] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:05:15] INFO: Dados da bateria gravados.
+[2024-06-01 13:05:15] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-01T13:05:15.620758600
+    |Id componente: 5
+
+[2024-06-01 13:05:15] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:05:15] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:05:15] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:05:15] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:05:15] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:05:15] INFO: O tempo de atividade do sistema operacional foi coletada: 70036
+[2024-06-01 13:05:15] INFO: A permisão do sistema operacional foi coletada: 70036
+[2024-06-01 13:05:15] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-06-01T13:05:15.805946200
+    |Id componente: 6
+
+[2024-06-01 13:05:15] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:05:15] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:05:15] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:05:15] INFO: Espaço disponível no volume lógico capturado : 727.0481033325195
+[2024-06-01 13:05:15] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:05:15] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:05:15] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:05:15] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:05:15] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:05:15] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:05:15] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 203,22
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:15.999251600
+    |Id componente: 7
+
+[2024-06-01 13:05:16] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:05:16] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:05:16] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:05:16] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:05:16] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:05:16] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:05:16] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:05:16] INFO: Frequência: 2.4E9
+[2024-06-01 13:05:16] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:05:16] INFO: Uso da CPU: 4.8313357222290865
+[2024-06-01 13:05:16] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:05:16] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:05:16] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:05:16] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:05:16.787042600
+    |Id componente: 1
+
+[2024-06-01 13:05:16] INFO: Capturando dados do seu HDD
+[2024-06-01 13:05:16] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:05:16] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:05:16] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:05:16] INFO: Escritas do disco: 800.3134765625
+[2024-06-01 13:05:17] INFO: Leituras do disco: 1.0527009963989258
+[2024-06-01 13:05:17] INFO: Bytes de escritas do disco: 24.536672592163086
+[2024-06-01 13:05:17] INFO: Bytes de leitura do disco: 40.209757804870605
+[2024-06-01 13:05:17] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:05:17] INFO: Tempo de transferência do disco: 25634.793333333335
+[2024-06-01 13:05:17] INFO: Dados do disco gravados.
+[2024-06-01 13:05:17] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:17.007903600
+    |Id componente: 2
+
+[2024-06-01 13:05:17] INFO: Capturando dados da GPU.
+[2024-06-01 13:05:17] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:05:17] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:05:17] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:05:17] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:05:17] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:05:17] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:05:17] INFO: Dados da GPU gravados.
+[2024-06-01 13:05:17] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:05:17.490226200
+    |Id componente: 3
+
+[2024-06-01 13:05:17] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:05:17] INFO: Memória disponível: 844.609375
+[2024-06-01 13:05:17] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:05:17] INFO: Memória em uso: 7.097293853759766
+[2024-06-01 13:05:17] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:05:17] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,10
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:17.640826
+    |Id componente: 4
+
+[2024-06-01 13:05:17] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:05:17] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:05:17] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:05:17] INFO: Número de série da bateria:  2184
+[2024-06-01 13:05:17] INFO: Química da bateria: LiP
+[2024-06-01 13:05:17] INFO: Nome da bateria: System Battery
+[2024-06-01 13:05:17] INFO: Voltagem da bateria: 12.717
+[2024-06-01 13:05:17] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:05:17] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:05:17] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:05:17] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:05:17] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:05:17] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:05:17] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:05:17] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:05:17] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:05:17] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:05:17] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:05:17] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:05:18] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:05:18] INFO: Dados da bateria gravados.
+[2024-06-01 13:05:18] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-01T13:05:18.096692700
+    |Id componente: 5
+
+[2024-06-01 13:05:18] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:05:18] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:05:18] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:05:18] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:05:18] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:05:18] INFO: O tempo de atividade do sistema operacional foi coletada: 70039
+[2024-06-01 13:05:18] INFO: A permisão do sistema operacional foi coletada: 70039
+[2024-06-01 13:05:18] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-06-01T13:05:18.277142800
+    |Id componente: 6
+
+[2024-06-01 13:05:18] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:05:18] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:05:18] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:05:18] INFO: Espaço disponível no volume lógico capturado : 727.0479125976562
+[2024-06-01 13:05:18] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:05:18] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:05:18] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:05:18] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:05:18] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:05:18] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:05:18] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 203,22
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:18.461424
+    |Id componente: 7
+
+[2024-06-01 13:05:19] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:05:19] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:05:19] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:05:19] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:05:19] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:05:19] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:05:19] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:05:19] INFO: Frequência: 2.4E9
+[2024-06-01 13:05:19] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:05:19] INFO: Uso da CPU: 5.969230769230769
+[2024-06-01 13:05:19] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:05:19] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:05:19] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:05:19] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:05:19.862898200
+    |Id componente: 1
+
+[2024-06-01 13:05:20] INFO: Capturando dados do seu HDD
+[2024-06-01 13:05:20] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:05:20] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:05:20] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:05:20] INFO: Escritas do disco: 800.4482421875
+[2024-06-01 13:05:20] INFO: Leituras do disco: 1.052865982055664
+[2024-06-01 13:05:20] INFO: Bytes de escritas do disco: 24.538118362426758
+[2024-06-01 13:05:20] INFO: Bytes de leitura do disco: 40.212167263031006
+[2024-06-01 13:05:20] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:05:20] INFO: Tempo de transferência do disco: 25635.400555555556
+[2024-06-01 13:05:20] INFO: Dados do disco gravados.
+[2024-06-01 13:05:20] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:20.228603700
+    |Id componente: 2
+
+[2024-06-01 13:05:20] INFO: Capturando dados da GPU.
+[2024-06-01 13:05:20] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:05:20] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:05:20] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:05:20] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:05:20] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:05:21] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:05:21] INFO: Dados da GPU gravados.
+[2024-06-01 13:05:21] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:05:21.171878900
+    |Id componente: 3
+
+[2024-06-01 13:05:21] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:05:21] INFO: Memória disponível: 754.2421875
+[2024-06-01 13:05:21] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:05:21] INFO: Memória em uso: 7.185543060302734
+[2024-06-01 13:05:21] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:05:21] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,19
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:21.336901900
+    |Id componente: 4
+
+[2024-06-01 13:05:21] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:05:21] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:05:21] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:05:21] INFO: Número de série da bateria:  2184
+[2024-06-01 13:05:21] INFO: Química da bateria: LiP
+[2024-06-01 13:05:21] INFO: Nome da bateria: System Battery
+[2024-06-01 13:05:21] INFO: Voltagem da bateria: 12.718
+[2024-06-01 13:05:21] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:05:21] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:05:21] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:05:21] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:05:21] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:05:21] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:05:21] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:05:21] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:05:21] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:05:21] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:05:21] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:05:21] INFO: Fabricante da bateria: SMP
+[2024-06-01 13:05:22] INFO: Dados da bateria capturados com sucesso: 100.0
+[2024-06-01 13:05:22] INFO: Dados da bateria gravados.
+[2024-06-01 13:05:22] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-01T13:05:22.078116900
+    |Id componente: 5
+
+[2024-06-01 13:05:22] INFO: Capturando dados do sistema operacional.
+[2024-06-01 13:05:22] INFO: Nome do sistema operacional coletado: Windows
+[2024-06-01 13:05:22] INFO: Nome do fabricante do sistema operacional coletado: Microsoft
+[2024-06-01 13:05:22] INFO: Arquitetura do sistema operacional coletada: 64
+[2024-06-01 13:05:22] INFO: A inicialização do sistema operacional coletada: 64
+[2024-06-01 13:05:22] INFO: O tempo de atividade do sistema operacional foi coletada: 70043
+[2024-06-01 13:05:22] INFO: A permisão do sistema operacional foi coletada: 70043
+[2024-06-01 13:05:22] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: SistemaOp
+    |Dado capturado: nu
+    |Unidade de medida: null
+    |Data hora captura: 2024-06-01T13:05:22.278752700
+    |Id componente: 6
+
+[2024-06-01 13:05:22] INFO: Capturando dados dos volumes lógicos.
+[2024-06-01 13:05:22] INFO: Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-01 13:05:22] INFO: Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-01 13:05:22] INFO: Espaço disponível no volume lógico capturado : 727.0510520935059
+[2024-06-01 13:05:22] INFO: Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-01 13:05:22] INFO: Tipo do volume lógico capturado: NTFS
+[2024-06-01 13:05:22] INFO: UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-01 13:05:22] INFO: Ponto de montagem do volume lógico capturado: C:\
+[2024-06-01 13:05:22] INFO: Dados do volume lógico gravados.
+[2024-06-01 13:05:22] INFO: Todos os volumes lógicos verificados.
+[2024-06-01 13:05:22] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 203,21
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:22.553025200
+    |Id componente: 7
+
+[2024-06-01 13:05:23] INFO: Capturando dados da sua CPU.
+[2024-06-01 13:05:23] INFO: Número de CPUs lógicas: 8
+[2024-06-01 13:05:23] INFO: Número de CPUs físicas: 4
+[2024-06-01 13:05:23] INFO: Microarquitetura: Coffee Lake
+[2024-06-01 13:05:23] INFO: Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-01 13:05:23] INFO: ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-01 13:05:23] INFO: Fabricante: GenuineIntel
+[2024-06-01 13:05:23] INFO: Frequência: 2.4E9
+[2024-06-01 13:05:23] INFO: Número de pacotes físicos: 1
+[2024-06-01 13:05:23] INFO: Uso da CPU: 5.957656326932546
+[2024-06-01 13:05:23] INFO: Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-01 13:05:24] WARNING: Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:05:24] INFO: Dados da CPU capturados com sucesso.
+[2024-06-01 13:05:24] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:05:24.131834600
+    |Id componente: 1
+
+[2024-06-01 13:05:24] INFO: Capturando dados do seu HDD
+[2024-06-01 13:05:24] INFO: Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-01 13:05:24] INFO: Serial do disco:      WD-WX82AA085155
+[2024-06-01 13:05:24] INFO: Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-01 13:05:24] INFO: Escritas do disco: 800.6640625
+[2024-06-01 13:05:24] INFO: Leituras do disco: 1.0532140731811523
+[2024-06-01 13:05:24] INFO: Bytes de escritas do disco: 24.54033088684082
+[2024-06-01 13:05:24] INFO: Bytes de leitura do disco: 40.2216591835022
+[2024-06-01 13:05:24] INFO: Tamanho do disco: 931.51
+[2024-06-01 13:05:24] INFO: Tempo de transferência do disco: 25639.321666666667
+[2024-06-01 13:05:24] INFO: Dados do disco gravados.
+[2024-06-01 13:05:24] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:24.384043800
+    |Id componente: 2
+
+[2024-06-01 13:05:24] INFO: Capturando dados da GPU.
+[2024-06-01 13:05:24] INFO: Dados do fabricante da sua GPU capturados com sucesso: NVIDIA
+[2024-06-01 13:05:24] INFO: Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-01 13:05:24] INFO: O nome da sua GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-01 13:05:24] INFO: A VRam da sua GPU foi capturada com sucesso: 3.0
+[2024-06-01 13:05:24] INFO: A Versão da sua GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-01 13:05:24] WARNING: Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-01 13:05:24] INFO: Dados da GPU gravados.
+[2024-06-01 13:05:24] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-01T13:05:24.828732900
+    |Id componente: 3
+
+[2024-06-01 13:05:24] INFO: Capturando dados da sua memória RAM.
+[2024-06-01 13:05:24] INFO: Memória disponível: 743.04296875
+[2024-06-01 13:05:24] INFO: Memória total: 7.922107696533203
+[2024-06-01 13:05:24] INFO: Memória em uso: 7.196479797363281
+[2024-06-01 13:05:24] INFO: Dados da memória RAM capturados com sucesso.
+[2024-06-01 13:05:24] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,20
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-01T13:05:24.979450300
+    |Id componente: 4
+
+[2024-06-01 13:05:25] INFO: Capturando dados da sua bateria.
+[2024-06-01 13:05:25] INFO: Amperagem da bateria: 0.0
+[2024-06-01 13:05:25] INFO: Nome do dispositivo da bateria: L18M3PF1
+[2024-06-01 13:05:25] INFO: Número de série da bateria:  2184
+[2024-06-01 13:05:25] INFO: Química da bateria: LiP
+[2024-06-01 13:05:25] INFO: Nome da bateria: System Battery
+[2024-06-01 13:05:25] INFO: Voltagem da bateria: 12.717
+[2024-06-01 13:05:25] INFO: Capacidade atual da bateria: 34.140625
+[2024-06-01 13:05:25] INFO: Número de ciclos da bateria: 1133
+[2024-06-01 13:05:25] INFO: Capacidade de design da bateria: 43.9453125
+[2024-06-01 13:05:25] INFO: Unidade de capacidade da bateria: MWH
+[2024-06-01 13:05:25] INFO: Tempo restante da bateria (instantâneo): -1.0
+[2024-06-01 13:05:25] INFO: Tempo restante estimado da bateria: -1.0
+[2024-06-01 13:05:25] INFO: Taxa de uso de energia da bateria: 0.0
+[2024-06-01 13:05:25] INFO: Temperatura da bateria: 0.0
+[2024-06-01 13:05:25] INFO: Capacidade máxima da bateria: 34.140625
+[2024-06-01 13:05:25] INFO: Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-01 13:05:25] INFO: Data de fabricação da bateria: N/A
+[2024-06-01 13:05:25] INFO: Fabricante da bateria: SMP

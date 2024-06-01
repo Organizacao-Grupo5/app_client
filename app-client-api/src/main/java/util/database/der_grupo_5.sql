@@ -43,12 +43,13 @@ CREATE TABLE endereco (
 CREATE TABLE usuario (
     idUsuario INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(60) NOT NULL,
+	imagemPerfil VARCHAR(100),
     email VARCHAR(60) NOT NULL UNIQUE,
     senha VARCHAR(45) NOT NULL,
     cargo varchar(45),
     fkEmpresa INT NOT NULL, 
         CONSTRAINT fkEmpresaUsuario FOREIGN KEY (fkEmpresa) REFERENCES empresa(idEmpresa)
-);
+); 
 
 CREATE TABLE contato (
     idContato INT AUTO_INCREMENT,
@@ -64,11 +65,11 @@ CREATE TABLE maquina (
     numeroIdentificacao VARCHAR(25),
     modelo VARCHAR(45),
     marca VARCHAR (45),
-    username VARCHAR(45),
-    hostname VARCHAR(45),
     mac VARCHAR(20),
-    fkUsuario INT NOT NULL,
-        CONSTRAINT fkUsuarioMaquina FOREIGN KEY (fkUsuario) REFERENCES usuario(idUsuario)
+    fkUsuario INT,
+        CONSTRAINT fkUsuarioMaquina FOREIGN KEY (fkUsuario) REFERENCES usuario(idUsuario),
+	fkEmpresa INT NOT NULL,
+		CONSTRAINT fkEmpresaMaquina FOREIGN KEY (fkEmpresa) REFERENCES empresa(idEmpresa)
 );
 
 CREATE TABLE rede (
@@ -133,15 +134,13 @@ CREATE TABLE captura (
         CONSTRAINT fkComponenteCaptura FOREIGN KEY (fkComponente) REFERENCES componente(idComponente)
 );
 
-CREATE TABLE registroAlertas (
+CREATE TABLE registroAlerta (
     idRegistroAlertas INT PRIMARY KEY AUTO_INCREMENT,
-    horario TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    horario TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
     fkAlerta INT NOT NULL,
     constraint fkRegistroAlertasAlerta foreign key (fkAlerta) references alerta(idAlerta),
     fkCaptura INT NOT NULL,
-        CONSTRAINT fkRegistroAlertasCaptura FOREIGN KEY (fkCaptura) REFERENCES captura(idCaptura),
-    fkComponente INT NOT NULL,
-        CONSTRAINT fkRegistroAlertasCapturaComponente FOREIGN KEY (fkComponente) REFERENCES captura(fkComponente)
+        CONSTRAINT fkRegistroAlertasCaptura FOREIGN KEY (fkCaptura) REFERENCES captura(idCaptura)
 );
 
 -- INSERT-Script
@@ -165,10 +164,10 @@ INSERT INTO usuario (nome, email, senha, fkEmpresa) VALUES
 	('Usuário 2', 'usuario2@empresa.com', 'senha456', 1),
 	('Usuário 3', 'usuario3@empresa.com', 'senha789', 2);
 
-INSERT INTO maquina (fkUsuario) VALUES 
-	(1),
-    (2),
-    (3);
+INSERT INTO maquina (fkUsuario, fkEmpresa) VALUES 
+	(1, 1),
+    (2, 1),
+    (3, 2);
 
 INSERT INTO alerta VALUES
 	(null, "Componente em ótimo estado!", "BOM"),
@@ -182,25 +181,45 @@ INSERT INTO relRedeIpv4 VALUES
 	(1, 1, DEFAULT);
 
 -- SELECT-Script
+SHOW TABLES;
+
+SELECT * FROM alerta;
+
+SELECT * FROM captura;
+
+SELECT * FROM componente;
+
+SELECT * FROM configuracao;
+
+SELECT * FROM contato;
+
+SELECT * FROM empresa;
+
+SELECT * FROM endereco;
+
+SELECT * FROM ipv4;
+
+SELECT * FROM maquina;
+
+SELECT * FROM plano;
+
+SELECT * FROM rede;
+
+SELECT * FROM registroalerta;
+
+SELECT * FROM relredeipv4;
+
+SELECT * FROM usuario;
+
 SELECT * FROM maquina JOIN usuario ON maquina.fkUsuario = usuario.idUsuario JOIN ipv4 ON ipv4.fkMaquina = maquina.idMaquina WHERE idUsuario = 2;
 
 SELECT * FROM ipv4 JOIN usuario ON fkUsuario = idUsuario WHERE fkEmpresa = 1;
 
-SELECT * FROM rede;
-
-SELECT * FROM relredeipv4;
-
 SELECT * FROM maquina JOIN ipv4 ON idMaquina = fkMaquina;
-
-SELECT * FROM ipv4;
 
 SELECT * FROM ipv4 WHERE numeroIP = '192.168.15.6' AND fkMaquina = '1';
 
-SELECT * FROM relredeipv4;
-
 SELECT * FROM rede WHERE bssidRede = 'e6:54:20:c3:b5:2e';
-
-select * from maquina;
 
 SELECT COUNT(*) from maquina as m
 	JOIN componente as c ON m.fkComponente = c.idComponente WHERE fkUsuario = 1;

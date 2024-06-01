@@ -53,14 +53,12 @@ public class MaquinaDAO {
 
 			verifyMaquina(maquina);
 
-			PreparedStatement preparedStatement = connection.prepareStatement("UPDATE Maquina SET numeroIdentificacao = ?, modelo = ?, marca = ?, username = ?, hostname = ? WHERE idMaquina = ?");
+			PreparedStatement preparedStatement = connection.prepareStatement("UPDATE Maquina SET numeroIdentificacao = ?, modelo = ?, marca = ? WHERE idMaquina = ?");
 
 			preparedStatement.setString(1, maquina.getNumeroSerial());
 			preparedStatement.setString(2, maquina.getModelo());
 			preparedStatement.setString(3, maquina.getMarca());
-			preparedStatement.setString(4, maquina.getUsername());
-			preparedStatement.setString(5, maquina.getHostname());
-			preparedStatement.setInt(6, maquina.getIdMaquina());
+			preparedStatement.setInt(4, maquina.getIdMaquina());
 
 			preparedStatement.executeUpdate();
 		} catch (SQLException | IOException e) {
@@ -82,10 +80,6 @@ public class MaquinaDAO {
 		String modelo = computerSystem.getModel();
 		String numeroDeSerie = computerSystem.getSerialNumber();
 
-		Computer userinfo = new Computer();
-		String hostname = userinfo.getHostname();
-		String username = userinfo.getUsername();
-
 		try (Connection connection = MySQLConnection.ConBD()) {
 
 			PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM Maquina WHERE idMaquina = ?");
@@ -96,8 +90,6 @@ public class MaquinaDAO {
 					maquina.setNumeroSerial(resultSet.getString("numeroIdentificacao") == numeroDeSerie ? maquina.getNumeroSerial() : numeroDeSerie);
 					maquina.setModelo(resultSet.getString("modelo") == modelo ? maquina.getModelo() : modelo);
 					maquina.setMarca(resultSet.getString("marca") == fabricante ? maquina.getMarca() : fabricante);
-					maquina.setUsername(resultSet.getString("username") == username ? maquina.getUsername() : username);
-					maquina.setHostname(resultSet.getString("hostname") == hostname ? maquina.getHostname() : hostname);
 				}
 			} catch (SQLException e) {
 				throw new SQLException("Erro ao executar a consulta da maquina no banco!", e);
