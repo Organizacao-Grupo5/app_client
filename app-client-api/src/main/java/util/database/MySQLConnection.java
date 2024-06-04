@@ -20,7 +20,7 @@ public class MySQLConnection {
 			if (hml){
 				return DriverManager.getConnection(CONNECTION_STRING, USERNAME, PASSWORD);
 			} else {
-				return DriverManager.getConnection("jdbc:mysql://localhost/der_grupo_5", "root", "diego123");
+				return DriverManager.getConnection("jdbc:mysql://localhost/der_grupo_5", "client", "Client123$");
 			}
 		} catch (SQLException e) {
 			logger.log(Level.SEVERE, "Erro ao conectar ao banco de dados", e);
