@@ -41,6 +41,24 @@ public class Computer {
 
 			if (isWindows()) {
 				res = listStrings.get(2);
+
+				Boolean apartirDoisPontos = false;
+	
+				StringBuilder sb = new StringBuilder();
+	
+				for (int i = 0; i < res.length(); i++) {
+					if (res.charAt(i) == ':' || apartirDoisPontos) {
+						apartirDoisPontos = true;
+	
+						char c = res.charAt(i);
+				
+						if (Character.isDigit(c) || c == '.') {
+							sb.append(c);
+						}
+					}
+				}
+				res = sb.toString();
+
 			} else {
 				res = listStrings.get(0);
 			}
