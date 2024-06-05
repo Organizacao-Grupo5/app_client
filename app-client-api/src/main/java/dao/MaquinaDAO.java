@@ -53,7 +53,7 @@ public class MaquinaDAO {
 
 			verifyMaquina(maquina);
 
-			PreparedStatement preparedStatement = connection.prepareStatement("UPDATE Maquina SET numeroIdentificacao = ?, modelo = ?, marca = ? WHERE idMaquina = ?");
+			PreparedStatement preparedStatement = connection.prepareStatement("UPDATE maquina SET numeroIdentificacao = ?, modelo = ?, marca = ? WHERE idMaquina = ?");
 
 			preparedStatement.setString(1, maquina.getNumeroSerial());
 			preparedStatement.setString(2, maquina.getModelo());
@@ -82,7 +82,7 @@ public class MaquinaDAO {
 
 		try (Connection connection = MySQLConnection.ConBD()) {
 
-			PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM Maquina WHERE idMaquina = ?");
+			PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM maquina WHERE idMaquina = ?");
 
 			preparedStatement.setInt(1, maquina.getIdMaquina());
 			try (ResultSet resultSet = preparedStatement.executeQuery()) {

@@ -16,7 +16,7 @@ public class RegistroAlertasDAO {
     public Integer gerarRegistro(Integer idCaptura, Integer idAlerta) {
         try (Connection connection = MySQLConnection.ConBD()) {
             
-            PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO registroalerta (horario, fkAlerta, fkCaptura) VALUES (?,?,?)", Statement.RETURN_GENERATED_KEYS);
+            PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO registroAlerta (horario, fkAlerta, fkCaptura) VALUES (?,?,?)", Statement.RETURN_GENERATED_KEYS);
 
 			preparedStatement.setTimestamp(1, Timestamp.valueOf(LocalDateTime.now()));
 			preparedStatement.setInt(2, idAlerta);
