@@ -30,7 +30,8 @@ public class Main {
     private static ServiceComponente serviceComponente = new ServiceComponente();
 
     public static void main(String[] args) throws Exception {
-        LogGenerator.logInfo("Servidor iCriarniciando.", LogGenerator.LogType.INFO);
+
+        LogBanco.logInfo("Servidor iniciando.", LogBanco.LogType.INFO);
         int quadros = 50;
 
         for (int i = 0; i <= quadros; i++) {
@@ -52,7 +53,7 @@ public class Main {
                 e.printStackTrace();
             }
         }
-        LogGenerator.logInfo("Servidor iniciado com sucesso.", LogGenerator.LogType.INFO);
+        LogBanco.logInfo("Servidor iniciado com sucesso.", LogBanco.LogType.INFO);
         System.out.print("\r" + " ".repeat(quadros + 10));
         Usuario usuarioLogado = null;
         
@@ -107,7 +108,7 @@ public class Main {
                     maquina = servicePC.verificarMaquina(usuarioLogado);
     
                     if (maquina == null) {
-                        LogGenerator.logWarning("Não foi possível acessar a máquina do usuário");
+                        LogBanco.logWarning("Não foi possível acessar a máquina do usuário");
                         break;
                     }
     
@@ -117,7 +118,7 @@ public class Main {
                         break;
                     }
     
-                    LogGenerator.logInfo(("Usuário logado com sucesso: " + usuarioLogado.getEmail()), LogGenerator.LogType.INFO);
+                    LogBanco.logInfo(("Usuário logado com sucesso: " + usuarioLogado.getEmail()), LogBanco.LogType.INFO);
                     int shift = 3;
                     String senhaCriptografada = Criptografia.encrypt(senha, shift);
     
@@ -127,12 +128,10 @@ public class Main {
                         if (resposta.equalsIgnoreCase("s")) {
                             login.updatePasswordUser(senhaCriptografada, usuarioLogado.getIdUsuario());
                             System.out.println("Sua senha foi criptografada com sucesso!");
-                            LogGenerator.logInfo("Sua senha foi criptograda com sucesso", LogGenerator.LogType.INFO);
+                            LogBanco.logInfo("Sua senha foi criptograda com sucesso", LogBanco.LogType.INFO);
                         }
                     }
-                    // Finaliza o arquivo de log e move para a pasta "autenticar"
-                    LogGenerator.closeLogFile();
-                    // moveLogFileToAutenticar();
+
     
                     iniciarMonitoramento();
                     scanner.close();
@@ -143,10 +142,10 @@ public class Main {
                             --- ACESSO NEGADO ---
     
                             """);
-                    LogGenerator.logWarning("Tentativa de login falhou para o email: " + email);
+                    LogBanco.logWarning("Tentativa de login falhou para o email: " + email);
                 }
             } catch (AutenticationException e) {
-                LogGenerator.logError("Erro ao fazer login: ", e.getMessage(), e);
+                LogBanco.logError("Erro ao fazer login: ", e.getMessage(), e);
             } catch (Exception e) {
                 System.out.println("Ocorreu um erro inesperado: " + e.getMessage());
                 e.printStackTrace();
@@ -154,33 +153,13 @@ public class Main {
         }
     }
 
-    /*
-     * DIEGO ENCONTRE UMA FORMA DE FAZER PARA QUE ESSE DIRETORIO SEJA GENERICO, NÂO PODE SER /home/diegosouza/Downloads/... POR QUE REFERE SOMENTE AO SEU COMPUTADOR 
-    */ 
-
-    // private static void moveLogFileToAutenticar() {
-    //     try {
-    //         // Diretório de origem e destino
-    //         Path source = Paths.get(LogGenerator.getLogFilePath());
-    //         Path destinationDir = Paths.get("/home/diegosouza/Downloads/app_client/logs/autenticar");
-
-    //         if (!Files.exists(destinationDir)) {
-    //             Files.createDirectories(destinationDir);
-    //         }
-
-    //         Files.move(source, destinationDir.resolve(source.getFileName()));
-    //     } catch (IOException e) {
-    //         e.printStackTrace();
-    //         Logger.logError("Erro ao mover arquivo de log para pasta 'autenticar'", e.getMessage(), e);
-    //     }
-    // }
 
 
     public static void iniciarMonitoramento() throws IOException {
         serviceComponente.obterComponentes(maquina);
 
         try {
-            LogGenerator.logInfo("Capturando os componentes:\n", LogGenerator.LogType.INFO);
+            LogBanco.logInfo("Capturando os componentes:\n", LogBanco.LogType.INFO);
             executorService = Executors.newScheduledThreadPool(1);
             executorService.scheduleAtFixedRate(() -> {
                 serviceComponente.iniciarCapturas(maquina);
@@ -223,7 +202,7 @@ public class Main {
                 }
             }
         } catch (Exception e) {
-            LogGenerator.logError("Erro ao iniciar monitoramento: ", e.getMessage(), e);
+            LogBanco.logError("Erro ao iniciar monitoramento: ", e.getMessage(), e);
         }
     }
 

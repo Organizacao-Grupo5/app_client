@@ -89,7 +89,7 @@ public class ServiceComponente {
 		}
 	}
 
-	public void atualizarComponente(Componente componente) {
+	public void atualizarComponente(Componente componente) throws IOException {
 		if (componente instanceof CPU) {
 			CPU cpu = systemMonitor.monitorarCPU();
 			((CPU) componente).setTemperatura(cpu.getTemperatura());
