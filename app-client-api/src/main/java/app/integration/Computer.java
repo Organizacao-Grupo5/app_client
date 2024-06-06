@@ -105,7 +105,7 @@ public class Computer {
 			
 			List<String> listStrings = lerTerminal(absolutePath);
 
-			String ipv4 = listStrings.get(listStrings.size() - 1);
+			String ipv4 = listStrings.get(2);
 
 			if (isWindows()) {
 				Boolean doisPontos = false;
