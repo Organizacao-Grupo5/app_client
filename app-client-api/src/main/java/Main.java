@@ -2,11 +2,7 @@ import service.componente.ServiceComponente;
 import util.security.Login;
 
 import java.io.Console;
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Scanner;
 
 import com.mysql.cj.util.StringUtils;
@@ -14,8 +10,8 @@ import util.exception.AutenticationException;
 import model.*;
 import model.componentes.*;
 import service.ServicePC;
+import service.ServiceRede;
 import util.security.Criptografia;
-import java.io.Console;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -25,10 +21,10 @@ import util.logs.*;
 import util.reports.PDFGenerator;
 
 public class Main {
-    private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
     private static final Login login = new Login();
     private static ScheduledExecutorService executorService;
 
+    private static ServiceRede serviceRede = new ServiceRede();
     private static Maquina maquina = new Maquina();
     private static ServicePC servicePC = new ServicePC();
     private static ServiceComponente serviceComponente = new ServiceComponente();
@@ -59,114 +55,125 @@ public class Main {
         LogGenerator.logInfo("Servidor iniciado com sucesso.", LogGenerator.LogType.INFO);
         System.out.print("\r" + " ".repeat(quadros + 10));
         Usuario usuarioLogado = null;
-        Scanner scanner = new Scanner(System.in);
-
+        
         System.out.println("""
-				\n
-				__     _____ ____  _   _   _    _           ___  ____  ____ \s
-				\\ \\   / /_ _/ ___|| | | | / \\  | |         / _ \\|  _ \\/ ___|\s
-				 \\ \\ / / | |\\___ \\| | | |/ _ \\ | |   _____| | | | |_) \\___ \\\s
-				  \\ V /  | | ___) | |_| / ___ \\| |__|_____| |_| |  __/ ___) |
-				   \\_/  |___|____/ \\___/_/   \\_\\_____|     \\___/|_|   |____/\s
-				_______
-				Vamos verificar suas permissões para iniciar o monitoramento.
-				_______
-				""");
-        System.out.print(" - Insira seu email: ");
-        String email = scanner.next();
-        Console console = System.console();
-        String senha = "";
+            \n
+            __     _____ ____  _   _   _    _           ___  ____  ____ 
+            \\ \\   / /_ _/ ___|| | | | / \\  | |         / _ \\|  _ \\/ ___|
+            \s\\ \\ / / | |\\___ \\| | | |/ _ \\ | |   _____| | | | |_) \\___ \\
+            \s\s\\ V /  | | ___) | |_| / ___ \\| |__|_____| |_| |  __/ ___) |
+            \s\s\s\\_/  |___|____/ \\___/_/   \\_\\_____|     \\___/|_|   |____/
+            _______
+            Vamos verificar suas permissões para iniciar o monitoramento.
+            _______
+            """);
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
 
-        if (console == null) {
-            System.out.print(" - Insira sua senha: ");
-            senha = scanner.next();
-        } else {
-            char[] senhaArray = console.readPassword(" - Insira sua senha: ");
-            senha = new String(senhaArray);
-            java.util.Arrays.fill(senhaArray, ' ');
-        }
-
-        try {
-            usuarioLogado = login.login(email, senha);
-
-            System.out.println(" - Terminamos a verificação de seu acesso...   ");
-
-            if (usuarioLogado == null) {
-                usuarioLogado = login.login(email, Criptografia.encrypt(senha, 3));
-            }
-
-            if (usuarioLogado != null) {
-                System.out.println("""
-
-						--- ACESSO CONCEDIDO ---
-
-						Bem-vindo %s
-						email: %s       
-						
-						Vamos verificar as permissões da sua máquina...
-						""".formatted(usuarioLogado.getNome(), usuarioLogado.getEmail()));
-
-                maquina = servicePC.verificarMaquina(usuarioLogado);
-
-                if (maquina == null) {
-                    LogGenerator.logWarning("Não foi possível acessar a máquina do usuário");
-                }
-                LogGenerator.logInfo(("Usuário logado com sucesso: " + usuarioLogado.getEmail()), LogGenerator.LogType.INFO);
-                int shift = 3;
-                String senhaCriptografada = Criptografia.encrypt(senha, shift);
-
-                if (!usuarioLogado.getSenha().equals(senhaCriptografada)) {
-                    System.out.print("Deseja criptografar sua senha? (s/n): ");
-                    String resposta = scanner.next();
-                    if (resposta.equalsIgnoreCase("s")) {
-                        login.updatePasswordUser(senhaCriptografada, usuarioLogado.getIdUsuario());
-                        System.out.println("Sua senha foi criptografada com sucesso!");
-                        LogGenerator.logInfo("Sua senha foi criptograda com sucesso", LogGenerator.LogType.INFO);
-                    }
-                    if (resposta.equalsIgnoreCase("n")) {
-                        iniciarMonitoramento();
-                    }
-                }
-
-                // Finaliza o arquivo de log e move para a pasta "autenticar"
-                LogGenerator.closeLogFile();
-                moveLogFileToAutenticar();
-
-                iniciarMonitoramento();
+            System.out.print(" - Insira seu email: ");
+            String email = scanner.next();
+            Console console = System.console();
+            String senha = "";
+    
+            if (console == null) {
+                System.out.print(" - Insira sua senha: ");
+                senha = scanner.next();
             } else {
-                System.out.println("""
-
-						--- ACESSO NEGADO ---
-
-						""");
-                LogGenerator.logWarning("Tentativa de login falhou para o email: " + email);
+                char[] senhaArray = console.readPassword(" - Insira sua senha: ");
+                senha = new String(senhaArray);
+                java.util.Arrays.fill(senhaArray, ' ');
             }
-        } catch (AutenticationException e) {
-            LogGenerator.logError("Erro ao fazer login: ", e.getMessage(), e);
-        } catch (Exception e) {
-            System.out.println("Ocorreu um erro inesperado: " + e.getMessage());
-            e.printStackTrace();
-        } finally {
-            scanner.close();
+    
+            try {
+                usuarioLogado = login.login(email, senha);
+    
+                System.out.println(" - Terminamos a verificação de seu acesso...   ");
+    
+                if (usuarioLogado == null) {
+                    usuarioLogado = login.login(email, Criptografia.encrypt(senha, 3));
+                }
+    
+                if (usuarioLogado != null) {
+                    System.out.println("""
+    
+                            --- ACESSO CONCEDIDO ---
+    
+                            Bem-vindo %s
+                            email: %s       
+                            
+                            Vamos verificar as permissões da sua máquina...
+                            """.formatted(usuarioLogado.getNome(), usuarioLogado.getEmail()));
+    
+                    maquina = servicePC.verificarMaquina(usuarioLogado);
+    
+                    if (maquina == null) {
+                        LogGenerator.logWarning("Não foi possível acessar a máquina do usuário");
+                        break;
+                    }
+    
+                    if (!serviceRede.maquinaContemIp(maquina)) {
+                        Logger.logWarning("Essa maquina não está registrada no ip detectado, verifique sua conexão com a internet.");
+                        System.out.println("Essa máquina não está registrada no ip detectado, verifique sua conexão com a internet.");
+                        break;
+                    }
+    
+                    LogGenerator.logInfo(("Usuário logado com sucesso: " + usuarioLogado.getEmail()), LogGenerator.LogType.INFO);
+                    int shift = 3;
+                    String senhaCriptografada = Criptografia.encrypt(senha, shift);
+    
+                    if (!usuarioLogado.getSenha().equals(senhaCriptografada)) {
+                        System.out.print("Deseja criptografar sua senha? (s/n): ");
+                        String resposta = scanner.next();
+                        if (resposta.equalsIgnoreCase("s")) {
+                            login.updatePasswordUser(senhaCriptografada, usuarioLogado.getIdUsuario());
+                            System.out.println("Sua senha foi criptografada com sucesso!");
+                            LogGenerator.logInfo("Sua senha foi criptograda com sucesso", LogGenerator.LogType.INFO);
+                        }
+                    }
+                    // Finaliza o arquivo de log e move para a pasta "autenticar"
+                    LogGenerator.closeLogFile();
+                    // moveLogFileToAutenticar();
+    
+                    iniciarMonitoramento();
+                    scanner.close();
+                    break;
+                } else {
+                    System.out.println("""
+    
+                            --- ACESSO NEGADO ---
+    
+                            """);
+                    LogGenerator.logWarning("Tentativa de login falhou para o email: " + email);
+                }
+            } catch (AutenticationException e) {
+                LogGenerator.logError("Erro ao fazer login: ", e.getMessage(), e);
+            } catch (Exception e) {
+                System.out.println("Ocorreu um erro inesperado: " + e.getMessage());
+                e.printStackTrace();
+            }
         }
     }
 
-    private static void moveLogFileToAutenticar() {
-        try {
-            // Diretório de origem e destino
-            Path source = Paths.get(LogGenerator.getLogFilePath());
-            Path destinationDir = Paths.get("/home/diegosouza/Downloads/app_client/logs/autenticar");
+    /*
+     * DIEGO ENCONTRE UMA FORMA DE FAZER PARA QUE ESSE DIRETORIO SEJA GENERICO, NÂO PODE SER /home/diegosouza/Downloads/... POR QUE REFERE SOMENTE AO SEU COMPUTADOR 
+    */ 
 
-            if (!Files.exists(destinationDir)) {
-                Files.createDirectories(destinationDir);
-            }
+    // private static void moveLogFileToAutenticar() {
+    //     try {
+    //         // Diretório de origem e destino
+    //         Path source = Paths.get(LogGenerator.getLogFilePath());
+    //         Path destinationDir = Paths.get("/home/diegosouza/Downloads/app_client/logs/autenticar");
 
-            Files.move(source, destinationDir.resolve(source.getFileName()));
-        } catch (IOException e) {
-            e.printStackTrace();
-            Logger.logError("Erro ao mover arquivo de log para pasta 'autenticar'", e.getMessage(), e);
-        }
-    }
+    //         if (!Files.exists(destinationDir)) {
+    //             Files.createDirectories(destinationDir);
+    //         }
+
+    //         Files.move(source, destinationDir.resolve(source.getFileName()));
+    //     } catch (IOException e) {
+    //         e.printStackTrace();
+    //         Logger.logError("Erro ao mover arquivo de log para pasta 'autenticar'", e.getMessage(), e);
+    //     }
+    // }
 
 
     public static void iniciarMonitoramento() throws IOException {

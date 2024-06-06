@@ -18,7 +18,7 @@ public class MemoriaRam extends Componente {
 		this.dataCaptura = LocalDateTime.now();
 	}
 
-	public MemoriaRam(int idMemoriaRAM, Double memoriaDisponivel, Double memoriaEmUso, Double memoriaTotal) {
+	public MemoriaRam(Double memoriaDisponivel, Double memoriaEmUso, Double memoriaTotal) {
 		super();
 		this.memoriaDisponivel = memoriaDisponivel;
 		this.memoriaEmUso = memoriaEmUso;

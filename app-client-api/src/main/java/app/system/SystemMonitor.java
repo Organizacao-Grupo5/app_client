@@ -478,34 +478,34 @@ public class SystemMonitor {
 			Logger.logWarning("Dados da memória RAM não puderam ser capturados: memória é nula.");
 			return null;
 		}
-		MemoriaRam memoriaRam = new MemoriaRam();
+		MemoriaRam ram = new MemoriaRam();
 		try {
-			memoriaRam.setMemoriaDisponivel(conversor.formatarBytes(memoria.getDisponivel()));
-			if (memoriaRam.getMemoriaDisponivel() == null || memoriaRam.getMemoriaDisponivel().toString().isEmpty()) {
+			ram.setMemoriaDisponivel(conversor.formatarBytes(memoria.getDisponivel()));
+			if (ram.getMemoriaDisponivel() == null || ram.getMemoriaDisponivel().toString().isEmpty()) {
 				Logger.logWarning("Memória disponível não foi capturada.");
 			} else {
-				Logger.logInfo("Memória disponível: " + memoriaRam.getMemoriaDisponivel());
+				Logger.logInfo("Memória disponível: " + ram.getMemoriaDisponivel());
 			}
 
-			memoriaRam.setMemoriaTotal(conversor.formatarBytes(memoria.getTotal()));
-			if (memoriaRam.getMemoriaTotal() == null || memoriaRam.getMemoriaTotal().toString().isEmpty()) {
+			ram.setMemoriaTotal(conversor.formatarBytes(memoria.getTotal()));
+			if (ram.getMemoriaTotal() == null || ram.getMemoriaTotal().toString().isEmpty()) {
 				Logger.logWarning("Memória total não foi capturada.");
 			} else {
-				Logger.logInfo("Memória total: " + memoriaRam.getMemoriaTotal());
+				Logger.logInfo("Memória total: " + ram.getMemoriaTotal());
 			}
 
-			memoriaRam.setMemoriaEmUso(conversor.formatarBytes(memoria.getEmUso()));
-			if (memoriaRam.getMemoriaEmUso() == null || memoriaRam.getMemoriaEmUso().toString().isEmpty()) {
+			ram.setMemoriaEmUso(conversor.formatarBytes(memoria.getEmUso()));
+			if (ram.getMemoriaEmUso() == null || ram.getMemoriaEmUso().toString().isEmpty()) {
 				Logger.logWarning("Memória em uso não foi capturada.");
 			} else {
-				Logger.logInfo("Memória em uso: " + memoriaRam.getMemoriaEmUso());
+				Logger.logInfo("Memória em uso: " + ram.getMemoriaEmUso());
 			}
 
-			Logger.logInfo("Dados da memória RAM capturados com sucesso.");
+			Logger.logInfo("Dados da memória ram capturados com sucesso.");
 		} catch (Exception e) {
-			Logger.logError("Erro ao capturar dados da memória RAM: ", e.getMessage(), e);
+			Logger.logError("Erro ao capturar dados da memória ram: ", e.getMessage(), e);
 		}
-		return memoriaRam;
+		return ram;
 	}
 
 	public SistemaOp monitorarSistemaOperacional() {

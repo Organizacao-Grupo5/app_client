@@ -6,10 +6,10 @@ import model.Usuario;
 import java.util.Optional;
 
 public class ServiceUser {
-	UsuarioDAO usuarioDao = new UsuarioDAO();
+	UsuarioDAO usuarioDao;
 
 	public ServiceUser() {
-		this.usuarioDao = usuarioDao;
+		this.usuarioDao = new UsuarioDAO();
 	}
 
 	public Optional<Usuario> autenticarUsuario(String email, String senha) {

@@ -4,6 +4,7 @@ import app.system.SystemMonitor;
 import dao.componente.CapturaDAO;
 import dao.componente.ComponenteDAO;
 import model.componentes.*;
+import service.ServiceSystem;
 import model.Maquina;
 import util.logs.Logger;
 
@@ -16,6 +17,7 @@ public class ServiceComponente {
 	private ComponenteDAO componenteDAO = new ComponenteDAO();
 	private SystemMonitor systemMonitor = new SystemMonitor();
 	private CapturaDAO capturaDAO = new CapturaDAO();
+	private ServiceSystem serviceSystem = new ServiceSystem();
 
 	public void obterComponentes(Maquina maquina) {
 		try {
@@ -48,8 +50,9 @@ public class ServiceComponente {
 						}
 					}
 					if (!existe) {
-						componenteDAO.salvarComponente(maquina, novoComponente);
+						int idComponente = componenteDAO.salvarComponente(maquina, novoComponente);
 						maquina.getComponentes().add(novoComponente);
+						serviceSystem.configurar(idComponente);
 					}
 				} catch (SQLException e) {
 					throw new RuntimeException(e);
@@ -70,9 +73,13 @@ public class ServiceComponente {
 	public void iniciarCapturas(Maquina maquina) {
 		try {
 			maquina.getComponentes().forEach(componente -> {
-				atualizarComponente(componente);
-                try {
-                    capturaDAO.inserirCaptura(maquina, componente);
+				try {
+					atualizarComponente(componente);
+					
+                    int idCaptura = capturaDAO.inserirCaptura(maquina, componente);
+					if (idCaptura > 0) {
+						serviceSystem.registrar(idCaptura, componente);
+					}
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }

@@ -16,7 +16,7 @@ import java.sql.SQLException;
 import java.util.Optional;
 
 
-import app.integration.Userinfo;
+import app.integration.Computer;
 
 public class MaquinaDAO {
 
@@ -24,7 +24,7 @@ public class MaquinaDAO {
 		try (Connection connection = MySQLConnection.ConBD()) {
 
 			PreparedStatement preparedStatement = connection.prepareStatement(
-					"SELECT * FROM Maquina JOIN usuario on Maquina.fkUsuario = usuario.idUsuario JOIN ipv4 ON ipv4.fkMaquina = Maquina.idMaquina WHERE idUsuario = ?");
+					"SELECT * FROM maquina JOIN usuario on maquina.fkUsuario = usuario.idUsuario JOIN ipv4 ON ipv4.fkMaquina = maquina.idMaquina WHERE idUsuario = ?");
 
 			preparedStatement.setInt(1, usuario.getIdUsuario());
 
@@ -53,7 +53,7 @@ public class MaquinaDAO {
 
 			verifyMaquina(maquina);
 
-			PreparedStatement preparedStatement = connection.prepareStatement("UPDATE Maquina SET numeroIdentificacao = ?, modelo = ?, marca = ? WHERE idMaquina = ?");
+			PreparedStatement preparedStatement = connection.prepareStatement("UPDATE maquina SET numeroIdentificacao = ?, modelo = ?, marca = ? WHERE idMaquina = ?");
 
 			preparedStatement.setString(1, maquina.getNumeroSerial());
 			preparedStatement.setString(2, maquina.getModelo());
@@ -68,8 +68,8 @@ public class MaquinaDAO {
 	}
 
 	public static String getIpv4() throws IOException {
-		Userinfo userinfo = new Userinfo();
-		return userinfo.ipv4();
+		Computer userinfo = new Computer();
+		return userinfo.getIpv4();
 	}
 
 	private void verifyMaquina(Maquina maquina) throws SQLException, IOException {
@@ -80,13 +80,9 @@ public class MaquinaDAO {
 		String modelo = computerSystem.getModel();
 		String numeroDeSerie = computerSystem.getSerialNumber();
 
-		Userinfo userinfo = new Userinfo();
-		String hostname = userinfo.hostname();
-		String username = userinfo.username();
-
 		try (Connection connection = MySQLConnection.ConBD()) {
 
-			PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM Maquina WHERE idMaquina = ?");
+			PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM maquina WHERE idMaquina = ?");
 
 			preparedStatement.setInt(1, maquina.getIdMaquina());
 			try (ResultSet resultSet = preparedStatement.executeQuery()) {
@@ -94,7 +90,6 @@ public class MaquinaDAO {
 					maquina.setNumeroSerial(resultSet.getString("numeroIdentificacao") == numeroDeSerie ? maquina.getNumeroSerial() : numeroDeSerie);
 					maquina.setModelo(resultSet.getString("modelo") == modelo ? maquina.getModelo() : modelo);
 					maquina.setMarca(resultSet.getString("marca") == fabricante ? maquina.getMarca() : fabricante);
-					maquina.setHostname(resultSet.getString("hostname") == hostname ? maquina.getHostname() : hostname);
 				}
 			} catch (SQLException e) {
 				throw new SQLException("Erro ao executar a consulta da maquina no banco!", e);

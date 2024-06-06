@@ -19,7 +19,7 @@ public class ComponenteDAO {
 		List<Componente> componentes = new ArrayList<>();
 		try (Connection connection = MySQLConnection.ConBD()) {
 			PreparedStatement preparedStatement = connection.prepareStatement(
-					"SELECT * FROM componente JOIN Maquina ON componente.fkMaquina = Maquina.idMaquina WHERE idMaquina = ?");
+					"SELECT * FROM componente JOIN maquina ON componente.fkMaquina = maquina.idMaquina WHERE idMaquina = ?");
 			preparedStatement.setInt(1, maquina.getIdMaquina());
 			try (ResultSet resultSet = preparedStatement.executeQuery()) {
 				while (resultSet.next()) {
@@ -99,7 +99,7 @@ public class ComponenteDAO {
 		return componenteInstanciado;
 	}
 
-	public void salvarComponente(Maquina maquina, Componente componente) throws SQLException {
+	public Integer salvarComponente(Maquina maquina, Componente componente) throws SQLException {
 		try (Connection connection = MySQLConnection.ConBD()) {
 			Logger.logInfo("Iniciando verificação se o componente já existe no banco de dados.");
 			LogGenerator.logInfo("Iniciando verificação se o componente já existe no banco de dados.", LogGenerator.LogType.INFO);
@@ -127,6 +127,7 @@ public class ComponenteDAO {
 							componente.setIdComponente(idComponente);
 							Logger.logInfo("ID do componente criado: " + idComponente);
 							LogGenerator.logInfo("ID do componente criado: " + idComponente, LogGenerator.LogType.INFO);
+							return idComponente;
 						} else {
 							throw new SQLException("Falha ao obter o ID do componente criado.");
 						}
@@ -139,6 +140,7 @@ public class ComponenteDAO {
 		} catch (IOException e) {
             throw new RuntimeException(e);
         }
+		return null;
     }
 
 	public boolean componenteExistenteNoBanco(Componente componente, Maquina maquina) throws SQLException, IOException {
