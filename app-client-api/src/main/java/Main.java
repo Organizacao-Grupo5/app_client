@@ -30,7 +30,7 @@ public class Main {
     private static ServiceComponente serviceComponente = new ServiceComponente();
 
     public static void main(String[] args) throws Exception {
-        LogGenerator.logInfo("Servidor iniciando.", LogGenerator.LogType.INFO);
+        LogGenerator.logInfo("Servidor iCriarniciando.", LogGenerator.LogType.INFO);
         int quadros = 50;
 
         for (int i = 0; i <= quadros; i++) {
