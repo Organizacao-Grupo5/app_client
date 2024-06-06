@@ -21,10 +21,10 @@ public class ServicePC {
 				return maquina.get();
 			}
 
-			return null;
-		} catch (Exception e) {
-			Logger.logError("Erro ao acessar máquina:", e.getMessage(), e);
-		}
-		return null;
-	}
+            return null;
+        } catch (Exception e) {
+            Logger.logError("Erro ao acessar máquina:", e.getMessage(), e);
+        }
+        return null;
+    }
 }
