@@ -10,7 +10,3 @@ if [[ "$(uname -s)" == "Linux" ]]; then
         echo "upower não encontrado"
         exit 1
     fi
-else
-    echo "Não é um sistema Linux"
-    exit 1
-fi

@@ -4,7 +4,7 @@ import model.componentes.Componente;
 import model.Captura;
 import model.Maquina;
 import util.database.MySQLConnection;
-import util.logs.LogGenerator;
+import util.logs.LogBanco;
 import util.logs.Logger;
 
 import java.io.IOException;
@@ -26,7 +26,7 @@ public class CapturaDAO {
 					""".formatted(componente.getComponente(), componente.getDadoCaptura(),
 					componente.getUnidadeMedida(), LocalDateTime.now().toString(), componente.getIdComponente()));
 
-			LogGenerator.logInfo("""
+			LogBanco.logInfo("""
 
 					Inserindo captura de dados no banco de dados:
 					    |Componente: %s
@@ -35,7 +35,7 @@ public class CapturaDAO {
 					    |Data hora captura: %s
 					    |Id componente: %d
 					""".formatted(componente.getComponente(), componente.getDadoCaptura(),
-					componente.getUnidadeMedida(), LocalDateTime.now().toString(), componente.getIdComponente()), LogGenerator.LogType.INFO);
+					componente.getUnidadeMedida(), LocalDateTime.now().toString(), componente.getIdComponente()), LogBanco.LogType.INFO);
 
 			PreparedStatement preparedStatement = connection.prepareStatement(
 					"INSERT INTO captura (dadoCaptura, unidadeMedida, dataCaptura, fkComponente) VALUES (?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
@@ -60,7 +60,7 @@ public class CapturaDAO {
 			}
 		} catch (SQLException e) {
 			Logger.logError("Ocorreu um erro ao salvar suas capturas", e.getMessage(), e);
-			LogGenerator.logError("Ocorreu um erro ao salvar suas capturas", e.getMessage(), e);
+			LogBanco.logError("Ocorreu um erro ao salvar suas capturas", e.getMessage(), e);
 		} catch (IOException e) {
             throw new RuntimeException(e);
         }

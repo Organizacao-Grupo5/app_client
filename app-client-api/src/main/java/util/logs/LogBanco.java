@@ -10,17 +10,14 @@ import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-
-public class LogGenerator {
+public class LogBanco {
 
     private static BufferedWriter bwMain;
     private static BufferedWriter bwMonitoramento;
-    private static BufferedWriter bwBanco;
     private static File logFileMain;
     private static File logFileMonitoramento;
-    private static File logFileBanco;
 
-    private static final String LOG_DIRECTORY = "/home/diegosouza/Música/app_client/logs";
+    private static final String LOG_DIRECTORY = "logs"; // Diretório de logs relativo ao diretório de execução do aplicativo
 
     static {
         try {
@@ -42,10 +39,6 @@ public class LogGenerator {
         if (bwMonitoramento != null) {
             bwMonitoramento.close();
             bwMonitoramento = null;
-        }
-        if (bwBanco != null) {
-            bwBanco.close();
-            bwBanco = null;
         }
     }
 
@@ -78,20 +71,13 @@ public class LogGenerator {
         createDirectories();
 
         BufferedWriter writer;
-        String logFileName;
         File logFile;
 
         switch (logType) {
 //            case MONITORAMENTO:
 //                if (bwMonitoramento == null) {
-//                    logFileName = "log_monitoramento_" + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()) + ".txt";
-//                    logFileMonitoramento = new File(LOG_DIRECTORY + "/monitoramento", logFileName);
-//
-//                    if (!logFileMonitoramento.exists()) {
-//                        logFileMonitoramento.createNewFile();
-//                    }
-//
-//                    bwMonitoramento = new BufferedWriter(new FileWriter(logFileMonitoramento, true));
+//                    logFile = getLogFile(LOG_DIRECTORY + "/monitoramento", "log_monitoramento_");
+//                    bwMonitoramento = new BufferedWriter(new FileWriter(logFile, true));
 //                }
 //                writer = bwMonitoramento;
 //                break;
@@ -101,14 +87,8 @@ public class LogGenerator {
             case WARNING:
             default:
                 if (bwMain == null) {
-                    logFileName = "log_" + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()) + ".txt";
-                    logFileMain = new File(LOG_DIRECTORY + "/banco", logFileName);
-
-                    if (!logFileMain.exists()) {
-                        logFileMain.createNewFile();
-                    }
-
-                    bwMain = new BufferedWriter(new FileWriter(logFileMain, true));
+                    logFile = getLogFile(LOG_DIRECTORY + "/banco", "log_");
+                    bwMain = new BufferedWriter(new FileWriter(logFile, true));
                 }
                 writer = bwMain;
                 break;
@@ -121,6 +101,12 @@ public class LogGenerator {
         writer.write(logMessage);
         writer.newLine();
         writer.flush();
+    }
+
+    private static File getLogFile(String directory, String prefix) throws IOException {
+        createDirectories();
+        String logFileName = prefix + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()) + ".txt";
+        return new File(directory, logFileName);
     }
 
     private static void createDirectories() throws IOException {
