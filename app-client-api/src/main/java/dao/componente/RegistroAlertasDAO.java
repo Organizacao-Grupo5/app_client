@@ -2,7 +2,6 @@ package dao.componente;
 
 import model.Maquina;
 import util.database.MySQLConnection;
-import util.logs.LogGenerator;
 import util.logs.Logger;
 
 import java.io.IOException;
@@ -46,7 +45,7 @@ public class RegistroAlertasDAO {
 
   public void verificarUsoComponentes(Maquina maquina) throws SQLException, IOException {
         Logger.logInfo("Verificando uso dos componentes...");
-        LogGenerator.logInfo("Verificando uso dos componentes...", LogGenerator.LogType.INFO);
+
 
         try (Connection connection = MySQLConnection.ConBD()) {
             PreparedStatement preparedStatement = connection.prepareStatement(
@@ -79,8 +78,6 @@ public class RegistroAlertasDAO {
             }
         } catch (SQLException e) {
             Logger.logError("Ocorreu um erro ao verificar o uso dos componentes",
-                    e.getMessage(), e);
-            LogGenerator.logError("Ocorreu um erro ao verificar o uso dos componentes",
                     e.getMessage(), e);
         }
     }

@@ -158,7 +158,7 @@ public class ShellIntegration {
 			Logger.logError("Não foi possível monitorar o uso de RAM do PID: " + pid, e.getMessage(), e);
 			e.printStackTrace();
 		}
-		return parseOutput(output) != null ? conversor.converterKBparaMB(parseOutput(output)) : null;
+		return Double.parseDouble(output);
 	}
 
 	private Double parseOutput(String output) {

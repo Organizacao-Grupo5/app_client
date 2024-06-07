@@ -1,0 +1,1353 @@
+[2024-06-07 07:10:56] [INFO] Capturando dados da sua CPU.
+[2024-06-07 07:10:56] [INFO] Número de CPUs lógicas: 8
+[2024-06-07 07:10:56] [INFO] Número de CPUs físicas: 4
+[2024-06-07 07:10:56] [INFO] Microarquitetura: Tiger Lake
+[2024-06-07 07:10:56] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-07 07:10:56] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-07 07:10:56] [INFO] Fabricante: GenuineIntel
+[2024-06-07 07:10:56] [INFO] Frequência: 2.419E9
+[2024-06-07 07:10:56] [INFO] Número de pacotes físicos: 1
+[2024-06-07 07:10:59] [INFO] Uso da CPU: 0.935374149659864
+[2024-06-07 07:10:59] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-07 07:11:00] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:00] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-07 07:11:00] [INFO] Capturando dados do seu HDD
+[2024-06-07 07:11:00] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-07 07:11:00] [INFO] Serial do disco: 0025_38D3_3101_18C2.
+[2024-06-07 07:11:00] [INFO] Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-06-07 07:11:00] [INFO] Escritas do disco: 11.054996490478516
+[2024-06-07 07:11:00] [INFO] Leituras do disco: 26.053857803344727
+[2024-06-07 07:11:00] [INFO] Bytes de escritas do disco: 473.9577851295471
+[2024-06-07 07:11:00] [INFO] Bytes de leitura do disco: 1248.0745935440063
+[2024-06-07 07:11:00] [INFO] Tamanho do disco: 238.47
+[2024-06-07 07:11:00] [INFO] Tempo de transferência do disco: 15722.802777777777
+[2024-06-07 07:11:00] [INFO] Dados do disco gravados.
+[2024-06-07 07:11:00] [INFO] Capturando dados da GPU.
+[2024-06-07 07:11:00] [INFO] Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-06-07 07:11:00] [INFO] Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-07 07:11:00] [INFO] O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-07 07:11:00] [INFO] A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-06-07 07:11:00] [INFO] A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-06-07 07:11:01] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:01] [INFO] Dados da GPU gravados.
+[2024-06-07 07:11:01] [INFO] Capturando dados da sua memória RAM.
+[2024-06-07 07:11:01] [INFO] Memória disponível: 680.20703125
+[2024-06-07 07:11:01] [INFO] Memória total: 7.729835510253906
+[2024-06-07 07:11:01] [INFO] Memória em uso: 7.065570831298828
+[2024-06-07 07:11:01] [INFO] Dados da memória ram capturados com sucesso.
+[2024-06-07 07:11:01] [INFO] Capturando dados da sua bateria.
+[2024-06-07 07:11:01] [INFO] Amperagem da bateria: -1396.7898469578201
+[2024-06-07 07:11:01] [INFO] Nome do dispositivo da bateria: SR Real Battery
+[2024-06-07 07:11:01] [INFO] Número de série da bateria: 123456789
+[2024-06-07 07:11:01] [INFO] Química da bateria: LION
+[2024-06-07 07:11:01] [INFO] Nome da bateria: System Battery
+[2024-06-07 07:11:01] [INFO] Voltagem da bateria: 10.716
+[2024-06-07 07:11:01] [INFO] Capacidade atual da bateria: 6.201171875
+[2024-06-07 07:11:01] [INFO] Número de ciclos da bateria: 246
+[2024-06-07 07:11:01] [INFO] Capacidade de design da bateria: 42.08203125
+[2024-06-07 07:11:01] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-07 07:11:01] [INFO] Tempo restante da bateria (instantâneo): 1527.0
+[2024-06-07 07:11:01] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-07 07:11:01] [INFO] Taxa de uso de energia da bateria: -14968.0
+[2024-06-07 07:11:01] [INFO] Temperatura da bateria: 0.0
+[2024-06-07 07:11:01] [INFO] Capacidade máxima da bateria: 32.330078125
+[2024-06-07 07:11:01] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-07 07:11:01] [INFO] Data de fabricação da bateria: N/A
+[2024-06-07 07:11:01] [INFO] Fabricante da bateria: SAMSUNG Electronics
+[2024-06-07 07:11:03] [INFO] Dados da bateria capturados com sucesso: 19.0
+[2024-06-07 07:11:03] [INFO] Dados da bateria gravados.
+[2024-06-07 07:11:03] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-07 07:11:03] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-07 07:11:03] [INFO] Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-06-07 07:11:03] [INFO] Espaço disponível no volume lógico capturado : 25.22472381591797
+[2024-06-07 07:11:03] [INFO] Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-06-07 07:11:03] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-07 07:11:03] [INFO] UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-06-07 07:11:03] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-07 07:11:03] [INFO] Dados do volume lógico gravados.
+[2024-06-07 07:11:03] [INFO] Todos os volumes lógicos verificados.
+[2024-06-07 07:11:03] [INFO] Capturando dados da sua CPU.
+[2024-06-07 07:11:03] [INFO] Capturando dados dos seus Apps.
+[2024-06-07 07:11:03] [INFO] Número de CPUs lógicas: 8
+[2024-06-07 07:11:03] [INFO] Número de CPUs físicas: 4
+[2024-06-07 07:11:03] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:03] [INFO] Microarquitetura: Tiger Lake
+[2024-06-07 07:11:03] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:03] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-07 07:11:03] [INFO] ID da janela: 395270
+[2024-06-07 07:11:03] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-07 07:11:03] [INFO] Fabricante: GenuineIntel
+[2024-06-07 07:11:03] [INFO] PID da janela: 2892
+[2024-06-07 07:11:03] [INFO] Frequência: 2.419E9
+[2024-06-07 07:11:03] [INFO] Número de pacotes físicos: 1
+[2024-06-07 07:11:03] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-06-07 07:11:03] [INFO] Uso da CPU: 0.935374149659864
+[2024-06-07 07:11:03] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-07 07:11:04] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:04] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:04] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:04] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:04] [INFO] ID da janela: 197928
+[2024-06-07 07:11:04] [INFO] PID da janela: 2892
+[2024-06-07 07:11:04] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-06-07 07:11:05] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:05] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-07 07:11:05] [INFO] Capturando dados do seu HDD
+[2024-06-07 07:11:05] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-07 07:11:05] [INFO] Serial do disco: 0025_38D3_3101_18C2.
+[2024-06-07 07:11:05] [INFO] Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-06-07 07:11:05] [INFO] Escritas do disco: 11.055115699768066
+[2024-06-07 07:11:05] [INFO] Leituras do disco: 26.05482578277588
+[2024-06-07 07:11:05] [INFO] Bytes de escritas do disco: 473.95903635025024
+[2024-06-07 07:11:05] [INFO] Bytes de leitura do disco: 1248.1192712783813
+[2024-06-07 07:11:05] [INFO] Tamanho do disco: 238.47
+[2024-06-07 07:11:05] [INFO] Tempo de transferência do disco: 15722.930833333334
+[2024-06-07 07:11:05] [INFO] Dados do disco gravados.
+[2024-06-07 07:11:05] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:05] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:05] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:05] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:05] [INFO] ID da janela: 65794
+[2024-06-07 07:11:05] [INFO] PID da janela: 2892
+[2024-06-07 07:11:05] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
+[2024-06-07 07:11:05] [INFO] Capturando dados da GPU.
+[2024-06-07 07:11:05] [INFO] Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-06-07 07:11:05] [INFO] Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-07 07:11:05] [INFO] O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-07 07:11:05] [INFO] A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-06-07 07:11:05] [INFO] A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-06-07 07:11:06] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:06] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:06] [INFO] Título da janela: app_client – ramUsageWindow.bat [app-client-api]
+[2024-06-07 07:11:06] [INFO] Comando da janela: C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.3\bin\idea64.exe
+[2024-06-07 07:11:06] [INFO] ID da janela: 460594
+[2024-06-07 07:11:06] [INFO] PID da janela: 12824
+[2024-06-07 07:11:06] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-07 07:11:06] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:06] [INFO] Dados da GPU gravados.
+[2024-06-07 07:11:07] [INFO] Capturando dados da sua memória RAM.
+[2024-06-07 07:11:07] [INFO] Memória disponível: 619.484375
+[2024-06-07 07:11:07] [INFO] Memória total: 7.729835510253906
+[2024-06-07 07:11:07] [INFO] Memória em uso: 7.124870300292969
+[2024-06-07 07:11:07] [INFO] Dados da memória ram capturados com sucesso.
+[2024-06-07 07:11:07] [INFO] Capturando dados da sua bateria.
+[2024-06-07 07:11:07] [INFO] Uso da ram pela janela: 1.0
+[2024-06-07 07:11:07] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:07] [INFO] Título da janela: ChatGPT - Opera
+[2024-06-07 07:11:07] [INFO] Comando da janela: C:\Users\claus\AppData\Local\Programs\Opera GX\opera.exe
+[2024-06-07 07:11:07] [INFO] ID da janela: 526502
+[2024-06-07 07:11:07] [INFO] PID da janela: 17856
+[2024-06-07 07:11:07] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-07 07:11:07] [INFO] Amperagem da bateria: -1588.9097744360902
+[2024-06-07 07:11:07] [INFO] Nome do dispositivo da bateria: SR Real Battery
+[2024-06-07 07:11:07] [INFO] Número de série da bateria: 123456789
+[2024-06-07 07:11:07] [INFO] Química da bateria: LION
+[2024-06-07 07:11:07] [INFO] Nome da bateria: System Battery
+[2024-06-07 07:11:07] [INFO] Voltagem da bateria: 10.64
+[2024-06-07 07:11:07] [INFO] Capacidade atual da bateria: 6.1787109375
+[2024-06-07 07:11:07] [INFO] Número de ciclos da bateria: 246
+[2024-06-07 07:11:07] [INFO] Capacidade de design da bateria: 42.08203125
+[2024-06-07 07:11:07] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-07 07:11:07] [INFO] Tempo restante da bateria (instantâneo): 1347.0
+[2024-06-07 07:11:07] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-07 07:11:07] [INFO] Taxa de uso de energia da bateria: -16906.0
+[2024-06-07 07:11:07] [INFO] Temperatura da bateria: 0.0
+[2024-06-07 07:11:07] [INFO] Capacidade máxima da bateria: 32.330078125
+[2024-06-07 07:11:07] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-07 07:11:07] [INFO] Data de fabricação da bateria: N/A
+[2024-06-07 07:11:07] [INFO] Fabricante da bateria: SAMSUNG Electronics
+[2024-06-07 07:11:08] [INFO] Uso da ram pela janela: 146.0
+[2024-06-07 07:11:08] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:08] [INFO] Título da janela: MySQL Workbench
+[2024-06-07 07:11:08] [INFO] Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
+[2024-06-07 07:11:08] [INFO] ID da janela: 263160
+[2024-06-07 07:11:08] [INFO] PID da janela: 21892
+[2024-06-07 07:11:08] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
+[2024-06-07 07:11:08] [INFO] Dados da bateria capturados com sucesso: 19.0
+[2024-06-07 07:11:08] [INFO] Dados da bateria gravados.
+[2024-06-07 07:11:08] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-07 07:11:08] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-07 07:11:08] [INFO] Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-06-07 07:11:08] [INFO] Espaço disponível no volume lógico capturado : 25.2237548828125
+[2024-06-07 07:11:08] [INFO] Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-06-07 07:11:08] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-07 07:11:08] [INFO] UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-06-07 07:11:08] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-07 07:11:08] [INFO] Dados do volume lógico gravados.
+[2024-06-07 07:11:08] [INFO] Todos os volumes lógicos verificados.
+[2024-06-07 07:11:08] [INFO] Uso da ram pela janela: 178.0
+[2024-06-07 07:11:08] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:08] [INFO] Título da janela: relatorioModel.js - front-VisualOps - Visual Studio Code
+[2024-06-07 07:11:08] [INFO] Comando da janela: C:\Users\claus\AppData\Local\Programs\Microsoft VS Code\Code.exe
+[2024-06-07 07:11:08] [INFO] ID da janela: 526054
+[2024-06-07 07:11:08] [INFO] PID da janela: 23732
+[2024-06-07 07:11:08] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-07 07:11:09] [INFO] Capturando dados da sua CPU.
+[2024-06-07 07:11:09] [INFO] Número de CPUs lógicas: 8
+[2024-06-07 07:11:09] [INFO] Número de CPUs físicas: 4
+[2024-06-07 07:11:09] [INFO] Microarquitetura: Tiger Lake
+[2024-06-07 07:11:09] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-07 07:11:09] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-07 07:11:09] [INFO] Fabricante: GenuineIntel
+[2024-06-07 07:11:09] [INFO] Frequência: 2.419E9
+[2024-06-07 07:11:09] [INFO] Número de pacotes físicos: 1
+[2024-06-07 07:11:09] [INFO] Uso da CPU: 26.8787916305559
+[2024-06-07 07:11:09] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-07 07:11:10] [INFO] Uso da ram pela janela: 52.0
+[2024-06-07 07:11:10] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:10] [INFO] Título da janela: Configurações
+[2024-06-07 07:11:10] [INFO] Comando da janela: C:\Windows\ImmersiveControlPanel\SystemSettings.exe
+[2024-06-07 07:11:10] [INFO] ID da janela: 197998
+[2024-06-07 07:11:10] [INFO] PID da janela: 24444
+[2024-06-07 07:11:10] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
+[2024-06-07 07:11:10] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:10] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-07 07:11:10] [INFO] Uso da ram pela janela: 3.0
+[2024-06-07 07:11:10] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:10] [INFO] Título da janela: Configurações
+[2024-06-07 07:11:10] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-07 07:11:10] [INFO] ID da janela: 263326
+[2024-06-07 07:11:10] [INFO] PID da janela: 8608
+[2024-06-07 07:11:10] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-07 07:11:10] [INFO] Capturando dados do seu HDD
+[2024-06-07 07:11:10] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-07 07:11:10] [INFO] Serial do disco: 0025_38D3_3101_18C2.
+[2024-06-07 07:11:10] [INFO] Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-06-07 07:11:10] [INFO] Escritas do disco: 11.05546760559082
+[2024-06-07 07:11:10] [INFO] Leituras do disco: 26.05529499053955
+[2024-06-07 07:11:10] [INFO] Bytes de escritas do disco: 473.96291971206665
+[2024-06-07 07:11:10] [INFO] Bytes de leitura do disco: 1248.1400561332703
+[2024-06-07 07:11:10] [INFO] Tamanho do disco: 238.47
+[2024-06-07 07:11:10] [INFO] Tempo de transferência do disco: 15723.041944444445
+[2024-06-07 07:11:10] [INFO] Dados do disco gravados.
+[2024-06-07 07:11:11] [INFO] Capturando dados da GPU.
+[2024-06-07 07:11:11] [INFO] Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-06-07 07:11:11] [INFO] Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-07 07:11:11] [INFO] O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-07 07:11:11] [INFO] A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-06-07 07:11:11] [INFO] A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-06-07 07:11:11] [INFO] Uso da ram pela janela: 10.0
+[2024-06-07 07:11:11] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:11] [INFO] Título da janela: Experiência de Entrada do Windows
+[2024-06-07 07:11:11] [INFO] Comando da janela: C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe
+[2024-06-07 07:11:11] [INFO] ID da janela: 131950
+[2024-06-07 07:11:11] [INFO] PID da janela: 18060
+[2024-06-07 07:11:11] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-07 07:11:12] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:12] [INFO] Dados da GPU gravados.
+[2024-06-07 07:11:12] [INFO] Capturando dados da sua memória RAM.
+[2024-06-07 07:11:12] [INFO] Memória disponível: 581.00390625
+[2024-06-07 07:11:12] [INFO] Memória total: 7.729835510253906
+[2024-06-07 07:11:12] [INFO] Memória em uso: 7.162448883056641
+[2024-06-07 07:11:12] [INFO] Dados da memória ram capturados com sucesso.
+[2024-06-07 07:11:12] [INFO] Uso da ram pela janela: 21.0
+[2024-06-07 07:11:12] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:12] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:12] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:12] [INFO] ID da janela: 66000
+[2024-06-07 07:11:12] [INFO] PID da janela: 2892
+[2024-06-07 07:11:12] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
+[2024-06-07 07:11:12] [INFO] Capturando dados da sua bateria.
+[2024-06-07 07:11:12] [INFO] Amperagem da bateria: -1617.364253393665
+[2024-06-07 07:11:12] [INFO] Nome do dispositivo da bateria: SR Real Battery
+[2024-06-07 07:11:12] [INFO] Número de série da bateria: 123456789
+[2024-06-07 07:11:12] [INFO] Química da bateria: LION
+[2024-06-07 07:11:12] [INFO] Nome da bateria: System Battery
+[2024-06-07 07:11:12] [INFO] Voltagem da bateria: 10.608
+[2024-06-07 07:11:12] [INFO] Capacidade atual da bateria: 6.1455078125
+[2024-06-07 07:11:12] [INFO] Número de ciclos da bateria: 246
+[2024-06-07 07:11:12] [INFO] Capacidade de design da bateria: 42.08203125
+[2024-06-07 07:11:12] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-07 07:11:12] [INFO] Tempo restante da bateria (instantâneo): 1320.0
+[2024-06-07 07:11:12] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-07 07:11:12] [INFO] Taxa de uso de energia da bateria: -17157.0
+[2024-06-07 07:11:12] [INFO] Temperatura da bateria: 0.0
+[2024-06-07 07:11:12] [INFO] Capacidade máxima da bateria: 32.330078125
+[2024-06-07 07:11:12] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-07 07:11:12] [INFO] Data de fabricação da bateria: N/A
+[2024-06-07 07:11:12] [INFO] Fabricante da bateria: SAMSUNG Electronics
+[2024-06-07 07:11:13] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:13] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:13] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:13] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:13] [INFO] ID da janela: 66008
+[2024-06-07 07:11:13] [INFO] PID da janela: 2892
+[2024-06-07 07:11:13] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-07 07:11:13] [INFO] Dados da bateria capturados com sucesso: 19.0
+[2024-06-07 07:11:13] [INFO] Dados da bateria gravados.
+[2024-06-07 07:11:14] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:14] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:14] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:14] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:14] [INFO] ID da janela: 65966
+[2024-06-07 07:11:14] [INFO] PID da janela: 2892
+[2024-06-07 07:11:14] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-07 07:11:14] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-07 07:11:14] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-07 07:11:14] [INFO] Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-06-07 07:11:14] [INFO] Espaço disponível no volume lógico capturado : 25.226428985595703
+[2024-06-07 07:11:14] [INFO] Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-06-07 07:11:14] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-07 07:11:14] [INFO] UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-06-07 07:11:14] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-07 07:11:14] [INFO] Dados do volume lógico gravados.
+[2024-06-07 07:11:14] [INFO] Todos os volumes lógicos verificados.
+[2024-06-07 07:11:14] [INFO] Capturando dados da sua CPU.
+[2024-06-07 07:11:14] [INFO] Número de CPUs lógicas: 8
+[2024-06-07 07:11:14] [INFO] Número de CPUs físicas: 4
+[2024-06-07 07:11:14] [INFO] Microarquitetura: Tiger Lake
+[2024-06-07 07:11:14] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-07 07:11:14] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-07 07:11:14] [INFO] Fabricante: GenuineIntel
+[2024-06-07 07:11:14] [INFO] Frequência: 2.419E9
+[2024-06-07 07:11:14] [INFO] Número de pacotes físicos: 1
+[2024-06-07 07:11:14] [INFO] Uso da CPU: 12.133168927250308
+[2024-06-07 07:11:14] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-07 07:11:14] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:14] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:14] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:14] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:14] [INFO] ID da janela: 65964
+[2024-06-07 07:11:14] [INFO] PID da janela: 2892
+[2024-06-07 07:11:14] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-07 07:11:15] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:15] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-07 07:11:15] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:15] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:15] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:15] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:15] [INFO] ID da janela: 65962
+[2024-06-07 07:11:15] [INFO] PID da janela: 2892
+[2024-06-07 07:11:15] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-07 07:11:15] [INFO] Capturando dados do seu HDD
+[2024-06-07 07:11:16] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-07 07:11:16] [INFO] Serial do disco: 0025_38D3_3101_18C2.
+[2024-06-07 07:11:16] [INFO] Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-06-07 07:11:16] [INFO] Escritas do disco: 11.055840492248535
+[2024-06-07 07:11:16] [INFO] Leituras do disco: 26.05537509918213
+[2024-06-07 07:11:16] [INFO] Bytes de escritas do disco: 473.97323846817017
+[2024-06-07 07:11:16] [INFO] Bytes de leitura do disco: 1248.1415100097656
+[2024-06-07 07:11:16] [INFO] Tamanho do disco: 238.47
+[2024-06-07 07:11:16] [INFO] Tempo de transferência do disco: 15723.118611111111
+[2024-06-07 07:11:16] [INFO] Dados do disco gravados.
+[2024-06-07 07:11:16] [INFO] Capturando dados da GPU.
+[2024-06-07 07:11:16] [INFO] Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-06-07 07:11:16] [INFO] Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-07 07:11:16] [INFO] O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-07 07:11:16] [INFO] A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-06-07 07:11:16] [INFO] A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-06-07 07:11:16] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:16] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:16] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:16] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:16] [INFO] ID da janela: 65960
+[2024-06-07 07:11:16] [INFO] PID da janela: 2892
+[2024-06-07 07:11:16] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-07 07:11:17] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:17] [INFO] Dados da GPU gravados.
+[2024-06-07 07:11:17] [INFO] Capturando dados da sua memória RAM.
+[2024-06-07 07:11:17] [INFO] Memória disponível: 556.0
+[2024-06-07 07:11:17] [INFO] Memória total: 7.729835510253906
+[2024-06-07 07:11:17] [INFO] Memória em uso: 7.186866760253906
+[2024-06-07 07:11:17] [INFO] Dados da memória ram capturados com sucesso.
+[2024-06-07 07:11:17] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:17] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:17] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:17] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:17] [INFO] ID da janela: 65912
+[2024-06-07 07:11:17] [INFO] PID da janela: 2892
+[2024-06-07 07:11:17] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-07 07:11:17] [INFO] Capturando dados da sua bateria.
+[2024-06-07 07:11:17] [INFO] Amperagem da bateria: -1413.2075471698113
+[2024-06-07 07:11:17] [INFO] Nome do dispositivo da bateria: SR Real Battery
+[2024-06-07 07:11:17] [INFO] Número de série da bateria: 123456789
+[2024-06-07 07:11:17] [INFO] Química da bateria: LION
+[2024-06-07 07:11:17] [INFO] Nome da bateria: System Battery
+[2024-06-07 07:11:17] [INFO] Voltagem da bateria: 10.6
+[2024-06-07 07:11:17] [INFO] Capacidade atual da bateria: 6.123046875
+[2024-06-07 07:11:17] [INFO] Número de ciclos da bateria: 246
+[2024-06-07 07:11:17] [INFO] Capacidade de design da bateria: 42.08203125
+[2024-06-07 07:11:17] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-07 07:11:17] [INFO] Tempo restante da bateria (instantâneo): 1506.0
+[2024-06-07 07:11:17] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-07 07:11:17] [INFO] Taxa de uso de energia da bateria: -14980.0
+[2024-06-07 07:11:17] [INFO] Temperatura da bateria: 0.0
+[2024-06-07 07:11:17] [INFO] Capacidade máxima da bateria: 32.330078125
+[2024-06-07 07:11:17] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-07 07:11:17] [INFO] Data de fabricação da bateria: N/A
+[2024-06-07 07:11:17] [INFO] Fabricante da bateria: SAMSUNG Electronics
+[2024-06-07 07:11:18] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:18] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:18] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:18] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:18] [INFO] ID da janela: 65918
+[2024-06-07 07:11:18] [INFO] PID da janela: 2892
+[2024-06-07 07:11:18] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-07 07:11:18] [INFO] Dados da bateria capturados com sucesso: 18.0
+[2024-06-07 07:11:18] [INFO] Dados da bateria gravados.
+[2024-06-07 07:11:18] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-07 07:11:18] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-07 07:11:18] [INFO] Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-06-07 07:11:18] [INFO] Espaço disponível no volume lógico capturado : 25.225936889648438
+[2024-06-07 07:11:18] [INFO] Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-06-07 07:11:18] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-07 07:11:18] [INFO] UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-06-07 07:11:18] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-07 07:11:18] [INFO] Dados do volume lógico gravados.
+[2024-06-07 07:11:18] [INFO] Todos os volumes lógicos verificados.
+[2024-06-07 07:11:19] [INFO] Capturando dados da sua CPU.
+[2024-06-07 07:11:19] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:19] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:19] [INFO] Título da janela: Program Manager
+[2024-06-07 07:11:19] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:19] [INFO] ID da janela: 131376
+[2024-06-07 07:11:19] [INFO] PID da janela: 2892
+[2024-06-07 07:11:19] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-07 07:11:19] [INFO] Número de CPUs lógicas: 8
+[2024-06-07 07:11:19] [INFO] Número de CPUs físicas: 4
+[2024-06-07 07:11:19] [INFO] Microarquitetura: Tiger Lake
+[2024-06-07 07:11:19] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-07 07:11:19] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-07 07:11:19] [INFO] Fabricante: GenuineIntel
+[2024-06-07 07:11:19] [INFO] Frequência: 2.419E9
+[2024-06-07 07:11:19] [INFO] Número de pacotes físicos: 1
+[2024-06-07 07:11:19] [INFO] Uso da CPU: 8.836923076923076
+[2024-06-07 07:11:19] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-07 07:11:20] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:20] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:20] [INFO] Todas as janelas verificadas.
+[2024-06-07 07:11:20] [INFO] Capturando dados dos seus Apps.
+[2024-06-07 07:11:20] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:20] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:20] [INFO] ID da janela: 395270
+[2024-06-07 07:11:20] [INFO] PID da janela: 2892
+[2024-06-07 07:11:20] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-06-07 07:11:20] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:20] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-07 07:11:20] [INFO] Capturando dados do seu HDD
+[2024-06-07 07:11:20] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-07 07:11:20] [INFO] Serial do disco: 0025_38D3_3101_18C2.
+[2024-06-07 07:11:20] [INFO] Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-06-07 07:11:20] [INFO] Escritas do disco: 11.056158065795898
+[2024-06-07 07:11:20] [INFO] Leituras do disco: 26.05551052093506
+[2024-06-07 07:11:20] [INFO] Bytes de escritas do disco: 473.9761414527893
+[2024-06-07 07:11:20] [INFO] Bytes de leitura do disco: 1248.1458177566528
+[2024-06-07 07:11:20] [INFO] Tamanho do disco: 238.47
+[2024-06-07 07:11:20] [INFO] Tempo de transferência do disco: 15723.218333333334
+[2024-06-07 07:11:20] [INFO] Dados do disco gravados.
+[2024-06-07 07:11:20] [INFO] Capturando dados da GPU.
+[2024-06-07 07:11:20] [INFO] Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-06-07 07:11:20] [INFO] Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-07 07:11:20] [INFO] O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-07 07:11:20] [INFO] A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-06-07 07:11:20] [INFO] A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-06-07 07:11:20] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:20] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:20] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:20] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:20] [INFO] ID da janela: 197928
+[2024-06-07 07:11:20] [INFO] PID da janela: 2892
+[2024-06-07 07:11:20] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-06-07 07:11:21] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:21] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:21] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:21] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:21] [INFO] ID da janela: 65794
+[2024-06-07 07:11:21] [INFO] PID da janela: 2892
+[2024-06-07 07:11:21] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
+[2024-06-07 07:11:22] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:22] [INFO] Dados da GPU gravados.
+[2024-06-07 07:11:22] [INFO] Capturando dados da sua memória RAM.
+[2024-06-07 07:11:22] [INFO] Memória disponível: 552.421875
+[2024-06-07 07:11:22] [INFO] Memória total: 7.729835510253906
+[2024-06-07 07:11:22] [INFO] Memória em uso: 7.190361022949219
+[2024-06-07 07:11:22] [INFO] Dados da memória ram capturados com sucesso.
+[2024-06-07 07:11:22] [INFO] Capturando dados da sua bateria.
+[2024-06-07 07:11:22] [INFO] Amperagem da bateria: -1463.4237956615646
+[2024-06-07 07:11:22] [INFO] Nome do dispositivo da bateria: SR Real Battery
+[2024-06-07 07:11:22] [INFO] Número de série da bateria: 123456789
+[2024-06-07 07:11:22] [INFO] Química da bateria: LION
+[2024-06-07 07:11:22] [INFO] Nome da bateria: System Battery
+[2024-06-07 07:11:22] [INFO] Voltagem da bateria: 10.649
+[2024-06-07 07:11:22] [INFO] Capacidade atual da bateria: 6.078125
+[2024-06-07 07:11:22] [INFO] Número de ciclos da bateria: 246
+[2024-06-07 07:11:22] [INFO] Capacidade de design da bateria: 42.08203125
+[2024-06-07 07:11:22] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-07 07:11:22] [INFO] Tempo restante da bateria (instantâneo): 1437.0
+[2024-06-07 07:11:22] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-07 07:11:22] [INFO] Taxa de uso de energia da bateria: -15584.0
+[2024-06-07 07:11:22] [INFO] Temperatura da bateria: 0.0
+[2024-06-07 07:11:22] [INFO] Capacidade máxima da bateria: 32.330078125
+[2024-06-07 07:11:22] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-07 07:11:22] [INFO] Data de fabricação da bateria: N/A
+[2024-06-07 07:11:22] [INFO] Fabricante da bateria: SAMSUNG Electronics
+[2024-06-07 07:11:22] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:22] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:22] [INFO] Título da janela: app_client – ramUsageWindow.bat [app-client-api]
+[2024-06-07 07:11:22] [INFO] Comando da janela: C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.3\bin\idea64.exe
+[2024-06-07 07:11:22] [INFO] ID da janela: 460594
+[2024-06-07 07:11:22] [INFO] PID da janela: 12824
+[2024-06-07 07:11:22] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-07 07:11:23] [INFO] Uso da ram pela janela: 1.0
+[2024-06-07 07:11:23] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:23] [INFO] Título da janela: ChatGPT - Opera
+[2024-06-07 07:11:23] [INFO] Comando da janela: C:\Users\claus\AppData\Local\Programs\Opera GX\opera.exe
+[2024-06-07 07:11:23] [INFO] ID da janela: 526502
+[2024-06-07 07:11:23] [INFO] PID da janela: 17856
+[2024-06-07 07:11:23] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-07 07:11:23] [INFO] Dados da bateria capturados com sucesso: 18.0
+[2024-06-07 07:11:23] [INFO] Dados da bateria gravados.
+[2024-06-07 07:11:23] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-07 07:11:23] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-07 07:11:23] [INFO] Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-06-07 07:11:23] [INFO] Espaço disponível no volume lógico capturado : 25.225608825683594
+[2024-06-07 07:11:23] [INFO] Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-06-07 07:11:23] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-07 07:11:23] [INFO] UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-06-07 07:11:23] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-07 07:11:23] [INFO] Dados do volume lógico gravados.
+[2024-06-07 07:11:23] [INFO] Todos os volumes lógicos verificados.
+[2024-06-07 07:11:24] [INFO] Capturando dados da sua CPU.
+[2024-06-07 07:11:24] [INFO] Número de CPUs lógicas: 8
+[2024-06-07 07:11:24] [INFO] Número de CPUs físicas: 4
+[2024-06-07 07:11:24] [INFO] Microarquitetura: Tiger Lake
+[2024-06-07 07:11:24] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-07 07:11:24] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-07 07:11:24] [INFO] Fabricante: GenuineIntel
+[2024-06-07 07:11:24] [INFO] Frequência: 2.419E9
+[2024-06-07 07:11:24] [INFO] Número de pacotes físicos: 1
+[2024-06-07 07:11:24] [INFO] Uso da CPU: 13.223546761705787
+[2024-06-07 07:11:24] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-07 07:11:24] [INFO] Uso da ram pela janela: 146.0
+[2024-06-07 07:11:24] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:24] [INFO] Título da janela: MySQL Workbench
+[2024-06-07 07:11:24] [INFO] Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
+[2024-06-07 07:11:24] [INFO] ID da janela: 263160
+[2024-06-07 07:11:24] [INFO] PID da janela: 21892
+[2024-06-07 07:11:24] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
+[2024-06-07 07:11:25] [INFO] Uso da ram pela janela: 178.0
+[2024-06-07 07:11:25] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:25] [INFO] Título da janela: relatorioModel.js - front-VisualOps - Visual Studio Code
+[2024-06-07 07:11:25] [INFO] Comando da janela: C:\Users\claus\AppData\Local\Programs\Microsoft VS Code\Code.exe
+[2024-06-07 07:11:25] [INFO] ID da janela: 526054
+[2024-06-07 07:11:25] [INFO] PID da janela: 23732
+[2024-06-07 07:11:25] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-07 07:11:25] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:25] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-07 07:11:25] [INFO] Capturando dados do seu HDD
+[2024-06-07 07:11:25] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-07 07:11:25] [INFO] Serial do disco: 0025_38D3_3101_18C2.
+[2024-06-07 07:11:25] [INFO] Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-06-07 07:11:25] [INFO] Escritas do disco: 11.056375503540039
+[2024-06-07 07:11:25] [INFO] Leituras do disco: 26.055624961853027
+[2024-06-07 07:11:25] [INFO] Bytes de escritas do disco: 473.978449344635
+[2024-06-07 07:11:25] [INFO] Bytes de leitura do disco: 1248.1486639976501
+[2024-06-07 07:11:25] [INFO] Tamanho do disco: 238.47
+[2024-06-07 07:11:25] [INFO] Tempo de transferência do disco: 15723.284444444444
+[2024-06-07 07:11:25] [INFO] Dados do disco gravados.
+[2024-06-07 07:11:25] [INFO] Capturando dados da GPU.
+[2024-06-07 07:11:25] [INFO] Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-06-07 07:11:25] [INFO] Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-07 07:11:25] [INFO] O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-07 07:11:25] [INFO] A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-06-07 07:11:25] [INFO] A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-06-07 07:11:26] [INFO] Uso da ram pela janela: 52.0
+[2024-06-07 07:11:26] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:26] [INFO] Título da janela: Configurações
+[2024-06-07 07:11:26] [INFO] Comando da janela: C:\Windows\ImmersiveControlPanel\SystemSettings.exe
+[2024-06-07 07:11:26] [INFO] ID da janela: 197998
+[2024-06-07 07:11:26] [INFO] PID da janela: 24444
+[2024-06-07 07:11:26] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
+[2024-06-07 07:11:26] [INFO] Uso da ram pela janela: 3.0
+[2024-06-07 07:11:26] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:26] [INFO] Título da janela: Configurações
+[2024-06-07 07:11:26] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-07 07:11:26] [INFO] ID da janela: 263326
+[2024-06-07 07:11:26] [INFO] PID da janela: 8608
+[2024-06-07 07:11:26] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-07 07:11:27] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:27] [INFO] Dados da GPU gravados.
+[2024-06-07 07:11:27] [INFO] Capturando dados da sua memória RAM.
+[2024-06-07 07:11:27] [INFO] Memória disponível: 532.359375
+[2024-06-07 07:11:27] [INFO] Memória total: 7.729835510253906
+[2024-06-07 07:11:27] [INFO] Memória em uso: 7.209953308105469
+[2024-06-07 07:11:27] [INFO] Dados da memória ram capturados com sucesso.
+[2024-06-07 07:11:27] [INFO] Capturando dados da sua bateria.
+[2024-06-07 07:11:27] [INFO] Amperagem da bateria: -1469.8093717719976
+[2024-06-07 07:11:27] [INFO] Nome do dispositivo da bateria: SR Real Battery
+[2024-06-07 07:11:27] [INFO] Número de série da bateria: 123456789
+[2024-06-07 07:11:27] [INFO] Química da bateria: LION
+[2024-06-07 07:11:27] [INFO] Nome da bateria: System Battery
+[2024-06-07 07:11:27] [INFO] Voltagem da bateria: 10.649
+[2024-06-07 07:11:27] [INFO] Capacidade atual da bateria: 6.0673828125
+[2024-06-07 07:11:27] [INFO] Número de ciclos da bateria: 246
+[2024-06-07 07:11:27] [INFO] Capacidade de design da bateria: 42.08203125
+[2024-06-07 07:11:27] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-07 07:11:27] [INFO] Tempo restante da bateria (instantâneo): 1429.0
+[2024-06-07 07:11:27] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-07 07:11:27] [INFO] Taxa de uso de energia da bateria: -15652.0
+[2024-06-07 07:11:27] [INFO] Temperatura da bateria: 0.0
+[2024-06-07 07:11:27] [INFO] Capacidade máxima da bateria: 32.330078125
+[2024-06-07 07:11:27] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-07 07:11:27] [INFO] Data de fabricação da bateria: N/A
+[2024-06-07 07:11:27] [INFO] Fabricante da bateria: SAMSUNG Electronics
+[2024-06-07 07:11:27] [INFO] Uso da ram pela janela: 10.0
+[2024-06-07 07:11:27] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:27] [INFO] Título da janela: Experiência de Entrada do Windows
+[2024-06-07 07:11:27] [INFO] Comando da janela: C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe
+[2024-06-07 07:11:27] [INFO] ID da janela: 131950
+[2024-06-07 07:11:27] [INFO] PID da janela: 18060
+[2024-06-07 07:11:27] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-07 07:11:28] [INFO] Dados da bateria capturados com sucesso: 18.0
+[2024-06-07 07:11:28] [INFO] Dados da bateria gravados.
+[2024-06-07 07:11:28] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-07 07:11:28] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-07 07:11:28] [INFO] Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-06-07 07:11:28] [INFO] Espaço disponível no volume lógico capturado : 25.225112915039062
+[2024-06-07 07:11:28] [INFO] Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-06-07 07:11:28] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-07 07:11:28] [INFO] UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-06-07 07:11:28] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-07 07:11:28] [INFO] Dados do volume lógico gravados.
+[2024-06-07 07:11:28] [INFO] Todos os volumes lógicos verificados.
+[2024-06-07 07:11:28] [INFO] Uso da ram pela janela: 21.0
+[2024-06-07 07:11:28] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:28] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:28] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:28] [INFO] ID da janela: 66000
+[2024-06-07 07:11:28] [INFO] PID da janela: 2892
+[2024-06-07 07:11:28] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
+[2024-06-07 07:11:28] [INFO] Capturando dados da sua CPU.
+[2024-06-07 07:11:28] [INFO] Número de CPUs lógicas: 8
+[2024-06-07 07:11:28] [INFO] Número de CPUs físicas: 4
+[2024-06-07 07:11:28] [INFO] Microarquitetura: Tiger Lake
+[2024-06-07 07:11:28] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-07 07:11:28] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-07 07:11:28] [INFO] Fabricante: GenuineIntel
+[2024-06-07 07:11:28] [INFO] Frequência: 2.419E9
+[2024-06-07 07:11:28] [INFO] Número de pacotes físicos: 1
+[2024-06-07 07:11:29] [INFO] Uso da CPU: 8.84814176716712
+[2024-06-07 07:11:29] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-07 07:11:29] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:29] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:29] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:29] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:29] [INFO] ID da janela: 66008
+[2024-06-07 07:11:29] [INFO] PID da janela: 2892
+[2024-06-07 07:11:29] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-07 07:11:30] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:30] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-07 07:11:30] [INFO] Capturando dados do seu HDD
+[2024-06-07 07:11:30] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:30] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:30] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:30] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:30] [INFO] ID da janela: 65966
+[2024-06-07 07:11:30] [INFO] PID da janela: 2892
+[2024-06-07 07:11:30] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-07 07:11:30] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-07 07:11:30] [INFO] Serial do disco: 0025_38D3_3101_18C2.
+[2024-06-07 07:11:30] [INFO] Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-06-07 07:11:30] [INFO] Escritas do disco: 11.056546211242676
+[2024-06-07 07:11:30] [INFO] Leituras do disco: 26.055797576904297
+[2024-06-07 07:11:30] [INFO] Bytes de escritas do disco: 473.98054361343384
+[2024-06-07 07:11:30] [INFO] Bytes de leitura do disco: 1248.152723789215
+[2024-06-07 07:11:30] [INFO] Tamanho do disco: 238.47
+[2024-06-07 07:11:30] [INFO] Tempo de transferência do disco: 15723.352222222222
+[2024-06-07 07:11:30] [INFO] Dados do disco gravados.
+[2024-06-07 07:11:30] [INFO] Capturando dados da GPU.
+[2024-06-07 07:11:30] [INFO] Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-06-07 07:11:30] [INFO] Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-07 07:11:30] [INFO] O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-07 07:11:30] [INFO] A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-06-07 07:11:30] [INFO] A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-06-07 07:11:31] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:31] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:31] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:31] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:31] [INFO] ID da janela: 65964
+[2024-06-07 07:11:31] [INFO] PID da janela: 2892
+[2024-06-07 07:11:31] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-07 07:11:31] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:31] [INFO] Dados da GPU gravados.
+[2024-06-07 07:11:31] [INFO] Capturando dados da sua memória RAM.
+[2024-06-07 07:11:31] [INFO] Memória disponível: 519.5703125
+[2024-06-07 07:11:31] [INFO] Memória total: 7.729835510253906
+[2024-06-07 07:11:31] [INFO] Memória em uso: 7.222442626953125
+[2024-06-07 07:11:31] [INFO] Dados da memória ram capturados com sucesso.
+[2024-06-07 07:11:31] [INFO] Capturando dados da sua bateria.
+[2024-06-07 07:11:31] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:31] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:31] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:31] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:31] [INFO] ID da janela: 65962
+[2024-06-07 07:11:31] [INFO] PID da janela: 2892
+[2024-06-07 07:11:31] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-07 07:11:31] [INFO] Amperagem da bateria: -1376.4750306806382
+[2024-06-07 07:11:31] [INFO] Nome do dispositivo da bateria: SR Real Battery
+[2024-06-07 07:11:31] [INFO] Número de série da bateria: 123456789
+[2024-06-07 07:11:31] [INFO] Química da bateria: LION
+[2024-06-07 07:11:31] [INFO] Nome da bateria: System Battery
+[2024-06-07 07:11:31] [INFO] Voltagem da bateria: 10.593
+[2024-06-07 07:11:31] [INFO] Capacidade atual da bateria: 6.044921875
+[2024-06-07 07:11:31] [INFO] Número de ciclos da bateria: 246
+[2024-06-07 07:11:31] [INFO] Capacidade de design da bateria: 42.08203125
+[2024-06-07 07:11:31] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-07 07:11:31] [INFO] Tempo restante da bateria (instantâneo): 1528.0
+[2024-06-07 07:11:31] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-07 07:11:31] [INFO] Taxa de uso de energia da bateria: -14581.0
+[2024-06-07 07:11:31] [INFO] Temperatura da bateria: 0.0
+[2024-06-07 07:11:31] [INFO] Capacidade máxima da bateria: 32.330078125
+[2024-06-07 07:11:31] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-07 07:11:31] [INFO] Data de fabricação da bateria: N/A
+[2024-06-07 07:11:31] [INFO] Fabricante da bateria: SAMSUNG Electronics
+[2024-06-07 07:11:32] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:32] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:32] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:32] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:32] [INFO] ID da janela: 65960
+[2024-06-07 07:11:32] [INFO] PID da janela: 2892
+[2024-06-07 07:11:32] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-07 07:11:33] [INFO] Dados da bateria capturados com sucesso: 18.0
+[2024-06-07 07:11:33] [INFO] Dados da bateria gravados.
+[2024-06-07 07:11:33] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-07 07:11:33] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-07 07:11:33] [INFO] Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-06-07 07:11:33] [INFO] Espaço disponível no volume lógico capturado : 25.224742889404297
+[2024-06-07 07:11:33] [INFO] Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-06-07 07:11:33] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-07 07:11:33] [INFO] UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-06-07 07:11:33] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-07 07:11:33] [INFO] Dados do volume lógico gravados.
+[2024-06-07 07:11:33] [INFO] Todos os volumes lógicos verificados.
+[2024-06-07 07:11:33] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:33] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:33] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:33] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:33] [INFO] ID da janela: 65912
+[2024-06-07 07:11:33] [INFO] PID da janela: 2892
+[2024-06-07 07:11:33] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-07 07:11:33] [INFO] Capturando dados da sua CPU.
+[2024-06-07 07:11:33] [INFO] Número de CPUs lógicas: 8
+[2024-06-07 07:11:33] [INFO] Número de CPUs físicas: 4
+[2024-06-07 07:11:33] [INFO] Microarquitetura: Tiger Lake
+[2024-06-07 07:11:33] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-07 07:11:33] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-07 07:11:33] [INFO] Fabricante: GenuineIntel
+[2024-06-07 07:11:33] [INFO] Frequência: 2.419E9
+[2024-06-07 07:11:33] [INFO] Número de pacotes físicos: 1
+[2024-06-07 07:11:33] [INFO] Uso da CPU: 8.392377229416075
+[2024-06-07 07:11:33] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-07 07:11:34] [INFO] Uso da ram pela janela: 142.0
+[2024-06-07 07:11:34] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:34] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:34] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:34] [INFO] ID da janela: 65918
+[2024-06-07 07:11:34] [INFO] PID da janela: 2892
+[2024-06-07 07:11:34] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-07 07:11:35] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:35] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-07 07:11:35] [INFO] Capturando dados do seu HDD
+[2024-06-07 07:11:35] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-07 07:11:35] [INFO] Serial do disco: 0025_38D3_3101_18C2.
+[2024-06-07 07:11:35] [INFO] Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-06-07 07:11:35] [INFO] Escritas do disco: 11.056966781616211
+[2024-06-07 07:11:35] [INFO] Leituras do disco: 26.055882453918457
+[2024-06-07 07:11:35] [INFO] Bytes de escritas do disco: 473.9871163368225
+[2024-06-07 07:11:35] [INFO] Bytes de leitura do disco: 1248.15540599823
+[2024-06-07 07:11:35] [INFO] Tamanho do disco: 238.47
+[2024-06-07 07:11:35] [INFO] Tempo de transferência do disco: 15723.41
+[2024-06-07 07:11:35] [INFO] Dados do disco gravados.
+[2024-06-07 07:11:35] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:35] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:35] [INFO] Título da janela: Program Manager
+[2024-06-07 07:11:35] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:35] [INFO] ID da janela: 131376
+[2024-06-07 07:11:35] [INFO] PID da janela: 2892
+[2024-06-07 07:11:35] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-07 07:11:35] [INFO] Capturando dados da GPU.
+[2024-06-07 07:11:35] [INFO] Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-06-07 07:11:35] [INFO] Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-07 07:11:35] [INFO] O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-07 07:11:35] [INFO] A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-06-07 07:11:35] [INFO] A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-06-07 07:11:36] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:36] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:36] [INFO] Todas as janelas verificadas.
+[2024-06-07 07:11:36] [INFO] Capturando dados dos seus Apps.
+[2024-06-07 07:11:36] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:36] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:36] [INFO] ID da janela: 395270
+[2024-06-07 07:11:36] [INFO] PID da janela: 2892
+[2024-06-07 07:11:36] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-06-07 07:11:36] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:36] [INFO] Dados da GPU gravados.
+[2024-06-07 07:11:36] [INFO] Capturando dados da sua memória RAM.
+[2024-06-07 07:11:36] [INFO] Memória disponível: 480.328125
+[2024-06-07 07:11:36] [INFO] Memória total: 7.729835510253906
+[2024-06-07 07:11:36] [INFO] Memória em uso: 7.260765075683594
+[2024-06-07 07:11:36] [INFO] Dados da memória ram capturados com sucesso.
+[2024-06-07 07:11:36] [INFO] Capturando dados da sua bateria.
+[2024-06-07 07:11:36] [INFO] Amperagem da bateria: -1595.3164676008653
+[2024-06-07 07:11:36] [INFO] Nome do dispositivo da bateria: SR Real Battery
+[2024-06-07 07:11:36] [INFO] Número de série da bateria: 123456789
+[2024-06-07 07:11:36] [INFO] Química da bateria: LION
+[2024-06-07 07:11:36] [INFO] Nome da bateria: System Battery
+[2024-06-07 07:11:36] [INFO] Voltagem da bateria: 10.633
+[2024-06-07 07:11:36] [INFO] Capacidade atual da bateria: 6.01171875
+[2024-06-07 07:11:36] [INFO] Número de ciclos da bateria: 246
+[2024-06-07 07:11:36] [INFO] Capacidade de design da bateria: 42.08203125
+[2024-06-07 07:11:36] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-07 07:11:36] [INFO] Tempo restante da bateria (instantâneo): 1306.0
+[2024-06-07 07:11:36] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-07 07:11:36] [INFO] Taxa de uso de energia da bateria: -16963.0
+[2024-06-07 07:11:36] [INFO] Temperatura da bateria: 0.0
+[2024-06-07 07:11:36] [INFO] Capacidade máxima da bateria: 32.330078125
+[2024-06-07 07:11:36] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-07 07:11:36] [INFO] Data de fabricação da bateria: N/A
+[2024-06-07 07:11:36] [INFO] Fabricante da bateria: SAMSUNG Electronics
+[2024-06-07 07:11:37] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:37] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:37] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:37] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:37] [INFO] ID da janela: 197928
+[2024-06-07 07:11:37] [INFO] PID da janela: 2892
+[2024-06-07 07:11:37] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-06-07 07:11:38] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:38] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:38] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:38] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:38] [INFO] ID da janela: 65794
+[2024-06-07 07:11:38] [INFO] PID da janela: 2892
+[2024-06-07 07:11:38] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
+[2024-06-07 07:11:38] [INFO] Dados da bateria capturados com sucesso: 18.0
+[2024-06-07 07:11:38] [INFO] Dados da bateria gravados.
+[2024-06-07 07:11:38] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-07 07:11:38] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-07 07:11:38] [INFO] Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-06-07 07:11:38] [INFO] Espaço disponível no volume lógico capturado : 25.2227783203125
+[2024-06-07 07:11:38] [INFO] Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-06-07 07:11:38] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-07 07:11:38] [INFO] UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-06-07 07:11:38] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-07 07:11:38] [INFO] Dados do volume lógico gravados.
+[2024-06-07 07:11:38] [INFO] Todos os volumes lógicos verificados.
+[2024-06-07 07:11:38] [INFO] Capturando dados da sua CPU.
+[2024-06-07 07:11:38] [INFO] Número de CPUs lógicas: 8
+[2024-06-07 07:11:38] [INFO] Número de CPUs físicas: 4
+[2024-06-07 07:11:38] [INFO] Microarquitetura: Tiger Lake
+[2024-06-07 07:11:38] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-07 07:11:38] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-07 07:11:38] [INFO] Fabricante: GenuineIntel
+[2024-06-07 07:11:38] [INFO] Frequência: 2.419E9
+[2024-06-07 07:11:38] [INFO] Número de pacotes físicos: 1
+[2024-06-07 07:11:38] [INFO] Uso da CPU: 19.96069278958359
+[2024-06-07 07:11:38] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-07 07:11:38] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:38] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:38] [INFO] Título da janela: MySQL Workbench
+[2024-06-07 07:11:38] [INFO] Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
+[2024-06-07 07:11:38] [INFO] ID da janela: 263160
+[2024-06-07 07:11:38] [INFO] PID da janela: 21892
+[2024-06-07 07:11:38] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
+[2024-06-07 07:11:39] [INFO] Uso da ram pela janela: 178.0
+[2024-06-07 07:11:39] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:39] [INFO] Título da janela: app_client – ramUsageWindow.bat [app-client-api]
+[2024-06-07 07:11:39] [INFO] Comando da janela: C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.3\bin\idea64.exe
+[2024-06-07 07:11:39] [INFO] ID da janela: 460594
+[2024-06-07 07:11:39] [INFO] PID da janela: 12824
+[2024-06-07 07:11:39] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-07 07:11:39] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:39] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-07 07:11:39] [INFO] Capturando dados do seu HDD
+[2024-06-07 07:11:40] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-07 07:11:40] [INFO] Serial do disco: 0025_38D3_3101_18C2.
+[2024-06-07 07:11:40] [INFO] Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-06-07 07:11:40] [INFO] Escritas do disco: 11.057397842407227
+[2024-06-07 07:11:40] [INFO] Leituras do disco: 26.05598735809326
+[2024-06-07 07:11:40] [INFO] Bytes de escritas do disco: 473.9917321205139
+[2024-06-07 07:11:40] [INFO] Bytes de leitura do disco: 1248.158480167389
+[2024-06-07 07:11:40] [INFO] Tamanho do disco: 238.47
+[2024-06-07 07:11:40] [INFO] Tempo de transferência do disco: 15723.490833333333
+[2024-06-07 07:11:40] [INFO] Dados do disco gravados.
+[2024-06-07 07:11:40] [INFO] Capturando dados da GPU.
+[2024-06-07 07:11:40] [INFO] Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-06-07 07:11:40] [INFO] Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-07 07:11:40] [INFO] O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-07 07:11:40] [INFO] A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-06-07 07:11:40] [INFO] A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-06-07 07:11:40] [INFO] Uso da ram pela janela: 1.0
+[2024-06-07 07:11:40] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:40] [INFO] Título da janela: ChatGPT - Opera
+[2024-06-07 07:11:40] [INFO] Comando da janela: C:\Users\claus\AppData\Local\Programs\Opera GX\opera.exe
+[2024-06-07 07:11:40] [INFO] ID da janela: 526502
+[2024-06-07 07:11:40] [INFO] PID da janela: 17856
+[2024-06-07 07:11:40] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-07 07:11:41] [INFO] Uso da ram pela janela: 146.0
+[2024-06-07 07:11:41] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:41] [INFO] Título da janela: relatorioModel.js - front-VisualOps - Visual Studio Code
+[2024-06-07 07:11:41] [INFO] Comando da janela: C:\Users\claus\AppData\Local\Programs\Microsoft VS Code\Code.exe
+[2024-06-07 07:11:41] [INFO] ID da janela: 526054
+[2024-06-07 07:11:41] [INFO] PID da janela: 23732
+[2024-06-07 07:11:41] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-07 07:11:41] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:41] [INFO] Dados da GPU gravados.
+[2024-06-07 07:11:41] [INFO] Capturando dados da sua memória RAM.
+[2024-06-07 07:11:41] [INFO] Memória disponível: 518.046875
+[2024-06-07 07:11:41] [INFO] Memória total: 7.729835510253906
+[2024-06-07 07:11:41] [INFO] Memória em uso: 7.223930358886719
+[2024-06-07 07:11:41] [INFO] Dados da memória ram capturados com sucesso.
+[2024-06-07 07:11:41] [INFO] Capturando dados da sua bateria.
+[2024-06-07 07:11:41] [INFO] Amperagem da bateria: -1346.8159157181826
+[2024-06-07 07:11:41] [INFO] Nome do dispositivo da bateria: SR Real Battery
+[2024-06-07 07:11:41] [INFO] Número de série da bateria: 123456789
+[2024-06-07 07:11:41] [INFO] Química da bateria: LION
+[2024-06-07 07:11:41] [INFO] Nome da bateria: System Battery
+[2024-06-07 07:11:41] [INFO] Voltagem da bateria: 10.631
+[2024-06-07 07:11:41] [INFO] Capacidade atual da bateria: 5.9892578125
+[2024-06-07 07:11:41] [INFO] Número de ciclos da bateria: 246
+[2024-06-07 07:11:41] [INFO] Capacidade de design da bateria: 42.08203125
+[2024-06-07 07:11:41] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-07 07:11:41] [INFO] Tempo restante da bateria (instantâneo): 1542.0
+[2024-06-07 07:11:41] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-07 07:11:41] [INFO] Taxa de uso de energia da bateria: -14318.0
+[2024-06-07 07:11:41] [INFO] Temperatura da bateria: 0.0
+[2024-06-07 07:11:41] [INFO] Capacidade máxima da bateria: 32.330078125
+[2024-06-07 07:11:41] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-07 07:11:41] [INFO] Data de fabricação da bateria: N/A
+[2024-06-07 07:11:41] [INFO] Fabricante da bateria: SAMSUNG Electronics
+[2024-06-07 07:11:41] [INFO] Uso da ram pela janela: 52.0
+[2024-06-07 07:11:41] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:41] [INFO] Título da janela: Configurações
+[2024-06-07 07:11:41] [INFO] Comando da janela: C:\Windows\ImmersiveControlPanel\SystemSettings.exe
+[2024-06-07 07:11:41] [INFO] ID da janela: 197998
+[2024-06-07 07:11:41] [INFO] PID da janela: 24444
+[2024-06-07 07:11:41] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
+[2024-06-07 07:11:42] [INFO] Dados da bateria capturados com sucesso: 18.0
+[2024-06-07 07:11:42] [INFO] Dados da bateria gravados.
+[2024-06-07 07:11:42] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-07 07:11:42] [INFO] Uso da ram pela janela: 3.0
+[2024-06-07 07:11:42] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:42] [INFO] Título da janela: Configurações
+[2024-06-07 07:11:42] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-07 07:11:42] [INFO] ID da janela: 263326
+[2024-06-07 07:11:42] [INFO] PID da janela: 8608
+[2024-06-07 07:11:42] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-07 07:11:42] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-07 07:11:42] [INFO] Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-06-07 07:11:42] [INFO] Espaço disponível no volume lógico capturado : 25.222209930419922
+[2024-06-07 07:11:42] [INFO] Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-06-07 07:11:42] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-07 07:11:42] [INFO] UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-06-07 07:11:42] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-07 07:11:42] [INFO] Dados do volume lógico gravados.
+[2024-06-07 07:11:42] [INFO] Todos os volumes lógicos verificados.
+[2024-06-07 07:11:43] [INFO] Capturando dados da sua CPU.
+[2024-06-07 07:11:43] [INFO] Número de CPUs lógicas: 8
+[2024-06-07 07:11:43] [INFO] Número de CPUs físicas: 4
+[2024-06-07 07:11:43] [INFO] Microarquitetura: Tiger Lake
+[2024-06-07 07:11:43] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-07 07:11:43] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-07 07:11:43] [INFO] Fabricante: GenuineIntel
+[2024-06-07 07:11:43] [INFO] Frequência: 2.419E9
+[2024-06-07 07:11:43] [INFO] Número de pacotes físicos: 1
+[2024-06-07 07:11:43] [INFO] Uso da CPU: 11.319138521781694
+[2024-06-07 07:11:43] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-07 07:11:43] [INFO] Uso da ram pela janela: 10.0
+[2024-06-07 07:11:43] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:43] [INFO] Título da janela: Experiência de Entrada do Windows
+[2024-06-07 07:11:43] [INFO] Comando da janela: C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe
+[2024-06-07 07:11:43] [INFO] ID da janela: 131950
+[2024-06-07 07:11:43] [INFO] PID da janela: 18060
+[2024-06-07 07:11:43] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-07 07:11:44] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:44] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-07 07:11:44] [INFO] Capturando dados do seu HDD
+[2024-06-07 07:11:44] [INFO] Uso da ram pela janela: 21.0
+[2024-06-07 07:11:44] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:44] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:44] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:44] [INFO] ID da janela: 66000
+[2024-06-07 07:11:44] [INFO] PID da janela: 2892
+[2024-06-07 07:11:44] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
+[2024-06-07 07:11:44] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-07 07:11:44] [INFO] Serial do disco: 0025_38D3_3101_18C2.
+[2024-06-07 07:11:44] [INFO] Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-06-07 07:11:44] [INFO] Escritas do disco: 11.057605743408203
+[2024-06-07 07:11:44] [INFO] Leituras do disco: 26.05604362487793
+[2024-06-07 07:11:44] [INFO] Bytes de escritas do disco: 473.99435663223267
+[2024-06-07 07:11:44] [INFO] Bytes de leitura do disco: 1248.1601338386536
+[2024-06-07 07:11:44] [INFO] Tamanho do disco: 238.47
+[2024-06-07 07:11:44] [INFO] Tempo de transferência do disco: 15723.550555555556
+[2024-06-07 07:11:44] [INFO] Dados do disco gravados.
+[2024-06-07 07:11:44] [INFO] Capturando dados da GPU.
+[2024-06-07 07:11:44] [INFO] Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-06-07 07:11:44] [INFO] Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-07 07:11:44] [INFO] O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-07 07:11:44] [INFO] A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-06-07 07:11:44] [INFO] A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-06-07 07:11:45] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:45] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:45] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:45] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:45] [INFO] ID da janela: 66008
+[2024-06-07 07:11:45] [INFO] PID da janela: 2892
+[2024-06-07 07:11:45] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-07 07:11:45] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:45] [INFO] Dados da GPU gravados.
+[2024-06-07 07:11:45] [INFO] Capturando dados da sua memória RAM.
+[2024-06-07 07:11:45] [INFO] Memória disponível: 509.6171875
+[2024-06-07 07:11:45] [INFO] Memória total: 7.729835510253906
+[2024-06-07 07:11:45] [INFO] Memória em uso: 7.2321624755859375
+[2024-06-07 07:11:45] [INFO] Dados da memória ram capturados com sucesso.
+[2024-06-07 07:11:45] [INFO] Capturando dados da sua bateria.
+[2024-06-07 07:11:45] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:45] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:45] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:45] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:45] [INFO] ID da janela: 65966
+[2024-06-07 07:11:45] [INFO] PID da janela: 2892
+[2024-06-07 07:11:45] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-07 07:11:46] [INFO] Amperagem da bateria: -1498.8210883712156
+[2024-06-07 07:11:46] [INFO] Nome do dispositivo da bateria: SR Real Battery
+[2024-06-07 07:11:46] [INFO] Número de série da bateria: 123456789
+[2024-06-07 07:11:46] [INFO] Química da bateria: LION
+[2024-06-07 07:11:46] [INFO] Nome da bateria: System Battery
+[2024-06-07 07:11:46] [INFO] Voltagem da bateria: 10.603
+[2024-06-07 07:11:46] [INFO] Capacidade atual da bateria: 5.978515625
+[2024-06-07 07:11:46] [INFO] Número de ciclos da bateria: 246
+[2024-06-07 07:11:46] [INFO] Capacidade de design da bateria: 42.08203125
+[2024-06-07 07:11:46] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-07 07:11:46] [INFO] Tempo restante da bateria (instantâneo): 1386.0
+[2024-06-07 07:11:46] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-07 07:11:46] [INFO] Taxa de uso de energia da bateria: -15892.0
+[2024-06-07 07:11:46] [INFO] Temperatura da bateria: 0.0
+[2024-06-07 07:11:46] [INFO] Capacidade máxima da bateria: 32.330078125
+[2024-06-07 07:11:46] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-07 07:11:46] [INFO] Data de fabricação da bateria: N/A
+[2024-06-07 07:11:46] [INFO] Fabricante da bateria: SAMSUNG Electronics
+[2024-06-07 07:11:46] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:46] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:46] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:46] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:46] [INFO] ID da janela: 65964
+[2024-06-07 07:11:46] [INFO] PID da janela: 2892
+[2024-06-07 07:11:46] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-07 07:11:47] [INFO] Dados da bateria capturados com sucesso: 18.0
+[2024-06-07 07:11:47] [INFO] Dados da bateria gravados.
+[2024-06-07 07:11:47] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-07 07:11:47] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-07 07:11:47] [INFO] Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-06-07 07:11:47] [INFO] Espaço disponível no volume lógico capturado : 25.221843719482422
+[2024-06-07 07:11:47] [INFO] Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-06-07 07:11:47] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-07 07:11:47] [INFO] UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-06-07 07:11:47] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-07 07:11:47] [INFO] Dados do volume lógico gravados.
+[2024-06-07 07:11:47] [INFO] Todos os volumes lógicos verificados.
+[2024-06-07 07:11:47] [INFO] Capturando dados da sua CPU.
+[2024-06-07 07:11:47] [INFO] Número de CPUs lógicas: 8
+[2024-06-07 07:11:47] [INFO] Número de CPUs físicas: 4
+[2024-06-07 07:11:47] [INFO] Microarquitetura: Tiger Lake
+[2024-06-07 07:11:47] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-07 07:11:47] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-07 07:11:47] [INFO] Fabricante: GenuineIntel
+[2024-06-07 07:11:47] [INFO] Frequência: 2.419E9
+[2024-06-07 07:11:47] [INFO] Número de pacotes físicos: 1
+[2024-06-07 07:11:47] [INFO] Uso da CPU: 13.069647463456576
+[2024-06-07 07:11:47] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-07 07:11:47] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:47] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:47] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:47] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:47] [INFO] ID da janela: 65962
+[2024-06-07 07:11:47] [INFO] PID da janela: 2892
+[2024-06-07 07:11:47] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-07 07:11:48] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:48] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:48] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:48] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:48] [INFO] ID da janela: 65960
+[2024-06-07 07:11:48] [INFO] PID da janela: 2892
+[2024-06-07 07:11:48] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-07 07:11:49] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:49] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-07 07:11:49] [INFO] Capturando dados do seu HDD
+[2024-06-07 07:11:49] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-07 07:11:49] [INFO] Serial do disco: 0025_38D3_3101_18C2.
+[2024-06-07 07:11:49] [INFO] Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-06-07 07:11:49] [INFO] Escritas do disco: 11.057851791381836
+[2024-06-07 07:11:49] [INFO] Leituras do disco: 26.056201934814453
+[2024-06-07 07:11:49] [INFO] Bytes de escritas do disco: 474.00633096694946
+[2024-06-07 07:11:49] [INFO] Bytes de leitura do disco: 1248.1654438972473
+[2024-06-07 07:11:49] [INFO] Tamanho do disco: 238.47
+[2024-06-07 07:11:49] [INFO] Tempo de transferência do disco: 15723.607777777777
+[2024-06-07 07:11:49] [INFO] Dados do disco gravados.
+[2024-06-07 07:11:49] [INFO] Capturando dados da GPU.
+[2024-06-07 07:11:49] [INFO] Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-06-07 07:11:49] [INFO] Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-07 07:11:49] [INFO] O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-07 07:11:49] [INFO] A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-06-07 07:11:49] [INFO] A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-06-07 07:11:49] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:49] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:49] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:49] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:49] [INFO] ID da janela: 65912
+[2024-06-07 07:11:49] [INFO] PID da janela: 2892
+[2024-06-07 07:11:49] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-07 07:11:50] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:50] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:50] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:50] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:50] [INFO] ID da janela: 65918
+[2024-06-07 07:11:50] [INFO] PID da janela: 2892
+[2024-06-07 07:11:50] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-07 07:11:51] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:51] [INFO] Dados da GPU gravados.
+[2024-06-07 07:11:51] [INFO] Capturando dados da sua memória RAM.
+[2024-06-07 07:11:51] [INFO] Memória disponível: 498.21875
+[2024-06-07 07:11:51] [INFO] Memória total: 7.729835510253906
+[2024-06-07 07:11:51] [INFO] Memória em uso: 7.243293762207031
+[2024-06-07 07:11:51] [INFO] Dados da memória ram capturados com sucesso.
+[2024-06-07 07:11:51] [INFO] Capturando dados da sua bateria.
+[2024-06-07 07:11:51] [INFO] Amperagem da bateria: -1604.1783773655613
+[2024-06-07 07:11:51] [INFO] Nome do dispositivo da bateria: SR Real Battery
+[2024-06-07 07:11:51] [INFO] Número de série da bateria: 123456789
+[2024-06-07 07:11:51] [INFO] Química da bateria: LION
+[2024-06-07 07:11:51] [INFO] Nome da bateria: System Battery
+[2024-06-07 07:11:51] [INFO] Voltagem da bateria: 10.674
+[2024-06-07 07:11:51] [INFO] Capacidade atual da bateria: 5.9453125
+[2024-06-07 07:11:51] [INFO] Número de ciclos da bateria: 246
+[2024-06-07 07:11:51] [INFO] Capacidade de design da bateria: 42.08203125
+[2024-06-07 07:11:51] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-07 07:11:51] [INFO] Tempo restante da bateria (instantâneo): 1279.0
+[2024-06-07 07:11:51] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-07 07:11:51] [INFO] Taxa de uso de energia da bateria: -17123.0
+[2024-06-07 07:11:51] [INFO] Temperatura da bateria: 0.0
+[2024-06-07 07:11:51] [INFO] Capacidade máxima da bateria: 32.330078125
+[2024-06-07 07:11:51] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-07 07:11:51] [INFO] Data de fabricação da bateria: N/A
+[2024-06-07 07:11:51] [INFO] Fabricante da bateria: SAMSUNG Electronics
+[2024-06-07 07:11:51] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:51] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:51] [INFO] Título da janela: Program Manager
+[2024-06-07 07:11:51] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:51] [INFO] ID da janela: 131376
+[2024-06-07 07:11:51] [INFO] PID da janela: 2892
+[2024-06-07 07:11:51] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-07 07:11:52] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:52] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:52] [INFO] Todas as janelas verificadas.
+[2024-06-07 07:11:52] [INFO] Capturando dados dos seus Apps.
+[2024-06-07 07:11:52] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:52] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:52] [INFO] ID da janela: 395270
+[2024-06-07 07:11:52] [INFO] PID da janela: 2892
+[2024-06-07 07:11:52] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-06-07 07:11:52] [INFO] Dados da bateria capturados com sucesso: 18.0
+[2024-06-07 07:11:52] [INFO] Dados da bateria gravados.
+[2024-06-07 07:11:52] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-07 07:11:52] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-07 07:11:52] [INFO] Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-06-07 07:11:52] [INFO] Espaço disponível no volume lógico capturado : 25.22115707397461
+[2024-06-07 07:11:52] [INFO] Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-06-07 07:11:52] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-07 07:11:52] [INFO] UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-06-07 07:11:52] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-07 07:11:52] [INFO] Dados do volume lógico gravados.
+[2024-06-07 07:11:52] [INFO] Todos os volumes lógicos verificados.
+[2024-06-07 07:11:53] [INFO] Capturando dados da sua CPU.
+[2024-06-07 07:11:53] [INFO] Número de CPUs lógicas: 8
+[2024-06-07 07:11:53] [INFO] Número de CPUs físicas: 4
+[2024-06-07 07:11:53] [INFO] Microarquitetura: Tiger Lake
+[2024-06-07 07:11:53] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-07 07:11:53] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-07 07:11:53] [INFO] Fabricante: GenuineIntel
+[2024-06-07 07:11:53] [INFO] Frequência: 2.419E9
+[2024-06-07 07:11:53] [INFO] Número de pacotes físicos: 1
+[2024-06-07 07:11:53] [INFO] Uso da CPU: 69.52144188937228
+[2024-06-07 07:11:53] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-07 07:11:53] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:53] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:53] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:53] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:53] [INFO] ID da janela: 197928
+[2024-06-07 07:11:53] [INFO] PID da janela: 2892
+[2024-06-07 07:11:53] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-06-07 07:11:54] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:54] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:54] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:11:54] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:11:54] [INFO] ID da janela: 65794
+[2024-06-07 07:11:54] [INFO] PID da janela: 2892
+[2024-06-07 07:11:54] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
+[2024-06-07 07:11:54] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:54] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-07 07:11:54] [INFO] Capturando dados do seu HDD
+[2024-06-07 07:11:54] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-07 07:11:54] [INFO] Serial do disco: 0025_38D3_3101_18C2.
+[2024-06-07 07:11:54] [INFO] Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-06-07 07:11:54] [INFO] Escritas do disco: 11.05829906463623
+[2024-06-07 07:11:54] [INFO] Leituras do disco: 26.056401252746582
+[2024-06-07 07:11:54] [INFO] Bytes de escritas do disco: 474.0145363807678
+[2024-06-07 07:11:54] [INFO] Bytes de leitura do disco: 1248.1722469329834
+[2024-06-07 07:11:54] [INFO] Tamanho do disco: 238.47
+[2024-06-07 07:11:54] [INFO] Tempo de transferência do disco: 15723.680555555555
+[2024-06-07 07:11:54] [INFO] Dados do disco gravados.
+[2024-06-07 07:11:54] [INFO] Capturando dados da GPU.
+[2024-06-07 07:11:54] [INFO] Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-06-07 07:11:54] [INFO] Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-07 07:11:54] [INFO] O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-07 07:11:54] [INFO] A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-06-07 07:11:54] [INFO] A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-06-07 07:11:54] [INFO] Uso da ram pela janela: 141.0
+[2024-06-07 07:11:54] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:54] [INFO] Título da janela: MySQL Workbench
+[2024-06-07 07:11:54] [INFO] Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
+[2024-06-07 07:11:54] [INFO] ID da janela: 263160
+[2024-06-07 07:11:54] [INFO] PID da janela: 21892
+[2024-06-07 07:11:54] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
+[2024-06-07 07:11:55] [INFO] Uso da ram pela janela: 179.0
+[2024-06-07 07:11:55] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:55] [INFO] Título da janela: app_client – ramUsageWindow.bat [app-client-api]
+[2024-06-07 07:11:55] [INFO] Comando da janela: C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.3\bin\idea64.exe
+[2024-06-07 07:11:55] [INFO] ID da janela: 460594
+[2024-06-07 07:11:55] [INFO] PID da janela: 12824
+[2024-06-07 07:11:55] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-07 07:11:55] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:55] [INFO] Dados da GPU gravados.
+[2024-06-07 07:11:55] [INFO] Capturando dados da sua memória RAM.
+[2024-06-07 07:11:55] [INFO] Memória disponível: 509.31640625
+[2024-06-07 07:11:55] [INFO] Memória total: 7.729835510253906
+[2024-06-07 07:11:55] [INFO] Memória em uso: 7.232456207275391
+[2024-06-07 07:11:55] [INFO] Dados da memória ram capturados com sucesso.
+[2024-06-07 07:11:55] [INFO] Capturando dados da sua bateria.
+[2024-06-07 07:11:56] [INFO] Amperagem da bateria: -1529.5499389269942
+[2024-06-07 07:11:56] [INFO] Nome do dispositivo da bateria: SR Real Battery
+[2024-06-07 07:11:56] [INFO] Número de série da bateria: 123456789
+[2024-06-07 07:11:56] [INFO] Química da bateria: LION
+[2024-06-07 07:11:56] [INFO] Nome da bateria: System Battery
+[2024-06-07 07:11:56] [INFO] Voltagem da bateria: 10.643
+[2024-06-07 07:11:56] [INFO] Capacidade atual da bateria: 5.9228515625
+[2024-06-07 07:11:56] [INFO] Número de ciclos da bateria: 246
+[2024-06-07 07:11:56] [INFO] Capacidade de design da bateria: 42.08203125
+[2024-06-07 07:11:56] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-07 07:11:56] [INFO] Tempo restante da bateria (instantâneo): 1341.0
+[2024-06-07 07:11:56] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-07 07:11:56] [INFO] Taxa de uso de energia da bateria: -16279.0
+[2024-06-07 07:11:56] [INFO] Temperatura da bateria: 0.0
+[2024-06-07 07:11:56] [INFO] Capacidade máxima da bateria: 32.330078125
+[2024-06-07 07:11:56] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-07 07:11:56] [INFO] Data de fabricação da bateria: N/A
+[2024-06-07 07:11:56] [INFO] Fabricante da bateria: SAMSUNG Electronics
+[2024-06-07 07:11:56] [INFO] Uso da ram pela janela: 1.0
+[2024-06-07 07:11:56] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:56] [INFO] Título da janela: ChatGPT - Opera
+[2024-06-07 07:11:56] [INFO] Comando da janela: C:\Users\claus\AppData\Local\Programs\Opera GX\opera.exe
+[2024-06-07 07:11:56] [INFO] ID da janela: 526502
+[2024-06-07 07:11:56] [INFO] PID da janela: 17856
+[2024-06-07 07:11:56] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-07 07:11:57] [INFO] Uso da ram pela janela: 146.0
+[2024-06-07 07:11:57] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:57] [INFO] Título da janela: relatorioModel.js - front-VisualOps - Visual Studio Code
+[2024-06-07 07:11:57] [INFO] Comando da janela: C:\Users\claus\AppData\Local\Programs\Microsoft VS Code\Code.exe
+[2024-06-07 07:11:57] [INFO] ID da janela: 526054
+[2024-06-07 07:11:57] [INFO] PID da janela: 23732
+[2024-06-07 07:11:57] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-07 07:11:57] [INFO] Dados da bateria capturados com sucesso: 18.0
+[2024-06-07 07:11:57] [INFO] Dados da bateria gravados.
+[2024-06-07 07:11:57] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-07 07:11:57] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-07 07:11:57] [INFO] Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-06-07 07:11:57] [INFO] Espaço disponível no volume lógico capturado : 25.224594116210938
+[2024-06-07 07:11:57] [INFO] Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-06-07 07:11:57] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-07 07:11:57] [INFO] UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-06-07 07:11:57] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-07 07:11:57] [INFO] Dados do volume lógico gravados.
+[2024-06-07 07:11:57] [INFO] Todos os volumes lógicos verificados.
+[2024-06-07 07:11:57] [INFO] Capturando dados da sua CPU.
+[2024-06-07 07:11:58] [INFO] Número de CPUs lógicas: 8
+[2024-06-07 07:11:58] [INFO] Número de CPUs físicas: 4
+[2024-06-07 07:11:58] [INFO] Microarquitetura: Tiger Lake
+[2024-06-07 07:11:58] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-07 07:11:58] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-07 07:11:58] [INFO] Fabricante: GenuineIntel
+[2024-06-07 07:11:58] [INFO] Frequência: 2.419E9
+[2024-06-07 07:11:58] [INFO] Número de pacotes físicos: 1
+[2024-06-07 07:11:58] [INFO] Uso da CPU: 6.523879862136879
+[2024-06-07 07:11:58] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-07 07:11:58] [INFO] Uso da ram pela janela: 49.0
+[2024-06-07 07:11:58] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:58] [INFO] Título da janela: Configurações
+[2024-06-07 07:11:58] [INFO] Comando da janela: C:\Windows\ImmersiveControlPanel\SystemSettings.exe
+[2024-06-07 07:11:58] [INFO] ID da janela: 197998
+[2024-06-07 07:11:58] [INFO] PID da janela: 24444
+[2024-06-07 07:11:58] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
+[2024-06-07 07:11:59] [INFO] Uso da ram pela janela: 2.0
+[2024-06-07 07:11:59] [INFO] Dados da janela gravados.
+[2024-06-07 07:11:59] [INFO] Título da janela: Configurações
+[2024-06-07 07:11:59] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-07 07:11:59] [INFO] ID da janela: 263326
+[2024-06-07 07:11:59] [INFO] PID da janela: 8608
+[2024-06-07 07:11:59] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-07 07:11:59] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:11:59] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-07 07:11:59] [INFO] Capturando dados do seu HDD
+[2024-06-07 07:11:59] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-07 07:11:59] [INFO] Serial do disco: 0025_38D3_3101_18C2.
+[2024-06-07 07:11:59] [INFO] Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-06-07 07:11:59] [INFO] Escritas do disco: 11.05866527557373
+[2024-06-07 07:11:59] [INFO] Leituras do disco: 26.056482315063477
+[2024-06-07 07:11:59] [INFO] Bytes de escritas do disco: 474.0261559486389
+[2024-06-07 07:11:59] [INFO] Bytes de leitura do disco: 1248.175645828247
+[2024-06-07 07:11:59] [INFO] Tamanho do disco: 238.47
+[2024-06-07 07:11:59] [INFO] Tempo de transferência do disco: 15723.801111111112
+[2024-06-07 07:11:59] [INFO] Dados do disco gravados.
+[2024-06-07 07:11:59] [INFO] Capturando dados da GPU.
+[2024-06-07 07:11:59] [INFO] Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-06-07 07:11:59] [INFO] Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-07 07:11:59] [INFO] O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-07 07:11:59] [INFO] A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-06-07 07:11:59] [INFO] A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-06-07 07:12:00] [INFO] Uso da ram pela janela: 10.0
+[2024-06-07 07:12:00] [INFO] Dados da janela gravados.
+[2024-06-07 07:12:00] [INFO] Título da janela: Experiência de Entrada do Windows
+[2024-06-07 07:12:00] [INFO] Comando da janela: C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe
+[2024-06-07 07:12:00] [INFO] ID da janela: 131950
+[2024-06-07 07:12:00] [INFO] PID da janela: 18060
+[2024-06-07 07:12:00] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-07 07:12:02] [INFO] Uso da ram pela janela: 21.0
+[2024-06-07 07:12:02] [INFO] Dados da janela gravados.
+[2024-06-07 07:12:02] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:12:02] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:12:02] [INFO] ID da janela: 66000
+[2024-06-07 07:12:02] [INFO] PID da janela: 2892
+[2024-06-07 07:12:02] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
+[2024-06-07 07:12:02] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:12:02] [INFO] Dados da GPU gravados.
+[2024-06-07 07:12:02] [INFO] Capturando dados da sua memória RAM.
+[2024-06-07 07:12:02] [INFO] Memória disponível: 636.04296875
+[2024-06-07 07:12:02] [INFO] Memória total: 7.729835510253906
+[2024-06-07 07:12:02] [INFO] Memória em uso: 7.108699798583984
+[2024-06-07 07:12:02] [INFO] Dados da memória ram capturados com sucesso.
+[2024-06-07 07:12:02] [INFO] Capturando dados da sua bateria.
+[2024-06-07 07:12:02] [INFO] Amperagem da bateria: -1390.3149976492714
+[2024-06-07 07:12:02] [INFO] Nome do dispositivo da bateria: SR Real Battery
+[2024-06-07 07:12:02] [INFO] Número de série da bateria: 123456789
+[2024-06-07 07:12:02] [INFO] Química da bateria: LION
+[2024-06-07 07:12:02] [INFO] Nome da bateria: System Battery
+[2024-06-07 07:12:02] [INFO] Voltagem da bateria: 10.635
+[2024-06-07 07:12:02] [INFO] Capacidade atual da bateria: 5.8896484375
+[2024-06-07 07:12:02] [INFO] Número de ciclos da bateria: 246
+[2024-06-07 07:12:02] [INFO] Capacidade de design da bateria: 42.08203125
+[2024-06-07 07:12:02] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-07 07:12:02] [INFO] Tempo restante da bateria (instantâneo): 1468.0
+[2024-06-07 07:12:02] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-07 07:12:02] [INFO] Taxa de uso de energia da bateria: -14786.0
+[2024-06-07 07:12:02] [INFO] Temperatura da bateria: 0.0
+[2024-06-07 07:12:02] [INFO] Capacidade máxima da bateria: 32.330078125
+[2024-06-07 07:12:02] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-07 07:12:02] [INFO] Data de fabricação da bateria: N/A
+[2024-06-07 07:12:02] [INFO] Fabricante da bateria: SAMSUNG Electronics

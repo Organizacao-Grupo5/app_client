@@ -1,0 +1,51 @@
+[2024-06-07 07:03:45] [INFO] Servidor iniciando.
+[2024-06-07 07:03:47] [INFO] Servidor iniciado com sucesso.
+[2024-06-07 07:04:33] [WARNING] Tentativa de login falhou para o email: clausilvaraujo11@gmail.com
+[2024-06-07 07:04:54] [INFO] Usuário logado com sucesso: clausilvaaraujo11@gmail.com
+[2024-06-07 07:04:55] [INFO] Buscando componentes...
+[2024-06-07 07:04:55] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 1
+
+[2024-06-07 07:04:56] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 2
+
+[2024-06-07 07:04:56] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 3
+
+[2024-06-07 07:04:56] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 4
+
+[2024-06-07 07:04:56] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 5
+
+[2024-06-07 07:04:56] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 6
+
+[2024-06-07 07:05:01] [INFO] Capturando os componentes:
+
+[2024-06-07 07:05:15] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-07T07:05:15.164712800
+    |Id componente: 1
+
