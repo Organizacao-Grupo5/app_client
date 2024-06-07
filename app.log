@@ -1,1728 +1,755 @@
-[2024-06-06 21:02:09] INFO: Verificando informações de login do usuário.
-[2024-06-06 21:02:10] INFO: Usuário foi encontrado com sucesso.
-[2024-06-06 21:02:12] INFO: Buscando componentes...
-[2024-06-06 21:02:12] INFO: Componente encontrado :
+[2024-06-07 07:10:38] INFO: Verificando informações de login do usuário.
+[2024-06-07 07:10:39] WARNING: Usuário não encontrado.
+[2024-06-07 07:10:39] ERROR: Erro ao autenticar o usuário: 
+util.exception.AutenticationException: Falha ao autenticar o usuário. Verifique suas credenciais.
+	at util.security.Seguranca.autenticarUsuario(Seguranca.java:28)
+	at util.security.Login.login(Login.java:20)
+	at Main.main(Main.java:91)
+
+[2024-06-07 07:10:39] INFO: Verificando informações de login do usuário.
+[2024-06-07 07:10:39] WARNING: Usuário não encontrado.
+[2024-06-07 07:10:39] ERROR: Erro ao autenticar o usuário: 
+util.exception.AutenticationException: Falha ao autenticar o usuário. Verifique suas credenciais.
+	at util.security.Seguranca.autenticarUsuario(Seguranca.java:28)
+	at util.security.Login.login(Login.java:20)
+	at Main.main(Main.java:96)
+
+[2024-06-07 07:10:53] INFO: Verificando informações de login do usuário.
+[2024-06-07 07:10:53] INFO: Usuário foi encontrado com sucesso.
+[2024-06-07 07:10:55] INFO: Buscando componentes...
+[2024-06-07 07:10:55] INFO: Componente encontrado :
     |Componente: CPU
     |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
     |Fabricante: GenuineIntel
     |ID Componente: 1
 
-[2024-06-06 21:02:12] INFO: Componente encontrado :
+[2024-06-07 07:10:56] INFO: Componente encontrado :
     |Componente: HDD
     |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
     |Fabricante: N/A
     |ID Componente: 2
 
-[2024-06-06 21:02:12] INFO: Componente encontrado :
+[2024-06-07 07:10:56] INFO: Componente encontrado :
     |Componente: GPU
     |Modelo: Intel(R) Iris(R) Xe Graphics
     |Fabricante: Intel Corporation
     |ID Componente: 3
 
-[2024-06-06 21:02:12] INFO: Componente encontrado :
+[2024-06-07 07:10:56] INFO: Componente encontrado :
     |Componente: MemoriaRam
     |Modelo: N/A
     |Fabricante: N/A
     |ID Componente: 4
 
-[2024-06-06 21:02:12] INFO: Componente encontrado :
+[2024-06-07 07:10:56] INFO: Componente encontrado :
     |Componente: Bateria
     |Modelo: System Battery
     |Fabricante: SAMSUNG Electronics
     |ID Componente: 5
 
-[2024-06-06 21:02:12] INFO: Componente encontrado :
+[2024-06-07 07:10:56] INFO: Componente encontrado :
     |Componente: Volume
     |Modelo: Disco Fixo Local (C:)
     |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
     |ID Componente: 6
 
-[2024-06-06 21:02:17] INFO: Sua máquina contém componentes registrados
-[2024-06-06 21:02:18] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 127 MB
-[2024-06-06 21:02:18] INFO: 
+[2024-06-07 07:11:03] INFO: Sua máquina contém componentes registrados
+[2024-06-07 07:11:04] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:05] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: CPU
     |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:18.074344400
+    |Data hora captura: 2024-06-07T07:11:05.079212400
     |Id componente: 1
 
-[2024-06-06 21:02:18] INFO: 
+[2024-06-07 07:11:05] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: HDD
     |Dado capturado: 238,47
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:18.293092100
+    |Data hora captura: 2024-06-07T07:11:05.581877700
     |Id componente: 2
 
-[2024-06-06 21:02:18] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 127 MB
-[2024-06-06 21:02:18] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 127 MB
-[2024-06-06 21:02:18] INFO: 
+[2024-06-07 07:11:05] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:06] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:06] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: GPU
     |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:18.918449900
+    |Data hora captura: 2024-06-07T07:11:06.896537800
     |Id componente: 3
 
-[2024-06-06 21:02:19] INFO: 
+[2024-06-07 07:11:07] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: MemoriaRam
-    |Dado capturado: 6,70
+    |Dado capturado: 7,12
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:19.027825700
+    |Data hora captura: 2024-06-07T07:11:07.084058600
     |Id componente: 4
 
-[2024-06-06 21:02:19] INFO: A ram utilizada na janela de PID 1824 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-06 21:02:19] INFO: 
+[2024-06-07 07:11:07] INFO: A ram utilizada na janela de PID 12824 foi coletada com sucesso, uso de ram: 1 MB
+[2024-06-07 07:11:08] INFO: A ram utilizada na janela de PID 17856 foi coletada com sucesso, uso de ram: 146 MB
+[2024-06-07 07:11:08] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Bateria
-    |Dado capturado: 44,00
+    |Dado capturado: 19,00
     |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:02:19.669290200
+    |Data hora captura: 2024-06-07T07:11:08.716628700
     |Id componente: 5
 
-[2024-06-06 21:02:19] INFO: A ram utilizada na janela de PID 3576 foi coletada com sucesso, uso de ram: 13 MB
-[2024-06-06 21:02:19] INFO: 
+[2024-06-07 07:11:08] INFO: A ram utilizada na janela de PID 21892 foi coletada com sucesso, uso de ram: 178 MB
+[2024-06-07 07:11:08] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Volume
-    |Dado capturado: 200,40
+    |Dado capturado: 197,75
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:19.778668700
+    |Data hora captura: 2024-06-07T07:11:08.982263500
     |Id componente: 6
 
-[2024-06-06 21:02:20] INFO: A ram utilizada na janela de PID 22888 foi coletada com sucesso, uso de ram: 61 MB
-[2024-06-06 21:02:20] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 128 MB
-[2024-06-06 21:02:20] INFO: A ram utilizada na janela de PID 17956 foi coletada com sucesso, uso de ram: 26 MB
-[2024-06-06 21:02:21] INFO: 
+[2024-06-07 07:11:09] INFO: A ram utilizada na janela de PID 23732 foi coletada com sucesso, uso de ram: 52 MB
+[2024-06-07 07:11:10] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: CPU
     |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:21.071683
+    |Data hora captura: 2024-06-07T07:11:10.691410700
     |Id componente: 1
 
-[2024-06-06 21:02:21] INFO: 
+[2024-06-07 07:11:10] INFO: A ram utilizada na janela de PID 24444 foi coletada com sucesso, uso de ram: 3 MB
+[2024-06-07 07:11:10] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: HDD
     |Dado capturado: 238,47
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:21.212304500
+    |Data hora captura: 2024-06-07T07:11:10.988292400
     |Id componente: 2
 
-[2024-06-06 21:02:21] INFO: A ram utilizada na janela de PID 13136 foi coletada com sucesso, uso de ram: 62 MB
-[2024-06-06 21:02:21] INFO: A ram utilizada na janela de PID 24444 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-06 21:02:21] INFO: 
+[2024-06-07 07:11:11] INFO: A ram utilizada na janela de PID 8608 foi coletada com sucesso, uso de ram: 10 MB
+[2024-06-07 07:11:12] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: GPU
     |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:21.893095500
+    |Data hora captura: 2024-06-07T07:11:12.177664400
     |Id componente: 3
 
-[2024-06-06 21:02:21] INFO: 
+[2024-06-07 07:11:12] INFO: A ram utilizada na janela de PID 18060 foi coletada com sucesso, uso de ram: 21 MB
+[2024-06-07 07:11:12] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: MemoriaRam
-    |Dado capturado: 6,76
+    |Dado capturado: 7,16
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:21.971224700
+    |Data hora captura: 2024-06-07T07:11:12.350002300
     |Id componente: 4
 
-[2024-06-06 21:02:22] INFO: A ram utilizada na janela de PID 8608 foi coletada com sucesso, uso de ram: 10 MB
-[2024-06-06 21:02:22] INFO: 
+[2024-06-07 07:11:13] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:13] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Bateria
-    |Dado capturado: 44,00
+    |Dado capturado: 19,00
     |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:02:22.716514500
+    |Data hora captura: 2024-06-07T07:11:13.975455100
     |Id componente: 5
 
-[2024-06-06 21:02:22] INFO: 
+[2024-06-07 07:11:14] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:14] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Volume
-    |Dado capturado: 200,40
+    |Dado capturado: 197,75
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:22.872767700
+    |Data hora captura: 2024-06-07T07:11:14.178621
     |Id componente: 6
 
-[2024-06-06 21:02:23] INFO: A ram utilizada na janela de PID 18060 foi coletada com sucesso, uso de ram: 17 MB
-[2024-06-06 21:02:25] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 122 MB
-[2024-06-06 21:02:26] INFO: 
+[2024-06-07 07:11:14] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:15] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: CPU
     |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:26.679150900
+    |Data hora captura: 2024-06-07T07:11:15.775918500
     |Id componente: 1
 
-[2024-06-06 21:02:26] INFO: 
+[2024-06-07 07:11:15] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:16] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: HDD
     |Dado capturado: 238,47
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:26.908929500
+    |Data hora captura: 2024-06-07T07:11:16.119668700
     |Id componente: 2
 
-[2024-06-06 21:02:27] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:02:28] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:02:28] INFO: 
+[2024-06-07 07:11:16] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:17] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: GPU
     |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:28.297579400
+    |Data hora captura: 2024-06-07T07:11:17.482218100
     |Id componente: 3
 
-[2024-06-06 21:02:28] INFO: 
+[2024-06-07 07:11:17] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:17] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,19
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:17.638466300
+    |Id componente: 4
+
+[2024-06-07 07:11:18] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:18] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 18,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-07T07:11:18.780594400
+    |Id componente: 5
+
+[2024-06-07 07:11:18] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 197,75
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:18.983928700
+    |Id componente: 6
+
+[2024-06-07 07:11:19] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:20] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:20] ERROR: Erro ao inserir janela:
+
+java.lang.RuntimeException: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
+	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at dao.componente.APPDAO.gravaApps(APPDAO.java:18)
+	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
+	at Main.lambda$iniciarMonitoramento$1(Main.java:173)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:26)
+	... 10 more
+
+[2024-06-07 07:11:20] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-07T07:11:20.530399600
+    |Id componente: 1
+
+[2024-06-07 07:11:20] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:20.780407400
+    |Id componente: 2
+
+[2024-06-07 07:11:20] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:21] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:22] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-07T07:11:22.046807
+    |Id componente: 3
+
+[2024-06-07 07:11:22] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,19
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:22.234536800
+    |Id componente: 4
+
+[2024-06-07 07:11:22] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:23] INFO: A ram utilizada na janela de PID 12824 foi coletada com sucesso, uso de ram: 1 MB
+[2024-06-07 07:11:23] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 18,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-07T07:11:23.783736800
+    |Id componente: 5
+
+[2024-06-07 07:11:24] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 197,75
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:24.002487200
+    |Id componente: 6
+
+[2024-06-07 07:11:24] INFO: A ram utilizada na janela de PID 17856 foi coletada com sucesso, uso de ram: 146 MB
+[2024-06-07 07:11:25] INFO: A ram utilizada na janela de PID 21892 foi coletada com sucesso, uso de ram: 178 MB
+[2024-06-07 07:11:25] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-07T07:11:25.455253600
+    |Id componente: 1
+
+[2024-06-07 07:11:25] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:25.721200800
+    |Id componente: 2
+
+[2024-06-07 07:11:26] INFO: A ram utilizada na janela de PID 23732 foi coletada com sucesso, uso de ram: 52 MB
+[2024-06-07 07:11:26] INFO: A ram utilizada na janela de PID 24444 foi coletada com sucesso, uso de ram: 3 MB
+[2024-06-07 07:11:27] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-07T07:11:27.082380900
+    |Id componente: 3
+
+[2024-06-07 07:11:27] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: MemoriaRam
     |Dado capturado: 7,21
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:28.406956900
+    |Data hora captura: 2024-06-07T07:11:27.261682800
     |Id componente: 4
 
-[2024-06-06 21:02:28] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 125 MB
-[2024-06-06 21:02:29] INFO: 
+[2024-06-07 07:11:27] INFO: A ram utilizada na janela de PID 8608 foi coletada com sucesso, uso de ram: 10 MB
+[2024-06-07 07:11:28] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Bateria
-    |Dado capturado: 44,00
+    |Dado capturado: 18,00
     |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:02:29.205378100
+    |Data hora captura: 2024-06-07T07:11:28.435172800
     |Id componente: 5
 
-[2024-06-06 21:02:29] INFO: 
+[2024-06-07 07:11:28] INFO: A ram utilizada na janela de PID 18060 foi coletada com sucesso, uso de ram: 21 MB
+[2024-06-07 07:11:28] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Volume
-    |Dado capturado: 200,40
+    |Dado capturado: 197,75
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:29.314755600
+    |Data hora captura: 2024-06-07T07:11:28.638298800
     |Id componente: 6
 
-[2024-06-06 21:02:29] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 125 MB
-[2024-06-06 21:02:29] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 125 MB
-[2024-06-06 21:02:30] INFO: 
+[2024-06-07 07:11:29] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:30] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: CPU
     |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:30.088640400
+    |Data hora captura: 2024-06-07T07:11:30.145392200
     |Id componente: 1
 
-[2024-06-06 21:02:30] INFO: 
+[2024-06-07 07:11:30] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:30] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: HDD
     |Dado capturado: 238,47
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:30.198015500
+    |Data hora captura: 2024-06-07T07:11:30.380004
     |Id componente: 2
 
-[2024-06-06 21:02:30] INFO: A ram utilizada na janela de PID 15444 foi coletada com sucesso, uso de ram: 21 MB
-[2024-06-06 21:02:30] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 125 MB
-[2024-06-06 21:02:30] INFO: 
+[2024-06-07 07:11:31] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:31] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: GPU
     |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:30.981865300
+    |Data hora captura: 2024-06-07T07:11:31.521528600
     |Id componente: 3
 
-[2024-06-06 21:02:31] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 7,18
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:31.091241400
-    |Id componente: 4
-
-[2024-06-06 21:02:31] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 124 MB
-[2024-06-06 21:02:31] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:02:31.803451900
-    |Id componente: 5
-
-[2024-06-06 21:02:31] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,40
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:31.928453700
-    |Id componente: 6
-
-[2024-06-06 21:02:32] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 124 MB
-[2024-06-06 21:02:32] ERROR: Erro ao inserir janela:
-
-java.lang.RuntimeException: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at dao.componente.APPDAO.gravaApps(APPDAO.java:18)
-	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
-	at Main.lambda$iniciarMonitoramento$1(Main.java:173)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:26)
-	... 10 more
-
-[2024-06-06 21:02:32] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 124 MB
-[2024-06-06 21:02:32] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:32.790856900
-    |Id componente: 1
-
-[2024-06-06 21:02:32] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:32.947126600
-    |Id componente: 2
-
-[2024-06-06 21:02:33] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 124 MB
-[2024-06-06 21:02:33] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:33.730496600
-    |Id componente: 3
-
-[2024-06-06 21:02:33] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 7,09
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:33.808622700
-    |Id componente: 4
-
-[2024-06-06 21:02:33] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 125 MB
-[2024-06-06 21:02:34] INFO: A ram utilizada na janela de PID 1824 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-06 21:02:34] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:02:34.485888500
-    |Id componente: 5
-
-[2024-06-06 21:02:34] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,40
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:34.563986100
-    |Id componente: 6
-
-[2024-06-06 21:02:34] INFO: A ram utilizada na janela de PID 3576 foi coletada com sucesso, uso de ram: 13 MB
-[2024-06-06 21:02:35] INFO: A ram utilizada na janela de PID 22888 foi coletada com sucesso, uso de ram: 39 MB
-[2024-06-06 21:02:35] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:35.308018800
-    |Id componente: 1
-
-[2024-06-06 21:02:35] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:35.526770600
-    |Id componente: 2
-
-[2024-06-06 21:02:36] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 120 MB
-[2024-06-06 21:02:36] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:36.900786700
-    |Id componente: 3
-
-[2024-06-06 21:02:36] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 7,25
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:36.995266500
-    |Id componente: 4
-
-[2024-06-06 21:02:37] INFO: A ram utilizada na janela de PID 17956 foi coletada com sucesso, uso de ram: 20 MB
-[2024-06-06 21:02:37] INFO: A ram utilizada na janela de PID 13136 foi coletada com sucesso, uso de ram: 86 MB
-[2024-06-06 21:02:38] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:02:38.006683800
-    |Id componente: 5
-
-[2024-06-06 21:02:38] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:38.112415700
-    |Id componente: 6
-
-[2024-06-06 21:02:38] INFO: A ram utilizada na janela de PID 24444 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-06 21:02:38] INFO: A ram utilizada na janela de PID 8608 foi coletada com sucesso, uso de ram: 10 MB
-[2024-06-06 21:02:38] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:38.858393900
-    |Id componente: 1
-
-[2024-06-06 21:02:38] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:38.967799800
-    |Id componente: 2
-
-[2024-06-06 21:02:39] INFO: A ram utilizada na janela de PID 18060 foi coletada com sucesso, uso de ram: 17 MB
-[2024-06-06 21:02:39] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:39.577438200
-    |Id componente: 3
-
-[2024-06-06 21:02:39] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,88
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:39.656217500
-    |Id componente: 4
-
-[2024-06-06 21:02:39] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 120 MB
-[2024-06-06 21:02:40] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 120 MB
-[2024-06-06 21:02:40] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:02:40.293818400
-    |Id componente: 5
-
-[2024-06-06 21:02:40] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:40.403240100
-    |Id componente: 6
-
-[2024-06-06 21:02:40] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 120 MB
-[2024-06-06 21:02:41] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:41.139653700
-    |Id componente: 1
-
-[2024-06-06 21:02:41] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 120 MB
-[2024-06-06 21:02:41] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:41.282629200
-    |Id componente: 2
-
-[2024-06-06 21:02:41] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 120 MB
-[2024-06-06 21:02:41] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:41.910183400
-    |Id componente: 3
-
-[2024-06-06 21:02:41] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,81
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:41.988304500
-    |Id componente: 4
-
-[2024-06-06 21:02:42] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 120 MB
-[2024-06-06 21:02:42] INFO: A ram utilizada na janela de PID 15444 foi coletada com sucesso, uso de ram: 21 MB
-[2024-06-06 21:02:42] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:02:42.659893300
-    |Id componente: 5
-
-[2024-06-06 21:02:42] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:42.753647
-    |Id componente: 6
-
-[2024-06-06 21:02:43] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:43] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:43.426259
-    |Id componente: 1
-
-[2024-06-06 21:02:43] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:43] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:43.551262800
-    |Id componente: 2
-
-[2024-06-06 21:02:44] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:44] ERROR: Erro ao inserir janela:
-
-java.lang.RuntimeException: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at dao.componente.APPDAO.gravaApps(APPDAO.java:18)
-	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
-	at Main.lambda$iniciarMonitoramento$1(Main.java:173)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:26)
-	... 10 more
-
-[2024-06-06 21:02:44] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:44.245251100
-    |Id componente: 3
-
-[2024-06-06 21:02:44] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,60
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:44.323376300
-    |Id componente: 4
-
-[2024-06-06 21:02:44] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:45] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:02:45.011705100
-    |Id componente: 5
-
-[2024-06-06 21:02:45] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:45] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:45.105451
-    |Id componente: 6
-
-[2024-06-06 21:02:45] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:45] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:45.778732900
-    |Id componente: 1
-
-[2024-06-06 21:02:45] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:45.903752200
-    |Id componente: 2
-
-[2024-06-06 21:02:45] INFO: A ram utilizada na janela de PID 1824 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-06 21:02:46] INFO: A ram utilizada na janela de PID 3576 foi coletada com sucesso, uso de ram: 13 MB
-[2024-06-06 21:02:46] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:46.497483500
-    |Id componente: 3
-
-[2024-06-06 21:02:46] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,62
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:46.559981200
-    |Id componente: 4
-
-[2024-06-06 21:02:46] INFO: A ram utilizada na janela de PID 22888 foi coletada com sucesso, uso de ram: 39 MB
-[2024-06-06 21:02:47] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:02:47.264383100
-    |Id componente: 5
-
-[2024-06-06 21:02:47] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:47.343041900
-    |Id componente: 6
-
-[2024-06-06 21:02:47] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:47] INFO: A ram utilizada na janela de PID 17956 foi coletada com sucesso, uso de ram: 21 MB
-[2024-06-06 21:02:48] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:48.130259400
-    |Id componente: 1
-
-[2024-06-06 21:02:48] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:48.257400200
-    |Id componente: 2
-
-[2024-06-06 21:02:48] INFO: A ram utilizada na janela de PID 13136 foi coletada com sucesso, uso de ram: 83 MB
-[2024-06-06 21:02:48] INFO: A ram utilizada na janela de PID 24444 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-06 21:02:48] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:48.825705800
-    |Id componente: 3
-
-[2024-06-06 21:02:48] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,64
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:48.888210600
-    |Id componente: 4
-
-[2024-06-06 21:02:49] INFO: A ram utilizada na janela de PID 8608 foi coletada com sucesso, uso de ram: 10 MB
-[2024-06-06 21:02:49] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:02:49.513068700
-    |Id componente: 5
-
-[2024-06-06 21:02:49] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:49.591201100
-    |Id componente: 6
-
-[2024-06-06 21:02:49] INFO: A ram utilizada na janela de PID 18060 foi coletada com sucesso, uso de ram: 18 MB
-[2024-06-06 21:02:50] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:50] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:50] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:51] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:51.084016900
-    |Id componente: 1
-
-[2024-06-06 21:02:51] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:51.193406600
-    |Id componente: 2
-
-[2024-06-06 21:02:51] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:51] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:51.786389900
-    |Id componente: 3
-
-[2024-06-06 21:02:51] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:51] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,67
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:51.848892
-    |Id componente: 4
-
-[2024-06-06 21:02:52] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:52] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:02:52.521187600
-    |Id componente: 5
-
-[2024-06-06 21:02:52] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:52.599288600
-    |Id componente: 6
-
-[2024-06-06 21:02:52] INFO: A ram utilizada na janela de PID 15444 foi coletada com sucesso, uso de ram: 21 MB
-[2024-06-06 21:02:53] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:53] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:54] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:54] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:54.099385900
-    |Id componente: 1
-
-[2024-06-06 21:02:54] ERROR: Erro ao inserir janela:
-
-java.lang.RuntimeException: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at dao.componente.APPDAO.gravaApps(APPDAO.java:18)
-	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
-	at Main.lambda$iniciarMonitoramento$1(Main.java:173)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:26)
-	... 10 more
-
-[2024-06-06 21:02:54] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:54.224379
-    |Id componente: 2
-
-[2024-06-06 21:02:54] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:54] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:54.966431400
-    |Id componente: 3
-
-[2024-06-06 21:02:55] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,65
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:55.078801300
-    |Id componente: 4
-
-[2024-06-06 21:02:55] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:55] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:55] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:02:55.765534
-    |Id componente: 5
-
-[2024-06-06 21:02:55] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:55.879332200
-    |Id componente: 6
-
-[2024-06-06 21:02:56] INFO: A ram utilizada na janela de PID 1824 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-06 21:02:56] INFO: A ram utilizada na janela de PID 3576 foi coletada com sucesso, uso de ram: 13 MB
-[2024-06-06 21:02:57] INFO: A ram utilizada na janela de PID 22888 foi coletada com sucesso, uso de ram: 39 MB
-[2024-06-06 21:02:57] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:57.114637800
-    |Id componente: 1
-
-[2024-06-06 21:02:57] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:57.255693600
-    |Id componente: 2
-
-[2024-06-06 21:02:57] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:02:57] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:02:57.925555100
-    |Id componente: 3
-
-[2024-06-06 21:02:58] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,56
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:58.013076
-    |Id componente: 4
-
-[2024-06-06 21:02:58] INFO: A ram utilizada na janela de PID 17956 foi coletada com sucesso, uso de ram: 21 MB
-[2024-06-06 21:02:58] INFO: A ram utilizada na janela de PID 13136 foi coletada com sucesso, uso de ram: 83 MB
-[2024-06-06 21:02:58] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:02:58.768622600
-    |Id componente: 5
-
-[2024-06-06 21:02:58] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:02:58.831109700
-    |Id componente: 6
-
-[2024-06-06 21:02:59] INFO: A ram utilizada na janela de PID 24444 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-06 21:02:59] INFO: A ram utilizada na janela de PID 8608 foi coletada com sucesso, uso de ram: 10 MB
-[2024-06-06 21:02:59] INFO: A ram utilizada na janela de PID 18060 foi coletada com sucesso, uso de ram: 18 MB
-[2024-06-06 21:03:00] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:00.149491
-    |Id componente: 1
-
-[2024-06-06 21:03:00] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:00.274492400
-    |Id componente: 2
-
-[2024-06-06 21:03:00] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:00] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:00] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:00.869301300
-    |Id componente: 3
-
-[2024-06-06 21:03:00] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,60
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:00.947417
-    |Id componente: 4
-
-[2024-06-06 21:03:01] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:01] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:03:01.636081100
-    |Id componente: 5
-
-[2024-06-06 21:03:01] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:01.698581100
-    |Id componente: 6
-
-[2024-06-06 21:03:01] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:02] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:02] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:03] INFO: A ram utilizada na janela de PID 15444 foi coletada com sucesso, uso de ram: 21 MB
-[2024-06-06 21:03:03] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:03.059636300
-    |Id componente: 1
-
-[2024-06-06 21:03:03] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:03.184632900
-    |Id componente: 2
-
-[2024-06-06 21:03:03] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:03] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:03.784318600
-    |Id componente: 3
-
-[2024-06-06 21:03:03] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,62
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:03.862445100
-    |Id componente: 4
-
-[2024-06-06 21:03:03] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:04] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:04] ERROR: Erro ao inserir janela:
-
-java.lang.RuntimeException: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at dao.componente.APPDAO.gravaApps(APPDAO.java:18)
-	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
-	at Main.lambda$iniciarMonitoramento$1(Main.java:173)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:26)
-	... 10 more
-
-[2024-06-06 21:03:04] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:03:04.524842200
-    |Id componente: 5
-
-[2024-06-06 21:03:04] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:04.618589400
-    |Id componente: 6
-
-[2024-06-06 21:03:04] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:05] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:05] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:06] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:06.157838800
-    |Id componente: 1
-
-[2024-06-06 21:03:06] INFO: A ram utilizada na janela de PID 1824 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-06 21:03:06] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:06.267441500
-    |Id componente: 2
-
-[2024-06-06 21:03:06] INFO: A ram utilizada na janela de PID 3576 foi coletada com sucesso, uso de ram: 13 MB
-[2024-06-06 21:03:06] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:06.908558500
-    |Id componente: 3
-
-[2024-06-06 21:03:06] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,57
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:06.994626400
-    |Id componente: 4
-
-[2024-06-06 21:03:07] INFO: A ram utilizada na janela de PID 22888 foi coletada com sucesso, uso de ram: 39 MB
-[2024-06-06 21:03:07] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:07] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:03:07.963602200
-    |Id componente: 5
-
-[2024-06-06 21:03:08] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:08.104271700
-    |Id componente: 6
-
-[2024-06-06 21:03:08] INFO: A ram utilizada na janela de PID 17956 foi coletada com sucesso, uso de ram: 21 MB
-[2024-06-06 21:03:09] INFO: A ram utilizada na janela de PID 13136 foi coletada com sucesso, uso de ram: 83 MB
-[2024-06-06 21:03:09] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:09.449228100
-    |Id componente: 1
-
-[2024-06-06 21:03:09] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:09.621429600
-    |Id componente: 2
-
-[2024-06-06 21:03:09] INFO: A ram utilizada na janela de PID 24444 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-06 21:03:10] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:10.372253600
-    |Id componente: 3
-
-[2024-06-06 21:03:10] INFO: A ram utilizada na janela de PID 8608 foi coletada com sucesso, uso de ram: 10 MB
-[2024-06-06 21:03:10] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,84
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:10.450379200
-    |Id componente: 4
-
-[2024-06-06 21:03:10] INFO: A ram utilizada na janela de PID 18060 foi coletada com sucesso, uso de ram: 18 MB
-[2024-06-06 21:03:11] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:03:11.222432800
-    |Id componente: 5
-
-[2024-06-06 21:03:11] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:11.347433800
-    |Id componente: 6
-
-[2024-06-06 21:03:11] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:12] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:12] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:12.238593500
-    |Id componente: 1
-
-[2024-06-06 21:03:12] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:12.364043300
-    |Id componente: 2
-
-[2024-06-06 21:03:12] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:13] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:13.005412300
-    |Id componente: 3
-
-[2024-06-06 21:03:13] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:13] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,75
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:13.084050600
-    |Id componente: 4
-
-[2024-06-06 21:03:13] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:13] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:03:13.757003600
-    |Id componente: 5
-
-[2024-06-06 21:03:13] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:13.850753
-    |Id componente: 6
-
-[2024-06-06 21:03:13] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:14] INFO: A ram utilizada na janela de PID 15444 foi coletada com sucesso, uso de ram: 21 MB
-[2024-06-06 21:03:14] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:15] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:15.130428
-    |Id componente: 1
-
-[2024-06-06 21:03:15] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:15.255433700
-    |Id componente: 2
-
-[2024-06-06 21:03:15] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:15] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:15] ERROR: Erro ao inserir janela:
-
-java.lang.RuntimeException: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at dao.componente.APPDAO.gravaApps(APPDAO.java:18)
-	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
-	at Main.lambda$iniciarMonitoramento$1(Main.java:173)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:26)
-	... 10 more
-
-[2024-06-06 21:03:16] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:16.016896600
-    |Id componente: 3
-
-[2024-06-06 21:03:16] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,82
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:16.139985900
-    |Id componente: 4
-
-[2024-06-06 21:03:16] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:17] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:03:17.327017800
-    |Id componente: 5
-
-[2024-06-06 21:03:17] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:17.436843600
-    |Id componente: 6
-
-[2024-06-06 21:03:17] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:18] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 121 MB
-[2024-06-06 21:03:18] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:18.317903800
-    |Id componente: 1
-
-[2024-06-06 21:03:18] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:18.458966100
-    |Id componente: 2
-
-[2024-06-06 21:03:18] INFO: A ram utilizada na janela de PID 1824 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-06 21:03:19] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:19.178954900
-    |Id componente: 3
-
-[2024-06-06 21:03:19] INFO: A ram utilizada na janela de PID 3576 foi coletada com sucesso, uso de ram: 13 MB
-[2024-06-06 21:03:19] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 7,04
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:19.257080600
-    |Id componente: 4
-
-[2024-06-06 21:03:19] INFO: A ram utilizada na janela de PID 22888 foi coletada com sucesso, uso de ram: 40 MB
-[2024-06-06 21:03:19] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:03:19.931222500
-    |Id componente: 5
-
-[2024-06-06 21:03:20] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:20.009484400
-    |Id componente: 6
-
-[2024-06-06 21:03:20] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:20] INFO: A ram utilizada na janela de PID 17956 foi coletada com sucesso, uso de ram: 26 MB
-[2024-06-06 21:03:21] INFO: A ram utilizada na janela de PID 13136 foi coletada com sucesso, uso de ram: 84 MB
-[2024-06-06 21:03:21] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:21.107943700
-    |Id componente: 1
-
-[2024-06-06 21:03:21] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:21.232941500
-    |Id componente: 2
-
-[2024-06-06 21:03:21] INFO: A ram utilizada na janela de PID 24444 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-06 21:03:21] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:21.826695300
-    |Id componente: 3
-
-[2024-06-06 21:03:21] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 7,06
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:21.904823
-    |Id componente: 4
-
-[2024-06-06 21:03:21] INFO: A ram utilizada na janela de PID 8608 foi coletada com sucesso, uso de ram: 10 MB
-[2024-06-06 21:03:22] INFO: A ram utilizada na janela de PID 18060 foi coletada com sucesso, uso de ram: 18 MB
-[2024-06-06 21:03:22] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:03:22.561513500
-    |Id componente: 5
-
-[2024-06-06 21:03:22] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:22.639939
-    |Id componente: 6
-
-[2024-06-06 21:03:22] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:23] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:23] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:24] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:24.250499200
-    |Id componente: 1
-
-[2024-06-06 21:03:24] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:24] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:24.375597700
-    |Id componente: 2
-
-[2024-06-06 21:03:24] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:25] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:25.024801
-    |Id componente: 3
-
-[2024-06-06 21:03:25] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 7,00
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:25.087303800
-    |Id componente: 4
-
-[2024-06-06 21:03:25] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:25] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:03:25.880984600
-    |Id componente: 5
-
-[2024-06-06 21:03:25] INFO: A ram utilizada na janela de PID 15444 foi coletada com sucesso, uso de ram: 21 MB
-[2024-06-06 21:03:25] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:25.959090
-    |Id componente: 6
-
-[2024-06-06 21:03:26] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:26] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:27] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:27.166922700
-    |Id componente: 1
-
-[2024-06-06 21:03:27] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:27.308260700
-    |Id componente: 2
-
-[2024-06-06 21:03:27] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:27] ERROR: Erro ao inserir janela:
-
-java.lang.RuntimeException: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at dao.componente.APPDAO.gravaApps(APPDAO.java:18)
-	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
-	at Main.lambda$iniciarMonitoramento$1(Main.java:173)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:26)
-	... 10 more
-
-[2024-06-06 21:03:27] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:27.990215300
-    |Id componente: 3
-
-[2024-06-06 21:03:28] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:28] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 7,04
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:28.083966
-    |Id componente: 4
-
-[2024-06-06 21:03:28] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:28] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:03:28.882109100
-    |Id componente: 5
-
-[2024-06-06 21:03:28] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:28] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:28.966142400
-    |Id componente: 6
-
-[2024-06-06 21:03:29] INFO: A ram utilizada na janela de PID 1824 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-06 21:03:29] INFO: A ram utilizada na janela de PID 3576 foi coletada com sucesso, uso de ram: 13 MB
-[2024-06-06 21:03:30] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:30.155050700
-    |Id componente: 1
-
-[2024-06-06 21:03:30] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:30.296089700
-    |Id componente: 2
-
-[2024-06-06 21:03:30] INFO: A ram utilizada na janela de PID 22888 foi coletada com sucesso, uso de ram: 40 MB
-[2024-06-06 21:03:30] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:31] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:31.016687600
-    |Id componente: 3
-
-[2024-06-06 21:03:31] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 7,04
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:31.110434800
-    |Id componente: 4
-
-[2024-06-06 21:03:31] INFO: A ram utilizada na janela de PID 17956 foi coletada com sucesso, uso de ram: 26 MB
-[2024-06-06 21:03:31] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:03:31.830018900
-    |Id componente: 5
-
-[2024-06-06 21:03:31] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:31.923770900
-    |Id componente: 6
-
-[2024-06-06 21:03:31] INFO: A ram utilizada na janela de PID 13136 foi coletada com sucesso, uso de ram: 84 MB
-[2024-06-06 21:03:32] INFO: A ram utilizada na janela de PID 24444 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-06 21:03:32] INFO: A ram utilizada na janela de PID 8608 foi coletada com sucesso, uso de ram: 10 MB
-[2024-06-06 21:03:33] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:33.159663900
-    |Id componente: 1
-
-[2024-06-06 21:03:33] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:33.315917400
-    |Id componente: 2
-
-[2024-06-06 21:03:33] INFO: A ram utilizada na janela de PID 18060 foi coletada com sucesso, uso de ram: 18 MB
-[2024-06-06 21:03:33] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:34] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:34.011696800
-    |Id componente: 3
-
-[2024-06-06 21:03:34] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 7,05
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:34.105446
-    |Id componente: 4
-
-[2024-06-06 21:03:34] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:34] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:03:34.869916600
-    |Id componente: 5
-
-[2024-06-06 21:03:34] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:34.963667300
-    |Id componente: 6
-
-[2024-06-06 21:03:35] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:35] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:36] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:36] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:36.170976900
-    |Id componente: 1
-
-[2024-06-06 21:03:36] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:36.296386900
-    |Id componente: 2
-
-[2024-06-06 21:03:36] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 123 MB
-[2024-06-06 21:03:37] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:37.072246800
-    |Id componente: 3
-
-[2024-06-06 21:03:37] INFO: A ram utilizada na janela de PID 15444 foi coletada com sucesso, uso de ram: 21 MB
-[2024-06-06 21:03:37] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 7,10
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:37.150367900
-    |Id componente: 4
-
-[2024-06-06 21:03:37] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 132 MB
-[2024-06-06 21:03:37] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 44,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:03:37.905075500
-    |Id componente: 5
-
-[2024-06-06 21:03:37] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 200,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:37.999157600
-    |Id componente: 6
-
-[2024-06-06 21:03:38] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 132 MB
-[2024-06-06 21:03:38] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 132 MB
-[2024-06-06 21:03:38] ERROR: Erro ao inserir janela:
-
-java.lang.RuntimeException: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at dao.componente.APPDAO.gravaApps(APPDAO.java:18)
-	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
-	at Main.lambda$iniciarMonitoramento$1(Main.java:173)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:26)
-	... 10 more
-
-[2024-06-06 21:03:39] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:39.159465400
-    |Id componente: 1
-
-[2024-06-06 21:03:39] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:39.284875500
-    |Id componente: 2
-
-[2024-06-06 21:03:39] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 132 MB
-[2024-06-06 21:03:39] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 132 MB
-[2024-06-06 21:03:39] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:39.979507300
-    |Id componente: 3
-
-[2024-06-06 21:03:40] INFO: 
+[2024-06-07 07:11:31] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: MemoriaRam
     |Dado capturado: 7,22
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:40.060101900
+    |Data hora captura: 2024-06-07T07:11:31.662194800
     |Id componente: 4
 
-[2024-06-06 21:03:40] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 132 MB
-[2024-06-06 21:03:40] INFO: 
+[2024-06-07 07:11:31] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:32] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:33] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Bateria
-    |Dado capturado: 44,00
+    |Dado capturado: 18,00
     |Unidade de medida: %
-    |Data hora captura: 2024-06-06T21:03:40.826283800
+    |Data hora captura: 2024-06-07T07:11:33.332508100
     |Id componente: 5
 
-[2024-06-06 21:03:40] INFO: A ram utilizada na janela de PID 1824 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-06 21:03:40] INFO: 
+[2024-06-07 07:11:33] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Volume
-    |Dado capturado: 200,39
+    |Dado capturado: 197,75
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:40.935650
+    |Data hora captura: 2024-06-07T07:11:33.520442
     |Id componente: 6
 
-[2024-06-06 21:03:41] INFO: A ram utilizada na janela de PID 3576 foi coletada com sucesso, uso de ram: 13 MB
-[2024-06-06 21:03:42] INFO: A ram utilizada na janela de PID 22888 foi coletada com sucesso, uso de ram: 41 MB
-[2024-06-06 21:03:42] INFO: 
+[2024-06-07 07:11:33] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:34] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 142 MB
+[2024-06-07 07:11:35] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: CPU
     |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-06-06T21:03:42.240109500
+    |Data hora captura: 2024-06-07T07:11:35.053979400
     |Id componente: 1
 
-[2024-06-06 21:03:42] INFO: 
+[2024-06-07 07:11:35] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: HDD
     |Dado capturado: 238,47
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-06T21:03:42.406037100
+    |Data hora captura: 2024-06-07T07:11:35.288767300
     |Id componente: 2
+
+[2024-06-07 07:11:35] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:36] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:36] ERROR: Erro ao inserir janela:
+
+java.lang.RuntimeException: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
+	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at dao.componente.APPDAO.gravaApps(APPDAO.java:18)
+	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
+	at Main.lambda$iniciarMonitoramento$1(Main.java:173)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:26)
+	... 10 more
+
+[2024-06-07 07:11:36] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-07T07:11:36.556683400
+    |Id componente: 3
+
+[2024-06-07 07:11:36] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,26
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:36.712929300
+    |Id componente: 4
+
+[2024-06-07 07:11:37] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:38] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:38] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 18,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-07T07:11:38.388567200
+    |Id componente: 5
+
+[2024-06-07 07:11:38] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 197,75
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:38.560455400
+    |Id componente: 6
+
+[2024-06-07 07:11:38] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:39] INFO: A ram utilizada na janela de PID 21892 foi coletada com sucesso, uso de ram: 178 MB
+[2024-06-07 07:11:39] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-07T07:11:39.823232800
+    |Id componente: 1
+
+[2024-06-07 07:11:40] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:40.058291600
+    |Id componente: 2
+
+[2024-06-07 07:11:40] INFO: A ram utilizada na janela de PID 12824 foi coletada com sucesso, uso de ram: 1 MB
+[2024-06-07 07:11:41] INFO: A ram utilizada na janela de PID 17856 foi coletada com sucesso, uso de ram: 146 MB
+[2024-06-07 07:11:41] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-07T07:11:41.205506500
+    |Id componente: 3
+
+[2024-06-07 07:11:41] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,22
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:41.321727300
+    |Id componente: 4
+
+[2024-06-07 07:11:41] INFO: A ram utilizada na janela de PID 23732 foi coletada com sucesso, uso de ram: 52 MB
+[2024-06-07 07:11:42] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 18,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-07T07:11:42.778041300
+    |Id componente: 5
+
+[2024-06-07 07:11:42] INFO: A ram utilizada na janela de PID 24444 foi coletada com sucesso, uso de ram: 3 MB
+[2024-06-07 07:11:42] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 197,75
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:42.965535
+    |Id componente: 6
+
+[2024-06-07 07:11:43] INFO: A ram utilizada na janela de PID 8608 foi coletada com sucesso, uso de ram: 10 MB
+[2024-06-07 07:11:44] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-07T07:11:44.230967100
+    |Id componente: 1
+
+[2024-06-07 07:11:44] INFO: A ram utilizada na janela de PID 18060 foi coletada com sucesso, uso de ram: 21 MB
+[2024-06-07 07:11:44] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:44.481874100
+    |Id componente: 2
+
+[2024-06-07 07:11:45] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:45] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-07T07:11:45.710633
+    |Id componente: 3
+
+[2024-06-07 07:11:45] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,23
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:45.866880
+    |Id componente: 4
+
+[2024-06-07 07:11:45] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:46] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:47] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 18,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-07T07:11:47.228711200
+    |Id componente: 5
+
+[2024-06-07 07:11:47] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 197,75
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:47.431850700
+    |Id componente: 6
+
+[2024-06-07 07:11:47] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:48] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:49] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-07T07:11:49.464574500
+    |Id componente: 1
+
+[2024-06-07 07:11:49] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:49.761960900
+    |Id componente: 2
+
+[2024-06-07 07:11:49] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:50] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:51] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-07T07:11:51.029946400
+    |Id componente: 3
+
+[2024-06-07 07:11:51] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,24
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:51.170615800
+    |Id componente: 4
+
+[2024-06-07 07:11:51] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:52] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:52] ERROR: Erro ao inserir janela:
+
+java.lang.RuntimeException: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
+	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at dao.componente.APPDAO.gravaApps(APPDAO.java:18)
+	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
+	at Main.lambda$iniciarMonitoramento$1(Main.java:173)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:26)
+	... 10 more
+
+[2024-06-07 07:11:52] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 18,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-07T07:11:52.828784
+    |Id componente: 5
+
+[2024-06-07 07:11:53] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 197,75
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:53.000658700
+    |Id componente: 6
+
+[2024-06-07 07:11:53] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:54] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:54] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-07T07:11:54.282902500
+    |Id componente: 1
+
+[2024-06-07 07:11:54] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:54.548529700
+    |Id componente: 2
+
+[2024-06-07 07:11:54] INFO: A ram utilizada na janela de PID 2892 foi coletada com sucesso, uso de ram: 141 MB
+[2024-06-07 07:11:55] INFO: A ram utilizada na janela de PID 21892 foi coletada com sucesso, uso de ram: 179 MB
+[2024-06-07 07:11:55] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-07T07:11:55.752091800
+    |Id componente: 3
+
+[2024-06-07 07:11:55] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,23
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:55.892721
+    |Id componente: 4
+
+[2024-06-07 07:11:56] INFO: A ram utilizada na janela de PID 12824 foi coletada com sucesso, uso de ram: 1 MB
+[2024-06-07 07:11:57] INFO: A ram utilizada na janela de PID 17856 foi coletada com sucesso, uso de ram: 146 MB
+[2024-06-07 07:11:57] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 18,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-07T07:11:57.598286200
+    |Id componente: 5
+
+[2024-06-07 07:11:57] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 197,75
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:57.801412600
+    |Id componente: 6
+
+[2024-06-07 07:11:58] INFO: A ram utilizada na janela de PID 23732 foi coletada com sucesso, uso de ram: 49 MB
+[2024-06-07 07:11:59] INFO: A ram utilizada na janela de PID 24444 foi coletada com sucesso, uso de ram: 2 MB
+[2024-06-07 07:11:59] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-07T07:11:59.442815800
+    |Id componente: 1
+
+[2024-06-07 07:11:59] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:11:59.692813600
+    |Id componente: 2
+
+[2024-06-07 07:12:00] INFO: A ram utilizada na janela de PID 8608 foi coletada com sucesso, uso de ram: 10 MB
+[2024-06-07 07:12:02] INFO: A ram utilizada na janela de PID 18060 foi coletada com sucesso, uso de ram: 21 MB
+[2024-06-07 07:12:02] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-07T07:12:02.477161400
+    |Id componente: 3
+
+[2024-06-07 07:12:02] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,11
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-07T07:12:02.649935600
+    |Id componente: 4
 
