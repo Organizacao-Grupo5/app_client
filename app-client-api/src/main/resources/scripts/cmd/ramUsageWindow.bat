@@ -2,7 +2,7 @@
 setlocal
 
 if "%~1"=="" (
-    echo Uso: %0 PID_do_processo
+    echo Nenhum PID fornecido.
     exit /b 1
 )
 
@@ -15,9 +15,14 @@ if %errorlevel% neq 0 (
 )
 
 for /f "tokens=5" %%a in ('tasklist /fi "PID eq %PID%" ^| find /i "%PID%"') do (
-    set "RAM=%%a"
+    set "RAM_KB=%%a"
 )
 
-echo %RAM%
+set "RAM_KB=%RAM_KB:K=%"
+set "RAM_KB=%RAM_KB:,=%"
+
+set /a "RAM_MB=%RAM_KB% / 1024"
+
+echo %RAM_MB%
 
 exit /b 0

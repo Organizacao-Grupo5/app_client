@@ -1,3 +1,4 @@
+import service.ServiceAPP;
 import service.componente.ServiceComponente;
 import util.security.Login;
 
@@ -27,6 +28,7 @@ public class Main {
     private static ServiceRede serviceRede = new ServiceRede();
     private static Maquina maquina = new Maquina();
     private static ServicePC servicePC = new ServicePC();
+    private static ServiceAPP serviceAPP = new ServiceAPP();
     private static ServiceComponente serviceComponente = new ServiceComponente();
 
     public static void main(String[] args) throws Exception {
@@ -164,6 +166,15 @@ public class Main {
             executorService.scheduleAtFixedRate(() -> {
                 serviceComponente.iniciarCapturas(maquina);
             }, 0, 3, TimeUnit.SECONDS);
+
+            executorService = Executors.newScheduledThreadPool(1);
+            executorService.scheduleAtFixedRate(() -> {
+                try {
+                    serviceAPP.listarApps(maquina);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }, 0, 2, TimeUnit.SECONDS);
 
             Scanner scanner = new Scanner(System.in);
             boolean running = true;
