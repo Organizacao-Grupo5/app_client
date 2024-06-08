@@ -99,7 +99,7 @@ public class LogBanco {
     }
 
     private static void openNewLogFile() throws IOException {
-        logFileMain = getLogFile(LOG_DIRECTORY + "/banco", "log_");
+        logFileMain = getLogFile(LOG_DIRECTORY + "/banco", "log_banco");
         bwMain = new BufferedWriter(new FileWriter(logFileMain, true));
         saveLogStartTime();
     }

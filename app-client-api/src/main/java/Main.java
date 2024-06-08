@@ -34,6 +34,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
 
         LogBanco.logInfo("Servidor iniciando.", LogBanco.LogType.INFO);
+        LogMonitoramento.logInfo("Servidor iniciando.", LogBanco.LogType.INFO);
         int quadros = 50;
 
         for (int i = 0; i <= quadros; i++) {
@@ -56,6 +57,7 @@ public class Main {
             }
         }
         LogBanco.logInfo("Servidor iniciado com sucesso.", LogBanco.LogType.INFO);
+        LogMonitoramento.logInfo("Servidor iniciado com sucesso.", LogBanco.LogType.INFO);
         System.out.print("\r" + " ".repeat(quadros + 10));
         Usuario usuarioLogado = null;
         
@@ -111,6 +113,7 @@ public class Main {
     
                     if (maquina == null) {
                         LogBanco.logWarning("Não foi possível acessar a máquina do usuário");
+                        LogMonitoramento.logWarning("Não foi possível acessar a máquina do usuário");
                         break;
                     }
     
@@ -121,6 +124,7 @@ public class Main {
                     }
     
                     LogBanco.logInfo(("Usuário logado com sucesso: " + usuarioLogado.getEmail()), LogBanco.LogType.INFO);
+                    LogMonitoramento.logInfo(("Usuário logado com sucesso: " + usuarioLogado.getEmail()), LogBanco.LogType.INFO);
                     int shift = 3;
                     String senhaCriptografada = Criptografia.encrypt(senha, shift);
     

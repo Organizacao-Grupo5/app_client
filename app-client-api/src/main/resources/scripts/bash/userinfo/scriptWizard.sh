@@ -27,11 +27,10 @@ echo "Verificando a instalação do Docker..."
 sudo docker --version
 
 echo "Baixando as imagens Docker..."
-sudo docker pull santthaigo/script-sql:0.0.1
-sudo docker pull santthaigo/app-jar:0.0.1
+sudo docker pull santthiago/script-sql:0.0.1
+sudo docker pull santthiago/app-jar:0.0.1
 
 echo "Verificando se as imagens foram baixadas..."
 sudo docker images
 
 echo "Instalação concluída com sucesso!"
-

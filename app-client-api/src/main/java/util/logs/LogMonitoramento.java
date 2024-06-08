@@ -48,7 +48,7 @@ public class LogMonitoramento {
         INFO, WARNING, ERROR, MONITORAMENTO
     }
 
-    public static void logInfo(String message) throws IOException {
+    public static void logInfo(String message, LogBanco.LogType info) throws IOException {
         generateLog(message, LogType.INFO);
     }
 
