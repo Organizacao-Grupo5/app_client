@@ -1,5 +1,6 @@
 package dao.componente;
 
+import dao.AlertaDAO;
 import model.componentes.Componente;
 import model.Captura;
 import model.Maquina;
@@ -46,6 +47,14 @@ public class CapturaDAO {
 			preparedStatement.setInt(4, componente.getIdComponente());
 
 			int affectedRows = preparedStatement.executeUpdate();
+
+			try (ResultSet generatedKeys = preparedStatement.getGeneratedKeys()) {
+				if (generatedKeys.next()) {
+					int idCaptura = generatedKeys.getInt(1);
+					RegistroAlertasDAO registroAlertasDAO = new RegistroAlertasDAO();
+					RegistroAlertasDAO.verificarUsoComponentes(idCaptura);
+				}
+			}
 
 			if (affectedRows != 0) {
 				try (ResultSet generatedKeys = preparedStatement.getGeneratedKeys()) {
