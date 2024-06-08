@@ -9,19 +9,25 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 public class LogMonitoramento {
 
-    private static BufferedWriter bwMain;
     private static BufferedWriter bwMonitoramento;
-    private static File logFileMain;
     private static File logFileMonitoramento;
 
     private static final String LOG_DIRECTORY = "logs/monitoramento"; // Diretório de logs relativo ao diretório de execução do aplicativo
+    private static final long LOG_DURATION = TimeUnit.DAYS.toMillis(7); // Duração do log em milissegundos (7 dias)
+    private static final String LOG_START_FILE = LOG_DIRECTORY + "/log_start_time.txt"; // Arquivo para armazenar o tempo de início do log
 
     static {
         try {
             createDirectories();
+            if (isLogExpired()) {
+                openNewLogFile();
+            } else {
+                openExistingLogFile();
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -32,10 +38,6 @@ public class LogMonitoramento {
     }
 
     public static void closeLogFiles() throws IOException {
-        if (bwMain != null) {
-            bwMain.close();
-            bwMain = null;
-        }
         if (bwMonitoramento != null) {
             bwMonitoramento.close();
             bwMonitoramento = null;
@@ -68,31 +70,12 @@ public class LogMonitoramento {
     }
 
     private static void generateLog(String message, LogType logType) throws IOException {
-        createDirectories();
-
-        BufferedWriter writer;
-        File logFile;
-
-        switch (logType) {
-            case MONITORAMENTO:
-                if (bwMonitoramento == null) {
-                    logFile = getLogFile(LOG_DIRECTORY, "log_monitoramento_");
-                    bwMonitoramento = new BufferedWriter(new FileWriter(logFile, true));
-                }
-                writer = bwMonitoramento;
-                break;
-
-            case ERROR:
-            case INFO:
-            case WARNING:
-            default:
-                if (bwMain == null) {
-                    logFile = getLogFile("logs/monitoramento", "log_");
-                    bwMain = new BufferedWriter(new FileWriter(logFile, true));
-                }
-                writer = bwMain;
-                break;
+        if (isLogExpired()) {
+            closeLogFiles();
+            openNewLogFile();
         }
+
+        BufferedWriter writer = bwMonitoramento;
 
         String logMessage = String.format("[%s] [%s] %s",
                 new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()),
@@ -103,14 +86,60 @@ public class LogMonitoramento {
         writer.flush();
     }
 
+    private static void openNewLogFile() throws IOException {
+        logFileMonitoramento = getLogFile(LOG_DIRECTORY, "log_monitoramento_");
+        bwMonitoramento = new BufferedWriter(new FileWriter(logFileMonitoramento, true));
+        saveLogStartTime();
+    }
+
+    private static void openExistingLogFile() throws IOException {
+        String latestLogFileName = getLatestLogFileName(LOG_DIRECTORY);
+        if (latestLogFileName != null) {
+            logFileMonitoramento = new File(LOG_DIRECTORY, latestLogFileName);
+            bwMonitoramento = new BufferedWriter(new FileWriter(logFileMonitoramento, true));
+        } else {
+            openNewLogFile();
+        }
+    }
+
+    private static boolean isLogExpired() throws IOException {
+        Path logStartPath = Paths.get(LOG_START_FILE);
+        if (Files.exists(logStartPath)) {
+            String startTimeStr = new String(Files.readAllBytes(logStartPath)).trim();
+            long logStartTime = Long.parseLong(startTimeStr);
+            return System.currentTimeMillis() - logStartTime > LOG_DURATION;
+        }
+        return true;
+    }
+
+    private static void saveLogStartTime() throws IOException {
+        long logStartTime = System.currentTimeMillis();
+        Files.write(Paths.get(LOG_START_FILE), String.valueOf(logStartTime).getBytes());
+    }
+
     private static File getLogFile(String directory, String prefix) throws IOException {
         createDirectories();
         String logFileName = prefix + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()) + ".txt";
         return new File(directory, logFileName);
     }
 
+    private static String getLatestLogFileName(String directory) throws IOException {
+        File dir = new File(directory);
+        File[] files = dir.listFiles((d, name) -> name.startsWith("log_monitoramento_") && name.endsWith(".txt"));
+        if (files == null || files.length == 0) {
+            return null;
+        }
+        File latestFile = files[0];
+        for (File file : files) {
+            if (file.lastModified() > latestFile.lastModified()) {
+                latestFile = file;
+            }
+        }
+        return latestFile.getName();
+    }
+
     private static void createDirectories() throws IOException {
-        Path path = Paths.get("logs");
+        Path path = Paths.get(LOG_DIRECTORY);
 
         if (!Files.exists(path)) {
             Files.createDirectories(path);

@@ -1,0 +1,862 @@
+[2024-06-08 10:02:32] [INFO] Capturando dados da sua CPU.
+[2024-06-08 10:02:32] [INFO] Número de CPUs lógicas: 16
+[2024-06-08 10:02:32] [INFO] Número de CPUs físicas: 8
+[2024-06-08 10:02:32] [INFO] Microarquitetura: unknown
+[2024-06-08 10:02:32] [INFO] Identificador: AuthenticAMD Family 23 Model 104 Stepping 1
+[2024-06-08 10:02:32] [INFO] ID da CPU Looca: 178bfbff00860f81
+[2024-06-08 10:02:32] [INFO] Fabricante: AuthenticAMD
+[2024-06-08 10:02:32] [INFO] Frequência: 4.372E9
+[2024-06-08 10:02:32] [INFO] Número de pacotes físicos: 1
+[2024-06-08 10:02:34] [INFO] Uso da CPU: 1.9987507807620237
+[2024-06-08 10:02:34] [INFO] Nome da CPU: AMD Ryzen 7 5700U with Radeon Graphics
+[2024-06-08 10:02:34] [INFO] Temperatura da CPU: 46.9
+[2024-06-08 10:02:34] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-08 10:02:34] [INFO] Capturando dados do seu HDD
+[2024-06-08 10:02:34] [INFO] Nome do disco: /dev/nvme0n1
+[2024-06-08 10:02:34] [INFO] Serial do disco: SS1F36381L1BR39112KD
+[2024-06-08 10:02:34] [INFO] Modelo do disco: SSSTC CL4-4D512-Q62
+[2024-06-08 10:02:34] [INFO] Escritas do disco: 1.4485406875610352
+[2024-06-08 10:02:34] [INFO] Leituras do disco: 908.607421875
+[2024-06-08 10:02:34] [INFO] Bytes de escritas do disco: 24.823344230651855
+[2024-06-08 10:02:34] [INFO] Bytes de leitura do disco: 36.87489128112793
+[2024-06-08 10:02:34] [INFO] Tamanho do disco: 476.94
+[2024-06-08 10:02:34] [INFO] Tempo de transferência do disco: 272.2133333333333
+[2024-06-08 10:02:34] [INFO] Dados do disco gravados.
+[2024-06-08 10:02:34] [INFO] Nome do disco: /dev/zram0
+[2024-06-08 10:02:34] [INFO] Serial do disco: unknown
+[2024-06-08 10:02:34] [INFO] Modelo do disco: unknown
+[2024-06-08 10:02:34] [INFO] Escritas do disco: 5.13947868347168
+[2024-06-08 10:02:34] [INFO] Leituras do disco: 2.67966365814209
+[2024-06-08 10:02:34] [INFO] Bytes de escritas do disco: 20.55791473388672
+[2024-06-08 10:02:34] [INFO] Bytes de leitura do disco: 10.719573974609375
+[2024-06-08 10:02:34] [INFO] Tamanho do disco: 9.56
+[2024-06-08 10:02:34] [INFO] Tempo de transferência do disco: 118.68888888888888
+[2024-06-08 10:02:34] [INFO] Dados do disco gravados.
+[2024-06-08 10:02:34] [INFO] Nome do disco: /dev/dm-0
+[2024-06-08 10:02:34] [INFO] Serial do disco: CRYPT-PLAIN-cryptswap
+[2024-06-08 10:02:34] [INFO] Modelo do disco: Logical Volume Group
+[2024-06-08 10:02:34] [INFO] Escritas do disco: 1.1652250289916992
+[2024-06-08 10:02:34] [INFO] Leituras do disco: 226.6826171875
+[2024-06-08 10:02:34] [INFO] Bytes de escritas do disco: 4.660869598388672
+[2024-06-08 10:02:34] [INFO] Bytes de leitura do disco: 910.462890625
+[2024-06-08 10:02:34] [INFO] Tamanho do disco: 4.0
+[2024-06-08 10:02:34] [INFO] Tempo de transferência do disco: 28.756666666666668
+[2024-06-08 10:02:34] [INFO] Dados do disco gravados.
+[2024-06-08 10:02:34] [INFO] Capturando dados da GPU.
+[2024-06-08 10:02:34] [INFO] Dados do fabricante da sua GPU capturados com sucesso: Advanced Micro Devices, Inc. [AMD/ATI] (0x1002)
+[2024-06-08 10:02:34] [INFO] Dados do ID da sua GPU capturados com sucesso: 0x164c
+[2024-06-08 10:02:34] [INFO] O nome da sua GPU foi capturado com sucesso: Lucienne
+[2024-06-08 10:02:34] [INFO] A VRam da sua GPU foi capturada com sucesso: 258.0
+[2024-06-08 10:02:34] [INFO] A Versão da sua GPU foi capturada com sucesso: unknown
+[2024-06-08 10:02:34] [INFO] Temperatura da GPU: 46.9
+[2024-06-08 10:02:34] [INFO] Dados da GPU gravados.
+[2024-06-08 10:02:34] [INFO] Capturando dados da sua memória RAM.
+[2024-06-08 10:02:34] [INFO] Memória disponível: 1.5127639770507812
+[2024-06-08 10:02:34] [INFO] Memória total: 9.559261322021484
+[2024-06-08 10:02:34] [INFO] Memória em uso: 8.046497344970703
+[2024-06-08 10:02:34] [INFO] Dados da memória ram capturados com sucesso.
+[2024-06-08 10:02:34] [INFO] Capturando dados da sua bateria.
+[2024-06-08 10:02:34] [INFO] Amperagem da bateria: 1.3308852984377086
+[2024-06-08 10:02:34] [INFO] Nome do dispositivo da bateria: L20M2PF0
+[2024-06-08 10:02:34] [INFO] Número de série da bateria:  1900
+[2024-06-08 10:02:34] [INFO] Química da bateria: Li-poly
+[2024-06-08 10:02:34] [INFO] Nome da bateria: BAT0
+[2024-06-08 10:02:34] [INFO] Voltagem da bateria: 7489000.0
+[2024-06-08 10:02:34] [INFO] Capacidade atual da bateria: 15.840530395507812
+[2024-06-08 10:02:34] [INFO] Número de ciclos da bateria: 121
+[2024-06-08 10:02:34] [INFO] Capacidade de design da bateria: 36.2396240234375
+[2024-06-08 10:02:34] [INFO] Unidade de capacidade da bateria: RELATIVE
+[2024-06-08 10:02:34] [INFO] Tempo restante da bateria (instantâneo): -1.0
+[2024-06-08 10:02:34] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-08 10:02:34] [INFO] Taxa de uso de energia da bateria: 9967000.0
+[2024-06-08 10:02:34] [INFO] Temperatura da bateria: 0.0
+[2024-06-08 10:02:34] [INFO] Capacidade máxima da bateria: 34.91401672363281
+[2024-06-08 10:02:34] [INFO] Porcentagem de capacidade restante da bateria: 0.4
+[2024-06-08 10:02:34] [INFO] Data de fabricação da bateria: N/A
+[2024-06-08 10:02:34] [INFO] Fabricante da bateria: SMP
+[2024-06-08 10:02:34] [WARNING] Dados da bateria atual não foram capturados, será apresentada como 0.
+[2024-06-08 10:02:34] [INFO] Dados da bateria gravados.
+[2024-06-08 10:02:34] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-08 10:02:35] [INFO] Nome do volume lógico capturado: /
+[2024-06-08 10:02:35] [INFO] Nome do volume capturado: /dev/nvme0n1p3
+[2024-06-08 10:02:35] [INFO] Espaço disponível no volume lógico capturado : 267.86780166625977
+[2024-06-08 10:02:35] [INFO] Espaço total do volume lógico capturado com sucesso: 459.5223274230957
+[2024-06-08 10:02:35] [INFO] Tipo do volume lógico capturado: ext4
+[2024-06-08 10:02:35] [INFO] UUID do volume lógico capturado: 9892cc35-9a7c-434b-9a05-6efb662ccf09
+[2024-06-08 10:02:35] [INFO] Ponto de montagem do volume lógico capturado: /
+[2024-06-08 10:02:35] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:02:35] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p1
+[2024-06-08 10:02:35] [INFO] Nome do volume capturado: /dev/nvme0n1p1
+[2024-06-08 10:02:35] [INFO] Espaço disponível no volume lógico capturado : 652.5078125
+[2024-06-08 10:02:35] [INFO] Espaço total do volume lógico capturado com sucesso: 1019.9765625
+[2024-06-08 10:02:35] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:02:35] [INFO] UUID do volume lógico capturado: 9f2a-c609
+[2024-06-08 10:02:35] [INFO] Ponto de montagem do volume lógico capturado: /boot/efi
+[2024-06-08 10:02:35] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:02:35] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p2
+[2024-06-08 10:02:35] [INFO] Nome do volume capturado: /dev/nvme0n1p2
+[2024-06-08 10:02:35] [INFO] Espaço disponível no volume lógico capturado : 1.5238761901855469
+[2024-06-08 10:02:35] [INFO] Espaço total do volume lógico capturado com sucesso: 3.9921722412109375
+[2024-06-08 10:02:35] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:02:35] [INFO] UUID do volume lógico capturado: 9f2a-c53e
+[2024-06-08 10:02:35] [INFO] Ponto de montagem do volume lógico capturado: /recovery
+[2024-06-08 10:02:35] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:02:35] [INFO] Todos os volumes lógicos verificados.
+[2024-06-08 10:02:35] [INFO] Capturando dados da sua CPU.
+[2024-06-08 10:02:35] [INFO] Número de CPUs lógicas: 16
+[2024-06-08 10:02:35] [INFO] Número de CPUs físicas: 8
+[2024-06-08 10:02:35] [INFO] Microarquitetura: unknown
+[2024-06-08 10:02:35] [INFO] Identificador: AuthenticAMD Family 23 Model 104 Stepping 1
+[2024-06-08 10:02:35] [INFO] ID da CPU Looca: 178bfbff00860f81
+[2024-06-08 10:02:35] [INFO] Fabricante: AuthenticAMD
+[2024-06-08 10:02:35] [INFO] Frequência: 4.372E9
+[2024-06-08 10:02:35] [INFO] Número de pacotes físicos: 1
+[2024-06-08 10:02:35] [INFO] Uso da CPU: 1.9987507807620237
+[2024-06-08 10:02:35] [INFO] Nome da CPU: AMD Ryzen 7 5700U with Radeon Graphics
+[2024-06-08 10:02:35] [INFO] Temperatura da CPU: 46.9
+[2024-06-08 10:02:35] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-08 10:02:35] [INFO] Capturando dados do seu HDD
+[2024-06-08 10:02:35] [INFO] Nome do disco: /dev/nvme0n1
+[2024-06-08 10:02:35] [INFO] Serial do disco: SS1F36381L1BR39112KD
+[2024-06-08 10:02:35] [INFO] Modelo do disco: SSSTC CL4-4D512-Q62
+[2024-06-08 10:02:35] [INFO] Escritas do disco: 1.4485607147216797
+[2024-06-08 10:02:35] [INFO] Leituras do disco: 908.607421875
+[2024-06-08 10:02:35] [INFO] Bytes de escritas do disco: 24.823542594909668
+[2024-06-08 10:02:35] [INFO] Bytes de leitura do disco: 36.87489128112793
+[2024-06-08 10:02:35] [INFO] Tamanho do disco: 476.94
+[2024-06-08 10:02:35] [INFO] Tempo de transferência do disco: 272.2211111111111
+[2024-06-08 10:02:35] [INFO] Dados do disco gravados.
+[2024-06-08 10:02:35] [INFO] Nome do disco: /dev/zram0
+[2024-06-08 10:02:35] [INFO] Serial do disco: unknown
+[2024-06-08 10:02:35] [INFO] Modelo do disco: unknown
+[2024-06-08 10:02:35] [INFO] Escritas do disco: 5.13947868347168
+[2024-06-08 10:02:35] [INFO] Leituras do disco: 2.6796646118164062
+[2024-06-08 10:02:35] [INFO] Bytes de escritas do disco: 20.55791473388672
+[2024-06-08 10:02:35] [INFO] Bytes de leitura do disco: 10.71957778930664
+[2024-06-08 10:02:35] [INFO] Tamanho do disco: 9.56
+[2024-06-08 10:02:35] [INFO] Tempo de transferência do disco: 118.69
+[2024-06-08 10:02:35] [INFO] Dados do disco gravados.
+[2024-06-08 10:02:35] [INFO] Nome do disco: /dev/dm-0
+[2024-06-08 10:02:35] [INFO] Serial do disco: CRYPT-PLAIN-cryptswap
+[2024-06-08 10:02:35] [INFO] Modelo do disco: Logical Volume Group
+[2024-06-08 10:02:35] [INFO] Escritas do disco: 1.1652250289916992
+[2024-06-08 10:02:35] [INFO] Leituras do disco: 226.6826171875
+[2024-06-08 10:02:35] [INFO] Bytes de escritas do disco: 4.660869598388672
+[2024-06-08 10:02:35] [INFO] Bytes de leitura do disco: 910.462890625
+[2024-06-08 10:02:35] [INFO] Tamanho do disco: 4.0
+[2024-06-08 10:02:35] [INFO] Tempo de transferência do disco: 28.756666666666668
+[2024-06-08 10:02:35] [INFO] Dados do disco gravados.
+[2024-06-08 10:02:35] [INFO] Capturando dados do seu HDD
+[2024-06-08 10:02:35] [INFO] Nome do disco: /dev/nvme0n1
+[2024-06-08 10:02:35] [INFO] Serial do disco: SS1F36381L1BR39112KD
+[2024-06-08 10:02:35] [INFO] Modelo do disco: SSSTC CL4-4D512-Q62
+[2024-06-08 10:02:35] [INFO] Escritas do disco: 1.4485807418823242
+[2024-06-08 10:02:35] [INFO] Leituras do disco: 908.607421875
+[2024-06-08 10:02:35] [INFO] Bytes de escritas do disco: 24.823668479919434
+[2024-06-08 10:02:35] [INFO] Bytes de leitura do disco: 36.87489128112793
+[2024-06-08 10:02:35] [INFO] Tamanho do disco: 476.94
+[2024-06-08 10:02:35] [INFO] Tempo de transferência do disco: 272.23
+[2024-06-08 10:02:35] [INFO] Dados do disco gravados.
+[2024-06-08 10:02:35] [INFO] Nome do disco: /dev/zram0
+[2024-06-08 10:02:35] [INFO] Serial do disco: unknown
+[2024-06-08 10:02:35] [INFO] Modelo do disco: unknown
+[2024-06-08 10:02:35] [INFO] Escritas do disco: 5.13947868347168
+[2024-06-08 10:02:35] [INFO] Leituras do disco: 2.6796646118164062
+[2024-06-08 10:02:35] [INFO] Bytes de escritas do disco: 20.55791473388672
+[2024-06-08 10:02:35] [INFO] Bytes de leitura do disco: 10.71957778930664
+[2024-06-08 10:02:35] [INFO] Tamanho do disco: 9.56
+[2024-06-08 10:02:35] [INFO] Tempo de transferência do disco: 118.69
+[2024-06-08 10:02:35] [INFO] Dados do disco gravados.
+[2024-06-08 10:02:35] [INFO] Nome do disco: /dev/dm-0
+[2024-06-08 10:02:35] [INFO] Serial do disco: CRYPT-PLAIN-cryptswap
+[2024-06-08 10:02:35] [INFO] Modelo do disco: Logical Volume Group
+[2024-06-08 10:02:35] [INFO] Escritas do disco: 1.1652250289916992
+[2024-06-08 10:02:35] [INFO] Leituras do disco: 226.6826171875
+[2024-06-08 10:02:35] [INFO] Bytes de escritas do disco: 4.660869598388672
+[2024-06-08 10:02:35] [INFO] Bytes de leitura do disco: 910.462890625
+[2024-06-08 10:02:35] [INFO] Tamanho do disco: 4.0
+[2024-06-08 10:02:35] [INFO] Tempo de transferência do disco: 28.756666666666668
+[2024-06-08 10:02:35] [INFO] Dados do disco gravados.
+[2024-06-08 10:02:35] [INFO] Capturando dados do seu HDD
+[2024-06-08 10:02:35] [INFO] Nome do disco: /dev/nvme0n1
+[2024-06-08 10:02:35] [INFO] Serial do disco: SS1F36381L1BR39112KD
+[2024-06-08 10:02:35] [INFO] Modelo do disco: SSSTC CL4-4D512-Q62
+[2024-06-08 10:02:35] [INFO] Escritas do disco: 1.4486007690429688
+[2024-06-08 10:02:35] [INFO] Leituras do disco: 908.607421875
+[2024-06-08 10:02:35] [INFO] Bytes de escritas do disco: 24.823786735534668
+[2024-06-08 10:02:35] [INFO] Bytes de leitura do disco: 36.87489128112793
+[2024-06-08 10:02:35] [INFO] Tamanho do disco: 476.94
+[2024-06-08 10:02:35] [INFO] Tempo de transferência do disco: 272.2366666666667
+[2024-06-08 10:02:35] [INFO] Dados do disco gravados.
+[2024-06-08 10:02:35] [INFO] Nome do disco: /dev/zram0
+[2024-06-08 10:02:35] [INFO] Serial do disco: unknown
+[2024-06-08 10:02:35] [INFO] Modelo do disco: unknown
+[2024-06-08 10:02:35] [INFO] Escritas do disco: 5.13947868347168
+[2024-06-08 10:02:35] [INFO] Leituras do disco: 2.6796646118164062
+[2024-06-08 10:02:35] [INFO] Bytes de escritas do disco: 20.55791473388672
+[2024-06-08 10:02:35] [INFO] Bytes de leitura do disco: 10.71957778930664
+[2024-06-08 10:02:35] [INFO] Tamanho do disco: 9.56
+[2024-06-08 10:02:35] [INFO] Tempo de transferência do disco: 118.69
+[2024-06-08 10:02:35] [INFO] Dados do disco gravados.
+[2024-06-08 10:02:35] [INFO] Nome do disco: /dev/dm-0
+[2024-06-08 10:02:35] [INFO] Serial do disco: CRYPT-PLAIN-cryptswap
+[2024-06-08 10:02:35] [INFO] Modelo do disco: Logical Volume Group
+[2024-06-08 10:02:35] [INFO] Escritas do disco: 1.1652250289916992
+[2024-06-08 10:02:35] [INFO] Leituras do disco: 226.6826171875
+[2024-06-08 10:02:35] [INFO] Bytes de escritas do disco: 4.660869598388672
+[2024-06-08 10:02:35] [INFO] Bytes de leitura do disco: 910.462890625
+[2024-06-08 10:02:35] [INFO] Tamanho do disco: 4.0
+[2024-06-08 10:02:35] [INFO] Tempo de transferência do disco: 28.756666666666668
+[2024-06-08 10:02:35] [INFO] Dados do disco gravados.
+[2024-06-08 10:02:35] [INFO] Capturando dados da GPU.
+[2024-06-08 10:02:35] [INFO] Dados do fabricante da sua GPU capturados com sucesso: Advanced Micro Devices, Inc. [AMD/ATI] (0x1002)
+[2024-06-08 10:02:35] [INFO] Dados do ID da sua GPU capturados com sucesso: 0x164c
+[2024-06-08 10:02:35] [INFO] O nome da sua GPU foi capturado com sucesso: Lucienne
+[2024-06-08 10:02:35] [INFO] A VRam da sua GPU foi capturada com sucesso: 258.0
+[2024-06-08 10:02:35] [INFO] A Versão da sua GPU foi capturada com sucesso: unknown
+[2024-06-08 10:02:35] [INFO] Temperatura da GPU: 47.0
+[2024-06-08 10:02:35] [INFO] Dados da GPU gravados.
+[2024-06-08 10:02:35] [INFO] Capturando dados da sua memória RAM.
+[2024-06-08 10:02:35] [INFO] Memória disponível: 1.4936752319335938
+[2024-06-08 10:02:35] [INFO] Memória total: 9.559261322021484
+[2024-06-08 10:02:35] [INFO] Memória em uso: 8.06558609008789
+[2024-06-08 10:02:35] [INFO] Dados da memória ram capturados com sucesso.
+[2024-06-08 10:02:35] [INFO] Capturando dados da sua bateria.
+[2024-06-08 10:02:35] [INFO] Amperagem da bateria: 1.3308852984377086
+[2024-06-08 10:02:35] [INFO] Nome do dispositivo da bateria: L20M2PF0
+[2024-06-08 10:02:35] [INFO] Número de série da bateria:  1900
+[2024-06-08 10:02:35] [INFO] Química da bateria: Li-poly
+[2024-06-08 10:02:35] [INFO] Nome da bateria: BAT0
+[2024-06-08 10:02:35] [INFO] Voltagem da bateria: 7489000.0
+[2024-06-08 10:02:35] [INFO] Capacidade atual da bateria: 15.840530395507812
+[2024-06-08 10:02:35] [INFO] Número de ciclos da bateria: 121
+[2024-06-08 10:02:35] [INFO] Capacidade de design da bateria: 36.2396240234375
+[2024-06-08 10:02:35] [INFO] Unidade de capacidade da bateria: RELATIVE
+[2024-06-08 10:02:35] [INFO] Tempo restante da bateria (instantâneo): -1.0
+[2024-06-08 10:02:35] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-08 10:02:35] [INFO] Taxa de uso de energia da bateria: 9967000.0
+[2024-06-08 10:02:35] [INFO] Temperatura da bateria: 0.0
+[2024-06-08 10:02:35] [INFO] Capacidade máxima da bateria: 34.91401672363281
+[2024-06-08 10:02:35] [INFO] Porcentagem de capacidade restante da bateria: 0.4
+[2024-06-08 10:02:35] [INFO] Data de fabricação da bateria: N/A
+[2024-06-08 10:02:35] [INFO] Fabricante da bateria: SMP
+[2024-06-08 10:02:35] [WARNING] Dados da bateria atual não foram capturados, será apresentada como 0.
+[2024-06-08 10:02:35] [INFO] Dados da bateria gravados.
+[2024-06-08 10:02:35] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-08 10:02:35] [INFO] Nome do volume lógico capturado: /
+[2024-06-08 10:02:35] [INFO] Nome do volume capturado: /dev/nvme0n1p3
+[2024-06-08 10:02:35] [INFO] Espaço disponível no volume lógico capturado : 267.8677864074707
+[2024-06-08 10:02:35] [INFO] Espaço total do volume lógico capturado com sucesso: 459.5223274230957
+[2024-06-08 10:02:35] [INFO] Tipo do volume lógico capturado: ext4
+[2024-06-08 10:02:35] [INFO] UUID do volume lógico capturado: 9892cc35-9a7c-434b-9a05-6efb662ccf09
+[2024-06-08 10:02:35] [INFO] Ponto de montagem do volume lógico capturado: /
+[2024-06-08 10:02:35] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:02:35] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p1
+[2024-06-08 10:02:35] [INFO] Nome do volume capturado: /dev/nvme0n1p1
+[2024-06-08 10:02:35] [INFO] Espaço disponível no volume lógico capturado : 652.5078125
+[2024-06-08 10:02:35] [INFO] Espaço total do volume lógico capturado com sucesso: 1019.9765625
+[2024-06-08 10:02:35] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:02:35] [INFO] UUID do volume lógico capturado: 9f2a-c609
+[2024-06-08 10:02:35] [INFO] Ponto de montagem do volume lógico capturado: /boot/efi
+[2024-06-08 10:02:35] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:02:35] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p2
+[2024-06-08 10:02:35] [INFO] Nome do volume capturado: /dev/nvme0n1p2
+[2024-06-08 10:02:35] [INFO] Espaço disponível no volume lógico capturado : 1.5238761901855469
+[2024-06-08 10:02:35] [INFO] Espaço total do volume lógico capturado com sucesso: 3.9921722412109375
+[2024-06-08 10:02:35] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:02:35] [INFO] UUID do volume lógico capturado: 9f2a-c53e
+[2024-06-08 10:02:35] [INFO] Ponto de montagem do volume lógico capturado: /recovery
+[2024-06-08 10:02:35] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:02:35] [INFO] Todos os volumes lógicos verificados.
+[2024-06-08 10:02:36] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-08 10:02:36] [INFO] Nome do volume lógico capturado: /
+[2024-06-08 10:02:36] [INFO] Nome do volume capturado: /dev/nvme0n1p3
+[2024-06-08 10:02:36] [INFO] Espaço disponível no volume lógico capturado : 267.8677864074707
+[2024-06-08 10:02:36] [INFO] Espaço total do volume lógico capturado com sucesso: 459.5223274230957
+[2024-06-08 10:02:36] [INFO] Tipo do volume lógico capturado: ext4
+[2024-06-08 10:02:36] [INFO] UUID do volume lógico capturado: 9892cc35-9a7c-434b-9a05-6efb662ccf09
+[2024-06-08 10:02:36] [INFO] Ponto de montagem do volume lógico capturado: /
+[2024-06-08 10:02:36] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:02:36] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p1
+[2024-06-08 10:02:36] [INFO] Nome do volume capturado: /dev/nvme0n1p1
+[2024-06-08 10:02:36] [INFO] Espaço disponível no volume lógico capturado : 652.5078125
+[2024-06-08 10:02:36] [INFO] Espaço total do volume lógico capturado com sucesso: 1019.9765625
+[2024-06-08 10:02:36] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:02:36] [INFO] UUID do volume lógico capturado: 9f2a-c609
+[2024-06-08 10:02:36] [INFO] Ponto de montagem do volume lógico capturado: /boot/efi
+[2024-06-08 10:02:36] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:02:36] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p2
+[2024-06-08 10:02:36] [INFO] Nome do volume capturado: /dev/nvme0n1p2
+[2024-06-08 10:02:36] [INFO] Espaço disponível no volume lógico capturado : 1.5238761901855469
+[2024-06-08 10:02:36] [INFO] Espaço total do volume lógico capturado com sucesso: 3.9921722412109375
+[2024-06-08 10:02:36] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:02:36] [INFO] UUID do volume lógico capturado: 9f2a-c53e
+[2024-06-08 10:02:36] [INFO] Ponto de montagem do volume lógico capturado: /recovery
+[2024-06-08 10:02:36] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:02:36] [INFO] Todos os volumes lógicos verificados.
+[2024-06-08 10:02:36] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-08 10:02:36] [INFO] Nome do volume lógico capturado: /
+[2024-06-08 10:02:36] [INFO] Nome do volume capturado: /dev/nvme0n1p3
+[2024-06-08 10:02:36] [INFO] Espaço disponível no volume lógico capturado : 267.86778259277344
+[2024-06-08 10:02:36] [INFO] Espaço total do volume lógico capturado com sucesso: 459.5223274230957
+[2024-06-08 10:02:36] [INFO] Tipo do volume lógico capturado: ext4
+[2024-06-08 10:02:36] [INFO] UUID do volume lógico capturado: 9892cc35-9a7c-434b-9a05-6efb662ccf09
+[2024-06-08 10:02:36] [INFO] Ponto de montagem do volume lógico capturado: /
+[2024-06-08 10:02:36] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:02:36] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p1
+[2024-06-08 10:02:36] [INFO] Nome do volume capturado: /dev/nvme0n1p1
+[2024-06-08 10:02:36] [INFO] Espaço disponível no volume lógico capturado : 652.5078125
+[2024-06-08 10:02:36] [INFO] Espaço total do volume lógico capturado com sucesso: 1019.9765625
+[2024-06-08 10:02:36] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:02:36] [INFO] UUID do volume lógico capturado: 9f2a-c609
+[2024-06-08 10:02:36] [INFO] Ponto de montagem do volume lógico capturado: /boot/efi
+[2024-06-08 10:02:36] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:02:36] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p2
+[2024-06-08 10:02:36] [INFO] Nome do volume capturado: /dev/nvme0n1p2
+[2024-06-08 10:02:36] [INFO] Espaço disponível no volume lógico capturado : 1.5238761901855469
+[2024-06-08 10:02:36] [INFO] Espaço total do volume lógico capturado com sucesso: 3.9921722412109375
+[2024-06-08 10:02:36] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:02:36] [INFO] UUID do volume lógico capturado: 9f2a-c53e
+[2024-06-08 10:02:36] [INFO] Ponto de montagem do volume lógico capturado: /recovery
+[2024-06-08 10:02:36] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:02:36] [INFO] Todos os volumes lógicos verificados.
+[2024-06-08 10:03:05] [INFO] Capturando dados da sua CPU.
+[2024-06-08 10:03:05] [INFO] Número de CPUs lógicas: 16
+[2024-06-08 10:03:05] [INFO] Número de CPUs físicas: 8
+[2024-06-08 10:03:05] [INFO] Microarquitetura: unknown
+[2024-06-08 10:03:05] [INFO] Identificador: AuthenticAMD Family 23 Model 104 Stepping 1
+[2024-06-08 10:03:05] [INFO] ID da CPU Looca: 178bfbff00860f81
+[2024-06-08 10:03:05] [INFO] Fabricante: AuthenticAMD
+[2024-06-08 10:03:05] [INFO] Frequência: 4.372E9
+[2024-06-08 10:03:05] [INFO] Número de pacotes físicos: 1
+[2024-06-08 10:03:07] [INFO] Uso da CPU: 3.0625
+[2024-06-08 10:03:07] [INFO] Nome da CPU: AMD Ryzen 7 5700U with Radeon Graphics
+[2024-06-08 10:03:07] [INFO] Temperatura da CPU: 42.9
+[2024-06-08 10:03:07] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-08 10:03:07] [INFO] Capturando dados do seu HDD
+[2024-06-08 10:03:07] [INFO] Nome do disco: /dev/nvme0n1
+[2024-06-08 10:03:07] [INFO] Serial do disco: SS1F36381L1BR39112KD
+[2024-06-08 10:03:07] [INFO] Modelo do disco: SSSTC CL4-4D512-Q62
+[2024-06-08 10:03:07] [INFO] Escritas do disco: 1.4498682022094727
+[2024-06-08 10:03:07] [INFO] Leituras do disco: 908.625
+[2024-06-08 10:03:07] [INFO] Bytes de escritas do disco: 24.84821605682373
+[2024-06-08 10:03:07] [INFO] Bytes de leitura do disco: 36.876535415649414
+[2024-06-08 10:03:07] [INFO] Tamanho do disco: 476.94
+[2024-06-08 10:03:07] [INFO] Tempo de transferência do disco: 272.4711111111111
+[2024-06-08 10:03:07] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:07] [INFO] Nome do disco: /dev/zram0
+[2024-06-08 10:03:07] [INFO] Serial do disco: unknown
+[2024-06-08 10:03:07] [INFO] Modelo do disco: unknown
+[2024-06-08 10:03:07] [INFO] Escritas do disco: 5.13947868347168
+[2024-06-08 10:03:07] [INFO] Leituras do disco: 2.679774284362793
+[2024-06-08 10:03:07] [INFO] Bytes de escritas do disco: 20.55791473388672
+[2024-06-08 10:03:07] [INFO] Bytes de leitura do disco: 10.720016479492188
+[2024-06-08 10:03:07] [INFO] Tamanho do disco: 9.56
+[2024-06-08 10:03:07] [INFO] Tempo de transferência do disco: 118.73444444444445
+[2024-06-08 10:03:07] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:07] [INFO] Nome do disco: /dev/dm-0
+[2024-06-08 10:03:07] [INFO] Serial do disco: CRYPT-PLAIN-cryptswap
+[2024-06-08 10:03:07] [INFO] Modelo do disco: Logical Volume Group
+[2024-06-08 10:03:07] [INFO] Escritas do disco: 1.1652250289916992
+[2024-06-08 10:03:07] [INFO] Leituras do disco: 226.6826171875
+[2024-06-08 10:03:07] [INFO] Bytes de escritas do disco: 4.660869598388672
+[2024-06-08 10:03:07] [INFO] Bytes de leitura do disco: 910.462890625
+[2024-06-08 10:03:07] [INFO] Tamanho do disco: 4.0
+[2024-06-08 10:03:07] [INFO] Tempo de transferência do disco: 28.756666666666668
+[2024-06-08 10:03:07] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:07] [INFO] Capturando dados da GPU.
+[2024-06-08 10:03:07] [INFO] Dados do fabricante da sua GPU capturados com sucesso: Advanced Micro Devices, Inc. [AMD/ATI] (0x1002)
+[2024-06-08 10:03:07] [INFO] Dados do ID da sua GPU capturados com sucesso: 0x164c
+[2024-06-08 10:03:07] [INFO] O nome da sua GPU foi capturado com sucesso: Lucienne
+[2024-06-08 10:03:07] [INFO] A VRam da sua GPU foi capturada com sucesso: 258.0
+[2024-06-08 10:03:07] [INFO] A Versão da sua GPU foi capturada com sucesso: unknown
+[2024-06-08 10:03:07] [INFO] Temperatura da GPU: 42.9
+[2024-06-08 10:03:07] [INFO] Dados da GPU gravados.
+[2024-06-08 10:03:07] [INFO] Capturando dados da sua memória RAM.
+[2024-06-08 10:03:07] [INFO] Memória disponível: 1.5099334716796875
+[2024-06-08 10:03:07] [INFO] Memória total: 9.559261322021484
+[2024-06-08 10:03:07] [INFO] Memória em uso: 8.049327850341797
+[2024-06-08 10:03:07] [INFO] Dados da memória ram capturados com sucesso.
+[2024-06-08 10:03:07] [INFO] Capturando dados da sua bateria.
+[2024-06-08 10:03:07] [INFO] Amperagem da bateria: 1.227885256837892
+[2024-06-08 10:03:07] [INFO] Nome do dispositivo da bateria: L20M2PF0
+[2024-06-08 10:03:07] [INFO] Número de série da bateria:  1900
+[2024-06-08 10:03:07] [INFO] Química da bateria: Li-poly
+[2024-06-08 10:03:07] [INFO] Nome da bateria: BAT0
+[2024-06-08 10:03:07] [INFO] Voltagem da bateria: 7495000.0
+[2024-06-08 10:03:07] [INFO] Capacidade atual da bateria: 15.75469970703125
+[2024-06-08 10:03:07] [INFO] Número de ciclos da bateria: 121
+[2024-06-08 10:03:07] [INFO] Capacidade de design da bateria: 36.2396240234375
+[2024-06-08 10:03:07] [INFO] Unidade de capacidade da bateria: RELATIVE
+[2024-06-08 10:03:07] [INFO] Tempo restante da bateria (instantâneo): -1.0
+[2024-06-08 10:03:07] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-08 10:03:07] [INFO] Taxa de uso de energia da bateria: 9203000.0
+[2024-06-08 10:03:07] [INFO] Temperatura da bateria: 0.0
+[2024-06-08 10:03:07] [INFO] Capacidade máxima da bateria: 34.91401672363281
+[2024-06-08 10:03:07] [INFO] Porcentagem de capacidade restante da bateria: 0.4
+[2024-06-08 10:03:07] [INFO] Data de fabricação da bateria: N/A
+[2024-06-08 10:03:07] [INFO] Fabricante da bateria: SMP
+[2024-06-08 10:03:07] [WARNING] Dados da bateria atual não foram capturados, será apresentada como 0.
+[2024-06-08 10:03:07] [INFO] Dados da bateria gravados.
+[2024-06-08 10:03:07] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-08 10:03:07] [INFO] Nome do volume lógico capturado: /
+[2024-06-08 10:03:07] [INFO] Nome do volume capturado: /dev/nvme0n1p3
+[2024-06-08 10:03:07] [INFO] Espaço disponível no volume lógico capturado : 267.8675727844238
+[2024-06-08 10:03:07] [INFO] Espaço total do volume lógico capturado com sucesso: 459.5223274230957
+[2024-06-08 10:03:07] [INFO] Tipo do volume lógico capturado: ext4
+[2024-06-08 10:03:07] [INFO] UUID do volume lógico capturado: 9892cc35-9a7c-434b-9a05-6efb662ccf09
+[2024-06-08 10:03:07] [INFO] Ponto de montagem do volume lógico capturado: /
+[2024-06-08 10:03:07] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:07] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p1
+[2024-06-08 10:03:07] [INFO] Nome do volume capturado: /dev/nvme0n1p1
+[2024-06-08 10:03:07] [INFO] Espaço disponível no volume lógico capturado : 652.5078125
+[2024-06-08 10:03:07] [INFO] Espaço total do volume lógico capturado com sucesso: 1019.9765625
+[2024-06-08 10:03:07] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:03:07] [INFO] UUID do volume lógico capturado: 9f2a-c609
+[2024-06-08 10:03:07] [INFO] Ponto de montagem do volume lógico capturado: /boot/efi
+[2024-06-08 10:03:07] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:07] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p2
+[2024-06-08 10:03:07] [INFO] Nome do volume capturado: /dev/nvme0n1p2
+[2024-06-08 10:03:07] [INFO] Espaço disponível no volume lógico capturado : 1.5238761901855469
+[2024-06-08 10:03:07] [INFO] Espaço total do volume lógico capturado com sucesso: 3.9921722412109375
+[2024-06-08 10:03:07] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:03:07] [INFO] UUID do volume lógico capturado: 9f2a-c53e
+[2024-06-08 10:03:07] [INFO] Ponto de montagem do volume lógico capturado: /recovery
+[2024-06-08 10:03:07] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:07] [INFO] Todos os volumes lógicos verificados.
+[2024-06-08 10:03:07] [INFO] Capturando dados da sua CPU.
+[2024-06-08 10:03:08] [INFO] Número de CPUs lógicas: 16
+[2024-06-08 10:03:08] [INFO] Número de CPUs físicas: 8
+[2024-06-08 10:03:08] [INFO] Microarquitetura: unknown
+[2024-06-08 10:03:08] [INFO] Identificador: AuthenticAMD Family 23 Model 104 Stepping 1
+[2024-06-08 10:03:08] [INFO] ID da CPU Looca: 178bfbff00860f81
+[2024-06-08 10:03:08] [INFO] Fabricante: AuthenticAMD
+[2024-06-08 10:03:08] [INFO] Frequência: 4.372E9
+[2024-06-08 10:03:08] [INFO] Número de pacotes físicos: 1
+[2024-06-08 10:03:08] [INFO] Uso da CPU: 3.0625
+[2024-06-08 10:03:08] [INFO] Nome da CPU: AMD Ryzen 7 5700U with Radeon Graphics
+[2024-06-08 10:03:08] [INFO] Temperatura da CPU: 42.9
+[2024-06-08 10:03:08] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-08 10:03:08] [INFO] Capturando dados do seu HDD
+[2024-06-08 10:03:08] [INFO] Nome do disco: /dev/nvme0n1
+[2024-06-08 10:03:08] [INFO] Serial do disco: SS1F36381L1BR39112KD
+[2024-06-08 10:03:08] [INFO] Modelo do disco: SSSTC CL4-4D512-Q62
+[2024-06-08 10:03:08] [INFO] Escritas do disco: 1.4498882293701172
+[2024-06-08 10:03:08] [INFO] Leituras do disco: 908.625
+[2024-06-08 10:03:08] [INFO] Bytes de escritas do disco: 24.848376274108887
+[2024-06-08 10:03:08] [INFO] Bytes de leitura do disco: 36.876535415649414
+[2024-06-08 10:03:08] [INFO] Tamanho do disco: 476.94
+[2024-06-08 10:03:08] [INFO] Tempo de transferência do disco: 272.48
+[2024-06-08 10:03:08] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:08] [INFO] Nome do disco: /dev/zram0
+[2024-06-08 10:03:08] [INFO] Serial do disco: unknown
+[2024-06-08 10:03:08] [INFO] Modelo do disco: unknown
+[2024-06-08 10:03:08] [INFO] Escritas do disco: 5.13947868347168
+[2024-06-08 10:03:08] [INFO] Leituras do disco: 2.6797752380371094
+[2024-06-08 10:03:08] [INFO] Bytes de escritas do disco: 20.55791473388672
+[2024-06-08 10:03:08] [INFO] Bytes de leitura do disco: 10.720020294189453
+[2024-06-08 10:03:08] [INFO] Tamanho do disco: 9.56
+[2024-06-08 10:03:08] [INFO] Tempo de transferência do disco: 118.73555555555555
+[2024-06-08 10:03:08] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:08] [INFO] Nome do disco: /dev/dm-0
+[2024-06-08 10:03:08] [INFO] Serial do disco: CRYPT-PLAIN-cryptswap
+[2024-06-08 10:03:08] [INFO] Modelo do disco: Logical Volume Group
+[2024-06-08 10:03:08] [INFO] Escritas do disco: 1.1652250289916992
+[2024-06-08 10:03:08] [INFO] Leituras do disco: 226.6826171875
+[2024-06-08 10:03:08] [INFO] Bytes de escritas do disco: 4.660869598388672
+[2024-06-08 10:03:08] [INFO] Bytes de leitura do disco: 910.462890625
+[2024-06-08 10:03:08] [INFO] Tamanho do disco: 4.0
+[2024-06-08 10:03:08] [INFO] Tempo de transferência do disco: 28.756666666666668
+[2024-06-08 10:03:08] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:08] [INFO] Capturando dados do seu HDD
+[2024-06-08 10:03:08] [INFO] Nome do disco: /dev/nvme0n1
+[2024-06-08 10:03:08] [INFO] Serial do disco: SS1F36381L1BR39112KD
+[2024-06-08 10:03:08] [INFO] Modelo do disco: SSSTC CL4-4D512-Q62
+[2024-06-08 10:03:08] [INFO] Escritas do disco: 1.4499101638793945
+[2024-06-08 10:03:08] [INFO] Leituras do disco: 908.625
+[2024-06-08 10:03:08] [INFO] Bytes de escritas do disco: 24.848505973815918
+[2024-06-08 10:03:08] [INFO] Bytes de leitura do disco: 36.876535415649414
+[2024-06-08 10:03:08] [INFO] Tamanho do disco: 476.94
+[2024-06-08 10:03:08] [INFO] Tempo de transferência do disco: 272.48777777777775
+[2024-06-08 10:03:08] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:08] [INFO] Nome do disco: /dev/zram0
+[2024-06-08 10:03:08] [INFO] Serial do disco: unknown
+[2024-06-08 10:03:08] [INFO] Modelo do disco: unknown
+[2024-06-08 10:03:08] [INFO] Escritas do disco: 5.13947868347168
+[2024-06-08 10:03:08] [INFO] Leituras do disco: 2.6797752380371094
+[2024-06-08 10:03:08] [INFO] Bytes de escritas do disco: 20.55791473388672
+[2024-06-08 10:03:08] [INFO] Bytes de leitura do disco: 10.720020294189453
+[2024-06-08 10:03:08] [INFO] Tamanho do disco: 9.56
+[2024-06-08 10:03:08] [INFO] Tempo de transferência do disco: 118.73555555555555
+[2024-06-08 10:03:08] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:08] [INFO] Nome do disco: /dev/dm-0
+[2024-06-08 10:03:08] [INFO] Serial do disco: CRYPT-PLAIN-cryptswap
+[2024-06-08 10:03:08] [INFO] Modelo do disco: Logical Volume Group
+[2024-06-08 10:03:08] [INFO] Escritas do disco: 1.1652250289916992
+[2024-06-08 10:03:08] [INFO] Leituras do disco: 226.6826171875
+[2024-06-08 10:03:08] [INFO] Bytes de escritas do disco: 4.660869598388672
+[2024-06-08 10:03:08] [INFO] Bytes de leitura do disco: 910.462890625
+[2024-06-08 10:03:08] [INFO] Tamanho do disco: 4.0
+[2024-06-08 10:03:08] [INFO] Tempo de transferência do disco: 28.756666666666668
+[2024-06-08 10:03:08] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:08] [INFO] Capturando dados do seu HDD
+[2024-06-08 10:03:08] [INFO] Nome do disco: /dev/nvme0n1
+[2024-06-08 10:03:08] [INFO] Serial do disco: SS1F36381L1BR39112KD
+[2024-06-08 10:03:08] [INFO] Modelo do disco: SSSTC CL4-4D512-Q62
+[2024-06-08 10:03:08] [INFO] Escritas do disco: 1.4499282836914062
+[2024-06-08 10:03:08] [INFO] Leituras do disco: 908.625
+[2024-06-08 10:03:08] [INFO] Bytes de escritas do disco: 24.84860897064209
+[2024-06-08 10:03:08] [INFO] Bytes de leitura do disco: 36.876535415649414
+[2024-06-08 10:03:08] [INFO] Tamanho do disco: 476.94
+[2024-06-08 10:03:08] [INFO] Tempo de transferência do disco: 272.49444444444447
+[2024-06-08 10:03:08] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:08] [INFO] Nome do disco: /dev/zram0
+[2024-06-08 10:03:08] [INFO] Serial do disco: unknown
+[2024-06-08 10:03:08] [INFO] Modelo do disco: unknown
+[2024-06-08 10:03:08] [INFO] Escritas do disco: 5.13947868347168
+[2024-06-08 10:03:08] [INFO] Leituras do disco: 2.6797752380371094
+[2024-06-08 10:03:08] [INFO] Bytes de escritas do disco: 20.55791473388672
+[2024-06-08 10:03:08] [INFO] Bytes de leitura do disco: 10.720020294189453
+[2024-06-08 10:03:08] [INFO] Tamanho do disco: 9.56
+[2024-06-08 10:03:08] [INFO] Tempo de transferência do disco: 118.73555555555555
+[2024-06-08 10:03:08] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:08] [INFO] Nome do disco: /dev/dm-0
+[2024-06-08 10:03:08] [INFO] Serial do disco: CRYPT-PLAIN-cryptswap
+[2024-06-08 10:03:08] [INFO] Modelo do disco: Logical Volume Group
+[2024-06-08 10:03:08] [INFO] Escritas do disco: 1.1652250289916992
+[2024-06-08 10:03:08] [INFO] Leituras do disco: 226.6826171875
+[2024-06-08 10:03:08] [INFO] Bytes de escritas do disco: 4.660869598388672
+[2024-06-08 10:03:08] [INFO] Bytes de leitura do disco: 910.462890625
+[2024-06-08 10:03:08] [INFO] Tamanho do disco: 4.0
+[2024-06-08 10:03:08] [INFO] Tempo de transferência do disco: 28.756666666666668
+[2024-06-08 10:03:08] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:08] [INFO] Capturando dados da GPU.
+[2024-06-08 10:03:08] [INFO] Dados do fabricante da sua GPU capturados com sucesso: Advanced Micro Devices, Inc. [AMD/ATI] (0x1002)
+[2024-06-08 10:03:08] [INFO] Dados do ID da sua GPU capturados com sucesso: 0x164c
+[2024-06-08 10:03:08] [INFO] O nome da sua GPU foi capturado com sucesso: Lucienne
+[2024-06-08 10:03:08] [INFO] A VRam da sua GPU foi capturada com sucesso: 258.0
+[2024-06-08 10:03:08] [INFO] A Versão da sua GPU foi capturada com sucesso: unknown
+[2024-06-08 10:03:08] [INFO] Temperatura da GPU: 43.4
+[2024-06-08 10:03:08] [INFO] Dados da GPU gravados.
+[2024-06-08 10:03:08] [INFO] Capturando dados da sua memória RAM.
+[2024-06-08 10:03:08] [INFO] Memória disponível: 1.5100135803222656
+[2024-06-08 10:03:08] [INFO] Memória total: 9.559261322021484
+[2024-06-08 10:03:08] [INFO] Memória em uso: 8.049247741699219
+[2024-06-08 10:03:08] [INFO] Dados da memória ram capturados com sucesso.
+[2024-06-08 10:03:08] [INFO] Capturando dados da sua bateria.
+[2024-06-08 10:03:08] [INFO] Amperagem da bateria: 1.227885256837892
+[2024-06-08 10:03:08] [INFO] Nome do dispositivo da bateria: L20M2PF0
+[2024-06-08 10:03:08] [INFO] Número de série da bateria:  1900
+[2024-06-08 10:03:08] [INFO] Química da bateria: Li-poly
+[2024-06-08 10:03:08] [INFO] Nome da bateria: BAT0
+[2024-06-08 10:03:08] [INFO] Voltagem da bateria: 7495000.0
+[2024-06-08 10:03:08] [INFO] Capacidade atual da bateria: 15.75469970703125
+[2024-06-08 10:03:08] [INFO] Número de ciclos da bateria: 121
+[2024-06-08 10:03:08] [INFO] Capacidade de design da bateria: 36.2396240234375
+[2024-06-08 10:03:08] [INFO] Unidade de capacidade da bateria: RELATIVE
+[2024-06-08 10:03:08] [INFO] Tempo restante da bateria (instantâneo): -1.0
+[2024-06-08 10:03:08] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-08 10:03:08] [INFO] Taxa de uso de energia da bateria: 9203000.0
+[2024-06-08 10:03:08] [INFO] Temperatura da bateria: 0.0
+[2024-06-08 10:03:08] [INFO] Capacidade máxima da bateria: 34.91401672363281
+[2024-06-08 10:03:08] [INFO] Porcentagem de capacidade restante da bateria: 0.4
+[2024-06-08 10:03:08] [INFO] Data de fabricação da bateria: N/A
+[2024-06-08 10:03:08] [INFO] Fabricante da bateria: SMP
+[2024-06-08 10:03:08] [WARNING] Dados da bateria atual não foram capturados, será apresentada como 0.
+[2024-06-08 10:03:08] [INFO] Dados da bateria gravados.
+[2024-06-08 10:03:08] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-08 10:03:08] [INFO] Nome do volume lógico capturado: /
+[2024-06-08 10:03:08] [INFO] Nome do volume capturado: /dev/nvme0n1p3
+[2024-06-08 10:03:08] [INFO] Espaço disponível no volume lógico capturado : 267.86755752563477
+[2024-06-08 10:03:08] [INFO] Espaço total do volume lógico capturado com sucesso: 459.5223274230957
+[2024-06-08 10:03:08] [INFO] Tipo do volume lógico capturado: ext4
+[2024-06-08 10:03:08] [INFO] UUID do volume lógico capturado: 9892cc35-9a7c-434b-9a05-6efb662ccf09
+[2024-06-08 10:03:08] [INFO] Ponto de montagem do volume lógico capturado: /
+[2024-06-08 10:03:08] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:08] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p1
+[2024-06-08 10:03:08] [INFO] Nome do volume capturado: /dev/nvme0n1p1
+[2024-06-08 10:03:08] [INFO] Espaço disponível no volume lógico capturado : 652.5078125
+[2024-06-08 10:03:08] [INFO] Espaço total do volume lógico capturado com sucesso: 1019.9765625
+[2024-06-08 10:03:08] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:03:08] [INFO] UUID do volume lógico capturado: 9f2a-c609
+[2024-06-08 10:03:08] [INFO] Ponto de montagem do volume lógico capturado: /boot/efi
+[2024-06-08 10:03:08] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:08] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p2
+[2024-06-08 10:03:08] [INFO] Nome do volume capturado: /dev/nvme0n1p2
+[2024-06-08 10:03:08] [INFO] Espaço disponível no volume lógico capturado : 1.5238761901855469
+[2024-06-08 10:03:08] [INFO] Espaço total do volume lógico capturado com sucesso: 3.9921722412109375
+[2024-06-08 10:03:08] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:03:08] [INFO] UUID do volume lógico capturado: 9f2a-c53e
+[2024-06-08 10:03:08] [INFO] Ponto de montagem do volume lógico capturado: /recovery
+[2024-06-08 10:03:08] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:08] [INFO] Todos os volumes lógicos verificados.
+[2024-06-08 10:03:08] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-08 10:03:08] [INFO] Nome do volume lógico capturado: /
+[2024-06-08 10:03:08] [INFO] Nome do volume capturado: /dev/nvme0n1p3
+[2024-06-08 10:03:08] [INFO] Espaço disponível no volume lógico capturado : 267.8675537109375
+[2024-06-08 10:03:08] [INFO] Espaço total do volume lógico capturado com sucesso: 459.5223274230957
+[2024-06-08 10:03:08] [INFO] Tipo do volume lógico capturado: ext4
+[2024-06-08 10:03:08] [INFO] UUID do volume lógico capturado: 9892cc35-9a7c-434b-9a05-6efb662ccf09
+[2024-06-08 10:03:08] [INFO] Ponto de montagem do volume lógico capturado: /
+[2024-06-08 10:03:08] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:08] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p1
+[2024-06-08 10:03:08] [INFO] Nome do volume capturado: /dev/nvme0n1p1
+[2024-06-08 10:03:08] [INFO] Espaço disponível no volume lógico capturado : 652.5078125
+[2024-06-08 10:03:08] [INFO] Espaço total do volume lógico capturado com sucesso: 1019.9765625
+[2024-06-08 10:03:08] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:03:08] [INFO] UUID do volume lógico capturado: 9f2a-c609
+[2024-06-08 10:03:08] [INFO] Ponto de montagem do volume lógico capturado: /boot/efi
+[2024-06-08 10:03:08] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:08] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p2
+[2024-06-08 10:03:08] [INFO] Nome do volume capturado: /dev/nvme0n1p2
+[2024-06-08 10:03:08] [INFO] Espaço disponível no volume lógico capturado : 1.5238761901855469
+[2024-06-08 10:03:08] [INFO] Espaço total do volume lógico capturado com sucesso: 3.9921722412109375
+[2024-06-08 10:03:08] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:03:08] [INFO] UUID do volume lógico capturado: 9f2a-c53e
+[2024-06-08 10:03:08] [INFO] Ponto de montagem do volume lógico capturado: /recovery
+[2024-06-08 10:03:08] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:08] [INFO] Todos os volumes lógicos verificados.
+[2024-06-08 10:03:09] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-08 10:03:09] [INFO] Nome do volume lógico capturado: /
+[2024-06-08 10:03:09] [INFO] Nome do volume capturado: /dev/nvme0n1p3
+[2024-06-08 10:03:09] [INFO] Espaço disponível no volume lógico capturado : 267.8675537109375
+[2024-06-08 10:03:09] [INFO] Espaço total do volume lógico capturado com sucesso: 459.5223274230957
+[2024-06-08 10:03:09] [INFO] Tipo do volume lógico capturado: ext4
+[2024-06-08 10:03:09] [INFO] UUID do volume lógico capturado: 9892cc35-9a7c-434b-9a05-6efb662ccf09
+[2024-06-08 10:03:09] [INFO] Ponto de montagem do volume lógico capturado: /
+[2024-06-08 10:03:09] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:09] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p1
+[2024-06-08 10:03:09] [INFO] Nome do volume capturado: /dev/nvme0n1p1
+[2024-06-08 10:03:09] [INFO] Espaço disponível no volume lógico capturado : 652.5078125
+[2024-06-08 10:03:09] [INFO] Espaço total do volume lógico capturado com sucesso: 1019.9765625
+[2024-06-08 10:03:09] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:03:09] [INFO] UUID do volume lógico capturado: 9f2a-c609
+[2024-06-08 10:03:09] [INFO] Ponto de montagem do volume lógico capturado: /boot/efi
+[2024-06-08 10:03:09] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:09] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p2
+[2024-06-08 10:03:09] [INFO] Nome do volume capturado: /dev/nvme0n1p2
+[2024-06-08 10:03:09] [INFO] Espaço disponível no volume lógico capturado : 1.5238761901855469
+[2024-06-08 10:03:09] [INFO] Espaço total do volume lógico capturado com sucesso: 3.9921722412109375
+[2024-06-08 10:03:09] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:03:09] [INFO] UUID do volume lógico capturado: 9f2a-c53e
+[2024-06-08 10:03:09] [INFO] Ponto de montagem do volume lógico capturado: /recovery
+[2024-06-08 10:03:09] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:09] [INFO] Todos os volumes lógicos verificados.
+[2024-06-08 10:03:10] [INFO] Capturando dados da sua CPU.
+[2024-06-08 10:03:11] [INFO] Número de CPUs lógicas: 16
+[2024-06-08 10:03:11] [INFO] Número de CPUs físicas: 8
+[2024-06-08 10:03:11] [INFO] Microarquitetura: unknown
+[2024-06-08 10:03:11] [INFO] Identificador: AuthenticAMD Family 23 Model 104 Stepping 1
+[2024-06-08 10:03:11] [INFO] ID da CPU Looca: 178bfbff00860f81
+[2024-06-08 10:03:11] [INFO] Fabricante: AuthenticAMD
+[2024-06-08 10:03:11] [INFO] Frequência: 4.372E9
+[2024-06-08 10:03:11] [INFO] Número de pacotes físicos: 1
+[2024-06-08 10:03:11] [INFO] Uso da CPU: 3.0625
+[2024-06-08 10:03:11] [INFO] Nome da CPU: AMD Ryzen 7 5700U with Radeon Graphics
+[2024-06-08 10:03:11] [INFO] Temperatura da CPU: 43.5
+[2024-06-08 10:03:11] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-08 10:03:11] [INFO] Capturando dados do seu HDD
+[2024-06-08 10:03:11] [INFO] Nome do disco: /dev/nvme0n1
+[2024-06-08 10:03:11] [INFO] Serial do disco: SS1F36381L1BR39112KD
+[2024-06-08 10:03:11] [INFO] Modelo do disco: SSSTC CL4-4D512-Q62
+[2024-06-08 10:03:11] [INFO] Escritas do disco: 1.4501190185546875
+[2024-06-08 10:03:11] [INFO] Leituras do disco: 908.625
+[2024-06-08 10:03:11] [INFO] Bytes de escritas do disco: 24.85018825531006
+[2024-06-08 10:03:11] [INFO] Bytes de leitura do disco: 36.876535415649414
+[2024-06-08 10:03:11] [INFO] Tamanho do disco: 476.94
+[2024-06-08 10:03:11] [INFO] Tempo de transferência do disco: 272.56666666666666
+[2024-06-08 10:03:11] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:11] [INFO] Nome do disco: /dev/zram0
+[2024-06-08 10:03:11] [INFO] Serial do disco: unknown
+[2024-06-08 10:03:11] [INFO] Modelo do disco: unknown
+[2024-06-08 10:03:11] [INFO] Escritas do disco: 5.13947868347168
+[2024-06-08 10:03:11] [INFO] Leituras do disco: 2.679779052734375
+[2024-06-08 10:03:11] [INFO] Bytes de escritas do disco: 20.55791473388672
+[2024-06-08 10:03:11] [INFO] Bytes de leitura do disco: 10.720035552978516
+[2024-06-08 10:03:11] [INFO] Tamanho do disco: 9.56
+[2024-06-08 10:03:11] [INFO] Tempo de transferência do disco: 118.74
+[2024-06-08 10:03:11] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:11] [INFO] Nome do disco: /dev/dm-0
+[2024-06-08 10:03:11] [INFO] Serial do disco: CRYPT-PLAIN-cryptswap
+[2024-06-08 10:03:11] [INFO] Modelo do disco: Logical Volume Group
+[2024-06-08 10:03:11] [INFO] Escritas do disco: 1.1652250289916992
+[2024-06-08 10:03:11] [INFO] Leituras do disco: 226.6826171875
+[2024-06-08 10:03:11] [INFO] Bytes de escritas do disco: 4.660869598388672
+[2024-06-08 10:03:11] [INFO] Bytes de leitura do disco: 910.462890625
+[2024-06-08 10:03:11] [INFO] Tamanho do disco: 4.0
+[2024-06-08 10:03:11] [INFO] Tempo de transferência do disco: 28.756666666666668
+[2024-06-08 10:03:11] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:11] [INFO] Capturando dados do seu HDD
+[2024-06-08 10:03:11] [INFO] Nome do disco: /dev/nvme0n1
+[2024-06-08 10:03:11] [INFO] Serial do disco: SS1F36381L1BR39112KD
+[2024-06-08 10:03:11] [INFO] Modelo do disco: SSSTC CL4-4D512-Q62
+[2024-06-08 10:03:11] [INFO] Escritas do disco: 1.450139045715332
+[2024-06-08 10:03:11] [INFO] Leituras do disco: 908.625
+[2024-06-08 10:03:11] [INFO] Bytes de escritas do disco: 24.85032558441162
+[2024-06-08 10:03:11] [INFO] Bytes de leitura do disco: 36.876535415649414
+[2024-06-08 10:03:11] [INFO] Tamanho do disco: 476.94
+[2024-06-08 10:03:11] [INFO] Tempo de transferência do disco: 272.57444444444445
+[2024-06-08 10:03:11] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:11] [INFO] Nome do disco: /dev/zram0
+[2024-06-08 10:03:11] [INFO] Serial do disco: unknown
+[2024-06-08 10:03:11] [INFO] Modelo do disco: unknown
+[2024-06-08 10:03:11] [INFO] Escritas do disco: 5.13947868347168
+[2024-06-08 10:03:11] [INFO] Leituras do disco: 2.6797800064086914
+[2024-06-08 10:03:11] [INFO] Bytes de escritas do disco: 20.55791473388672
+[2024-06-08 10:03:11] [INFO] Bytes de leitura do disco: 10.720039367675781
+[2024-06-08 10:03:11] [INFO] Tamanho do disco: 9.56
+[2024-06-08 10:03:11] [INFO] Tempo de transferência do disco: 118.74111111111111
+[2024-06-08 10:03:11] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:11] [INFO] Nome do disco: /dev/dm-0
+[2024-06-08 10:03:11] [INFO] Serial do disco: CRYPT-PLAIN-cryptswap
+[2024-06-08 10:03:11] [INFO] Modelo do disco: Logical Volume Group
+[2024-06-08 10:03:11] [INFO] Escritas do disco: 1.1652250289916992
+[2024-06-08 10:03:11] [INFO] Leituras do disco: 226.6826171875
+[2024-06-08 10:03:11] [INFO] Bytes de escritas do disco: 4.660869598388672
+[2024-06-08 10:03:11] [INFO] Bytes de leitura do disco: 910.462890625
+[2024-06-08 10:03:11] [INFO] Tamanho do disco: 4.0
+[2024-06-08 10:03:11] [INFO] Tempo de transferência do disco: 28.756666666666668
+[2024-06-08 10:03:11] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:11] [INFO] Capturando dados do seu HDD
+[2024-06-08 10:03:11] [INFO] Nome do disco: /dev/nvme0n1
+[2024-06-08 10:03:11] [INFO] Serial do disco: SS1F36381L1BR39112KD
+[2024-06-08 10:03:11] [INFO] Modelo do disco: SSSTC CL4-4D512-Q62
+[2024-06-08 10:03:11] [INFO] Escritas do disco: 1.4501590728759766
+[2024-06-08 10:03:11] [INFO] Leituras do disco: 908.625
+[2024-06-08 10:03:11] [INFO] Bytes de escritas do disco: 24.850443840026855
+[2024-06-08 10:03:11] [INFO] Bytes de leitura do disco: 36.876535415649414
+[2024-06-08 10:03:11] [INFO] Tamanho do disco: 476.94
+[2024-06-08 10:03:11] [INFO] Tempo de transferência do disco: 272.58222222222224
+[2024-06-08 10:03:11] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:11] [INFO] Nome do disco: /dev/zram0
+[2024-06-08 10:03:11] [INFO] Serial do disco: unknown
+[2024-06-08 10:03:11] [INFO] Modelo do disco: unknown
+[2024-06-08 10:03:11] [INFO] Escritas do disco: 5.13947868347168
+[2024-06-08 10:03:11] [INFO] Leituras do disco: 2.6797800064086914
+[2024-06-08 10:03:11] [INFO] Bytes de escritas do disco: 20.55791473388672
+[2024-06-08 10:03:11] [INFO] Bytes de leitura do disco: 10.720039367675781
+[2024-06-08 10:03:11] [INFO] Tamanho do disco: 9.56
+[2024-06-08 10:03:11] [INFO] Tempo de transferência do disco: 118.74111111111111
+[2024-06-08 10:03:11] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:11] [INFO] Nome do disco: /dev/dm-0
+[2024-06-08 10:03:11] [INFO] Serial do disco: CRYPT-PLAIN-cryptswap
+[2024-06-08 10:03:11] [INFO] Modelo do disco: Logical Volume Group
+[2024-06-08 10:03:11] [INFO] Escritas do disco: 1.1652250289916992
+[2024-06-08 10:03:11] [INFO] Leituras do disco: 226.6826171875
+[2024-06-08 10:03:11] [INFO] Bytes de escritas do disco: 4.660869598388672
+[2024-06-08 10:03:11] [INFO] Bytes de leitura do disco: 910.462890625
+[2024-06-08 10:03:11] [INFO] Tamanho do disco: 4.0
+[2024-06-08 10:03:11] [INFO] Tempo de transferência do disco: 28.756666666666668
+[2024-06-08 10:03:11] [INFO] Dados do disco gravados.
+[2024-06-08 10:03:11] [INFO] Capturando dados da GPU.
+[2024-06-08 10:03:11] [INFO] Dados do fabricante da sua GPU capturados com sucesso: Advanced Micro Devices, Inc. [AMD/ATI] (0x1002)
+[2024-06-08 10:03:11] [INFO] Dados do ID da sua GPU capturados com sucesso: 0x164c
+[2024-06-08 10:03:11] [INFO] O nome da sua GPU foi capturado com sucesso: Lucienne
+[2024-06-08 10:03:11] [INFO] A VRam da sua GPU foi capturada com sucesso: 258.0
+[2024-06-08 10:03:11] [INFO] A Versão da sua GPU foi capturada com sucesso: unknown
+[2024-06-08 10:03:11] [INFO] Temperatura da GPU: 44.0
+[2024-06-08 10:03:11] [INFO] Dados da GPU gravados.
+[2024-06-08 10:03:11] [INFO] Capturando dados da sua memória RAM.
+[2024-06-08 10:03:11] [INFO] Memória disponível: 1.4775657653808594
+[2024-06-08 10:03:11] [INFO] Memória total: 9.559261322021484
+[2024-06-08 10:03:11] [INFO] Memória em uso: 8.081695556640625
+[2024-06-08 10:03:11] [INFO] Dados da memória ram capturados com sucesso.
+[2024-06-08 10:03:11] [INFO] Capturando dados da sua bateria.
+[2024-06-08 10:03:11] [INFO] Amperagem da bateria: 1.2478839177750907
+[2024-06-08 10:03:11] [INFO] Nome do dispositivo da bateria: L20M2PF0
+[2024-06-08 10:03:11] [INFO] Número de série da bateria:  1900
+[2024-06-08 10:03:11] [INFO] Química da bateria: Li-poly
+[2024-06-08 10:03:11] [INFO] Nome da bateria: BAT0
+[2024-06-08 10:03:11] [INFO] Voltagem da bateria: 7443000.0
+[2024-06-08 10:03:11] [INFO] Capacidade atual da bateria: 15.75469970703125
+[2024-06-08 10:03:11] [INFO] Número de ciclos da bateria: 121
+[2024-06-08 10:03:11] [INFO] Capacidade de design da bateria: 36.2396240234375
+[2024-06-08 10:03:11] [INFO] Unidade de capacidade da bateria: RELATIVE
+[2024-06-08 10:03:11] [INFO] Tempo restante da bateria (instantâneo): -1.0
+[2024-06-08 10:03:11] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-08 10:03:11] [INFO] Taxa de uso de energia da bateria: 9288000.0
+[2024-06-08 10:03:11] [INFO] Temperatura da bateria: 0.0
+[2024-06-08 10:03:11] [INFO] Capacidade máxima da bateria: 34.91401672363281
+[2024-06-08 10:03:11] [INFO] Porcentagem de capacidade restante da bateria: 0.4
+[2024-06-08 10:03:11] [INFO] Data de fabricação da bateria: N/A
+[2024-06-08 10:03:11] [INFO] Fabricante da bateria: SMP
+[2024-06-08 10:03:11] [WARNING] Dados da bateria atual não foram capturados, será apresentada como 0.
+[2024-06-08 10:03:11] [INFO] Dados da bateria gravados.
+[2024-06-08 10:03:11] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-08 10:03:11] [INFO] Nome do volume lógico capturado: /
+[2024-06-08 10:03:11] [INFO] Nome do volume capturado: /dev/nvme0n1p3
+[2024-06-08 10:03:11] [INFO] Espaço disponível no volume lógico capturado : 267.867488861084
+[2024-06-08 10:03:11] [INFO] Espaço total do volume lógico capturado com sucesso: 459.5223274230957
+[2024-06-08 10:03:11] [INFO] Tipo do volume lógico capturado: ext4
+[2024-06-08 10:03:11] [INFO] UUID do volume lógico capturado: 9892cc35-9a7c-434b-9a05-6efb662ccf09
+[2024-06-08 10:03:11] [INFO] Ponto de montagem do volume lógico capturado: /
+[2024-06-08 10:03:11] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:11] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p1
+[2024-06-08 10:03:11] [INFO] Nome do volume capturado: /dev/nvme0n1p1
+[2024-06-08 10:03:11] [INFO] Espaço disponível no volume lógico capturado : 652.5078125
+[2024-06-08 10:03:11] [INFO] Espaço total do volume lógico capturado com sucesso: 1019.9765625
+[2024-06-08 10:03:11] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:03:11] [INFO] UUID do volume lógico capturado: 9f2a-c609
+[2024-06-08 10:03:11] [INFO] Ponto de montagem do volume lógico capturado: /boot/efi
+[2024-06-08 10:03:11] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:11] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p2
+[2024-06-08 10:03:11] [INFO] Nome do volume capturado: /dev/nvme0n1p2
+[2024-06-08 10:03:11] [INFO] Espaço disponível no volume lógico capturado : 1.5238761901855469
+[2024-06-08 10:03:11] [INFO] Espaço total do volume lógico capturado com sucesso: 3.9921722412109375
+[2024-06-08 10:03:11] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:03:11] [INFO] UUID do volume lógico capturado: 9f2a-c53e
+[2024-06-08 10:03:11] [INFO] Ponto de montagem do volume lógico capturado: /recovery
+[2024-06-08 10:03:11] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:11] [INFO] Todos os volumes lógicos verificados.
+[2024-06-08 10:03:11] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-08 10:03:11] [INFO] Nome do volume lógico capturado: /
+[2024-06-08 10:03:11] [INFO] Nome do volume capturado: /dev/nvme0n1p3
+[2024-06-08 10:03:11] [INFO] Espaço disponível no volume lógico capturado : 267.867488861084
+[2024-06-08 10:03:11] [INFO] Espaço total do volume lógico capturado com sucesso: 459.5223274230957
+[2024-06-08 10:03:11] [INFO] Tipo do volume lógico capturado: ext4
+[2024-06-08 10:03:11] [INFO] UUID do volume lógico capturado: 9892cc35-9a7c-434b-9a05-6efb662ccf09
+[2024-06-08 10:03:11] [INFO] Ponto de montagem do volume lógico capturado: /
+[2024-06-08 10:03:11] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:11] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p1
+[2024-06-08 10:03:11] [INFO] Nome do volume capturado: /dev/nvme0n1p1
+[2024-06-08 10:03:11] [INFO] Espaço disponível no volume lógico capturado : 652.5078125
+[2024-06-08 10:03:11] [INFO] Espaço total do volume lógico capturado com sucesso: 1019.9765625
+[2024-06-08 10:03:11] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:03:11] [INFO] UUID do volume lógico capturado: 9f2a-c609
+[2024-06-08 10:03:11] [INFO] Ponto de montagem do volume lógico capturado: /boot/efi
+[2024-06-08 10:03:11] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:11] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p2
+[2024-06-08 10:03:11] [INFO] Nome do volume capturado: /dev/nvme0n1p2
+[2024-06-08 10:03:11] [INFO] Espaço disponível no volume lógico capturado : 1.5238761901855469
+[2024-06-08 10:03:11] [INFO] Espaço total do volume lógico capturado com sucesso: 3.9921722412109375
+[2024-06-08 10:03:11] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:03:11] [INFO] UUID do volume lógico capturado: 9f2a-c53e
+[2024-06-08 10:03:11] [INFO] Ponto de montagem do volume lógico capturado: /recovery
+[2024-06-08 10:03:11] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:11] [INFO] Todos os volumes lógicos verificados.
+[2024-06-08 10:03:12] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-08 10:03:12] [INFO] Nome do volume lógico capturado: /
+[2024-06-08 10:03:12] [INFO] Nome do volume capturado: /dev/nvme0n1p3
+[2024-06-08 10:03:12] [INFO] Espaço disponível no volume lógico capturado : 267.86748123168945
+[2024-06-08 10:03:12] [INFO] Espaço total do volume lógico capturado com sucesso: 459.5223274230957
+[2024-06-08 10:03:12] [INFO] Tipo do volume lógico capturado: ext4
+[2024-06-08 10:03:12] [INFO] UUID do volume lógico capturado: 9892cc35-9a7c-434b-9a05-6efb662ccf09
+[2024-06-08 10:03:12] [INFO] Ponto de montagem do volume lógico capturado: /
+[2024-06-08 10:03:12] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:12] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p1
+[2024-06-08 10:03:12] [INFO] Nome do volume capturado: /dev/nvme0n1p1
+[2024-06-08 10:03:12] [INFO] Espaço disponível no volume lógico capturado : 652.5078125
+[2024-06-08 10:03:12] [INFO] Espaço total do volume lógico capturado com sucesso: 1019.9765625
+[2024-06-08 10:03:12] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:03:12] [INFO] UUID do volume lógico capturado: 9f2a-c609
+[2024-06-08 10:03:12] [INFO] Ponto de montagem do volume lógico capturado: /boot/efi
+[2024-06-08 10:03:12] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:12] [INFO] Nome do volume lógico capturado: /dev/nvme0n1p2
+[2024-06-08 10:03:12] [INFO] Nome do volume capturado: /dev/nvme0n1p2
+[2024-06-08 10:03:12] [INFO] Espaço disponível no volume lógico capturado : 1.5238761901855469
+[2024-06-08 10:03:12] [INFO] Espaço total do volume lógico capturado com sucesso: 3.9921722412109375
+[2024-06-08 10:03:12] [INFO] Tipo do volume lógico capturado: vfat
+[2024-06-08 10:03:12] [INFO] UUID do volume lógico capturado: 9f2a-c53e
+[2024-06-08 10:03:12] [INFO] Ponto de montagem do volume lógico capturado: /recovery
+[2024-06-08 10:03:12] [INFO] Dados do volume lógico gravados.
+[2024-06-08 10:03:12] [INFO] Todos os volumes lógicos verificados.

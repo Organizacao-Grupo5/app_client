@@ -4,21 +4,6 @@ echo "Atualizando o sistema..."
 sudo apt-get update -y
 sudo apt-get upgrade -y
 
-
-echo "Instalando MySQL..."
-sudo apt-get install mysql-server -y
-
-
-echo "Configurando MySQL..."
-sudo systemctl start mysql
-sudo systemctl enable mysql
-
-
-MYSQL_ROOT_PASSWORD="Client123$"
-sudo mysql -e "ALTER USER 'client'@'localhost' IDENTIFIED WITH mysql_native_password BY '$MYSQL_ROOT_PASSWORD';"
-sudo mysql -e "FLUSH PRIVILEGES;"
-
-
 echo "Instalando Docker..."
 sudo apt-get install \
     ca-certificates \
@@ -36,41 +21,17 @@ echo \
 sudo apt-get update -y
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
-# Adicionar usuário atual ao grupo Docker (mudar 'your_user' para o seu nome de usuário se necessário)
 sudo usermod -aG docker $USER
 
+echo "Verificando a instalação do Docker..."
+sudo docker --version
 
-echo "Instalando o Java..."
-sudo apt-get install openjdk-11-jdk -y
+echo "Baixando as imagens Docker..."
+sudo docker pull santthaigo/script-sql:0.0.1
+sudo docker pull santthaigo/app-jar:0.0.1
 
-# Configurar e rodar o arquivo JAR (mude 'your_app.jar' para o caminho do seu arquivo JAR)
-JAR_PATH="/path/to/your_app.jar"
+echo "Verificando se as imagens foram baixadas..."
+sudo docker images
 
-# Certifique-se de ter permissões adequadas no arquivo JAR
-chmod +x $JAR_PATH
+echo "Instalação concluída com sucesso!"
 
-# Criar um serviço systemd para o JAR (opcional, mas recomendado para gerenciar a aplicação)
-SERVICE_NAME="my-java-app"
-sudo tee /etc/systemd/system/$SERVICE_NAME.service > /dev/null <<EOF
-[Unit]
-Description=My Java Application
-After=network.target
-
-[Service]
-User=$USER
-ExecStart=/usr/bin/java -jar $JAR_PATH
-SuccessExitStatus=143
-TimeoutStopSec=10
-Restart=on-failure
-RestartSec=5
-
-[Install]
-WantedBy=multi-user.target
-EOF
-
-# Iniciar e habilitar o serviço
-sudo systemctl daemon-reload
-sudo systemctl start $SERVICE_NAME
-sudo systemctl enable $SERVICE_NAME
-
-echo "Instalação e configuração concluídas!"
