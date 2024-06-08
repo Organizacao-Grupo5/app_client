@@ -1,257 +1,168 @@
-[2024-06-08 17:12:34] INFO: Verificando informações de login do usuário.
-[2024-06-08 17:12:35] INFO: Usuário foi encontrado com sucesso.
-[2024-06-08 17:12:38] INFO: Buscando componentes...
-[2024-06-08 17:12:38] INFO: Componente encontrado :
+[2024-06-08 18:33:40] INFO: Verificando informações de login do usuário.
+[2024-06-08 18:33:40] INFO: Usuário foi encontrado com sucesso.
+[2024-06-08 18:33:42] INFO: Buscando componentes...
+[2024-06-08 18:33:42] INFO: Componente encontrado :
     |Componente: CPU
     |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
     |Fabricante: GenuineIntel
     |ID Componente: 1
 
-[2024-06-08 17:12:38] INFO: Componente encontrado :
+[2024-06-08 18:33:42] INFO: Componente encontrado :
     |Componente: HDD
     |Modelo: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
     |Fabricante: N/A
     |ID Componente: 2
 
-[2024-06-08 17:12:38] INFO: Componente encontrado :
+[2024-06-08 18:33:42] INFO: Componente encontrado :
     |Componente: GPU
     |Modelo: Intel(R) Iris(R) Xe Graphics
     |Fabricante: Intel Corporation
     |ID Componente: 3
 
-[2024-06-08 17:12:38] INFO: Componente encontrado :
+[2024-06-08 18:33:42] INFO: Componente encontrado :
     |Componente: MemoriaRam
     |Modelo: N/A
     |Fabricante: N/A
     |ID Componente: 4
 
-[2024-06-08 17:12:38] INFO: Componente encontrado :
+[2024-06-08 18:33:42] INFO: Componente encontrado :
     |Componente: Bateria
     |Modelo: System Battery
     |Fabricante: SMP
     |ID Componente: 5
 
-[2024-06-08 17:12:38] INFO: Componente encontrado :
+[2024-06-08 18:33:42] INFO: Componente encontrado :
     |Componente: Volume
     |Modelo: Disco Fixo Local (C:)
     |Fabricante: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
     |ID Componente: 6
 
-[2024-06-08 17:12:44] INFO: Sua máquina contém componentes registrados
-[2024-06-08 17:12:45] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 147 MB
-[2024-06-08 17:12:46] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 147 MB
-[2024-06-08 17:12:46] INFO: 
+[2024-06-08 18:33:49] INFO: Sua máquina contém componentes registrados
+[2024-06-08 18:33:49] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 164 MB
+[2024-06-08 18:33:50] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 164 MB
+[2024-06-08 18:33:50] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: CPU
     |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-06-08T17:12:46.614084400
+    |Data hora captura: 2024-06-08T18:33:50.066431900
     |Id componente: 1
 
-[2024-06-08 17:12:46] INFO: Verificando uso dos componentes...
-[2024-06-08 17:12:47] INFO: 
+[2024-06-08 18:33:50] INFO: Verificando uso dos componentes...
+[2024-06-08 18:33:50] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: HDD
     |Dado capturado: 476,94
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-08T17:12:47.234336500
+    |Data hora captura: 2024-06-08T18:33:50.336901600
     |Id componente: 2
 
-[2024-06-08 17:12:47] INFO: Verificando uso dos componentes...
-[2024-06-08 17:12:47] INFO: A ram utilizada na janela de PID 17916 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-08 17:12:48] INFO: A ram utilizada na janela de PID 17488 foi coletada com sucesso, uso de ram: 140 MB
-[2024-06-08 17:12:49] INFO: A ram utilizada na janela de PID 15696 foi coletada com sucesso, uso de ram: 34 MB
-[2024-06-08 17:12:51] INFO: A ram utilizada na janela de PID 4336 foi coletada com sucesso, uso de ram: 11 MB
-[2024-06-08 17:12:52] INFO: A ram utilizada na janela de PID 9516 foi coletada com sucesso, uso de ram: 17 MB
-[2024-06-08 17:12:53] INFO: 
+[2024-06-08 18:33:50] INFO: Verificando uso dos componentes...
+[2024-06-08 18:33:50] INFO: A ram utilizada na janela de PID 19796 foi coletada com sucesso, uso de ram: 1 MB
+[2024-06-08 18:33:50] INFO: A ram utilizada na janela de PID 17488 foi coletada com sucesso, uso de ram: 113 MB
+[2024-06-08 18:33:51] INFO: A ram utilizada na janela de PID 14928 foi coletada com sucesso, uso de ram: 32 MB
+[2024-06-08 18:33:51] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 164 MB
+[2024-06-08 18:33:51] INFO: A ram utilizada na janela de PID 22520 foi coletada com sucesso, uso de ram: 16 MB
+[2024-06-08 18:33:51] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: GPU
     |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-06-08T17:12:53.255019100
+    |Data hora captura: 2024-06-08T18:33:51.985218500
     |Id componente: 3
 
-[2024-06-08 17:12:53] INFO: Verificando uso dos componentes...
-[2024-06-08 17:12:53] INFO: A ram utilizada na janela de PID 5100 foi coletada com sucesso, uso de ram: 19 MB
-[2024-06-08 17:12:53] INFO: 
+[2024-06-08 18:33:51] INFO: Verificando uso dos componentes...
+[2024-06-08 18:33:52] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: MemoriaRam
-    |Dado capturado: 7,23
+    |Dado capturado: 7,15
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-08T17:12:53.666591400
+    |Data hora captura: 2024-06-08T18:33:52.111174
     |Id componente: 4
 
-[2024-06-08 17:12:53] INFO: Verificando uso dos componentes...
-[2024-06-08 17:12:54] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 142 MB
-[2024-06-08 17:12:55] INFO: A ram utilizada na janela de PID 9000 foi coletada com sucesso, uso de ram: 15 MB
-[2024-06-08 17:12:55] INFO: 
+[2024-06-08 18:33:52] INFO: Verificando uso dos componentes...
+[2024-06-08 18:33:52] INFO: A ram utilizada na janela de PID 17608 foi coletada com sucesso, uso de ram: 16 MB
+[2024-06-08 18:33:52] INFO: A ram utilizada na janela de PID 12648 foi coletada com sucesso, uso de ram: 2 MB
+[2024-06-08 18:33:52] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Bateria
-    |Dado capturado: 56,00
+    |Dado capturado: 98,00
     |Unidade de medida: %
-    |Data hora captura: 2024-06-08T17:12:55.585795600
+    |Data hora captura: 2024-06-08T18:33:52.978806900
     |Id componente: 5
 
-[2024-06-08 17:12:55] INFO: Verificando uso dos componentes...
-[2024-06-08 17:12:56] INFO: A ram utilizada na janela de PID 9376 foi coletada com sucesso, uso de ram: 61 MB
-[2024-06-08 17:12:56] INFO: 
+[2024-06-08 18:33:52] INFO: Verificando uso dos componentes...
+[2024-06-08 18:33:53] INFO: A ram utilizada na janela de PID 17608 foi coletada com sucesso, uso de ram: 16 MB
+[2024-06-08 18:33:53] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Volume
-    |Dado capturado: 144,79
+    |Dado capturado: 145,37
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-08T17:12:56.157963300
+    |Data hora captura: 2024-06-08T18:33:53.130758300
     |Id componente: 6
 
-[2024-06-08 17:12:56] INFO: Verificando uso dos componentes...
-[2024-06-08 17:12:57] INFO: A ram utilizada na janela de PID 9660 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-08 17:12:58] INFO: A ram utilizada na janela de PID 5412 foi coletada com sucesso, uso de ram: 9 MB
-[2024-06-08 17:12:58] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 142 MB
-[2024-06-08 17:12:59] INFO: 
+[2024-06-08 18:33:53] INFO: Verificando uso dos componentes...
+[2024-06-08 18:33:53] INFO: A ram utilizada na janela de PID 9516 foi coletada com sucesso, uso de ram: 15 MB
+[2024-06-08 18:33:53] INFO: A ram utilizada na janela de PID 16968 foi coletada com sucesso, uso de ram: 1 MB
+[2024-06-08 18:33:54] INFO: A ram utilizada na janela de PID 5412 foi coletada com sucesso, uso de ram: 2 MB
+[2024-06-08 18:33:54] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: CPU
     |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-06-08T17:12:59.090501400
+    |Data hora captura: 2024-06-08T18:33:54.610668500
     |Id componente: 1
 
-[2024-06-08 17:12:59] INFO: Verificando uso dos componentes...
-[2024-06-08 17:12:59] INFO: 
+[2024-06-08 18:33:54] INFO: Verificando uso dos componentes...
+[2024-06-08 18:33:54] INFO: A ram utilizada na janela de PID 9376 foi coletada com sucesso, uso de ram: 80 MB
+[2024-06-08 18:33:54] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: HDD
     |Dado capturado: 476,94
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-08T17:12:59.603364600
+    |Data hora captura: 2024-06-08T18:33:54.779748100
     |Id componente: 2
 
-[2024-06-08 17:12:59] INFO: Verificando uso dos componentes...
-[2024-06-08 17:12:59] INFO: A ram utilizada na janela de PID 13700 foi coletada com sucesso, uso de ram: 74 MB
-[2024-06-08 17:13:00] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 142 MB
-[2024-06-08 17:13:01] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 142 MB
-[2024-06-08 17:13:01] INFO: 
+[2024-06-08 18:33:54] INFO: Verificando uso dos componentes...
+[2024-06-08 18:33:55] INFO: A ram utilizada na janela de PID 9660 foi coletada com sucesso, uso de ram: 2 MB
+[2024-06-08 18:33:55] INFO: A ram utilizada na janela de PID 5412 foi coletada com sucesso, uso de ram: 2 MB
+[2024-06-08 18:33:55] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 166 MB
+[2024-06-08 18:33:55] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: GPU
     |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-06-08T17:13:01.801581100
+    |Data hora captura: 2024-06-08T18:33:55.964318600
     |Id componente: 3
 
-[2024-06-08 17:13:01] INFO: Verificando uso dos componentes...
-[2024-06-08 17:13:02] INFO: 
+[2024-06-08 18:33:55] INFO: Verificando uso dos componentes...
+[2024-06-08 18:33:56] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: MemoriaRam
-    |Dado capturado: 7,09
+    |Dado capturado: 7,26
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-08T17:13:02.058691300
+    |Data hora captura: 2024-06-08T18:33:56.078930600
     |Id componente: 4
 
-[2024-06-08 17:13:02] INFO: Verificando uso dos componentes...
-[2024-06-08 17:13:02] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 142 MB
-[2024-06-08 17:13:02] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 142 MB
-[2024-06-08 17:13:03] INFO: 
+[2024-06-08 18:33:56] INFO: Verificando uso dos componentes...
+[2024-06-08 18:33:56] INFO: A ram utilizada na janela de PID 13700 foi coletada com sucesso, uso de ram: 73 MB
+[2024-06-08 18:33:56] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 166 MB
+[2024-06-08 18:33:56] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Bateria
-    |Dado capturado: 56,00
+    |Dado capturado: 98,00
     |Unidade de medida: %
-    |Data hora captura: 2024-06-08T17:13:03.390537800
+    |Data hora captura: 2024-06-08T18:33:56.733779
     |Id componente: 5
 
-[2024-06-08 17:13:03] INFO: Verificando uso dos componentes...
-[2024-06-08 17:13:03] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 142 MB
-[2024-06-08 17:13:03] INFO: 
+[2024-06-08 18:33:56] INFO: Verificando uso dos componentes...
+[2024-06-08 18:33:56] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 166 MB
+[2024-06-08 18:33:56] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Volume
-    |Dado capturado: 144,78
+    |Dado capturado: 145,37
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-08T17:13:03.891691300
+    |Data hora captura: 2024-06-08T18:33:56.850829800
     |Id componente: 6
 
-[2024-06-08 17:13:03] INFO: Verificando uso dos componentes...
-[2024-06-08 17:13:04] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 142 MB
-[2024-06-08 17:13:05] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 142 MB
-[2024-06-08 17:13:05] ERROR: Erro ao inserir janela:
-
-java.lang.RuntimeException: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:52)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at dao.componente.APPDAO.gravaApps(APPDAO.java:17)
-	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
-	at Main.lambda$iniciarMonitoramento$1(Main.java:177)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'nomeApp' at row 1
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:25)
-	... 10 more
-
-[2024-06-08 17:13:05] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 142 MB
-[2024-06-08 17:13:05] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-08T17:13:05.959227800
-    |Id componente: 1
-
-[2024-06-08 17:13:05] INFO: Verificando uso dos componentes...
-[2024-06-08 17:13:07] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 476,94
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-08T17:13:07.020977
-    |Id componente: 2
-
-[2024-06-08 17:13:07] INFO: Verificando uso dos componentes...
-[2024-06-08 17:13:07] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 142 MB
-[2024-06-08 17:13:08] INFO: A ram utilizada na janela de PID 17488 foi coletada com sucesso, uso de ram: 135 MB
-[2024-06-08 17:13:09] INFO: A ram utilizada na janela de PID 17916 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-08 17:13:10] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 0,00
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-08T17:13:10.122249600
-    |Id componente: 3
-
-[2024-06-08 17:13:10] INFO: Verificando uso dos componentes...
-[2024-06-08 17:13:10] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 7,20
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-08T17:13:10.472867100
-    |Id componente: 4
-
-[2024-06-08 17:13:10] INFO: Verificando uso dos componentes...
-[2024-06-08 17:13:10] INFO: A ram utilizada na janela de PID 15696 foi coletada com sucesso, uso de ram: 34 MB
-[2024-06-08 17:13:11] INFO: A ram utilizada na janela de PID 4336 foi coletada com sucesso, uso de ram: 11 MB
-[2024-06-08 17:13:12] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 57,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-08T17:13:12.091665500
-    |Id componente: 5
-
-[2024-06-08 17:13:12] INFO: Verificando uso dos componentes...
-[2024-06-08 17:13:12] INFO: A ram utilizada na janela de PID 9516 foi coletada com sucesso, uso de ram: 17 MB
-[2024-06-08 17:13:12] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 144,78
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-08T17:13:12.682517200
-    |Id componente: 6
-
-[2024-06-08 17:13:12] INFO: Verificando uso dos componentes...
-[2024-06-08 17:13:14] INFO: A ram utilizada na janela de PID 5100 foi coletada com sucesso, uso de ram: 19 MB
-[2024-06-08 17:13:15] INFO: A ram utilizada na janela de PID 7748 foi coletada com sucesso, uso de ram: 137 MB
+[2024-06-08 18:33:56] INFO: Verificando uso dos componentes...

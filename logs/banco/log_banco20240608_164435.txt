@@ -5687,3 +5687,767 @@ Inserindo captura de dados no banco de dados:
     |Data hora captura: 2024-06-08T17:13:12.685571100
     |Id componente: 6
 
+[2024-06-08 17:51:47] [INFO] Servidor iniciando.
+[2024-06-08 17:51:49] [INFO] Servidor iniciado com sucesso.
+[2024-06-08 17:52:27] [INFO] Servidor iniciando.
+[2024-06-08 17:52:29] [INFO] Servidor iniciado com sucesso.
+[2024-06-08 17:52:40] [INFO] Usuário logado com sucesso: usuario1@empresa.com
+[2024-06-08 17:52:42] [INFO] Buscando componentes...
+[2024-06-08 17:52:42] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 1
+
+[2024-06-08 17:52:42] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 2
+
+[2024-06-08 17:52:42] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 3
+
+[2024-06-08 17:52:42] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 4
+
+[2024-06-08 17:52:42] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SMP
+    |ID Componente: 5
+
+[2024-06-08 17:52:42] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
+    |ID Componente: 6
+
+[2024-06-08 17:52:49] [INFO] Capturando os componentes:
+
+[2024-06-08 17:52:50] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T17:52:50.256534400
+    |Id componente: 1
+
+[2024-06-08 17:52:50] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 476,94
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:52:50.494858700
+    |Id componente: 2
+
+[2024-06-08 17:52:52] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T17:52:52.464439200
+    |Id componente: 3
+
+[2024-06-08 17:52:52] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:52:52.652791300
+    |Id componente: 4
+
+[2024-06-08 17:52:53] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 89,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-08T17:52:53.938387400
+    |Id componente: 5
+
+[2024-06-08 17:52:54] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 144,63
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:52:54.310125700
+    |Id componente: 6
+
+[2024-06-08 17:52:56] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T17:52:56.515011200
+    |Id componente: 1
+
+[2024-06-08 17:52:56] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 476,94
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:52:56.766553400
+    |Id componente: 2
+
+[2024-06-08 17:53:37] [INFO] Servidor iniciando.
+[2024-06-08 17:53:39] [INFO] Servidor iniciado com sucesso.
+[2024-06-08 17:53:50] [INFO] Usuário logado com sucesso: usuario1@empresa.com
+[2024-06-08 17:53:51] [INFO] Buscando componentes...
+[2024-06-08 17:53:51] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 1
+
+[2024-06-08 17:53:51] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 2
+
+[2024-06-08 17:53:51] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 3
+
+[2024-06-08 17:53:51] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 4
+
+[2024-06-08 17:53:51] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SMP
+    |ID Componente: 5
+
+[2024-06-08 17:53:51] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
+    |ID Componente: 6
+
+[2024-06-08 17:53:57] [INFO] Capturando os componentes:
+
+[2024-06-08 17:53:58] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T17:53:58.088048
+    |Id componente: 1
+
+[2024-06-08 17:53:58] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 476,94
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:53:58.375615100
+    |Id componente: 2
+
+[2024-06-08 17:53:59] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T17:53:59.975093400
+    |Id componente: 3
+
+[2024-06-08 17:54:00] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,29
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:54:00.128231
+    |Id componente: 4
+
+[2024-06-08 17:54:01] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 89,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-08T17:54:01.016089700
+    |Id componente: 5
+
+[2024-06-08 17:54:01] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 144,64
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:54:01.390077900
+    |Id componente: 6
+
+[2024-06-08 17:54:02] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T17:54:02.572193500
+    |Id componente: 1
+
+[2024-06-08 17:54:02] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 476,94
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:54:02.925350800
+    |Id componente: 2
+
+[2024-06-08 17:54:04] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T17:54:04.255028900
+    |Id componente: 3
+
+[2024-06-08 17:54:04] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,34
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:54:04.520416900
+    |Id componente: 4
+
+[2024-06-08 17:54:05] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 89,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-08T17:54:05.264807100
+    |Id componente: 5
+
+[2024-06-08 17:54:05] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 144,64
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:54:05.766600300
+    |Id componente: 6
+
+[2024-06-08 17:54:06] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T17:54:06.802787
+    |Id componente: 1
+
+[2024-06-08 17:54:06] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 476,94
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:54:06.985094400
+    |Id componente: 2
+
+[2024-06-08 17:54:08] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T17:54:08.076000400
+    |Id componente: 3
+
+[2024-06-08 17:54:08] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,33
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:54:08.216694600
+    |Id componente: 4
+
+[2024-06-08 17:54:08] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 89,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-08T17:54:08.943032800
+    |Id componente: 5
+
+[2024-06-08 17:54:09] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 144,64
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:54:09.265804300
+    |Id componente: 6
+
+[2024-06-08 17:54:10] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T17:54:10.410688500
+    |Id componente: 1
+
+[2024-06-08 17:54:10] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 476,94
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:54:10.642606400
+    |Id componente: 2
+
+[2024-06-08 17:54:11] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T17:54:11.624342600
+    |Id componente: 3
+
+[2024-06-08 17:54:11] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,32
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:54:11.752339500
+    |Id componente: 4
+
+[2024-06-08 17:54:12] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 89,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-08T17:54:12.509955300
+    |Id componente: 5
+
+[2024-06-08 17:54:12] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 144,64
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:54:12.826527600
+    |Id componente: 6
+
+[2024-06-08 17:54:14] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T17:54:14.019334600
+    |Id componente: 1
+
+[2024-06-08 17:54:14] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 476,94
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:54:14.224619400
+    |Id componente: 2
+
+[2024-06-08 17:54:15] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T17:54:15.660219200
+    |Id componente: 3
+
+[2024-06-08 17:54:15] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,33
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:54:15.780995500
+    |Id componente: 4
+
+[2024-06-08 17:54:18] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 89,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-08T17:54:18.075092900
+    |Id componente: 5
+
+[2024-06-08 17:54:18] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 144,64
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:54:18.566931400
+    |Id componente: 6
+
+[2024-06-08 17:54:21] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T17:54:21.238481100
+    |Id componente: 1
+
+[2024-06-08 17:54:21] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 476,94
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:54:21.496285600
+    |Id componente: 2
+
+[2024-06-08 17:54:23] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T17:54:23.091735600
+    |Id componente: 3
+
+[2024-06-08 17:54:23] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,37
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:54:23.268038900
+    |Id componente: 4
+
+[2024-06-08 17:54:24] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 90,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-08T17:54:24.352913900
+    |Id componente: 5
+
+[2024-06-08 17:54:24] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 144,63
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:54:24.672370700
+    |Id componente: 6
+
+[2024-06-08 17:54:26] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T17:54:26.638590500
+    |Id componente: 1
+
+[2024-06-08 17:54:26] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 476,94
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T17:54:26.832983600
+    |Id componente: 2
+
+[2024-06-08 18:10:04] [INFO] Servidor iniciando.
+[2024-06-08 18:10:06] [INFO] Servidor iniciado com sucesso.
+[2024-06-08 18:10:18] [INFO] Usuário logado com sucesso: usuario1@empresa.com
+[2024-06-08 18:10:19] [INFO] Buscando componentes...
+[2024-06-08 18:10:19] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 1
+
+[2024-06-08 18:10:19] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 2
+
+[2024-06-08 18:10:19] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 3
+
+[2024-06-08 18:10:19] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 4
+
+[2024-06-08 18:10:19] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SMP
+    |ID Componente: 5
+
+[2024-06-08 18:10:19] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
+    |ID Componente: 6
+
+[2024-06-08 18:10:25] [INFO] Capturando os componentes:
+
+[2024-06-08 18:10:26] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T18:10:26.914062400
+    |Id componente: 1
+
+[2024-06-08 18:10:27] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 476,94
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T18:10:27.220740700
+    |Id componente: 2
+
+[2024-06-08 18:10:29] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T18:10:29.062503800
+    |Id componente: 3
+
+[2024-06-08 18:10:29] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,28
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T18:10:29.215333
+    |Id componente: 4
+
+[2024-06-08 18:10:30] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 95,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-08T18:10:30.623507900
+    |Id componente: 5
+
+[2024-06-08 18:10:30] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 144,67
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T18:10:30.813612100
+    |Id componente: 6
+
+[2024-06-08 18:10:31] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T18:10:31.931118500
+    |Id componente: 1
+
+[2024-06-08 18:10:32] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 476,94
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T18:10:32.092173400
+    |Id componente: 2
+
+[2024-06-08 18:10:33] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T18:10:33.144197900
+    |Id componente: 3
+
+[2024-06-08 18:10:33] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,07
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T18:10:33.258267700
+    |Id componente: 4
+
+[2024-06-08 18:10:33] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 95,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-08T18:10:33.915317200
+    |Id componente: 5
+
+[2024-06-08 18:10:34] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 144,67
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T18:10:34.053491600
+    |Id componente: 6
+
+[2024-06-08 18:10:35] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T18:10:35.949186
+    |Id componente: 1
+
+[2024-06-08 18:10:36] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 476,94
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T18:10:36.203334500
+    |Id componente: 2
+
+[2024-06-08 18:10:37] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T18:10:37.209840100
+    |Id componente: 3
+
+[2024-06-08 18:10:37] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 6,77
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T18:10:37.388183900
+    |Id componente: 4
+
+[2024-06-08 18:33:28] [INFO] Servidor iniciando.
+[2024-06-08 18:33:29] [INFO] Servidor iniciado com sucesso.
+[2024-06-08 18:33:41] [INFO] Usuário logado com sucesso: usuario1@empresa.com
+[2024-06-08 18:33:42] [INFO] Buscando componentes...
+[2024-06-08 18:33:42] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 1
+
+[2024-06-08 18:33:42] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 2
+
+[2024-06-08 18:33:42] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 3
+
+[2024-06-08 18:33:42] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 4
+
+[2024-06-08 18:33:42] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SMP
+    |ID Componente: 5
+
+[2024-06-08 18:33:42] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
+    |ID Componente: 6
+
+[2024-06-08 18:33:49] [INFO] Capturando os componentes:
+
+[2024-06-08 18:33:50] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T18:33:50.068432700
+    |Id componente: 1
+
+[2024-06-08 18:33:50] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 476,94
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T18:33:50.337910900
+    |Id componente: 2
+
+[2024-06-08 18:33:51] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T18:33:51.986226200
+    |Id componente: 3
+
+[2024-06-08 18:33:52] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,15
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T18:33:52.112159
+    |Id componente: 4
+
+[2024-06-08 18:33:52] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 98,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-08T18:33:52.979806200
+    |Id componente: 5
+
+[2024-06-08 18:33:53] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 145,37
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T18:33:53.131761700
+    |Id componente: 6
+
+[2024-06-08 18:33:54] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T18:33:54.611679100
+    |Id componente: 1
+
+[2024-06-08 18:33:54] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 476,94
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T18:33:54.780742400
+    |Id componente: 2
+
+[2024-06-08 18:33:55] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T18:33:55.965341100
+    |Id componente: 3
+
+[2024-06-08 18:33:56] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,26
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T18:33:56.078930600
+    |Id componente: 4
+
+[2024-06-08 18:33:56] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 98,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-08T18:33:56.733779
+    |Id componente: 5
+
+[2024-06-08 18:33:56] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 145,37
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T18:33:56.851830700
+    |Id componente: 6
+
+[2024-06-08 18:34:28] [INFO] Servidor iniciando.
+[2024-06-08 18:34:29] [INFO] Servidor iniciado com sucesso.
