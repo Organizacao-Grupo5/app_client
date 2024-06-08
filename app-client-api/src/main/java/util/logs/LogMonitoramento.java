@@ -16,9 +16,9 @@ public class LogMonitoramento {
     private static BufferedWriter bwMonitoramento;
     private static File logFileMonitoramento;
 
-    private static final String LOG_DIRECTORY = "logs/monitoramento"; // Diretório de logs relativo ao diretório de execução do aplicativo
-    private static final long LOG_DURATION = TimeUnit.DAYS.toMillis(7); // Duração do log em milissegundos (7 dias)
-    private static final String LOG_START_FILE = LOG_DIRECTORY + "/log_start_time.txt"; // Arquivo para armazenar o tempo de início do log
+    private static final String LOG_DIRECTORY = "logs/monitoramento";
+    private static final long LOG_DURATION = TimeUnit.DAYS.toMillis(7);
+    private static final String LOG_START_FILE = LOG_DIRECTORY + "/log_start_time.txt";
 
     static {
         try {
