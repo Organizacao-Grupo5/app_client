@@ -17,6 +17,9 @@ public class ServicePC {
 			String ipv4 = MaquinaDAO.getIpv4();
 			Optional<Maquina> maquina = maquinaDAO.monitorarMaquina(usuario);
 
+			String stringTeste = "ipv4 ==> "+ ipv4;
+			Logger.logWarning(stringTeste);
+
 			if (maquina.isEmpty()) {
 				Logger.logWarning(
 						"Não encontramos nenhuma máquina vinculada ao seu usuário, entre em contato com seu gestor!");
