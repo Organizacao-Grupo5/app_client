@@ -21,17 +21,17 @@ import app.integration.Computer;
 public class MaquinaDAO {
 
 	public Optional<Maquina> monitorarMaquina(Usuario usuario) throws SQLException {
-		try (Connection connection = MySQLConnection.ConnectionMySql()) {
+		// try (Connection connection = MySQLConnection.ConnectionMySql()) {
 
-			PreparedStatement preparedStatement = connection.prepareStatement(
-					"SELECT * FROM maquina JOIN usuario on maquina.fkUsuario = usuario.idUsuario JOIN ipv4 ON ipv4.fkMaquina = maquina.idMaquina WHERE idUsuario = ?");
+		// 	PreparedStatement preparedStatement = connection.prepareStatement(
+		// 			"SELECT * FROM maquina JOIN usuario on maquina.fkUsuario = usuario.idUsuario JOIN ipv4 ON ipv4.fkMaquina = maquina.idMaquina WHERE idUsuario = ?");
 
-			preparedStatement.setInt(1, usuario.getIdUsuario());
+		// 	preparedStatement.setInt(1, usuario.getIdUsuario());
 
-			preparedStatement.executeQuery();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
+		// 	preparedStatement.executeQuery();
+		// } catch (SQLException e) {
+		// 	e.printStackTrace();
+		// }
 
 		try (Connection connection = MySQLConnection.ConnectionSqlServer()) {
 
