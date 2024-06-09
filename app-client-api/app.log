@@ -1,0 +1,236 @@
+[2024-06-08 15:19:37] INFO: Verificando informações de login do usuário.
+[2024-06-08 15:19:37] INFO: Usuário foi encontrado com sucesso.
+[2024-06-08 15:19:38] INFO: Buscando componentes...
+[2024-06-08 15:19:38] INFO: Componente encontrado :
+    |Componente: CPU
+    |Modelo: AMD Ryzen 7 5700U with Radeon Graphics
+    |Fabricante: AuthenticAMD
+    |ID Componente: 1
+
+[2024-06-08 15:19:39] INFO: Componente encontrado :
+    |Componente: HDD
+    |Modelo: SSSTC CL4-4D512-Q62
+    |Fabricante: N/A
+    |ID Componente: 2
+
+[2024-06-08 15:19:39] INFO: Componente encontrado :
+    |Componente: HDD
+    |Modelo: unknown
+    |Fabricante: N/A
+    |ID Componente: 3
+
+[2024-06-08 15:19:39] INFO: Componente encontrado :
+    |Componente: HDD
+    |Modelo: Logical Volume Group
+    |Fabricante: N/A
+    |ID Componente: 4
+
+[2024-06-08 15:19:39] INFO: Componente encontrado :
+    |Componente: GPU
+    |Modelo: Lucienne
+    |Fabricante: Advanced Micro Devices, Inc. [AMD/ATI] (0x1002)
+    |ID Componente: 5
+
+[2024-06-08 15:19:39] INFO: Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 6
+
+[2024-06-08 15:19:39] INFO: Componente encontrado :
+    |Componente: Bateria
+    |Modelo: BAT0
+    |Fabricante: SMP
+    |ID Componente: 7
+
+[2024-06-08 15:19:39] INFO: Componente encontrado :
+    |Componente: Volume
+    |Modelo: /
+    |Fabricante: 9892cc35-9a7c-434b-9a05-6efb662ccf09
+    |ID Componente: 8
+
+[2024-06-08 15:19:39] INFO: Componente encontrado :
+    |Componente: Volume
+    |Modelo: /dev/nvme0n1p1
+    |Fabricante: 9f2a-c609
+    |ID Componente: 9
+
+[2024-06-08 15:19:39] INFO: Componente encontrado :
+    |Componente: Volume
+    |Modelo: /dev/nvme0n1p2
+    |Fabricante: 9f2a-c53e
+    |ID Componente: 10
+
+[2024-06-08 15:19:41] INFO: Sua máquina contém componentes registrados
+[2024-06-08 15:19:41] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 43,60
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T15:19:41.652729334
+    |Id componente: 1
+
+[2024-06-08 15:19:41] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 476,94
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T15:19:41.817527813
+    |Id componente: 2
+
+[2024-06-08 15:19:41] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 9,56
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T15:19:41.941938745
+    |Id componente: 3
+
+[2024-06-08 15:19:42] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 4,00
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T15:19:42.056524279
+    |Id componente: 4
+
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 3526 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 44,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-08T15:19:42.223682536
+    |Id componente: 5
+
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 101776 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 6658 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,97
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T15:19:42.329543570
+    |Id componente: 6
+
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 18775 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 100887 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 0,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-08T15:19:42.543388236
+    |Id componente: 7
+
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 101776 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 101776 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 191,46
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T15:19:42.651280587
+    |Id componente: 8
+
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 101776 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 101776 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 367,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T15:19:42.751039360
+    |Id componente: 9
+
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 101776 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 100887 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 2,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-08T15:19:42.848738880
+    |Id componente: 10
+
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 3526 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 6139 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:42] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 18775 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 18775 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 46470 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 46470 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 16943 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 16943 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 18775 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 18775 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 18775 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 18775 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 18775 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 16943 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 16943 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 16943 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 18775 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 18775 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 18775 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 18775 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 18775 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 18775 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 18775 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:43] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 18775 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 18775 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 18775 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 18775 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 16943 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 16943 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 3822 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 6658 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 6658 foi coletada com sucesso, uso de ram:  MB
+[2024-06-08 15:19:44] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram:  MB

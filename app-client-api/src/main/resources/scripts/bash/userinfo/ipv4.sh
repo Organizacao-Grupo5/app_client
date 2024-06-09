@@ -1,1 +1,1 @@
-hostname -i
+ifconfig wlp1s0 | grep 'inet ' | awk '{ print $2 }'

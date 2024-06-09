@@ -1,4 +1,5 @@
 package app.integration;
+
 import app.system.Conversor;
 import com.mysql.cj.util.StringUtils;
 import util.logs.Logger;
@@ -9,7 +10,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.StandardCopyOption;
+import java.nio.file.attribute.PosixFilePermission;
+import java.nio.file.attribute.PosixFilePermissions;
+import java.util.Set;
 
 import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 
@@ -32,6 +35,11 @@ public class ShellIntegration {
 			Path tempFile = Files.createTempFile("temp_script", isWindows ? ".ps1" : ".sh");
 			Files.copy(inputStream, tempFile, REPLACE_EXISTING);
 
+			if (!isWindows) {
+				Set<PosixFilePermission> permissions = PosixFilePermissions.fromString("rwxr-xr-x");
+				Files.setPosixFilePermissions(tempFile, permissions);
+			}
+
 			String absolutePath = tempFile.toAbsolutePath().toString();
 			String command = isWindows ? "powershell.exe -ExecutionPolicy Bypass -File " + absolutePath : "sh " + absolutePath;
 
@@ -53,6 +61,8 @@ public class ShellIntegration {
 		return parseOutput(output);
 	}
 
+
+
 	public Double monitorarTemperatura() {
 		String output = null;
 
@@ -66,18 +76,30 @@ public class ShellIntegration {
 			Path tempFile = Files.createTempFile("temp_script", isWindows ? ".bat" : ".sh");
 			Files.copy(inputStream, tempFile, REPLACE_EXISTING);
 
+			if (!isWindows) {
+				Set<PosixFilePermission> permissions = PosixFilePermissions.fromString("rwxr-xr-x");
+				Files.setPosixFilePermissions(tempFile, permissions);
+			}
+
 			String absolutePath = tempFile.toAbsolutePath().toString();
 
 			Process processo = Runtime.getRuntime().exec(absolutePath);
 
 			BufferedReader reader = new BufferedReader(new InputStreamReader(processo.getInputStream()));
+			StringBuilder outputBuilder = new StringBuilder();
 			String linha;
 			while ((linha = reader.readLine()) != null) {
-				output = linha;
+				outputBuilder.append(linha).append("\n");
 			}
 
 			int status = processo.waitFor();
 			Files.deleteIfExists(tempFile);
+
+			if (status != 0) {
+				throw new IOException("O script terminou com um código de saída diferente de zero: " + status);
+			}
+
+			output = outputBuilder.toString().trim();
 
 		} catch (IOException | InterruptedException e) {
 			Logger.logError("Não foi possível monitorar a temperatura.", e.getMessage(), e);
@@ -95,7 +117,12 @@ public class ShellIntegration {
 			}
 
 			Path tempFile = Files.createTempFile("temp_script", isWindows ? ".bat" : ".sh");
-			Files.copy(inputStream, tempFile, StandardCopyOption.REPLACE_EXISTING);
+			Files.copy(inputStream, tempFile, REPLACE_EXISTING);
+
+			if (!isWindows) {
+				Set<PosixFilePermission> permissions = PosixFilePermissions.fromString("rwxr-xr-x");
+				Files.setPosixFilePermissions(tempFile, permissions);
+			}
 
 			String absolutePath = tempFile.toAbsolutePath().toString();
 
@@ -103,10 +130,11 @@ public class ShellIntegration {
 				Process processo = Runtime.getRuntime().exec(absolutePath + " " + pid.replace(".", ""));
 
 				BufferedReader reader = new BufferedReader(new InputStreamReader(processo.getInputStream()));
+				StringBuilder outputBuilder = new StringBuilder();
 				String linha;
 
 				while ((linha = reader.readLine()) != null) {
-					output = linha;
+					outputBuilder.append(linha).append("\n");
 				}
 
 				int status = processo.waitFor();
@@ -116,9 +144,11 @@ public class ShellIntegration {
 					throw new IOException("O script terminou com um código de saída diferente de zero: " + status);
 				}
 
-				Logger.logInfo("""
-						A ram utilizada na janela de PID %s foi coletada com sucesso, uso de ram: %s MB
-						""".formatted(pid, output));
+				output = outputBuilder.toString().trim();
+
+				Logger.logInfo(String.format(
+						"A ram utilizada na janela de PID %s foi coletada com sucesso, uso de ram: %s MB",
+						pid, output));
 
 			} else {
 				Logger.logWarning("Não foi possível captura a ram, pois o PID não pode ser capturado.");
@@ -126,22 +156,25 @@ public class ShellIntegration {
 
 		} catch (IOException | InterruptedException e) {
 			Logger.logError("Não foi possível monitorar o uso de RAM do PID: " + pid, e.getMessage(), e);
+			e.printStackTrace();
 		}
-		return parseOutput(output) != null ? conversor.converterKBparaMB(parseOutput(output)) : null;
+		return Double.parseDouble(output);
 	}
 
 	private Double parseOutput(String output) {
 		if (output == null || output.isEmpty()) {
 			return null;
-		} else {
-			String outputString = output.replace(',', '.');
-
-			if (outputString.indexOf('.') != outputString.lastIndexOf('.')) {
-				return null;
-			}
-
-			return Double.parseDouble(outputString);
 		}
-	}
 
+		try {
+			String[] lines = output.split("\n");
+			if (lines.length > 0) {
+				String outputString = lines[0].replace(',', '.');
+				return Double.parseDouble(outputString);
+			}
+		} catch (NumberFormatException e) {
+			Logger.logError("Erro ao converter a saída para número: " + output, e.getMessage(), e);
+		}
+		return null;
+	}
 }

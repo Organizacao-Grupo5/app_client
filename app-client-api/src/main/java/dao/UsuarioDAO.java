@@ -2,7 +2,6 @@ package dao;
 
 import model.Usuario;
 import util.database.MySQLConnection;
-import util.security.Criptografia;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -12,7 +11,7 @@ import java.util.Optional;
 public class UsuarioDAO {
 
 	public Optional<Usuario> findByEmailAndSenha(String email, String senha) {
-		try (Connection conexao = MySQLConnection.ConBD();
+		try (Connection conexao = MySQLConnection.ConnectionMySql();
 
 			 PreparedStatement preparedStatement = conexao.prepareStatement(
 					 "SELECT * FROM usuario JOIN empresa ON usuario.fkEmpresa = empresa.idEmpresa JOIN plano ON empresa.fkPlano = plano.idPlano WHERE email = ? and senha = ?")) {
@@ -35,7 +34,7 @@ public class UsuarioDAO {
 
 	public void updateUser(String senha, Integer id) {
 
-		try (Connection conexao = MySQLConnection.ConBD();
+		try (Connection conexao = MySQLConnection.ConnectionMySql();
 			 PreparedStatement preparedStatement = conexao.prepareStatement(
 					 "UPDATE usuario SET senha = ? WHERE idUsuario = ?")) {
 

@@ -11,8 +11,6 @@ public class Maquina {
 	private String numeroSerial;
 	private String modelo;
 	private String marca;
-	private String hostname;
-	private String username;
 	private List<String> ipv4;
 	private Usuario usuario;
 	private List<Componente> componentes;
@@ -88,23 +86,6 @@ public class Maquina {
 	public void setComponentes(List<Componente> componentes) {
 		this.componentes = componentes;
 	}
-
-	public String getHostname() {
-        return hostname;
-    }
-
-    public void setHostname(String hostname) {
-        this.hostname = hostname;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-	
 
 	public String exibirTabelaComponentes() {
 		return (new StringBuilder(componentes.stream()

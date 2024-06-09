@@ -1,0 +1,93 @@
+[2024-06-07 07:04:56] [INFO] Capturando dados da sua CPU.
+[2024-06-07 07:04:56] [INFO] Número de CPUs lógicas: 8
+[2024-06-07 07:04:56] [INFO] Número de CPUs físicas: 4
+[2024-06-07 07:04:56] [INFO] Microarquitetura: Tiger Lake
+[2024-06-07 07:04:56] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-07 07:04:56] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-07 07:04:56] [INFO] Fabricante: GenuineIntel
+[2024-06-07 07:04:56] [INFO] Frequência: 2.419E9
+[2024-06-07 07:04:56] [INFO] Número de pacotes físicos: 1
+[2024-06-07 07:04:58] [INFO] Uso da CPU: 0.7515151515151516
+[2024-06-07 07:04:58] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-07 07:04:59] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:04:59] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-07 07:04:59] [INFO] Capturando dados do seu HDD
+[2024-06-07 07:04:59] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-07 07:04:59] [INFO] Serial do disco: 0025_38D3_3101_18C2.
+[2024-06-07 07:04:59] [INFO] Modelo do disco: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+[2024-06-07 07:04:59] [INFO] Escritas do disco: 11.038049697875977
+[2024-06-07 07:04:59] [INFO] Leituras do disco: 26.02805805206299
+[2024-06-07 07:04:59] [INFO] Bytes de escritas do disco: 473.4751572608948
+[2024-06-07 07:04:59] [INFO] Bytes de leitura do disco: 1247.1055326461792
+[2024-06-07 07:04:59] [INFO] Tamanho do disco: 238.47
+[2024-06-07 07:04:59] [INFO] Tempo de transferência do disco: 15715.435
+[2024-06-07 07:04:59] [INFO] Dados do disco gravados.
+[2024-06-07 07:04:59] [INFO] Capturando dados da GPU.
+[2024-06-07 07:04:59] [INFO] Dados do fabricante da sua GPU capturados com sucesso: Intel Corporation
+[2024-06-07 07:04:59] [INFO] Dados do ID da sua GPU capturados com sucesso: VideoController1
+[2024-06-07 07:04:59] [INFO] O nome da sua GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-07 07:04:59] [INFO] A VRam da sua GPU foi capturada com sucesso: 1.0
+[2024-06-07 07:04:59] [INFO] A Versão da sua GPU foi capturada com sucesso: 31.0.101.4887
+[2024-06-07 07:05:00] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:05:00] [INFO] Dados da GPU gravados.
+[2024-06-07 07:05:00] [INFO] Capturando dados da sua memória RAM.
+[2024-06-07 07:05:00] [INFO] Memória disponível: 809.8203125
+[2024-06-07 07:05:00] [INFO] Memória total: 7.729835510253906
+[2024-06-07 07:05:00] [INFO] Memória em uso: 6.938995361328125
+[2024-06-07 07:05:00] [INFO] Dados da memória ram capturados com sucesso.
+[2024-06-07 07:05:00] [INFO] Capturando dados da sua bateria.
+[2024-06-07 07:05:00] [INFO] Amperagem da bateria: -740.1119402985074
+[2024-06-07 07:05:00] [INFO] Nome do dispositivo da bateria: SR Real Battery
+[2024-06-07 07:05:00] [INFO] Número de série da bateria: 123456789
+[2024-06-07 07:05:00] [INFO] Química da bateria: LION
+[2024-06-07 07:05:00] [INFO] Nome da bateria: System Battery
+[2024-06-07 07:05:00] [INFO] Voltagem da bateria: 10.72
+[2024-06-07 07:05:00] [INFO] Capacidade atual da bateria: 8.08203125
+[2024-06-07 07:05:00] [INFO] Número de ciclos da bateria: 246
+[2024-06-07 07:05:00] [INFO] Capacidade de design da bateria: 42.08203125
+[2024-06-07 07:05:00] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-07 07:05:00] [INFO] Tempo restante da bateria (instantâneo): 3755.0
+[2024-06-07 07:05:00] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-07 07:05:00] [INFO] Taxa de uso de energia da bateria: -7934.0
+[2024-06-07 07:05:00] [INFO] Temperatura da bateria: 0.0
+[2024-06-07 07:05:00] [INFO] Capacidade máxima da bateria: 32.330078125
+[2024-06-07 07:05:00] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-07 07:05:00] [INFO] Data de fabricação da bateria: N/A
+[2024-06-07 07:05:00] [INFO] Fabricante da bateria: SAMSUNG Electronics
+[2024-06-07 07:05:01] [INFO] Dados da bateria capturados com sucesso: 24.0
+[2024-06-07 07:05:01] [INFO] Dados da bateria gravados.
+[2024-06-07 07:05:01] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-07 07:05:01] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-07 07:05:01] [INFO] Nome do volume capturado: \\?\Volume{b34e68fe-87e7-4f63-9b8d-505115d14c23}\
+[2024-06-07 07:05:01] [INFO] Espaço disponível no volume lógico capturado : 25.234500885009766
+[2024-06-07 07:05:01] [INFO] Espaço total do volume lógico capturado com sucesso: 222.97167587280273
+[2024-06-07 07:05:01] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-07 07:05:01] [INFO] UUID do volume lógico capturado: b34e68fe-87e7-4f63-9b8d-505115d14c23
+[2024-06-07 07:05:01] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-07 07:05:01] [INFO] Dados do volume lógico gravados.
+[2024-06-07 07:05:01] [INFO] Todos os volumes lógicos verificados.
+[2024-06-07 07:05:01] [INFO] Capturando dados da sua CPU.
+[2024-06-07 07:05:01] [INFO] Capturando dados dos seus Apps.
+[2024-06-07 07:05:01] [INFO] Número de CPUs lógicas: 8
+[2024-06-07 07:05:01] [INFO] Número de CPUs físicas: 4
+[2024-06-07 07:05:01] [INFO] Microarquitetura: Tiger Lake
+[2024-06-07 07:05:01] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-07 07:05:01] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-07 07:05:01] [INFO] Fabricante: GenuineIntel
+[2024-06-07 07:05:01] [INFO] Frequência: 2.419E9
+[2024-06-07 07:05:01] [INFO] Número de pacotes físicos: 1
+[2024-06-07 07:05:01] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:05:01] [INFO] Uso da CPU: 0.7515151515151516
+[2024-06-07 07:05:01] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-07 07:05:01] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:05:01] [INFO] ID da janela: 395270
+[2024-06-07 07:05:01] [INFO] PID da janela: 2892
+[2024-06-07 07:05:01] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-06-07 07:05:08] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-07 07:05:10] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-07 07:06:27] [ERROR] Erro ao processar janela:  - Exception: For input string: "ECHO est� desativado."
+[2024-06-07 07:06:27] [WARNING] Título da janela não foi capturado.
+[2024-06-07 07:06:27] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-07 07:06:27] [INFO] ID da janela: 197928
+[2024-06-07 07:06:27] [INFO] PID da janela: 2892
+[2024-06-07 07:06:27] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]

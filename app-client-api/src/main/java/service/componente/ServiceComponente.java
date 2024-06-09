@@ -4,9 +4,11 @@ import app.system.SystemMonitor;
 import dao.componente.CapturaDAO;
 import dao.componente.ComponenteDAO;
 import model.componentes.*;
+import service.ServiceSystem;
 import model.Maquina;
 import util.logs.Logger;
 
+import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +17,7 @@ public class ServiceComponente {
 	private ComponenteDAO componenteDAO = new ComponenteDAO();
 	private SystemMonitor systemMonitor = new SystemMonitor();
 	private CapturaDAO capturaDAO = new CapturaDAO();
+	private ServiceSystem serviceSystem = new ServiceSystem();
 
 	public void obterComponentes(Maquina maquina) {
 		try {
@@ -31,8 +34,8 @@ public class ServiceComponente {
 			systemMonitor.monitorarGPU().forEach(gpu -> listaComponente.add(gpu));
 			listaComponente.add(systemMonitor.monitorarRAM());
 			systemMonitor.monitorarBateria().forEach(bateria -> listaComponente.add(bateria));
-			systemMonitor.monitorarDisplay().forEach(janela -> listaComponente.add(janela));
-			listaComponente.add(systemMonitor.monitorarSistemaOperacional());
+//			systemMonitor.monitorarDisplay().forEach(janela -> listaComponente.add(janela));
+//			listaComponente.add(systemMonitor.monitorarSistemaOperacional());
 			systemMonitor.monitorarVolumeLogico().forEach(volume -> listaComponente.add(volume));
 
 			listaComponente.forEach(novoComponente -> {
@@ -47,8 +50,9 @@ public class ServiceComponente {
 						}
 					}
 					if (!existe) {
-						componenteDAO.salvarComponente(maquina, novoComponente);
+						int idComponente = componenteDAO.salvarComponente(maquina, novoComponente);
 						maquina.getComponentes().add(novoComponente);
+						serviceSystem.configurar(idComponente);
 					}
 				} catch (SQLException e) {
 					throw new RuntimeException(e);
@@ -69,15 +73,23 @@ public class ServiceComponente {
 	public void iniciarCapturas(Maquina maquina) {
 		try {
 			maquina.getComponentes().forEach(componente -> {
-				atualizarComponente(componente);
-				capturaDAO.inserirCaptura(maquina, componente);
-			});
+				try {
+					atualizarComponente(componente);
+					
+                    int idCaptura = capturaDAO.inserirCaptura(maquina, componente);
+					if (idCaptura > 0) {
+						serviceSystem.registrar(idCaptura, componente);
+					}
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            });
 		} catch (Exception e) {
 			Logger.logError("Ocorreu um erro durante a captura:", e.getMessage(), e);
 		}
 	}
 
-	public void atualizarComponente(Componente componente) {
+	public void atualizarComponente(Componente componente) throws IOException {
 		if (componente instanceof CPU) {
 			CPU cpu = systemMonitor.monitorarCPU();
 			((CPU) componente).setTemperatura(cpu.getTemperatura());
