@@ -21,22 +21,8 @@ import app.integration.Computer;
 public class MaquinaDAO {
 
 	public Optional<Maquina> monitorarMaquina(Usuario usuario) throws SQLException {
-		// try (Connection connection = MySQLConnection.ConnectionMySql()) {
-
-		// 	PreparedStatement preparedStatement = connection.prepareStatement(
-		// 			"SELECT * FROM maquina JOIN usuario on maquina.fkUsuario = usuario.idUsuario JOIN ipv4 ON ipv4.fkMaquina = maquina.idMaquina WHERE idUsuario = ?");
-
-		// 	preparedStatement.setInt(1, usuario.getIdUsuario());
-
-		// 	preparedStatement.executeQuery();
-		// } catch (SQLException e) {
-		// 	e.printStackTrace();
-		// }
-
 		try (Connection connection = MySQLConnection.ConnectionSqlServer()) {
-
-			PreparedStatement preparedStatement = connection.prepareStatement(
-					"SELECT * FROM maquina JOIN usuario on maquina.fkUsuario = usuario.idUsuario JOIN ipv4 ON ipv4.fkMaquina = maquina.idMaquina WHERE idUsuario = ?");
+			PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM maquina JOIN usuario on maquina.fkUsuario = usuario.idUsuario JOIN ipv4 ON ipv4.fkMaquina = maquina.idMaquina WHERE idUsuario = ?");
 
 			preparedStatement.setInt(1, usuario.getIdUsuario());
 
@@ -47,24 +33,35 @@ public class MaquinaDAO {
 						maquina = criaMaquina(resultSet, usuario);
 						especificarMaquina(maquina);
 					}
-
 					maquina.getIpv4().add(resultSet.getString("numeroIP"));
 				}
 				return Optional.of(maquina);
 			} catch (SQLException e) {
-				throw new SQLException("Erro ao executar a consulta da maquina no banco!", e);
+				throw new SQLException("Erro ao executar a consulta da maquina no banco! SQLServer:: ", e);
 			}
 		} catch (SQLException e) {
-			Logger.logError("Não foi possível abrir a conexão com o banco!:", e.getMessage(), e);
-			throw new RuntimeException("Erro ao abrir conexão com o banco!!", e);
+			Logger.logError("Não foi possível abrir a conexão com o banco! SQLServer::", e.getMessage(), e);
+			throw new RuntimeException("Erro ao abrir conexão com o banco!! SQLServer::", e);
 		}
 	}
 
 	public void especificarMaquina(Maquina maquina) throws SQLException {
 		verifyMaquina(maquina);
 
-		try (Connection connection = MySQLConnection.ConnectionMySql()) {
+		try (Connection connection = MySQLConnection.ConnectionSqlServer()) {
+			PreparedStatement preparedStatement = connection.prepareStatement("UPDATE maquina SET numeroIdentificacao = ?, modelo = ?, marca = ? WHERE idMaquina = ?");
 
+			preparedStatement.setString(1, maquina.getNumeroSerial());
+			preparedStatement.setString(2, maquina.getModelo());
+			preparedStatement.setString(3, maquina.getMarca());
+			preparedStatement.setInt(4, maquina.getIdMaquina());
+
+			preparedStatement.executeUpdate();
+		} catch (SQLException e) {
+			Logger.logError("Não foi possível abrir a conexão com o SQLServer!: ", e.getMessage(), e);
+		}
+
+		try (Connection connection = MySQLConnection.ConnectionMySql()) {
 			PreparedStatement preparedStatement = connection.prepareStatement("UPDATE maquina SET numeroIdentificacao = ?, modelo = ?, marca = ? WHERE idMaquina = ?");
 
 			preparedStatement.setString(1, maquina.getNumeroSerial());
@@ -74,22 +71,7 @@ public class MaquinaDAO {
 
 			preparedStatement.executeUpdate();
 		}catch (SQLException e) {
-			e.printStackTrace();
-		}
-
-		try (Connection connection = MySQLConnection.ConnectionSqlServer()) {
-
-			PreparedStatement preparedStatement = connection.prepareStatement("UPDATE maquina SET numeroIdentificacao = ?, modelo = ?, marca = ? WHERE idMaquina = ?");
-
-			preparedStatement.setString(1, maquina.getNumeroSerial());
-			preparedStatement.setString(2, maquina.getModelo());
-			preparedStatement.setString(3, maquina.getMarca());
-			preparedStatement.setInt(4, maquina.getIdMaquina());
-
-			preparedStatement.executeUpdate();
-		} catch (SQLException e) {
-			Logger.logError("Não foi possível abrir a conexão com o banco!:", e.getMessage(), e);
-			throw new RuntimeException("Erro ao abrir conexão com o banco!!", e);
+			Logger.logError("Não foi possível abrir a conexão com o MySQL!: ", e.getMessage(), e);
 		}
 	}
 
@@ -105,16 +87,6 @@ public class MaquinaDAO {
 		String fabricante = computerSystem.getManufacturer();
 		String modelo = computerSystem.getModel();
 		String numeroDeSerie = computerSystem.getSerialNumber();
-
-		try (Connection connection = MySQLConnection.ConnectionMySql()) {
-
-			PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM maquina WHERE idMaquina = ?");
-
-			preparedStatement.setInt(1, maquina.getIdMaquina());
-			preparedStatement.executeQuery();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
 
 		try (Connection connection = MySQLConnection.ConnectionSqlServer()) {
 

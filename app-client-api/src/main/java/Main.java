@@ -120,7 +120,6 @@ public class Main {
                     if (!serviceRede.maquinaContemIp(maquina)) {
                         Logger.logWarning("Essa maquina não está registrada no ip detectado, verifique sua conexão com a internet.");
                         System.out.println("Essa máquina não está registrada no ip detectado, verifique sua conexão com a internet.");
-                        break;
                     }
     
                     LogBanco.logInfo(("Usuário logado com sucesso: " + usuarioLogado.getEmail()), LogBanco.LogType.INFO);

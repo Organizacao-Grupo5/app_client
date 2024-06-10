@@ -100,24 +100,7 @@ public class ComponenteDAO {
 	}
 
 	public Integer salvarComponente(Maquina maquina, Componente componente) throws SQLException {
-		try (Connection connection = MySQLConnection.ConnectionMySql()) {
-			PreparedStatement preparedStatement = connection.prepareStatement(
-					"INSERT INTO componente (componente, modelo, fabricante, fkMaquina) VALUES (?,?,?,?)",
-					Statement.RETURN_GENERATED_KEYS);
-			preparedStatement.setString(1, Optional.ofNullable(componente.getComponente()).orElse("N/A"));
-			preparedStatement.setString(2, Optional.ofNullable(componente.getModelo()).orElse("N/A"));
-			preparedStatement.setString(3, Optional.ofNullable(componente.getFabricante()).orElse("N/A"));
-			preparedStatement.setInt(4, maquina.getIdMaquina());
-
-			int affectedRows = preparedStatement.executeUpdate();
-
-			if (affectedRows == 0) {
-				throw new SQLException("Falha ao salvar o componente, nenhuma linha afetada.");
-			}
-		} catch (Exception e) {
-			throw new RuntimeException(e);
-		}
-
+		int idComp = 0;
 		try (Connection connection = MySQLConnection.ConnectionSqlServer()) {
 			Logger.logInfo("Iniciando verificação se o componente já existe no banco de dados.");
 			LogBanco.logInfo("Iniciando verificação se o componente já existe no banco de dados.", LogBanco.LogType.INFO);
@@ -128,6 +111,7 @@ public class ComponenteDAO {
 					PreparedStatement preparedStatement = connection.prepareStatement(
 							"INSERT INTO componente (componente, modelo, fabricante, fkMaquina) VALUES (?,?,?,?)",
 							Statement.RETURN_GENERATED_KEYS);
+
 					preparedStatement.setString(1, Optional.ofNullable(componente.getComponente()).orElse("N/A"));
 					preparedStatement.setString(2, Optional.ofNullable(componente.getModelo()).orElse("N/A"));
 					preparedStatement.setString(3, Optional.ofNullable(componente.getFabricante()).orElse("N/A"));
@@ -141,11 +125,10 @@ public class ComponenteDAO {
 
 					try (ResultSet generatedKeys = preparedStatement.getGeneratedKeys()) {
 						if (generatedKeys.next()) {
-							int idComponente = generatedKeys.getInt(1);
-							componente.setIdComponente(idComponente);
-							Logger.logInfo("ID do componente criado: " + idComponente);
-							LogBanco.logInfo("ID do componente criado: " + idComponente, LogBanco.LogType.INFO);
-							return idComponente;
+							idComp = generatedKeys.getInt(1);
+							componente.setIdComponente(idComp);
+							Logger.logInfo("ID do componente criado: " + idComp);
+							LogBanco.logInfo("ID do componente criado: " + idComp, LogBanco.LogType.INFO);
 						} else {
 							throw new SQLException("Falha ao obter o ID do componente criado.");
 						}
@@ -158,23 +141,30 @@ public class ComponenteDAO {
 		} catch (IOException e) {
             throw new RuntimeException(e);
         }
-		return null;
-    }
-
-	public boolean componenteExistenteNoBanco(Componente componente, Maquina maquina) throws SQLException, IOException {
-		boolean existe = false;
 
 		try (Connection connection = MySQLConnection.ConnectionMySql()) {
-			PreparedStatement preparedStatement = connection.prepareStatement(
-					"SELECT * FROM componente WHERE componente = ? AND modelo = ? AND fabricante = ? AND fkMaquina = ?");
-			preparedStatement.setString(1, componente.getComponente());
-			preparedStatement.setString(2, componente.getModelo());
-			preparedStatement.setString(3, componente.getFabricante());
-			preparedStatement.setInt(4, maquina.getIdMaquina());
+			PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO componente (idComponente, componente, modelo, fabricante, fkMaquina) VALUES (?,?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
+			
+			preparedStatement.setInt(1, idComp);
+			preparedStatement.setString(3, Optional.ofNullable(componente.getModelo()).orElse("N/A"));
+			preparedStatement.setString(2, Optional.ofNullable(componente.getComponente()).orElse("N/A"));
+			preparedStatement.setString(4, Optional.ofNullable(componente.getFabricante()).orElse("N/A"));
+			preparedStatement.setInt(5, maquina.getIdMaquina());
+
+			int affectedRows = preparedStatement.executeUpdate();
+
+			if (affectedRows == 0) {
+				throw new SQLException("Falha ao salvar o componente, nenhuma linha afetada.");
+			}
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
 
+		return idComp;
+    }
+
+	public boolean componenteExistenteNoBanco(Componente componente, Maquina maquina) throws SQLException, IOException {
+		boolean existe = false;
 		try (Connection connection = MySQLConnection.ConnectionSqlServer()) {
 			Logger.logInfo("""
 
@@ -196,8 +186,8 @@ public class ComponenteDAO {
 					""".formatted(componente.getComponente(), componente.getModelo(), componente.getFabricante(),
 					maquina.getIdMaquina()), LogBanco.LogType.INFO);
 
-			PreparedStatement preparedStatement = connection.prepareStatement(
-					"SELECT * FROM componente WHERE componente = ? AND modelo = ? AND fabricante = ? AND fkMaquina = ?");
+			PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM componente WHERE componente = ? AND modelo = ? AND fabricante = ? AND fkMaquina = ?");
+			
 			preparedStatement.setString(1, componente.getComponente());
 			preparedStatement.setString(2, componente.getModelo());
 			preparedStatement.setString(3, componente.getFabricante());

@@ -26,6 +26,11 @@ public class MySQLConnection {
 
 	public static Connection ConnectionSqlServer() throws SQLException {
 		try {
+			try {
+				Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			}
 			return DriverManager.getConnection(sqlServerUrl);
 		} catch (SQLException e) {
 			logger.log(Level.SEVERE, "Erro ao conectar ao SQL Server", e);

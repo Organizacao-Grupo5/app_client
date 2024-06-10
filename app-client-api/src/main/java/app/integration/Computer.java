@@ -67,7 +67,6 @@ public class Computer {
 			
 		} catch (Exception e) {
 			Logger.logError("Erro na integração com as informações da máquina do usuário", e.getMessage(), e);
-			e.printStackTrace();
 		}
 
 		return null;
@@ -92,7 +91,6 @@ public class Computer {
 			return res;
 		} catch (Exception  e) {
 			Logger.logError("Erro na integração com as informações da máquina do usuário", e.getMessage(), e);
-			e.printStackTrace();
 		}
 		return null;
 	}
@@ -133,7 +131,6 @@ public class Computer {
 
         } catch (Exception e) {
 			Logger.logError("Erro na integração com as informações da máquina do usuário", e.getMessage(), e);
-			e.printStackTrace();
 		}
 
 		return null;
@@ -151,7 +148,6 @@ public class Computer {
 			return nome.get();
 		} catch (Exception e) {
 			Logger.logError("Erro ao pegar o nome da rede", e.getMessage(), e);
-			e.printStackTrace();
 		}
 		return null;
     }
@@ -168,7 +164,6 @@ public class Computer {
 			return interfaceRede.get();
 		} catch (Exception e) {
 			Logger.logError("Erro ao pegar a interface da rede", e.getMessage(), e);
-			e.printStackTrace();
 		}
 		return null;
     }
@@ -185,7 +180,6 @@ public class Computer {
 			return Integer.parseInt(sinal.get());
 		} catch (Exception e) {
 			Logger.logError("Erro ao pegar o sinal da rede", e.getMessage(), e);
-			e.printStackTrace();
 		}
 		return null;
     }
@@ -202,7 +196,6 @@ public class Computer {
 			return Double.parseDouble(transmissao.get());
 		} catch (Exception e) {
 			Logger.logError("Erro ao pegar a transmissão da rede", e.getMessage(), e);
-			e.printStackTrace();
 		}
 		return null;
     }

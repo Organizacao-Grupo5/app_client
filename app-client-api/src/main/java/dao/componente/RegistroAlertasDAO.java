@@ -17,8 +17,8 @@ import java.time.LocalDateTime;
 public class RegistroAlertasDAO {
 
     public Integer gerarRegistro(Integer idCaptura, Integer idAlerta) {
+        int idRegistroAlertas = 0;
         try (Connection connection = MySQLConnection.ConnectionSqlServer()) {
-
             PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO registroAlerta (horario, fkAlerta, fkCaptura) VALUES (?,?,?)", Statement.RETURN_GENERATED_KEYS);
 
             preparedStatement.setTimestamp(1, Timestamp.valueOf(LocalDateTime.now()));
@@ -30,15 +30,29 @@ public class RegistroAlertasDAO {
             if (affectedRows > 0) {
                 try (ResultSet generatedKeys = preparedStatement.getGeneratedKeys()) {
                     if (generatedKeys.next()) {
-                        int idRegistroAlertas = generatedKeys.getInt(1);
-                        return idRegistroAlertas;
+                        idRegistroAlertas = generatedKeys.getInt(1);
                     }
                 }
             }
         } catch (SQLException e) {
-            Logger.logError("Ocorreu um erro ao salvar seus registros", e.getMessage(), e);
+            Logger.logError("Ocorreu um erro ao salvar seus registros SQLServer:: ", e.getMessage(), e);
         }
-        return 0;
+
+        try (Connection connection = MySQLConnection.ConnectionMySql()) {
+            PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO registroAlerta (idRegistroAlertas, horario, fkAlerta, fkCaptura) VALUES (?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
+
+            preparedStatement.setInt(1, idRegistroAlertas);
+            preparedStatement.setTimestamp(2, Timestamp.valueOf(LocalDateTime.now()));
+            preparedStatement.setInt(3, idAlerta);
+            preparedStatement.setInt(4, idCaptura);
+
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            Logger.logError("Ocorreu um erro ao salvar seus registros no MySQL:: ", e.getMessage(), e);
+        }
+
+        return idRegistroAlertas;
+
     }
 
     public static void verificarUsoComponentes(int idCaptura) throws SQLException, IOException {
@@ -46,17 +60,7 @@ public class RegistroAlertasDAO {
 
         try (Connection connection = MySQLConnection.ConnectionSqlServer()) {
             PreparedStatement preparedStatement = connection.prepareStatement(
-                    "SELECT numeroIp IpMaquina, componente c, minimoParaSerMedio minMedio, " +
-                            "minimoParaSerRuim minRuim," +
-                            "                            dadoCaptura dado FROM maquina maq" +
-                            "                            JOIN ipv4 on idMaquina = ipv4.fkMaquina" +
-                            "                            JOIN componente comp ON idMaquina = " +
-                            "comp.fkMaquina" +
-                            "                            JOIN configuracao conf ON fkComponente = " +
-                            "idComponente" +
-                            "                            JOIN captura cap ON idComponente = " +
-                            "cap.fkComponente" +
-                            "                                             WHERE idCaptura = ? ;");
+                    "SELECT numeroIp IpMaquina, componente c, minimoParaSerMedio minMedio, minimoParaSerRuim minRuim, dadoCaptura dado FROM maquina maq JOIN ipv4 on idMaquina = ipv4.fkMaquina JOIN componente comp ON idMaquina = comp.fkMaquina JOIN configuracao conf ON fkComponente = idComponente JOIN captura cap ON idComponente = cap.fkComponente WHERE idCaptura = ? ;");
 
             preparedStatement.setInt(1, idCaptura);
 
@@ -75,37 +79,32 @@ public class RegistroAlertasDAO {
                             String mensagem = """
                                 URGÊNCIA: A máquina de IP: %s está com %.1f% de bateria""".
                                     formatted(ip, uso);
-                            SlackIntegration.enviarMensagemParaSlack(mensagem);
+                            // SlackIntegration.enviarMensagemParaSlack(mensagem);
                         } else if(uso <= 30){
                             String mensagem = """
                                 Aviso: A máquina de IP: %s está com %.1f% de bateria""".
                                     formatted(ip, uso);
-                            SlackIntegration.enviarMensagemParaSlack(mensagem);
+                            // SlackIntegration.enviarMensagemParaSlack(mensagem);
                         }
                     }
 
                     // ALERTA - RUIM!!!
                     else if (uso >= ruimMinimo) {
-                        String mensagem = """
-                                URGÊNCIA: O componente %s da máquina de IP: %s está em condição ruim, com uso de %.1f""".
-                                formatted(componente, ip, uso);
-                 SlackIntegration.enviarMensagemParaSlack(mensagem);
+                        String mensagem = "URGÊNCIA: O componente %s da máquina de IP: %s está em condição ruim, com uso de %.1f".formatted(componente, ip, uso);
+                        // SlackIntegration.enviarMensagemParaSlack(mensagem);
 
                     }
                     // ALERTA - MÉDIO!!!
                     else if (uso >= medioMinimo) {
-                        String mensagem = """
-                                Aviso: O componente %s da máquina de IP: %s está em condição média, com uso de %.1f""".
-                                formatted(componente, ip, uso);
-                   SlackIntegration.enviarMensagemParaSlack(mensagem);
+                        String mensagem = "Aviso: O componente %s da máquina de IP: %s está em condição média, com uso de %.1f".formatted(componente, ip, uso);
+                        // SlackIntegration.enviarMensagemParaSlack(mensagem);
                     }
 
 
                 }
             }
         } catch (SQLException e) {
-            Logger.logError("Ocorreu um erro ao verificar o uso dos componentes",
-                    e.getMessage(), e);
+            Logger.logError("Ocorreu um erro ao verificar o uso dos componentes", e.getMessage(), e);
         }
     }
 }

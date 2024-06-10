@@ -16,7 +16,9 @@ import util.logs.Logger;
 public class Ipv4DAO {
 
     public Ipv4 insert(Ipv4 ipv4) {
-        try (Connection conexao = MySQLConnection.ConnectionMySql()) {
+        int idIpv4 = 0;
+
+        try (Connection conexao = MySQLConnection.ConnectionSqlServer()) {
             PreparedStatement preparedStatement = conexao.prepareStatement("INSERT INTO ipv4 (numeroIP, nomeLocal, fkMaquina) VALUES (?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
 
             preparedStatement.setString(1, ipv4.getNumeroIp());
@@ -28,17 +30,30 @@ public class Ipv4DAO {
             if (affectedRows != 0) {
                 try (ResultSet generatedKeys = preparedStatement.getGeneratedKeys()) {
                     if (generatedKeys.next()) {
-                        int idIpv4 = generatedKeys.getInt(1);
+                        idIpv4 = generatedKeys.getInt(1);
                         ipv4.setIdIpv4(idIpv4);
                     } else {
 						throw new SQLException("Falha ao obter o ID do IPV4 criado.");
                     }
                 }
             }
-            
         } catch (SQLException e) {
-            Logger.logError("Não foi possível inserir valores à entidade 'ipv4': ", e.getMessage(), e);
+            Logger.logError("Não foi possível inserir valores à entidade 'ipv4' SqlServer: ", e.getMessage(), e);
         }
+
+        try (Connection connection = MySQLConnection.ConnectionMySql()) {
+            PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO ipv4 (idIpv4, numeroIP, nomeLocal, fkMaquina) VALUES (?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
+
+            preparedStatement.setInt(1, idIpv4);
+            preparedStatement.setString(2, ipv4.getNumeroIp());
+            preparedStatement.setString(3, ipv4.getNomeLocal());
+            preparedStatement.setInt(4, ipv4.getFkMaquina());
+        
+            preparedStatement.executeUpdate();            
+        } catch (Exception e) {
+            Logger.logError("Não foi possível inserir valores à entidade 'ipv4' no MySql: ", e.getMessage(), e);
+        }
+
         return ipv4;
     } 
 

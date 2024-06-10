@@ -1,559 +1,484 @@
-[2024-06-09 13:45:53] INFO: Verificando informações de login do usuário.
-[2024-06-09 13:45:53] INFO: Usuário foi encontrado com sucesso.
-[2024-06-09 13:48:22] INFO: Buscando componentes...
-[2024-06-09 13:48:42] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-06-09 13:48:43] INFO: 
-        Verificando se o componente CPU existe no banco de dados.
-        Modelo: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
-        Fabricante: GenuineIntel
-        Id Máquina: 3
+[2024-06-09 21:41:15] INFO: Verificando informações de login do usuário.
+[2024-06-09 21:41:17] INFO: Usuário foi encontrado com sucesso.
+[2024-06-09 21:41:24] INFO: Buscando componentes...
+[2024-06-09 21:41:25] INFO: Componente encontrado :
+    |Componente: CPU
+    |Modelo: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 1
 
-[2024-06-09 13:48:44] INFO: O componente não existe no banco de dados.
-[2024-06-09 13:48:44] INFO: Inserindo dados do componente no banco!
-[2024-06-09 13:48:44] INFO: ID do componente criado: 7
-[2024-06-09 13:48:51] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-06-09 13:48:52] INFO: 
-        Verificando se o componente HDD existe no banco de dados.
-        Modelo: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
-        Fabricante: N/A
-        Id Máquina: 3
+[2024-06-09 21:41:25] INFO: Componente encontrado :
+    |Componente: HDD
+    |Modelo: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 2
 
-[2024-06-09 13:48:53] INFO: O componente não existe no banco de dados.
-[2024-06-09 13:48:53] INFO: Inserindo dados do componente no banco!
-[2024-06-09 13:48:53] INFO: ID do componente criado: 8
-[2024-06-09 13:49:00] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-06-09 13:49:01] INFO: 
-        Verificando se o componente GPU existe no banco de dados.
-        Modelo: NVIDIA GeForce GTX 1050
-        Fabricante: NVIDIA
-        Id Máquina: 3
+[2024-06-09 21:41:25] INFO: Componente encontrado :
+    |Componente: GPU
+    |Modelo: NVIDIA GeForce GTX 1050
+    |Fabricante: NVIDIA
+    |ID Componente: 3
 
-[2024-06-09 13:49:01] INFO: O componente não existe no banco de dados.
-[2024-06-09 13:49:01] INFO: Inserindo dados do componente no banco!
-[2024-06-09 13:49:02] INFO: ID do componente criado: 9
-[2024-06-09 13:49:09] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-06-09 13:49:10] INFO: 
-        Verificando se o componente MemoriaRam existe no banco de dados.
-        Modelo: N/A
-        Fabricante: N/A
-        Id Máquina: 3
+[2024-06-09 21:41:25] INFO: Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 4
 
-[2024-06-09 13:49:10] INFO: O componente não existe no banco de dados.
-[2024-06-09 13:49:10] INFO: Inserindo dados do componente no banco!
-[2024-06-09 13:49:10] INFO: ID do componente criado: 10
-[2024-06-09 13:49:17] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-06-09 13:49:18] INFO: 
-        Verificando se o componente Bateria existe no banco de dados.
-        Modelo: System Battery
-        Fabricante: SMP
-        Id Máquina: 3
+[2024-06-09 21:41:25] INFO: Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SMP
+    |ID Componente: 5
 
-[2024-06-09 13:49:18] INFO: O componente não existe no banco de dados.
-[2024-06-09 13:49:18] INFO: Inserindo dados do componente no banco!
-[2024-06-09 13:49:19] INFO: ID do componente criado: 11
-[2024-06-09 13:49:26] INFO: Iniciando verificação se o componente já existe no banco de dados.
-[2024-06-09 13:49:27] INFO: 
-        Verificando se o componente Volume existe no banco de dados.
-        Modelo: Disco Fixo Local (C:)
-        Fabricante: 20384a0b-36ae-45cf-b9d6-746edf252892
-        Id Máquina: 3
+[2024-06-09 21:41:25] INFO: Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: 20384a0b-36ae-45cf-b9d6-746edf252892
+    |ID Componente: 6
 
-[2024-06-09 13:49:27] INFO: O componente não existe no banco de dados.
-[2024-06-09 13:49:27] INFO: Inserindo dados do componente no banco!
-[2024-06-09 13:49:28] INFO: ID do componente criado: 12
-[2024-06-09 13:49:33] INFO: Todos os componentes da sua máquina foram registrados
-[2024-06-09 13:49:35] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:35] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:36] INFO: A ram utilizada na janela de PID 25060 foi coletada com sucesso, uso de ram: 109 MB
-[2024-06-09 13:49:36] INFO: A ram utilizada na janela de PID 27784 foi coletada com sucesso, uso de ram: 107 MB
-[2024-06-09 13:49:36] INFO: A ram utilizada na janela de PID 28968 foi coletada com sucesso, uso de ram: 155 MB
-[2024-06-09 13:49:36] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 266 MB
-[2024-06-09 13:49:36] INFO: 
+[2024-06-09 21:41:33] INFO: Sua máquina contém componentes registrados
+[2024-06-09 21:41:34] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: CPU
     |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-06-09T13:49:36.963666500
-    |Id componente: 7
+    |Data hora captura: 2024-06-09T21:41:34.465404400
+    |Id componente: 1
 
-[2024-06-09 13:49:37] INFO: A ram utilizada na janela de PID 19556 foi coletada com sucesso, uso de ram: 36 MB
-[2024-06-09 13:49:37] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 30 MB
-[2024-06-09 13:49:37] INFO: A ram utilizada na janela de PID 5412 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-09 13:49:37] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 30 MB
-[2024-06-09 13:49:38] INFO: A ram utilizada na janela de PID 17232 foi coletada com sucesso, uso de ram: 64 MB
-[2024-06-09 13:49:38] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:38] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:38] INFO: Verificando uso dos componentes...
-[2024-06-09 13:49:39] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:39] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:39] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:39] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:40] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:40] INFO: A ram utilizada na janela de PID 15676 foi coletada com sucesso, uso de ram: 17 MB
-[2024-06-09 13:49:40] INFO: A ram utilizada na janela de PID 22060 foi coletada com sucesso, uso de ram: 136 MB
-[2024-06-09 13:49:40] INFO: A ram utilizada na janela de PID 1200 foi coletada com sucesso, uso de ram: 52 MB
-[2024-06-09 13:49:41] INFO: A ram utilizada na janela de PID 24184 foi coletada com sucesso, uso de ram: 87 MB
-[2024-06-09 13:49:41] INFO: A ram utilizada na janela de PID 8464 foi coletada com sucesso, uso de ram: 71 MB
-[2024-06-09 13:49:41] INFO: A ram utilizada na janela de PID 24184 foi coletada com sucesso, uso de ram: 87 MB
-[2024-06-09 13:49:41] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 267 MB
-[2024-06-09 13:49:42] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:45] ERROR: Erro ao inserir janela:
-
-java.lang.RuntimeException: com.microsoft.sqlserver.jdbc.SQLServerException: String or binary data would be truncated in table 'der_grupo_5.dbo.apps', column 'nomeApp'. Truncated value: 'visualOps_front_banco - ec2-52-73-100-194.compute-'.
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:52)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at dao.componente.APPDAO.gravaApps(APPDAO.java:17)
-	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
-	at Main.lambda$iniciarMonitoramento$1(Main.java:177)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: String or binary data would be truncated in table 'der_grupo_5.dbo.apps', column 'nomeApp'. Truncated value: 'visualOps_front_banco - ec2-52-73-100-194.compute-'.
-	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:648)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:567)
-	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(SQLServerPreparedStatement.java:512)
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:25)
-	... 10 more
-
-[2024-06-09 13:49:45] INFO: 
+[2024-06-09 21:41:35] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:41:35] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:41:35] INFO: Verificando uso dos componentes...
+[2024-06-09 21:41:35] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:41:36] INFO: A ram utilizada na janela de PID 31016 foi coletada com sucesso, uso de ram: 46 MB
+[2024-06-09 21:41:36] INFO: A ram utilizada na janela de PID 1120 foi coletada com sucesso, uso de ram: 89 MB
+[2024-06-09 21:41:37] INFO: A ram utilizada na janela de PID 15588 foi coletada com sucesso, uso de ram: 76 MB
+[2024-06-09 21:41:37] INFO: A ram utilizada na janela de PID 24124 foi coletada com sucesso, uso de ram: 13 MB
+[2024-06-09 21:41:38] INFO: A ram utilizada na janela de PID 28968 foi coletada com sucesso, uso de ram: 62 MB
+[2024-06-09 21:41:38] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 294 MB
+[2024-06-09 21:41:38] INFO: A ram utilizada na janela de PID 21272 foi coletada com sucesso, uso de ram: 106 MB
+[2024-06-09 21:41:39] INFO: A ram utilizada na janela de PID 5976 foi coletada com sucesso, uso de ram: 104 MB
+[2024-06-09 21:41:39] INFO: A ram utilizada na janela de PID 19556 foi coletada com sucesso, uso de ram: 10 MB
+[2024-06-09 21:41:40] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 31 MB
+[2024-06-09 21:41:40] INFO: A ram utilizada na janela de PID 5412 foi coletada com sucesso, uso de ram: 2 MB
+[2024-06-09 21:41:40] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 31 MB
+[2024-06-09 21:41:41] INFO: A ram utilizada na janela de PID 17232 foi coletada com sucesso, uso de ram: 30 MB
+[2024-06-09 21:41:41] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:41:41] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:41:42] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:41:42] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:41:42] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:41:43] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:41:43] INFO: A ram utilizada na janela de PID 15676 foi coletada com sucesso, uso de ram: 17 MB
+[2024-06-09 21:41:43] INFO: A ram utilizada na janela de PID 26948 foi coletada com sucesso, uso de ram: 72 MB
+[2024-06-09 21:41:44] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 294 MB
+[2024-06-09 21:41:44] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:41:47] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: HDD
     |Dado capturado: 931,51
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-09T13:49:45.420082400
-    |Id componente: 8
+    |Data hora captura: 2024-06-09T21:41:47.893961300
+    |Id componente: 2
 
-[2024-06-09 13:49:45] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:46] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:46] INFO: A ram utilizada na janela de PID 25060 foi coletada com sucesso, uso de ram: 109 MB
-[2024-06-09 13:49:46] INFO: A ram utilizada na janela de PID 27784 foi coletada com sucesso, uso de ram: 107 MB
-[2024-06-09 13:49:46] INFO: Verificando uso dos componentes...
-[2024-06-09 13:49:46] INFO: A ram utilizada na janela de PID 28968 foi coletada com sucesso, uso de ram: 155 MB
-[2024-06-09 13:49:47] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 267 MB
-[2024-06-09 13:49:47] INFO: A ram utilizada na janela de PID 19556 foi coletada com sucesso, uso de ram: 36 MB
-[2024-06-09 13:49:47] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 30 MB
-[2024-06-09 13:49:47] INFO: A ram utilizada na janela de PID 5412 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-09 13:49:47] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 30 MB
-[2024-06-09 13:49:48] INFO: A ram utilizada na janela de PID 17232 foi coletada com sucesso, uso de ram: 64 MB
-[2024-06-09 13:49:48] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:48] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:48] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:49] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:49] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:49] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:49] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:50] INFO: A ram utilizada na janela de PID 15676 foi coletada com sucesso, uso de ram: 17 MB
-[2024-06-09 13:49:50] INFO: A ram utilizada na janela de PID 22060 foi coletada com sucesso, uso de ram: 136 MB
-[2024-06-09 13:49:50] INFO: A ram utilizada na janela de PID 1200 foi coletada com sucesso, uso de ram: 52 MB
-[2024-06-09 13:49:50] INFO: A ram utilizada na janela de PID 24184 foi coletada com sucesso, uso de ram: 87 MB
-[2024-06-09 13:49:51] INFO: A ram utilizada na janela de PID 8464 foi coletada com sucesso, uso de ram: 71 MB
-[2024-06-09 13:49:51] INFO: A ram utilizada na janela de PID 24184 foi coletada com sucesso, uso de ram: 87 MB
-[2024-06-09 13:49:51] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 267 MB
-[2024-06-09 13:49:52] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:55] ERROR: Erro ao inserir janela:
+[2024-06-09 21:41:49] INFO: Verificando uso dos componentes...
+[2024-06-09 21:41:55] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-09T21:41:55.139096800
+    |Id componente: 3
 
-java.lang.RuntimeException: com.microsoft.sqlserver.jdbc.SQLServerException: String or binary data would be truncated in table 'der_grupo_5.dbo.apps', column 'nomeApp'. Truncated value: 'visualOps_front_banco - ec2-52-73-100-194.compute-'.
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:52)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at dao.componente.APPDAO.gravaApps(APPDAO.java:17)
-	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
-	at Main.lambda$iniciarMonitoramento$1(Main.java:177)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: String or binary data would be truncated in table 'der_grupo_5.dbo.apps', column 'nomeApp'. Truncated value: 'visualOps_front_banco - ec2-52-73-100-194.compute-'.
-	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:648)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:567)
-	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(SQLServerPreparedStatement.java:512)
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:25)
-	... 10 more
+[2024-06-09 21:41:56] INFO: Verificando uso dos componentes...
+[2024-06-09 21:42:01] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,30
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-09T21:42:01.656108900
+    |Id componente: 4
 
-[2024-06-09 13:49:55] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:55] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:56] INFO: A ram utilizada na janela de PID 25060 foi coletada com sucesso, uso de ram: 109 MB
-[2024-06-09 13:49:56] INFO: A ram utilizada na janela de PID 27784 foi coletada com sucesso, uso de ram: 107 MB
-[2024-06-09 13:49:56] INFO: A ram utilizada na janela de PID 28968 foi coletada com sucesso, uso de ram: 155 MB
-[2024-06-09 13:49:56] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 267 MB
-[2024-06-09 13:49:57] INFO: A ram utilizada na janela de PID 19556 foi coletada com sucesso, uso de ram: 36 MB
-[2024-06-09 13:49:57] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 30 MB
-[2024-06-09 13:49:57] INFO: A ram utilizada na janela de PID 5412 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-09 13:49:57] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 30 MB
-[2024-06-09 13:49:58] INFO: A ram utilizada na janela de PID 17232 foi coletada com sucesso, uso de ram: 64 MB
-[2024-06-09 13:49:58] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:58] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:58] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:59] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:59] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:59] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:49:59] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:00] INFO: A ram utilizada na janela de PID 15676 foi coletada com sucesso, uso de ram: 17 MB
-[2024-06-09 13:50:00] INFO: A ram utilizada na janela de PID 22060 foi coletada com sucesso, uso de ram: 136 MB
-[2024-06-09 13:50:00] INFO: A ram utilizada na janela de PID 1200 foi coletada com sucesso, uso de ram: 52 MB
-[2024-06-09 13:50:01] INFO: A ram utilizada na janela de PID 24184 foi coletada com sucesso, uso de ram: 87 MB
-[2024-06-09 13:50:01] INFO: A ram utilizada na janela de PID 8464 foi coletada com sucesso, uso de ram: 71 MB
-[2024-06-09 13:50:01] INFO: A ram utilizada na janela de PID 24184 foi coletada com sucesso, uso de ram: 87 MB
-[2024-06-09 13:50:01] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 248 MB
-[2024-06-09 13:50:02] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:05] ERROR: Erro ao inserir janela:
+[2024-06-09 21:42:02] INFO: Verificando uso dos componentes...
+[2024-06-09 21:42:08] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-09T21:42:08.557787700
+    |Id componente: 5
 
-java.lang.RuntimeException: com.microsoft.sqlserver.jdbc.SQLServerException: String or binary data would be truncated in table 'der_grupo_5.dbo.apps', column 'nomeApp'. Truncated value: 'visualOps_front_banco - ec2-52-73-100-194.compute-'.
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:52)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at dao.componente.APPDAO.gravaApps(APPDAO.java:17)
-	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
-	at Main.lambda$iniciarMonitoramento$1(Main.java:177)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: String or binary data would be truncated in table 'der_grupo_5.dbo.apps', column 'nomeApp'. Truncated value: 'visualOps_front_banco - ec2-52-73-100-194.compute-'.
-	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:648)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:567)
-	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(SQLServerPreparedStatement.java:512)
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:25)
-	... 10 more
+[2024-06-09 21:42:09] INFO: Verificando uso dos componentes...
+[2024-06-09 21:42:15] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 216,73
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-09T21:42:15.470428500
+    |Id componente: 6
 
-[2024-06-09 13:50:05] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:05] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:06] INFO: A ram utilizada na janela de PID 25060 foi coletada com sucesso, uso de ram: 109 MB
-[2024-06-09 13:50:06] INFO: A ram utilizada na janela de PID 27784 foi coletada com sucesso, uso de ram: 110 MB
-[2024-06-09 13:50:06] INFO: A ram utilizada na janela de PID 28968 foi coletada com sucesso, uso de ram: 155 MB
-[2024-06-09 13:50:06] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 248 MB
-[2024-06-09 13:50:07] INFO: A ram utilizada na janela de PID 19556 foi coletada com sucesso, uso de ram: 36 MB
-[2024-06-09 13:50:07] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 30 MB
-[2024-06-09 13:50:07] INFO: A ram utilizada na janela de PID 5412 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-09 13:50:07] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 30 MB
-[2024-06-09 13:50:08] INFO: A ram utilizada na janela de PID 17232 foi coletada com sucesso, uso de ram: 64 MB
-[2024-06-09 13:50:08] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:08] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:08] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:09] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:09] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:09] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:09] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:09] INFO: A ram utilizada na janela de PID 15676 foi coletada com sucesso, uso de ram: 17 MB
-[2024-06-09 13:50:10] INFO: A ram utilizada na janela de PID 22060 foi coletada com sucesso, uso de ram: 136 MB
-[2024-06-09 13:50:10] INFO: A ram utilizada na janela de PID 1200 foi coletada com sucesso, uso de ram: 52 MB
-[2024-06-09 13:50:10] INFO: A ram utilizada na janela de PID 24184 foi coletada com sucesso, uso de ram: 87 MB
-[2024-06-09 13:50:11] INFO: A ram utilizada na janela de PID 8464 foi coletada com sucesso, uso de ram: 71 MB
-[2024-06-09 13:50:11] INFO: A ram utilizada na janela de PID 24184 foi coletada com sucesso, uso de ram: 87 MB
-[2024-06-09 13:50:11] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 248 MB
-[2024-06-09 13:50:11] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:15] ERROR: Erro ao inserir janela:
+[2024-06-09 21:42:16] INFO: Verificando uso dos componentes...
+[2024-06-09 21:42:23] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-09T21:42:23.037705400
+    |Id componente: 1
 
-java.lang.RuntimeException: com.microsoft.sqlserver.jdbc.SQLServerException: String or binary data would be truncated in table 'der_grupo_5.dbo.apps', column 'nomeApp'. Truncated value: 'visualOps_front_banco - ec2-52-73-100-194.compute-'.
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:52)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at dao.componente.APPDAO.gravaApps(APPDAO.java:17)
-	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
-	at Main.lambda$iniciarMonitoramento$1(Main.java:177)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: String or binary data would be truncated in table 'der_grupo_5.dbo.apps', column 'nomeApp'. Truncated value: 'visualOps_front_banco - ec2-52-73-100-194.compute-'.
-	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:648)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:567)
-	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(SQLServerPreparedStatement.java:512)
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:25)
-	... 10 more
+[2024-06-09 21:42:24] INFO: Verificando uso dos componentes...
+[2024-06-09 21:42:29] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-09T21:42:29.796222100
+    |Id componente: 2
 
-[2024-06-09 13:50:15] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:15] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:15] INFO: A ram utilizada na janela de PID 25060 foi coletada com sucesso, uso de ram: 109 MB
-[2024-06-09 13:50:16] INFO: A ram utilizada na janela de PID 27784 foi coletada com sucesso, uso de ram: 109 MB
-[2024-06-09 13:50:16] INFO: A ram utilizada na janela de PID 28968 foi coletada com sucesso, uso de ram: 155 MB
-[2024-06-09 13:50:16] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 248 MB
-[2024-06-09 13:50:16] INFO: A ram utilizada na janela de PID 19556 foi coletada com sucesso, uso de ram: 36 MB
-[2024-06-09 13:50:17] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 30 MB
-[2024-06-09 13:50:17] INFO: A ram utilizada na janela de PID 5412 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-09 13:50:17] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 30 MB
-[2024-06-09 13:50:17] INFO: A ram utilizada na janela de PID 17232 foi coletada com sucesso, uso de ram: 64 MB
-[2024-06-09 13:50:18] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:18] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:18] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:18] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:19] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:19] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:19] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:19] INFO: A ram utilizada na janela de PID 15676 foi coletada com sucesso, uso de ram: 17 MB
-[2024-06-09 13:50:20] INFO: A ram utilizada na janela de PID 22060 foi coletada com sucesso, uso de ram: 136 MB
-[2024-06-09 13:50:20] INFO: A ram utilizada na janela de PID 1200 foi coletada com sucesso, uso de ram: 52 MB
-[2024-06-09 13:50:20] INFO: A ram utilizada na janela de PID 24184 foi coletada com sucesso, uso de ram: 87 MB
-[2024-06-09 13:50:20] INFO: A ram utilizada na janela de PID 8464 foi coletada com sucesso, uso de ram: 71 MB
-[2024-06-09 13:50:21] INFO: A ram utilizada na janela de PID 24184 foi coletada com sucesso, uso de ram: 87 MB
-[2024-06-09 13:50:21] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 249 MB
-[2024-06-09 13:50:21] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:24] ERROR: Erro ao inserir janela:
+[2024-06-09 21:42:31] INFO: Verificando uso dos componentes...
+[2024-06-09 21:42:36] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:42:36] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:42:36] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:42:36] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-09T21:42:36.969871
+    |Id componente: 3
 
-java.lang.RuntimeException: com.microsoft.sqlserver.jdbc.SQLServerException: String or binary data would be truncated in table 'der_grupo_5.dbo.apps', column 'nomeApp'. Truncated value: 'visualOps_front_banco - ec2-52-73-100-194.compute-'.
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:52)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at dao.componente.APPDAO.gravaApps(APPDAO.java:17)
-	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
-	at Main.lambda$iniciarMonitoramento$1(Main.java:177)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: String or binary data would be truncated in table 'der_grupo_5.dbo.apps', column 'nomeApp'. Truncated value: 'visualOps_front_banco - ec2-52-73-100-194.compute-'.
-	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:648)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:567)
-	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(SQLServerPreparedStatement.java:512)
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:25)
-	... 10 more
+[2024-06-09 21:42:37] INFO: A ram utilizada na janela de PID 31016 foi coletada com sucesso, uso de ram: 46 MB
+[2024-06-09 21:42:37] INFO: A ram utilizada na janela de PID 1120 foi coletada com sucesso, uso de ram: 92 MB
+[2024-06-09 21:42:37] INFO: A ram utilizada na janela de PID 15588 foi coletada com sucesso, uso de ram: 76 MB
+[2024-06-09 21:42:38] INFO: A ram utilizada na janela de PID 24124 foi coletada com sucesso, uso de ram: 13 MB
+[2024-06-09 21:42:38] INFO: Verificando uso dos componentes...
+[2024-06-09 21:42:38] INFO: A ram utilizada na janela de PID 28968 foi coletada com sucesso, uso de ram: 62 MB
+[2024-06-09 21:42:38] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 294 MB
+[2024-06-09 21:42:39] INFO: A ram utilizada na janela de PID 21272 foi coletada com sucesso, uso de ram: 106 MB
+[2024-06-09 21:42:39] INFO: A ram utilizada na janela de PID 5976 foi coletada com sucesso, uso de ram: 104 MB
+[2024-06-09 21:42:39] INFO: A ram utilizada na janela de PID 19556 foi coletada com sucesso, uso de ram: 10 MB
+[2024-06-09 21:42:40] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 31 MB
+[2024-06-09 21:42:40] INFO: A ram utilizada na janela de PID 5412 foi coletada com sucesso, uso de ram: 2 MB
+[2024-06-09 21:42:40] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 31 MB
+[2024-06-09 21:42:41] INFO: A ram utilizada na janela de PID 17232 foi coletada com sucesso, uso de ram: 30 MB
+[2024-06-09 21:42:41] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:42:41] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:42:42] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:42:42] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:42:42] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:42:43] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:42:43] INFO: A ram utilizada na janela de PID 15676 foi coletada com sucesso, uso de ram: 17 MB
+[2024-06-09 21:42:43] INFO: A ram utilizada na janela de PID 26948 foi coletada com sucesso, uso de ram: 72 MB
+[2024-06-09 21:42:43] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,07
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-09T21:42:43.968330
+    |Id componente: 4
 
-[2024-06-09 13:50:24] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:25] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:25] INFO: A ram utilizada na janela de PID 25060 foi coletada com sucesso, uso de ram: 109 MB
-[2024-06-09 13:50:25] INFO: A ram utilizada na janela de PID 27784 foi coletada com sucesso, uso de ram: 108 MB
-[2024-06-09 13:50:26] INFO: A ram utilizada na janela de PID 28968 foi coletada com sucesso, uso de ram: 155 MB
-[2024-06-09 13:50:26] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 249 MB
-[2024-06-09 13:50:26] INFO: A ram utilizada na janela de PID 19556 foi coletada com sucesso, uso de ram: 36 MB
-[2024-06-09 13:50:26] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 30 MB
-[2024-06-09 13:50:27] INFO: A ram utilizada na janela de PID 5412 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-09 13:50:27] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 30 MB
-[2024-06-09 13:50:27] INFO: A ram utilizada na janela de PID 17232 foi coletada com sucesso, uso de ram: 64 MB
-[2024-06-09 13:50:27] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:28] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:28] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:28] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:28] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:29] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:29] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:29] INFO: A ram utilizada na janela de PID 15676 foi coletada com sucesso, uso de ram: 17 MB
-[2024-06-09 13:50:29] INFO: A ram utilizada na janela de PID 22060 foi coletada com sucesso, uso de ram: 136 MB
-[2024-06-09 13:50:30] INFO: A ram utilizada na janela de PID 1200 foi coletada com sucesso, uso de ram: 52 MB
-[2024-06-09 13:50:30] INFO: A ram utilizada na janela de PID 24184 foi coletada com sucesso, uso de ram: 87 MB
-[2024-06-09 13:50:30] INFO: A ram utilizada na janela de PID 8464 foi coletada com sucesso, uso de ram: 71 MB
-[2024-06-09 13:50:30] INFO: A ram utilizada na janela de PID 24184 foi coletada com sucesso, uso de ram: 87 MB
-[2024-06-09 13:50:31] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 249 MB
-[2024-06-09 13:50:31] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:34] ERROR: Erro ao inserir janela:
+[2024-06-09 21:42:44] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 297 MB
+[2024-06-09 21:42:44] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 175 MB
+[2024-06-09 21:42:45] INFO: Verificando uso dos componentes...
+[2024-06-09 21:42:52] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-09T21:42:52.051018700
+    |Id componente: 5
 
-java.lang.RuntimeException: com.microsoft.sqlserver.jdbc.SQLServerException: String or binary data would be truncated in table 'der_grupo_5.dbo.apps', column 'nomeApp'. Truncated value: 'visualOps_front_banco - ec2-52-73-100-194.compute-'.
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:52)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at dao.componente.APPDAO.gravaApps(APPDAO.java:17)
-	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
-	at Main.lambda$iniciarMonitoramento$1(Main.java:177)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: String or binary data would be truncated in table 'der_grupo_5.dbo.apps', column 'nomeApp'. Truncated value: 'visualOps_front_banco - ec2-52-73-100-194.compute-'.
-	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:648)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:567)
-	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(SQLServerPreparedStatement.java:512)
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:25)
-	... 10 more
+[2024-06-09 21:42:53] INFO: Verificando uso dos componentes...
+[2024-06-09 21:42:58] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 216,73
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-09T21:42:58.795725200
+    |Id componente: 6
 
-[2024-06-09 13:50:34] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:34] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:34] INFO: A ram utilizada na janela de PID 25060 foi coletada com sucesso, uso de ram: 109 MB
-[2024-06-09 13:50:35] INFO: A ram utilizada na janela de PID 27784 foi coletada com sucesso, uso de ram: 108 MB
-[2024-06-09 13:50:35] INFO: A ram utilizada na janela de PID 28968 foi coletada com sucesso, uso de ram: 155 MB
-[2024-06-09 13:50:35] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 249 MB
-[2024-06-09 13:50:35] INFO: A ram utilizada na janela de PID 19556 foi coletada com sucesso, uso de ram: 36 MB
-[2024-06-09 13:50:36] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 30 MB
-[2024-06-09 13:50:36] INFO: A ram utilizada na janela de PID 5412 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-09 13:50:36] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 30 MB
-[2024-06-09 13:50:36] INFO: A ram utilizada na janela de PID 17232 foi coletada com sucesso, uso de ram: 64 MB
-[2024-06-09 13:50:37] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:37] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:37] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:37] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:38] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:38] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:38] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:38] INFO: A ram utilizada na janela de PID 15676 foi coletada com sucesso, uso de ram: 17 MB
-[2024-06-09 13:50:39] INFO: A ram utilizada na janela de PID 22060 foi coletada com sucesso, uso de ram: 136 MB
-[2024-06-09 13:50:39] INFO: A ram utilizada na janela de PID 1200 foi coletada com sucesso, uso de ram: 52 MB
-[2024-06-09 13:50:39] INFO: A ram utilizada na janela de PID 24184 foi coletada com sucesso, uso de ram: 87 MB
-[2024-06-09 13:50:39] INFO: A ram utilizada na janela de PID 8464 foi coletada com sucesso, uso de ram: 71 MB
-[2024-06-09 13:50:40] INFO: A ram utilizada na janela de PID 24184 foi coletada com sucesso, uso de ram: 87 MB
-[2024-06-09 13:50:40] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 249 MB
-[2024-06-09 13:50:40] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:43] ERROR: Erro ao inserir janela:
+[2024-06-09 21:43:00] INFO: Verificando uso dos componentes...
+[2024-06-09 21:43:05] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-09T21:43:05.914016700
+    |Id componente: 1
 
-java.lang.RuntimeException: com.microsoft.sqlserver.jdbc.SQLServerException: String or binary data would be truncated in table 'der_grupo_5.dbo.apps', column 'nomeApp'. Truncated value: 'visualOps_front_banco - ec2-52-73-100-194.compute-'.
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:52)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at dao.componente.APPDAO.gravaApps(APPDAO.java:17)
-	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
-	at Main.lambda$iniciarMonitoramento$1(Main.java:177)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: String or binary data would be truncated in table 'der_grupo_5.dbo.apps', column 'nomeApp'. Truncated value: 'visualOps_front_banco - ec2-52-73-100-194.compute-'.
-	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:648)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:567)
-	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(SQLServerPreparedStatement.java:512)
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:25)
-	... 10 more
+[2024-06-09 21:43:07] INFO: Verificando uso dos componentes...
+[2024-06-09 21:43:12] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-09T21:43:12.717551300
+    |Id componente: 2
 
-[2024-06-09 13:50:43] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:43] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:44] INFO: A ram utilizada na janela de PID 25060 foi coletada com sucesso, uso de ram: 109 MB
-[2024-06-09 13:50:44] INFO: A ram utilizada na janela de PID 27784 foi coletada com sucesso, uso de ram: 108 MB
-[2024-06-09 13:50:44] INFO: A ram utilizada na janela de PID 28968 foi coletada com sucesso, uso de ram: 155 MB
-[2024-06-09 13:50:44] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 249 MB
-[2024-06-09 13:50:45] INFO: A ram utilizada na janela de PID 19556 foi coletada com sucesso, uso de ram: 36 MB
-[2024-06-09 13:50:45] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 30 MB
-[2024-06-09 13:50:45] INFO: A ram utilizada na janela de PID 5412 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-09 13:50:45] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 30 MB
-[2024-06-09 13:50:46] INFO: A ram utilizada na janela de PID 17232 foi coletada com sucesso, uso de ram: 64 MB
-[2024-06-09 13:50:46] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:46] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:46] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:47] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:47] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:47] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:47] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:48] INFO: A ram utilizada na janela de PID 15676 foi coletada com sucesso, uso de ram: 17 MB
-[2024-06-09 13:50:48] INFO: A ram utilizada na janela de PID 22060 foi coletada com sucesso, uso de ram: 138 MB
-[2024-06-09 13:50:48] INFO: A ram utilizada na janela de PID 1200 foi coletada com sucesso, uso de ram: 52 MB
-[2024-06-09 13:50:49] INFO: A ram utilizada na janela de PID 24184 foi coletada com sucesso, uso de ram: 87 MB
-[2024-06-09 13:50:49] INFO: A ram utilizada na janela de PID 8464 foi coletada com sucesso, uso de ram: 71 MB
-[2024-06-09 13:50:49] INFO: A ram utilizada na janela de PID 24184 foi coletada com sucesso, uso de ram: 87 MB
-[2024-06-09 13:50:49] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 249 MB
-[2024-06-09 13:50:50] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:53] ERROR: Erro ao inserir janela:
+[2024-06-09 21:43:14] INFO: Verificando uso dos componentes...
+[2024-06-09 21:43:19] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-09T21:43:19.486807
+    |Id componente: 3
 
-java.lang.RuntimeException: com.microsoft.sqlserver.jdbc.SQLServerException: String or binary data would be truncated in table 'der_grupo_5.dbo.apps', column 'nomeApp'. Truncated value: 'visualOps_front_banco - ec2-52-73-100-194.compute-'.
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:52)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at dao.componente.APPDAO.gravaApps(APPDAO.java:17)
-	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
-	at Main.lambda$iniciarMonitoramento$1(Main.java:177)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: String or binary data would be truncated in table 'der_grupo_5.dbo.apps', column 'nomeApp'. Truncated value: 'visualOps_front_banco - ec2-52-73-100-194.compute-'.
-	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:648)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:567)
-	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(SQLServerPreparedStatement.java:512)
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:25)
-	... 10 more
+[2024-06-09 21:43:20] INFO: Verificando uso dos componentes...
+[2024-06-09 21:43:26] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,09
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-09T21:43:26.750148200
+    |Id componente: 4
 
-[2024-06-09 13:50:53] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:53] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:53] INFO: A ram utilizada na janela de PID 25060 foi coletada com sucesso, uso de ram: 109 MB
-[2024-06-09 13:50:54] INFO: A ram utilizada na janela de PID 27784 foi coletada com sucesso, uso de ram: 108 MB
-[2024-06-09 13:50:54] INFO: A ram utilizada na janela de PID 28968 foi coletada com sucesso, uso de ram: 155 MB
-[2024-06-09 13:50:54] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 249 MB
-[2024-06-09 13:50:54] INFO: A ram utilizada na janela de PID 19556 foi coletada com sucesso, uso de ram: 36 MB
-[2024-06-09 13:50:55] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 30 MB
-[2024-06-09 13:50:55] INFO: A ram utilizada na janela de PID 5412 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-09 13:50:55] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 30 MB
-[2024-06-09 13:50:55] INFO: A ram utilizada na janela de PID 17232 foi coletada com sucesso, uso de ram: 64 MB
-[2024-06-09 13:50:56] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:56] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:56] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:56] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:57] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 176 MB
-[2024-06-09 13:50:57] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 177 MB
-[2024-06-09 13:50:57] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 177 MB
-[2024-06-09 13:50:57] INFO: A ram utilizada na janela de PID 15676 foi coletada com sucesso, uso de ram: 17 MB
-[2024-06-09 13:50:58] INFO: A ram utilizada na janela de PID 22060 foi coletada com sucesso, uso de ram: 137 MB
-[2024-06-09 13:50:58] INFO: A ram utilizada na janela de PID 1200 foi coletada com sucesso, uso de ram: 52 MB
-[2024-06-09 13:50:58] INFO: A ram utilizada na janela de PID 24184 foi coletada com sucesso, uso de ram: 87 MB
-[2024-06-09 13:50:59] INFO: A ram utilizada na janela de PID 8464 foi coletada com sucesso, uso de ram: 71 MB
-[2024-06-09 13:50:59] INFO: A ram utilizada na janela de PID 24184 foi coletada com sucesso, uso de ram: 87 MB
-[2024-06-09 13:50:59] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 252 MB
-[2024-06-09 13:50:59] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 177 MB
-[2024-06-09 13:51:03] ERROR: Erro ao inserir janela:
+[2024-06-09 21:43:28] INFO: Verificando uso dos componentes...
+[2024-06-09 21:43:33] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-09T21:43:33.720944300
+    |Id componente: 5
 
-java.lang.RuntimeException: com.microsoft.sqlserver.jdbc.SQLServerException: String or binary data would be truncated in table 'der_grupo_5.dbo.apps', column 'nomeApp'. Truncated value: 'visualOps_front_banco - ec2-52-73-100-194.compute-'.
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:52)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at dao.componente.APPDAO.gravaApps(APPDAO.java:17)
-	at service.ServiceAPP.listarApps(ServiceAPP.java:21)
-	at Main.lambda$iniciarMonitoramento$1(Main.java:177)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: String or binary data would be truncated in table 'der_grupo_5.dbo.apps', column 'nomeApp'. Truncated value: 'visualOps_front_banco - ec2-52-73-100-194.compute-'.
-	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:648)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:567)
-	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(SQLServerPreparedStatement.java:512)
-	at dao.componente.APPDAO.lambda$gravaApps$0(APPDAO.java:25)
-	... 10 more
+[2024-06-09 21:43:34] INFO: Verificando uso dos componentes...
+[2024-06-09 21:43:36] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 178 MB
+[2024-06-09 21:43:36] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 178 MB
+[2024-06-09 21:43:37] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 178 MB
+[2024-06-09 21:43:37] INFO: A ram utilizada na janela de PID 31016 foi coletada com sucesso, uso de ram: 46 MB
+[2024-06-09 21:43:37] INFO: A ram utilizada na janela de PID 1120 foi coletada com sucesso, uso de ram: 93 MB
+[2024-06-09 21:43:38] INFO: A ram utilizada na janela de PID 15588 foi coletada com sucesso, uso de ram: 77 MB
+[2024-06-09 21:43:38] INFO: A ram utilizada na janela de PID 24124 foi coletada com sucesso, uso de ram: 13 MB
+[2024-06-09 21:43:38] INFO: A ram utilizada na janela de PID 28968 foi coletada com sucesso, uso de ram: 65 MB
+[2024-06-09 21:43:39] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 294 MB
+[2024-06-09 21:43:39] INFO: A ram utilizada na janela de PID 21272 foi coletada com sucesso, uso de ram: 106 MB
+[2024-06-09 21:43:40] INFO: A ram utilizada na janela de PID 5976 foi coletada com sucesso, uso de ram: 104 MB
+[2024-06-09 21:43:40] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 216,73
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-09T21:43:40.704313500
+    |Id componente: 6
 
+[2024-06-09 21:43:41] INFO: A ram utilizada na janela de PID 19556 foi coletada com sucesso, uso de ram: 10 MB
+[2024-06-09 21:43:41] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 31 MB
+[2024-06-09 21:43:41] INFO: A ram utilizada na janela de PID 5412 foi coletada com sucesso, uso de ram: 2 MB
+[2024-06-09 21:43:42] INFO: Verificando uso dos componentes...
+[2024-06-09 21:43:42] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 31 MB
+[2024-06-09 21:43:42] INFO: A ram utilizada na janela de PID 17232 foi coletada com sucesso, uso de ram: 30 MB
+[2024-06-09 21:43:42] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 178 MB
+[2024-06-09 21:43:43] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 178 MB
+[2024-06-09 21:43:43] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 178 MB
+[2024-06-09 21:43:43] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 178 MB
+[2024-06-09 21:43:44] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 178 MB
+[2024-06-09 21:43:44] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 178 MB
+[2024-06-09 21:43:44] INFO: A ram utilizada na janela de PID 15676 foi coletada com sucesso, uso de ram: 17 MB
+[2024-06-09 21:43:45] INFO: A ram utilizada na janela de PID 26948 foi coletada com sucesso, uso de ram: 72 MB
+[2024-06-09 21:43:45] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 283 MB
+[2024-06-09 21:43:45] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 178 MB
+[2024-06-09 21:43:48] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-09T21:43:48.631574600
+    |Id componente: 1
+
+[2024-06-09 21:43:49] INFO: Verificando uso dos componentes...
+[2024-06-09 21:43:55] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-09T21:43:55.794754
+    |Id componente: 2
+
+[2024-06-09 21:43:57] INFO: Verificando uso dos componentes...
+[2024-06-09 21:44:02] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-09T21:44:02.895565200
+    |Id componente: 3
+
+[2024-06-09 21:44:04] INFO: Verificando uso dos componentes...
+[2024-06-09 21:44:09] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,37
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-09T21:44:09.679113
+    |Id componente: 4
+
+[2024-06-09 21:44:10] INFO: Verificando uso dos componentes...
+[2024-06-09 21:44:16] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-09T21:44:16.660624600
+    |Id componente: 5
+
+[2024-06-09 21:44:17] INFO: Verificando uso dos componentes...
+[2024-06-09 21:44:23] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 216,73
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-09T21:44:23.254255600
+    |Id componente: 6
+
+[2024-06-09 21:44:24] INFO: Verificando uso dos componentes...
+[2024-06-09 21:44:31] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-09T21:44:31.050865500
+    |Id componente: 1
+
+[2024-06-09 21:44:32] INFO: Verificando uso dos componentes...
+[2024-06-09 21:44:35] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 177 MB
+[2024-06-09 21:44:36] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 177 MB
+[2024-06-09 21:44:36] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 177 MB
+[2024-06-09 21:44:36] INFO: A ram utilizada na janela de PID 31016 foi coletada com sucesso, uso de ram: 44 MB
+[2024-06-09 21:44:37] INFO: A ram utilizada na janela de PID 1120 foi coletada com sucesso, uso de ram: 93 MB
+[2024-06-09 21:44:37] INFO: A ram utilizada na janela de PID 15588 foi coletada com sucesso, uso de ram: 76 MB
+[2024-06-09 21:44:37] INFO: A ram utilizada na janela de PID 24124 foi coletada com sucesso, uso de ram: 13 MB
+[2024-06-09 21:44:38] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-09T21:44:38.092294
+    |Id componente: 2
+
+[2024-06-09 21:44:38] INFO: A ram utilizada na janela de PID 28968 foi coletada com sucesso, uso de ram: 66 MB
+[2024-06-09 21:44:38] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 282 MB
+[2024-06-09 21:44:39] INFO: A ram utilizada na janela de PID 21272 foi coletada com sucesso, uso de ram: 108 MB
+[2024-06-09 21:44:39] INFO: Verificando uso dos componentes...
+[2024-06-09 21:44:39] INFO: A ram utilizada na janela de PID 5976 foi coletada com sucesso, uso de ram: 103 MB
+[2024-06-09 21:44:39] INFO: A ram utilizada na janela de PID 19556 foi coletada com sucesso, uso de ram: 10 MB
+[2024-06-09 21:44:40] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 31 MB
+[2024-06-09 21:44:40] INFO: A ram utilizada na janela de PID 5412 foi coletada com sucesso, uso de ram: 2 MB
+[2024-06-09 21:44:41] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 31 MB
+[2024-06-09 21:44:41] INFO: A ram utilizada na janela de PID 17232 foi coletada com sucesso, uso de ram: 30 MB
+[2024-06-09 21:44:41] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 177 MB
+[2024-06-09 21:44:42] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 177 MB
+[2024-06-09 21:44:42] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 177 MB
+[2024-06-09 21:44:42] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 177 MB
+[2024-06-09 21:44:43] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 177 MB
+[2024-06-09 21:44:43] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 177 MB
+[2024-06-09 21:44:43] INFO: A ram utilizada na janela de PID 15676 foi coletada com sucesso, uso de ram: 17 MB
+[2024-06-09 21:44:44] INFO: A ram utilizada na janela de PID 26948 foi coletada com sucesso, uso de ram: 72 MB
+[2024-06-09 21:44:44] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 282 MB
+[2024-06-09 21:44:44] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 177 MB
+[2024-06-09 21:44:45] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-09T21:44:45.935502900
+    |Id componente: 3
+
+[2024-06-09 21:44:47] INFO: Verificando uso dos componentes...
+[2024-06-09 21:44:52] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,21
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-09T21:44:52.433101300
+    |Id componente: 4
+
+[2024-06-09 21:44:53] INFO: Verificando uso dos componentes...
+[2024-06-09 21:44:59] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-09T21:44:59.863835300
+    |Id componente: 5
+
+[2024-06-09 21:45:01] INFO: Verificando uso dos componentes...
+[2024-06-09 21:45:06] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 216,73
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-09T21:45:06.237871700
+    |Id componente: 6
+
+[2024-06-09 21:45:07] INFO: Verificando uso dos componentes...
+[2024-06-09 21:45:13] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-09T21:45:13.332521300
+    |Id componente: 1
+
+[2024-06-09 21:45:14] INFO: Verificando uso dos componentes...
+[2024-06-09 21:45:19] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 931,51
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-09T21:45:19.954884700
+    |Id componente: 2
+
+[2024-06-09 21:45:21] INFO: Verificando uso dos componentes...
+[2024-06-09 21:45:26] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-09T21:45:26.801708200
+    |Id componente: 3
+
+[2024-06-09 21:45:28] INFO: Verificando uso dos componentes...
+[2024-06-09 21:45:33] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,26
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-09T21:45:33.505761500
+    |Id componente: 4
+
+[2024-06-09 21:45:34] INFO: Verificando uso dos componentes...
+[2024-06-09 21:45:37] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 177 MB
+[2024-06-09 21:45:37] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 177 MB
+[2024-06-09 21:45:38] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 177 MB
+[2024-06-09 21:45:38] INFO: A ram utilizada na janela de PID 31016 foi coletada com sucesso, uso de ram: 44 MB
+[2024-06-09 21:45:38] INFO: A ram utilizada na janela de PID 1120 foi coletada com sucesso, uso de ram: 93 MB
+[2024-06-09 21:45:39] INFO: A ram utilizada na janela de PID 15588 foi coletada com sucesso, uso de ram: 77 MB
+[2024-06-09 21:45:39] INFO: A ram utilizada na janela de PID 24124 foi coletada com sucesso, uso de ram: 13 MB
+[2024-06-09 21:45:39] INFO: A ram utilizada na janela de PID 28968 foi coletada com sucesso, uso de ram: 66 MB
+[2024-06-09 21:45:40] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 282 MB
+[2024-06-09 21:45:40] INFO: A ram utilizada na janela de PID 21272 foi coletada com sucesso, uso de ram: 108 MB
+[2024-06-09 21:45:40] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 100,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-09T21:45:40.648870200
+    |Id componente: 5
+
+[2024-06-09 21:45:41] INFO: A ram utilizada na janela de PID 5976 foi coletada com sucesso, uso de ram: 104 MB
+[2024-06-09 21:45:41] INFO: A ram utilizada na janela de PID 19556 foi coletada com sucesso, uso de ram: 10 MB
+[2024-06-09 21:45:41] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 31 MB
+[2024-06-09 21:45:41] INFO: Verificando uso dos componentes...
+[2024-06-09 21:45:41] INFO: A ram utilizada na janela de PID 5412 foi coletada com sucesso, uso de ram: 2 MB
+[2024-06-09 21:45:42] INFO: A ram utilizada na janela de PID 9852 foi coletada com sucesso, uso de ram: 31 MB
+[2024-06-09 21:45:42] INFO: A ram utilizada na janela de PID 17232 foi coletada com sucesso, uso de ram: 30 MB
+[2024-06-09 21:45:42] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 160 MB
+[2024-06-09 21:45:43] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 160 MB
+[2024-06-09 21:45:43] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 160 MB
+[2024-06-09 21:45:43] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 160 MB
+[2024-06-09 21:45:44] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 160 MB
+[2024-06-09 21:45:44] INFO: A ram utilizada na janela de PID 17964 foi coletada com sucesso, uso de ram: 160 MB
+[2024-06-09 21:45:44] INFO: A ram utilizada na janela de PID 15676 foi coletada com sucesso, uso de ram: 17 MB
+[2024-06-09 21:45:45] INFO: A ram utilizada na janela de PID 26948 foi coletada com sucesso, uso de ram: 72 MB
+[2024-06-09 21:45:45] INFO: A ram utilizada na janela de PID 9384 foi coletada com sucesso, uso de ram: 282 MB

@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,8 +14,9 @@ import util.logs.Logger;
 
 public class RedeDAO {
      public Rede insert(Rede rede) throws SQLException {
-        try (Connection conexao = MySQLConnection.ConnectionMySql()) {
-            PreparedStatement preparedStatement = conexao.prepareStatement("INSERT INTO rede (nomeRede, interfaceRede, sinalRede, transmissaoRede, bssidRede) VALUES (?, ?, ?, ?, ?)");
+        int idRede = 0;
+        try (Connection conexao = MySQLConnection.ConnectionSqlServer()) {
+            PreparedStatement preparedStatement = conexao.prepareStatement("INSERT INTO rede (nomeRede, interfaceRede, sinalRede, transmissaoRede, bssidRede) VALUES (?, ?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
 
             preparedStatement.setString(1, rede.getNomeRede());
             preparedStatement.setString(2, rede.getInterfaceRede());
@@ -22,14 +24,42 @@ public class RedeDAO {
             preparedStatement.setDouble(4, rede.getTransmissaoRede());
             preparedStatement.setString(5, rede.getBssidRede());
         
-            preparedStatement.executeUpdate();
-            
-            return rede;
+            int affectedRows = preparedStatement.executeUpdate();
 
+            if (affectedRows == 0) {
+                throw new SQLException("Falha ao salvar a rede, nenhuma linha afetada.");
+            }
+
+            try (ResultSet generatedKeys = preparedStatement.getGeneratedKeys()) {
+                if (generatedKeys.next()) {
+                    idRede = generatedKeys.getInt(1);
+                } else {
+                    throw new SQLException("Falha ao obter o ID da Rede criada, SQLServer.");
+                }
+            }
+
+        } catch (SQLException e) {
+            Logger.logError("Não foi possível inserir valores à entidade 'rede', SQLServer: ", e.getMessage(), e);
+			throw new RuntimeException("Erro ao inserir dados à tabela rede, SQLServer:: ", e);
+        }
+
+        try (Connection conexao = MySQLConnection.ConnectionMySql()) {
+            PreparedStatement preparedStatement = conexao.prepareStatement("INSERT INTO rede (idRede, nomeRede, interfaceRede, sinalRede, transmissaoRede, bssidRede) VALUES (?, ?, ?, ?, ?, ?)");
+
+            preparedStatement.setInt(1, idRede);
+            preparedStatement.setString(2, rede.getNomeRede());
+            preparedStatement.setString(3, rede.getInterfaceRede());
+            preparedStatement.setInt(4, rede.getSinalRede());
+            preparedStatement.setDouble(5, rede.getTransmissaoRede());
+            preparedStatement.setString(6, rede.getBssidRede());
+            
+            preparedStatement.executeUpdate();
+        
         } catch (SQLException e) {
             Logger.logError("Não foi possível inserir valores à entidade 'rede': ", e.getMessage(), e);
 			throw new RuntimeException("Erro ao inserir dados à tabela rede", e);
         }
+        return rede;
     } 
 
     public List<Object> select(Rede rede) throws SQLException {

@@ -1,6 +1,5 @@
 package dao.componente;
 
-import dao.AlertaDAO;
 import model.componentes.Componente;
 import model.Captura;
 import model.Maquina;
@@ -15,20 +14,7 @@ import java.util.Optional;
 
 public class CapturaDAO {
 	public Integer inserirCaptura(Maquina maquina, Componente componente) throws IOException {
-		try (Connection connection = MySQLConnection.ConnectionMySql()) {
-			PreparedStatement preparedStatement = connection.prepareStatement(
-					"INSERT INTO captura (dadoCaptura, unidadeMedida, dataCaptura, fkComponente) VALUES (?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
-
-			preparedStatement.setDouble(1, Optional.ofNullable(componente.getDadoCaptura()).orElse(0.0));
-			preparedStatement.setString(2, Optional.ofNullable(componente.getUnidadeMedida()).orElse(""));
-			preparedStatement.setTimestamp(3, Timestamp.valueOf(LocalDateTime.now()));
-			preparedStatement.setInt(4, componente.getIdComponente());
-
-			int affectedRows = preparedStatement.executeUpdate();
-		} catch (SQLException e) {
-			Logger.logError("Ocorreu um erro ao salvar suas capturas", e.getMessage(), e);
-		}
-
+		int idCaptura = 0;
 		try (Connection connection = MySQLConnection.ConnectionSqlServer()) {
 			Logger.logInfo("""
 
@@ -65,35 +51,40 @@ public class CapturaDAO {
 			if (affectedRows != 0) {
 				try (ResultSet generatedKeys = preparedStatement.getGeneratedKeys()) {
 					if (generatedKeys.next()) {
-						int idCaptura = generatedKeys.getInt(1);
+						idCaptura = generatedKeys.getInt(1);
 						this.selecionarById(idCaptura);
-						RegistroAlertasDAO registroAlertasDAO = new RegistroAlertasDAO();
 						RegistroAlertasDAO.verificarUsoComponentes(idCaptura);
-						return idCaptura;
 					} else {
 						throw new SQLException("Falha ao obter o ID da Configuração criado.");
 					}
 				}
 			}
 		} catch (SQLException e) {
-			Logger.logError("Ocorreu um erro ao salvar suas capturas", e.getMessage(), e);
-			LogBanco.logError("Ocorreu um erro ao salvar suas capturas", e.getMessage(), e);
+			Logger.logError("Ocorreu um erro ao salvar suas capturas SQLServer", e.getMessage(), e);
+			LogBanco.logError("Ocorreu um erro ao salvar suas capturas SQLServer", e.getMessage(), e);
 		} catch (IOException e) {
-			Logger.logError("Ocorreu um erro ao salvar suas capturas", e.getMessage(), e);
+			Logger.logError("Ocorreu um erro ao salvar suas capturas SQLServer", e.getMessage(), e);
         }
-		return 0;
+
+		try (Connection connection = MySQLConnection.ConnectionMySql()) {
+			PreparedStatement preparedStatement = connection.prepareStatement(
+					"INSERT INTO captura (idCaptura, dadoCaptura, unidadeMedida, dataCaptura, fkComponente) VALUES (?, ?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
+
+			preparedStatement.setInt(1, idCaptura);
+			preparedStatement.setDouble(2, Optional.ofNullable(componente.getDadoCaptura()).orElse(0.0));
+			preparedStatement.setString(3, Optional.ofNullable(componente.getUnidadeMedida()).orElse(""));
+			preparedStatement.setTimestamp(4, Timestamp.valueOf(LocalDateTime.now()));
+			preparedStatement.setInt(5, componente.getIdComponente());
+
+			preparedStatement.executeUpdate();
+		} catch (SQLException e) {
+			Logger.logError("Ocorreu um erro ao salvar suas capturas no MySQL", e.getMessage(), e);
+		}
+
+		return idCaptura;
     }
 
 	public Optional<Captura>  selecionarById(Integer idCaptura) {
-		try (Connection connection = MySQLConnection.ConnectionMySql()) {
-			PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM captura WHERE idCaptura = ?");
-			preparedStatement.setInt(1, idCaptura);
-
-			ResultSet resultSet = preparedStatement.executeQuery();
-		} catch (SQLException e) {
-			Logger.logError("Ocorreu um erro ao salvar suas capturas", e.getMessage(), e);
-		}
-
 		try (Connection connection = MySQLConnection.ConnectionSqlServer()) {
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM captura WHERE idCaptura = ?");
 			preparedStatement.setInt(1, idCaptura);

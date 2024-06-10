@@ -16,6 +16,19 @@ import util.logs.Logger;
 
 public class RedeIpv4DAO {
     public void insert(Rede rede, Ipv4 ipv4) throws SQLException {
+        try (Connection conexao = MySQLConnection.ConnectionSqlServer()) {
+            PreparedStatement preparedStatement = conexao.prepareStatement("INSERT INTO relredeipv4 (fkRede, fkIpv4) VALUES (?, ?)");
+
+            preparedStatement.setInt(1, rede.getIdRede());
+            preparedStatement.setInt(2, ipv4.getIdIpv4());
+        
+            preparedStatement.executeUpdate();
+            
+        } catch (SQLException e) {
+            Logger.logError("Não foi possível inserir valores à entidade 'rede' SQLServer: ", e.getMessage(), e);
+			throw new RuntimeException("Erro ao inserir dados à tabela rede SQLServer:: ", e);
+        }
+
         try (Connection conexao = MySQLConnection.ConnectionMySql()) {
             PreparedStatement preparedStatement = conexao.prepareStatement("INSERT INTO relredeipv4 (fkRede, fkIpv4) VALUES (?, ?)");
 
@@ -25,8 +38,8 @@ public class RedeIpv4DAO {
             preparedStatement.executeUpdate();
             
         } catch (SQLException e) {
-            Logger.logError("Não foi possível inserir valores à entidade 'rede': ", e.getMessage(), e);
-			throw new RuntimeException("Erro ao inserir dados à tabela rede", e);
+            Logger.logError("Não foi possível inserir valores à entidade 'rede': MySQL:: ", e.getMessage(), e);
+			throw new RuntimeException("Erro ao inserir dados à tabela rede MySQL:: ", e);
         }
     } 
 
@@ -48,8 +61,8 @@ public class RedeIpv4DAO {
             }
 
         } catch (SQLException e) {
-            Logger.logError("Não foi possível listar os IPs:", e.getMessage(), e);
-			throw new RuntimeException("Erro ao listar os IPs da rede com o id = "+ rede.getIdRede() +": ", e);
+            Logger.logError("Não foi possível listar os IPs no SQLServer:", e.getMessage(), e);
+			throw new RuntimeException("Erro ao listar os IPs da rede com o id = "+ rede.getIdRede() +" no SQLServer: ", e);
         }
     }
 
@@ -65,8 +78,8 @@ public class RedeIpv4DAO {
             
             existe = resultSet.next();
         } catch (SQLException e) {
-            Logger.logError("Não foi possível listar as informações do ipv4: ", e.getMessage(), e);
-			throw new RuntimeException("Erro ao listar as informações do ipv4 com o numero ip = "+ ipv4.getNumeroIp() +": ", e);
+            Logger.logError("Não foi possível listar as informações do ipv4 no SQLServer: ", e.getMessage(), e);
+			throw new RuntimeException("Erro ao listar as informações do ipv4 com o numero ip = "+ ipv4.getNumeroIp() +" no SQLServer: ", e);
         }
         return existe;
     }
