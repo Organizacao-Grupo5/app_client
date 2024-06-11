@@ -1,72 +1,1654 @@
-[2024-06-11 14:27:58] INFO: Verificando informações de login do usuário.
-[2024-06-11 14:28:03] INFO: Usuário foi encontrado com sucesso.
-[2024-06-11 14:28:15] INFO: Buscando componentes...
-[2024-06-11 14:28:16] INFO: Componente encontrado :
+[2024-06-11 16:37:36] INFO: Verificando informações de login do usuário.
+[2024-06-11 16:37:40] INFO: Usuário foi encontrado com sucesso.
+[2024-06-11 16:37:52] INFO: Buscando componentes...
+[2024-06-11 16:37:53] INFO: Componente encontrado :
     |Componente: CPU
-    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-    |Fabricante: GenuineIntel
-    |ID Componente: 9
+    |Modelo: AMD Ryzen 7 5700U with Radeon Graphics
+    |Fabricante: AuthenticAMD
+    |ID Componente: 20
 
-[2024-06-11 14:28:16] INFO: Componente encontrado :
+[2024-06-11 16:37:53] INFO: Componente encontrado :
     |Componente: HDD
-    |Modelo: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
+    |Modelo: SSSTC CL4-4D512-Q62
     |Fabricante: N/A
-    |ID Componente: 12
+    |ID Componente: 21
 
-[2024-06-11 14:28:16] INFO: Componente encontrado :
+[2024-06-11 16:37:53] INFO: Componente encontrado :
+    |Componente: HDD
+    |Modelo: unknown
+    |Fabricante: N/A
+    |ID Componente: 22
+
+[2024-06-11 16:37:53] INFO: Componente encontrado :
+    |Componente: HDD
+    |Modelo: Logical Volume Group
+    |Fabricante: N/A
+    |ID Componente: 23
+
+[2024-06-11 16:37:53] INFO: Componente encontrado :
     |Componente: GPU
-    |Modelo: Intel(R) Iris(R) Xe Graphics
-    |Fabricante: Intel Corporation
-    |ID Componente: 14
+    |Modelo: Lucienne
+    |Fabricante: Advanced Micro Devices, Inc. [AMD/ATI] (0x1002)
+    |ID Componente: 24
 
-[2024-06-11 14:28:16] INFO: Componente encontrado :
+[2024-06-11 16:37:53] INFO: Componente encontrado :
     |Componente: MemoriaRam
     |Modelo: N/A
     |Fabricante: N/A
-    |ID Componente: 16
+    |ID Componente: 25
 
-[2024-06-11 14:28:16] INFO: Componente encontrado :
+[2024-06-11 16:37:53] INFO: Componente encontrado :
     |Componente: Bateria
-    |Modelo: System Battery
+    |Modelo: BAT0
     |Fabricante: SMP
-    |ID Componente: 18
+    |ID Componente: 26
 
-[2024-06-11 14:28:16] INFO: Componente encontrado :
+[2024-06-11 16:37:53] INFO: Componente encontrado :
     |Componente: Volume
-    |Modelo: Disco Fixo Local (C:)
-    |Fabricante: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
-    |ID Componente: 19
+    |Modelo: /
+    |Fabricante: 9892cc35-9a7c-434b-9a05-6efb662ccf09
+    |ID Componente: 27
 
-[2024-06-11 14:28:23] INFO: Sua máquina contém componentes registrados
-[2024-06-11 14:28:24] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 153 MB
-[2024-06-11 14:28:24] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 145 MB
-[2024-06-11 14:28:25] INFO: A ram utilizada na janela de PID 10332 foi coletada com sucesso, uso de ram: 67 MB
-[2024-06-11 14:28:25] INFO: A ram utilizada na janela de PID 19572 foi coletada com sucesso, uso de ram: 56 MB
-[2024-06-11 14:28:26] INFO: A ram utilizada na janela de PID 12800 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-11 14:28:26] INFO: A ram utilizada na janela de PID 23056 foi coletada com sucesso, uso de ram: 107 MB
-[2024-06-11 14:28:27] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 145 MB
-[2024-06-11 14:28:27] INFO: A ram utilizada na janela de PID 14016 foi coletada com sucesso, uso de ram: 9 MB
-[2024-06-11 14:28:28] INFO: A ram utilizada na janela de PID 22804 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-11 14:28:28] INFO: A ram utilizada na janela de PID 6100 foi coletada com sucesso, uso de ram: 4 MB
-[2024-06-11 14:28:28] INFO: A ram utilizada na janela de PID 13984 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-11 14:28:29] INFO: A ram utilizada na janela de PID 6100 foi coletada com sucesso, uso de ram: 4 MB
-[2024-06-11 14:28:29] INFO: 
+[2024-06-11 16:37:53] INFO: Componente encontrado :
+    |Componente: Volume
+    |Modelo: /dev/nvme0n1p1
+    |Fabricante: 9f2a-c609
+    |ID Componente: 28
+
+[2024-06-11 16:37:53] INFO: Componente encontrado :
+    |Componente: Volume
+    |Modelo: /dev/nvme0n1p2
+    |Fabricante: 9f2a-c53e
+    |ID Componente: 29
+
+[2024-06-11 16:37:56] INFO: Sua máquina contém componentes registrados
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 142159 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 142159 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 10559 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 3594 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 89008 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 4247 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 142159 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 166992 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 87526 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 140113 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 174226 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 174226 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 3594 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:57] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 166992 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 166992 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 166992 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 166992 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 142159 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 142159 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 142159 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 140113 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 140113 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 8540 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 89008 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:58] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: CPU
-    |Dado capturado: 0,00
+    |Dado capturado: 42,40
     |Unidade de medida: °C
-    |Data hora captura: 2024-06-11T14:28:29.329223700
-    |Id componente: 9
+    |Data hora captura: 2024-06-11T16:37:58.667044885
+    |Id componente: 20
 
-[2024-06-11 14:28:29] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 146 MB
-[2024-06-11 14:28:30] INFO: A ram utilizada na janela de PID 13916 foi coletada com sucesso, uso de ram: 24 MB
-[2024-06-11 14:28:30] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 146 MB
-[2024-06-11 14:28:30] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 146 MB
-[2024-06-11 14:28:31] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 146 MB
-[2024-06-11 14:28:31] INFO: Verificando uso dos componentes...
-[2024-06-11 14:28:31] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 146 MB
-[2024-06-11 14:28:32] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 146 MB
-[2024-06-11 14:28:32] ERROR: Ocorreu um erro ao salvar suas capturas no MySQL
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 89008 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 89008 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 89008 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 89008 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 89008 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:58] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 87526 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 87526 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 82770 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 82770 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 3979 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 8540 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 8540 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 8540 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 8540 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 8540 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 8540 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 3853 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 10559 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 10559 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 8540 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:37:59] INFO: Verificando uso dos componentes...
+[2024-06-11 16:37:59] INFO: A ram utilizada na janela de PID 8540 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 8540 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 6187 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 4247 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 4247 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 4154 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 3870 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 3912 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 3912 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 3908 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 3885 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 3863 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 3861 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 3886 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 3859 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 3850 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 3594 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:00] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:01] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:01] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:01] INFO: A ram utilizada na janela de PID 82770 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:01] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:01] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:01] INFO: A ram utilizada na janela de PID 8540 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:01] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:01] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:01] INFO: A ram utilizada na janela de PID 5 foi coletada com sucesso, uso de ram: Cont MB
+[2024-06-11 16:38:01] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:01] INFO: A ram utilizada na janela de PID 10559 foi coletada com sucesso, uso de ram:  MB
+[2024-06-11 16:38:01] INFO: A ram utilizada na janela de PID 0 foi coletada com sucesso, uso de ram: Process
+Web
+
+Process
+Cont
+Process
+
+
+
+
+
+
+
+
+
+
+
+<defunct> MB
+[2024-06-11 16:38:01] ERROR: Ocorreu um erro ao salvar suas capturas no MySQL
 java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
@@ -87,9 +1669,7 @@ java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child 
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 
-[2024-06-11 14:28:32] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 146 MB
-[2024-06-11 14:28:32] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 146 MB
-[2024-06-11 14:28:35] ERROR: Ocorreu um erro ao salvar seus registros no MySQL:: 
+[2024-06-11 16:38:05] ERROR: Ocorreu um erro ao salvar seus registros no MySQL:: 
 java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
@@ -111,16 +1691,16 @@ java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child 
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 
-[2024-06-11 14:28:35] INFO: 
+[2024-06-11 16:38:06] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: HDD
     |Dado capturado: 476,94
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T14:28:35.966440100
-    |Id componente: 12
+    |Data hora captura: 2024-06-11T16:38:06.206892477
+    |Id componente: 21
 
-[2024-06-11 14:28:37] INFO: Verificando uso dos componentes...
-[2024-06-11 14:28:40] ERROR: Ocorreu um erro ao salvar suas capturas no MySQL
+[2024-06-11 16:38:07] INFO: Verificando uso dos componentes...
+[2024-06-11 16:38:08] ERROR: Ocorreu um erro ao salvar suas capturas no MySQL
 java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
@@ -141,7 +1721,7 @@ java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child 
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 
-[2024-06-11 14:28:45] ERROR: Ocorreu um erro ao salvar seus registros no MySQL:: 
+[2024-06-11 16:38:13] ERROR: Ocorreu um erro ao salvar seus registros no MySQL:: 
 java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
@@ -163,16 +1743,120 @@ java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child 
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 
-[2024-06-11 14:28:46] INFO: 
+[2024-06-11 16:38:14] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 9,56
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T16:38:14.374765281
+    |Id componente: 22
+
+[2024-06-11 16:38:15] INFO: Verificando uso dos componentes...
+[2024-06-11 16:38:16] ERROR: Ocorreu um erro ao salvar suas capturas no MySQL
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at dao.componente.CapturaDAO.inserirCaptura(CapturaDAO.java:81)
+	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
+	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2024-06-11 16:38:23] ERROR: Ocorreu um erro ao salvar seus registros no MySQL:: 
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at dao.componente.RegistroAlertasDAO.gerarRegistro(RegistroAlertasDAO.java:43)
+	at service.ServiceSystem.registrar(ServiceSystem.java:49)
+	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:87)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
+	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2024-06-11 16:38:24] INFO: 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 4,00
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T16:38:24.548202940
+    |Id componente: 23
+
+[2024-06-11 16:38:25] INFO: Verificando uso dos componentes...
+[2024-06-11 16:38:26] ERROR: Ocorreu um erro ao salvar suas capturas no MySQL
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at dao.componente.CapturaDAO.inserirCaptura(CapturaDAO.java:81)
+	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
+	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2024-06-11 16:38:29] ERROR: Ocorreu um erro ao salvar seus registros no MySQL:: 
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at dao.componente.RegistroAlertasDAO.gerarRegistro(RegistroAlertasDAO.java:43)
+	at service.ServiceSystem.registrar(ServiceSystem.java:49)
+	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:87)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
+	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2024-06-11 16:38:30] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: GPU
-    |Dado capturado: 0,00
+    |Dado capturado: 42,90
     |Unidade de medida: °C
-    |Data hora captura: 2024-06-11T14:28:46.562449700
-    |Id componente: 14
+    |Data hora captura: 2024-06-11T16:38:30.409901096
+    |Id componente: 24
 
-[2024-06-11 14:28:48] INFO: Verificando uso dos componentes...
-[2024-06-11 14:28:49] ERROR: Ocorreu um erro ao salvar suas capturas no MySQL
+[2024-06-11 16:38:32] INFO: Verificando uso dos componentes...
+[2024-06-11 16:38:33] ERROR: Ocorreu um erro ao salvar suas capturas no MySQL
 java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
@@ -193,7 +1877,7 @@ java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child 
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 
-[2024-06-11 14:28:54] ERROR: Ocorreu um erro ao salvar seus registros no MySQL:: 
+[2024-06-11 16:38:38] ERROR: Ocorreu um erro ao salvar seus registros no MySQL:: 
 java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
@@ -215,156 +1899,3 @@ java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child 
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 
-[2024-06-11 14:28:55] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 7,13
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T14:28:55.312439600
-    |Id componente: 16
-
-[2024-06-11 14:28:57] INFO: Verificando uso dos componentes...
-[2024-06-11 14:28:58] ERROR: Ocorreu um erro ao salvar suas capturas no MySQL
-java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.CapturaDAO.inserirCaptura(CapturaDAO.java:81)
-	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:85)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-06-11 14:29:04] ERROR: Ocorreu um erro ao salvar seus registros no MySQL:: 
-java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.RegistroAlertasDAO.gerarRegistro(RegistroAlertasDAO.java:43)
-	at service.ServiceSystem.registrar(ServiceSystem.java:49)
-	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:87)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-06-11 14:29:07] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 66,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-11T14:29:07.619946400
-    |Id componente: 18
-
-[2024-06-11 14:29:10] INFO: Verificando uso dos componentes...
-[2024-06-11 14:29:12] ERROR: Ocorreu um erro ao salvar suas capturas no MySQL
-java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.CapturaDAO.inserirCaptura(CapturaDAO.java:81)
-	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:85)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-06-11 14:29:15] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 147 MB
-[2024-06-11 14:29:16] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 147 MB
-[2024-06-11 14:29:16] INFO: A ram utilizada na janela de PID 10332 foi coletada com sucesso, uso de ram: 63 MB
-[2024-06-11 14:29:16] INFO: A ram utilizada na janela de PID 12800 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-11 14:29:16] ERROR: Ocorreu um erro ao salvar seus registros no MySQL:: 
-java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.RegistroAlertasDAO.gerarRegistro(RegistroAlertasDAO.java:43)
-	at service.ServiceSystem.registrar(ServiceSystem.java:49)
-	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:87)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-06-11 14:29:17] INFO: A ram utilizada na janela de PID 19572 foi coletada com sucesso, uso de ram: 55 MB
-[2024-06-11 14:29:17] INFO: A ram utilizada na janela de PID 23056 foi coletada com sucesso, uso de ram: 92 MB
-[2024-06-11 14:29:18] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 147 MB
-[2024-06-11 14:29:18] INFO: A ram utilizada na janela de PID 14016 foi coletada com sucesso, uso de ram: 8 MB
-[2024-06-11 14:29:19] INFO: A ram utilizada na janela de PID 22804 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-11 14:29:19] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 147,31
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T14:29:19.639312900
-    |Id componente: 19
-
-[2024-06-11 14:29:19] INFO: A ram utilizada na janela de PID 6100 foi coletada com sucesso, uso de ram: 3 MB
-[2024-06-11 14:29:20] INFO: A ram utilizada na janela de PID 13984 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-11 14:29:20] INFO: A ram utilizada na janela de PID 6100 foi coletada com sucesso, uso de ram: 3 MB
-[2024-06-11 14:29:21] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 147 MB
-[2024-06-11 14:29:21] INFO: A ram utilizada na janela de PID 13916 foi coletada com sucesso, uso de ram: 23 MB
-[2024-06-11 14:29:21] INFO: Verificando uso dos componentes...
-[2024-06-11 14:29:22] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 148 MB
-[2024-06-11 14:29:22] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 148 MB
-[2024-06-11 14:29:23] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 148 MB
-[2024-06-11 14:29:23] ERROR: Ocorreu um erro ao salvar suas capturas no MySQL
-java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at dao.componente.CapturaDAO.inserirCaptura(CapturaDAO.java:81)
-	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:85)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
-	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[2024-06-11 14:29:23] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 148 MB
-[2024-06-11 14:29:24] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 148 MB
