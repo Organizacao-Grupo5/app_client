@@ -1,5 +1,6 @@
 package dao.componente;
 
+import app.integration.SlackIntegration;
 import util.database.MySQLConnection;
 import util.logs.Logger;
 
@@ -67,37 +68,81 @@ public class RegistroAlertasDAO {
                     String ip = resultSet.getString("IpMaquina");
 
                     // ALERTAS PARA BATERIA!
-                    if(componente.equalsIgnoreCase("bateria")){
-                        if(uso <= 15){
+                    if (componente.equalsIgnoreCase("bateria")) {
+                        if (uso <= 15) {
                             String mensagem = """
-                                URGÊNCIA: A máquina de IP: %s está com %.1f% de bateria""".
+                                    URGÊNCIA: A máquina de IP: %s está com %d% de bateria""".
                                     formatted(ip, uso);
-                            // SlackIntegration.enviarMensagemParaSlack(mensagem);
-                        } else if(uso <= 30){
+                            SlackIntegration.enviarMensagemParaSlack(mensagem);
+                        } else if (uso <= 30) {
                             String mensagem = """
-                                Aviso: A máquina de IP: %s está com %.1f% de bateria""".
+                                    Aviso: A máquina de IP: %s está com %d% de bateria""".
                                     formatted(ip, uso);
-                            // SlackIntegration.enviarMensagemParaSlack(mensagem);
+                            SlackIntegration.enviarMensagemParaSlack(mensagem);
                         }
                     }
 
-                    // ALERTA - RUIM!!!
-                    else if (uso >= ruimMinimo) {
-                        String mensagem = "URGÊNCIA: O componente %s da máquina de IP: %s está em condição ruim, com uso de %.1f".formatted(componente, ip, uso);
-                        // SlackIntegration.enviarMensagemParaSlack(mensagem);
+                    // ALERTAS PARA GPU!
+                    else if (componente.equalsIgnoreCase("gpu")) {
+                        if (uso >= 85) {
+                            String mensagem = """
+                                    URGÊNCIA: A GPU da máquina de IP: %s está com temperatura crítica de %.1f°C""".
+                                    formatted(ip, uso);
+                            SlackIntegration.enviarMensagemParaSlack(mensagem);
+                        } else if (uso >= 75) {
+                            String mensagem = """
+                                    Aviso: A GPU da máquina de IP: %s está com temperatura alta de %.1f°C""".
+                                    formatted(ip, uso);
+                            SlackIntegration.enviarMensagemParaSlack(mensagem);
+                        } }
 
-                    }
-                    // ALERTA - MÉDIO!!!
-                    else if (uso >= medioMinimo) {
-                        String mensagem = "Aviso: O componente %s da máquina de IP: %s está em condição média, com uso de %.1f".formatted(componente, ip, uso);
-                        // SlackIntegration.enviarMensagemParaSlack(mensagem);
-                    }
+                        // ALERTAS PARA RAM!
+                        else if(componente.equalsIgnoreCase("memoriaram")){
+                            if(uso >= 7){
+                                String mensagem = """
+                            URGÊNCIA: A memória RAM da máquina de IP: %s está em condição ruim, com uso de %.1f GB""".
+                                        formatted(ip, uso);
+                                SlackIntegration.enviarMensagemParaSlack(mensagem);
+                            } else if(uso >= 6 ){
+                                String mensagem = """
+                                Aviso: A memória RAM da máquina de IP: %s está em condição média, com uso de %.1f GB""".
+                                        formatted(ip, uso);
+                                SlackIntegration.enviarMensagemParaSlack(mensagem);
 
+                            }
+                        }
+
+                        // ALERTAS PARA CPU!
+                       else if (componente.equalsIgnoreCase("cpu")) {
+                            if (uso >= 90) {
+                                String mensagem = """
+                                        URGÊNCIA: A CPU da máquina de IP: %s está com temperatura crítica de %.1f°C""".
+                                        formatted(ip, uso);
+                                SlackIntegration.enviarMensagemParaSlack(mensagem);
+                            } else if (uso >= 75) {
+                                String mensagem = """
+                                        Aviso: A CPU da máquina de IP: %s está com temperatura alta de %.1f°C""".
+                                        formatted(ip, uso);
+                                SlackIntegration.enviarMensagemParaSlack(mensagem);
+                            }
+                        }
+
+                        // ALERTA - RUIM!!!
+                        else if (uso >= ruimMinimo) {
+                            String mensagem = "URGÊNCIA: O componente %s da máquina de IP: %s está em condição ruim, com uso de %.1f".formatted(componente, ip, uso);
+                            SlackIntegration.enviarMensagemParaSlack(mensagem);
+
+                        }
+                        // ALERTA - MÉDIO!!!
+                        else if (uso >= medioMinimo) {
+                            String mensagem = "Aviso: O componente %s da máquina de IP: %s está em condição média, com uso de %.1f".formatted(componente, ip, uso);
+                            SlackIntegration.enviarMensagemParaSlack(mensagem);
+                        }
 
                 }
+            } catch (SQLException e) {
+                Logger.logError("Ocorreu um erro ao verificar o uso dos componentes", e.getMessage(), e);
             }
-        } catch (SQLException e) {
-            Logger.logError("Ocorreu um erro ao verificar o uso dos componentes", e.getMessage(), e);
         }
     }
 }

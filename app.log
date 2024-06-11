@@ -1,585 +1,370 @@
-[2024-06-11 12:54:48] INFO: Verificando informações de login do usuário.
-[2024-06-11 12:54:50] INFO: Usuário foi encontrado com sucesso.
-[2024-06-11 12:54:56] INFO: Buscando componentes...
-[2024-06-11 12:54:57] INFO: Componente encontrado :
+[2024-06-11 14:27:58] INFO: Verificando informações de login do usuário.
+[2024-06-11 14:28:03] INFO: Usuário foi encontrado com sucesso.
+[2024-06-11 14:28:15] INFO: Buscando componentes...
+[2024-06-11 14:28:16] INFO: Componente encontrado :
     |Componente: CPU
     |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
     |Fabricante: GenuineIntel
-    |ID Componente: 59
+    |ID Componente: 9
 
-[2024-06-11 12:54:57] INFO: Componente encontrado :
+[2024-06-11 14:28:16] INFO: Componente encontrado :
     |Componente: HDD
-    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Modelo: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
     |Fabricante: N/A
-    |ID Componente: 60
+    |ID Componente: 12
 
-[2024-06-11 12:54:57] INFO: Componente encontrado :
+[2024-06-11 14:28:16] INFO: Componente encontrado :
     |Componente: GPU
     |Modelo: Intel(R) Iris(R) Xe Graphics
     |Fabricante: Intel Corporation
-    |ID Componente: 61
+    |ID Componente: 14
 
-[2024-06-11 12:54:57] INFO: Componente encontrado :
+[2024-06-11 14:28:16] INFO: Componente encontrado :
     |Componente: MemoriaRam
     |Modelo: N/A
     |Fabricante: N/A
-    |ID Componente: 62
+    |ID Componente: 16
 
-[2024-06-11 12:54:57] INFO: Componente encontrado :
+[2024-06-11 14:28:16] INFO: Componente encontrado :
     |Componente: Bateria
     |Modelo: System Battery
-    |Fabricante: SAMSUNG Electronics
-    |ID Componente: 63
+    |Fabricante: SMP
+    |ID Componente: 18
 
-[2024-06-11 12:54:57] INFO: Componente encontrado :
+[2024-06-11 14:28:16] INFO: Componente encontrado :
     |Componente: Volume
     |Modelo: Disco Fixo Local (C:)
-    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
-    |ID Componente: 64
+    |Fabricante: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
+    |ID Componente: 19
 
-[2024-06-11 12:55:02] INFO: Sua máquina contém componentes registrados
-[2024-06-11 12:55:02] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 193 MB
-[2024-06-11 12:55:03] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 193 MB
-[2024-06-11 12:55:03] INFO: A ram utilizada na janela de PID 25452 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-11 12:55:03] INFO: A ram utilizada na janela de PID 11276 foi coletada com sucesso, uso de ram: 57 MB
-[2024-06-11 12:55:03] INFO: A ram utilizada na janela de PID 25452 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-11 12:55:04] INFO: A ram utilizada na janela de PID 11448 foi coletada com sucesso, uso de ram: 16 MB
-[2024-06-11 12:55:04] INFO: A ram utilizada na janela de PID 2680 foi coletada com sucesso, uso de ram: 42 MB
-[2024-06-11 12:55:04] INFO: 
+[2024-06-11 14:28:23] INFO: Sua máquina contém componentes registrados
+[2024-06-11 14:28:24] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 153 MB
+[2024-06-11 14:28:24] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 145 MB
+[2024-06-11 14:28:25] INFO: A ram utilizada na janela de PID 10332 foi coletada com sucesso, uso de ram: 67 MB
+[2024-06-11 14:28:25] INFO: A ram utilizada na janela de PID 19572 foi coletada com sucesso, uso de ram: 56 MB
+[2024-06-11 14:28:26] INFO: A ram utilizada na janela de PID 12800 foi coletada com sucesso, uso de ram: 1 MB
+[2024-06-11 14:28:26] INFO: A ram utilizada na janela de PID 23056 foi coletada com sucesso, uso de ram: 107 MB
+[2024-06-11 14:28:27] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 145 MB
+[2024-06-11 14:28:27] INFO: A ram utilizada na janela de PID 14016 foi coletada com sucesso, uso de ram: 9 MB
+[2024-06-11 14:28:28] INFO: A ram utilizada na janela de PID 22804 foi coletada com sucesso, uso de ram: 2 MB
+[2024-06-11 14:28:28] INFO: A ram utilizada na janela de PID 6100 foi coletada com sucesso, uso de ram: 4 MB
+[2024-06-11 14:28:28] INFO: A ram utilizada na janela de PID 13984 foi coletada com sucesso, uso de ram: 2 MB
+[2024-06-11 14:28:29] INFO: A ram utilizada na janela de PID 6100 foi coletada com sucesso, uso de ram: 4 MB
+[2024-06-11 14:28:29] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: CPU
-    |Dado capturado: 39,05
+    |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-06-11T12:55:04.729918
-    |Id componente: 59
+    |Data hora captura: 2024-06-11T14:28:29.329223700
+    |Id componente: 9
 
-[2024-06-11 12:55:04] INFO: A ram utilizada na janela de PID 15288 foi coletada com sucesso, uso de ram: 71 MB
-[2024-06-11 12:55:05] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 15 MB
-[2024-06-11 12:55:05] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 15 MB
-[2024-06-11 12:55:05] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 193 MB
-[2024-06-11 12:55:05] INFO: Verificando uso dos componentes...
-[2024-06-11 12:55:05] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 193 MB
-[2024-06-11 12:55:06] INFO: A ram utilizada na janela de PID 16272 foi coletada com sucesso, uso de ram: 0 MB
-[2024-06-11 12:55:06] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 15 MB
-[2024-06-11 12:55:06] INFO: A ram utilizada na janela de PID 3896 foi coletada com sucesso, uso de ram: 21 MB
-[2024-06-11 12:55:06] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 193 MB
-[2024-06-11 12:55:07] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 192 MB
-[2024-06-11 12:55:07] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 192 MB
-[2024-06-11 12:55:07] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 192 MB
-[2024-06-11 12:55:07] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 192 MB
-[2024-06-11 12:55:08] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 192 MB
-[2024-06-11 12:55:08] INFO: A ram utilizada na janela de PID 17856 foi coletada com sucesso, uso de ram: 34 MB
-[2024-06-11 12:55:08] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 192 MB
-[2024-06-11 12:55:08] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 192 MB
-[2024-06-11 12:55:09] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 192 MB
-[2024-06-11 12:55:10] INFO: 
+[2024-06-11 14:28:29] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 146 MB
+[2024-06-11 14:28:30] INFO: A ram utilizada na janela de PID 13916 foi coletada com sucesso, uso de ram: 24 MB
+[2024-06-11 14:28:30] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 146 MB
+[2024-06-11 14:28:30] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 146 MB
+[2024-06-11 14:28:31] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 146 MB
+[2024-06-11 14:28:31] INFO: Verificando uso dos componentes...
+[2024-06-11 14:28:31] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 146 MB
+[2024-06-11 14:28:32] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 146 MB
+[2024-06-11 14:28:32] ERROR: Ocorreu um erro ao salvar suas capturas no MySQL
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at dao.componente.CapturaDAO.inserirCaptura(CapturaDAO.java:81)
+	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
+	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2024-06-11 14:28:32] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 146 MB
+[2024-06-11 14:28:32] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 146 MB
+[2024-06-11 14:28:35] ERROR: Ocorreu um erro ao salvar seus registros no MySQL:: 
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at dao.componente.RegistroAlertasDAO.gerarRegistro(RegistroAlertasDAO.java:43)
+	at service.ServiceSystem.registrar(ServiceSystem.java:49)
+	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:87)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
+	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2024-06-11 14:28:35] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: HDD
-    |Dado capturado: 238,47
+    |Dado capturado: 476,94
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:55:10.346931600
-    |Id componente: 60
+    |Data hora captura: 2024-06-11T14:28:35.966440100
+    |Id componente: 12
 
-[2024-06-11 12:55:11] INFO: Verificando uso dos componentes...
-[2024-06-11 12:55:15] INFO: 
+[2024-06-11 14:28:37] INFO: Verificando uso dos componentes...
+[2024-06-11 14:28:40] ERROR: Ocorreu um erro ao salvar suas capturas no MySQL
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at dao.componente.CapturaDAO.inserirCaptura(CapturaDAO.java:81)
+	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
+	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2024-06-11 14:28:45] ERROR: Ocorreu um erro ao salvar seus registros no MySQL:: 
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at dao.componente.RegistroAlertasDAO.gerarRegistro(RegistroAlertasDAO.java:43)
+	at service.ServiceSystem.registrar(ServiceSystem.java:49)
+	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:87)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
+	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2024-06-11 14:28:46] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: GPU
-    |Dado capturado: 39,05
+    |Dado capturado: 0,00
     |Unidade de medida: °C
-    |Data hora captura: 2024-06-11T12:55:15.890319400
-    |Id componente: 61
+    |Data hora captura: 2024-06-11T14:28:46.562449700
+    |Id componente: 14
 
-[2024-06-11 12:55:16] INFO: Verificando uso dos componentes...
-[2024-06-11 12:55:21] INFO: 
+[2024-06-11 14:28:48] INFO: Verificando uso dos componentes...
+[2024-06-11 14:28:49] ERROR: Ocorreu um erro ao salvar suas capturas no MySQL
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at dao.componente.CapturaDAO.inserirCaptura(CapturaDAO.java:81)
+	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
+	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2024-06-11 14:28:54] ERROR: Ocorreu um erro ao salvar seus registros no MySQL:: 
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at dao.componente.RegistroAlertasDAO.gerarRegistro(RegistroAlertasDAO.java:43)
+	at service.ServiceSystem.registrar(ServiceSystem.java:49)
+	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:87)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
+	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2024-06-11 14:28:55] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: MemoriaRam
-    |Dado capturado: 7,32
+    |Dado capturado: 7,13
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:55:21.234009800
-    |Id componente: 62
+    |Data hora captura: 2024-06-11T14:28:55.312439600
+    |Id componente: 16
 
-[2024-06-11 12:55:22] INFO: Verificando uso dos componentes...
-[2024-06-11 12:55:26] INFO: 
+[2024-06-11 14:28:57] INFO: Verificando uso dos componentes...
+[2024-06-11 14:28:58] ERROR: Ocorreu um erro ao salvar suas capturas no MySQL
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at dao.componente.CapturaDAO.inserirCaptura(CapturaDAO.java:81)
+	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
+	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2024-06-11 14:29:04] ERROR: Ocorreu um erro ao salvar seus registros no MySQL:: 
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at dao.componente.RegistroAlertasDAO.gerarRegistro(RegistroAlertasDAO.java:43)
+	at service.ServiceSystem.registrar(ServiceSystem.java:49)
+	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:87)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
+	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2024-06-11 14:29:07] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Bateria
-    |Dado capturado: 76,00
+    |Dado capturado: 66,00
     |Unidade de medida: %
-    |Data hora captura: 2024-06-11T12:55:26.691237500
-    |Id componente: 63
+    |Data hora captura: 2024-06-11T14:29:07.619946400
+    |Id componente: 18
 
-[2024-06-11 12:55:27] INFO: Verificando uso dos componentes...
-[2024-06-11 12:55:32] INFO: 
+[2024-06-11 14:29:10] INFO: Verificando uso dos componentes...
+[2024-06-11 14:29:12] ERROR: Ocorreu um erro ao salvar suas capturas no MySQL
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at dao.componente.CapturaDAO.inserirCaptura(CapturaDAO.java:81)
+	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
+	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2024-06-11 14:29:15] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 147 MB
+[2024-06-11 14:29:16] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 147 MB
+[2024-06-11 14:29:16] INFO: A ram utilizada na janela de PID 10332 foi coletada com sucesso, uso de ram: 63 MB
+[2024-06-11 14:29:16] INFO: A ram utilizada na janela de PID 12800 foi coletada com sucesso, uso de ram: 1 MB
+[2024-06-11 14:29:16] ERROR: Ocorreu um erro ao salvar seus registros no MySQL:: 
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at dao.componente.RegistroAlertasDAO.gerarRegistro(RegistroAlertasDAO.java:43)
+	at service.ServiceSystem.registrar(ServiceSystem.java:49)
+	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:87)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
+	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2024-06-11 14:29:17] INFO: A ram utilizada na janela de PID 19572 foi coletada com sucesso, uso de ram: 55 MB
+[2024-06-11 14:29:17] INFO: A ram utilizada na janela de PID 23056 foi coletada com sucesso, uso de ram: 92 MB
+[2024-06-11 14:29:18] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 147 MB
+[2024-06-11 14:29:18] INFO: A ram utilizada na janela de PID 14016 foi coletada com sucesso, uso de ram: 8 MB
+[2024-06-11 14:29:19] INFO: A ram utilizada na janela de PID 22804 foi coletada com sucesso, uso de ram: 2 MB
+[2024-06-11 14:29:19] INFO: 
 Inserindo captura de dados no banco de dados:
     |Componente: Volume
-    |Dado capturado: 206,38
+    |Dado capturado: 147,31
     |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:55:32.395
-    |Id componente: 64
+    |Data hora captura: 2024-06-11T14:29:19.639312900
+    |Id componente: 19
 
-[2024-06-11 12:55:33] INFO: Verificando uso dos componentes...
-[2024-06-11 12:55:36] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 196 MB
-[2024-06-11 12:55:36] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 196 MB
-[2024-06-11 12:55:37] INFO: A ram utilizada na janela de PID 11276 foi coletada com sucesso, uso de ram: 58 MB
-[2024-06-11 12:55:37] INFO: A ram utilizada na janela de PID 25452 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-11 12:55:37] INFO: A ram utilizada na janela de PID 25452 foi coletada com sucesso, uso de ram: 2 MB
-[2024-06-11 12:55:38] INFO: A ram utilizada na janela de PID 11448 foi coletada com sucesso, uso de ram: 16 MB
-[2024-06-11 12:55:38] INFO: A ram utilizada na janela de PID 2680 foi coletada com sucesso, uso de ram: 42 MB
-[2024-06-11 12:55:38] INFO: A ram utilizada na janela de PID 15288 foi coletada com sucesso, uso de ram: 71 MB
-[2024-06-11 12:55:39] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 15 MB
-[2024-06-11 12:55:39] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 15 MB
-[2024-06-11 12:55:39] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 39,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-11T12:55:39.508134500
-    |Id componente: 59
+[2024-06-11 14:29:19] INFO: A ram utilizada na janela de PID 6100 foi coletada com sucesso, uso de ram: 3 MB
+[2024-06-11 14:29:20] INFO: A ram utilizada na janela de PID 13984 foi coletada com sucesso, uso de ram: 2 MB
+[2024-06-11 14:29:20] INFO: A ram utilizada na janela de PID 6100 foi coletada com sucesso, uso de ram: 3 MB
+[2024-06-11 14:29:21] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 147 MB
+[2024-06-11 14:29:21] INFO: A ram utilizada na janela de PID 13916 foi coletada com sucesso, uso de ram: 23 MB
+[2024-06-11 14:29:21] INFO: Verificando uso dos componentes...
+[2024-06-11 14:29:22] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 148 MB
+[2024-06-11 14:29:22] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 148 MB
+[2024-06-11 14:29:23] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 148 MB
+[2024-06-11 14:29:23] ERROR: Ocorreu um erro ao salvar suas capturas no MySQL
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at dao.componente.CapturaDAO.inserirCaptura(CapturaDAO.java:81)
+	at service.componente.ServiceComponente.lambda$iniciarCapturas$7(ServiceComponente.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at service.componente.ServiceComponente.iniciarCapturas(ServiceComponente.java:83)
+	at Main.lambda$iniciarMonitoramento$0(Main.java:174)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
 
-[2024-06-11 12:55:39] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 196 MB
-[2024-06-11 12:55:39] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 196 MB
-[2024-06-11 12:55:40] INFO: A ram utilizada na janela de PID 16272 foi coletada com sucesso, uso de ram: 0 MB
-[2024-06-11 12:55:40] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 15 MB
-[2024-06-11 12:55:40] INFO: Verificando uso dos componentes...
-[2024-06-11 12:55:40] INFO: A ram utilizada na janela de PID 3896 foi coletada com sucesso, uso de ram: 21 MB
-[2024-06-11 12:55:40] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 196 MB
-[2024-06-11 12:55:41] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 196 MB
-[2024-06-11 12:55:41] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 196 MB
-[2024-06-11 12:55:41] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 196 MB
-[2024-06-11 12:55:41] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 196 MB
-[2024-06-11 12:55:42] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 196 MB
-[2024-06-11 12:55:42] INFO: A ram utilizada na janela de PID 17856 foi coletada com sucesso, uso de ram: 34 MB
-[2024-06-11 12:55:42] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 196 MB
-[2024-06-11 12:55:42] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 196 MB
-[2024-06-11 12:55:43] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 196 MB
-[2024-06-11 12:55:44] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:55:44.914940400
-    |Id componente: 60
-
-[2024-06-11 12:55:45] INFO: Verificando uso dos componentes...
-[2024-06-11 12:55:50] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 39,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-11T12:55:50.455950200
-    |Id componente: 61
-
-[2024-06-11 12:55:51] INFO: Verificando uso dos componentes...
-[2024-06-11 12:55:56] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 7,27
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:55:56.005961600
-    |Id componente: 62
-
-[2024-06-11 12:55:57] INFO: Verificando uso dos componentes...
-[2024-06-11 12:56:01] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 76,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-11T12:56:01.476638100
-    |Id componente: 63
-
-[2024-06-11 12:56:02] INFO: Verificando uso dos componentes...
-[2024-06-11 12:56:08] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 206,38
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:56:08.096587200
-    |Id componente: 64
-
-[2024-06-11 12:56:09] INFO: Verificando uso dos componentes...
-[2024-06-11 12:56:11] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 143 MB
-[2024-06-11 12:56:12] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 143 MB
-[2024-06-11 12:56:12] INFO: A ram utilizada na janela de PID 15288 foi coletada com sucesso, uso de ram: 130 MB
-[2024-06-11 12:56:12] INFO: A ram utilizada na janela de PID 15288 foi coletada com sucesso, uso de ram: 132 MB
-[2024-06-11 12:56:13] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 14 MB
-[2024-06-11 12:56:13] INFO: A ram utilizada na janela de PID 11276 foi coletada com sucesso, uso de ram: 60 MB
-[2024-06-11 12:56:14] INFO: A ram utilizada na janela de PID 25452 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-11 12:56:14] INFO: A ram utilizada na janela de PID 25452 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-11 12:56:15] INFO: A ram utilizada na janela de PID 11448 foi coletada com sucesso, uso de ram: 16 MB
-[2024-06-11 12:56:15] INFO: A ram utilizada na janela de PID 2680 foi coletada com sucesso, uso de ram: 43 MB
-[2024-06-11 12:56:16] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 14 MB
-[2024-06-11 12:56:16] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 143 MB
-[2024-06-11 12:56:16] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 143 MB
-[2024-06-11 12:56:16] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 39,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-11T12:56:16.939780700
-    |Id componente: 59
-
-[2024-06-11 12:56:17] INFO: A ram utilizada na janela de PID 16272 foi coletada com sucesso, uso de ram: 0 MB
-[2024-06-11 12:56:17] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 14 MB
-[2024-06-11 12:56:17] INFO: A ram utilizada na janela de PID 3896 foi coletada com sucesso, uso de ram: 19 MB
-[2024-06-11 12:56:17] INFO: Verificando uso dos componentes...
-[2024-06-11 12:56:18] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 143 MB
-[2024-06-11 12:56:18] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 143 MB
-[2024-06-11 12:56:19] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 143 MB
-[2024-06-11 12:56:19] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 143 MB
-[2024-06-11 12:56:19] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 143 MB
-[2024-06-11 12:56:20] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 143 MB
-[2024-06-11 12:56:20] INFO: A ram utilizada na janela de PID 17856 foi coletada com sucesso, uso de ram: 22 MB
-[2024-06-11 12:56:20] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 143 MB
-[2024-06-11 12:56:20] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 143 MB
-[2024-06-11 12:56:21] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 143 MB
-[2024-06-11 12:56:22] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:56:22.449228500
-    |Id componente: 60
-
-[2024-06-11 12:56:23] INFO: Verificando uso dos componentes...
-[2024-06-11 12:56:28] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 39,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-11T12:56:28.037960900
-    |Id componente: 61
-
-[2024-06-11 12:56:29] INFO: Verificando uso dos componentes...
-[2024-06-11 12:56:33] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 7,11
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:56:33.503858400
-    |Id componente: 62
-
-[2024-06-11 12:56:34] INFO: Verificando uso dos componentes...
-[2024-06-11 12:56:39] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 76,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-11T12:56:39.053692800
-    |Id componente: 63
-
-[2024-06-11 12:56:40] INFO: Verificando uso dos componentes...
-[2024-06-11 12:56:44] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 206,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:56:44.695538600
-    |Id componente: 64
-
-[2024-06-11 12:56:45] INFO: Verificando uso dos componentes...
-[2024-06-11 12:56:49] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 145 MB
-[2024-06-11 12:56:50] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 145 MB
-[2024-06-11 12:56:50] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 14 MB
-[2024-06-11 12:56:50] INFO: A ram utilizada na janela de PID 15288 foi coletada com sucesso, uso de ram: 138 MB
-[2024-06-11 12:56:51] INFO: A ram utilizada na janela de PID 25452 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-11 12:56:51] INFO: A ram utilizada na janela de PID 11276 foi coletada com sucesso, uso de ram: 60 MB
-[2024-06-11 12:56:51] INFO: A ram utilizada na janela de PID 25452 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-11 12:56:51] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 39,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-11T12:56:51.692809400
-    |Id componente: 59
-
-[2024-06-11 12:56:51] INFO: A ram utilizada na janela de PID 11448 foi coletada com sucesso, uso de ram: 16 MB
-[2024-06-11 12:56:52] INFO: A ram utilizada na janela de PID 2680 foi coletada com sucesso, uso de ram: 43 MB
-[2024-06-11 12:56:52] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 14 MB
-[2024-06-11 12:56:52] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 144 MB
-[2024-06-11 12:56:52] INFO: Verificando uso dos componentes...
-[2024-06-11 12:56:52] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 144 MB
-[2024-06-11 12:56:53] INFO: A ram utilizada na janela de PID 16272 foi coletada com sucesso, uso de ram: 0 MB
-[2024-06-11 12:56:53] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 14 MB
-[2024-06-11 12:56:53] INFO: A ram utilizada na janela de PID 3896 foi coletada com sucesso, uso de ram: 19 MB
-[2024-06-11 12:56:53] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 144 MB
-[2024-06-11 12:56:54] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 144 MB
-[2024-06-11 12:56:54] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 144 MB
-[2024-06-11 12:56:54] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 144 MB
-[2024-06-11 12:56:54] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 144 MB
-[2024-06-11 12:56:55] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 144 MB
-[2024-06-11 12:56:55] INFO: A ram utilizada na janela de PID 17856 foi coletada com sucesso, uso de ram: 29 MB
-[2024-06-11 12:56:55] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 144 MB
-[2024-06-11 12:56:56] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 144 MB
-[2024-06-11 12:56:56] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 144 MB
-[2024-06-11 12:56:57] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:56:57.240578600
-    |Id componente: 60
-
-[2024-06-11 12:56:58] INFO: Verificando uso dos componentes...
-[2024-06-11 12:57:02] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 39,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-11T12:57:02.893619800
-    |Id componente: 61
-
-[2024-06-11 12:57:03] INFO: Verificando uso dos componentes...
-[2024-06-11 12:57:08] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,98
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:57:08.534618
-    |Id componente: 62
-
-[2024-06-11 12:57:09] INFO: Verificando uso dos componentes...
-[2024-06-11 12:57:14] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 76,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-11T12:57:14.088361400
-    |Id componente: 63
-
-[2024-06-11 12:57:15] INFO: Verificando uso dos componentes...
-[2024-06-11 12:57:19] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 206,39
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:57:19.799270900
-    |Id componente: 64
-
-[2024-06-11 12:57:20] INFO: Verificando uso dos componentes...
-[2024-06-11 12:57:23] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 131 MB
-[2024-06-11 12:57:24] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 131 MB
-[2024-06-11 12:57:24] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 14 MB
-[2024-06-11 12:57:24] INFO: A ram utilizada na janela de PID 15288 foi coletada com sucesso, uso de ram: 135 MB
-[2024-06-11 12:57:25] INFO: A ram utilizada na janela de PID 25452 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-11 12:57:25] INFO: A ram utilizada na janela de PID 11276 foi coletada com sucesso, uso de ram: 50 MB
-[2024-06-11 12:57:25] INFO: A ram utilizada na janela de PID 25452 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-11 12:57:25] INFO: A ram utilizada na janela de PID 11448 foi coletada com sucesso, uso de ram: 14 MB
-[2024-06-11 12:57:26] INFO: A ram utilizada na janela de PID 2680 foi coletada com sucesso, uso de ram: 37 MB
-[2024-06-11 12:57:26] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 14 MB
-[2024-06-11 12:57:26] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 131 MB
-[2024-06-11 12:57:26] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 39,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-11T12:57:26.619825
-    |Id componente: 59
-
-[2024-06-11 12:57:26] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 131 MB
-[2024-06-11 12:57:27] INFO: A ram utilizada na janela de PID 16272 foi coletada com sucesso, uso de ram: 0 MB
-[2024-06-11 12:57:27] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 14 MB
-[2024-06-11 12:57:27] INFO: A ram utilizada na janela de PID 3896 foi coletada com sucesso, uso de ram: 18 MB
-[2024-06-11 12:57:27] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 131 MB
-[2024-06-11 12:57:27] INFO: Verificando uso dos componentes...
-[2024-06-11 12:57:28] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 131 MB
-[2024-06-11 12:57:28] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 131 MB
-[2024-06-11 12:57:28] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 131 MB
-[2024-06-11 12:57:28] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 131 MB
-[2024-06-11 12:57:29] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 131 MB
-[2024-06-11 12:57:29] INFO: A ram utilizada na janela de PID 17856 foi coletada com sucesso, uso de ram: 29 MB
-[2024-06-11 12:57:29] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 131 MB
-[2024-06-11 12:57:29] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 131 MB
-[2024-06-11 12:57:30] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 131 MB
-[2024-06-11 12:57:32] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:57:32.329640500
-    |Id componente: 60
-
-[2024-06-11 12:57:33] INFO: Verificando uso dos componentes...
-[2024-06-11 12:57:37] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 39,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-11T12:57:37.812843600
-    |Id componente: 61
-
-[2024-06-11 12:57:38] INFO: Verificando uso dos componentes...
-[2024-06-11 12:57:43] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,78
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:57:43.351398500
-    |Id componente: 62
-
-[2024-06-11 12:57:44] INFO: Verificando uso dos componentes...
-[2024-06-11 12:57:48] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 77,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-11T12:57:48.962226
-    |Id componente: 63
-
-[2024-06-11 12:57:50] INFO: Verificando uso dos componentes...
-[2024-06-11 12:57:54] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 206,42
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:57:54.904505600
-    |Id componente: 64
-
-[2024-06-11 12:57:56] INFO: Verificando uso dos componentes...
-[2024-06-11 12:57:57] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 131 MB
-[2024-06-11 12:57:58] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 131 MB
-[2024-06-11 12:57:58] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 14 MB
-[2024-06-11 12:57:58] INFO: A ram utilizada na janela de PID 15288 foi coletada com sucesso, uso de ram: 131 MB
-[2024-06-11 12:57:59] INFO: A ram utilizada na janela de PID 25452 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-11 12:57:59] INFO: A ram utilizada na janela de PID 11276 foi coletada com sucesso, uso de ram: 50 MB
-[2024-06-11 12:57:59] INFO: A ram utilizada na janela de PID 25452 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-11 12:57:59] INFO: A ram utilizada na janela de PID 11448 foi coletada com sucesso, uso de ram: 14 MB
-[2024-06-11 12:58:00] INFO: A ram utilizada na janela de PID 2680 foi coletada com sucesso, uso de ram: 38 MB
-[2024-06-11 12:58:00] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 14 MB
-[2024-06-11 12:58:00] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 133 MB
-[2024-06-11 12:58:00] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 133 MB
-[2024-06-11 12:58:01] INFO: A ram utilizada na janela de PID 16272 foi coletada com sucesso, uso de ram: 0 MB
-[2024-06-11 12:58:01] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 14 MB
-[2024-06-11 12:58:01] INFO: A ram utilizada na janela de PID 3896 foi coletada com sucesso, uso de ram: 19 MB
-[2024-06-11 12:58:01] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 39,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-11T12:58:01.978207200
-    |Id componente: 59
-
-[2024-06-11 12:58:02] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 133 MB
-[2024-06-11 12:58:02] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 133 MB
-[2024-06-11 12:58:02] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 133 MB
-[2024-06-11 12:58:02] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 133 MB
-[2024-06-11 12:58:03] INFO: Verificando uso dos componentes...
-[2024-06-11 12:58:03] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 133 MB
-[2024-06-11 12:58:03] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 133 MB
-[2024-06-11 12:58:03] INFO: A ram utilizada na janela de PID 17856 foi coletada com sucesso, uso de ram: 29 MB
-[2024-06-11 12:58:03] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 133 MB
-[2024-06-11 12:58:04] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 133 MB
-[2024-06-11 12:58:04] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 133 MB
-[2024-06-11 12:58:07] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:58:07.381794900
-    |Id componente: 60
-
-[2024-06-11 12:58:08] INFO: Verificando uso dos componentes...
-[2024-06-11 12:58:13] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 39,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-11T12:58:13.362335900
-    |Id componente: 61
-
-[2024-06-11 12:58:14] INFO: Verificando uso dos componentes...
-[2024-06-11 12:58:19] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 6,85
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:58:19.355770800
-    |Id componente: 62
-
-[2024-06-11 12:58:20] INFO: Verificando uso dos componentes...
-[2024-06-11 12:58:24] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 77,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-11T12:58:24.789298
-    |Id componente: 63
-
-[2024-06-11 12:58:25] INFO: Verificando uso dos componentes...
-[2024-06-11 12:58:30] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Volume
-    |Dado capturado: 206,42
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:58:30.342038700
-    |Id componente: 64
-
-[2024-06-11 12:58:31] INFO: Verificando uso dos componentes...
-[2024-06-11 12:58:32] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 135 MB
-[2024-06-11 12:58:33] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 135 MB
-[2024-06-11 12:58:33] INFO: A ram utilizada na janela de PID 11276 foi coletada com sucesso, uso de ram: 57 MB
-[2024-06-11 12:58:33] INFO: A ram utilizada na janela de PID 25452 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-11 12:58:34] INFO: A ram utilizada na janela de PID 15288 foi coletada com sucesso, uso de ram: 131 MB
-[2024-06-11 12:58:34] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 14 MB
-[2024-06-11 12:58:34] INFO: A ram utilizada na janela de PID 25452 foi coletada com sucesso, uso de ram: 1 MB
-[2024-06-11 12:58:34] INFO: A ram utilizada na janela de PID 11448 foi coletada com sucesso, uso de ram: 14 MB
-[2024-06-11 12:58:35] INFO: A ram utilizada na janela de PID 2680 foi coletada com sucesso, uso de ram: 38 MB
-[2024-06-11 12:58:35] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 14 MB
-[2024-06-11 12:58:35] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 135 MB
-[2024-06-11 12:58:36] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 135 MB
-[2024-06-11 12:58:36] INFO: A ram utilizada na janela de PID 16272 foi coletada com sucesso, uso de ram: 0 MB
-[2024-06-11 12:58:36] INFO: A ram utilizada na janela de PID 28296 foi coletada com sucesso, uso de ram: 14 MB
-[2024-06-11 12:58:36] INFO: A ram utilizada na janela de PID 3896 foi coletada com sucesso, uso de ram: 19 MB
-[2024-06-11 12:58:37] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 135 MB
-[2024-06-11 12:58:37] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 135 MB
-[2024-06-11 12:58:37] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: CPU
-    |Dado capturado: 39,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-11T12:58:37.333026600
-    |Id componente: 59
-
-[2024-06-11 12:58:37] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 135 MB
-[2024-06-11 12:58:37] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 135 MB
-[2024-06-11 12:58:38] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 135 MB
-[2024-06-11 12:58:38] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 135 MB
-[2024-06-11 12:58:38] INFO: Verificando uso dos componentes...
-[2024-06-11 12:58:38] INFO: A ram utilizada na janela de PID 17856 foi coletada com sucesso, uso de ram: 29 MB
-[2024-06-11 12:58:38] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 135 MB
-[2024-06-11 12:58:39] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 135 MB
-[2024-06-11 12:58:39] INFO: A ram utilizada na janela de PID 20388 foi coletada com sucesso, uso de ram: 135 MB
-[2024-06-11 12:58:42] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: HDD
-    |Dado capturado: 238,47
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:58:42.772528500
-    |Id componente: 60
-
-[2024-06-11 12:58:43] INFO: Verificando uso dos componentes...
-[2024-06-11 12:58:48] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: GPU
-    |Dado capturado: 39,05
-    |Unidade de medida: °C
-    |Data hora captura: 2024-06-11T12:58:48.215045500
-    |Id componente: 61
-
-[2024-06-11 12:58:49] INFO: Verificando uso dos componentes...
-[2024-06-11 12:58:53] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: MemoriaRam
-    |Dado capturado: 7,05
-    |Unidade de medida: GB
-    |Data hora captura: 2024-06-11T12:58:53.775364700
-    |Id componente: 62
-
-[2024-06-11 12:58:54] INFO: Verificando uso dos componentes...
-[2024-06-11 12:58:59] INFO: 
-Inserindo captura de dados no banco de dados:
-    |Componente: Bateria
-    |Dado capturado: 77,00
-    |Unidade de medida: %
-    |Data hora captura: 2024-06-11T12:58:59.301702700
-    |Id componente: 63
-
-[2024-06-11 12:59:00] INFO: Verificando uso dos componentes...
+[2024-06-11 14:29:23] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 148 MB
+[2024-06-11 14:29:24] INFO: A ram utilizada na janela de PID 7840 foi coletada com sucesso, uso de ram: 148 MB

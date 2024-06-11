@@ -16745,3 +16745,2196 @@
 [2024-06-11 12:58:39] [INFO] Uso da ram pela janela: 135.0
 [2024-06-11 12:58:39] [INFO] Dados da janela gravados.
 [2024-06-11 12:58:39] [INFO] Todas as janelas verificadas.
+[2024-06-11 13:59:23] [INFO] Servidor iniciando.
+[2024-06-11 13:59:24] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 14:00:07] [INFO] Servidor iniciando.
+[2024-06-11 14:00:09] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 14:00:21] [INFO] Usuário logado com sucesso: l_julia.campioto@gmail.com
+[2024-06-11 14:00:26] [INFO] Capturando dados da sua CPU.
+[2024-06-11 14:00:26] [INFO] Número de CPUs lógicas: 8
+[2024-06-11 14:00:26] [INFO] Número de CPUs físicas: 4
+[2024-06-11 14:00:26] [INFO] Microarquitetura: Tiger Lake
+[2024-06-11 14:00:26] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-11 14:00:26] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-11 14:00:26] [INFO] Fabricante: GenuineIntel
+[2024-06-11 14:00:26] [INFO] Frequência: 2.419E9
+[2024-06-11 14:00:26] [INFO] Número de pacotes físicos: 1
+[2024-06-11 14:00:29] [INFO] Uso da CPU: 12.747094764586079
+[2024-06-11 14:00:29] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-11 14:00:31] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-11 14:00:31] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-11 14:00:31] [INFO] Capturando dados do seu HDD
+[2024-06-11 14:00:31] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-11 14:00:31] [INFO] Serial do disco: 0000_0000_0000_0001_00A0_7523_4085_5509.
+[2024-06-11 14:00:31] [INFO] Modelo do disco: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
+[2024-06-11 14:00:31] [INFO] Escritas do disco: 4.290946006774902
+[2024-06-11 14:00:31] [INFO] Leituras do disco: 11.306504249572754
+[2024-06-11 14:00:31] [INFO] Bytes de escritas do disco: 176.31672382354736
+[2024-06-11 14:00:31] [INFO] Bytes de leitura do disco: 343.0043954849243
+[2024-06-11 14:00:31] [INFO] Tamanho do disco: 476.94
+[2024-06-11 14:00:31] [INFO] Tempo de transferência do disco: 3037.5919444444444
+[2024-06-11 14:00:31] [INFO] Dados do disco gravados.
+[2024-06-11 14:00:31] [INFO] Capturando dados da GPU.
+[2024-06-11 14:00:31] [INFO] Dados do fabricante da GPU capturados com sucesso: Intel Corporation
+[2024-06-11 14:00:31] [INFO] Dados do ID da GPU capturados com sucesso: VideoController1
+[2024-06-11 14:00:31] [INFO] O nome da GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-11 14:00:31] [INFO] A VRam da GPU foi capturada com sucesso: 1.0
+[2024-06-11 14:00:31] [INFO] A Versão da GPU foi capturada com sucesso: 31.0.101.4953
+[2024-06-11 14:00:32] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00.
+[2024-06-11 14:00:32] [INFO] Dados da GPU gravados.
+[2024-06-11 14:00:32] [INFO] Capturando dados da sua memória RAM.
+[2024-06-11 14:00:32] [INFO] Memória disponível: 358.66015625
+[2024-06-11 14:00:32] [INFO] Memória total: 7.729286193847656
+[2024-06-11 14:00:32] [INFO] Memória em uso: 7.379032135009766
+[2024-06-11 14:00:32] [INFO] Dados da memória RAM capturados com sucesso.
+[2024-06-11 14:00:32] [INFO] Capturando dados da sua bateria.
+[2024-06-11 14:00:32] [INFO] Amperagem da bateria: -1399.7429305912597
+[2024-06-11 14:00:32] [INFO] Nome do dispositivo da bateria: DELL MGCM535
+[2024-06-11 14:00:32] [INFO] Número de série da bateria: 1298
+[2024-06-11 14:00:32] [INFO] Química da bateria: LiP
+[2024-06-11 14:00:32] [INFO] Nome da bateria: System Battery
+[2024-06-11 14:00:32] [INFO] Voltagem da bateria: 11.67
+[2024-06-11 14:00:32] [INFO] Capacidade atual da bateria: 28.443359375
+[2024-06-11 14:00:32] [INFO] Número de ciclos da bateria: 0
+[2024-06-11 14:00:32] [INFO] Capacidade de design da bateria: 39.638671875
+[2024-06-11 14:00:32] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-11 14:00:32] [INFO] Tempo restante da bateria (instantâneo): 6418.0
+[2024-06-11 14:00:32] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-11 14:00:32] [INFO] Taxa de uso de energia da bateria: -16335.0
+[2024-06-11 14:00:32] [INFO] Temperatura da bateria: 0.0
+[2024-06-11 14:00:32] [INFO] Capacidade máxima da bateria: 34.9912109375
+[2024-06-11 14:00:32] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-11 14:00:32] [INFO] Data de fabricação da bateria: N/A
+[2024-06-11 14:00:32] [INFO] Fabricante da bateria: SMP
+[2024-06-11 14:00:33] [INFO] Dados da bateria capturados com sucesso: 81.0
+[2024-06-11 14:00:33] [INFO] Dados da bateria gravados.
+[2024-06-11 14:00:33] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-11 14:00:33] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-11 14:00:33] [INFO] Nome do volume capturado: \\?\Volume{630e018e-ccfb-41c7-ad21-5c4fcb9fa902}\
+[2024-06-11 14:00:33] [INFO] Espaço disponível no volume lógico capturado: 311.03125381469727
+[2024-06-11 14:00:33] [INFO] Espaço total do volume lógico capturado com sucesso: 457.89648056030273
+[2024-06-11 14:00:33] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-11 14:00:33] [INFO] UUID do volume lógico capturado: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
+[2024-06-11 14:00:33] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-11 14:00:33] [INFO] Dados do volume lógico gravados.
+[2024-06-11 14:00:33] [INFO] Todos os volumes lógicos verificados.
+[2024-06-11 14:00:33] [INFO] Capturando dados dos seus Apps.
+[2024-06-11 14:00:33] [INFO] Capturando dados da sua CPU.
+[2024-06-11 14:00:33] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:00:33] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:00:33] [INFO] ID da janela: 133208
+[2024-06-11 14:00:33] [INFO] PID da janela: 7840
+[2024-06-11 14:00:33] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-06-11 14:00:33] [INFO] Número de CPUs lógicas: 8
+[2024-06-11 14:00:33] [INFO] Número de CPUs físicas: 4
+[2024-06-11 14:00:33] [INFO] Microarquitetura: Tiger Lake
+[2024-06-11 14:00:33] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-11 14:00:33] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-11 14:00:33] [INFO] Fabricante: GenuineIntel
+[2024-06-11 14:00:33] [INFO] Frequência: 2.419E9
+[2024-06-11 14:00:33] [INFO] Número de pacotes físicos: 1
+[2024-06-11 14:00:33] [INFO] Uso da CPU: 12.747094764586079
+[2024-06-11 14:00:33] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-11 14:00:33] [INFO] Uso da ram pela janela: 131.0
+[2024-06-11 14:00:33] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:33] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:00:33] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:00:33] [INFO] ID da janela: 131216
+[2024-06-11 14:00:33] [INFO] PID da janela: 7840
+[2024-06-11 14:00:33] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
+[2024-06-11 14:00:34] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-11 14:00:34] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-11 14:00:34] [INFO] Capturando dados do seu HDD
+[2024-06-11 14:00:34] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-11 14:00:34] [INFO] Serial do disco: 0000_0000_0000_0001_00A0_7523_4085_5509.
+[2024-06-11 14:00:34] [INFO] Modelo do disco: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
+[2024-06-11 14:00:34] [INFO] Escritas do disco: 4.291362762451172
+[2024-06-11 14:00:34] [INFO] Leituras do disco: 11.307538986206055
+[2024-06-11 14:00:34] [INFO] Bytes de escritas do disco: 176.352303981781
+[2024-06-11 14:00:34] [INFO] Bytes de leitura do disco: 343.0494966506958
+[2024-06-11 14:00:34] [INFO] Tamanho do disco: 476.94
+[2024-06-11 14:00:34] [INFO] Tempo de transferência do disco: 3037.6691666666666
+[2024-06-11 14:00:34] [INFO] Dados do disco gravados.
+[2024-06-11 14:00:34] [INFO] Capturando dados da GPU.
+[2024-06-11 14:00:34] [INFO] Dados do fabricante da GPU capturados com sucesso: Intel Corporation
+[2024-06-11 14:00:34] [INFO] Dados do ID da GPU capturados com sucesso: VideoController1
+[2024-06-11 14:00:34] [INFO] O nome da GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-11 14:00:34] [INFO] A VRam da GPU foi capturada com sucesso: 1.0
+[2024-06-11 14:00:34] [INFO] A Versão da GPU foi capturada com sucesso: 31.0.101.4953
+[2024-06-11 14:00:34] [INFO] Uso da ram pela janela: 131.0
+[2024-06-11 14:00:34] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:34] [INFO] Título da janela: app_client – Main.java [app-client-api]
+[2024-06-11 14:00:34] [INFO] Comando da janela: C:\Users\julia\AppData\Local\Programs\IntelliJ IDEA Community Edition\bin\idea64.exe
+[2024-06-11 14:00:34] [INFO] ID da janela: 134760
+[2024-06-11 14:00:34] [INFO] PID da janela: 12800
+[2024-06-11 14:00:34] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:00:34] [INFO] Uso da ram pela janela: 1.0
+[2024-06-11 14:00:34] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:34] [INFO] Título da janela: MySQL Workbench
+[2024-06-11 14:00:34] [INFO] Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
+[2024-06-11 14:00:34] [INFO] ID da janela: 590436
+[2024-06-11 14:00:34] [INFO] PID da janela: 19572
+[2024-06-11 14:00:34] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
+[2024-06-11 14:00:35] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00.
+[2024-06-11 14:00:35] [INFO] Dados da GPU gravados.
+[2024-06-11 14:00:35] [INFO] Capturando dados da sua memória RAM.
+[2024-06-11 14:00:35] [INFO] Memória disponível: 318.8984375
+[2024-06-11 14:00:35] [INFO] Memória total: 7.729286193847656
+[2024-06-11 14:00:35] [INFO] Memória em uso: 7.4178619384765625
+[2024-06-11 14:00:35] [INFO] Dados da memória RAM capturados com sucesso.
+[2024-06-11 14:00:35] [INFO] Capturando dados da sua bateria.
+[2024-06-11 14:00:35] [INFO] Amperagem da bateria: -1819.0681622088007
+[2024-06-11 14:00:35] [INFO] Nome do dispositivo da bateria: DELL MGCM535
+[2024-06-11 14:00:35] [INFO] Número de série da bateria: 1298
+[2024-06-11 14:00:35] [INFO] Química da bateria: LiP
+[2024-06-11 14:00:35] [INFO] Nome da bateria: System Battery
+[2024-06-11 14:00:35] [INFO] Voltagem da bateria: 11.59
+[2024-06-11 14:00:35] [INFO] Capacidade atual da bateria: 28.421875
+[2024-06-11 14:00:35] [INFO] Número de ciclos da bateria: 0
+[2024-06-11 14:00:35] [INFO] Capacidade de design da bateria: 39.638671875
+[2024-06-11 14:00:35] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-11 14:00:35] [INFO] Tempo restante da bateria (instantâneo): 4969.0
+[2024-06-11 14:00:35] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-11 14:00:35] [INFO] Taxa de uso de energia da bateria: -21083.0
+[2024-06-11 14:00:35] [INFO] Temperatura da bateria: 0.0
+[2024-06-11 14:00:35] [INFO] Capacidade máxima da bateria: 34.9912109375
+[2024-06-11 14:00:35] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-11 14:00:35] [INFO] Data de fabricação da bateria: N/A
+[2024-06-11 14:00:35] [INFO] Fabricante da bateria: SMP
+[2024-06-11 14:00:35] [INFO] Uso da ram pela janela: 63.0
+[2024-06-11 14:00:35] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:35] [INFO] Título da janela: WhatsApp - Google Chrome
+[2024-06-11 14:00:35] [INFO] Comando da janela: C:\Program Files\Google\Chrome\Application\chrome.exe
+[2024-06-11 14:00:35] [INFO] ID da janela: 66840
+[2024-06-11 14:00:35] [INFO] PID da janela: 23056
+[2024-06-11 14:00:35] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:00:35] [INFO] Uso da ram pela janela: 110.0
+[2024-06-11 14:00:35] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:35] [INFO] Título da janela: * Sem título - Bloco de notas
+[2024-06-11 14:00:35] [INFO] Comando da janela: C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2404.10.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe
+[2024-06-11 14:00:35] [INFO] ID da janela: 264234
+[2024-06-11 14:00:35] [INFO] PID da janela: 14016
+[2024-06-11 14:00:35] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=80,y=110,width=865,height=745]
+[2024-06-11 14:00:35] [INFO] Dados da bateria capturados com sucesso: 81.0
+[2024-06-11 14:00:35] [INFO] Dados da bateria gravados.
+[2024-06-11 14:00:35] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-11 14:00:35] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-11 14:00:35] [INFO] Nome do volume capturado: \\?\Volume{630e018e-ccfb-41c7-ad21-5c4fcb9fa902}\
+[2024-06-11 14:00:35] [INFO] Espaço disponível no volume lógico capturado: 311.0411186218262
+[2024-06-11 14:00:35] [INFO] Espaço total do volume lógico capturado com sucesso: 457.89648056030273
+[2024-06-11 14:00:35] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-11 14:00:35] [INFO] UUID do volume lógico capturado: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
+[2024-06-11 14:00:35] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-11 14:00:35] [INFO] Dados do volume lógico gravados.
+[2024-06-11 14:00:35] [INFO] Todos os volumes lógicos verificados.
+[2024-06-11 14:00:36] [INFO] Uso da ram pela janela: 28.0
+[2024-06-11 14:00:36] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:36] [INFO] Título da janela: visualopsnotificationschannel (Canal) - VisualOpsNotifications - Slack
+[2024-06-11 14:00:36] [INFO] Comando da janela: C:\Users\julia\AppData\Local\slack\app-4.38.127\slack.exe
+[2024-06-11 14:00:36] [INFO] ID da janela: 67030
+[2024-06-11 14:00:36] [INFO] PID da janela: 10332
+[2024-06-11 14:00:36] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:00:36] [INFO] Uso da ram pela janela: 53.0
+[2024-06-11 14:00:36] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:36] [INFO] Título da janela: Configurações
+[2024-06-11 14:00:36] [INFO] Comando da janela: C:\Windows\ImmersiveControlPanel\SystemSettings.exe
+[2024-06-11 14:00:36] [INFO] ID da janela: 329080
+[2024-06-11 14:00:36] [INFO] PID da janela: 22804
+[2024-06-11 14:00:36] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
+[2024-06-11 14:00:37] [INFO] Uso da ram pela janela: 2.0
+[2024-06-11 14:00:37] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:37] [INFO] Título da janela: Configurações
+[2024-06-11 14:00:37] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-11 14:00:37] [INFO] ID da janela: 132674
+[2024-06-11 14:00:37] [INFO] PID da janela: 6100
+[2024-06-11 14:00:37] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:00:37] [INFO] Uso da ram pela janela: 6.0
+[2024-06-11 14:00:37] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:37] [INFO] Título da janela: Email
+[2024-06-11 14:00:37] [INFO] Comando da janela: C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_16005.14326.21944.0_x64__8wekyb3d8bbwe\HxOutlook.exe
+[2024-06-11 14:00:37] [INFO] ID da janela: 197990
+[2024-06-11 14:00:37] [INFO] PID da janela: 13984
+[2024-06-11 14:00:37] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=49,width=1920,height=980]
+[2024-06-11 14:00:38] [INFO] Uso da ram pela janela: 2.0
+[2024-06-11 14:00:38] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:38] [INFO] Título da janela: Caixa de entrada - Outlook ‎- Email
+[2024-06-11 14:00:38] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-11 14:00:38] [INFO] ID da janela: 133104
+[2024-06-11 14:00:38] [INFO] PID da janela: 6100
+[2024-06-11 14:00:38] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:00:38] [INFO] Uso da ram pela janela: 6.0
+[2024-06-11 14:00:38] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:38] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:00:38] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:00:38] [INFO] ID da janela: 67072
+[2024-06-11 14:00:38] [INFO] PID da janela: 7840
+[2024-06-11 14:00:38] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-06-11 14:00:39] [INFO] Uso da ram pela janela: 132.0
+[2024-06-11 14:00:39] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:39] [INFO] Título da janela: Experiência de Entrada do Windows
+[2024-06-11 14:00:39] [INFO] Comando da janela: C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe
+[2024-06-11 14:00:39] [INFO] ID da janela: 197004
+[2024-06-11 14:00:39] [INFO] PID da janela: 13916
+[2024-06-11 14:00:39] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-11 14:00:39] [INFO] Uso da ram pela janela: 30.0
+[2024-06-11 14:00:39] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:39] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:00:39] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:00:39] [INFO] ID da janela: 65918
+[2024-06-11 14:00:39] [INFO] PID da janela: 7840
+[2024-06-11 14:00:39] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
+[2024-06-11 14:00:40] [INFO] Uso da ram pela janela: 116.0
+[2024-06-11 14:00:40] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:40] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:00:40] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:00:40] [INFO] ID da janela: 65928
+[2024-06-11 14:00:40] [INFO] PID da janela: 7840
+[2024-06-11 14:00:40] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:00:40] [INFO] Uso da ram pela janela: 116.0
+[2024-06-11 14:00:40] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:40] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:00:40] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:00:40] [INFO] ID da janela: 65882
+[2024-06-11 14:00:40] [INFO] PID da janela: 7840
+[2024-06-11 14:00:40] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:00:41] [INFO] Uso da ram pela janela: 116.0
+[2024-06-11 14:00:41] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:41] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:00:41] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:00:41] [INFO] ID da janela: 65880
+[2024-06-11 14:00:41] [INFO] PID da janela: 7840
+[2024-06-11 14:00:41] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:00:41] [INFO] Uso da ram pela janela: 116.0
+[2024-06-11 14:00:41] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:41] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:00:41] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:00:41] [INFO] ID da janela: 65878
+[2024-06-11 14:00:41] [INFO] PID da janela: 7840
+[2024-06-11 14:00:41] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:00:42] [INFO] Uso da ram pela janela: 116.0
+[2024-06-11 14:00:42] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:42] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:00:42] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:00:42] [INFO] ID da janela: 65876
+[2024-06-11 14:00:42] [INFO] PID da janela: 7840
+[2024-06-11 14:00:42] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:00:42] [INFO] Uso da ram pela janela: 116.0
+[2024-06-11 14:00:42] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:42] [INFO] Título da janela: Program Manager
+[2024-06-11 14:00:42] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:00:42] [INFO] ID da janela: 65822
+[2024-06-11 14:00:42] [INFO] PID da janela: 7840
+[2024-06-11 14:00:42] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-11 14:00:43] [INFO] Uso da ram pela janela: 117.0
+[2024-06-11 14:00:43] [INFO] Dados da janela gravados.
+[2024-06-11 14:00:43] [INFO] Todas as janelas verificadas.
+[2024-06-11 14:01:15] [INFO] Servidor iniciando.
+[2024-06-11 14:01:17] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 14:01:49] [INFO] Usuário logado com sucesso: l_julia.campioto@gmail.com
+[2024-06-11 14:01:53] [INFO] Capturando dados da sua CPU.
+[2024-06-11 14:01:53] [INFO] Número de CPUs lógicas: 8
+[2024-06-11 14:01:53] [INFO] Número de CPUs físicas: 4
+[2024-06-11 14:01:53] [INFO] Microarquitetura: Tiger Lake
+[2024-06-11 14:01:53] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-11 14:01:53] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-11 14:01:53] [INFO] Fabricante: GenuineIntel
+[2024-06-11 14:01:53] [INFO] Frequência: 2.419E9
+[2024-06-11 14:01:53] [INFO] Número de pacotes físicos: 1
+[2024-06-11 14:01:55] [INFO] Uso da CPU: 13.846714441880238
+[2024-06-11 14:01:55] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-11 14:01:57] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-11 14:01:57] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-11 14:01:57] [INFO] Capturando dados do seu HDD
+[2024-06-11 14:01:57] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-11 14:01:57] [INFO] Serial do disco: 0000_0000_0000_0001_00A0_7523_4085_5509.
+[2024-06-11 14:01:57] [INFO] Modelo do disco: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
+[2024-06-11 14:01:57] [INFO] Escritas do disco: 4.297690391540527
+[2024-06-11 14:01:57] [INFO] Leituras do disco: 11.339128494262695
+[2024-06-11 14:01:57] [INFO] Bytes de escritas do disco: 177.0174536705017
+[2024-06-11 14:01:57] [INFO] Bytes de leitura do disco: 344.454074382782
+[2024-06-11 14:01:57] [INFO] Tamanho do disco: 476.94
+[2024-06-11 14:01:57] [INFO] Tempo de transferência do disco: 3047.401388888889
+[2024-06-11 14:01:57] [INFO] Dados do disco gravados.
+[2024-06-11 14:01:57] [INFO] Capturando dados da GPU.
+[2024-06-11 14:01:57] [INFO] Dados do fabricante da GPU capturados com sucesso: Intel Corporation
+[2024-06-11 14:01:57] [INFO] Dados do ID da GPU capturados com sucesso: VideoController1
+[2024-06-11 14:01:57] [INFO] O nome da GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-11 14:01:57] [INFO] A VRam da GPU foi capturada com sucesso: 1.0
+[2024-06-11 14:01:57] [INFO] A Versão da GPU foi capturada com sucesso: 31.0.101.4953
+[2024-06-11 14:01:58] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00.
+[2024-06-11 14:01:58] [INFO] Dados da GPU gravados.
+[2024-06-11 14:01:58] [INFO] Capturando dados da sua memória RAM.
+[2024-06-11 14:01:58] [INFO] Memória disponível: 375.53125
+[2024-06-11 14:01:58] [INFO] Memória total: 7.729286193847656
+[2024-06-11 14:01:58] [INFO] Memória em uso: 7.362556457519531
+[2024-06-11 14:01:58] [INFO] Dados da memória RAM capturados com sucesso.
+[2024-06-11 14:01:58] [INFO] Capturando dados da sua bateria.
+[2024-06-11 14:01:58] [INFO] Amperagem da bateria: -1819.4312386550262
+[2024-06-11 14:01:58] [INFO] Nome do dispositivo da bateria: DELL MGCM535
+[2024-06-11 14:01:58] [INFO] Número de série da bateria: 1298
+[2024-06-11 14:01:58] [INFO] Química da bateria: LiP
+[2024-06-11 14:01:58] [INFO] Nome da bateria: System Battery
+[2024-06-11 14:01:58] [INFO] Voltagem da bateria: 11.569
+[2024-06-11 14:01:58] [INFO] Capacidade atual da bateria: 28.1357421875
+[2024-06-11 14:01:58] [INFO] Número de ciclos da bateria: 0
+[2024-06-11 14:01:58] [INFO] Capacidade de design da bateria: 39.638671875
+[2024-06-11 14:01:58] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-11 14:01:58] [INFO] Tempo restante da bateria (instantâneo): 4927.0
+[2024-06-11 14:01:58] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-11 14:01:58] [INFO] Taxa de uso de energia da bateria: -21049.0
+[2024-06-11 14:01:58] [INFO] Temperatura da bateria: 0.0
+[2024-06-11 14:01:58] [INFO] Capacidade máxima da bateria: 34.9912109375
+[2024-06-11 14:01:58] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-11 14:01:58] [INFO] Data de fabricação da bateria: N/A
+[2024-06-11 14:01:58] [INFO] Fabricante da bateria: SMP
+[2024-06-11 14:01:59] [INFO] Dados da bateria capturados com sucesso: 80.0
+[2024-06-11 14:01:59] [INFO] Dados da bateria gravados.
+[2024-06-11 14:01:59] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-11 14:02:00] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-11 14:02:00] [INFO] Nome do volume capturado: \\?\Volume{630e018e-ccfb-41c7-ad21-5c4fcb9fa902}\
+[2024-06-11 14:02:00] [INFO] Espaço disponível no volume lógico capturado: 311.0385932922363
+[2024-06-11 14:02:00] [INFO] Espaço total do volume lógico capturado com sucesso: 457.89648056030273
+[2024-06-11 14:02:00] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-11 14:02:00] [INFO] UUID do volume lógico capturado: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
+[2024-06-11 14:02:00] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-11 14:02:00] [INFO] Dados do volume lógico gravados.
+[2024-06-11 14:02:00] [INFO] Todos os volumes lógicos verificados.
+[2024-06-11 14:02:00] [INFO] Capturando dados dos seus Apps.
+[2024-06-11 14:02:00] [INFO] Capturando dados da sua CPU.
+[2024-06-11 14:02:00] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:02:00] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:00] [INFO] Número de CPUs lógicas: 8
+[2024-06-11 14:02:00] [INFO] ID da janela: 133208
+[2024-06-11 14:02:00] [INFO] PID da janela: 7840
+[2024-06-11 14:02:00] [INFO] Número de CPUs físicas: 4
+[2024-06-11 14:02:00] [INFO] Microarquitetura: Tiger Lake
+[2024-06-11 14:02:00] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-11 14:02:00] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-11 14:02:00] [INFO] Fabricante: GenuineIntel
+[2024-06-11 14:02:00] [INFO] Frequência: 2.419E9
+[2024-06-11 14:02:00] [INFO] Número de pacotes físicos: 1
+[2024-06-11 14:02:00] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-06-11 14:02:00] [INFO] Uso da CPU: 13.846714441880238
+[2024-06-11 14:02:00] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-11 14:02:01] [INFO] Uso da ram pela janela: 235.0
+[2024-06-11 14:02:01] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:01] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:02:01] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:01] [INFO] ID da janela: 131216
+[2024-06-11 14:02:01] [INFO] PID da janela: 7840
+[2024-06-11 14:02:01] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
+[2024-06-11 14:02:02] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-11 14:02:02] [INFO] Uso da ram pela janela: 235.0
+[2024-06-11 14:02:02] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-11 14:02:02] [INFO] Capturando dados do seu HDD
+[2024-06-11 14:02:02] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:02] [INFO] Título da janela: Miro - Google Chrome
+[2024-06-11 14:02:02] [INFO] Comando da janela: C:\Program Files\Google\Chrome\Application\chrome.exe
+[2024-06-11 14:02:02] [INFO] ID da janela: 66840
+[2024-06-11 14:02:02] [INFO] PID da janela: 23056
+[2024-06-11 14:02:02] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:02:02] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-11 14:02:02] [INFO] Serial do disco: 0000_0000_0000_0001_00A0_7523_4085_5509.
+[2024-06-11 14:02:02] [INFO] Modelo do disco: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
+[2024-06-11 14:02:02] [INFO] Escritas do disco: 4.298663139343262
+[2024-06-11 14:02:02] [INFO] Leituras do disco: 11.344176292419434
+[2024-06-11 14:02:02] [INFO] Bytes de escritas do disco: 177.0265154838562
+[2024-06-11 14:02:02] [INFO] Bytes de leitura do disco: 344.84687185287476
+[2024-06-11 14:02:02] [INFO] Tamanho do disco: 476.94
+[2024-06-11 14:02:02] [INFO] Tempo de transferência do disco: 3050.418888888889
+[2024-06-11 14:02:02] [INFO] Dados do disco gravados.
+[2024-06-11 14:02:02] [INFO] Capturando dados da GPU.
+[2024-06-11 14:02:02] [INFO] Dados do fabricante da GPU capturados com sucesso: Intel Corporation
+[2024-06-11 14:02:02] [INFO] Dados do ID da GPU capturados com sucesso: VideoController1
+[2024-06-11 14:02:02] [INFO] O nome da GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-11 14:02:02] [INFO] A VRam da GPU foi capturada com sucesso: 1.0
+[2024-06-11 14:02:02] [INFO] A Versão da GPU foi capturada com sucesso: 31.0.101.4953
+[2024-06-11 14:02:02] [INFO] Uso da ram pela janela: 150.0
+[2024-06-11 14:02:02] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:02] [INFO] Título da janela: app_client – Main.java [app-client-api]
+[2024-06-11 14:02:02] [INFO] Comando da janela: C:\Users\julia\AppData\Local\Programs\IntelliJ IDEA Community Edition\bin\idea64.exe
+[2024-06-11 14:02:02] [INFO] ID da janela: 134760
+[2024-06-11 14:02:02] [INFO] PID da janela: 12800
+[2024-06-11 14:02:02] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:02:03] [INFO] Uso da ram pela janela: 1.0
+[2024-06-11 14:02:03] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:03] [INFO] Título da janela: MySQL Workbench
+[2024-06-11 14:02:03] [INFO] Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
+[2024-06-11 14:02:03] [INFO] ID da janela: 590436
+[2024-06-11 14:02:03] [INFO] PID da janela: 19572
+[2024-06-11 14:02:03] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
+[2024-06-11 14:02:03] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00.
+[2024-06-11 14:02:03] [INFO] Dados da GPU gravados.
+[2024-06-11 14:02:03] [INFO] Capturando dados da sua memória RAM.
+[2024-06-11 14:02:03] [INFO] Memória disponível: 474.28515625
+[2024-06-11 14:02:03] [INFO] Memória total: 7.729286193847656
+[2024-06-11 14:02:03] [INFO] Memória em uso: 7.266117095947266
+[2024-06-11 14:02:03] [INFO] Dados da memória RAM capturados com sucesso.
+[2024-06-11 14:02:03] [INFO] Capturando dados da sua bateria.
+[2024-06-11 14:02:03] [INFO] Amperagem da bateria: -1521.1897189031206
+[2024-06-11 14:02:03] [INFO] Nome do dispositivo da bateria: DELL MGCM535
+[2024-06-11 14:02:03] [INFO] Número de série da bateria: 1298
+[2024-06-11 14:02:03] [INFO] Química da bateria: LiP
+[2024-06-11 14:02:03] [INFO] Nome da bateria: System Battery
+[2024-06-11 14:02:03] [INFO] Voltagem da bateria: 11.633
+[2024-06-11 14:02:03] [INFO] Capacidade atual da bateria: 28.103515625
+[2024-06-11 14:02:03] [INFO] Número de ciclos da bateria: 0
+[2024-06-11 14:02:03] [INFO] Capacidade de design da bateria: 39.638671875
+[2024-06-11 14:02:03] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-11 14:02:03] [INFO] Tempo restante da bateria (instantâneo): 5854.0
+[2024-06-11 14:02:03] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-11 14:02:03] [INFO] Taxa de uso de energia da bateria: -17696.0
+[2024-06-11 14:02:03] [INFO] Temperatura da bateria: 0.0
+[2024-06-11 14:02:03] [INFO] Capacidade máxima da bateria: 34.9912109375
+[2024-06-11 14:02:03] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-11 14:02:03] [INFO] Data de fabricação da bateria: N/A
+[2024-06-11 14:02:03] [INFO] Fabricante da bateria: SMP
+[2024-06-11 14:02:04] [INFO] Uso da ram pela janela: 54.0
+[2024-06-11 14:02:04] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:04] [INFO] Título da janela: app_client
+[2024-06-11 14:02:04] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:04] [INFO] ID da janela: 1640888
+[2024-06-11 14:02:04] [INFO] PID da janela: 7840
+[2024-06-11 14:02:04] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-06-11 14:02:04] [INFO] Dados da bateria capturados com sucesso: 80.0
+[2024-06-11 14:02:04] [INFO] Dados da bateria gravados.
+[2024-06-11 14:02:04] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-11 14:02:04] [INFO] Uso da ram pela janela: 205.0
+[2024-06-11 14:02:04] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-11 14:02:04] [INFO] Nome do volume capturado: \\?\Volume{630e018e-ccfb-41c7-ad21-5c4fcb9fa902}\
+[2024-06-11 14:02:04] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:04] [INFO] Espaço disponível no volume lógico capturado: 311.0396385192871
+[2024-06-11 14:02:04] [INFO] Título da janela: visualopsnotificationschannel (Canal) - VisualOpsNotifications - Slack
+[2024-06-11 14:02:04] [INFO] Espaço total do volume lógico capturado com sucesso: 457.89648056030273
+[2024-06-11 14:02:04] [INFO] Comando da janela: C:\Users\julia\AppData\Local\slack\app-4.38.127\slack.exe
+[2024-06-11 14:02:04] [INFO] ID da janela: 67030
+[2024-06-11 14:02:04] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-11 14:02:04] [INFO] PID da janela: 10332[2024-06-11 14:02:04] [INFO] UUID do volume lógico capturado: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
+
+[2024-06-11 14:02:04] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:02:04] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-11 14:02:04] [INFO] Dados do volume lógico gravados.
+[2024-06-11 14:02:04] [INFO] Todos os volumes lógicos verificados.
+[2024-06-11 14:02:05] [INFO] Uso da ram pela janela: 55.0
+[2024-06-11 14:02:05] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:05] [INFO] Título da janela: * Sem título - Bloco de notas
+[2024-06-11 14:02:05] [INFO] Comando da janela: C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2404.10.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe
+[2024-06-11 14:02:05] [INFO] ID da janela: 264234
+[2024-06-11 14:02:05] [INFO] PID da janela: 14016
+[2024-06-11 14:02:05] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=80,y=110,width=865,height=745]
+[2024-06-11 14:02:05] [INFO] Uso da ram pela janela: 20.0
+[2024-06-11 14:02:05] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:05] [INFO] Título da janela: Configurações
+[2024-06-11 14:02:05] [INFO] Comando da janela: C:\Windows\ImmersiveControlPanel\SystemSettings.exe
+[2024-06-11 14:02:05] [INFO] ID da janela: 329080
+[2024-06-11 14:02:05] [INFO] PID da janela: 22804
+[2024-06-11 14:02:05] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
+[2024-06-11 14:02:06] [INFO] Uso da ram pela janela: 2.0
+[2024-06-11 14:02:06] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:06] [INFO] Título da janela: Configurações
+[2024-06-11 14:02:06] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-11 14:02:06] [INFO] ID da janela: 132674
+[2024-06-11 14:02:06] [INFO] PID da janela: 6100
+[2024-06-11 14:02:06] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:02:07] [INFO] Uso da ram pela janela: 6.0
+[2024-06-11 14:02:07] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:07] [INFO] Título da janela: Email
+[2024-06-11 14:02:07] [INFO] Comando da janela: C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_16005.14326.21944.0_x64__8wekyb3d8bbwe\HxOutlook.exe
+[2024-06-11 14:02:07] [INFO] ID da janela: 197990
+[2024-06-11 14:02:07] [INFO] PID da janela: 13984
+[2024-06-11 14:02:07] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=49,width=1920,height=980]
+[2024-06-11 14:02:08] [INFO] Uso da ram pela janela: 2.0
+[2024-06-11 14:02:08] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:08] [INFO] Título da janela: Caixa de entrada - Outlook ‎- Email
+[2024-06-11 14:02:08] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-11 14:02:08] [INFO] ID da janela: 133104
+[2024-06-11 14:02:08] [INFO] PID da janela: 6100
+[2024-06-11 14:02:08] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:02:08] [INFO] Uso da ram pela janela: 6.0
+[2024-06-11 14:02:08] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:08] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:02:08] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:08] [INFO] ID da janela: 67072
+[2024-06-11 14:02:08] [INFO] PID da janela: 7840
+[2024-06-11 14:02:08] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-06-11 14:02:09] [INFO] Uso da ram pela janela: 177.0
+[2024-06-11 14:02:09] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:09] [INFO] Título da janela: Experiência de Entrada do Windows
+[2024-06-11 14:02:09] [INFO] Comando da janela: C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe
+[2024-06-11 14:02:09] [INFO] ID da janela: 197004
+[2024-06-11 14:02:09] [INFO] PID da janela: 13916
+[2024-06-11 14:02:09] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-11 14:02:10] [INFO] Uso da ram pela janela: 30.0
+[2024-06-11 14:02:10] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:10] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:02:10] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:10] [INFO] ID da janela: 65918
+[2024-06-11 14:02:10] [INFO] PID da janela: 7840
+[2024-06-11 14:02:10] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
+[2024-06-11 14:02:10] [INFO] Uso da ram pela janela: 177.0
+[2024-06-11 14:02:10] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:10] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:02:10] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:10] [INFO] ID da janela: 65928
+[2024-06-11 14:02:10] [INFO] PID da janela: 7840
+[2024-06-11 14:02:10] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:02:11] [INFO] Uso da ram pela janela: 178.0
+[2024-06-11 14:02:11] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:11] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:02:11] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:11] [INFO] ID da janela: 65882
+[2024-06-11 14:02:11] [INFO] PID da janela: 7840
+[2024-06-11 14:02:11] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:02:12] [INFO] Uso da ram pela janela: 178.0
+[2024-06-11 14:02:12] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:12] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:02:12] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:12] [INFO] ID da janela: 65880
+[2024-06-11 14:02:12] [INFO] PID da janela: 7840
+[2024-06-11 14:02:12] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:02:12] [INFO] Uso da ram pela janela: 178.0
+[2024-06-11 14:02:12] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:12] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:02:12] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:12] [INFO] ID da janela: 65878
+[2024-06-11 14:02:12] [INFO] PID da janela: 7840
+[2024-06-11 14:02:12] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:02:13] [INFO] Uso da ram pela janela: 178.0
+[2024-06-11 14:02:13] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:13] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:02:13] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:13] [INFO] ID da janela: 65876
+[2024-06-11 14:02:13] [INFO] PID da janela: 7840
+[2024-06-11 14:02:13] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:02:14] [INFO] Uso da ram pela janela: 179.0
+[2024-06-11 14:02:14] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:14] [INFO] Título da janela: Program Manager
+[2024-06-11 14:02:14] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:14] [INFO] ID da janela: 65822
+[2024-06-11 14:02:14] [INFO] PID da janela: 7840
+[2024-06-11 14:02:14] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-11 14:02:14] [INFO] Uso da ram pela janela: 179.0
+[2024-06-11 14:02:14] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:14] [INFO] Todas as janelas verificadas.
+[2024-06-11 14:02:47] [INFO] Capturando dados dos seus Apps.
+[2024-06-11 14:02:47] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:02:47] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:47] [INFO] ID da janela: 133208
+[2024-06-11 14:02:47] [INFO] PID da janela: 7840
+[2024-06-11 14:02:47] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-06-11 14:02:47] [INFO] Uso da ram pela janela: 149.0
+[2024-06-11 14:02:47] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:47] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:02:47] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:47] [INFO] ID da janela: 131216
+[2024-06-11 14:02:47] [INFO] PID da janela: 7840
+[2024-06-11 14:02:47] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
+[2024-06-11 14:02:48] [INFO] Uso da ram pela janela: 149.0
+[2024-06-11 14:02:48] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:48] [INFO] Título da janela: UserStory e Requisitos - Miro - Google Chrome
+[2024-06-11 14:02:48] [INFO] Comando da janela: C:\Program Files\Google\Chrome\Application\chrome.exe
+[2024-06-11 14:02:48] [INFO] ID da janela: 66840
+[2024-06-11 14:02:48] [INFO] PID da janela: 23056
+[2024-06-11 14:02:48] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:02:48] [INFO] Uso da ram pela janela: 141.0
+[2024-06-11 14:02:48] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:48] [INFO] Título da janela: visualopsnotificationschannel (Canal) - VisualOpsNotifications - Slack
+[2024-06-11 14:02:48] [INFO] Comando da janela: C:\Users\julia\AppData\Local\slack\app-4.38.127\slack.exe
+[2024-06-11 14:02:48] [INFO] ID da janela: 67030
+[2024-06-11 14:02:49] [INFO] PID da janela: 10332
+[2024-06-11 14:02:49] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:02:49] [INFO] Uso da ram pela janela: 50.0
+[2024-06-11 14:02:49] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:49] [INFO] Título da janela: app_client – Main.java [app-client-api]
+[2024-06-11 14:02:49] [INFO] Comando da janela: C:\Users\julia\AppData\Local\Programs\IntelliJ IDEA Community Edition\bin\idea64.exe
+[2024-06-11 14:02:49] [INFO] ID da janela: 134760
+[2024-06-11 14:02:49] [INFO] PID da janela: 12800
+[2024-06-11 14:02:49] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:02:49] [INFO] Uso da ram pela janela: 878.0
+[2024-06-11 14:02:49] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:49] [INFO] Título da janela: MySQL Workbench
+[2024-06-11 14:02:49] [INFO] Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
+[2024-06-11 14:02:49] [INFO] ID da janela: 590436
+[2024-06-11 14:02:49] [INFO] PID da janela: 19572
+[2024-06-11 14:02:49] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
+[2024-06-11 14:02:50] [INFO] Uso da ram pela janela: 54.0
+[2024-06-11 14:02:50] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:50] [INFO] Título da janela: app_client
+[2024-06-11 14:02:50] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:50] [INFO] ID da janela: 1640888
+[2024-06-11 14:02:50] [INFO] PID da janela: 7840
+[2024-06-11 14:02:50] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-06-11 14:02:50] [INFO] Uso da ram pela janela: 149.0
+[2024-06-11 14:02:50] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:50] [INFO] Título da janela: * Sem título - Bloco de notas
+[2024-06-11 14:02:50] [INFO] Comando da janela: C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2404.10.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe
+[2024-06-11 14:02:50] [INFO] ID da janela: 264234
+[2024-06-11 14:02:50] [INFO] PID da janela: 14016
+[2024-06-11 14:02:50] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=80,y=110,width=865,height=745]
+[2024-06-11 14:02:51] [INFO] Uso da ram pela janela: 20.0
+[2024-06-11 14:02:51] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:51] [INFO] Título da janela: Configurações
+[2024-06-11 14:02:51] [INFO] Comando da janela: C:\Windows\ImmersiveControlPanel\SystemSettings.exe
+[2024-06-11 14:02:51] [INFO] ID da janela: 329080
+[2024-06-11 14:02:51] [INFO] PID da janela: 22804
+[2024-06-11 14:02:51] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
+[2024-06-11 14:02:51] [INFO] Uso da ram pela janela: 2.0
+[2024-06-11 14:02:51] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:51] [INFO] Título da janela: Configurações
+[2024-06-11 14:02:51] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-11 14:02:51] [INFO] ID da janela: 132674
+[2024-06-11 14:02:51] [INFO] PID da janela: 6100
+[2024-06-11 14:02:51] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:02:52] [INFO] Uso da ram pela janela: 6.0
+[2024-06-11 14:02:52] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:52] [INFO] Título da janela: Email
+[2024-06-11 14:02:52] [INFO] Comando da janela: C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_16005.14326.21944.0_x64__8wekyb3d8bbwe\HxOutlook.exe
+[2024-06-11 14:02:52] [INFO] ID da janela: 197990
+[2024-06-11 14:02:52] [INFO] PID da janela: 13984
+[2024-06-11 14:02:52] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=49,width=1920,height=980]
+[2024-06-11 14:02:52] [INFO] Uso da ram pela janela: 2.0
+[2024-06-11 14:02:52] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:52] [INFO] Título da janela: Caixa de entrada - Outlook ‎- Email
+[2024-06-11 14:02:52] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-11 14:02:52] [INFO] ID da janela: 133104
+[2024-06-11 14:02:52] [INFO] PID da janela: 6100
+[2024-06-11 14:02:52] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:02:53] [INFO] Capturando dados da sua CPU.
+[2024-06-11 14:02:53] [INFO] Número de CPUs lógicas: 8
+[2024-06-11 14:02:53] [INFO] Número de CPUs físicas: 4
+[2024-06-11 14:02:53] [INFO] Microarquitetura: Tiger Lake
+[2024-06-11 14:02:53] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-11 14:02:53] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-11 14:02:53] [INFO] Fabricante: GenuineIntel
+[2024-06-11 14:02:53] [INFO] Frequência: 2.419E9
+[2024-06-11 14:02:53] [INFO] Número de pacotes físicos: 1
+[2024-06-11 14:02:53] [INFO] Uso da CPU: 56.380255941499094
+[2024-06-11 14:02:53] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-11 14:02:53] [INFO] Uso da ram pela janela: 6.0
+[2024-06-11 14:02:53] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:53] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:02:53] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:53] [INFO] ID da janela: 67072
+[2024-06-11 14:02:53] [INFO] PID da janela: 7840
+[2024-06-11 14:02:53] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-06-11 14:02:53] [INFO] Uso da ram pela janela: 150.0
+[2024-06-11 14:02:53] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:53] [INFO] Título da janela: Experiência de Entrada do Windows
+[2024-06-11 14:02:53] [INFO] Comando da janela: C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe
+[2024-06-11 14:02:53] [INFO] ID da janela: 197004
+[2024-06-11 14:02:53] [INFO] PID da janela: 13916
+[2024-06-11 14:02:53] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-11 14:02:54] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-11 14:02:54] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-11 14:02:54] [INFO] Capturando dados do seu HDD
+[2024-06-11 14:02:54] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-11 14:02:54] [INFO] Serial do disco: 0000_0000_0000_0001_00A0_7523_4085_5509.
+[2024-06-11 14:02:54] [INFO] Modelo do disco: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
+[2024-06-11 14:02:54] [INFO] Escritas do disco: 4.301961898803711
+[2024-06-11 14:02:54] [INFO] Uso da ram pela janela: 30.0
+[2024-06-11 14:02:54] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:54] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:02:54] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:54] [INFO] ID da janela: 65918
+[2024-06-11 14:02:54] [INFO] PID da janela: 7840
+[2024-06-11 14:02:54] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
+[2024-06-11 14:02:54] [INFO] Leituras do disco: 11.360045433044434
+[2024-06-11 14:02:54] [INFO] Bytes de escritas do disco: 177.3089566230774
+[2024-06-11 14:02:54] [INFO] Bytes de leitura do disco: 345.7619252204895
+[2024-06-11 14:02:54] [INFO] Tamanho do disco: 476.94
+[2024-06-11 14:02:54] [INFO] Tempo de transferência do disco: 3054.322777777778
+[2024-06-11 14:02:54] [INFO] Dados do disco gravados.
+[2024-06-11 14:02:54] [INFO] Capturando dados da GPU.
+[2024-06-11 14:02:54] [INFO] Dados do fabricante da GPU capturados com sucesso: Intel Corporation
+[2024-06-11 14:02:54] [INFO] Dados do ID da GPU capturados com sucesso: VideoController1
+[2024-06-11 14:02:54] [INFO] O nome da GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-11 14:02:54] [INFO] A VRam da GPU foi capturada com sucesso: 1.0
+[2024-06-11 14:02:54] [INFO] A Versão da GPU foi capturada com sucesso: 31.0.101.4953
+[2024-06-11 14:02:54] [INFO] Uso da ram pela janela: 143.0
+[2024-06-11 14:02:54] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:54] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:02:54] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:54] [INFO] ID da janela: 65928
+[2024-06-11 14:02:54] [INFO] PID da janela: 7840
+[2024-06-11 14:02:54] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:02:55] [INFO] Uso da ram pela janela: 143.0
+[2024-06-11 14:02:55] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:55] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:02:55] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:55] [INFO] ID da janela: 65882
+[2024-06-11 14:02:55] [INFO] PID da janela: 7840
+[2024-06-11 14:02:55] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:02:55] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00.
+[2024-06-11 14:02:55] [INFO] Dados da GPU gravados.
+[2024-06-11 14:02:55] [INFO] Capturando dados da sua memória RAM.
+[2024-06-11 14:02:55] [INFO] Memória disponível: 463.09765625
+[2024-06-11 14:02:55] [INFO] Memória total: 7.729286193847656
+[2024-06-11 14:02:55] [INFO] Memória em uso: 7.277042388916016
+[2024-06-11 14:02:55] [INFO] Dados da memória RAM capturados com sucesso.
+[2024-06-11 14:02:55] [INFO] Capturando dados da sua bateria.
+[2024-06-11 14:02:55] [INFO] Amperagem da bateria: -1745.1794206658021
+[2024-06-11 14:02:55] [INFO] Nome do dispositivo da bateria: DELL MGCM535
+[2024-06-11 14:02:55] [INFO] Número de série da bateria: 1298
+[2024-06-11 14:02:55] [INFO] Química da bateria: LiP
+[2024-06-11 14:02:55] [INFO] Nome da bateria: System Battery
+[2024-06-11 14:02:55] [INFO] Voltagem da bateria: 11.565
+[2024-06-11 14:02:55] [INFO] Capacidade atual da bateria: 27.89453125
+[2024-06-11 14:02:55] [INFO] Número de ciclos da bateria: 0
+[2024-06-11 14:02:55] [INFO] Capacidade de design da bateria: 39.638671875
+[2024-06-11 14:02:55] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-11 14:02:55] [INFO] Tempo restante da bateria (instantâneo): 5094.0
+[2024-06-11 14:02:55] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-11 14:02:55] [INFO] Taxa de uso de energia da bateria: -20183.0
+[2024-06-11 14:02:55] [INFO] Temperatura da bateria: 0.0
+[2024-06-11 14:02:55] [INFO] Capacidade máxima da bateria: 34.9912109375
+[2024-06-11 14:02:55] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-11 14:02:55] [INFO] Data de fabricação da bateria: N/A
+[2024-06-11 14:02:55] [INFO] Fabricante da bateria: SMP
+[2024-06-11 14:02:55] [INFO] Uso da ram pela janela: 143.0
+[2024-06-11 14:02:55] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:55] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:02:55] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:55] [INFO] ID da janela: 65880
+[2024-06-11 14:02:55] [INFO] PID da janela: 7840
+[2024-06-11 14:02:55] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:02:56] [INFO] Dados da bateria capturados com sucesso: 79.0
+[2024-06-11 14:02:56] [INFO] Dados da bateria gravados.
+[2024-06-11 14:02:56] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-11 14:02:56] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-11 14:02:56] [INFO] Nome do volume capturado: \\?\Volume{630e018e-ccfb-41c7-ad21-5c4fcb9fa902}\
+[2024-06-11 14:02:56] [INFO] Uso da ram pela janela: 143.0
+[2024-06-11 14:02:56] [INFO] Espaço disponível no volume lógico capturado: 309.51840591430664
+[2024-06-11 14:02:56] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:56] [INFO] Espaço total do volume lógico capturado com sucesso: 457.89648056030273
+[2024-06-11 14:02:56] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:02:56] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-11 14:02:56] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:56] [INFO] UUID do volume lógico capturado: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
+[2024-06-11 14:02:56] [INFO] ID da janela: 65878
+[2024-06-11 14:02:56] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-11 14:02:56] [INFO] PID da janela: 7840
+[2024-06-11 14:02:56] [INFO] Dados do volume lógico gravados.
+[2024-06-11 14:02:56] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:02:56] [INFO] Todos os volumes lógicos verificados.
+[2024-06-11 14:02:56] [INFO] Uso da ram pela janela: 143.0
+[2024-06-11 14:02:56] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:56] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:02:56] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:56] [INFO] ID da janela: 65876
+[2024-06-11 14:02:56] [INFO] PID da janela: 7840
+[2024-06-11 14:02:56] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:02:57] [INFO] Uso da ram pela janela: 143.0
+[2024-06-11 14:02:57] [INFO] Dados da janela gravados.
+[2024-06-11 14:02:57] [INFO] Título da janela: Program Manager
+[2024-06-11 14:02:57] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:02:57] [INFO] ID da janela: 65822
+[2024-06-11 14:02:57] [INFO] PID da janela: 7840
+[2024-06-11 14:02:57] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-11 14:03:51] [INFO] Servidor iniciando.
+[2024-06-11 14:03:53] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 14:04:23] [INFO] Usuário logado com sucesso: l_julia.campioto@gmail.com
+[2024-06-11 14:04:33] [INFO] Capturando dados da sua CPU.
+[2024-06-11 14:04:33] [INFO] Número de CPUs lógicas: 8
+[2024-06-11 14:04:33] [INFO] Número de CPUs físicas: 4
+[2024-06-11 14:04:33] [INFO] Microarquitetura: Tiger Lake
+[2024-06-11 14:04:33] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-11 14:04:33] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-11 14:04:33] [INFO] Fabricante: GenuineIntel
+[2024-06-11 14:04:33] [INFO] Frequência: 2.419E9
+[2024-06-11 14:04:33] [INFO] Número de pacotes físicos: 1
+[2024-06-11 14:04:35] [INFO] Uso da CPU: 6.9649945867917715
+[2024-06-11 14:04:35] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-11 14:04:36] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-11 14:04:36] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-11 14:04:36] [INFO] Capturando dados do seu HDD
+[2024-06-11 14:04:36] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-11 14:04:36] [INFO] Serial do disco: 0000_0000_0000_0001_00A0_7523_4085_5509.
+[2024-06-11 14:04:36] [INFO] Modelo do disco: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
+[2024-06-11 14:04:36] [INFO] Escritas do disco: 4.309247970581055
+[2024-06-11 14:04:36] [INFO] Leituras do disco: 11.436442375183105
+[2024-06-11 14:04:36] [INFO] Bytes de escritas do disco: 178.26596117019653
+[2024-06-11 14:04:36] [INFO] Bytes de leitura do disco: 348.2186989784241
+[2024-06-11 14:04:36] [INFO] Tamanho do disco: 476.94
+[2024-06-11 14:04:36] [INFO] Tempo de transferência do disco: 3063.4113888888887
+[2024-06-11 14:04:36] [INFO] Dados do disco gravados.
+[2024-06-11 14:04:36] [INFO] Capturando dados da GPU.
+[2024-06-11 14:04:36] [INFO] Dados do fabricante da GPU capturados com sucesso: Intel Corporation
+[2024-06-11 14:04:36] [INFO] Dados do ID da GPU capturados com sucesso: VideoController1
+[2024-06-11 14:04:36] [INFO] O nome da GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-11 14:04:36] [INFO] A VRam da GPU foi capturada com sucesso: 1.0
+[2024-06-11 14:04:36] [INFO] A Versão da GPU foi capturada com sucesso: 31.0.101.4953
+[2024-06-11 14:04:37] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00.
+[2024-06-11 14:04:37] [INFO] Dados da GPU gravados.
+[2024-06-11 14:04:37] [INFO] Capturando dados da sua memória RAM.
+[2024-06-11 14:04:37] [INFO] Memória disponível: 730.546875
+[2024-06-11 14:04:37] [INFO] Memória total: 7.729286193847656
+[2024-06-11 14:04:37] [INFO] Memória em uso: 7.015861511230469
+[2024-06-11 14:04:37] [INFO] Dados da memória RAM capturados com sucesso.
+[2024-06-11 14:04:37] [INFO] Capturando dados da sua bateria.
+[2024-06-11 14:04:37] [INFO] Amperagem da bateria: -1622.396958437743
+[2024-06-11 14:04:37] [INFO] Nome do dispositivo da bateria: DELL MGCM535
+[2024-06-11 14:04:37] [INFO] Número de série da bateria: 1298
+[2024-06-11 14:04:37] [INFO] Química da bateria: LiP
+[2024-06-11 14:04:37] [INFO] Nome da bateria: System Battery
+[2024-06-11 14:04:37] [INFO] Voltagem da bateria: 11.573
+[2024-06-11 14:04:37] [INFO] Capacidade atual da bateria: 27.4326171875
+[2024-06-11 14:04:37] [INFO] Número de ciclos da bateria: 0
+[2024-06-11 14:04:37] [INFO] Capacidade de design da bateria: 39.638671875
+[2024-06-11 14:04:37] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-11 14:04:37] [INFO] Tempo restante da bateria (instantâneo): 5386.0
+[2024-06-11 14:04:37] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-11 14:04:37] [INFO] Taxa de uso de energia da bateria: -18776.0
+[2024-06-11 14:04:37] [INFO] Temperatura da bateria: 0.0
+[2024-06-11 14:04:37] [INFO] Capacidade máxima da bateria: 34.9912109375
+[2024-06-11 14:04:37] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-11 14:04:37] [INFO] Data de fabricação da bateria: N/A
+[2024-06-11 14:04:37] [INFO] Fabricante da bateria: SMP
+[2024-06-11 14:04:38] [INFO] Dados da bateria capturados com sucesso: 78.0
+[2024-06-11 14:04:38] [INFO] Dados da bateria gravados.
+[2024-06-11 14:04:38] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-11 14:04:38] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-11 14:04:38] [INFO] Nome do volume capturado: \\?\Volume{630e018e-ccfb-41c7-ad21-5c4fcb9fa902}\
+[2024-06-11 14:04:38] [INFO] Espaço disponível no volume lógico capturado: 309.51415252685547
+[2024-06-11 14:04:38] [INFO] Espaço total do volume lógico capturado com sucesso: 457.89648056030273
+[2024-06-11 14:04:38] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-11 14:04:38] [INFO] UUID do volume lógico capturado: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
+[2024-06-11 14:04:38] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-11 14:04:38] [INFO] Dados do volume lógico gravados.
+[2024-06-11 14:04:38] [INFO] Todos os volumes lógicos verificados.
+[2024-06-11 14:04:38] [INFO] Capturando dados da sua CPU.
+[2024-06-11 14:04:38] [INFO] Capturando dados dos seus Apps.
+[2024-06-11 14:04:38] [INFO] Número de CPUs lógicas: 8
+[2024-06-11 14:04:38] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:04:38] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:04:38] [INFO] Número de CPUs físicas: 4
+[2024-06-11 14:04:38] [INFO] ID da janela: 133208
+[2024-06-11 14:04:38] [INFO] Microarquitetura: Tiger Lake
+[2024-06-11 14:04:38] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-11 14:04:38] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-11 14:04:38] [INFO] PID da janela: 7840
+[2024-06-11 14:04:38] [INFO] Fabricante: GenuineIntel
+[2024-06-11 14:04:38] [INFO] Frequência: 2.419E9
+[2024-06-11 14:04:38] [INFO] Número de pacotes físicos: 1
+[2024-06-11 14:04:38] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-06-11 14:04:38] [INFO] Uso da CPU: 6.9649945867917715
+[2024-06-11 14:04:38] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-11 14:04:39] [INFO] Uso da ram pela janela: 143.0
+[2024-06-11 14:04:39] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:39] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:04:39] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:04:39] [INFO] ID da janela: 131216
+[2024-06-11 14:04:39] [INFO] PID da janela: 7840
+[2024-06-11 14:04:39] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
+[2024-06-11 14:04:40] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-11 14:04:40] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-11 14:04:40] [INFO] Capturando dados do seu HDD
+[2024-06-11 14:04:40] [INFO] Uso da ram pela janela: 139.0
+[2024-06-11 14:04:40] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:40] [INFO] Título da janela: app_client – RegistroAlertasDAO.java [app-client-api]
+[2024-06-11 14:04:40] [INFO] Comando da janela: C:\Users\julia\AppData\Local\Programs\IntelliJ IDEA Community Edition\bin\idea64.exe
+[2024-06-11 14:04:40] [INFO] ID da janela: 134760
+[2024-06-11 14:04:40] [INFO] PID da janela: 12800
+[2024-06-11 14:04:40] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:04:40] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-11 14:04:40] [INFO] Serial do disco: 0000_0000_0000_0001_00A0_7523_4085_5509.
+[2024-06-11 14:04:40] [INFO] Modelo do disco: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
+[2024-06-11 14:04:40] [INFO] Escritas do disco: 4.309516906738281
+[2024-06-11 14:04:40] [INFO] Leituras do disco: 11.438875198364258
+[2024-06-11 14:04:40] [INFO] Bytes de escritas do disco: 178.28190326690674
+[2024-06-11 14:04:40] [INFO] Bytes de leitura do disco: 348.2775731086731
+[2024-06-11 14:04:40] [INFO] Tamanho do disco: 476.94
+[2024-06-11 14:04:40] [INFO] Tempo de transferência do disco: 3063.5208333333335
+[2024-06-11 14:04:40] [INFO] Dados do disco gravados.
+[2024-06-11 14:04:40] [INFO] Capturando dados da GPU.
+[2024-06-11 14:04:40] [INFO] Dados do fabricante da GPU capturados com sucesso: Intel Corporation
+[2024-06-11 14:04:40] [INFO] Dados do ID da GPU capturados com sucesso: VideoController1
+[2024-06-11 14:04:40] [INFO] O nome da GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-11 14:04:40] [INFO] A VRam da GPU foi capturada com sucesso: 1.0
+[2024-06-11 14:04:40] [INFO] A Versão da GPU foi capturada com sucesso: 31.0.101.4953
+[2024-06-11 14:04:40] [INFO] Uso da ram pela janela: 989.0
+[2024-06-11 14:04:40] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:40] [INFO] Título da janela: ChatGPT - Google Chrome
+[2024-06-11 14:04:40] [INFO] Comando da janela: C:\Program Files\Google\Chrome\Application\chrome.exe
+[2024-06-11 14:04:40] [INFO] ID da janela: 66840
+[2024-06-11 14:04:40] [INFO] PID da janela: 23056
+[2024-06-11 14:04:40] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:04:41] [INFO] Uso da ram pela janela: 127.0
+[2024-06-11 14:04:41] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:41] [INFO] Título da janela: visualopsnotificationschannel (Canal) - VisualOpsNotifications - Slack
+[2024-06-11 14:04:41] [INFO] Comando da janela: C:\Users\julia\AppData\Local\slack\app-4.38.127\slack.exe
+[2024-06-11 14:04:41] [INFO] ID da janela: 67030
+[2024-06-11 14:04:41] [INFO] PID da janela: 10332
+[2024-06-11 14:04:41] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:04:41] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00.
+[2024-06-11 14:04:41] [INFO] Dados da GPU gravados.
+[2024-06-11 14:04:41] [INFO] Capturando dados da sua memória RAM.
+[2024-06-11 14:04:41] [INFO] Memória disponível: 543.328125
+[2024-06-11 14:04:41] [INFO] Memória total: 7.729286193847656
+[2024-06-11 14:04:41] [INFO] Memória em uso: 7.198692321777344
+[2024-06-11 14:04:41] [INFO] Dados da memória RAM capturados com sucesso.
+[2024-06-11 14:04:41] [INFO] Capturando dados da sua bateria.
+[2024-06-11 14:04:41] [INFO] Amperagem da bateria: -1717.2870717461424
+[2024-06-11 14:04:41] [INFO] Nome do dispositivo da bateria: DELL MGCM535
+[2024-06-11 14:04:41] [INFO] Número de série da bateria: 1298
+[2024-06-11 14:04:41] [INFO] Química da bateria: LiP
+[2024-06-11 14:04:41] [INFO] Nome da bateria: System Battery
+[2024-06-11 14:04:41] [INFO] Voltagem da bateria: 11.471
+[2024-06-11 14:04:41] [INFO] Capacidade atual da bateria: 27.4111328125
+[2024-06-11 14:04:41] [INFO] Número de ciclos da bateria: 0
+[2024-06-11 14:04:41] [INFO] Capacidade de design da bateria: 39.638671875
+[2024-06-11 14:04:41] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-11 14:04:41] [INFO] Tempo restante da bateria (instantâneo): 5129.0
+[2024-06-11 14:04:41] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-11 14:04:41] [INFO] Taxa de uso de energia da bateria: -19699.0
+[2024-06-11 14:04:41] [INFO] Temperatura da bateria: 0.0
+[2024-06-11 14:04:41] [INFO] Capacidade máxima da bateria: 34.9912109375
+[2024-06-11 14:04:41] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-11 14:04:41] [INFO] Data de fabricação da bateria: N/A
+[2024-06-11 14:04:41] [INFO] Fabricante da bateria: SMP
+[2024-06-11 14:04:42] [INFO] Uso da ram pela janela: 40.0
+[2024-06-11 14:04:42] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:42] [INFO] Título da janela: MySQL Workbench
+[2024-06-11 14:04:42] [INFO] Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
+[2024-06-11 14:04:42] [INFO] ID da janela: 590436
+[2024-06-11 14:04:42] [INFO] PID da janela: 19572
+[2024-06-11 14:04:42] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
+[2024-06-11 14:04:42] [INFO] Dados da bateria capturados com sucesso: 78.0
+[2024-06-11 14:04:42] [INFO] Dados da bateria gravados.
+[2024-06-11 14:04:42] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-11 14:04:42] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-11 14:04:42] [INFO] Nome do volume capturado: \\?\Volume{630e018e-ccfb-41c7-ad21-5c4fcb9fa902}\
+[2024-06-11 14:04:42] [INFO] Espaço disponível no volume lógico capturado: 309.513729095459
+[2024-06-11 14:04:42] [INFO] Espaço total do volume lógico capturado com sucesso: 457.89648056030273
+[2024-06-11 14:04:42] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-11 14:04:42] [INFO] UUID do volume lógico capturado: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
+[2024-06-11 14:04:42] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-11 14:04:42] [INFO] Dados do volume lógico gravados.
+[2024-06-11 14:04:42] [INFO] Todos os volumes lógicos verificados.
+[2024-06-11 14:04:42] [INFO] Uso da ram pela janela: 21.0
+[2024-06-11 14:04:42] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:42] [INFO] Título da janela: app_client
+[2024-06-11 14:04:42] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:04:42] [INFO] ID da janela: 1640888
+[2024-06-11 14:04:42] [INFO] PID da janela: 7840
+[2024-06-11 14:04:42] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-06-11 14:04:43] [INFO] Uso da ram pela janela: 139.0
+[2024-06-11 14:04:43] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:43] [INFO] Título da janela: * Sem título - Bloco de notas
+[2024-06-11 14:04:43] [INFO] Comando da janela: C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2404.10.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe
+[2024-06-11 14:04:43] [INFO] ID da janela: 264234
+[2024-06-11 14:04:43] [INFO] PID da janela: 14016
+[2024-06-11 14:04:43] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=80,y=110,width=865,height=745]
+[2024-06-11 14:04:43] [INFO] Uso da ram pela janela: 5.0
+[2024-06-11 14:04:43] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:43] [INFO] Título da janela: Configurações
+[2024-06-11 14:04:43] [INFO] Comando da janela: C:\Windows\ImmersiveControlPanel\SystemSettings.exe
+[2024-06-11 14:04:43] [INFO] ID da janela: 329080
+[2024-06-11 14:04:43] [INFO] PID da janela: 22804
+[2024-06-11 14:04:43] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
+[2024-06-11 14:04:44] [INFO] Uso da ram pela janela: 2.0
+[2024-06-11 14:04:44] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:44] [INFO] Título da janela: Configurações
+[2024-06-11 14:04:44] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-11 14:04:44] [INFO] ID da janela: 132674
+[2024-06-11 14:04:44] [INFO] PID da janela: 6100
+[2024-06-11 14:04:44] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:04:44] [INFO] Uso da ram pela janela: 3.0
+[2024-06-11 14:04:44] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:44] [INFO] Título da janela: Email
+[2024-06-11 14:04:44] [INFO] Comando da janela: C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_16005.14326.21944.0_x64__8wekyb3d8bbwe\HxOutlook.exe
+[2024-06-11 14:04:44] [INFO] ID da janela: 197990
+[2024-06-11 14:04:44] [INFO] PID da janela: 13984
+[2024-06-11 14:04:44] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=49,width=1920,height=980]
+[2024-06-11 14:04:45] [INFO] Uso da ram pela janela: 2.0
+[2024-06-11 14:04:45] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:45] [INFO] Título da janela: Caixa de entrada - Outlook ‎- Email
+[2024-06-11 14:04:45] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-11 14:04:45] [INFO] ID da janela: 133104
+[2024-06-11 14:04:45] [INFO] PID da janela: 6100
+[2024-06-11 14:04:45] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:04:45] [INFO] Uso da ram pela janela: 3.0
+[2024-06-11 14:04:45] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:45] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:04:45] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:04:45] [INFO] ID da janela: 67072
+[2024-06-11 14:04:45] [INFO] PID da janela: 7840
+[2024-06-11 14:04:45] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-06-11 14:04:46] [INFO] Uso da ram pela janela: 139.0
+[2024-06-11 14:04:46] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:46] [INFO] Título da janela: Experiência de Entrada do Windows
+[2024-06-11 14:04:46] [INFO] Comando da janela: C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe
+[2024-06-11 14:04:46] [INFO] ID da janela: 197004
+[2024-06-11 14:04:46] [INFO] PID da janela: 13916
+[2024-06-11 14:04:46] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-11 14:04:46] [INFO] Uso da ram pela janela: 22.0
+[2024-06-11 14:04:46] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:46] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:04:46] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:04:46] [INFO] ID da janela: 65918
+[2024-06-11 14:04:46] [INFO] PID da janela: 7840
+[2024-06-11 14:04:46] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
+[2024-06-11 14:04:47] [INFO] Uso da ram pela janela: 139.0
+[2024-06-11 14:04:47] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:47] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:04:47] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:04:47] [INFO] ID da janela: 65928
+[2024-06-11 14:04:47] [INFO] PID da janela: 7840
+[2024-06-11 14:04:47] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:04:47] [INFO] Uso da ram pela janela: 139.0
+[2024-06-11 14:04:47] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:47] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:04:47] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:04:47] [INFO] ID da janela: 65882
+[2024-06-11 14:04:47] [INFO] PID da janela: 7840
+[2024-06-11 14:04:47] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:04:48] [INFO] Uso da ram pela janela: 139.0
+[2024-06-11 14:04:48] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:48] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:04:48] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:04:48] [INFO] ID da janela: 65880
+[2024-06-11 14:04:48] [INFO] PID da janela: 7840
+[2024-06-11 14:04:48] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:04:48] [INFO] Uso da ram pela janela: 140.0
+[2024-06-11 14:04:48] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:48] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:04:48] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:04:48] [INFO] ID da janela: 65878
+[2024-06-11 14:04:48] [INFO] PID da janela: 7840
+[2024-06-11 14:04:48] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:04:49] [INFO] Uso da ram pela janela: 140.0
+[2024-06-11 14:04:49] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:49] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:04:49] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:04:49] [INFO] ID da janela: 65876
+[2024-06-11 14:04:49] [INFO] PID da janela: 7840
+[2024-06-11 14:04:49] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:04:49] [INFO] Uso da ram pela janela: 140.0
+[2024-06-11 14:04:49] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:49] [INFO] Título da janela: Program Manager
+[2024-06-11 14:04:49] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:04:49] [INFO] ID da janela: 65822
+[2024-06-11 14:04:49] [INFO] PID da janela: 7840
+[2024-06-11 14:04:49] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-11 14:04:50] [INFO] Uso da ram pela janela: 140.0
+[2024-06-11 14:04:50] [INFO] Dados da janela gravados.
+[2024-06-11 14:04:50] [INFO] Todas as janelas verificadas.
+[2024-06-11 14:12:33] [INFO] Servidor iniciando.
+[2024-06-11 14:12:35] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 14:12:59] [INFO] Usuário logado com sucesso: l_julia.campioto@gmail.com
+[2024-06-11 14:13:03] [INFO] Capturando dados da sua CPU.
+[2024-06-11 14:13:03] [INFO] Número de CPUs lógicas: 8
+[2024-06-11 14:13:03] [INFO] Número de CPUs físicas: 4
+[2024-06-11 14:13:03] [INFO] Microarquitetura: Tiger Lake
+[2024-06-11 14:13:03] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-11 14:13:03] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-11 14:13:03] [INFO] Fabricante: GenuineIntel
+[2024-06-11 14:13:03] [INFO] Frequência: 2.419E9
+[2024-06-11 14:13:03] [INFO] Número de pacotes físicos: 1
+[2024-06-11 14:13:06] [INFO] Uso da CPU: 11.960132890365449
+[2024-06-11 14:13:06] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-11 14:13:07] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-11 14:13:07] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-11 14:13:07] [INFO] Capturando dados do seu HDD
+[2024-06-11 14:13:07] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-11 14:13:07] [INFO] Serial do disco: 0000_0000_0000_0001_00A0_7523_4085_5509.
+[2024-06-11 14:13:07] [INFO] Modelo do disco: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
+[2024-06-11 14:13:07] [INFO] Escritas do disco: 4.319745063781738
+[2024-06-11 14:13:07] [INFO] Leituras do disco: 11.483439445495605
+[2024-06-11 14:13:07] [INFO] Bytes de escritas do disco: 179.21547317504883
+[2024-06-11 14:13:07] [INFO] Bytes de leitura do disco: 349.9644832611084
+[2024-06-11 14:13:07] [INFO] Tamanho do disco: 476.94
+[2024-06-11 14:13:07] [INFO] Tempo de transferência do disco: 3068.776388888889
+[2024-06-11 14:13:07] [INFO] Dados do disco gravados.
+[2024-06-11 14:13:07] [INFO] Capturando dados da GPU.
+[2024-06-11 14:13:07] [INFO] Dados do fabricante da GPU capturados com sucesso: Intel Corporation
+[2024-06-11 14:13:07] [INFO] Dados do ID da GPU capturados com sucesso: VideoController1
+[2024-06-11 14:13:07] [INFO] O nome da GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-11 14:13:07] [INFO] A VRam da GPU foi capturada com sucesso: 1.0
+[2024-06-11 14:13:07] [INFO] A Versão da GPU foi capturada com sucesso: 31.0.101.4953
+[2024-06-11 14:13:08] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00.
+[2024-06-11 14:13:08] [INFO] Dados da GPU gravados.
+[2024-06-11 14:13:08] [INFO] Capturando dados da sua memória RAM.
+[2024-06-11 14:13:08] [INFO] Memória disponível: 554.2890625
+[2024-06-11 14:13:08] [INFO] Memória total: 7.729286193847656
+[2024-06-11 14:13:08] [INFO] Memória em uso: 7.18798828125
+[2024-06-11 14:13:08] [INFO] Dados da memória RAM capturados com sucesso.
+[2024-06-11 14:13:08] [INFO] Capturando dados da sua bateria.
+[2024-06-11 14:13:08] [INFO] Amperagem da bateria: -1539.4748245081896
+[2024-06-11 14:13:08] [INFO] Nome do dispositivo da bateria: DELL MGCM535
+[2024-06-11 14:13:08] [INFO] Número de série da bateria: 1298
+[2024-06-11 14:13:08] [INFO] Química da bateria: LiP
+[2024-06-11 14:13:08] [INFO] Nome da bateria: System Battery
+[2024-06-11 14:13:08] [INFO] Voltagem da bateria: 11.539
+[2024-06-11 14:13:08] [INFO] Capacidade atual da bateria: 25.9501953125
+[2024-06-11 14:13:08] [INFO] Número de ciclos da bateria: 0
+[2024-06-11 14:13:08] [INFO] Capacidade de design da bateria: 39.638671875
+[2024-06-11 14:13:08] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-11 14:13:08] [INFO] Tempo restante da bateria (instantâneo): 5385.0
+[2024-06-11 14:13:08] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-11 14:13:08] [INFO] Taxa de uso de energia da bateria: -17764.0
+[2024-06-11 14:13:08] [INFO] Temperatura da bateria: 0.0
+[2024-06-11 14:13:08] [INFO] Capacidade máxima da bateria: 34.9912109375
+[2024-06-11 14:13:08] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-11 14:13:08] [INFO] Data de fabricação da bateria: N/A
+[2024-06-11 14:13:08] [INFO] Fabricante da bateria: SMP
+[2024-06-11 14:13:09] [INFO] Dados da bateria capturados com sucesso: 74.0
+[2024-06-11 14:13:09] [INFO] Dados da bateria gravados.
+[2024-06-11 14:13:09] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-11 14:13:09] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-11 14:13:09] [INFO] Nome do volume capturado: \\?\Volume{630e018e-ccfb-41c7-ad21-5c4fcb9fa902}\
+[2024-06-11 14:13:09] [INFO] Espaço disponível no volume lógico capturado: 309.4942092895508
+[2024-06-11 14:13:09] [INFO] Espaço total do volume lógico capturado com sucesso: 457.89648056030273
+[2024-06-11 14:13:09] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-11 14:13:09] [INFO] UUID do volume lógico capturado: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
+[2024-06-11 14:13:09] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-11 14:13:09] [INFO] Dados do volume lógico gravados.
+[2024-06-11 14:13:09] [INFO] Todos os volumes lógicos verificados.
+[2024-06-11 14:13:09] [INFO] Capturando dados dos seus Apps.
+[2024-06-11 14:13:09] [INFO] Capturando dados da sua CPU.
+[2024-06-11 14:13:09] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:13:09] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:13:09] [INFO] ID da janela: 133208
+[2024-06-11 14:13:09] [INFO] PID da janela: 7840
+[2024-06-11 14:13:09] [INFO] Número de CPUs lógicas: 8
+[2024-06-11 14:13:09] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-06-11 14:13:09] [INFO] Número de CPUs físicas: 4
+[2024-06-11 14:13:09] [INFO] Microarquitetura: Tiger Lake
+[2024-06-11 14:13:09] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-11 14:13:09] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-11 14:13:09] [INFO] Fabricante: GenuineIntel
+[2024-06-11 14:13:09] [INFO] Frequência: 2.419E9
+[2024-06-11 14:13:09] [INFO] Número de pacotes físicos: 1
+[2024-06-11 14:13:09] [INFO] Uso da CPU: 11.960132890365449
+[2024-06-11 14:13:09] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-11 14:13:09] [INFO] Uso da ram pela janela: 136.0
+[2024-06-11 14:13:09] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:09] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:13:09] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:13:09] [INFO] ID da janela: 131216
+[2024-06-11 14:13:09] [INFO] PID da janela: 7840
+[2024-06-11 14:13:09] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
+[2024-06-11 14:13:10] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-11 14:13:10] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-11 14:13:10] [INFO] Capturando dados do seu HDD
+[2024-06-11 14:13:10] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-11 14:13:10] [INFO] Serial do disco: 0000_0000_0000_0001_00A0_7523_4085_5509.
+[2024-06-11 14:13:10] [INFO] Modelo do disco: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
+[2024-06-11 14:13:10] [INFO] Escritas do disco: 4.31984806060791
+[2024-06-11 14:13:10] [INFO] Leituras do disco: 11.483909606933594
+[2024-06-11 14:13:10] [INFO] Bytes de escritas do disco: 179.21723413467407
+[2024-06-11 14:13:10] [INFO] Bytes de leitura do disco: 349.977313041687
+[2024-06-11 14:13:10] [INFO] Tamanho do disco: 476.94
+[2024-06-11 14:13:10] [INFO] Tempo de transferência do disco: 3068.818333333333
+[2024-06-11 14:13:10] [INFO] Dados do disco gravados.
+[2024-06-11 14:13:10] [INFO] Capturando dados da GPU.
+[2024-06-11 14:13:10] [INFO] Uso da ram pela janela: 136.0
+[2024-06-11 14:13:10] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:10] [INFO] Dados do fabricante da GPU capturados com sucesso: Intel Corporation
+[2024-06-11 14:13:10] [INFO] Dados do ID da GPU capturados com sucesso: VideoController1
+[2024-06-11 14:13:10] [INFO] Título da janela: app_client – RegistroAlertasDAO.java [app-client-api]
+[2024-06-11 14:13:10] [INFO] Comando da janela: C:\Users\julia\AppData\Local\Programs\IntelliJ IDEA Community Edition\bin\idea64.exe
+[2024-06-11 14:13:10] [INFO] O nome da GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-11 14:13:10] [INFO] ID da janela: 134760
+[2024-06-11 14:13:10] [INFO] A VRam da GPU foi capturada com sucesso: 1.0
+[2024-06-11 14:13:10] [INFO] PID da janela: 12800
+[2024-06-11 14:13:10] [INFO] A Versão da GPU foi capturada com sucesso: 31.0.101.4953
+[2024-06-11 14:13:10] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:13:10] [INFO] Uso da ram pela janela: 1.0
+[2024-06-11 14:13:10] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:10] [INFO] Título da janela: MySQL Workbench
+[2024-06-11 14:13:10] [INFO] Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
+[2024-06-11 14:13:10] [INFO] ID da janela: 590436
+[2024-06-11 14:13:10] [INFO] PID da janela: 19572
+[2024-06-11 14:13:10] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
+[2024-06-11 14:13:11] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00.
+[2024-06-11 14:13:11] [INFO] Dados da GPU gravados.
+[2024-06-11 14:13:11] [INFO] Capturando dados da sua memória RAM.
+[2024-06-11 14:13:11] [INFO] Memória disponível: 538.8828125
+[2024-06-11 14:13:11] [INFO] Memória total: 7.729286193847656
+[2024-06-11 14:13:11] [INFO] Memória em uso: 7.203033447265625
+[2024-06-11 14:13:11] [INFO] Dados da memória RAM capturados com sucesso.
+[2024-06-11 14:13:11] [INFO] Capturando dados da sua bateria.
+[2024-06-11 14:13:11] [INFO] Amperagem da bateria: -1477.6492923714188
+[2024-06-11 14:13:11] [INFO] Nome do dispositivo da bateria: DELL MGCM535
+[2024-06-11 14:13:11] [INFO] Número de série da bateria: 1298
+[2024-06-11 14:13:11] [INFO] Química da bateria: LiP
+[2024-06-11 14:13:11] [INFO] Nome da bateria: System Battery
+[2024-06-11 14:13:11] [INFO] Voltagem da bateria: 11.588
+[2024-06-11 14:13:11] [INFO] Capacidade atual da bateria: 25.9384765625
+[2024-06-11 14:13:11] [INFO] Número de ciclos da bateria: 0
+[2024-06-11 14:13:11] [INFO] Capacidade de design da bateria: 39.638671875
+[2024-06-11 14:13:11] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-11 14:13:11] [INFO] Tempo restante da bateria (instantâneo): 5584.0
+[2024-06-11 14:13:11] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-11 14:13:11] [INFO] Taxa de uso de energia da bateria: -17123.0
+[2024-06-11 14:13:11] [INFO] Temperatura da bateria: 0.0
+[2024-06-11 14:13:11] [INFO] Capacidade máxima da bateria: 34.9912109375
+[2024-06-11 14:13:11] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-11 14:13:11] [INFO] Data de fabricação da bateria: N/A
+[2024-06-11 14:13:11] [INFO] Fabricante da bateria: SMP
+[2024-06-11 14:13:11] [INFO] Uso da ram pela janela: 29.0
+[2024-06-11 14:13:11] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:11] [INFO] Título da janela: CPU 0°C Problema Diagnóstico - Google Chrome
+[2024-06-11 14:13:11] [INFO] Comando da janela: C:\Program Files\Google\Chrome\Application\chrome.exe
+[2024-06-11 14:13:11] [INFO] ID da janela: 66840
+[2024-06-11 14:13:11] [INFO] PID da janela: 23056
+[2024-06-11 14:13:11] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:13:11] [INFO] Uso da ram pela janela: 109.0
+[2024-06-11 14:13:11] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:11] [INFO] Título da janela: visualopsnotificationschannel (Canal) - VisualOpsNotifications - Slack
+[2024-06-11 14:13:11] [INFO] Comando da janela: C:\Users\julia\AppData\Local\slack\app-4.38.127\slack.exe
+[2024-06-11 14:13:11] [INFO] ID da janela: 67030
+[2024-06-11 14:13:11] [INFO] PID da janela: 10332
+[2024-06-11 14:13:11] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:13:11] [INFO] Dados da bateria capturados com sucesso: 74.0
+[2024-06-11 14:13:11] [INFO] Dados da bateria gravados.
+[2024-06-11 14:13:11] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-11 14:13:11] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-11 14:13:11] [INFO] Nome do volume capturado: \\?\Volume{630e018e-ccfb-41c7-ad21-5c4fcb9fa902}\
+[2024-06-11 14:13:11] [INFO] Espaço disponível no volume lógico capturado: 309.4948043823242
+[2024-06-11 14:13:11] [INFO] Espaço total do volume lógico capturado com sucesso: 457.89648056030273
+[2024-06-11 14:13:11] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-11 14:13:11] [INFO] UUID do volume lógico capturado: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
+[2024-06-11 14:13:11] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-11 14:13:11] [INFO] Dados do volume lógico gravados.
+[2024-06-11 14:13:11] [INFO] Todos os volumes lógicos verificados.
+[2024-06-11 14:13:12] [INFO] Uso da ram pela janela: 54.0
+[2024-06-11 14:13:12] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:12] [INFO] Título da janela: app_client
+[2024-06-11 14:13:12] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:13:12] [INFO] ID da janela: 1640888
+[2024-06-11 14:13:12] [INFO] PID da janela: 7840
+[2024-06-11 14:13:12] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-06-11 14:13:12] [INFO] Uso da ram pela janela: 136.0
+[2024-06-11 14:13:12] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:12] [INFO] Título da janela: * Sem título - Bloco de notas
+[2024-06-11 14:13:12] [INFO] Comando da janela: C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2404.10.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe
+[2024-06-11 14:13:12] [INFO] ID da janela: 264234
+[2024-06-11 14:13:12] [INFO] PID da janela: 14016
+[2024-06-11 14:13:12] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=80,y=110,width=865,height=745]
+[2024-06-11 14:13:13] [INFO] Uso da ram pela janela: 8.0
+[2024-06-11 14:13:13] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:13] [INFO] Título da janela: Configurações
+[2024-06-11 14:13:13] [INFO] Comando da janela: C:\Windows\ImmersiveControlPanel\SystemSettings.exe
+[2024-06-11 14:13:13] [INFO] ID da janela: 329080
+[2024-06-11 14:13:13] [INFO] PID da janela: 22804
+[2024-06-11 14:13:13] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
+[2024-06-11 14:13:13] [INFO] Uso da ram pela janela: 2.0
+[2024-06-11 14:13:13] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:13] [INFO] Título da janela: Configurações
+[2024-06-11 14:13:13] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-11 14:13:13] [INFO] ID da janela: 132674
+[2024-06-11 14:13:13] [INFO] PID da janela: 6100
+[2024-06-11 14:13:13] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:13:13] [INFO] Uso da ram pela janela: 4.0
+[2024-06-11 14:13:13] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:13] [INFO] Título da janela: Email
+[2024-06-11 14:13:13] [INFO] Comando da janela: C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_16005.14326.21944.0_x64__8wekyb3d8bbwe\HxOutlook.exe
+[2024-06-11 14:13:13] [INFO] ID da janela: 197990
+[2024-06-11 14:13:13] [INFO] PID da janela: 13984
+[2024-06-11 14:13:13] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=49,width=1920,height=980]
+[2024-06-11 14:13:14] [INFO] Uso da ram pela janela: 2.0
+[2024-06-11 14:13:14] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:14] [INFO] Título da janela: Caixa de entrada - Outlook ‎- Email
+[2024-06-11 14:13:14] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-11 14:13:14] [INFO] ID da janela: 133104
+[2024-06-11 14:13:14] [INFO] PID da janela: 6100
+[2024-06-11 14:13:14] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:13:14] [INFO] Uso da ram pela janela: 4.0
+[2024-06-11 14:13:14] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:14] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:13:14] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:13:14] [INFO] ID da janela: 67072
+[2024-06-11 14:13:14] [INFO] PID da janela: 7840
+[2024-06-11 14:13:14] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-06-11 14:13:15] [INFO] Uso da ram pela janela: 145.0
+[2024-06-11 14:13:15] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:15] [INFO] Título da janela: Experiência de Entrada do Windows
+[2024-06-11 14:13:15] [INFO] Comando da janela: C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe
+[2024-06-11 14:13:15] [INFO] ID da janela: 197004
+[2024-06-11 14:13:15] [INFO] PID da janela: 13916
+[2024-06-11 14:13:15] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-11 14:13:16] [INFO] Uso da ram pela janela: 23.0
+[2024-06-11 14:13:16] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:16] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:13:16] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:13:16] [INFO] ID da janela: 65918
+[2024-06-11 14:13:16] [INFO] PID da janela: 7840
+[2024-06-11 14:13:16] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
+[2024-06-11 14:13:16] [INFO] Uso da ram pela janela: 149.0
+[2024-06-11 14:13:16] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:16] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:13:16] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:13:16] [INFO] ID da janela: 65928
+[2024-06-11 14:13:16] [INFO] PID da janela: 7840
+[2024-06-11 14:13:16] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:13:16] [INFO] Uso da ram pela janela: 149.0
+[2024-06-11 14:13:16] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:16] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:13:16] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:13:16] [INFO] ID da janela: 65882
+[2024-06-11 14:13:16] [INFO] PID da janela: 7840
+[2024-06-11 14:13:16] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:13:17] [INFO] Uso da ram pela janela: 149.0
+[2024-06-11 14:13:17] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:17] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:13:17] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:13:17] [INFO] ID da janela: 65880
+[2024-06-11 14:13:17] [INFO] PID da janela: 7840
+[2024-06-11 14:13:17] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:13:17] [INFO] Uso da ram pela janela: 149.0
+[2024-06-11 14:13:17] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:17] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:13:17] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:13:17] [INFO] ID da janela: 65878
+[2024-06-11 14:13:17] [INFO] PID da janela: 7840
+[2024-06-11 14:13:17] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:13:18] [INFO] Uso da ram pela janela: 150.0
+[2024-06-11 14:13:18] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:18] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:13:18] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:13:18] [INFO] ID da janela: 65876
+[2024-06-11 14:13:18] [INFO] PID da janela: 7840
+[2024-06-11 14:13:18] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:13:18] [INFO] Uso da ram pela janela: 150.0
+[2024-06-11 14:13:18] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:18] [INFO] Título da janela: Program Manager
+[2024-06-11 14:13:18] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:13:18] [INFO] ID da janela: 65822
+[2024-06-11 14:13:18] [INFO] PID da janela: 7840
+[2024-06-11 14:13:18] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-11 14:13:19] [INFO] Uso da ram pela janela: 150.0
+[2024-06-11 14:13:19] [INFO] Dados da janela gravados.
+[2024-06-11 14:13:19] [INFO] Todas as janelas verificadas.
+[2024-06-11 14:14:10] [INFO] Capturando dados dos seus Apps.
+[2024-06-11 14:14:10] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:14:10] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:14:10] [INFO] ID da janela: 133208
+[2024-06-11 14:14:10] [INFO] PID da janela: 7840
+[2024-06-11 14:14:10] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-06-11 14:14:11] [INFO] Uso da ram pela janela: 151.0
+[2024-06-11 14:14:11] [INFO] Dados da janela gravados.
+[2024-06-11 14:14:11] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:14:11] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:14:11] [INFO] ID da janela: 131216
+[2024-06-11 14:14:11] [INFO] PID da janela: 7840
+[2024-06-11 14:14:11] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
+[2024-06-11 14:14:11] [INFO] Uso da ram pela janela: 151.0
+[2024-06-11 14:14:11] [INFO] Dados da janela gravados.
+[2024-06-11 14:14:11] [INFO] Título da janela: MySQL Workbench
+[2024-06-11 14:14:11] [INFO] Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
+[2024-06-11 14:14:11] [INFO] ID da janela: 590436
+[2024-06-11 14:14:11] [INFO] PID da janela: 19572
+[2024-06-11 14:14:11] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
+[2024-06-11 14:14:12] [INFO] Uso da ram pela janela: 31.0
+[2024-06-11 14:14:12] [INFO] Dados da janela gravados.
+[2024-06-11 14:14:12] [INFO] Título da janela: app_client – RegistroAlertasDAO.java [app-client-api]
+[2024-06-11 14:14:12] [INFO] Comando da janela: C:\Users\julia\AppData\Local\Programs\IntelliJ IDEA Community Edition\bin\idea64.exe
+[2024-06-11 14:14:12] [INFO] ID da janela: 134760
+[2024-06-11 14:14:12] [INFO] PID da janela: 12800
+[2024-06-11 14:14:12] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:14:12] [INFO] Uso da ram pela janela: 1.0
+[2024-06-11 14:14:12] [INFO] Dados da janela gravados.
+[2024-06-11 14:14:12] [INFO] Título da janela: visualopsnotificationschannel (Canal) - VisualOpsNotifications - Slack
+[2024-06-11 14:14:12] [INFO] Comando da janela: C:\Users\julia\AppData\Local\slack\app-4.38.127\slack.exe
+[2024-06-11 14:14:12] [INFO] ID da janela: 67030
+[2024-06-11 14:14:12] [INFO] PID da janela: 10332
+[2024-06-11 14:14:12] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:14:13] [INFO] Uso da ram pela janela: 57.0
+[2024-06-11 14:14:13] [INFO] Dados da janela gravados.
+[2024-06-11 14:14:13] [INFO] Título da janela: CPU 0°C Problema Diagnóstico - Google Chrome
+[2024-06-11 14:14:13] [INFO] Comando da janela: C:\Program Files\Google\Chrome\Application\chrome.exe
+[2024-06-11 14:14:13] [INFO] ID da janela: 66840
+[2024-06-11 14:14:13] [INFO] PID da janela: 23056
+[2024-06-11 14:14:13] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:14:13] [INFO] Uso da ram pela janela: 103.0
+[2024-06-11 14:14:13] [INFO] Dados da janela gravados.
+[2024-06-11 14:14:13] [INFO] Título da janela: app_client
+[2024-06-11 14:14:13] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:14:13] [INFO] ID da janela: 1640888
+[2024-06-11 14:14:13] [INFO] PID da janela: 7840
+[2024-06-11 14:14:13] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-06-11 14:14:14] [INFO] Uso da ram pela janela: 150.0
+[2024-06-11 14:14:14] [INFO] Dados da janela gravados.
+[2024-06-11 14:14:14] [INFO] Título da janela: * Sem título - Bloco de notas
+[2024-06-11 14:14:14] [INFO] Comando da janela: C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2404.10.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe
+[2024-06-11 14:14:14] [INFO] ID da janela: 264234
+[2024-06-11 14:14:14] [INFO] PID da janela: 14016
+[2024-06-11 14:14:14] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=80,y=110,width=865,height=745]
+[2024-06-11 14:14:14] [INFO] Uso da ram pela janela: 7.0
+[2024-06-11 14:14:14] [INFO] Dados da janela gravados.
+[2024-06-11 14:14:14] [INFO] Título da janela: Configurações
+[2024-06-11 14:14:14] [INFO] Comando da janela: C:\Windows\ImmersiveControlPanel\SystemSettings.exe
+[2024-06-11 14:14:14] [INFO] ID da janela: 329080
+[2024-06-11 14:14:14] [INFO] PID da janela: 22804
+[2024-06-11 14:14:14] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
+[2024-06-11 14:14:14] [INFO] Uso da ram pela janela: 2.0
+[2024-06-11 14:14:14] [INFO] Dados da janela gravados.
+[2024-06-11 14:14:14] [INFO] Título da janela: Configurações
+[2024-06-11 14:14:14] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-11 14:14:14] [INFO] ID da janela: 132674
+[2024-06-11 14:14:14] [INFO] PID da janela: 6100
+[2024-06-11 14:14:14] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:14:15] [INFO] Uso da ram pela janela: 4.0
+[2024-06-11 14:14:15] [INFO] Dados da janela gravados.
+[2024-06-11 14:14:15] [INFO] Título da janela: Email
+[2024-06-11 14:14:15] [INFO] Comando da janela: C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_16005.14326.21944.0_x64__8wekyb3d8bbwe\HxOutlook.exe
+[2024-06-11 14:14:15] [INFO] ID da janela: 197990
+[2024-06-11 14:14:15] [INFO] PID da janela: 13984
+[2024-06-11 14:14:15] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=49,width=1920,height=980]
+[2024-06-11 14:14:15] [INFO] Uso da ram pela janela: 2.0
+[2024-06-11 14:14:15] [INFO] Dados da janela gravados.
+[2024-06-11 14:14:15] [INFO] Título da janela: Caixa de entrada - Outlook ‎- Email
+[2024-06-11 14:14:15] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-11 14:14:15] [INFO] ID da janela: 133104
+[2024-06-11 14:14:15] [INFO] PID da janela: 6100
+[2024-06-11 14:14:15] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:14:16] [INFO] Uso da ram pela janela: 4.0
+[2024-06-11 14:14:16] [INFO] Dados da janela gravados.
+[2024-06-11 14:14:16] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:14:16] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:14:16] [INFO] ID da janela: 67072
+[2024-06-11 14:14:16] [INFO] PID da janela: 7840
+[2024-06-11 14:14:16] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-06-11 14:14:16] [INFO] Uso da ram pela janela: 151.0
+[2024-06-11 14:14:16] [INFO] Dados da janela gravados.
+[2024-06-11 14:14:16] [INFO] Título da janela: Experiência de Entrada do Windows
+[2024-06-11 14:14:16] [INFO] Comando da janela: C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe
+[2024-06-11 14:14:16] [INFO] ID da janela: 197004
+[2024-06-11 14:14:16] [INFO] PID da janela: 13916
+[2024-06-11 14:14:16] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-11 14:14:17] [INFO] Uso da ram pela janela: 23.0
+[2024-06-11 14:14:17] [INFO] Dados da janela gravados.
+[2024-06-11 14:14:17] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:14:17] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:14:17] [INFO] ID da janela: 65918
+[2024-06-11 14:14:17] [INFO] PID da janela: 7840
+[2024-06-11 14:14:17] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
+[2024-06-11 14:14:17] [INFO] Uso da ram pela janela: 151.0
+[2024-06-11 14:14:17] [INFO] Dados da janela gravados.
+[2024-06-11 14:14:17] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:14:17] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:14:17] [INFO] ID da janela: 65928
+[2024-06-11 14:14:17] [INFO] PID da janela: 7840
+[2024-06-11 14:14:17] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:16:18] [INFO] Servidor iniciando.
+[2024-06-11 14:16:20] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 14:16:46] [INFO] Usuário logado com sucesso: l_julia.campioto@gmail.com
+[2024-06-11 14:16:51] [INFO] Capturando dados da sua CPU.
+[2024-06-11 14:16:51] [INFO] Número de CPUs lógicas: 8
+[2024-06-11 14:16:51] [INFO] Número de CPUs físicas: 4
+[2024-06-11 14:16:51] [INFO] Microarquitetura: Tiger Lake
+[2024-06-11 14:16:51] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-11 14:16:51] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-11 14:16:51] [INFO] Fabricante: GenuineIntel
+[2024-06-11 14:16:51] [INFO] Frequência: 2.419E9
+[2024-06-11 14:16:51] [INFO] Número de pacotes físicos: 1
+[2024-06-11 14:16:53] [INFO] Uso da CPU: 9.959623149394348
+[2024-06-11 14:16:53] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-11 14:16:55] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-11 14:16:55] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-11 14:16:55] [INFO] Capturando dados do seu HDD
+[2024-06-11 14:16:55] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-11 14:16:55] [INFO] Serial do disco: 0000_0000_0000_0001_00A0_7523_4085_5509.
+[2024-06-11 14:16:55] [INFO] Modelo do disco: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
+[2024-06-11 14:16:55] [INFO] Escritas do disco: 4.328706741333008
+[2024-06-11 14:16:55] [INFO] Leituras do disco: 11.510544776916504
+[2024-06-11 14:16:55] [INFO] Bytes de escritas do disco: 179.9646773338318
+[2024-06-11 14:16:55] [INFO] Bytes de leitura do disco: 350.94416999816895
+[2024-06-11 14:16:55] [INFO] Tamanho do disco: 476.94
+[2024-06-11 14:16:55] [INFO] Tempo de transferência do disco: 3073.446388888889
+[2024-06-11 14:16:55] [INFO] Dados do disco gravados.
+[2024-06-11 14:16:55] [INFO] Capturando dados da GPU.
+[2024-06-11 14:16:55] [INFO] Dados do fabricante da GPU capturados com sucesso: Intel Corporation
+[2024-06-11 14:16:55] [INFO] Dados do ID da GPU capturados com sucesso: VideoController1
+[2024-06-11 14:16:55] [INFO] O nome da GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-11 14:16:55] [INFO] A VRam da GPU foi capturada com sucesso: 1.0
+[2024-06-11 14:16:55] [INFO] A Versão da GPU foi capturada com sucesso: 31.0.101.4953
+[2024-06-11 14:16:56] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00.
+[2024-06-11 14:16:56] [INFO] Dados da GPU gravados.
+[2024-06-11 14:16:56] [INFO] Capturando dados da sua memória RAM.
+[2024-06-11 14:16:56] [INFO] Memória disponível: 807.91015625
+[2024-06-11 14:16:56] [INFO] Memória total: 7.729286193847656
+[2024-06-11 14:16:56] [INFO] Memória em uso: 6.940311431884766
+[2024-06-11 14:16:56] [INFO] Dados da memória RAM capturados com sucesso.
+[2024-06-11 14:16:56] [INFO] Capturando dados da sua bateria.
+[2024-06-11 14:16:56] [INFO] Amperagem da bateria: -1336.0013920306246
+[2024-06-11 14:16:56] [INFO] Nome do dispositivo da bateria: DELL MGCM535
+[2024-06-11 14:16:56] [INFO] Número de série da bateria: 1298
+[2024-06-11 14:16:56] [INFO] Química da bateria: LiP
+[2024-06-11 14:16:56] [INFO] Nome da bateria: System Battery
+[2024-06-11 14:16:56] [INFO] Voltagem da bateria: 11.494
+[2024-06-11 14:16:56] [INFO] Capacidade atual da bateria: 25.224609375
+[2024-06-11 14:16:56] [INFO] Número de ciclos da bateria: 0
+[2024-06-11 14:16:56] [INFO] Capacidade de design da bateria: 39.638671875
+[2024-06-11 14:16:56] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-11 14:16:56] [INFO] Tempo restante da bateria (instantâneo): 6055.0
+[2024-06-11 14:16:56] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-11 14:16:56] [INFO] Taxa de uso de energia da bateria: -15356.0
+[2024-06-11 14:16:56] [INFO] Temperatura da bateria: 0.0
+[2024-06-11 14:16:56] [INFO] Capacidade máxima da bateria: 34.9912109375
+[2024-06-11 14:16:56] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-11 14:16:56] [INFO] Data de fabricação da bateria: N/A
+[2024-06-11 14:16:56] [INFO] Fabricante da bateria: SMP
+[2024-06-11 14:16:57] [INFO] Dados da bateria capturados com sucesso: 72.0
+[2024-06-11 14:16:57] [INFO] Dados da bateria gravados.
+[2024-06-11 14:16:57] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-11 14:16:57] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-11 14:16:57] [INFO] Nome do volume capturado: \\?\Volume{630e018e-ccfb-41c7-ad21-5c4fcb9fa902}\
+[2024-06-11 14:16:57] [INFO] Espaço disponível no volume lógico capturado: 309.39659881591797
+[2024-06-11 14:16:57] [INFO] Espaço total do volume lógico capturado com sucesso: 457.89648056030273
+[2024-06-11 14:16:57] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-11 14:16:57] [INFO] UUID do volume lógico capturado: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
+[2024-06-11 14:16:57] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-11 14:16:57] [INFO] Dados do volume lógico gravados.
+[2024-06-11 14:16:57] [INFO] Todos os volumes lógicos verificados.
+[2024-06-11 14:16:57] [INFO] Capturando dados dos seus Apps.
+[2024-06-11 14:16:57] [INFO] Capturando dados da sua CPU.
+[2024-06-11 14:16:57] [INFO] Número de CPUs lógicas: 8
+[2024-06-11 14:16:57] [INFO] Número de CPUs físicas: 4
+[2024-06-11 14:16:57] [INFO] Microarquitetura: Tiger Lake
+[2024-06-11 14:16:57] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:16:57] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:16:57] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-11 14:16:57] [INFO] ID da janela: 133208
+[2024-06-11 14:16:57] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-11 14:16:57] [INFO] PID da janela: 7840
+[2024-06-11 14:16:57] [INFO] Fabricante: GenuineIntel
+[2024-06-11 14:16:57] [INFO] Frequência: 2.419E9
+[2024-06-11 14:16:57] [INFO] Número de pacotes físicos: 1
+[2024-06-11 14:16:57] [INFO] Uso da CPU: 9.959623149394348
+[2024-06-11 14:16:57] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-06-11 14:16:57] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-11 14:16:58] [INFO] Uso da ram pela janela: 150.0
+[2024-06-11 14:16:58] [INFO] Dados da janela gravados.
+[2024-06-11 14:16:58] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:16:58] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:16:58] [INFO] ID da janela: 131216
+[2024-06-11 14:16:58] [INFO] PID da janela: 7840
+[2024-06-11 14:16:58] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
+[2024-06-11 14:16:58] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-11 14:16:58] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-11 14:16:58] [INFO] Capturando dados do seu HDD
+[2024-06-11 14:16:58] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-11 14:16:58] [INFO] Serial do disco: 0000_0000_0000_0001_00A0_7523_4085_5509.
+[2024-06-11 14:16:58] [INFO] Modelo do disco: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
+[2024-06-11 14:16:58] [INFO] Escritas do disco: 4.328880310058594
+[2024-06-11 14:16:58] [INFO] Leituras do disco: 11.51086139678955
+[2024-06-11 14:16:58] [INFO] Bytes de escritas do disco: 179.97067403793335
+[2024-06-11 14:16:58] [INFO] Bytes de leitura do disco: 350.9523243904114
+[2024-06-11 14:16:58] [INFO] Tamanho do disco: 476.94
+[2024-06-11 14:16:58] [INFO] Tempo de transferência do disco: 3073.4955555555557
+[2024-06-11 14:16:58] [INFO] Dados do disco gravados.
+[2024-06-11 14:16:58] [INFO] Capturando dados da GPU.
+[2024-06-11 14:16:58] [INFO] Dados do fabricante da GPU capturados com sucesso: Intel Corporation
+[2024-06-11 14:16:58] [INFO] Dados do ID da GPU capturados com sucesso: VideoController1
+[2024-06-11 14:16:58] [INFO] O nome da GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-11 14:16:58] [INFO] A VRam da GPU foi capturada com sucesso: 1.0
+[2024-06-11 14:16:58] [INFO] A Versão da GPU foi capturada com sucesso: 31.0.101.4953
+[2024-06-11 14:16:58] [INFO] Uso da ram pela janela: 150.0
+[2024-06-11 14:16:58] [INFO] Dados da janela gravados.
+[2024-06-11 14:16:58] [INFO] Título da janela: app_client – Main.java [app-client-api]
+[2024-06-11 14:16:58] [INFO] Comando da janela: C:\Users\julia\AppData\Local\Programs\IntelliJ IDEA Community Edition\bin\idea64.exe
+[2024-06-11 14:16:58] [INFO] ID da janela: 134760
+[2024-06-11 14:16:58] [INFO] PID da janela: 12800
+[2024-06-11 14:16:58] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:16:59] [INFO] Uso da ram pela janela: 1.0
+[2024-06-11 14:16:59] [INFO] Dados da janela gravados.
+[2024-06-11 14:16:59] [INFO] Título da janela: MySQL Workbench
+[2024-06-11 14:16:59] [INFO] Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
+[2024-06-11 14:16:59] [INFO] ID da janela: 590436
+[2024-06-11 14:16:59] [INFO] PID da janela: 19572
+[2024-06-11 14:16:59] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
+[2024-06-11 14:16:59] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00.
+[2024-06-11 14:16:59] [INFO] Dados da GPU gravados.
+[2024-06-11 14:16:59] [INFO] Capturando dados da sua memória RAM.
+[2024-06-11 14:16:59] [INFO] Memória disponível: 795.109375
+[2024-06-11 14:16:59] [INFO] Memória total: 7.729286193847656
+[2024-06-11 14:16:59] [INFO] Memória em uso: 6.952812194824219
+[2024-06-11 14:16:59] [INFO] Dados da memória RAM capturados com sucesso.
+[2024-06-11 14:16:59] [INFO] Capturando dados da sua bateria.
+[2024-06-11 14:16:59] [INFO] Amperagem da bateria: -1561.4893802989247
+[2024-06-11 14:16:59] [INFO] Nome do dispositivo da bateria: DELL MGCM535
+[2024-06-11 14:16:59] [INFO] Número de série da bateria: 1298
+[2024-06-11 14:16:59] [INFO] Química da bateria: LiP
+[2024-06-11 14:16:59] [INFO] Nome da bateria: System Battery
+[2024-06-11 14:16:59] [INFO] Voltagem da bateria: 11.441
+[2024-06-11 14:16:59] [INFO] Capacidade atual da bateria: 25.203125
+[2024-06-11 14:16:59] [INFO] Número de ciclos da bateria: 0
+[2024-06-11 14:16:59] [INFO] Capacidade de design da bateria: 39.638671875
+[2024-06-11 14:16:59] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-11 14:16:59] [INFO] Tempo restante da bateria (instantâneo): 5200.0
+[2024-06-11 14:16:59] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-11 14:16:59] [INFO] Taxa de uso de energia da bateria: -17865.0
+[2024-06-11 14:16:59] [INFO] Temperatura da bateria: 0.0
+[2024-06-11 14:16:59] [INFO] Capacidade máxima da bateria: 34.9912109375
+[2024-06-11 14:16:59] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-11 14:16:59] [INFO] Data de fabricação da bateria: N/A
+[2024-06-11 14:16:59] [INFO] Fabricante da bateria: SMP
+[2024-06-11 14:16:59] [INFO] Uso da ram pela janela: 93.0
+[2024-06-11 14:16:59] [INFO] Dados da janela gravados.
+[2024-06-11 14:16:59] [INFO] Título da janela: visualopsnotificationschannel (Canal) - VisualOpsNotifications - Slack
+[2024-06-11 14:16:59] [INFO] Comando da janela: C:\Users\julia\AppData\Local\slack\app-4.38.127\slack.exe
+[2024-06-11 14:16:59] [INFO] ID da janela: 67030
+[2024-06-11 14:16:59] [INFO] PID da janela: 10332
+[2024-06-11 14:16:59] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:16:59] [INFO] Uso da ram pela janela: 58.0
+[2024-06-11 14:16:59] [INFO] Dados da janela gravados.
+[2024-06-11 14:16:59] [INFO] Título da janela: CPU 0°C Problema Diagnóstico - Google Chrome
+[2024-06-11 14:16:59] [INFO] Comando da janela: C:\Program Files\Google\Chrome\Application\chrome.exe
+[2024-06-11 14:16:59] [INFO] ID da janela: 66840
+[2024-06-11 14:16:59] [INFO] PID da janela: 23056
+[2024-06-11 14:16:59] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:17:00] [INFO] Dados da bateria capturados com sucesso: 72.0
+[2024-06-11 14:17:00] [INFO] Dados da bateria gravados.
+[2024-06-11 14:17:00] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-11 14:17:00] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-11 14:17:00] [INFO] Nome do volume capturado: \\?\Volume{630e018e-ccfb-41c7-ad21-5c4fcb9fa902}\
+[2024-06-11 14:17:00] [INFO] Espaço disponível no volume lógico capturado: 309.3926200866699
+[2024-06-11 14:17:00] [INFO] Espaço total do volume lógico capturado com sucesso: 457.89648056030273
+[2024-06-11 14:17:00] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-11 14:17:00] [INFO] UUID do volume lógico capturado: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
+[2024-06-11 14:17:00] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-11 14:17:00] [INFO] Dados do volume lógico gravados.
+[2024-06-11 14:17:00] [INFO] Todos os volumes lógicos verificados.
+[2024-06-11 14:17:00] [INFO] Uso da ram pela janela: 104.0
+[2024-06-11 14:17:00] [INFO] Dados da janela gravados.
+[2024-06-11 14:17:00] [INFO] Título da janela: app_client
+[2024-06-11 14:17:00] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:17:00] [INFO] ID da janela: 1640888
+[2024-06-11 14:17:00] [INFO] PID da janela: 7840
+[2024-06-11 14:17:00] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-06-11 14:17:00] [INFO] Uso da ram pela janela: 150.0
+[2024-06-11 14:17:00] [INFO] Dados da janela gravados.
+[2024-06-11 14:17:00] [INFO] Título da janela: * Sem título - Bloco de notas
+[2024-06-11 14:17:00] [INFO] Comando da janela: C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2404.10.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe
+[2024-06-11 14:17:00] [INFO] ID da janela: 264234
+[2024-06-11 14:17:00] [INFO] PID da janela: 14016
+[2024-06-11 14:17:00] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=80,y=110,width=865,height=745]
+[2024-06-11 14:17:01] [INFO] Uso da ram pela janela: 9.0
+[2024-06-11 14:17:01] [INFO] Dados da janela gravados.
+[2024-06-11 14:17:01] [INFO] Título da janela: Configurações
+[2024-06-11 14:17:01] [INFO] Comando da janela: C:\Windows\ImmersiveControlPanel\SystemSettings.exe
+[2024-06-11 14:17:01] [INFO] ID da janela: 329080
+[2024-06-11 14:17:01] [INFO] PID da janela: 22804
+[2024-06-11 14:17:01] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
+[2024-06-11 14:17:01] [INFO] Uso da ram pela janela: 2.0
+[2024-06-11 14:17:01] [INFO] Dados da janela gravados.
+[2024-06-11 14:17:01] [INFO] Título da janela: Configurações
+[2024-06-11 14:17:01] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-11 14:17:01] [INFO] ID da janela: 132674
+[2024-06-11 14:17:01] [INFO] PID da janela: 6100
+[2024-06-11 14:17:01] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:17:02] [INFO] Uso da ram pela janela: 4.0
+[2024-06-11 14:17:02] [INFO] Dados da janela gravados.
+[2024-06-11 14:17:02] [INFO] Título da janela: Email
+[2024-06-11 14:17:02] [INFO] Comando da janela: C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_16005.14326.21944.0_x64__8wekyb3d8bbwe\HxOutlook.exe
+[2024-06-11 14:17:02] [INFO] ID da janela: 197990
+[2024-06-11 14:17:02] [INFO] PID da janela: 13984
+[2024-06-11 14:17:02] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=49,width=1920,height=980]
+[2024-06-11 14:17:02] [INFO] Uso da ram pela janela: 2.0
+[2024-06-11 14:17:02] [INFO] Dados da janela gravados.
+[2024-06-11 14:17:02] [INFO] Título da janela: Caixa de entrada - Outlook ‎- Email
+[2024-06-11 14:17:02] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-11 14:17:02] [INFO] ID da janela: 133104
+[2024-06-11 14:17:02] [INFO] PID da janela: 6100
+[2024-06-11 14:17:02] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:17:03] [INFO] Uso da ram pela janela: 4.0
+[2024-06-11 14:17:03] [INFO] Dados da janela gravados.
+[2024-06-11 14:17:03] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:17:03] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:17:03] [INFO] ID da janela: 67072
+[2024-06-11 14:17:03] [INFO] PID da janela: 7840
+[2024-06-11 14:17:03] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-06-11 14:17:03] [INFO] Uso da ram pela janela: 150.0
+[2024-06-11 14:17:03] [INFO] Dados da janela gravados.
+[2024-06-11 14:17:03] [INFO] Título da janela: Experiência de Entrada do Windows
+[2024-06-11 14:17:03] [INFO] Comando da janela: C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe
+[2024-06-11 14:17:03] [INFO] ID da janela: 197004
+[2024-06-11 14:17:03] [INFO] PID da janela: 13916
+[2024-06-11 14:17:03] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-11 14:17:04] [INFO] Uso da ram pela janela: 24.0
+[2024-06-11 14:17:04] [INFO] Dados da janela gravados.
+[2024-06-11 14:17:04] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:17:04] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:17:04] [INFO] ID da janela: 65918
+[2024-06-11 14:17:04] [INFO] PID da janela: 7840
+[2024-06-11 14:17:04] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
+[2024-06-11 14:17:04] [INFO] Uso da ram pela janela: 150.0
+[2024-06-11 14:17:04] [INFO] Dados da janela gravados.
+[2024-06-11 14:17:04] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:17:04] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:17:04] [INFO] ID da janela: 65928
+[2024-06-11 14:17:04] [INFO] PID da janela: 7840
+[2024-06-11 14:17:04] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:17:05] [INFO] Uso da ram pela janela: 150.0
+[2024-06-11 14:17:05] [INFO] Dados da janela gravados.
+[2024-06-11 14:17:05] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:17:05] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:17:05] [INFO] ID da janela: 65882
+[2024-06-11 14:17:05] [INFO] PID da janela: 7840
+[2024-06-11 14:17:05] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:17:05] [INFO] Uso da ram pela janela: 150.0
+[2024-06-11 14:17:05] [INFO] Dados da janela gravados.
+[2024-06-11 14:17:05] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:17:05] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:17:05] [INFO] ID da janela: 65880
+[2024-06-11 14:17:05] [INFO] PID da janela: 7840
+[2024-06-11 14:17:05] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:17:06] [INFO] Uso da ram pela janela: 150.0
+[2024-06-11 14:17:06] [INFO] Dados da janela gravados.
+[2024-06-11 14:17:06] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:17:06] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:17:06] [INFO] ID da janela: 65878
+[2024-06-11 14:17:06] [INFO] PID da janela: 7840
+[2024-06-11 14:17:06] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:17:06] [INFO] Uso da ram pela janela: 150.0
+[2024-06-11 14:17:06] [INFO] Dados da janela gravados.
+[2024-06-11 14:17:06] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:17:06] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:17:06] [INFO] ID da janela: 65876
+[2024-06-11 14:17:06] [INFO] PID da janela: 7840
+[2024-06-11 14:17:06] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:17:07] [INFO] Uso da ram pela janela: 150.0
+[2024-06-11 14:17:07] [INFO] Dados da janela gravados.
+[2024-06-11 14:17:07] [INFO] Título da janela: Program Manager
+[2024-06-11 14:17:07] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:17:07] [INFO] ID da janela: 65822
+[2024-06-11 14:17:07] [INFO] PID da janela: 7840
+[2024-06-11 14:17:07] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-11 14:17:07] [INFO] Uso da ram pela janela: 150.0
+[2024-06-11 14:17:07] [INFO] Dados da janela gravados.
+[2024-06-11 14:17:07] [INFO] Todas as janelas verificadas.
+[2024-06-11 14:18:18] [INFO] Capturando dados dos seus Apps.
+[2024-06-11 14:18:18] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:18:18] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:18:18] [INFO] ID da janela: 133208
+[2024-06-11 14:18:18] [INFO] PID da janela: 7840
+[2024-06-11 14:18:18] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-06-11 14:27:43] [INFO] Servidor iniciando.
+[2024-06-11 14:27:45] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 14:28:13] [INFO] Usuário logado com sucesso: l_julia.campioto@gmail.com
+[2024-06-11 14:28:16] [INFO] Capturando dados da sua CPU.
+[2024-06-11 14:28:17] [INFO] Número de CPUs lógicas: 8
+[2024-06-11 14:28:17] [INFO] Número de CPUs físicas: 4
+[2024-06-11 14:28:17] [INFO] Microarquitetura: Tiger Lake
+[2024-06-11 14:28:17] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-11 14:28:17] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-11 14:28:17] [INFO] Fabricante: GenuineIntel
+[2024-06-11 14:28:17] [INFO] Frequência: 2.419E9
+[2024-06-11 14:28:17] [INFO] Número de pacotes físicos: 1
+[2024-06-11 14:28:19] [INFO] Uso da CPU: 12.760511882998172
+[2024-06-11 14:28:19] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-11 14:28:21] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-11 14:28:21] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-11 14:28:21] [INFO] Capturando dados do seu HDD
+[2024-06-11 14:28:21] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-11 14:28:21] [INFO] Serial do disco: 0000_0000_0000_0001_00A0_7523_4085_5509.
+[2024-06-11 14:28:21] [INFO] Modelo do disco: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
+[2024-06-11 14:28:21] [INFO] Escritas do disco: 4.349859237670898
+[2024-06-11 14:28:21] [INFO] Leituras do disco: 11.624961853027344
+[2024-06-11 14:28:21] [INFO] Bytes de escritas do disco: 182.05030059814453
+[2024-06-11 14:28:21] [INFO] Bytes de leitura do disco: 355.5011396408081
+[2024-06-11 14:28:21] [INFO] Tamanho do disco: 476.94
+[2024-06-11 14:28:21] [INFO] Tempo de transferência do disco: 3091.3625
+[2024-06-11 14:28:21] [INFO] Dados do disco gravados.
+[2024-06-11 14:28:21] [INFO] Capturando dados da GPU.
+[2024-06-11 14:28:21] [INFO] Dados do fabricante da GPU capturados com sucesso: Intel Corporation
+[2024-06-11 14:28:21] [INFO] Dados do ID da GPU capturados com sucesso: VideoController1
+[2024-06-11 14:28:21] [INFO] O nome da GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-11 14:28:21] [INFO] A VRam da GPU foi capturada com sucesso: 1.0
+[2024-06-11 14:28:21] [INFO] A Versão da GPU foi capturada com sucesso: 31.0.101.4953
+[2024-06-11 14:28:22] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00.
+[2024-06-11 14:28:22] [INFO] Dados da GPU gravados.
+[2024-06-11 14:28:22] [INFO] Capturando dados da sua memória RAM.
+[2024-06-11 14:28:22] [INFO] Memória disponível: 361.76953125
+[2024-06-11 14:28:22] [INFO] Memória total: 7.729286193847656
+[2024-06-11 14:28:22] [INFO] Memória em uso: 7.375995635986328
+[2024-06-11 14:28:22] [INFO] Dados da memória RAM capturados com sucesso.
+[2024-06-11 14:28:22] [INFO] Capturando dados da sua bateria.
+[2024-06-11 14:28:22] [INFO] Amperagem da bateria: -1545.5268741159832
+[2024-06-11 14:28:22] [INFO] Nome do dispositivo da bateria: DELL MGCM535
+[2024-06-11 14:28:22] [INFO] Número de série da bateria: 1298
+[2024-06-11 14:28:22] [INFO] Química da bateria: LiP
+[2024-06-11 14:28:22] [INFO] Nome da bateria: System Battery
+[2024-06-11 14:28:22] [INFO] Voltagem da bateria: 11.312
+[2024-06-11 14:28:22] [INFO] Capacidade atual da bateria: 23.412109375
+[2024-06-11 14:28:22] [INFO] Número de ciclos da bateria: 0
+[2024-06-11 14:28:22] [INFO] Capacidade de design da bateria: 39.638671875
+[2024-06-11 14:28:22] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-11 14:28:22] [INFO] Tempo restante da bateria (instantâneo): 4936.0
+[2024-06-11 14:28:22] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-11 14:28:22] [INFO] Taxa de uso de energia da bateria: -17483.0
+[2024-06-11 14:28:22] [INFO] Temperatura da bateria: 0.0
+[2024-06-11 14:28:22] [INFO] Capacidade máxima da bateria: 34.9912109375
+[2024-06-11 14:28:22] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-11 14:28:22] [INFO] Data de fabricação da bateria: N/A
+[2024-06-11 14:28:22] [INFO] Fabricante da bateria: SMP
+[2024-06-11 14:28:23] [INFO] Dados da bateria capturados com sucesso: 66.0
+[2024-06-11 14:28:23] [INFO] Dados da bateria gravados.
+[2024-06-11 14:28:23] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-11 14:28:23] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-11 14:28:23] [INFO] Nome do volume capturado: \\?\Volume{630e018e-ccfb-41c7-ad21-5c4fcb9fa902}\
+[2024-06-11 14:28:23] [INFO] Espaço disponível no volume lógico capturado: 310.58724212646484
+[2024-06-11 14:28:23] [INFO] Espaço total do volume lógico capturado com sucesso: 457.89648056030273
+[2024-06-11 14:28:23] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-11 14:28:23] [INFO] UUID do volume lógico capturado: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
+[2024-06-11 14:28:23] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-11 14:28:23] [INFO] Dados do volume lógico gravados.
+[2024-06-11 14:28:23] [INFO] Todos os volumes lógicos verificados.
+[2024-06-11 14:28:23] [INFO] Capturando dados dos seus Apps.
+[2024-06-11 14:28:23] [INFO] Capturando dados da sua CPU.
+[2024-06-11 14:28:23] [INFO] Número de CPUs lógicas: 8
+[2024-06-11 14:28:23] [INFO] Número de CPUs físicas: 4
+[2024-06-11 14:28:23] [INFO] Microarquitetura: Tiger Lake
+[2024-06-11 14:28:23] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:28:23] [INFO] Identificador: Intel64 Family 6 Model 140 Stepping 1
+[2024-06-11 14:28:23] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:28:23] [INFO] ID da CPU Looca: BFEBFBFF000806C1
+[2024-06-11 14:28:23] [INFO] ID da janela: 133208
+[2024-06-11 14:28:23] [INFO] Fabricante: GenuineIntel
+[2024-06-11 14:28:23] [INFO] PID da janela: 7840
+[2024-06-11 14:28:23] [INFO] Frequência: 2.419E9
+[2024-06-11 14:28:23] [INFO] Número de pacotes físicos: 1
+[2024-06-11 14:28:23] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-06-11 14:28:23] [INFO] Uso da CPU: 12.760511882998172
+[2024-06-11 14:28:23] [INFO] Nome da CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[2024-06-11 14:28:24] [INFO] Uso da ram pela janela: 153.0
+[2024-06-11 14:28:24] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:24] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:28:24] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:28:24] [INFO] ID da janela: 131216
+[2024-06-11 14:28:24] [INFO] PID da janela: 7840
+[2024-06-11 14:28:24] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
+[2024-06-11 14:28:24] [INFO] Uso da ram pela janela: 145.0
+[2024-06-11 14:28:24] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:24] [INFO] Título da janela: visualopsnotificationschannel (Canal) - VisualOpsNotifications - Slack
+[2024-06-11 14:28:24] [INFO] Comando da janela: C:\Users\julia\AppData\Local\slack\app-4.38.127\slack.exe
+[2024-06-11 14:28:24] [INFO] ID da janela: 67030
+[2024-06-11 14:28:24] [INFO] PID da janela: 10332
+[2024-06-11 14:28:24] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:28:25] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-11 14:28:25] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-11 14:28:25] [INFO] Capturando dados do seu HDD
+[2024-06-11 14:28:25] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-11 14:28:25] [INFO] Serial do disco: 0000_0000_0000_0001_00A0_7523_4085_5509.
+[2024-06-11 14:28:25] [INFO] Modelo do disco: NVMe Micron 2450 NVMe 512GB (Unidades de disco padrão)
+[2024-06-11 14:28:25] [INFO] Escritas do disco: 4.350142478942871
+[2024-06-11 14:28:25] [INFO] Leituras do disco: 11.627177238464355
+[2024-06-11 14:28:25] [INFO] Bytes de escritas do disco: 182.0693063735962
+[2024-06-11 14:28:25] [INFO] Bytes de leitura do disco: 355.55354261398315
+[2024-06-11 14:28:25] [INFO] Tamanho do disco: 476.94
+[2024-06-11 14:28:25] [INFO] Tempo de transferência do disco: 3091.52
+[2024-06-11 14:28:25] [INFO] Dados do disco gravados.
+[2024-06-11 14:28:25] [INFO] Capturando dados da GPU.
+[2024-06-11 14:28:25] [INFO] Dados do fabricante da GPU capturados com sucesso: Intel Corporation
+[2024-06-11 14:28:25] [INFO] Dados do ID da GPU capturados com sucesso: VideoController1
+[2024-06-11 14:28:25] [INFO] O nome da GPU foi capturado com sucesso: Intel(R) Iris(R) Xe Graphics
+[2024-06-11 14:28:25] [INFO] A VRam da GPU foi capturada com sucesso: 1.0
+[2024-06-11 14:28:25] [INFO] A Versão da GPU foi capturada com sucesso: 31.0.101.4953
+[2024-06-11 14:28:25] [INFO] Uso da ram pela janela: 67.0
+[2024-06-11 14:28:25] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:25] [INFO] Título da janela: MySQL Workbench
+[2024-06-11 14:28:25] [INFO] Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
+[2024-06-11 14:28:25] [INFO] ID da janela: 590436
+[2024-06-11 14:28:25] [INFO] PID da janela: 19572
+[2024-06-11 14:28:25] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
+[2024-06-11 14:28:25] [INFO] Uso da ram pela janela: 56.0
+[2024-06-11 14:28:25] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:25] [INFO] Título da janela: app_client – Main.java [app-client-api]
+[2024-06-11 14:28:25] [INFO] Comando da janela: C:\Users\julia\AppData\Local\Programs\IntelliJ IDEA Community Edition\bin\idea64.exe
+[2024-06-11 14:28:25] [INFO] ID da janela: 134760
+[2024-06-11 14:28:25] [INFO] PID da janela: 12800
+[2024-06-11 14:28:25] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:28:26] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00.
+[2024-06-11 14:28:26] [INFO] Dados da GPU gravados.
+[2024-06-11 14:28:26] [INFO] Capturando dados da sua memória RAM.
+[2024-06-11 14:28:26] [INFO] Memória disponível: 614.296875
+[2024-06-11 14:28:26] [INFO] Memória total: 7.729286193847656
+[2024-06-11 14:28:26] [INFO] Memória em uso: 7.129386901855469
+[2024-06-11 14:28:26] [INFO] Dados da memória RAM capturados com sucesso.
+[2024-06-11 14:28:26] [INFO] Capturando dados da sua bateria.
+[2024-06-11 14:28:26] [INFO] Amperagem da bateria: -1833.4525939177101
+[2024-06-11 14:28:26] [INFO] Nome do dispositivo da bateria: DELL MGCM535
+[2024-06-11 14:28:26] [INFO] Número de série da bateria: 1298
+[2024-06-11 14:28:26] [INFO] Química da bateria: LiP
+[2024-06-11 14:28:26] [INFO] Nome da bateria: System Battery
+[2024-06-11 14:28:26] [INFO] Voltagem da bateria: 11.18
+[2024-06-11 14:28:26] [INFO] Capacidade atual da bateria: 23.3896484375
+[2024-06-11 14:28:26] [INFO] Número de ciclos da bateria: 0
+[2024-06-11 14:28:26] [INFO] Capacidade de design da bateria: 39.638671875
+[2024-06-11 14:28:26] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-11 14:28:26] [INFO] Tempo restante da bateria (instantâneo): 4206.0
+[2024-06-11 14:28:26] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-11 14:28:26] [INFO] Taxa de uso de energia da bateria: -20498.0
+[2024-06-11 14:28:26] [INFO] Temperatura da bateria: 0.0
+[2024-06-11 14:28:26] [INFO] Capacidade máxima da bateria: 34.9912109375
+[2024-06-11 14:28:26] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-11 14:28:26] [INFO] Data de fabricação da bateria: N/A
+[2024-06-11 14:28:26] [INFO] Fabricante da bateria: SMP
+[2024-06-11 14:28:26] [INFO] Uso da ram pela janela: 1.0
+[2024-06-11 14:28:26] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:26] [INFO] Título da janela: VisualOps - Sprint 3 - Apresentação - Google Chrome
+[2024-06-11 14:28:26] [INFO] Comando da janela: C:\Program Files\Google\Chrome\Application\chrome.exe
+[2024-06-11 14:28:26] [INFO] ID da janela: 66840
+[2024-06-11 14:28:26] [INFO] PID da janela: 23056
+[2024-06-11 14:28:26] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:28:26] [INFO] Uso da ram pela janela: 107.0
+[2024-06-11 14:28:26] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:26] [INFO] Título da janela: app_client
+[2024-06-11 14:28:26] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:28:26] [INFO] ID da janela: 1640888
+[2024-06-11 14:28:26] [INFO] PID da janela: 7840
+[2024-06-11 14:28:26] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-06-11 14:28:27] [INFO] Dados da bateria capturados com sucesso: 66.0
+[2024-06-11 14:28:27] [INFO] Dados da bateria gravados.
+[2024-06-11 14:28:27] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-11 14:28:27] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-11 14:28:27] [INFO] Nome do volume capturado: \\?\Volume{630e018e-ccfb-41c7-ad21-5c4fcb9fa902}\
+[2024-06-11 14:28:27] [INFO] Espaço disponível no volume lógico capturado: 310.58716201782227
+[2024-06-11 14:28:27] [INFO] Espaço total do volume lógico capturado com sucesso: 457.89648056030273
+[2024-06-11 14:28:27] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-11 14:28:27] [INFO] UUID do volume lógico capturado: 630e018e-ccfb-41c7-ad21-5c4fcb9fa902
+[2024-06-11 14:28:27] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-11 14:28:27] [INFO] Dados do volume lógico gravados.
+[2024-06-11 14:28:27] [INFO] Todos os volumes lógicos verificados.
+[2024-06-11 14:28:27] [INFO] Uso da ram pela janela: 145.0
+[2024-06-11 14:28:27] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:27] [INFO] Título da janela: * Sem título - Bloco de notas
+[2024-06-11 14:28:27] [INFO] Comando da janela: C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2404.10.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe
+[2024-06-11 14:28:27] [INFO] ID da janela: 264234
+[2024-06-11 14:28:27] [INFO] PID da janela: 14016
+[2024-06-11 14:28:27] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=80,y=110,width=865,height=745]
+[2024-06-11 14:28:27] [INFO] Uso da ram pela janela: 9.0
+[2024-06-11 14:28:27] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:27] [INFO] Título da janela: Configurações
+[2024-06-11 14:28:27] [INFO] Comando da janela: C:\Windows\ImmersiveControlPanel\SystemSettings.exe
+[2024-06-11 14:28:27] [INFO] ID da janela: 329080
+[2024-06-11 14:28:27] [INFO] PID da janela: 22804
+[2024-06-11 14:28:27] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
+[2024-06-11 14:28:28] [INFO] Uso da ram pela janela: 2.0
+[2024-06-11 14:28:28] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:28] [INFO] Título da janela: Configurações
+[2024-06-11 14:28:28] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-11 14:28:28] [INFO] ID da janela: 132674
+[2024-06-11 14:28:28] [INFO] PID da janela: 6100
+[2024-06-11 14:28:28] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:28:28] [INFO] Uso da ram pela janela: 4.0
+[2024-06-11 14:28:28] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:28] [INFO] Título da janela: Email
+[2024-06-11 14:28:28] [INFO] Comando da janela: C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_16005.14326.21944.0_x64__8wekyb3d8bbwe\HxOutlook.exe
+[2024-06-11 14:28:28] [INFO] ID da janela: 197990
+[2024-06-11 14:28:28] [INFO] PID da janela: 13984
+[2024-06-11 14:28:28] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=49,width=1920,height=980]
+[2024-06-11 14:28:28] [INFO] Uso da ram pela janela: 2.0
+[2024-06-11 14:28:28] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:28] [INFO] Título da janela: Caixa de entrada - Outlook ‎- Email
+[2024-06-11 14:28:28] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-11 14:28:28] [INFO] ID da janela: 133104
+[2024-06-11 14:28:28] [INFO] PID da janela: 6100
+[2024-06-11 14:28:28] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:28:29] [INFO] Uso da ram pela janela: 4.0
+[2024-06-11 14:28:29] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:29] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:28:29] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:28:29] [INFO] ID da janela: 67072
+[2024-06-11 14:28:29] [INFO] PID da janela: 7840
+[2024-06-11 14:28:29] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-06-11 14:28:29] [INFO] Uso da ram pela janela: 146.0
+[2024-06-11 14:28:29] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:29] [INFO] Título da janela: Experiência de Entrada do Windows
+[2024-06-11 14:28:29] [INFO] Comando da janela: C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe
+[2024-06-11 14:28:29] [INFO] ID da janela: 197004
+[2024-06-11 14:28:29] [INFO] PID da janela: 13916
+[2024-06-11 14:28:29] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-11 14:28:30] [INFO] Uso da ram pela janela: 24.0
+[2024-06-11 14:28:30] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:30] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:28:30] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:28:30] [INFO] ID da janela: 65918
+[2024-06-11 14:28:30] [INFO] PID da janela: 7840
+[2024-06-11 14:28:30] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
+[2024-06-11 14:28:30] [INFO] Uso da ram pela janela: 146.0
+[2024-06-11 14:28:30] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:30] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:28:30] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:28:30] [INFO] ID da janela: 65928
+[2024-06-11 14:28:30] [INFO] PID da janela: 7840
+[2024-06-11 14:28:30] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:28:30] [INFO] Uso da ram pela janela: 146.0
+[2024-06-11 14:28:30] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:30] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:28:30] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:28:30] [INFO] ID da janela: 65882
+[2024-06-11 14:28:30] [INFO] PID da janela: 7840
+[2024-06-11 14:28:30] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:28:31] [INFO] Uso da ram pela janela: 146.0
+[2024-06-11 14:28:31] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:31] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:28:31] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:28:31] [INFO] ID da janela: 65880
+[2024-06-11 14:28:31] [INFO] PID da janela: 7840
+[2024-06-11 14:28:31] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:28:31] [INFO] Uso da ram pela janela: 146.0
+[2024-06-11 14:28:31] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:31] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:28:31] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:28:31] [INFO] ID da janela: 65878
+[2024-06-11 14:28:31] [INFO] PID da janela: 7840
+[2024-06-11 14:28:31] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:28:32] [INFO] Uso da ram pela janela: 146.0
+[2024-06-11 14:28:32] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:32] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:28:32] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:28:32] [INFO] ID da janela: 65876
+[2024-06-11 14:28:32] [INFO] PID da janela: 7840
+[2024-06-11 14:28:32] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:28:32] [INFO] Uso da ram pela janela: 146.0
+[2024-06-11 14:28:32] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:32] [INFO] Título da janela: Program Manager
+[2024-06-11 14:28:32] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:28:32] [INFO] ID da janela: 65822
+[2024-06-11 14:28:32] [INFO] PID da janela: 7840
+[2024-06-11 14:28:32] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-11 14:28:32] [INFO] Uso da ram pela janela: 146.0
+[2024-06-11 14:28:32] [INFO] Dados da janela gravados.
+[2024-06-11 14:28:32] [INFO] Todas as janelas verificadas.
+[2024-06-11 14:29:15] [INFO] Capturando dados dos seus Apps.
+[2024-06-11 14:29:15] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:29:15] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:29:15] [INFO] ID da janela: 133208
+[2024-06-11 14:29:15] [INFO] PID da janela: 7840
+[2024-06-11 14:29:15] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+[2024-06-11 14:29:15] [INFO] Uso da ram pela janela: 147.0
+[2024-06-11 14:29:15] [INFO] Dados da janela gravados.
+[2024-06-11 14:29:15] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:29:15] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:29:15] [INFO] ID da janela: 131216
+[2024-06-11 14:29:15] [INFO] PID da janela: 7840
+[2024-06-11 14:29:15] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1020,width=1920,height=60]
+[2024-06-11 14:29:16] [INFO] Uso da ram pela janela: 147.0
+[2024-06-11 14:29:16] [INFO] Dados da janela gravados.
+[2024-06-11 14:29:16] [INFO] Título da janela: visualopsnotificationschannel (Canal) - VisualOpsNotifications - Slack
+[2024-06-11 14:29:16] [INFO] Comando da janela: C:\Users\julia\AppData\Local\slack\app-4.38.127\slack.exe
+[2024-06-11 14:29:16] [INFO] ID da janela: 67030
+[2024-06-11 14:29:16] [INFO] PID da janela: 10332
+[2024-06-11 14:29:16] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:29:16] [INFO] Uso da ram pela janela: 63.0
+[2024-06-11 14:29:16] [INFO] Dados da janela gravados.
+[2024-06-11 14:29:16] [INFO] Título da janela: app_client – Main.java [app-client-api]
+[2024-06-11 14:29:16] [INFO] Comando da janela: C:\Users\julia\AppData\Local\Programs\IntelliJ IDEA Community Edition\bin\idea64.exe
+[2024-06-11 14:29:16] [INFO] ID da janela: 134760
+[2024-06-11 14:29:16] [INFO] PID da janela: 12800
+[2024-06-11 14:29:16] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:29:16] [INFO] Uso da ram pela janela: 1.0
+[2024-06-11 14:29:16] [INFO] Dados da janela gravados.
+[2024-06-11 14:29:16] [INFO] Título da janela: MySQL Workbench
+[2024-06-11 14:29:16] [INFO] Comando da janela: C:\Program Files\MySQL\MySQL Workbench 8.0\MySQLWorkbench.exe
+[2024-06-11 14:29:16] [INFO] ID da janela: 590436
+[2024-06-11 14:29:16] [INFO] PID da janela: 19572
+[2024-06-11 14:29:16] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-10,y=-10,width=1940,height=1040]
+[2024-06-11 14:29:17] [INFO] Uso da ram pela janela: 55.0
+[2024-06-11 14:29:17] [INFO] Dados da janela gravados.
+[2024-06-11 14:29:17] [INFO] Título da janela: VisualOps - Sprint 3 - Apresentação - Google Chrome
+[2024-06-11 14:29:17] [INFO] Comando da janela: C:\Program Files\Google\Chrome\Application\chrome.exe
+[2024-06-11 14:29:17] [INFO] ID da janela: 66840
+[2024-06-11 14:29:17] [INFO] PID da janela: 23056
+[2024-06-11 14:29:17] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:29:17] [INFO] Uso da ram pela janela: 92.0
+[2024-06-11 14:29:17] [INFO] Dados da janela gravados.
+[2024-06-11 14:29:17] [INFO] Título da janela: app_client
+[2024-06-11 14:29:17] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:29:17] [INFO] ID da janela: 1640888
+[2024-06-11 14:29:17] [INFO] PID da janela: 7840
+[2024-06-11 14:29:17] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-06-11 14:29:18] [INFO] Uso da ram pela janela: 147.0
+[2024-06-11 14:29:18] [INFO] Dados da janela gravados.
+[2024-06-11 14:29:18] [INFO] Título da janela: * Sem título - Bloco de notas
+[2024-06-11 14:29:18] [INFO] Comando da janela: C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2404.10.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe
+[2024-06-11 14:29:18] [INFO] ID da janela: 264234
+[2024-06-11 14:29:18] [INFO] PID da janela: 14016
+[2024-06-11 14:29:18] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=80,y=110,width=865,height=745]
+[2024-06-11 14:29:18] [INFO] Uso da ram pela janela: 8.0
+[2024-06-11 14:29:18] [INFO] Dados da janela gravados.
+[2024-06-11 14:29:18] [INFO] Título da janela: Configurações
+[2024-06-11 14:29:18] [INFO] Comando da janela: C:\Windows\ImmersiveControlPanel\SystemSettings.exe
+[2024-06-11 14:29:18] [INFO] ID da janela: 329080
+[2024-06-11 14:29:18] [INFO] PID da janela: 22804
+[2024-06-11 14:29:18] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=9,width=1920,height=1020]
+[2024-06-11 14:29:19] [INFO] Uso da ram pela janela: 2.0
+[2024-06-11 14:29:19] [INFO] Dados da janela gravados.
+[2024-06-11 14:29:19] [INFO] Título da janela: Configurações
+[2024-06-11 14:29:19] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-11 14:29:19] [INFO] ID da janela: 132674
+[2024-06-11 14:29:19] [INFO] PID da janela: 6100
+[2024-06-11 14:29:19] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:29:19] [INFO] Uso da ram pela janela: 3.0
+[2024-06-11 14:29:19] [INFO] Dados da janela gravados.
+[2024-06-11 14:29:19] [INFO] Título da janela: Email
+[2024-06-11 14:29:19] [INFO] Comando da janela: C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_16005.14326.21944.0_x64__8wekyb3d8bbwe\HxOutlook.exe
+[2024-06-11 14:29:19] [INFO] ID da janela: 197990
+[2024-06-11 14:29:19] [INFO] PID da janela: 13984
+[2024-06-11 14:29:19] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=49,width=1920,height=980]
+[2024-06-11 14:29:20] [INFO] Uso da ram pela janela: 2.0
+[2024-06-11 14:29:20] [INFO] Dados da janela gravados.
+[2024-06-11 14:29:20] [INFO] Título da janela: Caixa de entrada - Outlook ‎- Email
+[2024-06-11 14:29:20] [INFO] Comando da janela: C:\Windows\System32\ApplicationFrameHost.exe
+[2024-06-11 14:29:20] [INFO] ID da janela: 133104
+[2024-06-11 14:29:20] [INFO] PID da janela: 6100
+[2024-06-11 14:29:20] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1038]
+[2024-06-11 14:29:20] [INFO] Uso da ram pela janela: 3.0
+[2024-06-11 14:29:20] [INFO] Dados da janela gravados.
+[2024-06-11 14:29:20] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:29:20] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:29:20] [INFO] ID da janela: 67072
+[2024-06-11 14:29:20] [INFO] PID da janela: 7840
+[2024-06-11 14:29:20] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1020]
+[2024-06-11 14:29:21] [INFO] Uso da ram pela janela: 147.0
+[2024-06-11 14:29:21] [INFO] Dados da janela gravados.
+[2024-06-11 14:29:21] [INFO] Título da janela: Experiência de Entrada do Windows
+[2024-06-11 14:29:21] [INFO] Comando da janela: C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe
+[2024-06-11 14:29:21] [INFO] ID da janela: 197004
+[2024-06-11 14:29:21] [INFO] PID da janela: 13916
+[2024-06-11 14:29:21] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1920,height=1080]
+[2024-06-11 14:29:21] [INFO] Uso da ram pela janela: 23.0
+[2024-06-11 14:29:21] [INFO] Dados da janela gravados.
+[2024-06-11 14:29:21] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:29:21] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:29:21] [INFO] ID da janela: 65918
+[2024-06-11 14:29:21] [INFO] PID da janela: 7840
+[2024-06-11 14:29:21] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=19,y=0,width=1901,height=4]
+[2024-06-11 14:29:22] [INFO] Uso da ram pela janela: 148.0
+[2024-06-11 14:29:22] [INFO] Dados da janela gravados.
+[2024-06-11 14:29:22] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:29:22] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:29:22] [INFO] ID da janela: 65928
+[2024-06-11 14:29:22] [INFO] PID da janela: 7840
+[2024-06-11 14:29:22] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:29:22] [INFO] Uso da ram pela janela: 148.0
+[2024-06-11 14:29:22] [INFO] Dados da janela gravados.
+[2024-06-11 14:29:22] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:29:22] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:29:22] [INFO] ID da janela: 65882
+[2024-06-11 14:29:22] [INFO] PID da janela: 7840
+[2024-06-11 14:29:22] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:29:23] [INFO] Uso da ram pela janela: 148.0
+[2024-06-11 14:29:23] [INFO] Dados da janela gravados.
+[2024-06-11 14:29:23] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:29:23] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:29:23] [INFO] ID da janela: 65880
+[2024-06-11 14:29:23] [INFO] PID da janela: 7840
+[2024-06-11 14:29:23] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:29:23] [INFO] Uso da ram pela janela: 148.0
+[2024-06-11 14:29:23] [INFO] Dados da janela gravados.
+[2024-06-11 14:29:23] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:29:23] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:29:23] [INFO] ID da janela: 65878
+[2024-06-11 14:29:23] [INFO] PID da janela: 7840
+[2024-06-11 14:29:23] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
+[2024-06-11 14:29:24] [INFO] Uso da ram pela janela: 148.0
+[2024-06-11 14:29:24] [INFO] Dados da janela gravados.
+[2024-06-11 14:29:24] [WARNING] Título da janela não foi capturado.
+[2024-06-11 14:29:24] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-11 14:29:24] [INFO] ID da janela: 65876
+[2024-06-11 14:29:24] [INFO] PID da janela: 7840
+[2024-06-11 14:29:24] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=0,height=0]
