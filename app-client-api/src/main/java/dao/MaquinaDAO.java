@@ -1,5 +1,6 @@
 package dao;
 
+import app.integration.Computer;
 import model.Maquina;
 import model.Usuario;
 import oshi.SystemInfo;
@@ -14,9 +15,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Optional;
-
-
-import app.integration.Computer;
 
 public class MaquinaDAO {
 

@@ -165,33 +165,50 @@ public class Main {
 
         try {
             LogBanco.logInfo("Capturando os componentes:\n", LogBanco.LogType.INFO);
-            executorService = Executors.newScheduledThreadPool(1);
-            executorService.scheduleAtFixedRate(() -> {
-                serviceComponente.iniciarCapturas(maquina);
-            }, 0, 3, TimeUnit.SECONDS);
 
-            executorService = Executors.newScheduledThreadPool(1);
+            executorService = Executors.newScheduledThreadPool(2);
+
             executorService.scheduleAtFixedRate(() -> {
                 try {
-                    serviceAPP.listarApps(maquina);
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
+                    LogBanco.logInfo("Iniciando captura de componentes", LogBanco.LogType.INFO);
+                    serviceComponente.iniciarCapturas(maquina);
+                    LogBanco.logInfo("Captura de componentes concluída", LogBanco.LogType.INFO);
+                } catch (Exception e) {
+                    try {
+                        LogBanco.logError("Erro ao capturar componentes: ", e.getMessage(), e);
+                    } catch (IOException ex) {
+                        Logger.logError("Erro ao capturar componentes: ", e.getMessage(), e);
+                    }
                 }
-            }, 0, 2, TimeUnit.SECONDS);
+            }, 0, 3, TimeUnit.SECONDS);
+
+            executorService.scheduleAtFixedRate(() -> {
+                try {
+                    LogBanco.logInfo("Iniciando listagem de apps", LogBanco.LogType.INFO);
+                    serviceAPP.listarApps(maquina);
+                    LogBanco.logInfo("Listagem de apps concluída", LogBanco.LogType.INFO);
+                } catch (Exception e) {
+                    try {
+                        LogBanco.logError("Erro ao listar apps: ", e.getMessage(), e);
+                    } catch (IOException ex) {
+                        Logger.logError("Erro ao listar apps: ", e.getMessage(), e);
+                    }
+                }
+            }, 0, 4, TimeUnit.SECONDS);
 
             Scanner scanner = new Scanner(System.in);
             boolean running = true;
 
             while (running) {
                 System.out.println("""
-                        +------------------------------------------+----------------------+
-                        | Seu monitoramento está em segundo plano                         |
-                        +-----------------------------------------------------------------+
-                        | Escolha uma opção :                                             |
-                        +--------------------------+--------------+----------+------------+
-                        | a - Exibir monitoramento | b - Ver Logs | c - Sair | d - Voltar |
-                        +--------------------------+--------------+----------+------------+
-                        """);
+                +------------------------------------------+----------------------+
+                | Seu monitoramento está em segundo plano                         |
+                +-----------------------------------------------------------------+
+                | Escolha uma opção :                                             |
+                +--------------------------+--------------+----------+------------+
+                | a - Exibir monitoramento | b - Ver Logs | c - Sair | d - Voltar |
+                +--------------------------+--------------+----------+------------+
+                """);
                 String input = scanner.next();
 
                 switch (input) {
@@ -206,7 +223,7 @@ public class Main {
                         break;
                     case "c":
                         clearTerminal();
-                        System.exit(0);
+                        running = false;
                         break;
                     case "d":
                         clearTerminal();
@@ -217,8 +234,20 @@ public class Main {
             }
         } catch (Exception e) {
             LogBanco.logError("Erro ao iniciar monitoramento: ", e.getMessage(), e);
+        } finally {
+            if (executorService != null) {
+                executorService.shutdown();
+                try {
+                    if (!executorService.awaitTermination(60, TimeUnit.SECONDS)) {
+                        executorService.shutdownNow();
+                    }
+                } catch (InterruptedException e) {
+                    executorService.shutdownNow();
+                }
+            }
         }
     }
+
 
     public static void clearTerminal() {
         String os = System.getProperty("os.name").toLowerCase();

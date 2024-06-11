@@ -3,12 +3,11 @@ package service.componente;
 import app.system.SystemMonitor;
 import dao.componente.CapturaDAO;
 import dao.componente.ComponenteDAO;
+import model.Maquina;
 import model.componentes.*;
 import service.ServiceSystem;
-import model.Maquina;
 import util.logs.Logger;
 
-import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -76,21 +75,28 @@ public class ServiceComponente {
 			maquina.getComponentes().forEach(componente -> {
 				try {
 					atualizarComponente(componente);
-					
-                    int idCaptura = capturaDAO.inserirCaptura(maquina, componente);
+				} catch (Exception e) {
+					throw new RuntimeException(e);
+				}
+			});
+
+			maquina.getComponentes().forEach(componente -> {
+				try {
+					int idCaptura = capturaDAO.inserirCaptura(maquina, componente);
 					if (idCaptura > 0) {
 						serviceSystem.registrar(idCaptura, componente);
 					}
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
-            });
+				} catch (Exception e) {
+					throw new RuntimeException(e);
+				}
+			});
 		} catch (Exception e) {
 			Logger.logError("Ocorreu um erro durante a captura:", e.getMessage(), e);
 		}
 	}
 
-	public void atualizarComponente(Componente componente) throws IOException {
+
+	public void atualizarComponente(Componente componente) throws Exception {
 		if (componente instanceof CPU) {
 			CPU cpu = systemMonitor.monitorarCPU();
 			((CPU) componente).setTemperatura(cpu.getTemperatura());
@@ -101,6 +107,7 @@ public class ServiceComponente {
 			((CPU) componente).setNumeroDeCpusFisicas(cpu.getNumeroDeCpusFisicas());
 			((CPU) componente).setNumeroPacotesFisicos(cpu.getNumeroPacotesFisicos());
 			((CPU) componente).setUso(cpu.getUso());
+			((CPU) componente).setDadoCaptura(cpu.getDadoCaptura());
 			((CPU) componente).setPercentDadoCaptura(Optional.ofNullable(cpu.getPercentDadoCaptura()).orElse(0.0));
 		} else if (componente instanceof GPU) {
 			List<GPU> listaGPU = systemMonitor.monitorarGPU();
@@ -112,6 +119,7 @@ public class ServiceComponente {
 					((GPU) componente).setIdDevice(gpu.getIdDevice());
 					((GPU) componente).setVersao(gpu.getVersao());
 					((GPU) componente).setvRam(gpu.getvRam());
+					((GPU) componente).setDadoCaptura(gpu.getDadoCaptura());
 					((GPU) componente).setPercentDadoCaptura(Optional.ofNullable(gpu.getPercentDadoCaptura()).orElse(0.0));
 				}
 			});
@@ -129,6 +137,7 @@ public class ServiceComponente {
 					((HDD) componente).setTempoDeTransferencia(hdd.getTempoDeTransferencia());
 					((HDD) componente).setBytesDeLeitura(hdd.getBytesDeLeitura());
 					((HDD) componente).setNome(hdd.getNome());
+					((HDD) componente).setDadoCaptura(hdd.getDadoCaptura());
 					((HDD) componente).setPercentDadoCaptura(Optional.ofNullable(hdd.getPercentDadoCaptura()).orElse(0.0));
 				}
 			});
@@ -147,6 +156,7 @@ public class ServiceComponente {
 					((Volume) componente).setUuid(volume.getUuid());
 					((Volume) componente).setFabricante(volume.getFabricante());
 					((Volume) componente).setModelo(volume.getModelo());
+					((Volume) componente).setDadoCaptura(volume.getDadoCaptura());
 					((Volume) componente).setDadoCaptura(volume.getDadoCaptura());
 					((Volume) componente).setPercentDadoCaptura(Optional.ofNullable(volume.getPercentDadoCaptura()).orElse(0.0));
 				}
@@ -174,6 +184,7 @@ public class ServiceComponente {
 					((Bateria) componente).setTempoRestanteInstantaneo(bateria.getTempoRestanteInstantaneo());
 					((Bateria) componente).setPercentualCapacidadeRestante(bateria.getPercentualCapacidadeRestante());
 					((Bateria) componente).setDataFabricacao(bateria.getDataFabricacao());
+					((Bateria) componente).setDadoCaptura(bateria.getDadoCaptura());
 					((Bateria) componente).setPercentDadoCaptura(Optional.ofNullable(bateria.getPercentDadoCaptura()).orElse(0.0));
 				}
 			});
@@ -183,26 +194,8 @@ public class ServiceComponente {
 			((MemoriaRam) componente).setDataHoraCaptura(ram.getDataHoraCaptura());
 			((MemoriaRam) componente).setMemoriaDisponivel(ram.getMemoriaDisponivel());
 			((MemoriaRam) componente).setMemoriaTotal(ram.getMemoriaTotal());
+			((MemoriaRam) componente).setDadoCaptura(ram.getDadoCaptura());
 			((MemoriaRam) componente).setPercentDadoCaptura(Optional.ofNullable(ram.getPercentDadoCaptura()).orElse(0.0));
-		} else if (componente instanceof SistemaOp) {
-			SistemaOp sistemaOp = systemMonitor.monitorarSistemaOperacional();
-			((SistemaOp) componente).setArquitetura(sistemaOp.getArquitetura());
-			((SistemaOp) componente).setDataHoraCaptura(sistemaOp.getDataHoraCaptura());
-			((SistemaOp) componente).setInicializado(sistemaOp.getInicializado());
-			((SistemaOp) componente).setPermissao(sistemaOp.getPermissao());
-			((SistemaOp) componente).setTempoDeAtividade(sistemaOp.getTempoDeAtividade());
-		}else if (componente instanceof APP) {
-			List<APP> listaJanelas = systemMonitor.monitorarDisplay();
-			listaJanelas.forEach(janela -> {
-				if (((APP) componente).getFabricante().equalsIgnoreCase(janela.getFabricante()) &&
-						((APP) componente).getModelo().equalsIgnoreCase(janela.getModelo())){
-					((APP) componente).setDataHoraCaptura(janela.getDataHoraCaptura());
-					((APP) componente).setLocalizacaoEtamanho(janela.getLocalizacaoEtamanho());
-					((APP) componente).setDataCaptura(janela.getDataCaptura());
-					((APP) componente).setNome(janela.getNome());
-					((APP) componente).setDadoCaptura();
-				}
-			});
 		}
 	}
 

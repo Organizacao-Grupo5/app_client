@@ -1,16 +1,12 @@
 package dao;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
-
 import model.Rede;
 import util.database.MySQLConnection;
 import util.logs.Logger;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class RedeDAO {
      public Rede insert(Rede rede) throws SQLException {

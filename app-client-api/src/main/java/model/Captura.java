@@ -9,7 +9,7 @@ public class Captura {
     private Timestamp dataCaptura;
     private Integer fkComponente;
     private Double dadoCapturaPercent;
-    
+
     public Captura() {}
 
     public Captura(Integer idCaptura, Double dadoCaptura, String unidadeMedida, Timestamp dataCaptura, Integer fkComponente) {

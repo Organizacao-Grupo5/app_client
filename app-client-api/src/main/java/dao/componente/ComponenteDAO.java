@@ -1,7 +1,7 @@
 package dao.componente;
 
-import model.componentes.*;
 import model.Maquina;
+import model.componentes.*;
 import util.database.MySQLConnection;
 import util.logs.LogBanco;
 import util.logs.Logger;

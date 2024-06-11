@@ -24,8 +24,8 @@ public class Componente {
 
 	public List<List<String>> tabela() {
 		return Arrays.asList(Arrays.asList("", componente),
-		Arrays.asList("Modelo", modelo),
-		Arrays.asList("Fabricante", fabricante)
+				Arrays.asList("Modelo", modelo),
+				Arrays.asList("Fabricante", fabricante)
 		);
 	}
 
@@ -38,7 +38,7 @@ public class Componente {
 	}
 
 	public Componente(Integer idComponente, String componente, String modelo, String fabricante, Integer fkMaquina,
-			Double dadoCaptura) {
+					  Double dadoCaptura) {
 		this.idComponente = idComponente;
 		this.componente = componente;
 		this.modelo = modelo;

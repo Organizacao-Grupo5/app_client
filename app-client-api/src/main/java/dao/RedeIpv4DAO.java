@@ -1,18 +1,17 @@
 package dao;
 
+import model.Ipv4;
+import model.Rede;
+import service.ServiceRede;
+import util.database.MySQLConnection;
+import util.logs.Logger;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
-
-import model.Ipv4;
-import model.Rede;
-import service.ServiceRede;
-import util.database.MySQLConnection;
-import util.logs.Logger;
 
 public class RedeIpv4DAO {
     public void insert(Rede rede, Ipv4 ipv4) throws SQLException {

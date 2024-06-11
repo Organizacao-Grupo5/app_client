@@ -2,6 +2,7 @@ package dao;
 
 import model.Usuario;
 import util.database.MySQLConnection;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

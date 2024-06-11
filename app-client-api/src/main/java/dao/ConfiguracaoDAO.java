@@ -1,18 +1,13 @@
 package dao;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Timestamp;
-import java.time.LocalDateTime;
-import java.util.Optional;
-
 import model.Configuracao;
 import model.componentes.Componente;
 import util.database.MySQLConnection;
 import util.logs.Logger;
+
+import java.sql.*;
+import java.time.LocalDateTime;
+import java.util.Optional;
 
 public class ConfiguracaoDAO {
     

@@ -1,7 +1,5 @@
 package util.security;
 
-import java.util.Scanner;
-
 public class Criptografia {
     public static String encrypt(String message, int shift) {
 

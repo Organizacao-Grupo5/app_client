@@ -8,12 +8,14 @@ import com.github.britooo.looca.api.group.sistema.Sistema;
 import com.mysql.cj.util.StringUtils;
 import model.componentes.*;
 import oshi.SystemInfo;
+import oshi.hardware.ComputerSystem;
+import oshi.hardware.GraphicsCard;
+import oshi.hardware.HardwareAbstractionLayer;
+import util.exception.ExceptionMonitoring;
 import util.logs.LogBanco;
 import util.logs.LogMonitoramento;
-import oshi.hardware.*;
 
 import java.io.IOException;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -99,13 +101,13 @@ public class SystemMonitor {
 			} else {
 				LogMonitoramento.logInfo("Temperatura da CPU: " + cpu.getTemperatura(), LogBanco.LogType.INFO);
 			}
+			cpu.setDadoCaptura(cpu.getTemperatura());
 			LogMonitoramento.logInfo("Dados da CPU capturados com sucesso.", LogBanco.LogType.INFO);
 		} catch (Exception e) {
 			LogMonitoramento.logError("Erro ao capturar dados da CPU: ", e.getMessage(), e);
 		}
 		return cpu;
 	}
-
 
 	public List<APP> monitorarDisplay() throws IOException {
 		LogMonitoramento.logInfo("Capturando dados dos seus Apps.", LogBanco.LogType.INFO);
@@ -152,12 +154,12 @@ public class SystemMonitor {
 					}
 					LogMonitoramento.logInfo("Dados da janela gravados.", LogBanco.LogType.INFO);
 				} catch (Exception e) {
-                    try {
-                        LogMonitoramento.logError("Erro ao processar janela: ", e.getMessage(), e);
-                    } catch (IOException ex) {
-                        throw new RuntimeException(ex);
-                    }
-                }
+					try {
+						LogMonitoramento.logError("Erro ao processar janela: ", e.getMessage(), e);
+					} catch (IOException ex) {
+						throw new RuntimeException(ex);
+					}
+				}
 				apps.add(app);
 			});
 			LogMonitoramento.logInfo("Todas as janelas verificadas.", LogBanco.LogType.INFO);
@@ -170,10 +172,12 @@ public class SystemMonitor {
 	public List<HDD> monitorarHDD() throws IOException {
 		LogMonitoramento.logInfo("Capturando dados do seu HDD", LogBanco.LogType.INFO);
 		List<HDD> hdds = new ArrayList<>();
+
 		try {
 			looca.getGrupoDeDiscos().getDiscos().forEach(disco -> {
+				HDD hdd = new HDD();
+
 				try {
-					HDD hdd = new HDD();
 					hdd.setNome(disco.getNome());
 					if (StringUtils.isNullOrEmpty(hdd.getNome())) {
 						LogMonitoramento.logWarning("Nome do disco não foi capturado.");
@@ -195,81 +199,90 @@ public class SystemMonitor {
 						LogMonitoramento.logInfo("Modelo do disco: " + hdd.getModelo(), LogBanco.LogType.INFO);
 					}
 
-					hdd.setEscritas(conversor.formatarBytes(disco.getEscritas()));
-					if (StringUtils.isNullOrEmpty(hdd.getEscritas().toString())) {
+					double escritas = conversor.formatarBytes(disco.getEscritas());
+					hdd.setEscritas(escritas);
+					if (escritas == 0) {
 						LogMonitoramento.logWarning("Escritas do disco não foram capturadas.");
 					} else {
-						LogMonitoramento.logInfo("Escritas do disco: " + hdd.getEscritas(), LogBanco.LogType.INFO);
+						LogMonitoramento.logInfo("Escritas do disco: " + escritas, LogBanco.LogType.INFO);
 					}
 
 					com.github.britooo.looca.api.group.discos.Volume volume = looca.getGrupoDeDiscos().getVolumes().get(0);
-					double total = volume.getTotal();
-					double disponivel = volume.getDisponivel();
+					double total = conversor.formatarBytes(volume.getTotal());
+					double disponivel = conversor.formatarBytes(volume.getDisponivel());
 					double tamanhoDisco = conversor.formatarBytes(disco.getTamanho());
 
 					double percentDadoCaptura = ((total - disponivel) / tamanhoDisco) * 100;
-
 					hdd.setPercentDadoCaptura(percentDadoCaptura);
 
-					hdd.setLeituras(conversor.formatarBytes(disco.getLeituras()));
-					if (StringUtils.isNullOrEmpty(hdd.getLeituras().toString())) {
+					double leituras = conversor.formatarBytes(disco.getLeituras());
+					hdd.setLeituras(leituras);
+					if (leituras == 0) {
 						LogMonitoramento.logWarning("Leituras do disco não foram capturadas.");
 					} else {
-						LogMonitoramento.logInfo("Leituras do disco: " + hdd.getLeituras(), LogBanco.LogType.INFO);
+						LogMonitoramento.logInfo("Leituras do disco: " + leituras, LogBanco.LogType.INFO);
 					}
 
-					hdd.setBytesDeEscrita(conversor.formatarBytes(disco.getBytesDeEscritas()));
-					if (StringUtils.isNullOrEmpty(hdd.getBytesDeEscrita().toString())) {
+					double bytesDeEscrita = conversor.formatarBytes(disco.getBytesDeEscritas());
+					hdd.setBytesDeEscrita(bytesDeEscrita);
+					if (bytesDeEscrita == 0) {
 						LogMonitoramento.logWarning("Bytes de escritas do disco não foram capturados.");
 					} else {
-						LogMonitoramento.logInfo("Bytes de escritas do disco: " + hdd.getBytesDeEscrita(), LogBanco.LogType.INFO);
+						LogMonitoramento.logInfo("Bytes de escritas do disco: " + bytesDeEscrita, LogBanco.LogType.INFO);
 					}
 
-					hdd.setBytesDeLeitura(conversor.formatarBytes(disco.getBytesDeLeitura()));
-					if (StringUtils.isNullOrEmpty(hdd.getBytesDeLeitura().toString())) {
+					double bytesDeLeitura = conversor.formatarBytes(disco.getBytesDeLeitura());
+					hdd.setBytesDeLeitura(bytesDeLeitura);
+					if (bytesDeLeitura == 0) {
 						LogMonitoramento.logWarning("Bytes de leitura do disco não foram capturados.");
 					} else {
-						LogMonitoramento.logInfo("Bytes de leitura do disco: " + hdd.getBytesDeLeitura(), LogBanco.LogType.INFO);
+						LogMonitoramento.logInfo("Bytes de leitura do disco: " + bytesDeLeitura, LogBanco.LogType.INFO);
 					}
 
-					hdd.setTamanho(conversor.converterCasasDecimais(conversor.formatarBytes(disco.getTamanho()), 2));
-					if (hdd.getTamanho() == null) {
+					double tamanho = conversor.converterCasasDecimais(conversor.formatarBytes(disco.getTamanho()), 2);
+					hdd.setTamanho(tamanho);
+					if (tamanho == 0) {
 						LogMonitoramento.logWarning("Tamanho do disco não foi capturado.");
 					} else {
-						LogMonitoramento.logInfo("Tamanho do disco: " + hdd.getTamanho(), LogBanco.LogType.INFO);
+						LogMonitoramento.logInfo("Tamanho do disco: " + tamanho, LogBanco.LogType.INFO);
 					}
 
-					hdd.setTempoDeTransferencia(conversor.converterSegundosParaHoras(disco.getTempoDeTransferencia()));
-					if (hdd.getTempoDeTransferencia() == null) {
+					double tempoDeTransferencia = conversor.converterSegundosParaHoras(disco.getTempoDeTransferencia());
+					hdd.setTempoDeTransferencia(tempoDeTransferencia);
+					if (tempoDeTransferencia == 0) {
 						LogMonitoramento.logWarning("Tempo de transferência do disco não foi capturado.");
 					} else {
-						LogMonitoramento.logInfo("Tempo de transferência do disco: " + hdd.getTempoDeTransferencia(), LogBanco.LogType.INFO);
+						LogMonitoramento.logInfo("Tempo de transferência do disco: " + tempoDeTransferencia, LogBanco.LogType.INFO);
 					}
+					hdd.setDadoCaptura(hdd.getPercentDadoCaptura());
 
 					hdds.add(hdd);
 					LogMonitoramento.logInfo("Dados do disco gravados.", LogBanco.LogType.INFO);
+
 				} catch (Exception e) {
-                    try {
-                        LogMonitoramento.logError("Erro ao processar dados do HDD: ", e.getMessage(), e);
-                    } catch (IOException ex) {
-                        throw new RuntimeException(ex);
-                    }
-                }
+					try {
+						LogMonitoramento.logError("Erro ao processar dados do HDD: " + e.getMessage(), e);
+					} catch (IOException ex) {
+						throw new RuntimeException(ex);
+					}
+				}
 			});
 		} catch (Exception e) {
-			LogMonitoramento.logError("Erro ao acessar informações do sistema: ", e.getMessage(), e);
+			LogMonitoramento.logError("Erro ao acessar informações do sistema: " + e.getMessage(), e);
 		}
+
 		return hdds;
 	}
 
 	public List<Bateria> monitorarBateria() throws IOException {
 		LogMonitoramento.logInfo("Capturando dados da sua bateria.", LogBanco.LogType.INFO);
 		List<Bateria> baterias = new ArrayList<>();
+
 		try {
 			hardware.getPowerSources().forEach(power -> {
-				try {
-					Bateria bateria = new Bateria();
+				Bateria bateria = new Bateria();
 
+				try {
 					bateria.setAmperagem(power.getAmperage());
 					if (bateria.getAmperagem() == null) {
 						LogMonitoramento.logWarning("Amperagem da bateria não foi capturada.");
@@ -312,11 +325,12 @@ public class SystemMonitor {
 						LogMonitoramento.logInfo("Voltagem da bateria: " + bateria.getVoltagem(), LogBanco.LogType.INFO);
 					}
 
-					bateria.setCapacidadeAtual(conversor.formatarBytes(power.getCurrentCapacity()));
-					if (StringUtils.isNullOrEmpty(bateria.getCapacidadeAtual().toString())) {
+					double capacidadeAtual = conversor.formatarBytes(power.getCurrentCapacity());
+					bateria.setCapacidadeAtual(capacidadeAtual);
+					if (capacidadeAtual == 0) {
 						LogMonitoramento.logWarning("Capacidade atual da bateria não foi capturada.");
 					} else {
-						LogMonitoramento.logInfo("Capacidade atual da bateria: " + bateria.getCapacidadeAtual(), LogBanco.LogType.INFO);
+						LogMonitoramento.logInfo("Capacidade atual da bateria: " + capacidadeAtual, LogBanco.LogType.INFO);
 					}
 
 					bateria.setCiclos(power.getCycleCount());
@@ -326,11 +340,12 @@ public class SystemMonitor {
 						LogMonitoramento.logInfo("Número de ciclos da bateria: " + bateria.getCiclos(), LogBanco.LogType.INFO);
 					}
 
-					bateria.setCapacidadeDesign(conversor.formatarBytes(power.getDesignCapacity()));
-					if (StringUtils.isNullOrEmpty(bateria.getCapacidadeDesign().toString())) {
+					double capacidadeDesign = conversor.formatarBytes(power.getDesignCapacity());
+					bateria.setCapacidadeDesign(capacidadeDesign);
+					if (capacidadeDesign == 0) {
 						LogMonitoramento.logWarning("Capacidade de design da bateria não foi capturada.");
 					} else {
-						LogMonitoramento.logInfo("Capacidade de design da bateria: " + bateria.getCapacidadeDesign(), LogBanco.LogType.INFO);
+						LogMonitoramento.logInfo("Capacidade de design da bateria: " + capacidadeDesign, LogBanco.LogType.INFO);
 					}
 
 					bateria.setUnidadesCapacidade(power.getCapacityUnits().toString());
@@ -344,8 +359,7 @@ public class SystemMonitor {
 					if (bateria.getTempoRestanteInstantaneo() == null) {
 						LogMonitoramento.logWarning("Tempo restante da bateria (instantâneo) não foi capturado.");
 					} else {
-						LogMonitoramento.logInfo(
-								"Tempo restante da bateria (instantâneo): " + bateria.getTempoRestanteInstantaneo(), LogBanco.LogType.INFO);
+						LogMonitoramento.logInfo("Tempo restante da bateria (instantâneo): " + bateria.getTempoRestanteInstantaneo(), LogBanco.LogType.INFO);
 					}
 
 					bateria.setTempoRestanteEstimado(power.getTimeRemainingEstimated());
@@ -369,25 +383,24 @@ public class SystemMonitor {
 						LogMonitoramento.logInfo("Temperatura da bateria: " + bateria.getTemperatura(), LogBanco.LogType.INFO);
 					}
 
-					bateria.setCapacidadeMaxima(conversor.formatarBytes(power.getMaxCapacity()));
-					if (StringUtils.isNullOrEmpty(bateria.getCapacidadeMaxima().toString())) {
+					double capacidadeMaxima = conversor.formatarBytes(power.getMaxCapacity());
+					bateria.setCapacidadeMaxima(capacidadeMaxima);
+					if (capacidadeMaxima == 0) {
 						LogMonitoramento.logWarning("Capacidade máxima da bateria não foi capturada.");
 					} else {
-						LogMonitoramento.logInfo("Capacidade máxima da bateria: " + bateria.getCapacidadeMaxima(), LogBanco.LogType.INFO);
+						LogMonitoramento.logInfo("Capacidade máxima da bateria: " + capacidadeMaxima, LogBanco.LogType.INFO);
 					}
 
-					bateria.setPercentualCapacidadeRestante(conversor.convertePorcentagem(power.getMaxCapacity(),
-							power.getRemainingCapacityPercent() * power.getMaxCapacity() / 100));
-					if (bateria.getPercentualCapacidadeRestante() == null) {
+					Double percentualCapacidadeRestante = conversor.convertePorcentagem(power.getMaxCapacity(),
+							power.getRemainingCapacityPercent() * power.getMaxCapacity() / 100);
+					bateria.setPercentualCapacidadeRestante(percentualCapacidadeRestante);
+					if (percentualCapacidadeRestante == null) {
 						LogMonitoramento.logWarning("Porcentagem de capacidade restante da bateria não foi capturada.");
 					} else {
-						LogMonitoramento.logInfo("Porcentagem de capacidade restante da bateria: "
-								+ bateria.getPercentualCapacidadeRestante(), LogBanco.LogType.INFO);
+						LogMonitoramento.logInfo("Porcentagem de capacidade restante da bateria: " + percentualCapacidadeRestante, LogBanco.LogType.INFO);
 					}
 
-					String manufactureDateStr = power.getManufactureDate() != null
-							? power.getManufactureDate().toString()
-							: "N/A";
+					String manufactureDateStr = power.getManufactureDate() != null ? power.getManufactureDate().toString() : "N/A";
 					bateria.setDataFabricacao(manufactureDateStr);
 					if (StringUtils.isNullOrEmpty(bateria.getDataFabricacao())) {
 						LogMonitoramento.logWarning("Data de fabricação da bateria não foi capturada.");
@@ -402,37 +415,44 @@ public class SystemMonitor {
 						LogMonitoramento.logInfo("Fabricante da bateria: " + bateria.getFabricante(), LogBanco.LogType.INFO);
 					}
 
-					bateria.setBateriaAtual(shellIntegration.monitorarBateria());
-					bateria.setPercentDadoCaptura(Optional.ofNullable(shellIntegration.monitorarBateria()).orElse(0.0));
-					if (bateria.getBateriaAtual() == null) {
+					Double bateriaAtual = shellIntegration.monitorarBateria();
+					bateria.setBateriaAtual(bateriaAtual);
+					bateria.setPercentDadoCaptura(Optional.ofNullable(bateriaAtual).orElse(0.0));
+					if (bateriaAtual == null) {
 						LogMonitoramento.logWarning("Dados da bateria atual não foram capturados, será apresentada como 0.");
 						bateria.setBateriaAtual(0.0);
 					} else {
-						LogMonitoramento.logInfo("Dados da bateria capturados com sucesso: " + bateria.getBateriaAtual(), LogBanco.LogType.INFO);
+						LogMonitoramento.logInfo("Dados da bateria capturados com sucesso: " + bateriaAtual, LogBanco.LogType.INFO);
 					}
+					bateria.setDadoCaptura(bateria.getBateriaAtual());
 
 					baterias.add(bateria);
 					LogMonitoramento.logInfo("Dados da bateria gravados.", LogBanco.LogType.INFO);
+
 				} catch (Exception e) {
-                    try {
-                        LogMonitoramento.logError("Erro ao processar dados da bateria: ", e.getMessage(), e);
-                    } catch (IOException ex) {
-                        throw new RuntimeException(ex);
-                    }
-                }
+					try {
+						LogMonitoramento.logError("Erro ao processar dados da bateria: " + e.getMessage(), e);
+					} catch (IOException ex) {
+						throw new RuntimeException(ex);
+					}
+				}
 			});
 		} catch (Exception e) {
-			LogMonitoramento.logError("Erro ao acessar informações do sistema: ", e.getMessage(), e);
+			LogMonitoramento.logError("Erro ao acessar informações do sistema: " + e.getMessage(), e);
 		}
+
 		return baterias;
 	}
 
 
 
-	public List<GPU> monitorarGPU() throws IOException {
+
+
+	public List<GPU> monitorarGPU() throws Exception {
 		LogMonitoramento.logInfo("Capturando dados da GPU.", LogBanco.LogType.INFO);
 		List<GPU> gpus = new ArrayList<>();
 		List<GraphicsCard> graphicsCards = hardware.getGraphicsCards();
+
 		try {
 			if (graphicsCards == null || graphicsCards.isEmpty()) {
 				LogMonitoramento.logWarning("Dados da GPU não puderam ser capturados: nenhuma placa gráfica encontrada.");
@@ -440,70 +460,71 @@ public class SystemMonitor {
 				graphicsCards.forEach(gpu -> {
 					GPU myGpu = new GPU();
 					try {
-
 						myGpu.setFabricante(gpu.getVendor());
 						if (StringUtils.isNullOrEmpty(myGpu.getFabricante())) {
-							LogMonitoramento.logWarning("Não foi possível capturar informações sobre o fabricante da sua GPU");
+							LogMonitoramento.logWarning("Não foi possível capturar informações sobre o fabricante da GPU.");
 						} else {
-							LogMonitoramento.logInfo(
-									"Dados do fabricante da sua GPU capturados com sucesso: " + myGpu.getFabricante(), LogBanco.LogType.INFO);
+							LogMonitoramento.logInfo("Dados do fabricante da GPU capturados com sucesso: " + myGpu.getFabricante(), LogBanco.LogType.INFO);
 						}
 
 						myGpu.setIdDevice(gpu.getDeviceId());
 						if (StringUtils.isNullOrEmpty(myGpu.getIdDevice())) {
-							LogMonitoramento.logWarning("Não foi possível capturar informações sobre o ID do dispositivo");
+							LogMonitoramento.logWarning("Não foi possível capturar informações sobre o ID do dispositivo.");
 						} else {
-							LogMonitoramento.logInfo("Dados do ID da sua GPU capturados com sucesso: " + myGpu.getIdDevice(), LogBanco.LogType.INFO);
+							LogMonitoramento.logInfo("Dados do ID da GPU capturados com sucesso: " + myGpu.getIdDevice(), LogBanco.LogType.INFO);
 						}
 
 						myGpu.setModelo(gpu.getName());
 						if (StringUtils.isNullOrEmpty(myGpu.getModelo())) {
-							LogMonitoramento.logWarning("Não foi possível capturar informações sobre o nome da GPU");
+							LogMonitoramento.logWarning("Não foi possível capturar informações sobre o nome da GPU.");
 						} else {
-							LogMonitoramento.logInfo("O nome da sua GPU foi capturado com sucesso: " + myGpu.getModelo(), LogBanco.LogType.INFO);
+							LogMonitoramento.logInfo("O nome da GPU foi capturado com sucesso: " + myGpu.getModelo(), LogBanco.LogType.INFO);
 						}
 
-						myGpu.setvRam(conversor.formatarBytes(gpu.getVRam()));
-						if (StringUtils.isNullOrEmpty(myGpu.getvRam().toString())) {
-							LogMonitoramento.logWarning("Não foi possível capturar informações sobre a VRam da sua GPU");
+						double vRam = conversor.formatarBytes(gpu.getVRam());
+						myGpu.setvRam(vRam);
+						if (vRam == 0) {
+							LogMonitoramento.logWarning("Não foi possível capturar informações sobre a VRam da GPU.");
 						} else {
-							LogMonitoramento.logInfo("A VRam da sua GPU foi capturada com sucesso: " + myGpu.getvRam(), LogBanco.LogType.INFO);
+							LogMonitoramento.logInfo("A VRam da GPU foi capturada com sucesso: " + vRam, LogBanco.LogType.INFO);
 						}
 
 						myGpu.setVersao(gpu.getVersionInfo());
 						if (StringUtils.isNullOrEmpty(myGpu.getVersao())) {
-							LogMonitoramento.logWarning("Não foi possível capturar informações sobre a versão da sua GPU");
+							LogMonitoramento.logWarning("Não foi possível capturar informações sobre a versão da GPU.");
 						} else {
-							LogMonitoramento.logInfo("A Versão da sua GPU foi capturada com sucesso: " + myGpu.getVersao(), LogBanco.LogType.INFO);
+							LogMonitoramento.logInfo("A Versão da GPU foi capturada com sucesso: " + myGpu.getVersao(), LogBanco.LogType.INFO);
 						}
 
-						myGpu.setTemperatura(shellIntegration.monitorarTemperatura());
-						myGpu.setPercentDadoCaptura((Optional.ofNullable(shellIntegration.monitorarTemperatura()).orElse(0.0) / 100) * 100);
-
-						if (myGpu.getTemperatura() == null) {
-							LogMonitoramento.logWarning(
-									"Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .");
-							myGpu.setTemperatura(0.00);
+						Double temperatura = shellIntegration.monitorarTemperatura();
+						if (temperatura == null) {
+							LogMonitoramento.logWarning("Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00.");
+							temperatura = 0.0;
 						} else {
-							LogMonitoramento.logInfo("Temperatura da GPU: " + myGpu.getTemperatura(), LogBanco.LogType.INFO);
+							LogMonitoramento.logInfo("Temperatura da GPU: " + temperatura, LogBanco.LogType.INFO);
 						}
+						myGpu.setTemperatura(temperatura);
+						myGpu.setDadoCaptura(myGpu.getTemperatura());
+
+						myGpu.setPercentDadoCaptura(temperatura);
+
 					} catch (Exception e) {
-                        try {
-                            LogMonitoramento.logWarning("Algo inesperado aconteceu ao tentar acessar alguma informação da sua GPU: "
-                                    + e.getMessage());
-                        } catch (IOException ex) {
-                            throw new RuntimeException(ex);
-                        }
-                    }
+						try {
+							throw new ExceptionMonitoring("Erro ao monitorar GPU" + e.getMessage(), e);
+						} catch (ExceptionMonitoring ex) {
+							throw new RuntimeException(ex);
+						}
+					}
 					gpus.add(myGpu);
 				});
 				LogMonitoramento.logInfo("Dados da GPU gravados.", LogBanco.LogType.INFO);
 			}
 		} catch (Exception e) {
-			LogMonitoramento.logError("Erro ao acessar informações do sistema: ", e.getMessage(), e);
+			LogMonitoramento.logError("Erro ao acessar informações do sistema: " + e.getMessage(), e);
 		}
 		return gpus;
 	}
+
 
 	public MemoriaRam monitorarRAM() throws IOException {
 		LogMonitoramento.logInfo("Capturando dados da sua memória RAM.", LogBanco.LogType.INFO);
@@ -514,32 +535,42 @@ public class SystemMonitor {
 		}
 		MemoriaRam ram = new MemoriaRam();
 		try {
-			ram.setMemoriaDisponivel(conversor.formatarBytes(memoria.getDisponivel()));
-			if (ram.getMemoriaDisponivel() == null || ram.getMemoriaDisponivel().toString().isEmpty()) {
+			double memoriaDisponivel = conversor.formatarBytes(memoria.getDisponivel());
+			double memoriaTotal = conversor.formatarBytes(memoria.getTotal());
+			double memoriaEmUso = conversor.formatarBytes(memoria.getEmUso());
+
+			ram.setMemoriaDisponivel(memoriaDisponivel);
+			if (memoriaDisponivel == 0) {
 				LogMonitoramento.logWarning("Memória disponível não foi capturada.");
 			} else {
-				LogMonitoramento.logInfo("Memória disponível: " + ram.getMemoriaDisponivel(), LogBanco.LogType.INFO);
+				LogMonitoramento.logInfo("Memória disponível: " + memoriaDisponivel, LogBanco.LogType.INFO);
 			}
 
-			ram.setMemoriaTotal(conversor.formatarBytes(memoria.getTotal()));
-			if (ram.getMemoriaTotal() == null || ram.getMemoriaTotal().toString().isEmpty()) {
+			ram.setMemoriaTotal(memoriaTotal);
+			if (memoriaTotal == 0) {
 				LogMonitoramento.logWarning("Memória total não foi capturada.");
 			} else {
-				LogMonitoramento.logInfo("Memória total: " + ram.getMemoriaTotal(), LogBanco.LogType.INFO);
+				LogMonitoramento.logInfo("Memória total: " + memoriaTotal, LogBanco.LogType.INFO);
 			}
 
-			ram.setMemoriaEmUso(conversor.formatarBytes(memoria.getEmUso()));
-			if (ram.getMemoriaEmUso() == null || ram.getMemoriaEmUso().toString().isEmpty()) {
+			ram.setMemoriaEmUso(memoriaEmUso);
+			if (memoriaEmUso == 0) {
 				LogMonitoramento.logWarning("Memória em uso não foi capturada.");
 			} else {
-				LogMonitoramento.logInfo("Memória em uso: " + ram.getMemoriaEmUso(), LogBanco.LogType.INFO);
+				LogMonitoramento.logInfo("Memória em uso: " + memoriaEmUso, LogBanco.LogType.INFO);
 			}
 
-			ram.setPercentDadoCaptura((ram.getMemoriaEmUso() / ram.getMemoriaTotal()) * 100);
+			if (memoriaTotal > 0) {
+				double percentualUso = (memoriaEmUso / memoriaTotal) * 100;
+				ram.setPercentDadoCaptura(percentualUso);
+			} else {
+				LogMonitoramento.logWarning("Memória total é zero, não é possível calcular o percentual de uso.");
+			}
+			ram.setDadoCaptura(ram.getMemoriaEmUso());
 
-			LogMonitoramento.logInfo("Dados da memória ram capturados com sucesso.", LogBanco.LogType.INFO);
+			LogMonitoramento.logInfo("Dados da memória RAM capturados com sucesso.", LogBanco.LogType.INFO);
 		} catch (Exception e) {
-			LogMonitoramento.logError("Erro ao capturar dados da memória ram: ", e.getMessage(), e);
+			LogMonitoramento.logError("Erro ao capturar dados da memória RAM: " + e.getMessage(), e);
 		}
 		return ram;
 	}
@@ -656,12 +687,12 @@ public class SystemMonitor {
 					usbs.add(conexaoUSB);
 					LogMonitoramento.logInfo("Dados do usb gravados.", LogBanco.LogType.INFO);
 				} catch (Exception e) {
-                    try {
-                        LogMonitoramento.logError("Erro ao processar dados do usb: ", e.getMessage(), e);
-                    } catch (IOException ex) {
-                        throw new RuntimeException(ex);
-                    }
-                }
+					try {
+						LogMonitoramento.logError("Erro ao processar dados do usb: ", e.getMessage(), e);
+					} catch (IOException ex) {
+						throw new RuntimeException(ex);
+					}
+				}
 			});
 			LogMonitoramento.logInfo("Todos os usbs verificadas.", LogBanco.LogType.INFO);
 		} catch (Exception e) {
@@ -679,7 +710,6 @@ public class SystemMonitor {
 			looca.getGrupoDeDiscos().getVolumes().stream().forEach(volume -> {
 				Volume volumeLogico = new Volume();
 				try {
-
 					volumeLogico.setModelo(volume.getNome());
 					if (StringUtils.isNullOrEmpty(volumeLogico.getModelo())) {
 						LogMonitoramento.logWarning("Nome do volume lógico não foi capturado.");
@@ -694,22 +724,23 @@ public class SystemMonitor {
 						LogMonitoramento.logInfo("Nome do volume capturado: " + volumeLogico.getVolume(), LogBanco.LogType.INFO);
 					}
 
-					volumeLogico.setDisponivel(conversor.formatarBytes(volume.getDisponivel()));
-					if (StringUtils.isNullOrEmpty(volumeLogico.getDisponivel().toString())) {
+					double disponivelBytes = conversor.formatarBytes(volume.getDisponivel());
+					double totalBytes = conversor.formatarBytes(volume.getTotal());
+
+					volumeLogico.setDisponivel(disponivelBytes);
+					if (StringUtils.isNullOrEmpty(String.valueOf(volumeLogico.getDisponivel()))) {
 						LogMonitoramento.logWarning("Espaço disponível no volume lógico não foi capturado.");
 					} else {
-						LogMonitoramento.logInfo(
-								"Espaço disponível no volume lógico capturado : " + volumeLogico.getDisponivel(), LogBanco.LogType.INFO);
+						LogMonitoramento.logInfo("Espaço disponível no volume lógico capturado: " + volumeLogico.getDisponivel(), LogBanco.LogType.INFO);
 					}
 
-					volumeLogico.setDadoCaptura(conversor.formatarBytes(volume.getDisponivel()) - conversor.formatarBytes(volume.getTotal()));
+					volumeLogico.setDadoCaptura(disponivelBytes - totalBytes);
 
-					volumeLogico.setTotal(conversor.formatarBytes(volume.getTotal()));
-					if (StringUtils.isNullOrEmpty(volumeLogico.getTotal().toString())) {
+					volumeLogico.setTotal(totalBytes);
+					if (StringUtils.isNullOrEmpty(String.valueOf(volumeLogico.getTotal()))) {
 						LogMonitoramento.logWarning("Espaço total do volume lógico não foi capturado.");
 					} else {
-						LogMonitoramento.logInfo(
-								"Espaço total do volume lógico capturado com sucesso: " + volumeLogico.getTotal(), LogBanco.LogType.INFO);
+						LogMonitoramento.logInfo("Espaço total do volume lógico capturado com sucesso: " + volumeLogico.getTotal(), LogBanco.LogType.INFO);
 					}
 
 					volumeLogico.setTipo(volume.getTipo());
@@ -730,29 +761,26 @@ public class SystemMonitor {
 					if (StringUtils.isNullOrEmpty(volumeLogico.getPontoDeMontagem())) {
 						LogMonitoramento.logWarning("Ponto de montagem do volume lógico não foi capturado.");
 					} else {
-						LogMonitoramento.logInfo(
-								"Ponto de montagem do volume lógico capturado: " + volumeLogico.getPontoDeMontagem(), LogBanco.LogType.INFO);
+						LogMonitoramento.logInfo("Ponto de montagem do volume lógico capturado: " + volumeLogico.getPontoDeMontagem(), LogBanco.LogType.INFO);
 					}
 
-					double total = conversor.formatarBytes(volume.getTotal());
-					double disponivel = conversor.formatarBytes(volume.getDisponivel());
-					double percentualUso = ((total - disponivel) / total) * 100;
-
+					double percentualUso = ((totalBytes - disponivelBytes) / totalBytes) * 100;
 					volumeLogico.setPercentDadoCaptura(percentualUso);
+					volumeLogico.setDadoCaptura(disponivelBytes - totalBytes);
 
 					LogMonitoramento.logInfo("Dados do volume lógico gravados.", LogBanco.LogType.INFO);
 				} catch (Exception e) {
-                    try {
-                        LogMonitoramento.logError("Erro ao processar dados do volume lógico: ", e.getMessage(), e);
-                    } catch (IOException ex) {
-                        throw new RuntimeException(ex);
-                    }
-                }
+					try {
+						LogMonitoramento.logError("Erro ao processar dados do volume lógico: " + e.getMessage(), e);
+					} catch (IOException ex) {
+						throw new RuntimeException(ex);
+					}
+				}
 				volumes.add(volumeLogico);
 			});
 			LogMonitoramento.logInfo("Todos os volumes lógicos verificados.", LogBanco.LogType.INFO);
 		} catch (Exception e) {
-			LogMonitoramento.logError("Erro ao acessar informações do sistema: ", e.getMessage(), e);
+			LogMonitoramento.logError("Erro ao acessar informações do sistema: " + e.getMessage(), e);
 		}
 
 		return volumes;

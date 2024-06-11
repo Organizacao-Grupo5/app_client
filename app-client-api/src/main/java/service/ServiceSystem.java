@@ -1,9 +1,5 @@
 package service;
 
-import java.sql.SQLException;
-import java.util.List;
-import java.util.Optional;
-
 import dao.AlertaDAO;
 import dao.ConfiguracaoDAO;
 import dao.componente.CapturaDAO;
@@ -14,6 +10,10 @@ import model.Captura;
 import model.Configuracao;
 import model.componentes.Componente;
 import util.logs.Logger;
+
+import java.sql.SQLException;
+import java.util.List;
+import java.util.Optional;
 
 public class ServiceSystem {
     AlertaDAO alertaDAO;
@@ -29,7 +29,7 @@ public class ServiceSystem {
         registroAlertasDAO = new RegistroAlertasDAO();
         componenteDAO = new ComponenteDAO();
     }
-    
+
     public void configurar(Integer idComponente) throws SQLException {
         try {
             if (!configuracaoDAO.existeConfiguracao(idComponente)) {
@@ -45,7 +45,7 @@ public class ServiceSystem {
         Double valorCaptura = this.obterValorCaptura(idCaptura);
         Configuracao configuracao = this.obterConfiguracao(componente);
         Integer idAlerta = this.pegarIdAlerta(valorCaptura, configuracao);
-        
+
         registroAlertasDAO.gerarRegistro(idCaptura, idAlerta);
     }
 
@@ -53,7 +53,7 @@ public class ServiceSystem {
         Integer idAlerta = 0;
         try {
             List<Alerta> listaAlertas = alertaDAO.selecionarTodos();
-        
+
             if (valorCaptura >= configuracao.getMinimoParaSerRuim() && valorCaptura <= 100) {
                 idAlerta = listaAlertas.stream().filter(alerta -> alerta.getTipoAlerta().equals("RUIM")).map(Alerta::getIdAlerta).findFirst().get();
             } else if (valorCaptura >= configuracao.getMinimoParaSerMedio()) {
@@ -82,7 +82,7 @@ public class ServiceSystem {
         Configuracao configuracao = null;
         try {
             Optional<Configuracao> optionalConfiguracao = configuracaoDAO.selecionarByComponente(componente);
-            configuracao = optionalConfiguracao.get();    
+            configuracao = optionalConfiguracao.get();
         } catch (Exception e) {
             Logger.logError("Ocorreu um erro ao obter informações da entidade Configuração:", e.getMessage(), e);
         }

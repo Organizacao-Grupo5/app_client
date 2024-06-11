@@ -47,9 +47,9 @@ CREATE TABLE usuario (
     email VARCHAR(60) NOT NULL UNIQUE,
     senha VARCHAR(45) NOT NULL,
     cargo varchar(45),
-    fkEmpresa INT NOT NULL, 
+    fkEmpresa INT NOT NULL,
         CONSTRAINT fkEmpresaUsuario FOREIGN KEY (fkEmpresa) REFERENCES empresa(idEmpresa)
-); 
+);
 
 CREATE TABLE contato (
     idContato INT AUTO_INCREMENT,
@@ -71,6 +71,24 @@ CREATE TABLE maquina (
 	fkEmpresa INT NOT NULL,
 		CONSTRAINT fkEmpresaMaquina FOREIGN KEY (fkEmpresa) REFERENCES empresa(idEmpresa)
 );
+
+CREATE TABLE apps (
+    idApp INT PRIMARY KEY AUTO_INCREMENT,
+    nomeApp VARCHAR(500) NOT NULL,
+    pid INT NOT NULL,
+    ramConsumida INT NOT NULL, 
+    localidade VARCHAR(500) NOT NULL
+);
+
+CREATE TABLE appAcessado (
+    fkApp INT NOT NULL,
+    CONSTRAINT fkAppMaquina FOREIGN KEY (fkApp) REFERENCES apps(idApp),
+    fkMaquina INT NOT NULL,
+    CONSTRAINT fkMaquina FOREIGN KEY (fkMaquina) REFERENCES maquina(idMaquina),
+    hora TIMESTAMP,
+    PRIMARY KEY (fkApp, fkMaquina)
+);
+
 
 CREATE TABLE rede (
     idRede INT PRIMARY KEY AUTO_INCREMENT,
@@ -112,7 +130,7 @@ CREATE TABLE configuracao (
     minimoParaSerMedio FLOAT NOT NULL DEFAULT 30,
 		CONSTRAINT ckMinimoParaSerMedio CHECK (minimoParaSerMedio < 100 AND minimoParaSerMedio > 0 AND minimoParaSerMedio < minimoParaSerRuim),
 	minimoParaSerRuim FLOAT NOT NULL DEFAULT 60,
-        CONSTRAINT ckMinimoParaSerRuim CHECK (minimoParaSerRuim < 100 AND minimoParaSerRuim > 0),    
+        CONSTRAINT ckMinimoParaSerRuim CHECK (minimoParaSerRuim < 100 AND minimoParaSerRuim > 0),
     dataModificacao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	fkComponente INT NOT NULL,
 		CONSTRAINT fkConfigComponente FOREIGN KEY (fkComponente) REFERENCES componente(idComponente)
@@ -130,6 +148,7 @@ CREATE TABLE captura (
     dadoCaptura DOUBLE NOT NULL,
     unidadeMedida VARCHAR(5) NOT NULL,
     dataCaptura DATETIME NOT NULL,
+    dadoCapturaPercent FLOAT NOT NULL,
     fkComponente INT NOT NULL,
         CONSTRAINT fkComponenteCaptura FOREIGN KEY (fkComponente) REFERENCES componente(idComponente)
 );
@@ -150,42 +169,102 @@ INSERT INTO plano VALUES
 	(NULL, 'Plano Corporativo', 'Foco: Grandes Empresas. Monitoramento de Hardware: Processador, RAM, disco, conexão USB, placa gráfica.');
 
 INSERT INTO empresa (nome, cnpj, fkPlano) VALUES
-	('Empresa A', '12345678901234', 1),
-	('Empresa B', '98765432109876', 2),
-	('Empresa C', '56789012345678', 3);
+('Gyllo Animations', '1574201230001', 1),
+('Empresa B', '98765432109876', 2),
+('Empresa C', '56789012345678', 3);
 
 INSERT INTO endereco (cep, logradouro, numero, fkEmpresa) VALUES
-	('12345-678', 'Rua A', '123', 1),
-	('98765-432', 'Rua B', '456', 2),
-	('56789-012', 'Rua C', '789', 3);
+('12345-678', 'Rua A', '123', 1),
+('98765-432', 'Rua B', '456', 2),
+('56789-012', 'Rua C', '789', 3);
 
 INSERT INTO usuario (nome, email, senha, fkEmpresa) VALUES
-	('Usuário 1', 'usuario1@empresa.com', 'senha123', 1),
-	('Usuário 2', 'usuario2@empresa.com', 'senha456', 1),
-	('Usuário 3', 'usuario3@empresa.com', 'senha789', 2);
+('Cláudio Araújo', 'l_claudio.araujo@hotmail.com', 'senha123', 1),
+('Maria Eduarda', 'l_maria.girote@outlook.com', 'senha123', 1),
+('Thiago Santos', 'l_thiago.santos@gmail.com', 'senha123', 1),
+('Guilherme Neves', 'l_guilherme.neves@hotmail.com', 'senha123', 1),
+('Diego Santos', 'l_diego.santos@outlook.com', 'senha123', 1),
+('Julia Campioto', 'l_julia.campioto@gmail.com', 'senha123', 1),
+('Cláudio Araújo', 'r_claudio.araujo@hotmail.com', 'senha123', 1),
+('Maria Eduarda', 'r_maria.girote@outlook.com', 'senha123', 1),
+('Thiago Santos', 'r_thiago.santos@gmail.com', 'senha123', 1),
+('Guilherme Neves', 'r_guilherme.neves@hotmail.com', 'senha123', 1),
+('Diego Santos', 'r_diego.santos@outlook.com', 'senha123', 1),
+('Julia Campioto', 'r_julia.campioto@gmail.com', 'senha123', 1);
 
-INSERT INTO maquina (fkUsuario, fkEmpresa) VALUES 
-	(1, 1),
-    (2, 1),
-    (3, 2);
+SELECT * FROM maquina JOIN usuario on maquina.fkUsuario = usuario.idUsuario JOIN ipv4 ON ipv4.fkMaquina = maquina.idMaquina WHERE idUsuario = 3;
 
-INSERT INTO alerta VALUES
-	(null, "Componente em ótimo estado!", "BOM"),
-    (null, "Componente bom porém está sendo comprometido!", "MÉDIO"),
-    (null, "Componente está comprometido!!", "RUIM");
+SELECT * FROM maquina JOIN usuario on maquina.fkUsuario = usuario.idUsuario WHERE idUsuario = 3;
+
+INSERT INTO maquina (fkUsuario, fkEmpresa) VALUES
+(1, 1),
+(2, 1),
+(3, 1),
+(4, 1),
+(5, 1),
+(6, 1),
+(7, 1),
+(8, 1),
+(9, 1),
+(10, 1),
+(11, 1),
+(12, 1);
+>>>>>>> 154d382636e315de128a35f55fe40c45b540dbd3
+
+INSERT INTO alerta (mensagem, tipoAlerta) VALUES
+('Componente em ótimo estado!', 'BOM'),
+('Componente bom porém está sendo comprometido!', 'MÉDIO'),
+('Componente está comprometido!!', 'RUIM');
+
+-- IPV4 Faculdade= {
+--  duda: 10.18.7.80
+--  claudio: 10.18.33.208
+--  thiago: 
+--  guilherme: 
+--  diego: 
+--  julia: 
+-- }
 
 INSERT INTO ipv4(numeroIP, nomeLocal, fkMaquina) VALUES 
-	('192.168.15.6', 'Home', 1);
+('192.168.15.28', 'Home', 1),
+    ('192.168.0.891', 'Home', 2),
+    ('192.168.15.5', 'Home', 3),
+    ('26.245.80.14', 'Home', 4),
+    ('10.0.0.109', 'Home', 5),
+    ('0.0.0.0', 'Home', 6),
+    ('0.0.0.0', 'Home', 7),
+    ('0.0.0.0', 'Home', 8),
+    ('172.31.61.112', 'Home', 9),
+    ('172.31.55.118', 'Home', 10),
+    ('0.0.0.0', 'Home', 11),
+    ('0.0.0.0', 'Home', 12);
 
-INSERT INTO relRedeIpv4 VALUES
-	(1, 1, DEFAULT);
+INSERT INTO rede (nomeRede, interfaceRede, sinalRede, transmissaoRede, bssidRede) 
+VALUES ('Net SPTech', 'Wi-Fi', 80, 2.4, '00:11:22:33:44:55');
 
+INSERT INTO relRedeIpv4 (fkRede, fkIpv4) VALUES
+(1, 1),
+(1, 2),
+(1, 3),
+(1, 4),
+(1, 5),
+(1, 6),
+(1, 7),
+(1, 8),
+(1, 9),
+(1, 10),
+(1, 11),
+(1, 12);
 -- SELECT-Script
 SHOW TABLES;
 
 SELECT * FROM alerta;
 
 SELECT * FROM captura;
+
+SELECT componente, MAX(cap.dadoCaptura) dado, cap.unidadeMedida uni, COUNT(DAY(cap.dataCaptura)) dia FROM captura cap
+	JOIN componente comp ON fkComponente = idComponente
+		GROUP BY componente, uni;
 
 SELECT * FROM componente;
 
@@ -199,7 +278,101 @@ SELECT * FROM endereco;
 
 SELECT * FROM ipv4;
 
+SELECT * FROM ipv4 WHERE fkMaquina = 4;
+
 SELECT * FROM maquina;
+
+SELECT * FROM maquina JOIN usuario on maquina.fkUsuario = usuario.idUsuario JOIN ipv4 ON ipv4.fkMaquina = maquina.idMaquina;
+
+SELECT * FROM maquina JOIN usuario on maquina.fkUsuario = usuario.idUsuario WHERE idUsuario = 3;
+
+SELECT * FROM maquina AS mac 
+	JOIN componente ON idMaquina = fkMaquina 
+		JOIN captura ON idComponente = fkComponente 
+			JOIN registroalerta ON idCaptura = fkCaptura 
+				ORDER BY fkAlerta;
+
+SELECT idMaquina, fkAlerta, MONTH(dataCaptura) as mes, COUNT(fkAlerta) AS qtdAlerta FROM maquina AS mac 
+	JOIN componente ON idMaquina = fkMaquina 
+		JOIN captura ON idComponente = fkComponente 
+			JOIN registroalerta ON idCaptura = fkCaptura 
+				WHERE fkEmpresa = 1 
+					GROUP BY idMaquina, fkAlerta, mes;
+
+SELECT idMaquina, componente, fkAlerta, MAX(DAY(dataCaptura)) dia FROM maquina AS mac 
+	JOIN componente AS comp ON idMaquina = fkMaquina 
+		JOIN captura ON idComponente = fkComponente 
+			JOIN registroalerta ON idCaptura = fkCaptura 
+				WHERE componente IN ('MemoriaRam', 'CPU', 'GPU', 'HDD') 
+					AND fkAlerta > 1 AND fkEmpresa = 1
+						GROUP BY idMaquina, componente, fkAlerta;
+
+SELECT idMaquina, componente, fkAlerta, MAX(dataCaptura) maxCap FROM maquina AS mac
+	JOIN componente AS comp ON idMaquina = fkMaquina
+		JOIN captura AS cap ON idComponente = fkComponente
+			JOIN registroalerta ON idCaptura = fkCaptura
+				WHERE fkEmpresa = 1
+                    AND componente IN ('MemoriaRam', 'CPU', 'GPU', 'HDD') 
+						GROUP BY idMaquina, idComponente, fkAlerta
+							ORDER BY idMaquina DESC;
+                            
+SELECT comp.*, MAX(DAY(dataCaptura)) dia FROM maquina mac 
+	JOIN componente comp ON idMaquina = fkMaquina
+		JOIN captura cap ON idComponente = fkComponente
+			WHERE fkEmpresa = 1
+				GROUP BY idComponente;
+        
+SELECT DISTINCT componente FROM maquina mac
+	JOIN componente comp ON idMaquina = fkMaquina
+		WHERE fkEmpresa = 1;
+        
+SELECT componente, MAX(cap.dadoCaptura) dado, cap.unidadeMedida uni, COUNT(DAY(cap.dataCaptura)) dia FROM maquina mac
+	RIGHT JOIN componente comp ON idMaquina = fkMaquina
+		LEFT JOIN captura cap ON idComponente = fkComponente
+			WHERE fkEmpresa = 1
+				GROUP BY componente, uni;
+        
+SELECT idMaquina, cap.dadoCaptura, cap.unidadeMedida, componente, MAX(DAY(dataCaptura)) dia FROM maquina mac
+	JOIN componente comp ON idMaquina = fkMaquina
+		JOIN captura cap ON idComponente = fkComponente
+			WHERE fkEmpresa = 1 AND componente = 'HDD'
+				GROUP BY idMaquina, cap.dadoCaptura, cap.unidadeMedida;        
+        
+SELECT cap.dadoCaptura, cap.unidadeMedida, componente, MINUTE(dataCaptura) minuto FROM maquina mac
+	JOIN componente comp ON idMaquina = fkMaquina
+		JOIN captura cap ON idComponente = fkComponente
+			WHERE fkEmpresa = 1 AND componente = 'GPU'
+				GROUP BY idMaquina, cap.dadoCaptura, cap.unidadeMedida, minuto
+					ORDER BY minuto;
+        
+SELECT numeroIp IpMaquina, componente, minimoParaSerMedio minMedio, minimoParaSerRuim minRuim, dadoCaptura dado FROM maquina mac 
+	JOIN ipv4 ON idMaquina = ipv4.fkMaquina
+		JOIN componente comp ON idMaquina = comp.fkMaquina
+			JOIN configuracao conf ON fkComponente = idComponente
+				JOIN captura cap ON idComponente = cap.fkComponente
+					JOIN registroAlerta reg ON idCaptura = fkCaptura
+						WHERE idCaptura = 1;
+
+SELECT idMaquina, numeroIP ip, usua.idUsuario, usua.nome userName, usua.imagemPerfil userImg, usua.email userEmail, fkAlerta, MAX(DAY(dataCaptura)) as mes, COUNT(fkAlerta) qtdAlerta FROM maquina mac
+	JOIN usuario usua ON fkUsuario = idUsuario
+		JOIN ipv4 ip ON idMaquina = ip.fkMaquina
+			JOIN componente comp ON idMaquina = comp.fkMaquina
+				JOIN captura cap ON idComponente = cap.fKComponente
+					JOIN registroAlerta reg ON idCaptura = fkCaptura
+						WHERE mac.fKEmpresa = 1
+							GROUP BY idMaquina, idIpv4, fKAlerta
+								ORDER BY idMaquina;
+
+SELECT idMaquina, numeroIP ip, usua.nome userName, usua.imagemPerfil userImg, usua.email userEmail, tipoAlerta, MAX(MONTH(dataCaptura)) as mes, COUNT(fkAlerta) qtdAlerta FROM maquina mac
+	JOIN usuario usua ON fkUsuario = idUsuario
+		JOIN ipv4 ip ON idMaquina = ip.fkMaquina
+			JOIN componente comp ON idMaquina = comp.fkMaquina
+				JOIN captura cap ON idComponente = cap.fKComponente
+					JOIN registroAlerta reg ON idCaptura = fkCaptura
+						JOIN alerta ON fKAlerta = idAlerta
+							WHERE mac.fKEmpresa = 1
+								GROUP BY idMaquina, idIpv4, fKAlerta
+									ORDER BY idMaquina;
 
 SELECT * FROM plano;
 
@@ -227,4 +400,7 @@ SELECT COUNT(*) from maquina as m
 SELECT COLUMN_NAME, COLUMN_TYPE, COLUMN_DEFAULT, IS_NULLABLE, COLUMN_KEY, EXTRA, COLUMN_COMMENT FROM information_schema.columns WHERE TABLE_SCHEMA = 'der_grupo_5' AND TABLE_NAME = "alertas";
 
 -- UPDATE-Script
-UPDATE ipv4 SET numeroIP = '192.168.15.4' WHERE idIpv4 =  1;
+UPDATE ipv4 SET numeroIP = '192.168.15.5' WHERE idIpv4 =  1;
+
+UPDATE ipv4 SET numeroIP = '10.18.34.239' WHERE fkMaquina = 4;
+

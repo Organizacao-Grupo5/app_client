@@ -1096,3 +1096,2297 @@ Inserindo captura de dados no banco de dados:
     |Data hora captura: 2024-06-11T00:46:56.114068600
     |Id componente: 38
 
+[2024-06-11 08:20:48] [INFO] Servidor iniciando.
+[2024-06-11 08:20:49] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 08:49:54] [INFO] Servidor iniciando.
+[2024-06-11 08:49:55] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 08:50:19] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 08:50:21] [INFO] Buscando componentes...
+[2024-06-11 08:50:22] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 08:50:22] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 08:50:22] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 08:50:22] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 08:50:22] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 08:50:22] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 08:50:22] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 08:50:30] [INFO] Capturando os componentes:
+
+[2024-06-11 08:50:32] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T08:50:32.049517800
+    |Id componente: 30
+
+[2024-06-11 08:50:39] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T08:50:39.835378800
+    |Id componente: 31
+
+[2024-06-11 08:50:47] [ERROR] Erro ao iniciar monitoramento:  - Exception: Cannot invoke "java.lang.Double.toString()" because "this.temperatura" is null
+[2024-06-11 08:51:14] [INFO] Servidor iniciando.
+[2024-06-11 08:51:16] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 08:52:12] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 08:52:27] [INFO] Buscando componentes...
+[2024-06-11 08:52:28] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 08:52:28] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 08:52:28] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 08:52:28] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 08:52:28] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 08:52:28] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 08:52:28] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 08:52:34] [INFO] Capturando os componentes:
+
+[2024-06-11 08:52:36] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T08:52:36.050817200
+    |Id componente: 30
+
+[2024-06-11 08:52:42] [ERROR] Erro ao iniciar monitoramento:  - Exception: Cannot invoke "java.lang.Double.toString()" because "this.memoriaTotal" is null
+[2024-06-11 08:52:44] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T08:52:44.057381400
+    |Id componente: 31
+
+[2024-06-11 08:52:59] [INFO] Servidor iniciando.
+[2024-06-11 08:53:01] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 08:53:17] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 08:53:19] [INFO] Buscando componentes...
+[2024-06-11 08:53:21] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 08:53:21] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 08:53:21] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 08:53:21] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 08:53:21] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 08:53:21] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 08:53:21] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 08:53:26] [INFO] Capturando os componentes:
+
+[2024-06-11 08:53:28] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T08:53:28.792611600
+    |Id componente: 30
+
+[2024-06-11 08:53:36] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T08:53:36.888848400
+    |Id componente: 31
+
+[2024-06-11 08:53:43] [ERROR] Erro ao iniciar monitoramento:  - Exception: Cannot invoke "java.lang.Double.toString()" because "this.total" is null
+[2024-06-11 08:54:07] [INFO] Servidor iniciando.
+[2024-06-11 08:54:09] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 08:54:26] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 08:54:29] [INFO] Buscando componentes...
+[2024-06-11 08:54:30] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 08:54:30] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 08:54:30] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 08:54:30] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 08:54:30] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 08:54:30] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 08:54:30] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 08:54:36] [INFO] Capturando os componentes:
+
+[2024-06-11 08:54:38] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T08:54:38.220713900
+    |Id componente: 30
+
+[2024-06-11 08:54:46] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T08:54:46.243711200
+    |Id componente: 31
+
+[2024-06-11 09:10:03] [INFO] Servidor iniciando.
+[2024-06-11 09:10:05] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 09:10:25] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 09:10:27] [INFO] Buscando componentes...
+[2024-06-11 09:10:29] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 09:10:29] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 09:10:29] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 09:10:29] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 09:10:29] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 09:10:29] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 09:10:29] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 09:10:34] [INFO] Capturando os componentes:
+
+[2024-06-11 09:10:37] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T09:10:37.423660100
+    |Id componente: 30
+
+[2024-06-11 09:10:39] [ERROR] Erro ao iniciar monitoramento:  - Exception: Cannot invoke "java.lang.Double.toString()" because "this.temperatura" is null
+[2024-06-11 09:10:45] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T09:10:45.305544400
+    |Id componente: 31
+
+[2024-06-11 09:14:07] [INFO] Servidor iniciando.
+[2024-06-11 09:14:09] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 09:14:32] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 09:14:35] [INFO] Buscando componentes...
+[2024-06-11 09:14:36] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 09:14:36] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 09:14:36] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 09:14:36] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 09:14:36] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 09:14:36] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 09:14:36] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 09:14:41] [INFO] Capturando os componentes:
+
+[2024-06-11 09:14:43] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T09:14:43.076446900
+    |Id componente: 30
+
+[2024-06-11 09:14:47] [ERROR] Erro ao iniciar monitoramento:  - Exception: Cannot invoke "java.lang.Double.toString()" because "this.temperatura" is null
+[2024-06-11 09:14:50] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T09:14:50.890213800
+    |Id componente: 31
+
+[2024-06-11 09:16:16] [INFO] Servidor iniciando.
+[2024-06-11 09:16:20] [INFO] Servidor iniciando.
+[2024-06-11 09:16:21] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 09:16:35] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 09:16:38] [INFO] Buscando componentes...
+[2024-06-11 09:16:39] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 09:16:39] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 09:16:39] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 09:16:39] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 09:16:39] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 09:16:39] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 09:16:39] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 09:16:44] [INFO] Capturando os componentes:
+
+[2024-06-11 09:16:46] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T09:16:46.272721200
+    |Id componente: 30
+
+[2024-06-11 09:17:04] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T09:17:04.076578200
+    |Id componente: 31
+
+[2024-06-11 09:19:00] [ERROR] Erro ao iniciar monitoramento:  - Exception: Cannot invoke "java.lang.Double.toString()" because "this.temperatura" is null
+[2024-06-11 09:19:13] [INFO] Servidor iniciando.
+[2024-06-11 09:19:15] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 09:19:33] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 09:19:37] [INFO] Buscando componentes...
+[2024-06-11 09:19:38] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 09:19:39] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 09:19:39] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 09:19:39] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 09:19:39] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 09:19:39] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 09:19:39] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 09:19:43] [INFO] Capturando os componentes:
+
+[2024-06-11 09:19:45] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T09:19:45.447224300
+    |Id componente: 30
+
+[2024-06-11 09:19:52] [ERROR] Erro ao iniciar monitoramento:  - Exception: Cannot invoke "java.lang.Double.toString()" because "this.temperatura" is null
+[2024-06-11 09:19:53] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T09:19:53.257948600
+    |Id componente: 31
+
+[2024-06-11 09:20:43] [INFO] Servidor iniciando.
+[2024-06-11 09:20:44] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 09:21:03] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 09:21:09] [INFO] Buscando componentes...
+[2024-06-11 09:21:10] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 09:21:10] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 09:21:10] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 09:21:11] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 09:21:11] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 09:21:11] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 09:21:11] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 09:21:15] [INFO] Capturando os componentes:
+
+[2024-06-11 09:22:09] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T09:22:09.443985600
+    |Id componente: 30
+
+[2024-06-11 09:27:46] [INFO] Servidor iniciando.
+[2024-06-11 09:27:47] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 09:28:10] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 09:28:12] [INFO] Buscando componentes...
+[2024-06-11 09:28:13] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 09:28:13] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 09:28:13] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 09:28:14] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 09:28:14] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 09:28:14] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 09:28:14] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 09:28:18] [INFO] Capturando os componentes:
+
+[2024-06-11 09:28:20] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T09:28:20.452803500
+    |Id componente: 30
+
+[2024-06-11 09:28:28] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T09:28:28.233413800
+    |Id componente: 31
+
+[2024-06-11 09:28:31] [ERROR] Erro ao iniciar monitoramento:  - Exception: Cannot invoke "java.lang.Double.toString()" because "this.temperatura" is null
+[2024-06-11 09:30:14] [INFO] Servidor iniciando.
+[2024-06-11 09:30:16] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 09:30:32] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 09:30:33] [INFO] Buscando componentes...
+[2024-06-11 09:30:35] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 09:30:35] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 09:30:35] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 09:30:35] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 09:30:35] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 09:30:35] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 09:30:35] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 09:30:39] [INFO] Capturando os componentes:
+
+[2024-06-11 09:30:52] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T09:30:52.111875600
+    |Id componente: 30
+
+[2024-06-11 09:31:45] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T09:31:45.454647200
+    |Id componente: 31
+
+[2024-06-11 09:32:38] [ERROR] Erro ao iniciar monitoramento:  - Exception: Cannot invoke "java.lang.Double.toString()" because "this.temperatura" is null
+[2024-06-11 09:35:09] [INFO] Servidor iniciando.
+[2024-06-11 09:35:10] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 09:35:15] [WARNING] Tentativa de login falhou para o email: public
+[2024-06-11 09:35:39] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 09:35:42] [INFO] Buscando componentes...
+[2024-06-11 09:35:43] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 09:35:43] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 09:35:43] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 09:35:43] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 09:35:43] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 09:35:43] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 09:35:43] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 09:35:48] [INFO] Capturando os componentes:
+
+[2024-06-11 09:35:50] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T09:35:50.030060700
+    |Id componente: 30
+
+[2024-06-11 09:35:57] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T09:35:57.877203600
+    |Id componente: 31
+
+[2024-06-11 09:36:53] [ERROR] Erro ao iniciar monitoramento:  - Exception: Cannot invoke "java.lang.Double.toString()" because "this.temperatura" is null
+[2024-06-11 09:37:17] [INFO] Servidor iniciando.
+[2024-06-11 09:37:19] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 09:37:35] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 09:37:41] [INFO] Buscando componentes...
+[2024-06-11 09:37:42] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 09:37:42] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 09:37:42] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 09:37:42] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 09:37:42] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 09:37:42] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 09:37:42] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 09:37:47] [INFO] Capturando os componentes:
+
+[2024-06-11 09:37:49] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T09:37:49.704564200
+    |Id componente: 30
+
+[2024-06-11 09:37:57] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T09:37:57.510817600
+    |Id componente: 31
+
+[2024-06-11 09:38:24] [INFO] Servidor iniciando.
+[2024-06-11 09:38:26] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 09:38:39] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 09:38:44] [INFO] Buscando componentes...
+[2024-06-11 09:38:45] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 09:38:45] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 09:38:45] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 09:38:45] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 09:38:45] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 09:38:45] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 09:38:45] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 09:38:50] [INFO] Capturando os componentes:
+
+[2024-06-11 09:39:21] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T09:39:21.659742300
+    |Id componente: 30
+
+[2024-06-11 09:42:45] [INFO] Servidor iniciando.
+[2024-06-11 09:42:47] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 09:43:03] [WARNING] Tentativa de login falhou para o email: Logger.logError("Erro
+[2024-06-11 09:43:18] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 09:43:21] [INFO] Buscando componentes...
+[2024-06-11 09:43:22] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 09:43:23] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 09:43:23] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 09:43:23] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 09:43:23] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 09:43:23] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 09:43:23] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 09:43:27] [INFO] Capturando os componentes:
+
+[2024-06-11 09:43:40] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T09:43:40.740142200
+    |Id componente: 30
+
+[2024-06-11 09:43:52] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T09:43:52.564878500
+    |Id componente: 31
+
+[2024-06-11 09:53:35] [INFO] Servidor iniciando.
+[2024-06-11 09:53:36] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 09:54:09] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 09:54:11] [INFO] Buscando componentes...
+[2024-06-11 09:54:13] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 09:54:13] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 09:54:13] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 09:54:13] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 09:54:13] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 09:54:13] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 09:54:13] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 09:54:18] [INFO] Capturando os componentes:
+
+[2024-06-11 09:54:18] [INFO] Iniciando listagem de apps
+[2024-06-11 09:54:18] [INFO] Iniciando captura de componentes
+[2024-06-11 09:54:20] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T09:54:20.221427600
+    |Id componente: 30
+
+[2024-06-11 09:54:25] [ERROR] Erro ao iniciar monitoramento:  - Exception: Cannot invoke "java.lang.Double.toString()" because "this.temperatura" is null
+[2024-06-11 09:54:27] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T09:54:27.940534600
+    |Id componente: 31
+
+[2024-06-11 09:56:38] [INFO] Servidor iniciando.
+[2024-06-11 09:56:40] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 09:56:58] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 09:57:00] [INFO] Buscando componentes...
+[2024-06-11 09:57:01] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 09:57:01] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 09:57:01] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 09:57:01] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 09:57:01] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 09:57:01] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 09:57:01] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 09:57:06] [INFO] Capturando os componentes:
+
+[2024-06-11 09:57:06] [INFO] Iniciando captura de componentes
+[2024-06-11 09:57:06] [INFO] Iniciando listagem de apps
+[2024-06-11 09:57:08] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T09:57:08.474363700
+    |Id componente: 30
+
+[2024-06-11 10:02:39] [INFO] Servidor iniciando.
+[2024-06-11 10:02:41] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 10:02:56] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 10:02:59] [INFO] Buscando componentes...
+[2024-06-11 10:03:00] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 10:03:01] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 10:03:01] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 10:03:01] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 10:03:01] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 10:03:01] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 10:03:01] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 10:03:06] [INFO] Capturando os componentes:
+
+[2024-06-11 10:03:06] [INFO] Iniciando captura de componentes
+[2024-06-11 10:03:06] [INFO] Iniciando listagem de apps
+[2024-06-11 10:03:08] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T10:03:08.717811100
+    |Id componente: 30
+
+[2024-06-11 10:05:38] [INFO] Servidor iniciando.
+[2024-06-11 10:05:39] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 10:05:59] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 10:06:01] [INFO] Buscando componentes...
+[2024-06-11 10:06:02] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 10:06:03] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 10:06:03] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 10:06:03] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 10:06:03] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 10:06:03] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 10:06:03] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 10:06:07] [INFO] Capturando os componentes:
+
+[2024-06-11 10:06:07] [INFO] Iniciando captura de componentes
+[2024-06-11 10:06:07] [INFO] Iniciando listagem de apps
+[2024-06-11 10:06:09] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T10:06:09.455286700
+    |Id componente: 30
+
+[2024-06-11 10:09:17] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T10:09:17.476098100
+    |Id componente: 31
+
+[2024-06-11 10:10:24] [INFO] Listagem de apps concluída
+[2024-06-11 10:10:24] [INFO] Iniciando listagem de apps
+[2024-06-11 10:14:24] [INFO] Servidor iniciando.
+[2024-06-11 10:14:26] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 10:14:42] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 10:14:46] [INFO] Buscando componentes...
+[2024-06-11 10:14:47] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 10:14:47] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 10:14:47] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 10:14:47] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 10:14:47] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 10:14:47] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 10:14:47] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 10:14:52] [INFO] Capturando os componentes:
+
+[2024-06-11 10:14:52] [INFO] Iniciando captura de componentes
+[2024-06-11 10:14:52] [INFO] Iniciando listagem de apps
+[2024-06-11 10:14:54] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T10:14:54.481488
+    |Id componente: 30
+
+[2024-06-11 10:15:02] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T10:15:02.257087800
+    |Id componente: 31
+
+[2024-06-11 10:15:36] [INFO] Listagem de apps concluída
+[2024-06-11 10:15:36] [INFO] Iniciando listagem de apps
+[2024-06-11 10:15:53] [ERROR] Erro ao iniciar monitoramento:  - Exception: Cannot invoke "java.lang.Double.toString()" because "this.temperatura" is null
+[2024-06-11 10:16:22] [INFO] Listagem de apps concluída
+[2024-06-11 10:19:42] [INFO] Servidor iniciando.
+[2024-06-11 10:19:44] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 10:19:58] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 10:20:02] [INFO] Buscando componentes...
+[2024-06-11 10:20:03] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 10:20:03] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 10:20:03] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 10:20:03] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 10:20:03] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 10:20:03] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 10:20:03] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 10:20:09] [INFO] Capturando os componentes:
+
+[2024-06-11 10:20:09] [INFO] Iniciando captura de componentes
+[2024-06-11 10:20:09] [INFO] Iniciando listagem de apps
+[2024-06-11 10:20:11] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T10:20:11.312463500
+    |Id componente: 30
+
+[2024-06-11 10:20:59] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T10:20:59.437370300
+    |Id componente: 31
+
+[2024-06-11 10:22:50] [INFO] Listagem de apps concluída
+[2024-06-11 10:22:50] [INFO] Iniciando listagem de apps
+[2024-06-11 10:23:48] [INFO] Servidor iniciando.
+[2024-06-11 10:23:50] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 10:24:05] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 10:24:08] [INFO] Buscando componentes...
+[2024-06-11 10:24:09] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 10:24:09] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 10:24:09] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 10:24:09] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 10:24:09] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 10:24:09] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 10:24:09] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 10:24:15] [INFO] Capturando os componentes:
+
+[2024-06-11 10:24:15] [INFO] Iniciando captura de componentes
+[2024-06-11 10:24:15] [INFO] Iniciando listagem de apps
+[2024-06-11 10:24:18] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T10:24:18.094950600
+    |Id componente: 30
+
+[2024-06-11 10:24:46] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T10:24:46.565083
+    |Id componente: 31
+
+[2024-06-11 10:27:51] [INFO] Servidor iniciando.
+[2024-06-11 10:27:53] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 10:28:10] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 10:28:15] [INFO] Buscando componentes...
+[2024-06-11 10:28:17] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 10:28:17] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 10:28:17] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 10:28:17] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 10:28:17] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 10:28:17] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 10:28:17] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 10:28:25] [INFO] Capturando os componentes:
+
+[2024-06-11 10:28:25] [INFO] Iniciando listagem de apps
+[2024-06-11 10:28:25] [INFO] Iniciando captura de componentes
+[2024-06-11 10:28:27] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T10:28:27.450108800
+    |Id componente: 30
+
+[2024-06-11 10:28:35] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T10:28:35.536919
+    |Id componente: 31
+
+[2024-06-11 10:29:13] [INFO] Listagem de apps concluída
+[2024-06-11 10:29:13] [INFO] Iniciando listagem de apps
+[2024-06-11 10:29:44] [INFO] Servidor iniciando.
+[2024-06-11 10:29:46] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 10:30:02] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 10:30:03] [INFO] Buscando componentes...
+[2024-06-11 10:30:04] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 10:30:05] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 10:30:05] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 10:30:05] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 10:30:05] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 10:30:05] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 10:30:05] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 10:30:12] [INFO] Capturando os componentes:
+
+[2024-06-11 10:30:12] [INFO] Iniciando captura de componentes
+[2024-06-11 10:30:12] [INFO] Iniciando listagem de apps
+[2024-06-11 10:30:26] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T10:30:26.286704800
+    |Id componente: 30
+
+[2024-06-11 10:30:38] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T10:30:38.353766200
+    |Id componente: 31
+
+[2024-06-11 10:31:16] [INFO] Listagem de apps concluída
+[2024-06-11 10:31:16] [INFO] Iniciando listagem de apps
+[2024-06-11 10:31:43] [INFO] Servidor iniciando.
+[2024-06-11 10:31:45] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 10:31:58] [WARNING] Tentativa de login falhou para o email: package
+[2024-06-11 10:32:01] [WARNING] Tentativa de login falhou para o email: package
+[2024-06-11 10:32:21] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 10:32:25] [INFO] Buscando componentes...
+[2024-06-11 10:32:27] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 10:32:27] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 10:32:27] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 10:32:27] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 10:32:27] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 10:32:27] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 10:32:27] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 10:32:32] [INFO] Capturando os componentes:
+
+[2024-06-11 10:32:32] [INFO] Iniciando captura de componentes
+[2024-06-11 10:32:32] [INFO] Iniciando listagem de apps
+[2024-06-11 10:32:35] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 0,00
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T10:32:35.054791
+    |Id componente: 30
+
+[2024-06-11 10:32:43] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T10:32:43.860214300
+    |Id componente: 31
+
+[2024-06-11 10:33:23] [INFO] Listagem de apps concluída
+[2024-06-11 10:33:23] [INFO] Iniciando listagem de apps
+[2024-06-11 10:34:08] [ERROR] Erro ao iniciar monitoramento:  - Exception: Cannot invoke "java.lang.Double.toString()" because "this.temperatura" is null
+[2024-06-11 10:34:20] [INFO] Listagem de apps concluída
+[2024-06-11 10:36:43] [INFO] Servidor iniciando.
+[2024-06-11 10:36:45] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 10:37:05] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 10:37:07] [INFO] Buscando componentes...
+[2024-06-11 10:37:08] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 10:37:08] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 10:37:08] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 10:37:08] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 10:37:08] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 10:37:08] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 10:37:08] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 10:37:12] [INFO] Capturando os componentes:
+
+[2024-06-11 10:37:12] [INFO] Iniciando captura de componentes
+[2024-06-11 10:37:12] [INFO] Iniciando listagem de apps
+[2024-06-11 10:37:16] [ERROR] Erro ao iniciar monitoramento:  - Exception: Cannot invoke "java.lang.Double.toString()" because "this.temperatura" is null
+[2024-06-11 10:37:45] [INFO] Listagem de apps concluída
+[2024-06-11 10:47:35] [INFO] Servidor iniciando.
+[2024-06-11 10:47:36] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 10:48:53] [INFO] Servidor iniciando.
+[2024-06-11 10:48:55] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 10:49:08] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 10:49:47] [INFO] Buscando componentes...
+[2024-06-11 10:49:48] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 10:49:48] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 10:49:48] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 10:49:48] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 10:49:48] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 10:49:48] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 10:49:48] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 10:49:53] [INFO] Capturando os componentes:
+
+[2024-06-11 10:49:53] [INFO] Iniciando captura de componentes
+[2024-06-11 10:49:53] [INFO] Iniciando listagem de apps
+[2024-06-11 10:50:28] [INFO] Listagem de apps concluída
+[2024-06-11 10:50:28] [INFO] Iniciando listagem de apps
+[2024-06-11 10:51:02] [INFO] Listagem de apps concluída
+[2024-06-11 10:51:02] [INFO] Iniciando listagem de apps
+[2024-06-11 10:51:06] [ERROR] Erro ao iniciar monitoramento:  - Exception: Cannot invoke "java.lang.Double.toString()" because "this.temperatura" is null
+[2024-06-11 10:51:35] [INFO] Listagem de apps concluída
+[2024-06-11 10:53:39] [INFO] Servidor iniciando.
+[2024-06-11 10:53:41] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 10:53:52] [INFO] Usuário logado com sucesso: r_claudio.araujo@hotmail.com
+[2024-06-11 10:53:55] [INFO] Buscando componentes...
+[2024-06-11 10:54:01] [INFO] Iniciando verificação se o componente já existe no banco de dados.
+[2024-06-11 10:54:02] [INFO] 
+        Verificando se o componente CPU existe no banco de dados.
+        Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+        Fabricante: GenuineIntel
+        Id Máquina: 7
+
+[2024-06-11 10:54:02] [INFO] O componente não existe no banco de dados.
+[2024-06-11 10:54:02] [INFO] Inserindo dados do componente no banco!
+[2024-06-11 10:54:02] [INFO] ID do componente criado: 59
+[2024-06-11 10:54:06] [INFO] Iniciando verificação se o componente já existe no banco de dados.
+[2024-06-11 10:54:06] [INFO] 
+        Verificando se o componente HDD existe no banco de dados.
+        Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+        Fabricante: N/A
+        Id Máquina: 7
+
+[2024-06-11 10:54:07] [INFO] O componente não existe no banco de dados.
+[2024-06-11 10:54:07] [INFO] Inserindo dados do componente no banco!
+[2024-06-11 10:54:07] [INFO] ID do componente criado: 60
+[2024-06-11 10:54:11] [INFO] Iniciando verificação se o componente já existe no banco de dados.
+[2024-06-11 10:54:11] [INFO] 
+        Verificando se o componente GPU existe no banco de dados.
+        Modelo: Intel(R) Iris(R) Xe Graphics
+        Fabricante: Intel Corporation
+        Id Máquina: 7
+
+[2024-06-11 10:54:11] [INFO] O componente não existe no banco de dados.
+[2024-06-11 10:54:11] [INFO] Inserindo dados do componente no banco!
+[2024-06-11 10:54:12] [INFO] ID do componente criado: 61
+[2024-06-11 10:54:15] [INFO] Iniciando verificação se o componente já existe no banco de dados.
+[2024-06-11 10:54:16] [INFO] 
+        Verificando se o componente MemoriaRam existe no banco de dados.
+        Modelo: N/A
+        Fabricante: N/A
+        Id Máquina: 7
+
+[2024-06-11 10:54:16] [INFO] O componente não existe no banco de dados.
+[2024-06-11 10:54:16] [INFO] Inserindo dados do componente no banco!
+[2024-06-11 10:54:16] [INFO] ID do componente criado: 62
+[2024-06-11 10:54:20] [INFO] Iniciando verificação se o componente já existe no banco de dados.
+[2024-06-11 10:54:21] [INFO] 
+        Verificando se o componente Bateria existe no banco de dados.
+        Modelo: System Battery
+        Fabricante: SAMSUNG Electronics
+        Id Máquina: 7
+
+[2024-06-11 10:54:21] [INFO] O componente não existe no banco de dados.
+[2024-06-11 10:54:21] [INFO] Inserindo dados do componente no banco!
+[2024-06-11 10:54:21] [INFO] ID do componente criado: 63
+[2024-06-11 10:54:25] [INFO] Iniciando verificação se o componente já existe no banco de dados.
+[2024-06-11 10:54:25] [INFO] 
+        Verificando se o componente Volume existe no banco de dados.
+        Modelo: Disco Fixo Local (C:)
+        Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+        Id Máquina: 7
+
+[2024-06-11 10:54:26] [INFO] O componente não existe no banco de dados.
+[2024-06-11 10:54:26] [INFO] Inserindo dados do componente no banco!
+[2024-06-11 10:54:26] [INFO] ID do componente criado: 64
+[2024-06-11 10:54:29] [INFO] Capturando os componentes:
+
+[2024-06-11 10:54:29] [INFO] Iniciando listagem de apps
+[2024-06-11 10:54:29] [INFO] Iniciando captura de componentes
+[2024-06-11 10:55:03] [INFO] Listagem de apps concluída
+[2024-06-11 10:55:03] [INFO] Iniciando listagem de apps
+[2024-06-11 10:55:44] [INFO] Servidor iniciando.
+[2024-06-11 10:55:46] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 10:56:28] [INFO] Usuário logado com sucesso: r_claudio.araujo@hotmail.com
+[2024-06-11 10:56:35] [INFO] Buscando componentes...
+[2024-06-11 10:56:37] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 59
+
+[2024-06-11 10:56:37] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 60
+
+[2024-06-11 10:56:37] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 61
+
+[2024-06-11 10:56:37] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 62
+
+[2024-06-11 10:56:37] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 63
+
+[2024-06-11 10:56:37] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 64
+
+[2024-06-11 10:56:41] [INFO] Capturando os componentes:
+
+[2024-06-11 10:56:41] [INFO] Iniciando listagem de apps
+[2024-06-11 10:56:41] [INFO] Iniciando captura de componentes
+[2024-06-11 11:09:22] [INFO] Servidor iniciando.
+[2024-06-11 11:09:24] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 11:09:58] [WARNING] Tentativa de login falhou para o email: Cláudio
+[2024-06-11 11:10:12] [INFO] Usuário logado com sucesso: l_claudio.araujo@hotmail.com
+[2024-06-11 11:10:14] [INFO] Buscando componentes...
+[2024-06-11 11:10:15] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 30
+
+[2024-06-11 11:10:15] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 31
+
+[2024-06-11 11:10:15] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 32
+
+[2024-06-11 11:10:15] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 33
+
+[2024-06-11 11:10:15] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 34
+
+[2024-06-11 11:10:15] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 35
+
+[2024-06-11 11:10:15] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 36
+
+[2024-06-11 11:10:19] [INFO] Capturando os componentes:
+
+[2024-06-11 11:10:19] [INFO] Iniciando listagem de apps
+[2024-06-11 11:10:19] [INFO] Iniciando captura de componentes
+[2024-06-11 11:52:57] [INFO] Servidor iniciando.
+[2024-06-11 12:54:42] [INFO] Servidor iniciando.
+[2024-06-11 12:54:43] [INFO] Servidor iniciado com sucesso.
+[2024-06-11 12:54:54] [INFO] Usuário logado com sucesso: r_claudio.araujo@hotmail.com
+[2024-06-11 12:54:56] [INFO] Buscando componentes...
+[2024-06-11 12:54:57] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 59
+
+[2024-06-11 12:54:57] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: SAMSUNG MZVLQ256HBJD-00B (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 60
+
+[2024-06-11 12:54:57] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: Intel(R) Iris(R) Xe Graphics
+    |Fabricante: Intel Corporation
+    |ID Componente: 61
+
+[2024-06-11 12:54:57] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 62
+
+[2024-06-11 12:54:57] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SAMSUNG Electronics
+    |ID Componente: 63
+
+[2024-06-11 12:54:57] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: b34e68fe-87e7-4f63-9b8d-505115d14c23
+    |ID Componente: 64
+
+[2024-06-11 12:55:02] [INFO] Capturando os componentes:
+
+[2024-06-11 12:55:02] [INFO] Iniciando listagem de apps
+[2024-06-11 12:55:02] [INFO] Iniciando captura de componentes
+[2024-06-11 12:55:04] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 39,05
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T12:55:04.731918600
+    |Id componente: 59
+
+[2024-06-11 12:55:10] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:55:10.347937300
+    |Id componente: 60
+
+[2024-06-11 12:55:15] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 39,05
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T12:55:15.891394800
+    |Id componente: 61
+
+[2024-06-11 12:55:21] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,32
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:55:21.236027800
+    |Id componente: 62
+
+[2024-06-11 12:55:26] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 76,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-11T12:55:26.692238300
+    |Id componente: 63
+
+[2024-06-11 12:55:32] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 206,38
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:55:32.395936400
+    |Id componente: 64
+
+[2024-06-11 12:55:36] [INFO] Listagem de apps concluída
+[2024-06-11 12:55:36] [INFO] Iniciando listagem de apps
+[2024-06-11 12:55:37] [INFO] Captura de componentes concluída
+[2024-06-11 12:55:37] [INFO] Iniciando captura de componentes
+[2024-06-11 12:55:39] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 39,05
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T12:55:39.509221100
+    |Id componente: 59
+
+[2024-06-11 12:55:44] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:55:44.915950600
+    |Id componente: 60
+
+[2024-06-11 12:55:50] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 39,05
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T12:55:50.457248900
+    |Id componente: 61
+
+[2024-06-11 12:55:56] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,27
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:55:56.006955300
+    |Id componente: 62
+
+[2024-06-11 12:56:01] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 76,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-11T12:56:01.477632800
+    |Id componente: 63
+
+[2024-06-11 12:56:08] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 206,38
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:56:08.096587200
+    |Id componente: 64
+
+[2024-06-11 12:56:11] [INFO] Listagem de apps concluída
+[2024-06-11 12:56:11] [INFO] Iniciando listagem de apps
+[2024-06-11 12:56:13] [INFO] Captura de componentes concluída
+[2024-06-11 12:56:13] [INFO] Iniciando captura de componentes
+[2024-06-11 12:56:16] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 39,05
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T12:56:16.939780700
+    |Id componente: 59
+
+[2024-06-11 12:56:22] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:56:22.450217
+    |Id componente: 60
+
+[2024-06-11 12:56:28] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 39,05
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T12:56:28.038956100
+    |Id componente: 61
+
+[2024-06-11 12:56:33] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,11
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:56:33.503858400
+    |Id componente: 62
+
+[2024-06-11 12:56:39] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 76,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-11T12:56:39.053692800
+    |Id componente: 63
+
+[2024-06-11 12:56:44] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 206,39
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:56:44.696608300
+    |Id componente: 64
+
+[2024-06-11 12:56:49] [INFO] Captura de componentes concluída
+[2024-06-11 12:56:49] [INFO] Iniciando captura de componentes
+[2024-06-11 12:56:49] [INFO] Listagem de apps concluída
+[2024-06-11 12:56:49] [INFO] Iniciando listagem de apps
+[2024-06-11 12:56:51] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 39,05
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T12:56:51.692809400
+    |Id componente: 59
+
+[2024-06-11 12:56:57] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:56:57.241578100
+    |Id componente: 60
+
+[2024-06-11 12:57:02] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 39,05
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T12:57:02.894656300
+    |Id componente: 61
+
+[2024-06-11 12:57:08] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 6,98
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:57:08.534618
+    |Id componente: 62
+
+[2024-06-11 12:57:14] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 76,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-11T12:57:14.088361400
+    |Id componente: 63
+
+[2024-06-11 12:57:19] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 206,39
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:57:19.800269900
+    |Id componente: 64
+
+[2024-06-11 12:57:23] [INFO] Listagem de apps concluída
+[2024-06-11 12:57:23] [INFO] Iniciando listagem de apps
+[2024-06-11 12:57:24] [INFO] Captura de componentes concluída
+[2024-06-11 12:57:24] [INFO] Iniciando captura de componentes
+[2024-06-11 12:57:26] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 39,05
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T12:57:26.619825
+    |Id componente: 59
+
+[2024-06-11 12:57:32] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:57:32.330648900
+    |Id componente: 60
+
+[2024-06-11 12:57:37] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 39,05
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T12:57:37.813941900
+    |Id componente: 61
+
+[2024-06-11 12:57:43] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 6,78
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:57:43.352401900
+    |Id componente: 62
+
+[2024-06-11 12:57:48] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 77,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-11T12:57:48.962226
+    |Id componente: 63
+
+[2024-06-11 12:57:54] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 206,42
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:57:54.905512200
+    |Id componente: 64
+
+[2024-06-11 12:57:57] [INFO] Listagem de apps concluída
+[2024-06-11 12:57:57] [INFO] Iniciando listagem de apps
+[2024-06-11 12:57:59] [INFO] Captura de componentes concluída
+[2024-06-11 12:57:59] [INFO] Iniciando captura de componentes
+[2024-06-11 12:58:01] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 39,05
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T12:58:01.979119300
+    |Id componente: 59
+
+[2024-06-11 12:58:07] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:58:07.381794900
+    |Id componente: 60
+
+[2024-06-11 12:58:13] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 39,05
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T12:58:13.363336
+    |Id componente: 61
+
+[2024-06-11 12:58:19] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 6,85
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:58:19.356808100
+    |Id componente: 62
+
+[2024-06-11 12:58:24] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 77,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-11T12:58:24.790291100
+    |Id componente: 63
+
+[2024-06-11 12:58:30] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Volume
+    |Dado capturado: 206,42
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:58:30.344045100
+    |Id componente: 64
+
+[2024-06-11 12:58:32] [INFO] Listagem de apps concluída
+[2024-06-11 12:58:32] [INFO] Iniciando listagem de apps
+[2024-06-11 12:58:35] [INFO] Captura de componentes concluída
+[2024-06-11 12:58:35] [INFO] Iniciando captura de componentes
+[2024-06-11 12:58:37] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: CPU
+    |Dado capturado: 39,05
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T12:58:37.334028100
+    |Id componente: 59
+
+[2024-06-11 12:58:42] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: HDD
+    |Dado capturado: 238,47
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:58:42.772528500
+    |Id componente: 60
+
+[2024-06-11 12:58:48] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: GPU
+    |Dado capturado: 39,05
+    |Unidade de medida: °C
+    |Data hora captura: 2024-06-11T12:58:48.215045500
+    |Id componente: 61
+
+[2024-06-11 12:58:53] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: MemoriaRam
+    |Dado capturado: 7,05
+    |Unidade de medida: GB
+    |Data hora captura: 2024-06-11T12:58:53.775364700
+    |Id componente: 62
+
+[2024-06-11 12:58:59] [INFO] 
+Inserindo captura de dados no banco de dados:
+    |Componente: Bateria
+    |Dado capturado: 77,00
+    |Unidade de medida: %
+    |Data hora captura: 2024-06-11T12:58:59.302746500
+    |Id componente: 63
+

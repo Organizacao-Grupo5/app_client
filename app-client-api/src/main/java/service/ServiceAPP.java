@@ -8,7 +8,6 @@ import util.logs.Logger;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class ServiceAPP {
     private APPDAO appdao = new APPDAO();

@@ -1,8 +1,8 @@
 package util.security;
 
-import util.exception.AutenticationException;
 import model.Usuario;
 import service.ServiceUser;
+import util.exception.AutenticationException;
 import util.logs.Logger;
 
 public class Login {

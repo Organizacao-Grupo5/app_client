@@ -1,17 +1,13 @@
 package dao;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
-
 import model.Ipv4;
 import model.Maquina;
 import util.database.MySQLConnection;
 import util.logs.Logger;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Ipv4DAO {
 
@@ -120,7 +116,7 @@ public class Ipv4DAO {
         } catch (SQLException e) {
             Logger.logError("Não foi possível listar as informações do ipv4: ", e.getMessage(), e);
         }
-        return existe;
+        return true;
     }
 
 }

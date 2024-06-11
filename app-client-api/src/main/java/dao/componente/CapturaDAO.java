@@ -1,8 +1,8 @@
 package dao.componente;
 
-import model.componentes.Componente;
 import model.Captura;
 import model.Maquina;
+import model.componentes.Componente;
 import util.database.MySQLConnection;
 import util.logs.LogBanco;
 import util.logs.Logger;
@@ -39,7 +39,7 @@ public class CapturaDAO {
 					componente.getUnidadeMedida(), LocalDateTime.now().toString(), componente.getIdComponente()), LogBanco.LogType.INFO);
 
 			PreparedStatement preparedStatement = connection.prepareStatement(
-					"INSERT INTO captura (dadoCaptura, unidadeMedida, dataCaptura, fkComponente, dadoCapturaPercent) VALUES (?,?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
+					"INSERT INTO captura (dadoCaptura, unidadeMedida, dataCaptura, fkComponente, dadoCapturaPercent) VALUES (?,?,?,?, ?)", Statement.RETURN_GENERATED_KEYS);
 
 			preparedStatement.setDouble(1, Optional.ofNullable(componente.getDadoCaptura()).orElse(0.0));
 			preparedStatement.setString(2, Optional.ofNullable(componente.getUnidadeMedida()).orElse(""));
@@ -110,8 +110,8 @@ public class CapturaDAO {
 			captura.setDadoCaptura(resultSet.getDouble("dadoCaptura"));
 			captura.setUnidadeMedida(resultSet.getString("unidadeMedida"));
 			captura.setDataCaptura(resultSet.getTimestamp("dataCaptura"));
-			captura.setDadoCapturaPercent(Optional.ofNullable(resultSet.getDouble("dadoCapturaPercent")).orElse(0.0));
 			captura.setFkComponente(resultSet.getInt("fkComponente"));
+			captura.setDadoCapturaPercent(resultSet.getDouble("dadoCapturaPercent"));
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

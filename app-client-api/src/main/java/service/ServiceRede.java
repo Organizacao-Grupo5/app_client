@@ -1,8 +1,5 @@
 package service;
 
-import java.sql.SQLException;
-import java.util.List;
-
 import app.integration.Computer;
 import dao.Ipv4DAO;
 import dao.MaquinaDAO;
@@ -13,6 +10,9 @@ import model.Maquina;
 import model.Rede;
 import model.Usuario;
 import util.logs.Logger;
+
+import java.sql.SQLException;
+import java.util.List;
 
 public class ServiceRede {
     

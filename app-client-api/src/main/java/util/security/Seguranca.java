@@ -1,9 +1,9 @@
 package util.security;
 
 import com.mysql.cj.util.StringUtils;
-import util.exception.AutenticationException;
 import model.Usuario;
 import service.ServiceUser;
+import util.exception.AutenticationException;
 import util.logs.Logger;
 
 import java.sql.SQLException;

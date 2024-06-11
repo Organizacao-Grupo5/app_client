@@ -1,8 +1,8 @@
 package app.integration;
 
+import oshi.SystemInfo;
+import oshi.hardware.NetworkIF;
 import util.logs.Logger;
-
-import static com.sun.jna.Platform.isWindows;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,17 +12,16 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.nio.file.attribute.PosixFilePermission;
+import java.nio.file.attribute.PosixFilePermissions;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.nio.file.attribute.PosixFilePermissions;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-import oshi.SystemInfo;
-import oshi.hardware.NetworkIF;
+import static com.sun.jna.Platform.isWindows;
 
 
 public class Computer {
