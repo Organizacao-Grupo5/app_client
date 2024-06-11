@@ -79,25 +79,72 @@ public class RegistroAlertasDAO {
                             String mensagem = """
                                 URGÊNCIA: A máquina de IP: %s está com %.1f% de bateria""".
                                     formatted(ip, uso);
-                            // SlackIntegration.enviarMensagemParaSlack(mensagem);
+                             SlackIntegration.enviarMensagemParaSlack(mensagem);
                         } else if(uso <= 30){
                             String mensagem = """
                                 Aviso: A máquina de IP: %s está com %.1f% de bateria""".
                                     formatted(ip, uso);
-                            // SlackIntegration.enviarMensagemParaSlack(mensagem);
+                             SlackIntegration.enviarMensagemParaSlack(mensagem);
                         }
                     }
+
+                    // ALERTAS PARA RAM!
+                    else if(componente.equalsIgnoreCase("memoriaram")){
+                        if(uso >= 7){
+                            String mensagem = """
+                            URGÊNCIA: O componente %s da máquina de IP: %s está em condição ruim, com uso de %.1f GB""".
+                                    formatted(componente, ip, uso);
+                            SlackIntegration.enviarMensagemParaSlack(mensagem);
+
+                        } else if(uso >= 6 ){
+                            String mensagem = """
+                                Aviso: O componente %s da máquina de IP: %s está em condição média, com uso de %.1f GB""".
+                                    formatted(componente, ip, uso);
+                            SlackIntegration.enviarMensagemParaSlack(mensagem);
+                        }
+                    }
+
+                    // ALERTAS PARA CPU!
+                    if (componente.equalsIgnoreCase("cpu")) {
+                        if (uso >= 90) {
+                            String mensagem = """
+            URGÊNCIA: A CPU da máquina de IP: %s está com temperatura crítica de %.1f°C""".
+                                    formatted(ip, uso);
+                            SlackIntegration.enviarMensagemParaSlack(mensagem);
+                        } else if (uso >= 75) {
+                            String mensagem = """
+            Aviso: A CPU da máquina de IP: %s está com temperatura alta de %.1f°C""".
+                                    formatted(ip, uso);
+                            SlackIntegration.enviarMensagemParaSlack(mensagem);
+                        }
+                    }
+
+                    // ALERTAS PARA GPU!
+                    else if (componente.equalsIgnoreCase("gpu")) {
+                        if (uso >= 85) {
+                            String mensagem = """
+            URGÊNCIA: A GPU da máquina de IP: %s está com temperatura crítica de %.1f°C""".
+                                    formatted(ip, uso);
+                            SlackIntegration.enviarMensagemParaSlack(mensagem);
+                        } else if (uso >= 75) {
+                            String mensagem = """
+            Aviso: A GPU da máquina de IP: %s está com temperatura alta de %.1f°C""".
+                                    formatted(ip, uso);
+                            SlackIntegration.enviarMensagemParaSlack(mensagem);
+                        }
+                    }
+
 
                     // ALERTA - RUIM!!!
                     else if (uso >= ruimMinimo) {
                         String mensagem = "URGÊNCIA: O componente %s da máquina de IP: %s está em condição ruim, com uso de %.1f".formatted(componente, ip, uso);
-                        // SlackIntegration.enviarMensagemParaSlack(mensagem);
+                         SlackIntegration.enviarMensagemParaSlack(mensagem);
 
                     }
                     // ALERTA - MÉDIO!!!
                     else if (uso >= medioMinimo) {
                         String mensagem = "Aviso: O componente %s da máquina de IP: %s está em condição média, com uso de %.1f".formatted(componente, ip, uso);
-                        // SlackIntegration.enviarMensagemParaSlack(mensagem);
+                        SlackIntegration.enviarMensagemParaSlack(mensagem);
                     }
 
 
