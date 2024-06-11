@@ -8,6 +8,7 @@ public class Captura {
     private String unidadeMedida;
     private Timestamp dataCaptura;
     private Integer fkComponente;
+    private Double dadoCapturaPercent;
     
     public Captura() {}
 
@@ -59,6 +60,11 @@ public class Captura {
         this.fkComponente = fkComponente;
     }
 
-    
-    
+    public Double getDadoCapturaPercent() {
+        return dadoCapturaPercent;
+    }
+
+    public void setDadoCapturaPercent(Double dadoCapturaPercent) {
+        this.dadoCapturaPercent = dadoCapturaPercent;
+    }
 }

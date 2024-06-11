@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class ServiceComponente {
 	private ComponenteDAO componenteDAO = new ComponenteDAO();
@@ -100,6 +101,7 @@ public class ServiceComponente {
 			((CPU) componente).setNumeroDeCpusFisicas(cpu.getNumeroDeCpusFisicas());
 			((CPU) componente).setNumeroPacotesFisicos(cpu.getNumeroPacotesFisicos());
 			((CPU) componente).setUso(cpu.getUso());
+			((CPU) componente).setPercentDadoCaptura(Optional.ofNullable(cpu.getPercentDadoCaptura()).orElse(0.0));
 		} else if (componente instanceof GPU) {
 			List<GPU> listaGPU = systemMonitor.monitorarGPU();
 			listaGPU.forEach(gpu -> {
@@ -110,6 +112,7 @@ public class ServiceComponente {
 					((GPU) componente).setIdDevice(gpu.getIdDevice());
 					((GPU) componente).setVersao(gpu.getVersao());
 					((GPU) componente).setvRam(gpu.getvRam());
+					((GPU) componente).setPercentDadoCaptura(Optional.ofNullable(gpu.getPercentDadoCaptura()).orElse(0.0));
 				}
 			});
 		} else if (componente instanceof HDD) {
@@ -126,6 +129,7 @@ public class ServiceComponente {
 					((HDD) componente).setTempoDeTransferencia(hdd.getTempoDeTransferencia());
 					((HDD) componente).setBytesDeLeitura(hdd.getBytesDeLeitura());
 					((HDD) componente).setNome(hdd.getNome());
+					((HDD) componente).setPercentDadoCaptura(Optional.ofNullable(hdd.getPercentDadoCaptura()).orElse(0.0));
 				}
 			});
 		} else if (componente instanceof Volume) {
@@ -144,6 +148,7 @@ public class ServiceComponente {
 					((Volume) componente).setFabricante(volume.getFabricante());
 					((Volume) componente).setModelo(volume.getModelo());
 					((Volume) componente).setDadoCaptura(volume.getDadoCaptura());
+					((Volume) componente).setPercentDadoCaptura(Optional.ofNullable(volume.getPercentDadoCaptura()).orElse(0.0));
 				}
 			});
 		} else if (componente instanceof Bateria) {
@@ -169,6 +174,7 @@ public class ServiceComponente {
 					((Bateria) componente).setTempoRestanteInstantaneo(bateria.getTempoRestanteInstantaneo());
 					((Bateria) componente).setPercentualCapacidadeRestante(bateria.getPercentualCapacidadeRestante());
 					((Bateria) componente).setDataFabricacao(bateria.getDataFabricacao());
+					((Bateria) componente).setPercentDadoCaptura(Optional.ofNullable(bateria.getPercentDadoCaptura()).orElse(0.0));
 				}
 			});
 		} else if (componente instanceof MemoriaRam) {
@@ -177,6 +183,7 @@ public class ServiceComponente {
 			((MemoriaRam) componente).setDataHoraCaptura(ram.getDataHoraCaptura());
 			((MemoriaRam) componente).setMemoriaDisponivel(ram.getMemoriaDisponivel());
 			((MemoriaRam) componente).setMemoriaTotal(ram.getMemoriaTotal());
+			((MemoriaRam) componente).setPercentDadoCaptura(Optional.ofNullable(ram.getPercentDadoCaptura()).orElse(0.0));
 		} else if (componente instanceof SistemaOp) {
 			SistemaOp sistemaOp = systemMonitor.monitorarSistemaOperacional();
 			((SistemaOp) componente).setArquitetura(sistemaOp.getArquitetura());

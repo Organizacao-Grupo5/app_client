@@ -16,6 +16,7 @@ public class Componente {
 	protected String unidadeMedida;
 	protected Double dadoCaptura;
 	protected LocalDateTime dataCaptura;
+	protected Double percentDadoCaptura;
 
 	public Componente() {
 
@@ -114,5 +115,13 @@ public class Componente {
 
 	public void setDataCaptura(LocalDateTime dataCaptura) {
 		this.dataCaptura = dataCaptura;
+	}
+
+	public Double getPercentDadoCaptura() {
+		return percentDadoCaptura;
+	}
+
+	public void setPercentDadoCaptura(Double percentDadoCaptura) {
+		this.percentDadoCaptura = percentDadoCaptura;
 	}
 }

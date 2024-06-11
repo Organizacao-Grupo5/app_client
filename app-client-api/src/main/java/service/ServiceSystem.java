@@ -71,7 +71,7 @@ public class ServiceSystem {
         Double valorCaptura = 0.0;
         try {
             Optional<Captura> optionalCaptura = capturaDAO.selecionarById(idCaptura);
-            valorCaptura = optionalCaptura.get().getDadoCaptura();
+            valorCaptura = optionalCaptura.get().getDadoCapturaPercent();
         } catch (Exception e) {
             Logger.logError("Ocorreu um erro ao obter informações da entidade Captura:", e.getMessage(), e);
         }

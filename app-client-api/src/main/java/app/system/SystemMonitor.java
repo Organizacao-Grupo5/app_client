@@ -91,6 +91,7 @@ public class SystemMonitor {
 				LogMonitoramento.logInfo("Nome da CPU: " + cpu.getModelo(), LogBanco.LogType.INFO);
 			}
 			Double temperatura = shellIntegration.monitorarTemperatura();
+			cpu.setPercentDadoCaptura((Optional.ofNullable(temperatura).orElse(0.0) / 100) * 100);
 			cpu.setTemperatura(temperatura);
 			if (cpu.getTemperatura() == null) {
 				LogMonitoramento.logWarning("Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .");
@@ -200,6 +201,15 @@ public class SystemMonitor {
 					} else {
 						LogMonitoramento.logInfo("Escritas do disco: " + hdd.getEscritas(), LogBanco.LogType.INFO);
 					}
+
+					com.github.britooo.looca.api.group.discos.Volume volume = looca.getGrupoDeDiscos().getVolumes().get(0);
+					double total = volume.getTotal();
+					double disponivel = volume.getDisponivel();
+					double tamanhoDisco = conversor.formatarBytes(disco.getTamanho());
+
+					double percentDadoCaptura = ((total - disponivel) / tamanhoDisco) * 100;
+
+					hdd.setPercentDadoCaptura(percentDadoCaptura);
 
 					hdd.setLeituras(conversor.formatarBytes(disco.getLeituras()));
 					if (StringUtils.isNullOrEmpty(hdd.getLeituras().toString())) {
@@ -393,6 +403,7 @@ public class SystemMonitor {
 					}
 
 					bateria.setBateriaAtual(shellIntegration.monitorarBateria());
+					bateria.setPercentDadoCaptura(Optional.ofNullable(shellIntegration.monitorarBateria()).orElse(0.0));
 					if (bateria.getBateriaAtual() == null) {
 						LogMonitoramento.logWarning("Dados da bateria atual não foram capturados, será apresentada como 0.");
 						bateria.setBateriaAtual(0.0);
@@ -467,6 +478,8 @@ public class SystemMonitor {
 						}
 
 						myGpu.setTemperatura(shellIntegration.monitorarTemperatura());
+						myGpu.setPercentDadoCaptura((Optional.ofNullable(shellIntegration.monitorarTemperatura()).orElse(0.0) / 100) * 100);
+
 						if (myGpu.getTemperatura() == null) {
 							LogMonitoramento.logWarning(
 									"Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00 .");
@@ -521,6 +534,8 @@ public class SystemMonitor {
 			} else {
 				LogMonitoramento.logInfo("Memória em uso: " + ram.getMemoriaEmUso(), LogBanco.LogType.INFO);
 			}
+
+			ram.setPercentDadoCaptura((ram.getMemoriaEmUso() / ram.getMemoriaTotal()) * 100);
 
 			LogMonitoramento.logInfo("Dados da memória ram capturados com sucesso.", LogBanco.LogType.INFO);
 		} catch (Exception e) {
@@ -718,6 +733,12 @@ public class SystemMonitor {
 						LogMonitoramento.logInfo(
 								"Ponto de montagem do volume lógico capturado: " + volumeLogico.getPontoDeMontagem(), LogBanco.LogType.INFO);
 					}
+
+					double total = conversor.formatarBytes(volume.getTotal());
+					double disponivel = conversor.formatarBytes(volume.getDisponivel());
+					double percentualUso = ((total - disponivel) / total) * 100;
+
+					volumeLogico.setPercentDadoCaptura(percentualUso);
 
 					LogMonitoramento.logInfo("Dados do volume lógico gravados.", LogBanco.LogType.INFO);
 				} catch (Exception e) {
