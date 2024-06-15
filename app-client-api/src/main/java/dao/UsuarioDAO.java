@@ -2,6 +2,7 @@ package dao;
 
 import model.Usuario;
 import util.database.MySQLConnection;
+import util.logs.Logger;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -12,9 +13,8 @@ import java.util.Optional;
 public class UsuarioDAO {
 
 	public Optional<Usuario> findByEmailAndSenha(String email, String senha) {
-		try (Connection conexao = MySQLConnection.ConnectionSqlServer();
-			 PreparedStatement preparedStatement = conexao.prepareStatement(
-					 "SELECT * FROM usuario JOIN empresa ON usuario.fkEmpresa = empresa.idEmpresa JOIN plano ON empresa.fkPlano = plano.idPlano WHERE email = ? and senha = ?")) {
+		try (Connection conexao = MySQLConnection.ConnectionSqlServer()) {
+			 PreparedStatement preparedStatement = conexao.prepareStatement("SELECT * FROM usuario JOIN empresa ON usuario.fkEmpresa = empresa.idEmpresa JOIN plano ON empresa.fkPlano = plano.idPlano WHERE email = ? and senha = ?");
 
 			preparedStatement.setString(1, email);
 			preparedStatement.setString(2, senha);
@@ -25,7 +25,7 @@ public class UsuarioDAO {
 				}
 			}
 		} catch (SQLException e) {
-			throw new RuntimeException("Erro ao buscar usuário por email e senha SQLServer::", e);
+			Logger.logError("Erro ao buscar usuário por email e senha SQLServer:: ", e.getMessage(), e);
 		}
 
 		return Optional.empty();
