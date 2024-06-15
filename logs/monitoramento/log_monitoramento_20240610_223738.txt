@@ -33531,3 +33531,145 @@ Process
 [2024-06-15 14:53:49] [INFO] Uso da ram pela janela: 170.0
 [2024-06-15 14:53:49] [INFO] Dados da janela gravados.
 [2024-06-15 14:53:49] [INFO] Todas as janelas verificadas.
+[2024-06-15 15:02:37] [INFO] Servidor iniciando.
+[2024-06-15 15:02:38] [INFO] Servidor iniciado com sucesso.
+[2024-06-15 15:03:06] [INFO] Usuário logado com sucesso: l_thiago.santos@gmail.com
+[2024-06-15 15:03:09] [INFO] Capturando dados da sua CPU.
+[2024-06-15 15:03:09] [INFO] Número de CPUs lógicas: 8
+[2024-06-15 15:03:09] [INFO] Número de CPUs físicas: 4
+[2024-06-15 15:03:09] [INFO] Microarquitetura: Coffee Lake
+[2024-06-15 15:03:09] [INFO] Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-15 15:03:09] [INFO] ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-15 15:03:09] [INFO] Fabricante: GenuineIntel
+[2024-06-15 15:03:09] [INFO] Frequência: 2.4E9
+[2024-06-15 15:03:09] [INFO] Número de pacotes físicos: 1
+[2024-06-15 15:03:11] [INFO] Uso da CPU: 0.3931203931203931
+[2024-06-15 15:03:11] [INFO] Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-15 15:03:13] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-15 15:03:13] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-15 15:03:13] [INFO] Capturando dados do seu HDD
+[2024-06-15 15:03:13] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-15 15:03:13] [INFO] Serial do disco:      WD-WX82AA085155
+[2024-06-15 15:03:13] [INFO] Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-15 15:03:13] [INFO] Escritas do disco: 1.887507438659668
+[2024-06-15 15:03:13] [INFO] Leituras do disco: 1.697819709777832
+[2024-06-15 15:03:13] [INFO] Bytes de escritas do disco: 42.9757604598999
+[2024-06-15 15:03:13] [INFO] Bytes de leitura do disco: 49.01433753967285
+[2024-06-15 15:03:13] [INFO] Tamanho do disco: 931.51
+[2024-06-15 15:03:13] [INFO] Tempo de transferência do disco: 30878.459166666667
+[2024-06-15 15:03:13] [INFO] Dados do disco gravados.
+[2024-06-15 15:03:13] [INFO] Capturando dados da GPU.
+[2024-06-15 15:03:13] [INFO] Dados do fabricante da GPU capturados com sucesso: NVIDIA
+[2024-06-15 15:03:13] [INFO] Dados do ID da GPU capturados com sucesso: VideoController1
+[2024-06-15 15:03:13] [INFO] O nome da GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-15 15:03:13] [INFO] A VRam da GPU foi capturada com sucesso: 3.0
+[2024-06-15 15:03:13] [INFO] A Versão da GPU foi capturada com sucesso: 27.21.14.5749
+[2024-06-15 15:03:14] [WARNING] Temperatura da GPU não foi capturada com sucesso, será apresentada como 0.00.
+[2024-06-15 15:03:14] [INFO] Dados da GPU gravados.
+[2024-06-15 15:03:14] [INFO] Capturando dados da sua memória RAM.
+[2024-06-15 15:03:14] [INFO] Memória disponível: 1.0379257202148438
+[2024-06-15 15:03:14] [INFO] Memória total: 7.922107696533203
+[2024-06-15 15:03:14] [INFO] Memória em uso: 6.884181976318359
+[2024-06-15 15:03:14] [INFO] Dados da memória RAM capturados com sucesso.
+[2024-06-15 15:03:14] [INFO] Capturando dados da sua bateria.
+[2024-06-15 15:03:14] [INFO] Amperagem da bateria: 0.0
+[2024-06-15 15:03:14] [INFO] Nome do dispositivo da bateria: L18M3PF1
+[2024-06-15 15:03:14] [INFO] Número de série da bateria:  2184
+[2024-06-15 15:03:14] [INFO] Química da bateria: LiP
+[2024-06-15 15:03:14] [INFO] Nome da bateria: System Battery
+[2024-06-15 15:03:14] [INFO] Voltagem da bateria: 12.799
+[2024-06-15 15:03:14] [INFO] Capacidade atual da bateria: 35.224609375
+[2024-06-15 15:03:14] [INFO] Número de ciclos da bateria: 1155
+[2024-06-15 15:03:14] [INFO] Capacidade de design da bateria: 43.9453125
+[2024-06-15 15:03:14] [INFO] Unidade de capacidade da bateria: MWH
+[2024-06-15 15:03:14] [INFO] Tempo restante da bateria (instantâneo): -1.0
+[2024-06-15 15:03:14] [INFO] Tempo restante estimado da bateria: -1.0
+[2024-06-15 15:03:14] [INFO] Taxa de uso de energia da bateria: 0.0
+[2024-06-15 15:03:14] [INFO] Temperatura da bateria: 0.0
+[2024-06-15 15:03:14] [INFO] Capacidade máxima da bateria: 35.224609375
+[2024-06-15 15:03:14] [INFO] Porcentagem de capacidade restante da bateria: 1.0
+[2024-06-15 15:03:14] [INFO] Data de fabricação da bateria: N/A
+[2024-06-15 15:03:14] [INFO] Fabricante da bateria: SMP
+[2024-06-15 15:03:15] [INFO] Dados da bateria capturados com sucesso: 100.0
+[2024-06-15 15:03:15] [INFO] Dados da bateria gravados.
+[2024-06-15 15:03:15] [INFO] Capturando dados dos volumes lógicos.
+[2024-06-15 15:03:15] [INFO] Nome do volume lógico capturado: Disco Fixo Local (C:)
+[2024-06-15 15:03:15] [INFO] Nome do volume capturado: \\?\Volume{20384a0b-36ae-45cf-b9d6-746edf252892}\
+[2024-06-15 15:03:15] [INFO] Espaço disponível no volume lógico capturado: 719.1746635437012
+[2024-06-15 15:03:15] [INFO] Espaço total do volume lógico capturado com sucesso: 930.2656211853027
+[2024-06-15 15:03:15] [INFO] Tipo do volume lógico capturado: NTFS
+[2024-06-15 15:03:15] [INFO] UUID do volume lógico capturado: 20384a0b-36ae-45cf-b9d6-746edf252892
+[2024-06-15 15:03:15] [INFO] Ponto de montagem do volume lógico capturado: C:\
+[2024-06-15 15:03:15] [INFO] Dados do volume lógico gravados.
+[2024-06-15 15:03:15] [INFO] Todos os volumes lógicos verificados.
+[2024-06-15 15:03:15] [INFO] Capturando dados dos seus Apps.
+[2024-06-15 15:03:15] [INFO] Capturando dados da sua CPU.
+[2024-06-15 15:03:15] [WARNING] Título da janela não foi capturado.
+[2024-06-15 15:03:15] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-15 15:03:15] [INFO] ID da janela: 131210
+[2024-06-15 15:03:15] [INFO] Número de CPUs lógicas: 8
+[2024-06-15 15:03:15] [INFO] PID da janela: 7448
+[2024-06-15 15:03:15] [INFO] Número de CPUs físicas: 4
+[2024-06-15 15:03:15] [INFO] Microarquitetura: Coffee Lake
+[2024-06-15 15:03:15] [INFO] Identificador: Intel64 Family 6 Model 158 Stepping 13
+[2024-06-15 15:03:15] [INFO] ID da CPU Looca: BFEBFBFF000906ED
+[2024-06-15 15:03:15] [INFO] Fabricante: GenuineIntel
+[2024-06-15 15:03:15] [INFO] Frequência: 2.4E9
+[2024-06-15 15:03:15] [INFO] Número de pacotes físicos: 1[2024-06-15 15:03:15] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=0,width=1,height=1]
+
+[2024-06-15 15:03:15] [INFO] Uso da CPU: 0.3931203931203931
+[2024-06-15 15:03:15] [INFO] Nome da CPU: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+[2024-06-15 15:03:15] [INFO] Uso da ram pela janela: 208.0
+[2024-06-15 15:03:15] [INFO] Dados da janela gravados.
+[2024-06-15 15:03:15] [WARNING] Título da janela não foi capturado.
+[2024-06-15 15:03:15] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-15 15:03:15] [INFO] ID da janela: 65948
+[2024-06-15 15:03:15] [INFO] PID da janela: 7448
+[2024-06-15 15:03:15] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=0,y=1078,width=1920,height=60]
+[2024-06-15 15:03:16] [INFO] Uso da ram pela janela: 208.0
+[2024-06-15 15:03:16] [INFO] Dados da janela gravados.
+[2024-06-15 15:03:16] [WARNING] Título da janela não foi capturado.
+[2024-06-15 15:03:16] [INFO] Comando da janela: C:\Windows\explorer.exe
+[2024-06-15 15:03:16] [INFO] ID da janela: 133758
+[2024-06-15 15:03:16] [INFO] PID da janela: 7448
+[2024-06-15 15:03:16] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=1920,y=766,width=1360,height=48]
+[2024-06-15 15:03:16] [INFO] Uso da ram pela janela: 208.0
+[2024-06-15 15:03:16] [INFO] Dados da janela gravados.
+[2024-06-15 15:03:16] [INFO] Título da janela: windows - instancia v1 - ec2-44-206-49-167.compute-1.amazonaws.com - Conexão de Área de Trabalho Remota
+[2024-06-15 15:03:16] [INFO] Comando da janela: C:\Windows\System32\mstsc.exe
+[2024-06-15 15:03:16] [INFO] ID da janela: 527176
+[2024-06-15 15:03:16] [INFO] PID da janela: 20364
+[2024-06-15 15:03:16] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-32000,y=-32000,width=199,height=34]
+[2024-06-15 15:03:16] [INFO] Uso da ram pela janela: 119.0
+[2024-06-15 15:03:16] [INFO] Dados da janela gravados.
+[2024-06-15 15:03:16] [INFO] Título da janela: Main.java - app_client - Visual Studio Code
+[2024-06-15 15:03:16] [INFO] Comando da janela: C:\Users\thyth\AppData\Local\Programs\Microsoft VS Code\Code.exe
+[2024-06-15 15:03:16] [INFO] ID da janela: 919626
+[2024-06-15 15:03:16] [INFO] PID da janela: 16180
+[2024-06-15 15:03:16] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=-9,y=-9,width=1938,height=1098]
+[2024-06-15 15:03:16] [INFO] Uso da ram pela janela: 74.0
+[2024-06-15 15:03:16] [INFO] Dados da janela gravados.
+[2024-06-15 15:03:16] [INFO] Título da janela: app_client/app-client-api/src/main/java/Main.java at a5282f88266ce91d1cad53c983d7cf29827ada83 · Organizacao-Grupo5/app_client - Opera
+[2024-06-15 15:03:16] [INFO] Comando da janela: C:\Users\thyth\AppData\Local\Programs\Opera GX\opera.exe
+[2024-06-15 15:03:16] [INFO] ID da janela: 262236
+[2024-06-15 15:03:16] [INFO] PID da janela: 12940
+[2024-06-15 15:03:16] [INFO] Localização e tamanho da janela: java.awt.Rectangle[x=1912,y=-8,width=1376,height=784]
+[2024-06-15 15:03:17] [WARNING] Temperatura da CPU não foi capturada com sucesso, será apresentada como 0.00 .
+[2024-06-15 15:03:17] [INFO] Dados da CPU capturados com sucesso.
+[2024-06-15 15:03:17] [INFO] Capturando dados do seu HDD
+[2024-06-15 15:03:17] [INFO] Nome do disco: \\.\PHYSICALDRIVE0
+[2024-06-15 15:03:17] [INFO] Serial do disco:      WD-WX82AA085155
+[2024-06-15 15:03:17] [INFO] Modelo do disco: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+[2024-06-15 15:03:17] [INFO] Escritas do disco: 1.8875856399536133
+[2024-06-15 15:03:17] [INFO] Leituras do disco: 1.6978321075439453
+[2024-06-15 15:03:17] [INFO] Bytes de escritas do disco: 42.977023124694824
+[2024-06-15 15:03:17] [INFO] Bytes de leitura do disco: 49.01463508605957
+[2024-06-15 15:03:17] [INFO] Tamanho do disco: 931.51
+[2024-06-15 15:03:17] [INFO] Tempo de transferência do disco: 30878.74722222222
+[2024-06-15 15:03:17] [INFO] Dados do disco gravados.
+[2024-06-15 15:03:17] [INFO] Capturando dados da GPU.
+[2024-06-15 15:03:17] [INFO] Dados do fabricante da GPU capturados com sucesso: NVIDIA
+[2024-06-15 15:03:17] [INFO] Dados do ID da GPU capturados com sucesso: VideoController1
+[2024-06-15 15:03:17] [INFO] O nome da GPU foi capturado com sucesso: NVIDIA GeForce GTX 1050
+[2024-06-15 15:03:17] [INFO] A VRam da GPU foi capturada com sucesso: 3.0
+[2024-06-15 15:03:17] [INFO] A Versão da GPU foi capturada com sucesso: 27.21.14.5749

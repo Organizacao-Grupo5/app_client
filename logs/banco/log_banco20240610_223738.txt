@@ -5963,3 +5963,47 @@ Inserindo captura de dados no banco de dados:
     |Data hora captura: 2024-06-15T14:54:14.760314700
     |Id componente: 6
 
+[2024-06-15 15:02:37] [INFO] Servidor iniciando.
+[2024-06-15 15:02:38] [INFO] Servidor iniciado com sucesso.
+[2024-06-15 15:03:06] [INFO] Usuário logado com sucesso: l_thiago.santos@gmail.com
+[2024-06-15 15:03:08] [INFO] Buscando componentes...
+[2024-06-15 15:03:08] [INFO] Componente encontrado :
+    |Componente: CPU
+    |Modelo: Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz
+    |Fabricante: GenuineIntel
+    |ID Componente: 1
+
+[2024-06-15 15:03:09] [INFO] Componente encontrado :
+    |Componente: HDD
+    |Modelo: WDC WD10SPZX-24Z10 (Unidades de disco padrão)
+    |Fabricante: N/A
+    |ID Componente: 2
+
+[2024-06-15 15:03:09] [INFO] Componente encontrado :
+    |Componente: GPU
+    |Modelo: NVIDIA GeForce GTX 1050
+    |Fabricante: NVIDIA
+    |ID Componente: 3
+
+[2024-06-15 15:03:09] [INFO] Componente encontrado :
+    |Componente: MemoriaRam
+    |Modelo: N/A
+    |Fabricante: N/A
+    |ID Componente: 4
+
+[2024-06-15 15:03:09] [INFO] Componente encontrado :
+    |Componente: Bateria
+    |Modelo: System Battery
+    |Fabricante: SMP
+    |ID Componente: 5
+
+[2024-06-15 15:03:09] [INFO] Componente encontrado :
+    |Componente: Volume
+    |Modelo: Disco Fixo Local (C:)
+    |Fabricante: 20384a0b-36ae-45cf-b9d6-746edf252892
+    |ID Componente: 6
+
+[2024-06-15 15:03:15] [INFO] Capturando os componentes:
+
+[2024-06-15 15:03:15] [INFO] Iniciando captura de componentes
+[2024-06-15 15:03:15] [INFO] Iniciando listagem de apps
