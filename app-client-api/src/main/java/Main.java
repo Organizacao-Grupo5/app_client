@@ -223,7 +223,7 @@ public class Main {
                         break;
                     case "c":
                         clearTerminal();
-                        running = false;
+                        System.exit(0);
                         break;
                     case "d":
                         clearTerminal();
